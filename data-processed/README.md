@@ -278,20 +278,6 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ## [18] 0.800 0.850 0.900 0.950 0.975 0.990
 ```
 
-for all `target`s except "N wk ahead inc case" target.
-For the "N wk ahead inc case" target, teams should provide the following 6 
-quantiles: 
-
-
-```r
-c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
-```
-
-```
-## [1] 0.025 0.100 0.250 0.500 0.750 0.900 0.975
-```
-
-
 ### `value`
 
 Values in the `value` column are non-negative numbers indicating the "point" or 
