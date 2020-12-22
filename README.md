@@ -92,8 +92,8 @@ Vaccine: No vaccine
 * **Scenario id for submission file:** `D-2020-12-22`
 *   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
 *   **Testing-Trace-Isolate: **constant at baseline levels
-*   **Masking: **maintained at baseline levels indefinitely
-*   **Vaccine**: no vaccine
+*   **Masking:** maintained at baseline levels indefinitely
+*   **Vaccine** : no vaccine
 
 ## Submitting model projections
 Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
