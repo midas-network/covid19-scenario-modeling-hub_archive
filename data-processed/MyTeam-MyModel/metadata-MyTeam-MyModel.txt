@@ -1,0 +1,56 @@
+!!NOTE: THE METADATA BELOW ARE PURELY FOR THE PURPOSE OF DEMONSTRATING FILE FORMAT AND SHOULD NOT BE REGARDED IN ANY WAY AS INDICATIVE OF REASONABLE ASSUMPTIONS!!
+
+team_name: MyTeam
+model_name: MyModel
+model_abbr: Myteam-MyModel
+model_version: 1.0
+model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon University), 
+  <ajgreen@andrew.cmu.edu>, Addison Hu (Co-lead modeler - county, Carnegie Mellon University), 
+  Maria Jahja (Co-lead modeler - county, Carnegie Mellon University), Valerie Ventura (Carnegie 
+  Mellon University), Larry Wasserman (Carnegie Mellon University), Rob Tibshirani (Stanford 
+  University), Vishnu Shankar (Stanford University), Jacob Bien (University of Southern 
+  California), Logan Brooks (Carnegie Mellon University), Balasubramanian Narasimhan (Stanford 
+  University), Samyak Rajanala (Stanford University), Aaron Rumack (Carnegie Mellon University), 
+  Noah Simon (University of Washington), James Sharpnack (UC Davis), Daniel McDonald (University of British Columbia), Ryan Tibshirani (Senior 
+  author, Carnegie Mellon University), and the Delphi COVID-19 Response Team
+website_url: https://delphi.cmu.edu
+license: cc-by-4.0
+methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
+  (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
+  visits.
+modeling_NPI: We model school attendance and work separately, and have a separate term for overall community contacts (restaurants, shopping, etc). 
+compliance_NPI: No further assumptions beyond those prescribed in scenarios.
+contact_tracing: Not explicitely modeled.
+testing: Assuming to remain at Dec 2020 levels; estimated separately for each state.
+vaccine_efficacy_transmission: Assumed to be half of the VE against clinical disease.
+vaccine_efficacy_delay: Not applicable. 
+vaccine_hesitancy: No assumption in early months as demand exceeeds supplies; however coverage will be capped at 65% across all priority groups.
+vaccine_immunity_duration: 2 years
+natural_immunity_duration: 2 years
+case_fatality_rate: 0.068
+infection Fatality Rate: Not applicable
+asymptomatics: 0.3
+age_groups: [0-4, 5-24, 25-44, 45-64, 65+]
+importations: We assumed 10 importations per day per state seeded randomly.
+confidence_interval_method: likelihood-based 
+calibration: Fitted to the last two months of death, case and mobility data.
+spatial_structure: No spatial structure, each state modeled independantly.
+team_funding: CDC Center of Excellence, grant number 2546852
+data_inputs: JHU CSSE confirmed case counts and deaths
+citation: Smith J, Smith S, Smith C. MyModel is the best model. Nature. 2020 Aug;584(7920):251-261. doi: 10.1038/s41586-020-3502-7.
+methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
+  \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
+  \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\
+  \ is performed as a preprocessing step to facilitate comparison between states. Heavier\
+  \ weight is placed on more recent training data, to account for nonstationarity in the\
+  \ underlying process. A lasso penalty is added to induce variable selection and prevent\
+  \ overfitting. Quantiles are computed using a residual (Gaussian) bootstrap, separately for\
+  \ each location.\
+  \ County level - A quantile regression model fit jointly across selected counties using (1) \
+  \ case counts, (2) self-reported COVID symptom rates, (3) doctor's visits rates related to \
+  \ COVID symptoms, and (4) county population.  Features (1-3) are taken at various lags. \
+  \ Furthermore, the slopes of features (1-3) are computed over the preceding month and \
+  \ included in the model to provide a sense of the virus's momentum.  Signals (2-3) are \
+  \ available as indicators through Delphi COVIDcast (http://covidcast.cmu.edu). Signal (2) \
+  \ is administered with the support of Facebook. No assumptions are made regarding reopening \
+  \ or governmental interventions."

@@ -1,0 +1,10 @@
+location,model_projection_date,scenario_name,scenario_id,quantile,value,target,target_end_date,type
+1,2020-07-20,optimistic,A-2020-12-22,0.01,46,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.025,67,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.05,83,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.1,104,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.15,117,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.2,128,1 wk ahead inc death,2020-07-25,quantile
+1,2020-07-20,optimistic,A-2020-12-22,0.25,137,1 wk ahead inc death,2020-07-25,quantile
+2,2020-07-21,moderate,A-2020-12-22,0.01,72,1 wk ahead inc death,2020-07-25,quantile
+3,2020-07-22,pessimistic,C-2020-12-22,0.01,100,1 wk ahead inc death,2020-07-25,quantile
