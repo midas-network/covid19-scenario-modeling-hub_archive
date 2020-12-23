@@ -22,19 +22,19 @@ Last updated: 12-22-2020
 
 ### Common Assumptions
 *   **Submission date**: January 8, 2021 (approx.)
-*   **Baseline date**: December 15, 2020 - date of baseline intervention levels.
-*   **Start date for first-round scenarios**: January 3, 2021 (week ending January 9) - first date of simulated outcomes. Model should not be fit to data from after this date. 
-*   **Simulation end date**: at least weeks ending April 3, 2021 (13-week horizon); preferably July3, 2021 (26-week horizon)
+*   **Baseline date**: December 15, 2020 - date of baseline intervention levels
+*   **Start date for first-round scenarios**: January 3, 2021 (week ending January 9) - first date of simulated outcomes; model should not be fit to data from after this date 
+*   **Simulation end date**: at least through week ending April 3, 2021 (13-week horizon); preferably July 3, 2021 (26-week horizon)
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until time of submission – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
 *   **Vaccine effectiveness**: level of effectiveness and available doses are specified for each scenario; assumptions regarding time required to develop immunity, age-related variation in effectiveness, duration of immunity, and additional effects of the vaccine on transmission are left to the discretion of each team
 *   **Vaccine allocation**: between-state allocation is based on population per the CDC/NAS [guidelines](https://www.nap.edu/catalog/25917/framework-for-equitable-allocation-of-covid-19-vaccine#resources) (proportional allocation); within-state allocation and the impact of vaccine hesitancy are left to the discretion of each team
-*   **Vaccine immunity delay:** There is approximately a 14 day delay according to the Pfizer data. Because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it.
-* **Vaccine updake:** It is unlikely vaccine uptake will be 100% within prioritized groups, however sufficient data are not available to specify this. We will leave this to team discretion, but we ask that they include these assumptions in their meta-data file
-*   **Vaccine rollout**: rollout to follow [ACIP recommendations](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/COVID-02-Dooling.pdf) unless known to be contradicted by state recommendations
+*   **Vaccine immunity delay:** There is approximately a 14 day delay according to the Pfizer data; because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it
+* **Vaccine uptake:** It is unlikely vaccine uptake will be 100% within prioritized groups, however sufficient data are not available to specify this; we will leave this to team discretion, but we ask that they include these assumptions in their meta-data file
+*   **Vaccine rollout**: rollout to follow [ACIP recommendations](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-20/02-COVID-Dooling.pdf) unless known to be contradicted by state recommendations
     *   Phase 1a: health care workers, long-term care facilities
-    *   Phase 1b: essential workers (education, food & ag, utilities, etc.)
-    *   Phase 1c: adults with high-risk conditions, adults 65+
+    *   Phase 1b: frontline essential workers, adults 75+
+    *   Phase 1c: other essential workers, adults with high-risk conditions, adults 65-74
 *   **NPI assumptions**: phased reductions of NPIs in 2021 that align with patterns observed at different times in the course of the epidemic in 2020 (see scenario-specific guidance); teams have some liberty on how to implement these reductions within the guidelines
 *   **Database tracking of NPIs**: teams may use their own data if desired, otherwise we recommend the following sources as a common starting point:
     *   [Coronavirus Government Response Tracker | Blavatnik School of Government (ox.ac.uk)](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker)
@@ -47,9 +47,9 @@ Last updated: 12-22-2020
     *   Weekly cumulative cases since start of pandemic (use JHU CSSE for baseline)
     *   Weekly incident hospitalizations
     *   Weekly cumulative hospitalizations since simulation start
-    *   **weeks are considered will follow epi-weeks (Sun-Sat) dated by the last day of the week**
+    *   **Weeks will follow epi-weeks (Sun-Sat) dated by the last day of the week**
 *   **“Ground Truth”**: The same data sources as the forecast hub will be used to represent “true” cases, deaths and hospitalizations. Specifically, JHU CSSE data for cases and deaths and HHS data for hospitalization. 
-*   **Metadata: **We will require a brief meta-data, TBD, form all teams. 
+*   **Metadata: **We will require a brief meta-data form, TBD, from all teams. 
 *   **Uncertainty**: aligned with the Forecasting Hub we ask for 0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99 quantiles
 
 
@@ -69,7 +69,7 @@ Last updated: 12-22-2020
 *   **Testing-Trace-Isolate: **constant at baseline levels
 *   **Masking: **maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 70% after two doses, 20% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million per month thereafter
+*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
 
 ### Scenario C: Fatigue and Hesitancy Scenario:
 * **Scenario name for submission file:** `fatigue`  
@@ -78,8 +78,8 @@ Last updated: 12-22-2020
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** adherence to these measures steps down from baseline to an additional 5% below the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart. 
-*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million per month thereafter
-*   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine.
+*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
+*   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
 
 Social Distancing Measures: Current elevated state orders in regards to NPIs go on for stated length, or 3 weeks if length unstated
 After 3 weeks, interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction, over 2 one month steps.
