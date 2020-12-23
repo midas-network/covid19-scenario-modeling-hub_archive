@@ -81,12 +81,6 @@ Last updated: 12-22-2020
 *   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
 *   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
 
-Social Distancing Measures: Current elevated state orders in regards to NPIs go on for stated length, or 3 weeks if length unstated
-After 3 weeks, interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction, over 2 one month steps.
-Testing-Trace-Isolate: Constant at baseline levels
-Masking: Masking is maintained at baseline levels indefinitely. 
-Vaccine: No vaccine
-
 ### Scenario D: Counterfactual Scenario
 * **Scenario name for submission file:** `counterfactual`  
 * **Scenario id for submission file:** `D-2020-12-22`
