@@ -25,7 +25,7 @@ jobs:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     - run: npm install
-    - run: pip3 install -r visualization/requirements.txt
+    - run: pip3 install -r code/validation/requirements.txt
     - run: python3 code/validation/validate_single_forecast_file.py ${{ github.event.inputs.name }}
       env:
         Z_USERNAME: ${{ secrets.Z_USERNAME}}
