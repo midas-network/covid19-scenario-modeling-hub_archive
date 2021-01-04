@@ -242,7 +242,7 @@ def main():
     forecasts_changed = []
 
     g = Github()
-    repo = g.get_repo('reichlab/covid19-forecast-hub')    
+    repo = g.get_repo('midas-network/covid19-scenairo-modeling-hub')    
     
     if os.environ.get('GITHUB_ACTIONS')=='true':
         print(f"Github event name: {os.environ.get('GITHUB_EVENT_NAME')}")
