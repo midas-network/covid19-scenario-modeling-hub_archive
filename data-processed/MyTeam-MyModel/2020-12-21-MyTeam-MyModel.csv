@@ -1,5 +1,5 @@
 forecast_date,target,target_end_date,quantile,type,location,value
-2020-12-21,1 wk ahead inc death,2020-12-26,NA,point,US,22803.75006253232
+2020-12-21,1 wk ahead inc death,2020-12-26,NA,point,US,22803.75006253231
 2020-12-21,2 wk ahead inc death,2021-01-02,NA,point,US,27487.185070051775
 2020-12-21,3 wk ahead inc death,2021-01-09,NA,point,US,33132.50412776084
 2020-12-21,4 wk ahead inc death,2021-01-16,NA,point,US,39937.25901646205
