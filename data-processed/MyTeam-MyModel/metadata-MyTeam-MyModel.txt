@@ -2,7 +2,7 @@
 
 team_name: MyTeam
 model_name: MyModel
-model_abbr: Myteam-MyModel
+model_abbr: MyTeam-MyModel
 model_version: "1.0"
 model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon University), 
   <ajgreen@andrew.cmu.edu>, Addison Hu (Co-lead modeler - county, Carnegie Mellon University), 
