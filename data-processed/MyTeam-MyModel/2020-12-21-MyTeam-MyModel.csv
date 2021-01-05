@@ -1,4 +1,4 @@
-﻿scenario_id,model_projection_date,target,target_end_date,quantile,type,location,value
+scenario_id,model_projection_date,target,target_end_date,quantile,type,location,value
 A,2020-12-21,1 wk ahead inc death,12/26/20,NA,point,US,22803.75006
 A,2020-12-21,2 wk ahead inc death,1/2/21,NA,point,US,27487.18507
 A,2020-12-21,3 wk ahead inc death,1/9/21,NA,point,US,33132.50413
