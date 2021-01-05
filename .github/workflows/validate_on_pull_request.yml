@@ -31,3 +31,7 @@ jobs:
 #     - run: npm install
     - run: pip3 install -r code/validation/requirements.txt
     - run: python3 code/validation/test_formatting.py
+      env:
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
+        GH_TOKEN: ${{secrets.GH_TOKEN}}  
