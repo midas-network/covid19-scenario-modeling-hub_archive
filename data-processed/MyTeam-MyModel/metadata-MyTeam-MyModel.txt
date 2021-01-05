@@ -1,4 +1,4 @@
-!!NOTE: THE METADATA BELOW ARE PURELY FOR THE PURPOSE OF DEMONSTRATING FILE FORMAT AND SHOULD NOT BE REGARDED IN ANY WAY AS INDICATIVE OF REASONABLE ASSUMPTIONS!!
+#!!NOTE: THE METADATA BELOW ARE PURELY FOR THE PURPOSE OF DEMONSTRATING FILE FORMAT AND SHOULD NOT BE REGARDED IN ANY WAY AS INDICATIVE OF REASONABLE ASSUMPTIONS!!
 
 team_name: MyTeam
 model_name: MyModel
@@ -37,7 +37,7 @@ calibration: Fitted to the last two months of death, case and mobility data.
 spatial_structure: No spatial structure, each state modeled independantly.
 team_funding: CDC Center of Excellence, grant number 2546852
 data_inputs: JHU CSSE confirmed case counts and deaths
-citation: Smith J, Smith S, Smith C. MyModel is the best model. Nature. 2020 Aug;584(7920):251-261. doi: 10.1038/s41586-020-3502-7.
+citation: "Smith J, Smith S, Smith C. MyModel is the best model. Nature. 2020 Aug;584(7920):251-261. doi: 10.1038/s41586-020-3502-7"
 methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
   \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
   \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\
