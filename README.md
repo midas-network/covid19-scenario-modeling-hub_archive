@@ -57,8 +57,8 @@ Last updated: 12-22-2020
 * **Scenario name for submission file:** `optimistic`  
 * **Scenario id for submission file:** `A-2020-12-22` 
 *   **Social Distancing Measures**: baseline state orders with regards to NPIs continue for six weeks from their start date (i.e., the date each individual state started the policy regime in place at baseline), interventions step down from baseline to the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate: **constant at baseline levels
-*   **Masking: **maintained at baseline levels indefinitely
+*   **Testing-Trace-Isolate:** constant at baseline levels
+*   **Masking:** maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
 *   **Vaccine availability**: Actually distributed doses in December (approx.), 25 million courses (50 million doses) in January, 25 million courses per month thereafter
 
