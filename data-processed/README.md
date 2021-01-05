@@ -5,9 +5,7 @@ submit scenarios.
 
 All scenarios should be submitted directly to the [data-processed/](./) folder.
 Data in this directory should be added to the repository through a pull request
-so that automatic data validation checks are run.  
-
-Automated validation checks may not take place during the first round of submissions, depending on our development progress. We ask that teams please review the formatting requirements and submit compliant files. 
+so that automatic data validation checks are run. Automated data validation will check format and consistency in model projections and metadata files.  
 
 ## Example
 
