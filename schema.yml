@@ -35,7 +35,6 @@ mapping:
             max: 200
     'citation':
         type: str
-        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
     'team_funding':
         type: str
     'data_inputs':
