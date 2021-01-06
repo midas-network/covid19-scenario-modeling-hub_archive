@@ -66,7 +66,7 @@ Last updated: 12-22-2020
 * **Scenario name for submission file:** `moderate`  
 * **Scenario id for submission file:** `B-2020-12-22`
 *   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate: **constant at baseline levels
+*   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking: **maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 70% after two doses, 20% after one dose, doses 3.5 weeks apart
 *   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
