@@ -180,7 +180,7 @@ reported during a given epiweek (from Sunday through Saturday, inclusive).
 Predictions for this target will be evaluated compared to the number of new 
 reported cases, as recorded by the JHU CSSE group as distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html). 
 
-#### N wk ahead cum inc case
+#### N wk ahead cum case
 
 This target is the cumulative number of incident cases predicted by the model 
 up to and including N weeks after `model_projection_date`. 
@@ -203,7 +203,7 @@ Predictions for this target will be evaluated compared to the number of new
 hospitalized cases, as reported by the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by StateTimeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries).
 
 
-#### N wk ahead cum inc hosp
+#### N wk ahead cum hosp
 
 This target is the cumulative number of incident (weekly) number of hospitalized cases predicted by the model 
 during the week that is N weeks after `model_projection_date`. 
