@@ -132,9 +132,9 @@ following specific targets:
 - "N wk ahead inc death"  where N is a number between 1 and  26
 - "N wk ahead cum death"  where N is a number between 1 and  26
 - "N wk ahead inc case"  where N is a number between 1 and  26
-- "N wk ahead cum inc case"  where N is a number between 1 and  26
+- "N wk ahead cum case"  where N is a number between 1 and  26
 - "N wk ahead inc hosp"  where N is a number between 1 and 26
-- "N wk ahead cum inc hosp"  where N is a number either 13 or 26
+- "N wk ahead cum hosp"  where N is a number between 1 and 26
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
