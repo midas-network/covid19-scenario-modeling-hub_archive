@@ -33,6 +33,61 @@ mapping:
         type: str
         range:
             max: 200
+    'modeling_NPI':
+        required: True
+        type: str
+    'compliance_NPI':
+        required: True
+        type: str
+    'contact_tracing':
+        required: True
+        type: str
+    'testing':
+        required: True
+        type: str
+    'vaccine_efficacy_delay':
+        required: True
+        type: str
+    'vaccine_efficacy_delay':
+        required: True
+        type: str
+    'vaccine_hesitancy':
+        required: True
+        type: str
+    'vaccine_immunity_duration':
+        required: True
+        type: str
+    'nature_immunity_duration':
+        required: True
+        type: str
+    'case_fatality_rate':
+        required: True
+        type: str
+        pattern: 0.\d*|1\.0?|Not applicable
+    'infection_fatality_rate':
+        required: True
+        type: str
+        pattern: 0.\d*|1\.0?|Not applicable
+    'asymptomatics':
+        required: True
+        type: str
+        pattern: 0.\d*|1\.0?|Not applicable
+    'age_groups':
+        required: True
+        type: str
+        pattern: ^(\[)([\d\-,\+]*[ \]]){1,}|Not applicable
+    'importations':
+        required: True
+        type: str
+    'confidence_interval_method':
+        required: True
+        type: str
+    'calibration':
+        required: True
+        type: str
+    'spatial_structure':
+        required: True
+        type: str
     'citation':
         type: str
     'team_funding':
@@ -41,7 +96,4 @@ mapping:
         type: str
     'methods_long':
         type: str
-    'interventions':
-        type: str
-    'importations':
-        type: str
+        
