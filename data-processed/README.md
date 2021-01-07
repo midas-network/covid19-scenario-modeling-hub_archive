@@ -9,7 +9,7 @@ so that automatic data validation checks are run. Automated data validation will
 
 ## Example
 
-See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2021-01-04-MyTeam-MyModel.csv) for an illustration of part of a (hypothetical) submission file. 
+See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2020-12-21-MyTeam-MyModel.csv) for an illustration of part of a (hypothetical) submission file. 
 
 ## Subdirectory
 
