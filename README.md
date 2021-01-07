@@ -49,7 +49,7 @@ Last updated: 12-22-2020
     *   Weekly cumulative hospitalizations since simulation start
     *   **Weeks will follow epi-weeks (Sun-Sat) dated by the last day of the week**
 *   **“Ground Truth”**: The same data sources as the forecast hub will be used to represent “true” cases, deaths and hospitalizations. Specifically, JHU CSSE data for cases and deaths and HHS data for hospitalization. 
-*   **Metadata: **We will require a brief meta-data form, TBD, from all teams. 
+*   **Metadata:** We will require a brief meta-data form, TBD, from all teams. 
 *   **Uncertainty**: aligned with the Forecasting Hub we ask for 0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99 quantiles
 
 
