@@ -297,7 +297,7 @@ For the first round of submissions, the autmoated pull requests may not work yet
 ### Pull request scenario validation (development in progress)
 
 When a pull request is submitted, 
-the data are validated through [Travis CI](https://travis-ci.org/) which runs
+the data are validated by running
 the tests in [test_formatting.py](../code/validation/test_formatting.py).
 The intent for these tests are to validate the requirements above and 
 specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Validation-Checks#current-validation-checks).
