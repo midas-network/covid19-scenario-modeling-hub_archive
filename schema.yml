@@ -76,6 +76,9 @@ mapping:
     'importations':
         required: True
         type: str
+    'vaccine_efficacy_transmission':
+        required: True
+        type: str
     'confidence_interval_method':
         required: True
         type: str
