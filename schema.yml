@@ -48,9 +48,6 @@ mapping:
     'vaccine_efficacy_delay':
         required: True
         type: str
-    'vaccine_efficacy_delay':
-        required: True
-        type: str
     'vaccine_hesitancy':
         required: True
         type: str
