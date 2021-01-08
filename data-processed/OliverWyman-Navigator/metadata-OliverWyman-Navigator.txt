@@ -1,0 +1,26 @@
+team_name: OliverWyman
+model_name: Navigator
+model_abbr: OliverWyman-Navigator
+model_version: "1.0"
+model_contributors: Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, Dan Siegel <daniel.siegel@oliverwyman.com>
+website_url: https://pandemicnavigator.oliverwyman.com/
+license: LICENSE.txt
+methods: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis for Detected and Undetected cases and death counts following a compartmental formulation with non-stationary transition rates.
+modeling_NPI: Actual and expected NPIs, and compliance with NPIs, are captured in the Rt time series used for each scenario.
+compliance_NPI: Not applicable
+contact_tracing: Not applicable
+testing: Not applicable
+vaccine_efficacy_transmission: Effective vaccines are assumed to prevent individuals from transmitting the virus.
+vaccine_efficacy_delay: No delay assumed.
+vaccine_hesitancy: Elderly individuals are assumed to be more willing, on average, to receive the vaccine (in addition to being prioritized).
+vaccine_immunity_duration: Assumed to be 365 days.
+nature_immunity_duration: Assumed to be 365 days.
+case_fatality_rate: Not applicable
+infection_fatality_rate: Not applicable
+asymptomatics: Varied over time
+age_groups: Not applicable
+importations: Not applicable
+confidence_interval_method: Not applicable
+calibration: Standard calibration underlying compartmental models and necessary regressions for nonstationary transition rates
+spatial_structure: Model available at county level; applied at National level
+data_inputs: JHU reported daily confirmed cases, JHU reported daily deaths, HHS Hospitalizations
