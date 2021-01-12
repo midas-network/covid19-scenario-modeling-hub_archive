@@ -1,17 +1,82 @@
 team_name: University of Southern California Data Science Lab
 model_name: SI_kJalpha
 model_abbr: USC-SI_kJalpha
+model_version: 2020-01-08
 model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
+
 methods: Uses SIKJalpha which models temporally varying infection, death, and hospitalization rates. 
 Learning is performed by reducing the problem to multiple simple linear regression problems.
 True susceptible population is identified based on reported cases, whenever mathematically possible.
+
+modeling_NPI
+Historical infection rates assumed as a proxy for Non-Pharmaceutical Interventions (NPI).
+
+compliance_NPI
+As given by the scenarios.
+
+contract_tracing
+Not applicable.
+
+testing
+Not applicable.
+
+vaccine_efficacy_transmission
+Given efficacy assumed.
+
+vaccine_efficacy_delay
+Delay not assumed.
+
+vaccine_hesitancy
+Given hesitancy assumed to be uniformly distributed.
+
+vaccine_immunity_duration
+Permanent.
+
+natural_immunity_duration
+Permanent.
+
+case_fatality_rate
+Learned from recent data.
+
+infection_fatality_rate
+Learned from recent data.
+
+asymptomatics
+Uniformly sampled between 0 and 0.5. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic. Their individuals effects are not separately learnable in my model, and their combined effect is sufficient to generate the forecasts. In my approach, this combined effect is learned from the case data whenever mathematically possible (https://arxiv.org/abs/2006.02127). Unfortunately, in most cases this not learnable. Based the trend of this parameter (whenever it was learnable), I guess that 0-0.5 is likely.
+
+age_groups
+[1-4 ,	5-14 ,	15-24 ,	25-34 ,	35-44 ,	45-54 ,	55-64 ,	65-74 ,	75-84 ,	85+]
+The age group is used to capture the change in death and hospitalization rates in the future due to the vaccine
+
+importations
+Not applicable
+
+confidence_interval_method
+We generate multiple trajectories by 
+(i) Uniform sampling of the rate of under-reporting/asymptomatic which affect the case trajectories
+(ii) For each of the above case trajectories, we use multiple possibilities of death and hospitalization rates that have been seen in the recent past
+The above results in multiple points for each day. Quantiles are generated based on sampling among these points for each day.
+
+calibration
+No caliberation/manual-tuning other than the listed assumption and trivial settings: non-zero lag between infection and death.
+
+spatial_structure
+Not applicable.
+
+
 team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
-repo_url: https://github.com/scc-usc/ReCOVER-COVID-19
+
 data_inputs: Cases and deaths - JHU, hospitalization - HHS time-series
-citation: https://arxiv.org/abs/2007.05180
+
+citation: 
+[1] Ajitesh Srivastava, Tianjian Xu and Viktor K. Prasanna, "Fast and Accurate Forecasting of COVID-19 Deaths using the SIkJalpha Model". https://arxiv.org/abs/2007.05180.
+[2] Ajitesh Srivastava and Viktor K. Prasanna, "Data-driven Identification of Number of Unreported Cases for COVID-19: Bounds and Limitations".  SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2020) Health Day Track.
+[3] Ajitesh Srivastava and Viktor K. Prasanna, "Learning to Forecast and Forecasting to Learn from the COVID-19 Pandemic". https://arxiv.org/abs/2004.11372
+
+
 methods_long: We use our own epidemic model called SI-kJalpha, preliminary version
   of which we have successfully used during DARPA Grand Challenge 2014. Our model
   can consider the effect of many complexities of the epidemic process and yet be
