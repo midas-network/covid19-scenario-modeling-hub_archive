@@ -1,0 +1,62 @@
+team_name: Karlen Working Group
+model_name: python Population Modeller
+model_abbr: Karlen-pypm
+model_version: "1.0"
+model_contributors: Dean Karlen (University of Victoria and TRIUMF) <karlen@uvic.ca>
+website_url: https://pypm.github.io/home/
+license: cc-by-4.0
+methods: A network of populations connected via delay distributions calculated with
+	 discrete-time difference equations. The general framework allows for calculation
+	 of expectation values and for simulation of data that include stochastic variation.
+modeling_NPI: A model for the case history for each state, consisting of relatively
+	 long periods of constant behaviour. The observed growth rate within those periods
+	 determine the transmission rate parameter corresponding to the NPI in force at each
+	 time. Future transmission rates are pulled from the past transmission rates following
+	 the guidance in the scenario definitions.
+compliance_NPI: Variance of transmission rate is included for the interval construction. The
+		standard deviation of the transmission rates are set between 10% and 25%, depending
+		on the historical variation.
+contact_tracing: The removal delay time distribution for individuals from the circulating contagious
+		 population is fixed through the entire history. The effect of changes to
+		 contact tracing policy is absorbed in the inferred transmission rate.
+testing: The testing fraction was adjusted for the period March-August in order to improve agreement
+	 with hospitalization and death data as well as to bring the model into agreement with
+	 the Nationwide Commercial Laboratory Seroprevalence Survey for each state. Testing delays
+	 have assumed to be constant.
+vaccine_efficacy_transmission: The efficacy for transmission is assumed to be identical to the
+			       efficacy for immunity (specified in the scenario descriptions).
+vaccine_efficacy_delay: Delay distributions are defined to roughly match the two dose
+			schedule defined in the scenario descriptions. Gamma distributions are
+			used with typical mean and standard deviation of 20 and 10-15 days respectively.
+vaccine_hesitancy: If not specified in the scenario, it is assumed that 25% of the population are
+		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for all groups.
+vaccine_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
+			   once there is guidance.
+natural_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
+			   once there is guidance.
+case_fatality_rate: The infection fatality rate is the fundamental model parameter, and is estimated
+		    from case and death data. The rate is separately estimated for two age groups
+		    (below and above the age of 65). The inferred case fatality rate is therefore
+		    different for each state.
+infection_fatality_rate: This is estimated from case and death data from each state, and separately
+			 for two age groups (below and above the age of 65). The rate is therefore
+			 different for each state.
+asymptomatics: 0.1 is the assumed proportion for purposes of defining the connection to testing and
+	       hospitalization. A single delay distribution is assumed for removing individuals from
+	       the circulating contagious population, which captures many aspects of the infection
+	       cycle, including the asymptomatic fraction. Effectively the asymptomatic fraction is
+	       absorbed into the inferred transmission rate.
+age_groups: [0-64,65+]
+importations: Not applicable
+confidence_interval_method: Historical case/hospitalization/death time series data are used to estimate
+			    model parameters and give standard deviations of the estimators. To produce
+			    confidence intervals for time series forecasts, simulations are repeated
+			    hundreds of times with parameter variation and include the underlying
+			    probabilistic description of the infection process (negative binomial)
+			    and connections between populations (typically binomial).
+calibration: Case, hospitalization, death, and seroprevalence data are used to estimate model parameters
+	     to ensure the model predictions are consistent with observations.
+spatial_structure: Each state treated independently.
+data_inputs: JHU CSSE case and death data, HHS hospitalization data, Covid Tracking Project,
+	     Nationwide Commercial Laboratory Seroprevalence Survey
+citation: https://arxiv.org/abs/2007.07156
