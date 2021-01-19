@@ -1,0 +1,45 @@
+team_name: MOBS_NEU
+model_name: GLEAM_COVID
+model_abbrv: MOBS_NEU-GLEAM
+model_version: 1.0
+model_contributors: "Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <m.chinazzi@northeastern.edu>, 
+  Jessica T. Davis (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <davis.jes@northeastern.edu>, 
+  Kunpeng Mu (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <mu.k@northeastern.edu>, 
+  Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <xiong.xin@northeastern.edu>
+  Ana Pastore y Piontti (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <a.pastoreypiontti@northeastern.edu>, 
+  Alessandro Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <a.vespignani@northeastern.edu>" 
+website_url: http://covid19.gleamproject.org/
+license: cc-by-sa-4.0
+methods: GLEAM is an age-structured metapopulation model that includes county-level demographic data, short-range commuting flows, domestic air traffic, 
+  and age-specific contact patterns.
+modeling_NPI: "Domestic airline traffic flows and reductions are computed from the daily origin-destination traffic flows from the Official Aviation Guide (OAG) database.
+  Commuting and mobility reductions are obtained from the Google mobility (https://www.google.com/covid19/mobility/) data. 
+  The impact of mitigation policies is reflected in specific contact patterns calculated in the model’s synthetic populations on the different layers where individuals interact (i.e. households, schools, workplaces, and in the general community). 
+  We use information about NPIs (e.g. school closures and “stay-at-home” orders) and mobility reductions to modulate contact interactions in the different settings."
+compliance_NPI: Not applicable
+contact_tracing: Not applicable
+testing: Not applicable
+vaccine_efficacy_transmission: Leaky vaccines
+vaccine_efficacy_delay: 14 days
+vaccine_hesitancy: Scenario A, B, and D assume 20% vaccine hesitancy for all priority groups. Scenario C assumes 50% vaccine hesitancy for all priority groups. 
+vaccine_immunity_duration: Leaky vaccines
+natural_immunity_duration: Permanent
+case_fatality_rate: Not applicable
+infection_fatality_rate: Not applicable
+asymptomatics: 0.4
+age_groups: [0-9, 10-19, 20-24, 25-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80+]
+importations: Both international and domestic importations are explicitly modeled.
+confidence_interval_method: Credible interval generated from the ensemble projections.
+calibration: The model generates an ensemble of possible epidemic profiles that are filtered using the Akaike Information Criterion on the state-level time series of deaths until epiweek 2020W53. 
+  The different scenario projections are then obtained from the final ensemble of the selected stochastic runs.
+spatial_structure: county-level
+team_funding: COVID Supplement CDC-HHS-6U01IP001137-01.
+data_inputs: JHU CSSE case and death data, Google mobility data, Oxford Covid-19 Government Response Tracker (OxCGRT) data, and Official Aviation Guide (OAG) database.
+citation: "Chinazzi M, Davis JT, Ajelli M, Gioannini C, Litvinova M, Merler S, Pastore Y Piontti A, Mu K, Rossi L, Sun K, Viboud C, Xiong X, Yu H, Halloran ME, Longini IM Jr, Vespignani A. The effect of travel restrictions on the spread of the 2019 novel coronavirus (COVID-19) outbreak. Science. 2020 Apr 24;368(6489):395-400. doi: 10.1126/science.aba9757. Epub 2020 Mar 6. PMID: 32144116; PMCID: PMC7164386."
+methods_long: "The GLEAM framework is based on a metapopulation approach in which the United States are divided into geographical subpopulations corresponding to Census counties. 
+  Human mobility between subpopulations is represented on a network. The mobility data layer identifies the numbers of individuals traveling from one subpopulation to another. 
+  The mobility network constitutes of different kinds of mobility processes, from short-range commuting between nearby subpopulations to domestic flights. 
+  To model short-range mobility we rely on the 2011-2015 5-Year ACS Commuting Flows survey data, 
+  while the air travel network consists of the daily passenger flows between airport pairs (origin and destination) as obtained from the Official Aviation Guide (OAG) database.
+  The model generates an ensemble of possible epidemic projections described by the number of newly generated infections, times of disease arrival in the different states, and the number of traveling infection carriers. 
+  GLEAM incorporates detailed contact patterns structured by age characterizing the interactions in households, schools, workplaces and the community in general, obtained from the development of synthetic populations for each state."
