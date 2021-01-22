@@ -1,6 +1,6 @@
 team_name: MOBS_NEU
 model_name: GLEAM_COVID
-model_abbrv: MOBS_NEU-GLEAM
+model_abbr: MOBS_NEU-GLEAM
 model_version: 1.0
 model_contributors: "Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <m.chinazzi@northeastern.edu>, 
   Jessica T. Davis (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston, MA) <davis.jes@northeastern.edu>, 
