@@ -52,6 +52,7 @@ Last updated: 01-22-2021 for second round scenarios
 *   **“Ground Truth”**: The same data sources as the forecast hub will be used to represent “true” cases, deaths and hospitalizations. Specifically, JHU CSSE data for cases and deaths and HHS data for hospitalization. 
 *   **Metadata:** We will require a brief meta-data form, TBD, from all teams. 
 *   **Uncertainty**: aligned with the Forecasting Hub we ask for 0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99 quantiles
+*   **Ensemble Inclusion**: at present time, in order to be included in the ensemble models need to provide a full set of quantiles
 
 ## Second Round Scenarios
 
@@ -73,7 +74,7 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Masking:** maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
 *   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed so far in January persists through the end of the month, 25 million courses distibuted per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
-*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm)
+*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model)
 
 ### Scenario C: Fatigue and Hesitancy Scenario, No Variant Strain
 * **Scenario name for submission file:** `fatigue_no_var`  
@@ -95,10 +96,12 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart. 
 *   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed to date in January persists indefinitely until the proportion vaccinated reaches the hesitancy threshold
 *   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
-*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm)
+*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model)
 
 ### Other Scenarios
 *   We will welcome updated submissions for any scenarios asked for in prior rounds
+*   Scenarios should be updated based on data, observed interventions, and vaccines administered through Jan 23rd
+*   All assumptions after the forecast date should be kept the same as in prior rounds
 
 ## First Round Scenarios
 
