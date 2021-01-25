@@ -62,7 +62,7 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed so far in January persists through the end of the month, 25 million courses distibuted per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
+*   **Vaccine availability**: Actually ***administered*** doses in December and January, vaccine ***administration rate observed*** so far in January persists through the end of the month, 25 million courses ***distibuted*** per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
 *   **Variant strain**: no variant strain
 
 ### Scenario B: “Optimistic” Scenario, Variant Strain 
