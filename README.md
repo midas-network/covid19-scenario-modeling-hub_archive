@@ -22,7 +22,7 @@ Last updated: 01-22-2021 for second round scenarios
 
 ### Common Assumptions
 *   **Submission date**: January 29, 2021 (soft deadline)
-*   **Baseline date**: December 15, 2020 - date of baseline intervention levels
+*   **Baseline date**: January 23, 2021 - date of baseline intervention levels
 *   **End date for fitting data**: January 23, 2021 - no fitting should be done to data from after this date
 *   **Start date for first-round scenarios**: January 24, 2021 (week ending January 30) - first date of simulated outcomes
 *   **Simulation end date**: at least through week ending April 24, 2021 (13-week horizon); preferably July 24, 2021 (26-week horizon)
