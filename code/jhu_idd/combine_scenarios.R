@@ -15,8 +15,7 @@ for (i in 1:length(scenarios_)){
     data_tmp <- readr::read_csv(file_) %>%
         mutate(scenario_id = scen_id[i],
                scenario_name = scenarios_[i]) %>%
-        rename(model_projection_date = forecast_date) %>%
-        filter(!(location %in% c("US","00")))
+        rename(model_projection_date = forecast_date)
     data_comb <- data_comb %>% bind_rows(data_tmp)
 }
          
