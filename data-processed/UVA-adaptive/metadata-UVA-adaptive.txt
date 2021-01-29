@@ -1,0 +1,11 @@
+team_name: UVA
+model_name: adaptive
+model_abbr: UVA-adaptive
+model_version: "v5_ensemble_1.8_i14_1w"
+model_contributors: Przemyslaw Porebski (UVA) <pjp2b@virginia.edu>, Srini Venkatramanan (UVA) <srini@virginia.edu>, Anniruddha Adiga (UVA) <aa5dw@virginia.edu>, Bryan Lewis (UVA) <brylew@virginia.edu>, Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA), Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA) 
+website_url: https://biocomplexity.virginia.edu/project/covid-19-pandemic-response
+license: cc-by-4.0
+methods: Metapoplulation model at the county level, fit to observed cases and output of UVA-ensemble forcasting model.  We assume
+current effective transmissibility is a result of existing NPIs and mask wearing, and model shifts of NPIs as return to previous
+effective transmissibility levels.
+modeling_NPI: NPIs are assumed to be part of the fitted effecttive transmissibility
