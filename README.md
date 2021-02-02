@@ -186,6 +186,7 @@ Teams that have submitted model projections will be acknowledged here.
  - Rebecca Borchering, Penn State University
  - Nick Reich, Univeristy of Massachussetts at Amherst
  - Wilbert Van Panhuis, University of Pittsburgh
+ - Michael Runge, USGS
  - Lucie Contamin, University of Pittsburgh
  - John Levander, University of Pittsburgh
  - Jessica Salerno, University of Pittsburgh
