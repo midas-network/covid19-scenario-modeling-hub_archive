@@ -184,7 +184,7 @@ Teams that have submitted model projections will be acknowledged here.
  - Cécile Viboud, NIH Fogarty
  - Shaun Truelove, Johns Hopkins University
  - Rebecca Borchering, Penn State University
- - Nick Reich, Univeristy of Massachussetts at Amherst
+ - Nick Reich, University of Massachussetts at Amherst
  - Wilbert Van Panhuis, University of Pittsburgh
  - Michael Runge, USGS
  - Lucie Contamin, University of Pittsburgh
