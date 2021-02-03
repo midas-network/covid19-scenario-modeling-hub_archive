@@ -8,6 +8,8 @@ Data in this directory should be added to the repository through a pull request.
 
 Automatic validation is disabled at this point, until the validator software has been completed and tested. 
 
+Due to file size limitation, the file can be submitted in a `.zip` format with the same name as the `.csv` file provided. 
+
 ## Example
 
 See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2020-12-21-MyTeam-MyModel.csv) for an illustration of part of a (hypothetical) submission file. 
@@ -91,6 +93,7 @@ No additional columns are allowed.
 Each row in the file is either a point or quantile scenario for a location on a 
 particular date for a particular target. 
 
+If the size of the file is larger than 100MB, it can be submitted in a `.zip` format. 
 
 ### `model_projection_date`
 
