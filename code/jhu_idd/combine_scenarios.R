@@ -18,8 +18,11 @@ for (i in 1:length(scenarios_)){
         rename(model_projection_date = forecast_date)
     data_comb <- data_comb %>% bind_rows(data_tmp)
 }
-         
 
+data_comb <- data_comb %>% 
+  filter(!grepl("hosp", target))
+         
+sum(grepl("hosp", data_comb$target))
   
 # Save it
-readr::write_csv(data_comb, paste0(sub_date, "-JHU_IDD-CovidSP.csv"))
+readr::write_csv(data_comb, paste0('data-processed/JHU_IDD-CovidSP/', sub_date, "-JHU_IDD-CovidSP.csv"))
