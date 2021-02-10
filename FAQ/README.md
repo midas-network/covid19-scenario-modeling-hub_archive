@@ -13,3 +13,5 @@ Changes in NPI effectiveness should occur over two one-month stepdowns towards a
 This more accurately should have read:”Stepdowns from the starting rate to reference rates should occur over a three month period, with two intermediate levels of intervention, each lasting a month.”
 
 See the figure below for an illustration of how we intended step downs to occur. It is OK for stepdowns to have occurred over fewer steps, but not to have gone to zero. Here the “baseline” represents the NPI effectiveness/level of impact in a specific location at the start of the simulation period (e.g., January for Rounds 1-2). The “final level” represents the NPI effectiveness at a specified point in the past (e.g., September 2020 for the Optimistic Scenario). To get these levels we can take the difference between baseline and final, divide by 3, and subtract that sequentially 3 times.
+
+![NPI Stepdown Example](NPI_stepdown_example.png)
