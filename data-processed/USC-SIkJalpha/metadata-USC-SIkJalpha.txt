@@ -27,10 +27,10 @@ vaccine_efficacy_transmission
 Given efficacy assumed.
 
 vaccine_efficacy_delay
-Delay not assumed.
+14 days
 
 vaccine_hesitancy
-Given hesitancy assumed to be uniformly distributed.
+Given hesitancy assumed to be uniformly distributed. No hesitancy assumed for optimistic scenario
 
 vaccine_immunity_duration
 Permanent.
@@ -45,7 +45,7 @@ infection_fatality_rate
 Learned from recent data.
 
 asymptomatics
-Uniformly sampled between 0 and 0.5. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic. Their individuals effects are not separately learnable in my model, and their combined effect is sufficient to generate the forecasts. In my approach, this combined effect is learned from the case data whenever mathematically possible (https://arxiv.org/abs/2006.02127). Unfortunately, in most cases this not learnable. Based the trend of this parameter (whenever it was learnable), I guess that 0-0.5 is likely.
+Using sero-prevelance data from the CDC. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic.
 
 age_groups
 [1-4 ,	5-14 ,	15-24 ,	25-34 ,	35-44 ,	45-54 ,	55-64 ,	65-74 ,	75-84 ,	85+]
