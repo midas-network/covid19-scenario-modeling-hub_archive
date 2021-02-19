@@ -1,0 +1,10 @@
+team_name: Scenario Hub Coordination Group
+model_name: Ensemble
+model_abbr: Ensemble
+model_version: 1.0
+model_contributors: 
+website_url: 
+license: cc-by-4.0
+methods:  The ensemble projection is obtained by calculating the median of the median projection for each submission. The median projection is also calculated for each corresponding quantiles for the ensemble uncertainty intervals. Ensemble projection includes only those submissions that reported quantiles for their targets.
+importations: 
+methods_long: 
