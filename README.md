@@ -21,7 +21,7 @@ Scenarios will be updated during subsequent rounds of submissions.
 Last updated: 03-02-2021 for second round scenarios
 
 ### Common Assumptions
-*   **Submission date**: March 11, 2021 
+*   **Submission date**: March 9, 2021 
 *   **Baseline date**: See specific details below
 *   **End date for fitting data**: March 6, 2021 - no fitting should be done to data from after this date
 *   **Start date for third-round scenarios**: March 7, 2021 (week ending March 12) - first date of simulated outcomes
