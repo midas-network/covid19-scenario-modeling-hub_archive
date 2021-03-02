@@ -187,55 +187,6 @@ Last updated: 03-02-2021 for second round scenarios
 
 
 
-**References:**
-
--          VE against disease:[ https://www.nejm.org/doi/full/10.1056/NEJMc2036242](https://www.nejm.org/doi/full/10.1056/NEJMc2036242)
-
--          VE against infection:
-
-
-        `o`  [ https://www.medrxiv.org/content/10.1101/2021.02.15.21251623v1](https://www.medrxiv.org/content/10.1101/2021.02.15.21251623v1)
-
-
-        `o`  [ https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00448-7/fulltext](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00448-7/fulltext)
-
--          Doses:[ https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146](https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146)
-
--          J&J:[ https://www.npr.org/sections/coronavirus-live-updates/2021/01/29/961887796/johnson-johnson-vaccine-is-66-effective-in-preventing-moderate-to-severe-covid-1](https://www.npr.org/sections/coronavirus-live-updates/2021/01/29/961887796/johnson-johnson-vaccine-is-66-effective-in-preventing-moderate-to-severe-covid-1) 
-
- 
-
-New vaccine deliveries:
-
-([https://ktla.com/news/nationworld/biden-team-aiming-for-bigger-vaccination-numbers-as-u-s-vaccine-manufacturing-ramps-up/](https://ktla.com/news/nationworld/biden-team-aiming-for-bigger-vaccination-numbers-as-u-s-vaccine-manufacturing-ramps-up/)) – all before J&J
-
-[https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146](https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146)
-
--          145 million doses: Feb 22 – March 31 (113 mill per month)
-
--          200 million: end of May (100 mill per month)
-
--          200 million: end of July (100 mill per month)
-
- New vacc targets:
-
-- 2 million per day (Biden) – 30 million courses per month
-
-- 3 million per day (Wen) – 45 million courses per month
-
- 
-
-J&J vaccine:
-
--          Release:
-
--          End of March: 20 million doses
-
--          June target: 100 million doses (assume 20M April 1, 20M May 1, 25M June 1, 35M July 1)
-
--          VE: 66-72% (85% against severe)
-
-
 
 ## Submitting model projections
 Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
