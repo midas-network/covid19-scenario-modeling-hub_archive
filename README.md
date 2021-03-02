@@ -99,7 +99,7 @@ Last updated: 03-02-2021 for second round scenarios
     *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</span>** observed for February 2021. 
     *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
     *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
-    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. We recognize that there is uncertainty about what transmission would be without NPIs; this uncertainty should be incorporated into the scenario projections.
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** Included as part of “Social Distancing Measures” above.
 *   **Vaccination - Pfizer & Moderna**
@@ -132,7 +132,7 @@ Last updated: 03-02-2021 for second round scenarios
     *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">50% of the effectiveness of control</span>** observed for February 2021. 
     *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
     *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
-    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. We recognize that there is uncertainty about what transmission would be without NPIs; this uncertainty should be incorporated into the scenario projections.
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** Included as part of “Social Distancing Measures” above.
 *   **Vaccination - Pfizer & Moderna**
@@ -165,7 +165,7 @@ Last updated: 03-02-2021 for second round scenarios
     *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</span>** observed for February 2021. 
     *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
     *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
-    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc.. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. We recognize that there is uncertainty about what transmission would be without NPIs; this uncertainty should be incorporated into the scenario projections. 
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** Included as part of “Social Distancing Measures” above.
 *   **Vaccination - Pfizer & Moderna**
