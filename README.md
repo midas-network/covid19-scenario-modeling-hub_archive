@@ -18,20 +18,20 @@ Model projections for the first round will be due by Friday January 8th, 2021. M
 
 ## Scenarios
 Scenarios will be updated during subsequent rounds of submissions. 
-Last updated: 01-22-2021 for second round scenarios
+Last updated: 03-02-2021 for second round scenarios
 
 ### Common Assumptions
-*   **Submission date**: January 29, 2021 (soft deadline)
-*   **Baseline date**: January 23, 2021 - date of baseline intervention levels
-*   **End date for fitting data**: January 23, 2021 - no fitting should be done to data from after this date
-*   **Start date for first-round scenarios**: January 24, 2021 (week ending January 30) - first date of simulated outcomes
-*   **Simulation end date**: at least through week ending April 24, 2021 (13-week horizon); preferably July 24, 2021 (26-week horizon)
+*   **Submission date**: March 11, 2021 
+*   **Baseline date**: See specific details below
+*   **End date for fitting data**: March 6, 2021 - no fitting should be done to data from after this date
+*   **Start date for third-round scenarios**: March 7, 2021 (week ending March 12) - first date of simulated outcomes
+*   **Simulation end date**: at least through week ending June 5, 2021 (13-week horizon); preferably Sept 4, 2021 (26-week horizon)
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
 *   **Vaccine effectiveness**: level of effectiveness and available doses are specified for each scenario; assumptions regarding time required to develop immunity, age-related variation in effectiveness, duration of immunity, and additional effects of the vaccine on transmission are left to the discretion of each team
 *   **Vaccine allocation**: between-state allocation is based on population per the CDC/NAS [guidelines](https://www.nap.edu/catalog/25917/framework-for-equitable-allocation-of-covid-19-vaccine#resources) (proportional allocation); within-state allocation and the impact of vaccine hesitancy are left to the discretion of each team
 *   **Vaccine immunity delay:** There is approximately a 14 day delay according to the Pfizer data; because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it
-* **Vaccine uptake:** It is unlikely vaccine uptake will be 100% within prioritized groups, however sufficient data are not available to specify this; we will leave this to team discretion, but we ask that they include these assumptions in their meta-data file
+* **Vaccine uptake:** See specific details below.
 *   **Vaccine rollout**: rollout to follow [ACIP recommendations](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-20/02-COVID-Dooling.pdf) unless known to be contradicted by state recommendations
     *   Phase 1a: health care workers, long-term care facilities
     *   Phase 1b: frontline essential workers, adults 75+
@@ -54,92 +54,188 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Uncertainty**: aligned with the Forecasting Hub we ask for 0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99 quantiles
 *   **Ensemble Inclusion**: at present time, in order to be included in the ensemble models need to provide a full set of quantiles
 
-## Second Round Scenarios
+## Third Round Scenarios
 
-### Scenario A: “Optimistic” Scenario, No Variant Strain 
-* **Scenario name for submission file:** `optimistic_no_var`  
-* **Scenario id for submission file:** `A-2021-01-22` 
-*   **Social Distancing Measures**: baseline state orders with regards to NPIs continue for six weeks from their start date (i.e., the date each individual state started the policy regime in place at baseline), interventions step down from baseline to the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
+### Scenario A. High Vaccination, Moderate NPI
+
+* **Scenario name for submission file:** `highVac_modNPI`  
+* **Scenario id for submission file:** `A-2021-03-05` 
+*   **Social Distancing Measures**:
+    *   Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
+    *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">50% of the effectiveness of control</span>** observed for February 2021. 
+    *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
+    *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place, but still including immunity, vaccination, etc. We recognize that there is uncertainty about what the effects would be without NPIs; this uncertainty should be incorporated into the scenario projections.
 *   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** maintained at baseline levels indefinitely
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually ***administered*** doses in December and January, vaccine ***administration rate observed*** so far in January persists through the end of the month, 25 million courses ***distibuted*** per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
-*   **Variant strain**: no variant strain
+*   **Masking:** Included as part of “Social Distancing Measures” above.
+*   **Vaccination - Pfizer & Moderna**
+    *   **Vaccine efficacy (2-dose vaccines)**:
+        *   <span style="text-decoration:underline;">First dose: **_90% against disease_**</span>, 14 days after 1<sup>st</sup> dose
+        *   <span style="text-decoration:underline;">Second dose: **_95% against disease_**</span>, 14 days after 2<sup>nd</sup> dose
+        *   Transmission impact at teams’ discretion and should be clearly documented in team’s metadata.
+        *   Doses 3.5 weeks apart
+    *   **Vaccine availability**: 
+        *   <span style="text-decoration:underline;">December, January, and February: based on data on administered doses</span> (second doses should be taken into account)
+        *   <span style="text-decoration:underline;">March-August:** _35 million_** administered first doses/month</span>, with the intention of protocols being followed (70M doses/mo)
+        *   If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
+    *   The specified scenarios do not include the Johnson and Johnson one-dose vaccine, so it should not be modeled. Next round may include the explicit introduction of J&J vaccine.
+*   **B.1.1.7 Variant strain**: Teams can model the B.1.1.7 variant as appropriate to their model. Any assumptions should be clearly defined in the metadata. 
 
-### Scenario B: “Optimistic” Scenario, Variant Strain 
-* **Scenario name for submission file:** `optimistic_var`  
-* **Scenario id for submission file:** `B-2021-01-22` 
-*   **Social Distancing Measures**: baseline state orders with regards to NPIs continue for six weeks from their start date (i.e., the date each individual state started the policy regime in place at baseline), interventions step down from baseline to the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
+    The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model). No differences in severity, mortality, or VE are assumed in default.
+
+*   **Vaccine coverage:_<span style="text-decoration:underline;"> No more than 90%</span>_** of any population group receives the vaccine
+
+     
+
+
+
+
+### Scenario B. High Vaccination, Low NPI
+
+*   **Scenario name for submission file:** `highVac_lowNPI`
+*   **Scenario id for submission file:** `B-2021-03-05`
+*   **Social Distancing Measures**:
+    *   Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
+    *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</span>** observed for February 2021. 
+    *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
+    *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. 
 *   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** maintained at baseline levels indefinitely
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed so far in January persists through the end of the month, 25 million courses distibuted per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
-*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model)
+*   **Masking:** Included as part of “Social Distancing Measures” above.
+*   **Vaccination - Pfizer & Moderna**
+    *   **Vaccine efficacy (2-dose vaccines)**:
+        *   <span style="text-decoration:underline;">First dose: **_90% against disease_**</span>, 14 days after 1<sup>st</sup> dose
+        *   <span style="text-decoration:underline;">Second dose: **_95% against disease_**</span>, 14 days after 2<sup>nd</sup> dose
+        *   Transmission impact at teams’ discretion and should be clearly documented in team’s metadata.
+        *   Doses 3.5 weeks apart
+    *   **Vaccine availability**: 
+        *   <span style="text-decoration:underline;">December, January, and February: Administered doses</span> (second doses should take into account)
+        *   <span style="text-decoration:underline;">March-August:** _35 million_** administered first doses/month</span>, with the intention of protocols being followed (70M doses/mo) 
+        *   If the maximum level of vaccination specified (e.g., 90% in this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
+    *   The specified scenarios do not include the Johnson and Johnson one-dose vaccine, so it should not be modeled. Next round may include the explicit introduction of J&J vaccine.
+*   **B.1.1.7 Variant strain**: Teams can model the B.1.1.7 variant as appropriate to their model. Any assumptions should be clearly defined in the metadata. 
 
-### Scenario C: Fatigue and Hesitancy Scenario, No Variant Strain
-* **Scenario name for submission file:** `fatigue_no_var`  
-* **Scenario id for submission file:** `C-2021-01-22`
-*   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to an additional 5% below the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
+    The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model). No differences in severity, mortality, or VE are assumed in default.
+
+*   **Vaccine coverage:_<span style="text-decoration:underline;"> No more than 90%</span>_** of any population group receives the vaccine
+
+ 
+
+### Scenario C. Low Vaccination, Moderate NPI
+
+
+
+*   **Scenario name for submission file:** `lowVac_modNPI`
+*   **Scenario id for submission file:** `C-2021-03-05`
+*   **Social Distancing Measures**:
+    *   Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
+    *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">50% of the effectiveness of control</span>** observed for February 2021. 
+    *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
+    *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc. 
 *   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** adherence to these measures steps down from baseline to an additional 5% below the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart. 
-*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed to date in January persists indefinitely until the proportion vaccinated reaches the hesitancy threshold
-*   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
-*   **Variant strain**: no variant strain
+*   **Masking:** Included as part of “Social Distancing Measures” above.
+*   **Vaccination - Pfizer & Moderna**
+    *   **Vaccine efficacy (2-dose vaccines)**:
+        *   <span style="text-decoration:underline;">First dose: **_50% against disease_**</span>, 14 days after 1<sup>st</sup> dose
+        *   <span style="text-decoration:underline;">Second dose: **_75% against disease_**</span>, 14 days after 2<sup>nd</sup> dose
+        *   Transmission impact at teams’ discretion and should be clearly documented in team’s metadata.
+        *   Doses 3.5 weeks apart
+    *   **Vaccine availability**: 
+        *   <span style="text-decoration:underline;">December, January, and February: based on data on administered doses</span> (second doses should take into account)
+        *   <span style="text-decoration:underline;">March-August:** _20 million_** administered first doses/month</span>, with the intention of protocols being followed (40M doses/mo) 
+        *   If the maximum level of vaccination specified (e.g., 50% in this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
+    *   The specified scenarios do not include the Johnson and Johnson one-dose vaccine, so it should not be modeled. Next round may include the explicit introduction of J&J vaccine.
+*   **B.1.1.7 Variant strain**: Teams can model the B.1.1.7 variant as appropriate to their model. Any assumptions should be clearly defined in the metadata. 
 
-### Scenario D: Fatigue and Hesitancy Scenario, Variant Strain
-* **Scenario name for submission file:** `fatigue_var`  
-* **Scenario id for submission file:** `D-2021-01-22`
-*   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to an additional 5% below the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
+    The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model). No differences in severity, mortality, or VE are assumed in default.
+
+*   **Vaccine coverage:_<span style="text-decoration:underline;"> No more than 50%</span>_** of any population group receives the vaccine
+
+
+
+### Scenario D. Low Vaccination & Low NPI
+
+
+
+*   **Scenario name for submission file:** `lowVac_lowNPI`
+*   **Scenario id for submission file:** `D-2021-03-05`
+*   **Social Distancing Measures**:
+    *   Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
+    *   <span style="text-decoration:underline;">Declines gradually over a period of 5 months</span> starting at the beginning of March and ending in August at **<span style="text-decoration:underline;">20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</span>** observed for February 2021. 
+    *   Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns), but should occur over the full period.
+    *   The effectiveness of control in February 2021 should be based on the last two weeks of the month. 
+    *   Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of Feb 2021 effectiveness) would approximate an epidemic without NPIs (e.g. no masks, no social distancing) in place but would still including immunity, vaccination, etc.. 
 *   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** adherence to these measures steps down from baseline to an additional 5% below the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart. 
-*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed to date in January persists indefinitely until the proportion vaccinated reaches the hesitancy threshold
-*   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
-*   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model)
+*   **Masking:** Included as part of “Social Distancing Measures” above.
+*   **Vaccination - Pfizer & Moderna**
+    *   **Vaccine efficacy (2-dose vaccines)**:
+        *   <span style="text-decoration:underline;">First dose: **_50% against disease_**</span>, 14 days after 1<sup>st</sup> dose
+        *   <span style="text-decoration:underline;">Second dose: **_75% against disease_**</span>, 14 days after 2<sup>nd</sup> dose
+        *   Transmission impact at teams’ discretion and should be clearly documented in team’s metadata.
+        *   Doses 3.5 weeks apart
+    *   **Vaccine availability**: 
+        *   <span style="text-decoration:underline;">December, January, and February: based on data on administered doses</span> (second doses should take into account)
+        *   <span style="text-decoration:underline;">March-August:** _20 million_** administered first doses/month</span>, with the intention of protocols being followed (40M doses/mo) 
+        *   If the maximum level of vaccination specified (e.g., 50% in this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
+    *   The specified scenarios do not include the Johnson and Johnson one-dose vaccine, so it should not be modeled. Next round may include the explicit introduction of J&J vaccine.
+*   **B.1.1.7 Variant strain**: Teams can model the B.1.1.7 variant as appropriate to their model. Any assumptions should be clearly defined in the metadata. 
 
-### Other Scenarios
-*   We will welcome updated submissions for any scenarios asked for in prior rounds
-*   Scenarios should be updated based on data, observed interventions, and vaccines administered through Jan 23rd
-*   All assumptions after the forecast date should be kept the same as in prior rounds
+    The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model). No differences in severity, mortality, or VE are assumed in default.
 
-## First Round Scenarios
+*   **Vaccine coverage:_<span style="text-decoration:underline;"> No more than 50%</span>_** of any population group receives the vaccine
 
-### Scenario A: “Optimistic” Scenario 
-* **Scenario name for submission file:** `optimistic`  
-* **Scenario id for submission file:** `A-2020-12-22` 
-*   **Social Distancing Measures**: baseline state orders with regards to NPIs continue for six weeks from their start date (i.e., the date each individual state started the policy regime in place at baseline), interventions step down from baseline to the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** maintained at baseline levels indefinitely
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually distributed doses in December (approx.), 25 million courses (50 million doses) in January, 25 million courses per month thereafter
 
-### Scenario B: Business as Usual + Moderate Vaccine Scenario:
-* **Scenario name for submission file:** `moderate`  
-* **Scenario id for submission file:** `B-2020-12-22`
-*   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking: **maintained at baseline levels indefinitely
-*   **Vaccine efficacy**: 70% after two doses, 20% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
 
-### Scenario C: Fatigue and Hesitancy Scenario:
-* **Scenario name for submission file:** `fatigue`  
-* **Scenario id for submission file:** `C-2020-12-22`
-*   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to an additional 5% below the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** adherence to these measures steps down from baseline to an additional 5% below the lowest levels seen since September 2020 in a particular jurisdiction over two one-month steps
-*   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart. 
-*   **Vaccine availability**: Actually distributed doses in December (approx.), 12.5 million courses in January, 25 million courses per month thereafter
-*   **Vaccine hesitancy:** no more than 50% of any priority group accepts the vaccine
+**References:**
 
-### Scenario D: Counterfactual Scenario
-* **Scenario name for submission file:** `counterfactual`  
-* **Scenario id for submission file:** `D-2020-12-22`
-*   **Social Distancing Measures**: current elevated state orders with regards to NPIs continue for stated length or three weeks after the NPI is started if length is unstated; thereafter interventions step down from baseline to the lowest levels seen since May 2020 in a particular jurisdiction over two one-month steps
-*   **Testing-Trace-Isolate:** constant at baseline levels
-*   **Masking:** maintained at baseline levels indefinitely
-*   **Vaccine** : no vaccine
+-          VE against disease:[ https://www.nejm.org/doi/full/10.1056/NEJMc2036242](https://www.nejm.org/doi/full/10.1056/NEJMc2036242)
+
+-          VE against infection:
+
+
+        `o`  [ https://www.medrxiv.org/content/10.1101/2021.02.15.21251623v1](https://www.medrxiv.org/content/10.1101/2021.02.15.21251623v1)
+
+
+        `o`  [ https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00448-7/fulltext](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00448-7/fulltext)
+
+-          Doses:[ https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146](https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146)
+
+-          J&J:[ https://www.npr.org/sections/coronavirus-live-updates/2021/01/29/961887796/johnson-johnson-vaccine-is-66-effective-in-preventing-moderate-to-severe-covid-1](https://www.npr.org/sections/coronavirus-live-updates/2021/01/29/961887796/johnson-johnson-vaccine-is-66-effective-in-preventing-moderate-to-severe-covid-1) 
+
+ 
+
+New vaccine deliveries:
+
+([https://ktla.com/news/nationworld/biden-team-aiming-for-bigger-vaccination-numbers-as-u-s-vaccine-manufacturing-ramps-up/](https://ktla.com/news/nationworld/biden-team-aiming-for-bigger-vaccination-numbers-as-u-s-vaccine-manufacturing-ramps-up/)) – all before J&J
+
+[https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146](https://www.politico.com/news/2021/02/23/us-3-million-vaccine-doses-per-day-april-471146)
+
+-          145 million doses: Feb 22 – March 31 (113 mill per month)
+
+-          200 million: end of May (100 mill per month)
+
+-          200 million: end of July (100 mill per month)
+
+ New vacc targets:
+
+- 2 million per day (Biden) – 30 million courses per month
+
+- 3 million per day (Wen) – 45 million courses per month
+
+ 
+
+J&J vaccine:
+
+-          Release:
+
+-          End of March: 20 million doses
+
+-          June target: 100 million doses (assume 20M April 1, 20M May 1, 25M June 1, 35M July 1)
+
+-          VE: 66-72% (85% against severe)
+
+
 
 ## Submitting model projections
 Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
