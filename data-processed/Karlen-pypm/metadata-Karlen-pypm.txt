@@ -11,11 +11,12 @@ methods: A network of populations connected via delay distributions calculated w
 modeling_NPI: A model for the case history for each state, consisting of relatively
 	 long periods of constant behaviour. The observed growth rate within those periods
 	 determine the transmission rate parameter corresponding to the NPI in force at each
-	 time. Future transmission rates are pulled from the past transmission rates following
-	 the guidance in the scenario definitions.
+	 time. Feb 2020 (NPI=0) defined by initial growth fit for each state - a common value
+	 is assumed for all states. Roughly corresponds to R0 = 4 +/- 0.4 (original strain) R0=6 (B.1.1.7).
+	 The NPI is reduced linearly (one step per day) over the period of 5 months.
 compliance_NPI: Variance of transmission rate is included for the interval construction. The
-		standard deviation of the transmission rates are set between 10% and 25%, depending
-		on the historical variation.
+		standard deviation of the transmission rates arise from the standard deviation of the
+		endpoint NPI (10% on R0).
 contact_tracing: The removal delay time distribution for individuals from the circulating contagious
 		 population is fixed through the entire history. The effect of changes to
 		 contact tracing policy is absorbed in the inferred transmission rate.
@@ -28,8 +29,8 @@ vaccine_efficacy_transmission: The efficacy for transmission is assumed to be id
 vaccine_efficacy_delay: Delay distributions are defined to roughly match the two dose
 			schedule defined in the scenario descriptions. Gamma distributions are
 			used with typical mean and standard deviation of 20 and 10-15 days respectively.
-vaccine_hesitancy: If not specified in the scenario, it is assumed that 25% of the population are
-		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for all groups.
+vaccine_hesitancy: For the high (low) vaccination scenarios it is assumed that 25% (50%) of the population are
+		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for the two age groups.
 vaccine_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
 			   once there is guidance.
 natural_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
@@ -55,8 +56,10 @@ confidence_interval_method: Historical case/hospitalization/death time series da
 			    probabilistic description of the infection process (negative binomial)
 			    and connections between populations (typically binomial).
 calibration: Case, hospitalization, death, and seroprevalence data are used to estimate model parameters
-	     to ensure the model predictions are consistent with observations.
+	     to ensure the model predictions are consistent with observations. B.1.1.7 advantage over current
+	     dominant strains estimated from SGTF data from Florida and California (Helix.com). B.1.1.7
+	     current "frequency" estimated from case fits - typically 10-30% (large uncertainty).
 spatial_structure: Each state treated independently.
-data_inputs: JHU CSSE case and death data, HHS hospitalization data, Covid Tracking Project,
+data_inputs: JHU CSSE case and death data, HHS hospitalization data, Google open-data vaccination data,
 	     Nationwide Commercial Laboratory Seroprevalence Survey
 citation: https://arxiv.org/abs/2007.07156
