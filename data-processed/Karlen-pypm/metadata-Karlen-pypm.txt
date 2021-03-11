@@ -47,7 +47,7 @@ asymptomatics: 0.1 is the assumed proportion for purposes of defining the connec
 	       the circulating contagious population, which captures many aspects of the infection
 	       cycle, including the asymptomatic fraction. Effectively the asymptomatic fraction is
 	       absorbed into the inferred transmission rate.
-age_groups: [0-64,65+]
+age_groups: [0-64,65+], with mixing
 importations: Not applicable
 confidence_interval_method: Historical case/hospitalization/death time series data are used to estimate
 			    model parameters and give standard deviations of the estimators. To produce
