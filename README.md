@@ -44,8 +44,8 @@ Last updated: 03-02-2021 for second round scenarios
 *   **Results**: some subset of the following
     *   Weekly incident deaths
     *   Weekly cumulative deaths since start of pandemic (use JHU CSSE for baseline)
-    *   Weekly incident cases
-    *   Weekly cumulative cases since start of pandemic (use JHU CSSE for baseline)
+    *   Weekly incident reported cases
+    *   Weekly cumulative reported cases since start of pandemic (use JHU CSSE for baseline)
     *   Weekly incident hospitalizations
     *   Weekly cumulative hospitalizations since simulation start
     *   **Weeks will follow epi-weeks (Sun-Sat) dated by the last day of the week**
