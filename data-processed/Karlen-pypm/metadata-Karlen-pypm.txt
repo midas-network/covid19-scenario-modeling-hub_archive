@@ -12,7 +12,8 @@ modeling_NPI: A model for the case history for each state, consisting of relativ
 	 long periods of constant behaviour. The observed growth rate within those periods
 	 determine the transmission rate parameter corresponding to the NPI in force at each
 	 time. Feb 2020 (NPI=0) defined by initial growth fit for each state - a common value
-	 is assumed for all states. Roughly corresponds to R0 = 4 +/- 0.4 (original strain) R0=6 (B.1.1.7).
+	 is assumed for all states. Lower estimates are used, and these roughly correspond to 
+	 R0=2.5 (original strain) R0=4 (B.1.1.7).
 	 The NPI is reduced linearly (one step per day) over the period of 5 months.
 compliance_NPI: Variance of transmission rate is included for the interval construction. The
 		standard deviation of the transmission rates arise from the standard deviation of the
