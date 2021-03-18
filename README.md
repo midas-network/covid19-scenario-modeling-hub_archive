@@ -238,4 +238,5 @@ Teams that have submitted model projections will be acknowledged here.
  - John Levander, University of Pittsburgh
  - Jessica Salerno, University of Pittsburgh
  - Claire Smith, Johns Hopkins University
+ - Emily Howerton, Penn State University
  
