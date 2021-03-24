@@ -58,7 +58,7 @@ Last updated: 03-23-2021 for Round 4 Scenarios
 ## Third Round Scenarios
 
 
-![Scenario Table](https://)
+![Scenario Table](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png)
 
 
 
