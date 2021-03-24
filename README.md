@@ -73,7 +73,7 @@ Last updated: 03-23-2021 for **Round 4 Scenarios**.
 * **Scenario id for submission file:** `A-2021-03-28` 
 *   **Social Distancing Measures**:
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *	<u>Declines over a period of 6 months</u> starting in **April 2021** and ending in **September 2021** at <u>**50% of the effectiveness </u>** of control observed for **March 2021**. 
+    *	<ins>Declines over a period of 6 months</ins> starting in **April 2021** and ending in **September 2021** at <ins>**50% of the effectiveness </ins>** of control observed for **March 2021**. 
     *	Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns).
     *	**Decline can be gradual or sudden, and can differ in speed between states.**
     *	The effectiveness of control in March 2021 should be based on the last two weeks of the month. 
@@ -84,23 +84,23 @@ Last updated: 03-23-2021 for **Round 4 Scenarios**.
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <u>First dose: **_75% against disease_**</u>, 14 days after 1<sup>st</sup> dose
-            *   <u>Second dose: **_95% against disease_**</u>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_75% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_95% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
-            *   <u>December, January, February, and March: based on data on administered doses</u> (second doses should be taken into account)
-            *   <u>April-September:**_50 million_** administered first doses/month</u>, with the intention of protocols being followed (70M doses/mo)
+            *   <ins>December, January, February, and March: based on data on administered doses</ins> (second doses should be taken into account)
+            *   <ins>April-September: **_50 million_** administered first doses/month</ins>, with the intention of protocols being followed (70M doses/mo)
             *   If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose vaccine)**:
-            *	<u>Single dose: **_70% against symptoms_**</u>, 14 days after dose
+            *	<ins>Single dose: **_70% against symptoms_**</ins>, 14 days after dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
         *	**Vaccine availability**: 
-            *	<u>March: based on data on administered doses</u>, with continuing at rate current on date of projection for remainder of month
-            *	<u>April-September: 10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month.</u>
+            *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
+            *	<ins>April-September: 10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month.</ins>
             
-*	**Vaccination coverage: <u>_No more than 90%_</u>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
+*	**Vaccination coverage: <ins>_No more than 90%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
@@ -114,7 +114,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Scenario id for submission file:** `B-2021-03-28`
 *   **Social Distancing Measures**:
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *	<u>Declines over a period of 6 months</u> starting in **April 2021** and ending in **September 2021** at <u>**20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</u>** of control observed for **March 2021**. 
+    *	<ins>Declines over a period of 6 months</ins> starting in **April 2021** and ending in **September 2021** at <ins>**20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</ins>** of control observed for **March 2021**. 
     *	Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns).
     *	**Decline can be gradual or sudden, and can differ in speed between states.**
     *	The effectiveness of control in March 2021 should be based on the last two weeks of the month. 
@@ -124,23 +124,23 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <u>First dose: **_75% against disease_**</u>, 14 days after 1<sup>st</sup> dose
-            *   <u>Second dose: **_95% against disease_**</u>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_75% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_95% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
-            *   <u>December, January, February, and March: based on data on administered doses</u> (second doses should be taken into account)
-            *   <u>April-September:**_50 million_** administered first doses/month</u>, with the intention of protocols being followed (70M doses/mo)
+            *   <ins>December, January, February, and March: based on data on administered doses</ins> (second doses should be taken into account)
+            *   <ins>April-September: **_50 million_** administered first doses/month</ins>, with the intention of protocols being followed (70M doses/mo)
             *   If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose vaccine)**:
-            *	<u>Single dose: **_70% against symptoms_**</u>, 14 days after dose
+            *	<ins>Single dose: **_70% against symptoms_**</ins>, 14 days after dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
         *	**Vaccine availability**: 
-            *	<u>March: based on data on administered doses</u>, with continuing at rate current on date of projection for remainder of month
-            *	<u>April-September: 10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month.</u>
+            *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
+            *	<ins>April-September: 10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month.</ins>
             
-*	**Vaccination coverage: <u>_No more than 90%_</u>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
+*	**Vaccination coverage: <ins>_No more than 90%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
@@ -153,7 +153,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Scenario id for submission file:** `C-2021-03-28`
 *   **Social Distancing Measures**:
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *	<u>Declines over a period of 6 months</u> starting in **April 2021** and ending in **September 2021** at <u>**50% of the effectiveness </u>** of control observed for **March 2021**. 
+    *	<ins>Declines over a period of 6 months</ins> starting in **April 2021** and ending in **September 2021** at <ins>**50% of the effectiveness </ins>** of control observed for **March 2021**. 
     *	Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns).
     *	**Decline can be gradual or sudden, and can differ in speed between states.**
     *	The effectiveness of control in March 2021 should be based on the last two weeks of the month. 
@@ -163,23 +163,23 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <u>First dose: **_50% against disease_**</u>, 14 days after 1<sup>st</sup> dose
-            *   <u>Second dose: **_85% against disease_**</u>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_50% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_85% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
-            *   <u>December, January, February, and March: based on data on administered doses</u> (second doses should be taken into account)
-            *   <u>April-September:**_45 million_** administered first doses/month</u>, with the intention of protocols being followed (90M doses/mo)
+            *   <ins>December, January, February, and March: based on data on administered doses</ins> (second doses should be taken into account)
+            *   <ins>April-September: **_45 million_** administered first doses/month</ins>, with the intention of protocols being followed (90M doses/mo)
             *   If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose vaccine)**:
-            *	<u>Single dose: **_60% against symptoms_**</u>, 14 days after dose
+            *	<ins>Single dose: **_60% against symptoms_**</ins>, 14 days after dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
         *	**Vaccine availability**: 
-            *	<u>March: based on data on administered doses</u>, with continuing at rate current on date of projection for remainder of month
-            *	<u>April-September: 5M administered doses/month.</u>
+            *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
+            *	<ins>April-September: 5M administered doses/month.</ins>
             
-*	**Vaccination coverage: <u>_No more than 75%_</u>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
+*	**Vaccination coverage: <ins>_No more than 75%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
@@ -192,7 +192,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Scenario id for submission file:** `D-2021-03-28`
 *   **Social Distancing Measures**:
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *	<u>Declines over a period of 6 months</u> starting in **April 2021** and ending in **September 2021** at <u>**20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</u>** observed for **March 2021**. 
+    *	<ins>Declines over a period of 6 months</ins> starting in **April 2021** and ending in **September 2021** at <ins>**20% of the effectiveness of control (i.e., an 80% reduction in effectiveness)</ins>** observed for **March 2021**. 
     *	Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns).
     *	**Decline can be gradual or sudden, and can differ in speed between states.**
     *	The effectiveness of control in March 2021 should be based on the last two weeks of the month. 
@@ -202,23 +202,23 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <u>First dose: **_50% against disease_**</u>, 14 days after 1<sup>st</sup> dose
-            *   <u>Second dose: **_85% against disease_**</u>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_50% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_85% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
-            *   <u>December, January, February, and March: based on data on administered doses</u> (second doses should be taken into account)
-            *   <u>April-September:** _45 million_** administered first doses/month</u>, with the intention of protocols being followed (90M doses/mo)
+            *   <ins>December, January, February, and March: based on data on administered doses</ins> (second doses should be taken into account)
+            *   <ins>April-September: **_45 million_** administered first doses/month</ins>, with the intention of protocols being followed (90M doses/mo)
             *   If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new doses beyond this amount) 
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose vaccine)**:
-            *	<u>Single dose: **_60% against symptoms_**</u>, 14 days after dose
+            *	<ins>Single dose: **_60% against symptoms_**</ins>, 14 days after dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
         *	**Vaccine availability**: 
-            *	<u>March: based on data on administered doses</u>, with continuing at rate current on date of projection for remainder of month
-            *	<u>April-September: 5M administered doses/month.</u>
+            *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
+            *	<ins>April-September: 5M administered doses/month.</ins>
             
-*	**Vaccination coverage: <u>_No more than 75%_</u>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
+*	**Vaccination coverage: <ins>_No more than 75%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
