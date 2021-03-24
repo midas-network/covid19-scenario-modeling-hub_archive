@@ -99,7 +99,7 @@ Last updated: 03-23-2021 for **Round 4 Scenarios**.
         *	**Vaccine availability**: 
             *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
             *	<ins>April-September: **10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month**.</ins>
-            
+
 *	**Vaccination coverage: <ins>_No more than 90%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
@@ -139,7 +139,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
         *	**Vaccine availability**: 
             *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
             *	<ins>April-September: **10M administered in April, 15M in May, 20M June, 20M July, 20M August, 20M September administered doses/month**.</ins>
-            
+
 *	**Vaccination coverage: <ins>_No more than 90%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 90% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
@@ -178,7 +178,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
         *	**Vaccine availability**: 
             *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
             *	<ins>April-September: **5M administered doses/month**.</ins>
-            
+
 *	**Vaccination coverage: <ins>_No more than 75%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
@@ -217,7 +217,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
         *	**Vaccine availability**: 
             *	<ins>March: based on data on administered doses</ins>, with continuing at rate current on date of projection for remainder of month
             *	<ins>April-September: **5M administered doses/month**.</ins>
-            
+
 *	**Vaccination coverage: <ins>_No more than 75%_</ins>** of any population group receives the vaccine. If the maximum level of vaccination specified (e.g., 75% for this scenario) is reached in all population groups, assume that no more vaccination occurs (i.e., do not model new dose administration beyond this amount). 
 
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
