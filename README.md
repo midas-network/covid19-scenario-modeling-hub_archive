@@ -55,11 +55,11 @@ Last updated: 03-23-2021 for Round 4 Scenarios
 *   **Ensemble Inclusion**: at present time, in order to be included in the ensemble models need to provide a full set of quantiles
 
 
-## Third Round Scenarios
+## Third Round Scenarios    
 
 
-![Scenario Table](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png)
-
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png){#id .class width=75% height=75%}
+        
 
 
 ### Scenario A. High Vaccination, Moderate NPI
