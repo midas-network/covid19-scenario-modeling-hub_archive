@@ -18,7 +18,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 ## Scenarios
 Scenarios will be updated during subsequent rounds of submissions. 
-Last updated: 03-23-2021 for Round 4 Scenarios
+Last updated: 03-23-2021 for **Round 4 Scenarios**.
 
 ### Common Assumptions
 *   **Submission date**: March 30, 2021 
@@ -54,12 +54,17 @@ Last updated: 03-23-2021 for Round 4 Scenarios
 *   **Uncertainty**: aligned with the Forecasting Hub we ask for 0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99 quantiles
 *   **Ensemble Inclusion**: at present time, in order to be included in the ensemble models need to provide a full set of quantiles
 
+</br>
 
-## Third Round Scenarios    
 
+## Forth Round Scenarios    
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png){#id .class width=75% height=75%}
+</br>
+
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png)
         
+</br>
+
 
 
 ### Scenario A. High Vaccination, Moderate NPI
@@ -100,6 +105,7 @@ Last updated: 03-23-2021 for Round 4 Scenarios
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
 
+</br>
 
 
 ### Scenario B. High Vaccination, Low NPI
@@ -139,7 +145,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
 
-
+</br>
 
 ### Scenario C. Low Vaccination, Moderate NPI
 
@@ -178,7 +184,7 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
 
-
+</br>
 
 ### Scenario D. Low Vaccination, Low NPI
 
@@ -217,7 +223,14 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *	**B.1.1.7 Variant strain**: Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. 
 The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
 
+</br>
 
+## Previous Rounds' Scenarios    
+
+- Round 2 Scenarios
+- [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
+
+</br>
 
 
 ## Submitting model projections
@@ -255,20 +268,51 @@ We are grateful to the teams who have generated these scenarios. The groups have
 All source code that is specific to the overall project is available under an open-source [MIT license](https://opensource.org/licenses/MIT). We note that this license does NOT cover model code from the various teams or model scenario data (available under specified licenses as described above). 
 
 ## Teams and models
-Teams that have submitted model projections will be acknowledged here. 
+*   *Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*
+    *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
+        Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins
+        Infectious Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),
+        Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins
+        Infectious Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics),
+        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins
+        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics),
+        Lindsay T. Keegan (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves
+        Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
+        (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
+*   *Northeastern University MOBS Lab — GLEAM COVID*
+    *   Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
+        University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
+        and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
+        for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston,
+        MA)„ Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
+        Northeastern University, Boston, MA), Ana Pastore y Piontti (Laboratory for the Modeling
+        of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
+        Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
+        University, Boston, MA)
+*   *USC Data Science Lab — SI kJalpha*
+    *   Ajitesh Srivastava, University of Southern California
+*   *University of Virginia — adaptive*
+    *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
+        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
+        (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
+        Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+        
+</br>
 
 ## The COVID-19 Scenario Modeling Hub Team
+
  - Justin Lessler, Johns Hopkins University
  - Katriona Shea, Penn State University
  - Cécile Viboud, NIH Fogarty
  - Shaun Truelove, Johns Hopkins University
  - Rebecca Borchering, Penn State University
+ - Claire Smith, Johns Hopkins University
+ - Emily Howerton, Penn State University
  - Nick Reich, University of Massachussetts at Amherst
  - Wilbert Van Panhuis, University of Pittsburgh
  - Michael Runge, USGS
  - Lucie Contamin, University of Pittsburgh
  - John Levander, University of Pittsburgh
  - Jessica Salerno, University of Pittsburgh
- - Claire Smith, Johns Hopkins University
- - Emily Howerton, Penn State University
+
  
