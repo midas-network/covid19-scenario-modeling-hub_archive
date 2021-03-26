@@ -84,8 +84,8 @@ Last updated: 03-23-2021 for **Round 4 Scenarios**.
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <ins>First dose: **_75% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
-            *   <ins>Second dose: **_95% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_75% against symptomatic infection_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_95% against symptomatic infection_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
@@ -124,8 +124,8 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <ins>First dose: **_75% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
-            *   <ins>Second dose: **_95% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_75% against symptomatic infection_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_95% against symptomatic infection_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
@@ -163,8 +163,8 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <ins>First dose: **_50% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
-            *   <ins>Second dose: **_85% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_50% against symptomatic infection_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_85% against symptomatic infection_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
@@ -202,8 +202,8 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 *   **Vaccination** 
     *   **Pfizer / Moderna**
         *   **Vaccine efficacy (2-dose vaccines)**:
-            *   <ins>First dose: **_50% against disease_**</ins>, 14 days after 1<sup>st</sup> dose
-            *   <ins>Second dose: **_85% against disease_**</ins>, 14 days after 2<sup>nd</sup> dose
+            *   <ins>First dose: **_50% against symptomatic infection_**</ins>, 14 days after 1<sup>st</sup> dose
+            *   <ins>Second dose: **_85% against symptomatic infection_**</ins>, 14 days after 2<sup>nd</sup> dose
             *   Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *   **Vaccine availability**: 
