@@ -267,6 +267,9 @@ We are grateful to the teams who have generated these scenarios. The groups have
 
 All source code that is specific to the overall project is available under an open-source [MIT license](https://opensource.org/licenses/MIT). We note that this license does NOT cover model code from the various teams or model scenario data (available under specified licenses as described above). 
 
+## Computational power
+Those teams interested in accessing additional computational power should contact Katriona Shea at k-shea@psu.edu.
+
 ## Teams and models
 *   *Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
