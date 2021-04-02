@@ -8,4 +8,4 @@ license: cc-by-4.0
 methods: Metapoplulation model at the county level, fit to observed cases and output of UVA-ensemble forcasting model.  We assume
 current effective transmissibility is a result of existing NPIs and mask wearing, and model shifts of NPIs as return to previous
 effective transmissibility levels.
-modeling_NPI: NPIs are assumed to be part of the fitted effecttive transmissibility
+modeling_NPI: NPIs are assumed to be part of the fitted effective transmissibility. The 0% NPIs are assumed to be equivalent to highest transmissibility observed since May 2020. If the current transimissibility is higher than equivalent of scenario defined 50%/80% NPIs it is assumed that the current NPIs reached lowest levels and are not adjusted. 
