@@ -1,5 +1,8 @@
 # COVID-19 Scenario Modeling Hub 
 
+Last updated: 04-27-2021 for **Round 5 Scenarios**.
+
+
 ## Rationale
 Even the best models of emerging infections struggle to give accurate forecasts at time scales greater than 3-4 weeks due to unpredictable drivers such as a changing policy environment, behavior change, the development of new control measures, and stochastic events. However, policy decisions around the course of emerging infections often require projections in the time frame of months. The goal of long-term projections is to compare outbreak trajectories under different scenarios, as opposed to offering a specific, unconditional estimate of what “will” happen. As such, long-term projections can guide longer-term decision-making while short-term forecasts are more useful for situational awareness and guiding immediate response. The need for long-term epidemic projections is particularly acute in a severe pandemic, such as COVID-19, that has a large impact on the economy; for instance, economic and budget projections require estimates of outbreak trajectories in the 3-6 month time scale. 
 
@@ -17,7 +20,9 @@ Those interested to participate should register [here](https://docs.google.com/s
 Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md). 
 
 
-Last updated: 04-27-2021 for **Round 5 Scenarios**.
+</br>
+
+
 
 
 ## Round 5 Scenarios    
