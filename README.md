@@ -51,9 +51,7 @@ Last updated: 04-27-2021 for **Round 5 Scenarios**.
 
 ### Vaccination Hesitancy
 
-Vaccine hesitancy expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy. 
-
-The high vaccination scenario (low hesitancy) saturates at 83% vaccination coverage nationally, as defined by current estimates from the Delphi group (link) from March 13, 2021 data (red line in figure). The low vaccination scenario (high hesitancy) saturates at 68% vaccination coverage nationally, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey (link) from March 15, 2021 data. The speed of vaccination saturation is defined by the modeling team, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit hesitancy limits can be defined by the modeling team, but overall, national hesitancy should approach levels defined in the scenarios.
+Vaccine hesitancy expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy. The high vaccination scenario (low hesitancy) saturates at 83% vaccination coverage nationally, as defined by current estimates from the Delphi group (link) from March 13, 2021 data (red line in figure). The low vaccination scenario (high hesitancy) saturates at 68% vaccination coverage nationally, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey (link) from March 15, 2021 data. The speed of vaccination saturation is defined by the modeling team, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit hesitancy limits can be defined by the modeling team, but overall, national hesitancy should approach levels defined in the scenarios.
 
 ![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/round5_hesitancycurves.png)
 
@@ -65,7 +63,7 @@ The high vaccination scenario (low hesitancy) saturates at 83% vaccination cover
 | Scenario                                   | Scenario name for submission file | Scenario ID for submission file |
 | ------------------------------------------ |:---------------------------------:|:-------------------------------:|
 | Scenario A. High Vaccination, Moderate NPI | highVac_modNPI                    | A-2021-05-02                    |
-| Scenario B. High Vaccination, Low NPI	     | highVac_lowNPI                    | B-2021-05-02                    |               
+| Scenario B. High Vaccination, Low NPI	     | highVac_lowNPI                    | B-2021-05-02                    |
 | Scenario C. Low Vaccination, Moderate NPI	 | lowVac_modNPI                     | C-2021-05-02                    |
 | Scenario D. Low Vaccination & Low NPI	     | lowVac_lowNPI                     | D-2021-05-02                    | 
 
@@ -192,6 +190,9 @@ We are grateful to the teams who have generated these scenarios. The groups have
 
 All source code that is specific to the overall project is available under an open-source [MIT license](https://opensource.org/licenses/MIT). We note that this license does NOT cover model code from the various teams or model scenario data (available under specified licenses as described above). 
 
+## Computational power
+Those teams interested in accessing additional computational power should contact Katriona Shea at k-shea@psu.edu.
+
 ## Teams and models
 *   *Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
@@ -199,11 +200,16 @@ All source code that is specific to the overall project is available under an op
         Infectious Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),
         Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins
         Infectious Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics),
-        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins
-        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics),
+        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
+        Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious Disease Dynamics), 
         Lindsay T. Keegan (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves
         Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
         (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
+*   *Johns Hopkins University Applied Physics Lab — Bucky*
+    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht, Laura Asher (JHU/APL), 
+        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL)
+*   *Karlen Working Group — pypm*
+    *   Dean Karlen (University of Victoria and TRIUMF)
 *   *Northeastern University MOBS Lab — GLEAM COVID*
     *   Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological

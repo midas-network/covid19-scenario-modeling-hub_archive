@@ -1,0 +1,26 @@
+team_name: Johns Hopkins University Applied Physics Lab
+model_name: Bucky
+model_abbr: JHUAPL-Bucky
+model_version: 2021-03-29 (705a645719)
+model_contributors: Matt Kinsey (JHU/APL) <matt.kinsey@jhuapl.edu>, Kate Tallaksen (JHU/APL) <kate.tallaksen@jhuapl.edu>, R.F. Obrecht (JHU/APL) <freddy.obrecht@jhuapl.edu>, Laura Asher (JHU/APL) <laura.asher@jhuapl.edu>, Cash Costello (JHU/APL) <cash.costello@jhuapl.edu>, Michael Kelbaugh (JHU/APL) <michael.kelbaugh@jhuapl.edu>, Shelby Wilson (JHU/APL) <shelby.wilson@jhuapl.edu>, Lauren Shin (JHU/APL) <lauren.shin@jhuapl.edu>, Molly Gallagher (JHU/APL) <molly.gallagher@jhuapl.edu>, Luke Mullany (JHU/APL) <luke.mullany@jhuapl.edu>, Kaitlin Lovett (JHU/APL) <kaitlin.lovett@jhuapl.edu>
+website_url: https://github.com/mattkinsey/bucky
+license: mit
+team_model_designation: primary
+methods: Spatial compartment model using public mobility data. Local parameters (case reporting rates, doubling times, etc) are estimated using data from CSSE, HHS hospitalizations and CDC scenario 5.
+modeling_NPI: NPI effects are estimated by comparing recent historical growth rates with expected growth rates in the absence of NPI. The removal of NPIs is modeled as a linear daily decrease in that effect.
+compliance_NPI: Not applicable
+contact_tracing: Not applicable
+testing: Not applicable
+vaccine_efficacy_transmission: Vaccine efficacy is taken to be the values prescribed in the scenarios.
+vaccine_efficacy_delay: Delay in vaccine efficacy is taken to be the values prescribed in the scenarios.
+vaccine_hesitancy: Vaccine hesitancy is calculated on a per state, per ACIP group, per age group basis based on the U.S. Census Bureau Household Pulse Survey (https://www.census.gov/programs-surveys/household-pulse-survey.html). Based on survey responses, assumptions are made regarding how many respondants will never receive a vaccine and how many respondants will delay being vaccinated as part of their state-level priority group. Each group's hesitancy estimate is then clipped to prevent vacccine coverage from exceding the scanario specified value.
+vaccine_immunity_duration: permanent
+natural_immunity_duration: permanent
+case_fatality_rate: Estimated per age group at multiple admininstrative levels based on historical data and case reporting rates. Constant over time.
+infection_fatality_rate: Estimated per age group at multiple admininstrative levels based on historical data and case reporting rates. Constant over time.
+asymptomatics: Taken from CDC Pandemic Planning Scenario 5. Mean value of 30%.
+age_groups: [0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 74+]
+importations: Not applicable
+confidence_interval_method: Monte Carlo
+calibration: Model parameters and their priors are fit to historical data using a coarse Bayesian surrogate optimization followed by a Nelder–Mead optimization to find the local minima in WIS.
+spatial_structure: Modeling is done at the county level in the US. Counties are coupled using mobility data.

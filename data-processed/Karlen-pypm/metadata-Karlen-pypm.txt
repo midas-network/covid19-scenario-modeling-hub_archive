@@ -29,7 +29,7 @@ vaccine_efficacy_transmission: The efficacy for transmission is assumed to be id
 			       efficacy for immunity (specified in the scenario descriptions).
 vaccine_efficacy_delay: Delay distributions are defined to roughly match the two dose
 			schedule defined in the scenario descriptions. Gamma distributions are
-			used with typical mean and standard deviation of 20 and 10-15 days respectively.
+			used with mean and standard deviation of 20 and 15 days respectively.
 vaccine_hesitancy: For the high (low) vaccination scenarios it is assumed that 25% (50%) of the population are
 		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for the two age groups.
 vaccine_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
@@ -58,9 +58,10 @@ confidence_interval_method: Historical case/hospitalization/death time series da
 			    and connections between populations (typically binomial).
 calibration: Case, hospitalization, death, and seroprevalence data are used to estimate model parameters
 	     to ensure the model predictions are consistent with observations. B.1.1.7 advantage over current
-	     dominant strains estimated from SGTF data from Florida and California (Helix.com). B.1.1.7
-	     current "frequency" estimated from case fits - typically 10-30% (large uncertainty).
+	     dominant strains and current case fractions are estimated from SGTF data for 15 states (Helix.com).
+	     For the other states, the mean advantage is assumed (larger uncertainty) and case fraction found
+	     from fits to case history (and required to be in the range 40-80%, as measured in the 15 states).
 spatial_structure: Each state treated independently.
 data_inputs: JHU CSSE case and death data, HHS hospitalization data, Google open-data vaccination data,
-	     Nationwide Commercial Laboratory Seroprevalence Survey
+	     Nationwide Commercial Laboratory Seroprevalence Survey, Helix.com genomic data
 citation: https://arxiv.org/abs/2007.07156
