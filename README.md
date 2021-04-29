@@ -2,6 +2,8 @@
 
 Last updated: 04-27-2021 for **Round 5 Scenarios**.
 
+Round 4: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md#forth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+
 ### Previous Round Scenarios and Results: [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
 
@@ -201,7 +203,7 @@ All source code that is specific to the overall project is available under an op
 Those teams interested in accessing additional computational power should contact Katriona Shea at k-shea@psu.edu.
 
 ## Teams and models
-*   *Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*
+*   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
         Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins
         Infectious Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),
@@ -212,12 +214,12 @@ Those teams interested in accessing additional computational power should contac
         Lindsay T. Keegan (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves
         Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
         (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
-*   *Johns Hopkins University Applied Physics Lab — Bucky*
+*   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht, Laura Asher (JHU/APL), 
         Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL)
-*   *Karlen Working Group — pypm*
+*   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
-*   *Northeastern University MOBS Lab — GLEAM COVID*
+*   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
     *   Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
         and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
@@ -227,9 +229,9 @@ Those teams interested in accessing additional computational power should contac
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
-*   *USC Data Science Lab — SI kJalpha*
+*   [*USC Data Science Lab — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
     *   Ajitesh Srivastava, University of Southern California
-*   *University of Virginia — adaptive*
+*   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
         Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
