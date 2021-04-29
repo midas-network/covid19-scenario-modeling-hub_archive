@@ -237,7 +237,7 @@ Those teams interested in accessing additional computational power should contac
         
 </br>
 
-## The COVID-19 Scenario Modeling Hub Team
+## The COVID-19 Scenario Modeling Hub Coordination Team
 
  - Justin Lessler, Johns Hopkins University
  - Katriona Shea, Penn State University
