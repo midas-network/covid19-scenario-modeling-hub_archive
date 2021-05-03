@@ -17,7 +17,7 @@ modeling_NPI: A model for the case history for each state, consisting of relativ
 	 The NPI is reduced linearly (one step per day) over the period of 5 months.
 compliance_NPI: Variance of transmission rate is included for the interval construction. The
 		standard deviation of the transmission rates arise from the standard deviation of the
-		endpoint NPI (10% on R0).
+		endpoint NPI (10% on R0) and the uncertainty of the starting point transmission rate.
 contact_tracing: The removal delay time distribution for individuals from the circulating contagious
 		 population is fixed through the entire history. The effect of changes to
 		 contact tracing policy is absorbed in the inferred transmission rate.
@@ -30,7 +30,7 @@ vaccine_efficacy_transmission: The efficacy for transmission is assumed to be id
 vaccine_efficacy_delay: Delay distributions are defined to roughly match the two dose
 			schedule defined in the scenario descriptions. Gamma distributions are
 			used with mean and standard deviation of 20 and 15 days respectively.
-vaccine_hesitancy: For the high (low) vaccination scenarios it is assumed that 25% (50%) of the population are
+vaccine_hesitancy: For the high (low) vaccination scenarios it is assumed that 17% (32%) of the population are
 		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for the two age groups.
 vaccine_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
 			   once there is guidance.
@@ -57,11 +57,9 @@ confidence_interval_method: Historical case/hospitalization/death time series da
 			    probabilistic description of the infection process (negative binomial)
 			    and connections between populations (typically binomial).
 calibration: Case, hospitalization, death, and seroprevalence data are used to estimate model parameters
-	     to ensure the model predictions are consistent with observations. B.1.1.7 advantage over current
-	     dominant strains and current case fractions are estimated from SGTF data for 15 states (Helix.com).
-	     For the other states, the mean advantage is assumed (larger uncertainty) and case fraction found
-	     from fits to case history (and required to be in the range 40-80%, as measured in the 15 states).
+	     to ensure the model predictions are consistent with observations. Now that variant strains
+	     are dominant, genomic data no longer play a role in projecting future growth rates.
 spatial_structure: Each state treated independently.
 data_inputs: JHU CSSE case and death data, HHS hospitalization data, Google open-data vaccination data,
-	     Nationwide Commercial Laboratory Seroprevalence Survey, Helix.com genomic data
+	     Nationwide Commercial Laboratory Seroprevalence Survey
 citation: https://arxiv.org/abs/2007.07156
