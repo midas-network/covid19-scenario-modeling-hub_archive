@@ -76,7 +76,7 @@ A brief description of how Non-Pharmaceutical Interventions (NPI) were represent
 
 A brief description of any additional assumptions made regarding compliance with NPI, beyond what was specified in the given scenarios; or "Not applicable".
 
-### `contract_tracing`
+### `contact_tracing`
 
 A brief description of how contact tracing was represented by the model, or "Not applicable".
 
