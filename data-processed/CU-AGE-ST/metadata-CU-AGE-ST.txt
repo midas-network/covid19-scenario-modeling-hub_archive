@@ -1,0 +1,35 @@
+team_name: Columbia University
+model_name: AGE_STRATIFIED_MODEL
+model_abbr: CU_AGE_ST
+model_contributors: Marta Galanti <mg3822@cumc.columbia.edu>,Teresa Yamana <tky2104@cumc.columbia.edu>, Sen Pei <sp3449@cumc.columbia.edu>, Jeffrey Shaman <jls106@cumc.columbia.edu>
+
+methods: A metapopulation county-level SEIR model for inference combined with a state-level-age stratified model for projecting future COVID-19 incidence, hospitalization
+  and deaths. 
+repo_url: https://github.com/shaman-lab
+data_inputs: JHU CSSE County-level confirmed cases, Safegraph mobility, CDC vaccination tracking (State), CDC SEROPREVALENCE data from Nationwide Commercial Laboratory Seroprevalence Survey (state, age groups), CDC line-list data for Case-hospitalization and Case-fatality rates, age distribution of recent infections from individual state departments (state, age groups),POLYMOD contact rates across age group in US.
+
+methods_long: The metapopulation county-level SEIR model reproduces transmission within and between the 3142 counties in US. A model-filter framework assimilates daily county incidence of cases and updates the distribution of parameters and state variables at each time step. The inferred parameters and initial conditions are aggregated at the state level and combined with state-level information on population structure, age and state-specific seroprevalence estimates and published age-specific reporting, hospitalization and death rates. Then, to produce age-stratified projections, a second dynamical model, age and population- stratified, is initialized with the previously defined parameters and initial conditions. The age and population-stratified model is a SEIRV (Susceptible-Exposed-Infected-Recovered-Vaccinated) compartmental model run in isolation for each of the 50 US states and DC. Here the population is stratified in 12 groups in order to reproduce different patterns of disease severity and vaccine prioritization. Specifically, in each state, the population is stratified by years of age (0 - 4, 5 - 17, 18 – 49, 50 - 64 and >65), adult exposure status (essential workers, healthcare workers, other adults) and health risk status (presence or absence of one or more health risk factors for severe disease). Fore complete methods, see: 
+https://www.medrxiv.org/content/10.1101/2020.05.04.20090670v2
+https://www.medrxiv.org/content/10.1101/2021.02.22.21252240v1
+
+Implementation_scenarios:
+VACCINATION: 
+-historical state-level records of daily vaccine distribution (first doses) are used.
+-Future available doses(first doses only) are distributed to states according to population. 
+-Order of vaccination follows ACIP guidelines. Following the prioritization groups, the general population (adults and then children 12-18 from June 1st.) is vaccinated. 
+-Vaccine acceptance: modeled on https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept and https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw. Across age group modeled using https://www.census.gov/library/visualizations/interactive/household-pulse-survey-covid-19-vaccination-tracker.html
+-Vaccine administration rate decreases from current level by 20% each month. Daily rate for the low acceptance scenario is 25% slower than for high acceptance scenario.
+-Vaccine is administered irrespective of prior history of disease to the whole population, but only individuals previously susceptible are included in the ''Vaccinated'' compartments.
+-Vaccine prevents infection (same effectiveness in preventing symptomatic disease). Vaccinated individuals have a reduced probability by (1-efficacy) of getting infected upon contact with infectious individuals.
+- All individuals receive 2 doses, the effectiveness is computed as weighted average of Pfizer/Moderna and J&J vaccines.
+
+
+NPIs RELAXATION: current level of NPIs are determined as (R0-Rt). Rt is the time-dependent reproductive number and it is inferred by the model-filter framework. R0 is assigned arbitrarily: R0=4. NPIs reductions happen in 5 monthly steps.
+
+VARIANTS: variants act as factor modulating R0. R0 is the weighted average of the R0 from two strains (normal and variant, with R0(variant)=1.5R0(normal)) . The weight is given by the frequence of each strain: prevalence of variant is a monthly step function: 50% in March, 75% in April, 100% May. A single strain is considered starting from May.
+
+DEATHS, HOSPITALIZATION: calculated from cases using line-list CFR (case-fatality-rate) and CHR (case-hospitalization-rate) adding a stochastic delay (gamma distributions for delay with mean respectively 23 days and 15 days from infection).
+
+SUSCEPTIBILITY:inferred with the metapopulation model at the county-level and aggregated at the state-level. The relative differences in susceptibility across age groups are informed by the the monthly CDC seroprevalence surveys. Reinfection is not accounted for.
+
+  
