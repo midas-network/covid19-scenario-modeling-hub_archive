@@ -1,156 +1,81 @@
-# Metadata file structure
+team_name:
+UNCC
 
-Each model is required to have metadata in 
-[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
-e.g. [see this example metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt).
+model_name:
+HierBin
 
-Given the many possible approaches to modeling COVID-19 scenarios, we are collecting relatively rich metadata, to be able to understand heterogeneity among model projections. The information will only be used internally, unless otherwise indicated. 
+model_abbr:
+UNCC-hierbin
 
-Please order the variables in this order.
+model_version:
+2021-05-02
 
-## Required variables
+model_contributors:
+Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science) <schen56@uncc.edu>, Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science) <rajib.paul@uncc.edu>, Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics) <djanies@uncc.edu>, Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science) <jean-claude.thill@uncc.edu>
 
-### `team_name`
+website_url:
+NA
 
-The name of your team that is less than 50 characters, no spaces. Will be displayed online. 
+license:
+cc-by-4.0
 
-### `model_name`
+methods:
+Because of the complexity of socio-epidemiological system of COVID-19, we developed a satistical model to track and predict the cumulative case in 2021, assuming it follow certain asymptotic curves. We then projected cumulative case based on the developed model which served as the baseline scenario. The difference of daily cumulative case would be the baseline incident case. Vaccination was modeled as a time-dependent function to reduce incident case. Loosing of NPI would be a signed function to increase incident case up to a certain percentage. The exact date of loosing NPI was simulated any time between 0 to 60d from 05/02/2021 in a given state.
 
-The name of your model that is less than 50 characters, no spaces. Will be displayed online.
+Hospitalization was modeled as a binomial process of incident case and no overload of healthcare system was considered in 2021. Hospitalization rate was estimated as a function of vaccination rate. We assumed that only severe condition patients required hospitalization, and vaccination would reduce the prognosis from non-severe to severe. 
 
-### `model_abbr`
+Similarly, death was modeled as a binomial process of hospitalization, assuming all deaths occurred in hosptalized patients in severe condition. Deaths in long-term care facility were not considered. Death rate was also another function of vaccination rate.
 
-An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace  Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. The model abbreviation will be displayed online. 
+modeling_NPI:
+NPI was modeled as a one-time change in policy which could occur any time between 0 to 60d from 05/02/2021. In the current model version, each state had the same uniform distribution of lifting NPI.
 
-### `model_version`
+compliance_NPI:
+We assumed homogeneous compliance to NPI in the population.
 
-A version number or date in YYYY-MM-DD format, to designate the version of the model used for submitted model projections. Will be displayed online. 
+contact_tracing:
+NA
 
-### `model_contributors`
+testing:
+NA
 
-A list of all individuals involved in the forecasting effort,
-affiliations, and email address.
-At least one contributor needs to have a valid email address. 
-All email addresses provided will be added to 
-an email distribution list for model contributors.
+vaccine_efficacy_transmission:
+Efficacy of vaccine to reduce transmission was modeled as a state- and time-dependent function based on existing data in 2021.
 
-The syntax of this field should be 
+vaccine_efficacy_delay:
+NA
 
-    name1 (affiliation1) <user@address>, name2 (affiliation2) <user2@address2>
+vaccine_hesitancy:
+Vaccine hesitancy was implicitly modeled as an asympototic curve of vaccination rate in each state.
 
-### `website_url`
+vaccine_immunity_duration:
+For this project we assumed no leaking immunity from vaccine, i.e., much longer than 6mo.
 
-(previously named `model_output`)
+natural_immunity_duration:
+For this project we assumed no leaking immunity from previous infection, i.e., much longer than 6mo.
 
-A url to a website that has additional data about your model. 
-We encourage teams to submit the most user-friendly version of your 
-model, e.g. a dashboard, or similar, that displays your model scenarios. 
-If you have additionally a data repository
-where you store scenarios and other model code, 
-please include that in your methods section below. 
-If you only have a more technical site, e.g. github repo, 
-please include that link here. 
-Will be displayed online. 
+case_fatality_rate:
+CFR was estimated as a function of time (implicitly with vaccination rate) in each state with data in 2021.
 
-### `license`
+infection_fatality_rate:
+NA
 
-We encourage teams to submit as a "cc-by-4.0" to allow the broadest possible uses
-including private vaccine production 
-(which would be excluded by the "cc-by-nc-4.0" license). 
+asymptomatics:
+NA
 
-Alternatively, add the name and URL of the license used, as in `cc-by-4.0, https://creativecommons.org/licenses/by/4.0/`
-Or, add the value `LICENSE.txt`, if a LICENSE.txt file was added within the folder.
+age_groups:
+All age groups.
 
-Will be displayed online. 
+importations:
+NA for current version.
 
-### `methods`
+confidence_interval_method:
+Several assumptions were made to address uncertainty, e.g., system stochasticity from random noise, state-level variation in vaccination rate, state-level variation in lifting NPI mandate, etc.
 
-A brief description of your forecasting methodology that is less than 200 
-characters. Will be displayed online. 
+calibration:
+2021 cumulative case data by state were used to model and calibrate the initial model.
 
-### `modeling_NPI`
+spatial_structure:
+By state.
 
-A brief description of how Non-Pharmaceutical Interventions (NPI) were represented by the model, or "Not applicable".
-
-### `compliance_NPI`
-
-A brief description of any additional assumptions made regarding compliance with NPI, beyond what was specified in the given scenarios; or "Not applicable".
-
-### `contact_tracing`
-
-A brief description of how contact tracing was represented by the model, or "Not applicable".
-
-### `testing`
-
-A brief description of what testing strategies were represented by the model, or "Not applicable".
-
-### `vaccine_efficacy_transmission`
-
-A brief description of assumptions regarding vaccine efficacy against transmission, or "Not applicable".
-
-### `vaccine_efficacy_delay`
-
-If a delay was assumed in the build-up of vaccine efficacy, please describe the assumptions here; or "Not applicable".
-
-### `vaccine_hesitancy`
-
-A brief description of assumptions or representation of vaccine hesitancy, by priority target group such as healthcare workers, essential worksers, elderly, etc.; or "Not applicable". 
-
-### `vaccine_immunity_duration`
-
-Assumed length of vaccine-derived immunity, or "Not applicable".
-
-### `natural_immunity_duration`
-
-Assumed length of the duration of natural immunity assumed, or "Not applicable".
-
-### `case_fatality_rate`
-
-Assumed fatality rate of detected COVID-19 cases, as a proportion between 0 and 1, or "Not applicable".
-
-### `infection_fatality_rate`
-
-Assumed fatality rate of SARS-CoV-2 infections (detected or undetected), as a proportion between 0 and 1, or "Not applicable".
-
-### `asymptomatics`
-
-Assumed proportion of SARS-CoV-2 infections that remain asymptomatic, as a proportion between 0 and 1, or "Not applicable". 
-
-### `age_groups`
-
-Age groups represented in the model, in years, given as a set of intervals between square brackets: as in `[0-5, 6-10, 10-50, 50+]`, or "Not applicable".
-
-### `importations`
-
-Brief description of assumptions made or representation in the model of importations, or "Not applicable".
-
-### `confidence_interval_method`
-
-Brief description of the method used to compute confidence (or other uncertainty) interval, or "Not applicable".
-
-### `calibration`
-
-Brief description of model calibration methods, or "Not applicable".
-
-### `spatial_structure`
-
-Brief description of how spatial structure is represented by the model, or "Not applicable".
-
-## Optional
-
-### `team_funding`
-
-Acknowledgement of funding source, by name of funding agency, grant title, and grant number. 
-
-### `data_inputs`
-
-A brief description of the data sources used to inform the model, using as much as possible standard terminology that includes a source name and the type of data, such as `JHU CSSE case and death data`, `NYTimes death data`, `Google mobility data`, etc. 
-
-### `citation`
-
-A bibliographic citation to a paper, website, or other object that people can go to to find out more about the model, in the style used by PubMed, as `Flaxman S, Mishra S, Gandy A, Unwin HJT, Mellan TA, Coupland H, Whittaker C, Zhu H, Berah T, Eaton JW, Monod M; Imperial College COVID-19 Response Team, Ghani AC, Donnelly CA, Riley S, Vollmer MAC, Ferguson NM, Okell LC, Bhatt S. Nature. 2020 Aug;584(7820):257-261. doi: 10.1038/s41586-020-2405-7. Epub 2020 Jun 8. PMID: 32512579`. Will be displayed
-
-### `methods_long`
-
-An extended description of the methods used in the model. 
-If the model is modified, this field can be used to provide a description of the change. Use model_version to indicate the version or date of last update. 
+data_inputs:
+JHU case and death data, NYT vaccination data.
