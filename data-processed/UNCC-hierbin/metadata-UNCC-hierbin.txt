@@ -1,81 +1,26 @@
-team_name:
-UNCC
-
-model_name:
-HierBin
-
-model_abbr:
-UNCC-hierbin
-
-model_version:
-2021-05-02
-
-model_contributors:
-Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science) <schen56@uncc.edu>, Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science) <rajib.paul@uncc.edu>, Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics) <djanies@uncc.edu>, Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science) <jean-claude.thill@uncc.edu>
-
-website_url:
-NA
-
-license:
-cc-by-4.0
-
-methods:
-Because of the complexity of socio-epidemiological system of COVID-19, we developed a satistical model to track and predict the cumulative case in 2021, assuming it follow certain asymptotic curves. We then projected cumulative case based on the developed model which served as the baseline scenario. The difference of daily cumulative case would be the baseline incident case. Vaccination was modeled as a time-dependent function to reduce incident case. Loosing of NPI would be a signed function to increase incident case up to a certain percentage. The exact date of loosing NPI was simulated any time between 0 to 60d from 05/02/2021 in a given state.
-
-Hospitalization was modeled as a binomial process of incident case and no overload of healthcare system was considered in 2021. Hospitalization rate was estimated as a function of vaccination rate. We assumed that only severe condition patients required hospitalization, and vaccination would reduce the prognosis from non-severe to severe. 
-
-Similarly, death was modeled as a binomial process of hospitalization, assuming all deaths occurred in hosptalized patients in severe condition. Deaths in long-term care facility were not considered. Death rate was also another function of vaccination rate.
-
-modeling_NPI:
-NPI was modeled as a one-time change in policy which could occur any time between 0 to 60d from 05/02/2021. In the current model version, each state had the same uniform distribution of lifting NPI.
-
-compliance_NPI:
-We assumed homogeneous compliance to NPI in the population.
-
-contact_tracing:
-NA
-
-testing:
-NA
-
-vaccine_efficacy_transmission:
-Efficacy of vaccine to reduce transmission was modeled as a state- and time-dependent function based on existing data in 2021.
-
-vaccine_efficacy_delay:
-NA
-
-vaccine_hesitancy:
-Vaccine hesitancy was implicitly modeled as an asympototic curve of vaccination rate in each state.
-
-vaccine_immunity_duration:
-For this project we assumed no leaking immunity from vaccine, i.e., much longer than 6mo.
-
-natural_immunity_duration:
-For this project we assumed no leaking immunity from previous infection, i.e., much longer than 6mo.
-
-case_fatality_rate:
-CFR was estimated as a function of time (implicitly with vaccination rate) in each state with data in 2021.
-
-infection_fatality_rate:
-NA
-
-asymptomatics:
-NA
-
-age_groups:
-All age groups.
-
-importations:
-NA for current version.
-
-confidence_interval_method:
-Several assumptions were made to address uncertainty, e.g., system stochasticity from random noise, state-level variation in vaccination rate, state-level variation in lifting NPI mandate, etc.
-
-calibration:
-2021 cumulative case data by state were used to model and calibrate the initial model.
-
-spatial_structure:
-By state.
-
-data_inputs:
-JHU case and death data, NYT vaccination data.
+team_name: UNCC
+model_name: HierBin
+model_abbr: UNCC-hierbin
+model_version: 2021-05-02
+model_contributors: Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science) <schen56@uncc.edu>, Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science) <rajib.paul@uncc.edu>, Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics) <djanies@uncc.edu>, Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science) <jean-claude.thill@uncc.edu>
+website_url: NA
+license: cc-by-4.0
+methods: Because of the complexity of socio-epidemiological system of COVID-19, we developed a satistical model to track and predict the cumulative case in 2021, assuming it follow certain asymptotic curves. We then projected cumulative case based on the developed model which served as the baseline scenario. The difference of daily cumulative case would be the baseline incident case. Vaccination was modeled as a time-dependent function to reduce incident case. Loosing of NPI would be a signed function to increase incident case up to a certain percentage. The exact date of loosing NPI was simulated any time between 0 to 60d from 05/02/2021 in a given state. Hospitalization was modeled as a binomial process of incident case and no overload of healthcare system was considered in 2021. Hospitalization rate was estimated as a function of vaccination rate. We assumed that only severe condition patients required hospitalization, and vaccination would reduce the prognosis from non-severe to severe. Similarly, death was modeled as a binomial process of hospitalization, assuming all deaths occurred in hosptalized patients in severe condition. Deaths in long-term care facility were not considered. Death rate was also another function of vaccination rate.
+modeling_NPI: NPI was modeled as a one-time change in policy which could occur any time between 0 to 60d from 05/02/2021. In the current model version, each state had the same uniform distribution of lifting NPI.
+compliance_NPI: We assumed homogeneous compliance to NPI in the population.
+contact_tracing: NA
+testing: NA
+vaccine_efficacy_transmission: Efficacy of vaccine to reduce transmission was modeled as a state- and time-dependent function based on existing data in 2021.
+vaccine_efficacy_delay: NA
+vaccine_hesitancy: Vaccine hesitancy was implicitly modeled as an asympototic curve of vaccination rate in each state.
+vaccine_immunity_duration: For this project we assumed no leaking immunity from vaccine, i.e., much longer than 6mo.
+natural_immunity_duration: For this project we assumed no leaking immunity from previous infection, i.e., much longer than 6mo.
+case_fatality_rate: CFR was estimated as a function of time (implicitly with vaccination rate) in each state with data in 2021.
+infection_fatality_rate: NA
+asymptomatics: NA
+age_groups: All age groups.
+importations: NA for current version.
+confidence_interval_method: Several assumptions were made to address uncertainty, e.g., system stochasticity from random noise, state-level variation in vaccination rate, state-level variation in lifting NPI mandate, etc.
+calibration: 2021 cumulative case data by state were used to model and calibrate the initial model.
+spatial_structure: By state.
+data_inputs: JHU case and death data, NYT vaccination data.
