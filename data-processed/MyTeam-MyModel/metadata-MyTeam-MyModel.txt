@@ -18,7 +18,23 @@ license: cc-by-4.0
 methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
   (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
   visits.
+modeling_NPI: "Not applicable"
+compliance_NPI: "Not applicable"
+contact_tracing: "Not applicable"
+testing: "Not applicable"
+vaccine_efficacy_transmission: "Not applicable"
+vaccine_efficacy_delay: "Not applicable"
+vaccine_hesitancy: "Not applicable"
+vaccine_immunity_duration: "Not applicable"
+natural_immunity_duration: "Not applicable"
+case_fatality_rate: "Not applicable"
+infection_fatality_rate: "Not applicable"
+asymptomatics: "Not applicable"
+age_groups: "Not applicable"
 importations: We assumed 10 importations per day per state seeded randomly.
+confidence_interval_method:  "Not applicable"
+calibration:  "Not applicable"
+spatial_structure: "Not applicable"
 citation: "Smith J, Smith S, Smith C. MyModel is the best model. Nature. 2020 Aug;584(7920):251-261. doi: 10.1038/s41586-020-3502-7."
 methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
   \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
@@ -36,3 +52,4 @@ methods_long: "State level - A basic AR-type time series model fit using lagged 
   \ available as indicators through Delphi COVIDcast (http://covidcast.cmu.edu). Signal (2) \
   \ is administered with the support of Facebook. No assumptions are made regarding reopening \
   \ or governmental interventions."
+

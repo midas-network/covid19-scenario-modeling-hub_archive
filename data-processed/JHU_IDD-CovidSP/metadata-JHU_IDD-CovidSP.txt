@@ -8,8 +8,9 @@ model_contributors: Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins In
   Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious 
   Disease Dynamics)<justin@jhu.edu>, Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), Javier
   Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
-  Disease Dynamics) <shauntruelove@jhu.edu>, Claire P. Smith (Johns Hopkins Infectious Disease Dynamics) <csmit390@jhu.edu>, Lindsay T. Keegan 
-  (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
+  Disease Dynamics) <shauntruelove@jhu.edu>, Claire P. Smith (Johns Hopkins Infectious Disease Dynamics) <csmit390@jhu.edu>,
+  Allison Hill (Johns Hopkins Infectious Disease Dynamics) <alhill@jhmi.edu>, Lindsay T. Keegan (University of Utah),
+  Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
   Karthik Raman (Amazon Web Services),  Arun Subramaniyan (Amazon Web Services), Greg Thursam (Amazon Web 
   Services), Anh Tran (Amazon Web Services)
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
@@ -27,11 +28,12 @@ testing: Not applicable
 vaccine_efficacy_transmission: "Vaccine efficacy is assumed to be against infection, not specifically \
   \ transmission. Vaccine efficacy estimates are assumed based on the scenarios."
 vaccine_efficacy_delay: Immunity is assumed to develop exactly 14 days after vaccination.
-vaccine_hesitancy: Hesitancy is not assume other than specifically indicated by the scenarios.
+vaccine_hesitancy: Hesitancy is not assumed other than specifically indicated by the scenarios.
 vaccine_immunity_duration: Not applicable
 natural_immunity_duration: Not applicable
 case_fatality_rate: Not applicable
-infection_fatality_rate: Age-adjusted based on population age distribution. US national CFR set at 5%.
+infection_fatality_rate: Age-adjusted based on population age distribution and age-distribution of those 
+  \ who have received at least one vaccine dose. US national CFR set at 5%.
 asymptomatics: Not applicable
 age_groups: Not applicable
 importations: Functionality in place, but not currently in use.
@@ -59,13 +61,19 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ ICU to ventilator use to death and used age-specific demographics to perform \
   \ a county-level age standardization of health outcome risk. Currently, we assume\
   \ a 0.5% infection fatality rate and a 3.5:1 ratio of incident hospitalizations\
-  \ to deaths. \nFor each county, we estimate the seeding time and amount, the baseline\
-  \ reproductive number, the case confirmation to infection ratio, and the effectiveness\
-  \ of interventions (from closing to phased reopenings). We use an MCMC-like inference\
-  \ procedure that calibrates model outputs to weekly county aggregations of incident\
-  \ confirmed cases and deaths as reported by USA Facts. For the inference of the\
-  \ baseline reproductive number and the case confirmation to infection ratio, hierarchical\
-  \ grouping terms enable sharing of strength among counties in the same state.\n\
+  \ to deaths. Infection fatality rates and hospitalization rates are adjusted to\
+  \ account for the age distribution of individuals who have received at least one
+  \ dose of the vaccine. Weekly adjustments to R0 are made to account for the growing\
+  \ prevalence of the B.1.1.7 variant, which is assumed to be 50% more transmissible\
+  \ and to reach 100% dominance in the US by May.\n 
+  For each county, we estimate the seeding time and amount,\
+  \ the baseline reproductive number, the case confirmation to infection ratio, and\
+  \ the effectiveness of interventions (from closing to phased reopenings). We use an\ 
+  \ MCMC-like inference procedure that calibrates model outputs to weekly county\
+  \ aggregations of incident confirmed cases and deaths as reported by USA Facts. For\
+  \ the inference of the baseline reproductive number and the case confirmation to\
+  \ infection ratio, hierarchical grouping terms enable sharing of strength among\
+  \ counties in the same state.\n\
   Our procedure forecasts incident and cumulative deaths by incorporating the last\
   \ reported data point (pre-forecast date) from USA Facts.\nThe estimates reported\
   \ by this model incorporate uncertainty in both epidemiological parameters (e.g.,\
