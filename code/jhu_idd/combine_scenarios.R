@@ -2,11 +2,11 @@
 library(tidyverse)
 
 # load data and combine
-sub_date <- "2021-01-08"
+sub_date <- "2021-05-02"
 files_ <- list.files(file.path("data-prelim", sub_date), full.names = TRUE, include.dirs = TRUE)
 
-scenarios_ <- c("optimistic", "moderate", "fatigue","counterfactual")
-scen_id <- paste0(LETTERS[1:4], "-2020-12-22")
+scenarios_ <- c("highVac_modNPI", "highVac_lowNPI", "lowVac_modNPI","lowVac_lowNPI")
+scen_id <- paste0(LETTERS[1:4], "-2020-05-02")
 
 data_comb <- NULL
 for (i in 1:length(scenarios_)){
@@ -19,10 +19,14 @@ for (i in 1:length(scenarios_)){
     data_comb <- data_comb %>% bind_rows(data_tmp)
 }
 
-data_comb <- data_comb %>% 
-  filter(!grepl("hosp", target))
+# data_comb <- data_comb %>% 
+#   filter(!grepl("hosp", target))
          
 sum(grepl("hosp", data_comb$target))
   
+unique(data_comb$target)
+
 # Save it
 readr::write_csv(data_comb, paste0('data-processed/JHU_IDD-CovidSP/', sub_date, "-JHU_IDD-CovidSP.csv"))
+
+
