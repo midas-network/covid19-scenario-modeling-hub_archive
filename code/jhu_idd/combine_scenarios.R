@@ -6,7 +6,7 @@ sub_date <- "2021-05-02"
 files_ <- list.files(file.path("data-prelim", sub_date), full.names = TRUE, include.dirs = TRUE)
 
 scenarios_ <- c("highVac_modNPI", "highVac_lowNPI", "lowVac_modNPI","lowVac_lowNPI")
-scen_id <- paste0(LETTERS[1:4], "-2020-05-02")
+scen_id <- paste0(LETTERS[1:4], "-2021-05-02")
 
 data_comb <- NULL
 for (i in 1:length(scenarios_)){
