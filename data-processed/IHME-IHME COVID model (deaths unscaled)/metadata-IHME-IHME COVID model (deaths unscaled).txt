@@ -2,7 +2,7 @@ team_name: IHME
 model_name: IHME
 model_abbr: IHME-IHME COVID model (deaths unscaled)
 model_version: "1.0"
-model_contributors: To be filled in
+model_contributors: Robert C Reiner, Joanne Amlag, Austin Carter, IHME COVID forecasting team
 website_url: http://www.healthdata.org/
 license: cc-by-4.0
 methods: To be filled in
