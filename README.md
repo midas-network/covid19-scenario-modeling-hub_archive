@@ -88,7 +88,7 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 *   **Submission date**: June 8, 2021 
 *   **End date for fitting data**: May 29, 2021 - no fitting should be done to data from after this date
 *   **Start date for fifth-round scenarios**: May 30, 2021 (week ending May 8) - first date of simulated outcomes
-*   **Simulation end date**: October 27, 2021 (26-week horizon)
+*   **Simulation end date**: November 27, 2021 (26-week horizon)
 
 </br>
 
