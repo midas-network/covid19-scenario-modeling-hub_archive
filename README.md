@@ -228,8 +228,9 @@ Those teams interested in accessing additional computational power should contac
         Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
         (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
 *   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
-    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht, Laura Asher (JHU/APL), 
-        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL)
+    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
+        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
+        Molly Gallagher (JHU/APL), Luke Mullaney (JHU/APL), Kaitlin Lovett (JHU/APL)
 *   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
 *   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
@@ -237,18 +238,23 @@ Those teams interested in accessing additional computational power should contac
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
         and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
         for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston,
-        MA)„ Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
+        MA), Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
         Northeastern University, Boston, MA), Ana Pastore y Piontti (Laboratory for the Modeling
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
 *   [*USC Data Science Lab — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
-    *   Ajitesh Srivastava, University of Southern California
+    *   Ajitesh Srivastava (University of Southern California)
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
         Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
         Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+*   [*Columnbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+    *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
+*   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+    * Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science), Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science), Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics), Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science)
+*   *Institute for Health Metrics and Evaluation – IHME COVID*
         
 </br>
 
