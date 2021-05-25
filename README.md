@@ -116,9 +116,9 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
             *	December-May: based on data on administered doses
             *	June-November: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
     *	**Johnson & Johnson**
-            *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
-            *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
-            *   Accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
+        *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
+        *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
+        *   Accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
 
 *	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
 
