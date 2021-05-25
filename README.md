@@ -2,9 +2,13 @@
 
 Last updated: 05-25-2021 for **Round 6 Scenarios**.
 
+
+## Previous Round Scenarios and Results: 
+[https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
+
+
 Round 5: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md#fifth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
-### Previous Round Scenarios and Results: [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
 
 ## Rationale
@@ -53,14 +57,15 @@ Model projections should be submitted via pull request to the data-processed fol
 
 **Vaccination**
 *   <ins>Doses available</ins>: 
-    *	50M Moderna/Pfizer 1st doses, J&J no longer available
+    *	50M Moderna/Pfizer 1st doses available monthly, June-November 2021 
+    *   J&J no longer available (after May 2021)
     *	Supply has likely eclipsed demand at this stage. Number of doses are for reference and as a reminder to account for different VE by manufacturer, but no longer indicate number of doses administered. Distribution of doses by manufacturer and associated vaccine efficacy should fit within these dose bounds.
 *	<ins>VE</ins>: 
     *	**50% and 90%** against symptoms (Moderna/Pfizer 1st and 2nd dose; vs. B.1.1.7/B.1.617 and other variants circulating in the projection period). This is based on reports from the UK and Israel indicating decreased protection against new variants such as B117 and B1617 after 1st dose, and no substantial decrease after 2nd dose. These estimates should be used against current and future circulating strains during June-Nov; however higher estimates of VE can be used to account for prior circulating strains.
     *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death). Data on VE studies of infection and symptomatic disease are included below.
 
 
-**B.1.617+ variant strain with increased transmissibility:** The scenarios define the B.1.617-like variants as <ins>**20% and 60%**</ins> more transmissible than B.1.1.7 and other strains circulating in the US and is at <ins>**5% national prevalence on May 29, 2021**</ins>. Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is **more transmissible** but it is **not an immune escape variant**; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for B.1.617+ or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
+**B.1.617+ variant strain with increased transmissibility:** The scenarios define the B.1.617-like variants as <ins>**20% and 60%**</ins> more transmissible than B.1.1.7 and other strains circulating in the US and is at <ins>**5% national prevalence on May 29, 2021**</ins>. This 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is **more transmissible** but it is **not an immune escape variant**; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for B.1.617+ or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
 
 
 </br>
@@ -85,10 +90,10 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 | Scenario D. Low Vaccination, High Variant Transmissibility Increase    | lowVac_highVar                    | D-2021-06-08                    | 
 
 
-*   **Submission date**: June 8, 2021 
-*   **End date for fitting data**: May 29, 2021 - no fitting should be done to data from after this date
-*   **Start date for fifth-round scenarios**: May 30, 2021 (week ending May 8) - first date of simulated outcomes
-*   **Simulation end date**: November 27, 2021 (26-week horizon)
+*   **Due date**: June 8, 2021 
+*   **End date for fitting data**: May 29, 2021 (no fitting should be done to data from after this date)
+*   **Start date for scenarios**: May 30, 2021  (first date of simulated transmission/outcomes)
+*   **Simulation end date**: November 27, 2021  (26-week horizon)
 
 </br>
 
@@ -108,23 +113,26 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
     *	**Pfizer / Moderna**
         *	**Vaccine efficacy (2-dose vaccines):**
             *   B.1.1.7, B.1.617+, and currently circulating variants in the US
-                *	First dose: 50% against symptoms, 14 days after 1st dose
-                *	Second dose: 90% against symptoms, 14 days after 2nd dose
+                *	<ins>First dose: **50% against symptoms**</ins>, 14 days after 1st dose
+                *	<ins>Second dose: **90% against symptoms**</ins>, 14 days after 2nd dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *	**Vaccine availability:**
             *	December-May: based on data on administered doses
             *	June-November: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
     *	**Johnson & Johnson**
-        *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
-        *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
-        *   Accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
+        *	**Vaccine efficacy (1-dose):**
+            *   70% VE against previous strains; 60% VE against B.1.1.7/B.1.617+
+        *	**Vaccine availability:**
+            *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
+            *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
+            *   Manner for accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
 
 *	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
 
 *	**B.1.1.7 Variant strain:** Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
 
-*	**B.1.617+ Variant strain:** Transmission advantage of B.1.617+ should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the B.1.617-like variants as **20%** or **60%** more transmissible than B.1.1.7 and other strains circulating in the US and is at **5% national prevalence on May 29, 2021**. Here a 20%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 20/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. We suggest that all states should have the same prevalence of 5% on May 29th, 2021 . No immune escape feature for B.1.617+.
+*	**B.1.617+ Variant strain:** Transmission advantage of B.1.617+ should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the B.1.617-like variants as **20%** or **60%** more transmissible than B.1.1.7 and other strains circulating in the US and is at **5% national prevalence on May 29, 2021**. The 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Here a 20%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 20/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. No immune escape feature for B.1.617+.
 
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
