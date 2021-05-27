@@ -1,0 +1,27 @@
+team_name: IHME
+model_name: IHME_COVID_model_deaths_unscaled
+model_abbr: IHME_deaths_unscaled
+model_version: "1.0"
+model_contributors: "Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins, Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y. Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom, Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti, Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai, William James Dangel, Lucas Earl, Samuel B. Ewald, Maha Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad, Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D. Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N. Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick, Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand, Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K. Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik, Christopher M. Odell, James K. O’Halloran, Aaron E. Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock, Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian Francesco Santomauro, John R. Shackleton, David H. Shaw, Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen, Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos, Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim & Christopher J. L. Murray"
+website_url: http://www.healthdata.org/
+license: cc-by-4.0
+methods: "State-level SEIR disease dynamics driven by location-specific estimated relationships between covariates and the force of infection."
+modeling_NPI: "To generate the two NPI reduction scenarios, we took our reference NPI forecasts, which already include moderate reductions in forecasted NPI adherence, as the moderate scenario and applied 50% reduction to the reference forecasts to generate the low scenario. The reductions in NPIs in our reference scenario come from time-series models of the imposition of social distancing and mask mandates."
+compliance_NPI: "Not applicable"
+contact_tracing: "Not applicable"
+testing: "Not applicable"
+vaccine_efficacy_transmission: "We separately estimate the efficacy of vaccines in preventing infection and preventing symptomatic disease. More details can be found here: http://www.healthdata.org/node/8584"
+vaccine_efficacy_delay: "Not applicable"
+vaccine_hesitancy: "We model location-specific levels of hesitancy with data from Facebook surveys."
+vaccine_immunity_duration: "Not applicable"
+natural_immunity_duration: "Not applicable"
+case_fatality_rate: "Not applicable"
+infection_fatality_rate: "We estimate a location-specific infection fatality rate ..."
+asymptomatics: "Not applicable"
+age_groups: "Our model is partitioned into high-risk and low-risk groups, where the high-risk group is age 65+"
+importations: "Not applicable"
+confidence_interval_method:  "We conduct 1000 draw-level forecasts for each location"
+calibration:  "Not applicable"
+spatial_structure: "Not applicable"
+citation: IHME COVID-19 Forecasting Team., Reiner, R.C., Barber, R.M. et al. Modeling COVID-19 scenarios for the United States. Nat Med 27, 94–105 (2021). https://doi.org/10.1038/s41591-020-1132-9
+methods_long: "A more detailed description of the IHME model can be found here: http://www.healthdata.org/covid/faqs"
