@@ -9,14 +9,13 @@ team_model_designation: primary
 
 methods: Uses SIKJalpha which models temporally varying infection, death, and hospitalization rates. 
 Learning is performed by reducing the problem to multiple simple linear regression problems. 
-Effects of variant and non-variant are modeled separately as competing contagions after
-estimating prevalence using SGTF vs non-SGTF data.
+Effects of variant and non-variant are modeled separately as competing contagions.
 
 modeling_NPI
-Historical infection rates assumed as a proxy for Non-Pharmaceutical Interventions (NPI). No NPI is assumed to correspond to R0 (new strain) of roughly 3.5 to 4.5.
+[Round 6] Assume an inherent reproduction number that will be achieved in the end in absence of all NPIs/maximum contact. This is using the original strains R0 multiplied by (1 + transmission advantage of the most transimissible strain). We assume that by the end of the projections, the NPIs will be down so that the contacts will be 80% of the maximum.
 
 compliance_NPI
-As given by the scenarios.
+Directly modeling compliance as stated above, rather than separate NPIs and compliance.
 
 contract_tracing
 Not applicable.
@@ -68,7 +67,7 @@ spatial_structure
 Not applicable.
 
 
-team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
+team_funding: None
 
 data_inputs: Cases and deaths - JHU, hospitalization - HHS time-series
 
