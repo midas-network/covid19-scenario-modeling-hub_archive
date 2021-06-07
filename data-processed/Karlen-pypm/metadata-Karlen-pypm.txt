@@ -11,13 +11,11 @@ methods: A network of populations connected via delay distributions calculated w
 modeling_NPI: A model for the case history for each state, consisting of relatively
 	 long periods of constant behaviour. The observed growth rate within those periods
 	 determine the transmission rate parameter corresponding to the NPI in force at each
-	 time. Feb 2020 (NPI=0) defined by initial growth fit for each state - a common value
-	 is assumed for all states. Lower estimates are used, and these roughly correspond to 
-	 R0=2.5 (original strain) R0=4 (B.1.1.7).
-	 The NPI is reduced linearly (one step per day) over the period of 5 months.
+	 time. For round 6, NPI is held constant, since model has fit case data well for past
+	 8 weeks, despite general relaxation of measures.
 compliance_NPI: Variance of transmission rate is included for the interval construction. The
 		standard deviation of the transmission rates arise from the standard deviation of the
-		endpoint NPI (10% on R0) and the uncertainty of the starting point transmission rate.
+		estimator for current growth rate and from translation to growth rate to new variant.
 contact_tracing: The removal delay time distribution for individuals from the circulating contagious
 		 population is fixed through the entire history. The effect of changes to
 		 contact tracing policy is absorbed in the inferred transmission rate.
@@ -30,25 +28,23 @@ vaccine_efficacy_transmission: The efficacy for transmission is assumed to be id
 vaccine_efficacy_delay: Delay distributions are defined to roughly match the two dose
 			schedule defined in the scenario descriptions. Gamma distributions are
 			used with mean and standard deviation of 20 and 15 days respectively.
-vaccine_hesitancy: For the high (low) vaccination scenarios it is assumed that 17% (32%) of the population are
-		   not willing to accept a vaccination. The same vaccine hesitancy is assumed for the two age groups.
-vaccine_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
-			   once there is guidance.
-natural_immunity_duration: Immunity is assumed to be permanent. Will model by a delay distribution
-			   once there is guidance.
+vaccine_hesitancy: As prescribed. 1st dose vaccination rate is assumed to continue at current rate, which
+                   results in many states not reaching the goal by end of scenario period.
+vaccine_immunity_duration: Starting in round 6, vaccine immunity wanes according to the CDF of 
+                           a gamma distribution with mean of 365 days and standard deviation of 50 days.
+natural_immunity_duration: Same assumption as for vaccine immunity duration.
 case_fatality_rate: The infection fatality rate is the fundamental model parameter, and is estimated
-		    from case and death data. The rate is separately estimated for two age groups
-		    (below and above the age of 65). The inferred case fatality rate is therefore
+		    from case and death data. The inferred case fatality rate is therefore
 		    different for each state.
-infection_fatality_rate: This is estimated from case and death data from each state, and separately
-			 for two age groups (below and above the age of 65). The rate is therefore
-			 different for each state.
+infection_fatality_rate: This is estimated from case and death data from each state. The rate is 
+                         therefore different for each state.
 asymptomatics: 0.1 is the assumed proportion for purposes of defining the connection to testing and
 	       hospitalization. A single delay distribution is assumed for removing individuals from
 	       the circulating contagious population, which captures many aspects of the infection
 	       cycle, including the asymptomatic fraction. Effectively the asymptomatic fraction is
 	       absorbed into the inferred transmission rate.
-age_groups: [0-64,65+], with mixing
+age_groups: Starting in round 6, a homogeneous model is used since vaccination age profile has
+            flattened considerably.
 importations: Not applicable
 confidence_interval_method: Historical case/hospitalization/death time series data are used to estimate
 			    model parameters and give standard deviations of the estimators. To produce
