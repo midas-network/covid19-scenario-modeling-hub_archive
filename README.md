@@ -1,10 +1,14 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 04-27-2021 for **Round 5 Scenarios**.
+Last updated: 05-25-2021 for **Round 6 Scenarios**.
 
-Round 4: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md#forth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
-### Previous Round Scenarios and Results: [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
+## Previous Round Scenarios and Results: 
+[https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
+
+
+Round 5: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md#fifth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+
 
 
 ## Rationale
@@ -29,7 +33,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 
 
-## Round 5 Scenarios    
+## Round 6 Scenarios    
 
 </br>
 
@@ -39,30 +43,37 @@ Model projections should be submitted via pull request to the data-processed fol
 
 </br>
 
-\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 16 years or older until June 1, 2021. On June 1, the eligible population is presumed to extend to individuals aged 12 years and older.
+\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 16 years or older until May 12, 2021. On May 12, the eligible population is extended to individuals aged 12 years and older, through the end of the projection period.
 
-\* **Vaccine hesitancy** is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 83% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept)) from March 13, 2021 data. The low saturation estimate of 68% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from March 15, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)). Both of these saturation levels are assumed to be among the population eligible for vaccination, not the full population. 
+\* **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
 
 </br>
 
 
 ### Common Specifications
 
+**NPI:** In contrast to past scenarios, we do not specify different levels of non-pharmaceutical interventions (NPI) use here. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
+
+
 **Vaccination**
-*	<ins>Doses available</ins>: 
-    *	50M Moderna/Pfizer 1st doses, 15M J&J doses available monthly
+*   <ins>Doses available</ins>: 
+    *	50M Moderna/Pfizer 1st doses available monthly, June-November 2021 
+    *   J&J no longer available (after May 2021)
     *	Supply has likely eclipsed demand at this stage. Number of doses are for reference and as a reminder to account for different VE by manufacturer, but no longer indicate number of doses administered. Distribution of doses by manufacturer and associated vaccine efficacy should fit within these dose bounds.
 *	<ins>VE</ins>: 
-    *	75% and 95% against symptoms (Moderna/Pfizer 1st and 2nd dose)
-    *	70% against symptoms (J&J)
+    *	**50% and 90%** against symptoms (Moderna/Pfizer 1st and 2nd dose; vs. B.1.1.7/B.1.617 and other variants circulating in the projection period). This is based on reports from the UK and Israel indicating decreased protection against new variants such as B117 and B1617 after 1st dose, and no substantial decrease after 2nd dose. These estimates should be used against current and future circulating strains during June-Nov; however higher estimates of VE can be used to account for prior circulating strains.
     *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death). Data on VE studies of infection and symptomatic disease are included below.
+
+
+**B.1.617+ variant strain with increased transmissibility:** The scenarios define the B.1.617-like variants as <ins>**20% and 60%**</ins> more transmissible than B.1.1.7 and other strains circulating in the US and is at <ins>**5% national prevalence on May 29, 2021**</ins>. This 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is **more transmissible** but it is **not an immune escape variant**; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for B.1.617+ or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
+
 
 </br>
 
 
 ### Vaccination Hesitancy
 
-Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are illustrative National reference points to guide defining hesitancy. The high vaccination scenario (low hesitancy) saturates at approximately 83% vaccination coverage nationally among the eligible population, as defined by current estimates from the Delphi group (link) from March 13, 2021 data (red line in figure). The low vaccination scenario (high hesitancy) saturates at approximately 68% vaccination coverage nationally among the eligible population, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey (link) from March 15, 2021 data. The speed of vaccination saturation should be defined by the modeling team, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit and/or age group hesitancy limits should be defined by the modeling team using their best judgement. Overall national hesitancy should be similar to the illustrative levels defined in the scenarios, though is not expected to be exact. The eligible population for vaccination is presumed to be individuals aged 16 years or older until June 1, 2021. On June 1, the eligible population is presumed to extend to individuals aged 12 years and older.
+Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are illustrative National reference points to guide defining hesitancy. The high vaccination scenario (low hesitancy) saturates at 86% vaccination coverage nationally among the vaccine-eligible population (updated from 83% in Round 5), as defined by current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept)) (red line in figure, borrowed from round 5, but the same spirit applies to round 6). The low vaccination scenario (high hesitancy) saturates at 75% vaccination coverage nationally among the vaccine-eligible population, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)) from April 24, 2021 data. The speed of vaccination saturation should be defined by the modeling teams, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit hesitancy limits should be defined by the modeling team using their best judgment. Overall national hesitancy should be similar to the illustrative levels defined in the scenarios, though is not expected to be exact. The eligible population for vaccination is presumed to be individuals aged 12 years and older.
 
 ![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/round5_hesitancycurves.png)
 
@@ -71,18 +82,18 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 ### Submission Information
 
-| Scenario                                   | Scenario name for submission file | Scenario ID for submission file |
-| ------------------------------------------ |:---------------------------------:|:-------------------------------:|
-| Scenario A. High Vaccination, Moderate NPI | highVac_modNPI                    | A-2021-05-02                    |
-| Scenario B. High Vaccination, Low NPI	     | highVac_lowNPI                    | B-2021-05-02                    |
-| Scenario C. Low Vaccination, Moderate NPI	 | lowVac_modNPI                     | C-2021-05-02                    |
-| Scenario D. Low Vaccination & Low NPI	     | lowVac_lowNPI                     | D-2021-05-02                    | 
+| Scenario                                                               | Scenario name for submission file | Scenario ID for submission file |
+| ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
+| Scenario A. High Vaccination, Low Variant Transmissibility Increase    | highVac_lowVar                    | A-2021-06-08                    |
+| Scenario B. High Vaccination, High Variant Transmissibility Increase   | highVac_highVar                   | B-2021-06-08                    |
+| Scenario C. Low Vaccination, Low Variant Transmissibility Increase	 | lowVac_lowVar                     | C-2021-06-08                    |
+| Scenario D. Low Vaccination, High Variant Transmissibility Increase    | lowVac_highVar                    | D-2021-06-08                    | 
 
 
-*   **Submission date**: May 4, 2021 
-*   **End date for fitting data**: May 1, 2021 - no fitting should be done to data from after this date
-*   **Start date for fifth-round scenarios**: May 2, 2021 (week ending May 8) - first date of simulated outcomes
-*   **Simulation end date**: October 30, 2021 (26-week horizon)
+*   **Due date**: June 8, 2021 
+*   **End date for fitting data**: May 29, 2021 (no fitting should be done to data from after this date)
+*   **Start date for scenarios**: May 30, 2021  (first date of simulated transmission/outcomes)
+*   **Simulation end date**: November 27, 2021  (26-week horizon)
 
 </br>
 
@@ -95,34 +106,33 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 *	**Social Distancing Measures:**
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *	Declines over a period of 6 months starting at the start of May 2021 and ending in October 2021 at **designated level of control effectiveness** observed for April 2021. 
-    *	Decline can be implemented at teams’ discretion (e.g., daily or monthly stepdowns).
-    *	Decline can be gradual or sudden, and can differ in speed between states.
-    *	The effectiveness of control in April 2021 should be based on the last two weeks of the month. 
-    *	Reduction should be implemented based on each team’s best judgment, but should be done in such a way that a 100% reduction (0% of April 2021 effectiveness) would approximate an epidemic without NPIs (e.g., no masks, no social distancing) in place, but still including immunity, vaccination, etc. We recognize there is uncertainty about what transmission would be without NPIs; this uncertainty should be incorporated into the scenario projections.
+    *   Current and future levels of social distancing are to be defined by the teams based on their understanding of current and planned control and behavior and expectations. Teams should consider that most jurisdictions are opening fairly quickly. No reactive interventions should be planned.
 *	**Testing-Trace-Isolate:** constant at baseline levels
 *	**Masking:** Included as part of “Social Distancing Measures” above.
 *	**Vaccination:**
     *	**Pfizer / Moderna**
         *	**Vaccine efficacy (2-dose vaccines):**
-            *	First dose: 75% against symptoms, 14 days after 1st dose
-            *	Second dose: 95% against symptoms, 14 days after 2nd dose
+            *   B.1.1.7, B.1.617+, and currently circulating variants in the US
+                *	<ins>First dose: **50% against symptoms**</ins>, 14 days after 1st dose
+                *	<ins>Second dose: **90% against symptoms**</ins>, 14 days after 2nd dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *	**Vaccine availability:**
-            *	December-April: based on data on administered doses
-            *	May-October: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
+            *	December-May: based on data on administered doses
+            *	June-November: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
     *	**Johnson & Johnson**
-        *	**Vaccine efficacy (1-dose vaccine):**
-            *	Single dose: 70% against symptoms, 14 days after dose
-            *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
+        *	**Vaccine efficacy (1-dose):**
+            *   70% VE against previous strains; 60% VE against B.1.1.7/B.1.617+
         *	**Vaccine availability:**
-            *	March-April: based on data on administered doses, with continuing at rate current on date of projection for remainder of month.
-            *	April-September: 15M doses/month available May-October 2021
+            *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
+            *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
+            *   Manner for accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
 
 *	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
 
 *	**B.1.1.7 Variant strain:** Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
+
+*	**B.1.617+ Variant strain:** Transmission advantage of B.1.617+ should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the B.1.617-like variants as **20%** or **60%** more transmissible than B.1.1.7 and other strains circulating in the US and is at **5% national prevalence on May 29, 2021**. The 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Here a 20%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 20/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. No immune escape feature for B.1.617+.
 
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
@@ -130,11 +140,11 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 *   **Vaccine allocation**: between-state allocation is based on population per the CDC/NAS [guidelines](https://www.nap.edu/catalog/25917/framework-for-equitable-allocation-of-covid-19-vaccine#resources) (proportional allocation); within-state allocation and the impact of vaccine hesitancy are left to the discretion of each team
 *   **Vaccine immunity delay:** There is approximately a 14 day delay according to the Pfizer data; because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it
 *   **Vaccine uptake:** See specific details.
-*   **Vaccine rollout**: rollout to follow [ACIP recommendations](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-20/02-COVID-Dooling.pdf) unless known to be contradicted by state recommendations
+*   **Vaccine roll-out**: roll-out to follow [ACIP recommendations](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2020-12/slides-12-20/02-COVID-Dooling.pdf) unless known to be contradicted by state recommendations
     *   Phase 1a: health care workers, long-term care facilities
     *   Phase 1b: frontline essential workers, adults 75+
     *   Phase 1c: other essential workers, adults with high-risk conditions, adults 65-74
-*   **NPI assumptions**: phased reductions of NPIs in 2021 that align with patterns observed at different times in the course of the epidemic in 2020-21 (see scenario-specific guidance); teams have some liberty on how to implement these reductions within the guidelines
+*   **NPI assumptions**: NPI estimates should be based on current trends and reported planned changes.
 *   **Database tracking of NPIs**: teams may use their own data if desired, otherwise we recommend the following sources as a common starting point:
     *   [Coronavirus Government Response Tracker | Blavatnik School of Government (ox.ac.uk)](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker)
     *   [Coronavirus State Actions - National Governors Association (nga.org)](https://www.nga.org/coronavirus-state-actions-all/)
@@ -163,6 +173,7 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 - Round 2 Scenarios
 - [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
 - [Round 4 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md)
+- [Round 5 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md)
 
 </br>
 
@@ -217,8 +228,9 @@ Those teams interested in accessing additional computational power should contac
         Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
         (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
 *   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
-    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht, Laura Asher (JHU/APL), 
-        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL)
+    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
+        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
+        Molly Gallagher (JHU/APL), Luke Mullaney (JHU/APL), Kaitlin Lovett (JHU/APL)
 *   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
 *   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
@@ -226,18 +238,24 @@ Those teams interested in accessing additional computational power should contac
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
         and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
         for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston,
-        MA)„ Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
+        MA), Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
         Northeastern University, Boston, MA), Ana Pastore y Piontti (Laboratory for the Modeling
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
 *   [*USC Data Science Lab — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
-    *   Ajitesh Srivastava, University of Southern California
+    *   Ajitesh Srivastava (University of Southern California)
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
         Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
         Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+*   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+    *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
+*   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+    * Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science), Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science), Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics), Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science)
+*   [*Institute for Health Metrics and Evaluation – IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
+    * Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins, Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y. Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom, Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti, Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai, William James Dangel, Lucas Earl, Samuel B. Ewald, Maha Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad, Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D. Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N. Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick, Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand, Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K. Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik, Christopher M. Odell, James K. O’Halloran, Aaron E. Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock, Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian Francesco Santomauro, John R. Shackleton, David H. Shaw, Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen, Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos, Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim & Christopher J. L. Murray
         
 </br>
 

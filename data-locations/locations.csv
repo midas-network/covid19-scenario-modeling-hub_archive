@@ -1,12 +1,12 @@
 abbreviation,location,location_name,population
 US,US,US,328728466
-AL,1,Alabama,4903185
-AK,2,Alaska,731545
-AZ,4,Arizona,7278717
-AR,5,Arkansas,3017804
-CA,6,California,39512223
-CO,8,Colorado,5758736
-CT,9,Connecticut,3565287
+AL,01,Alabama,4903185
+AK,02,Alaska,731545
+AZ,04,Arizona,7278717
+AR,05,Arkansas,3017804
+CA,06,California,39512223
+CO,08,Colorado,5758736
+CT,09,Connecticut,3565287
 DE,10,Delaware,973764
 DC,11,District of Columbia,705749
 FL,12,Florida,21477737
