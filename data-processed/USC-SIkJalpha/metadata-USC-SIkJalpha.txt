@@ -7,7 +7,7 @@ website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
 methods: Uses SIKJalpha which models temporally varying infection, death, and hospitalization rates. Learning is performed by reducing the problem to multiple simple linear regression problems. Effects of variant and non-variant are modeled separately as competing contagions.
-modeling_NPI: [Round 6] Assume an inherent reproduction number that will be achieved in the end in absence of all NPIs/maximum contact. This is using the original strains R0 multiplied by (1 + transmission advantage of the most transimissible strain). We assume that by the end of the projections, the NPIs will be down so that the contacts will be 80% of the maximum.
+modeling_NPI: [Round 6_updated] Uses Cuebiq data to assess current contact scores. We assume that by the end of the projection, the contacts will linearly increase to the pre-pandemic contact scores for each state. Accordingly we increase the transmission rates throughout the projeciton period.
 compliance_NPI: Directly modeling compliance as stated above, rather than separate NPIs and compliance.
 contract_tracing: Not applicable.
 testing: Not applicable.
