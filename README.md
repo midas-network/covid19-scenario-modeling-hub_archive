@@ -43,9 +43,9 @@ Model projections should be submitted via pull request to the data-processed fol
 
 </br>
 
-\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 16 years or older until May 12, 2021. On May 12, the eligible population is extended to individuals aged 12 years and older, through the end of the projection period.
+\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 12 years and older through the end of the projection period.
 
-\* **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
+\** **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
 
 </br>
 
