@@ -1,6 +1,6 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 07-02-2021 for **Round 7 Scenarios**.
+Last updated: 07-06-2021 for **Round 7 Scenarios**.
 
 
 ## Previous Round Scenarios and Results: 
