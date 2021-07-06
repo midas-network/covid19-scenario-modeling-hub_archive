@@ -43,9 +43,9 @@ Model projections should be submitted via pull request to the data-processed fol
 
 </br>
 
-\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 16 years or older until May 12, 2021. On May 12, the eligible population is extended to individuals aged 12 years and older, through the end of the projection period.
+\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 12 years and older through the end of the projection period.
 
-\* **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
+\** **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
 
 </br>
 
@@ -218,18 +218,20 @@ Those teams interested in accessing additional computational power should contac
 ## Teams and models
 *   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
-        Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins
-        Infectious Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),
-        Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins
-        Infectious Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics),
-        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
-        Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious Disease Dynamics), 
-        Lindsay T. Keegan (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves
-        Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
-        (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
+        Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious
+        Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns
+        Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious 
+        Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), Javier
+        Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
+        Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics),
+        Allison Hill (Johns Hopkins Infectious Disease Dynamics), Lindsay T. Keegan (University of Utah),
+        Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
+        Karthik Raman (Amazon Web Services),  Arun Subramaniyan (Amazon Web Services), Greg Thursam (Amazon Web 
+        Services), Anh Tran (Amazon Web Services)
 *   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
-    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht, Laura Asher (JHU/APL), 
-        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL)
+    *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
+        Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
+        Molly Gallagher (JHU/APL), Luke Mullaney (JHU/APL), Kaitlin Lovett (JHU/APL)
 *   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
 *   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
@@ -237,18 +239,26 @@ Those teams interested in accessing additional computational power should contac
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
         and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
         for the Modeling of Biological and Socio-technical Systems, Northeastern University, Boston,
-        MA)„ Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
+        MA), Xinyue Xiong (Laboratory for the Modeling of Biological and Socio-technical Systems,
         Northeastern University, Boston, MA), Ana Pastore y Piontti (Laboratory for the Modeling
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
 *   [*USC Data Science Lab — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
-    *   Ajitesh Srivastava, University of Southern California
+    *   Ajitesh Srivastava (University of Southern California)
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
-        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
+        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patrick Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
         Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+*   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+    *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
+*   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+    * Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science), Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science), Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics), Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science)
+*   [*Institute for Health Metrics and Evaluation – IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
+    * Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins, Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y. Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom, Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti, Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai, William James Dangel, Lucas Earl, Samuel B. Ewald, Maha Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad, Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D. Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N. Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick, Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand, Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K. Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik, Christopher M. Odell, James K. O’Halloran, Aaron E. Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock, Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian Francesco Santomauro, John R. Shackleton, David H. Shaw, Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen, Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos, Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim & Christopher J. L. Murray
+*   [*University of Virginia - EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+    * Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA) 
         
 </br>
 

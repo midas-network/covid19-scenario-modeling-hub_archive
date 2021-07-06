@@ -25,6 +25,16 @@ for (i in 1:length(scenarios_)){
 sum(grepl("hosp", data_comb$target))
   
 unique(data_comb$target)
+length(unique(data_comb$quantile)) #24
+length(unique(data_comb$target)) # 6*26 = 156
+length(unique(data_comb$target))/26 #6
+length(unique(data_comb$target_end_date)) # 26
+length(unique(data_comb$location)) #56
+
+sort(unique(data_comb$target_end_date))
+unique(data_comb$scenario_id)
+unique(data_comb$scenario_name)
+
 
 # Save it
 readr::write_csv(data_comb, paste0('data-processed/JHU_IDD-CovidSP/', sub_date, "-JHU_IDD-CovidSP.csv"))
