@@ -97,7 +97,7 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 *   **Due date**: July 13, 2021 
 *   **End date for fitting data**: July 03, 2021 (no fitting should be done to data from after this date)
-*   **Start date for scenarios**: July 03, 2021  (first date of simulated transmission/outcomes)
+*   **Start date for scenarios**: July 04, 2021  (first date of simulated transmission/outcomes)
 *   **Simulation end date**: January 01, 2022  (26-week horizon)
 
 </br>
