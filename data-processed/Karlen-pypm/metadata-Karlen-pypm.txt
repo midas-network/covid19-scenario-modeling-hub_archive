@@ -32,6 +32,7 @@ vaccine_hesitancy: As prescribed. 1st dose vaccination rate is assumed to contin
                    results in many states not reaching the goal by end of scenario period.
 vaccine_immunity_duration: Starting in round 6, vaccine immunity wanes according to the CDF of 
                            a gamma distribution with mean of 365 days and standard deviation of 50 days.
+			   For round 7, vaccine immunity mean wane delay changed from 1 year to 2 years.
 natural_immunity_duration: Same assumption as for vaccine immunity duration.
 case_fatality_rate: The infection fatality rate is the fundamental model parameter, and is estimated
 		    from case and death data. The inferred case fatality rate is therefore
