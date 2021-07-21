@@ -1,13 +1,13 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 05-25-2021 for **Round 6 Scenarios**.
+Last updated: 07-06-2021 for **Round 7 Scenarios**.
 
 
 ## Previous Round Scenarios and Results: 
 [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
 
-Round 5: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md#fifth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+Round 6: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md#sixth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
 
 
@@ -33,7 +33,11 @@ Model projections should be submitted via pull request to the data-processed fol
 
 
 
-## Round 6 Scenarios    
+## Round 7 Scenarios    
+
+</br>
+
+*Round 7 is an update of Round 6 with updated data and understanding of both the Delta variant and Vaccination hesitancy.*
 
 </br>
 
@@ -45,27 +49,28 @@ Model projections should be submitted via pull request to the data-processed fol
 
 \* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 12 years and older through the end of the projection period.
 
-\** **Vaccine hesitancy** expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 86% saturation is defined using the current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 5). The low saturation estimate of 75% is the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey from Apr 14-26, 2021 data ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 5. 
+\** **Vaccine hesitancy** is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 80% saturation is defined crudely as using the current estimates from the Delphi group, adjusted for potential bias in respondents, who tend to be more highly vaccinated that the general US population ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 6). The low saturation estimate of 70% is based on an adjustment of the Pulse Survey overall estimate, adjusted for survey participant vaccination coverage. This number also mirrors the lowest county-level estimate (73.3%) from the U.S. Census Bureau’s Pulse Survey from May 26-June 7, 2021 ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 6. 
 
 </br>
 
 
 ### Common Specifications
 
-**NPI:** In contrast to past scenarios, we do not specify different levels of non-pharmaceutical interventions (NPI) use here. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
+**NPI:** In contrast to past scenarios, we don’t specify different levels of non-pharmaceutical interventions (NPI) use; **however, teams should consider that most schools intend to return to in-person education in the fall**. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
 
 
 **Vaccination**
 *   <ins>Doses available</ins>: 
-    *	50M Moderna/Pfizer 1st doses available monthly, June-November 2021 
+    *	50M Moderna/Pfizer 1st doses available monthly, June 2021-January 2022
     *   J&J no longer available (after May 2021)
     *	Supply has likely eclipsed demand at this stage. Number of doses are for reference and as a reminder to account for different VE by manufacturer, but no longer indicate number of doses administered. Distribution of doses by manufacturer and associated vaccine efficacy should fit within these dose bounds.
 *	<ins>VE</ins>: 
-    *	**50% and 90%** against symptoms (Moderna/Pfizer 1st and 2nd dose; vs. B.1.1.7/B.1.617 and other variants circulating in the projection period). This is based on reports from the UK and Israel indicating decreased protection against new variants such as B117 and B1617 after 1st dose, and no substantial decrease after 2nd dose. These estimates should be used against current and future circulating strains during June-Nov; however higher estimates of VE can be used to account for prior circulating strains.
-    *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death). Data on VE studies of infection and symptomatic disease are included below.
+    *	Optimistic (**50% and 90%** against symptoms (Moderna/Pfizer 1st and 2nd dose) vs. Delta) is based on reports from the UK and the manufacturers indicating decreased protection against new variants such as Alpha and Delta after 1st dose, and no substantial decrease after 2nd dose. 
+    *   Pessimistic (**35% and 85%** against symptoms (Moderna/Pfizer 1st and 2nd dose) vs. Delta) is based on reports from the UK and Israel indicating further decreased protection against the Delta variant after 1st dose, and notable decrease after 2nd dose. 
+    *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death).
 
 
-**B.1.617+ variant strain with increased transmissibility:** The scenarios define the B.1.617-like variants as <ins>**20% and 60%**</ins> more transmissible than B.1.1.7 and other strains circulating in the US and is at <ins>**5% national prevalence on May 29, 2021**</ins>. This 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is **more transmissible** but it is **not an immune escape variant**; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for B.1.617+ or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
+**Delta variant strain with increased transmissibility:** The scenarios define the Delta (B.1.617.2) variant as <ins>**40% and 60%**</ins> more transmissible than Alpha (B.1.1.7.) **Initial prevalence should be estimated or defined by the teams based on sequencing and other relevant data, preferably at the state level.**  Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is more transmissible but it is not an immune escape variant; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for Delta or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
 
 
 </br>
@@ -84,16 +89,16 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 | Scenario                                                               | Scenario name for submission file | Scenario ID for submission file |
 | ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
-| Scenario A. High Vaccination, Low Variant Transmissibility Increase    | highVac_lowVar                    | A-2021-06-08                    |
-| Scenario B. High Vaccination, High Variant Transmissibility Increase   | highVac_highVar                   | B-2021-06-08                    |
-| Scenario C. Low Vaccination, Low Variant Transmissibility Increase	 | lowVac_lowVar                     | C-2021-06-08                    |
-| Scenario D. Low Vaccination, High Variant Transmissibility Increase    | lowVac_highVar                    | D-2021-06-08                    | 
+| Scenario A. High Vaccination, Low Variant Transmissibility Increase    | highVac_lowVar                    | A-2021-07-13                    |
+| Scenario B. High Vaccination, High Variant Transmissibility Increase   | highVac_highVar                   | B-2021-07-13                    |
+| Scenario C. Low Vaccination, Low Variant Transmissibility Increase	 | lowVac_lowVar                     | C-2021-07-13                    |
+| Scenario D. Low Vaccination, High Variant Transmissibility Increase    | lowVac_highVar                    | D-2021-07-13                    | 
 
 
-*   **Due date**: June 8, 2021 
-*   **End date for fitting data**: May 29, 2021 (no fitting should be done to data from after this date)
-*   **Start date for scenarios**: May 30, 2021  (first date of simulated transmission/outcomes)
-*   **Simulation end date**: November 27, 2021  (26-week horizon)
+*   **Due date**: July 13, 2021 
+*   **End date for fitting data**: July 03, 2021 (no fitting should be done to data from after this date)
+*   **Start date for scenarios**: July 04, 2021  (first date of simulated transmission/outcomes)
+*   **Simulation end date**: January 01, 2022  (26-week horizon)
 
 </br>
 
@@ -106,33 +111,37 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 *	**Social Distancing Measures:**
     *	Includes combined effectiveness/impact of all non-pharmaceutical interventions and behavior change.
-    *   Current and future levels of social distancing are to be defined by the teams based on their understanding of current and planned control and behavior and expectations. Teams should consider that most jurisdictions are opening fairly quickly. No reactive interventions should be planned.
+    *   Current and future levels of social distancing are to be defined by the teams based on their understanding of current and planned control and behavior and expectations. Teams should consider that most jurisdictions are opening fairly quickly, and most schools intend to return to in-person education in the fall. No reactive interventions should be planned.
 *	**Testing-Trace-Isolate:** constant at baseline levels
 *	**Masking:** Included as part of “Social Distancing Measures” above.
+*   **Immune waning and Immune escape:** As defined by the modeling team.
 *	**Vaccination:**
     *	**Pfizer / Moderna**
         *	**Vaccine efficacy (2-dose vaccines):**
-            *   B.1.1.7, B.1.617+, and currently circulating variants in the US
+            *   B.1.1.7
                 *	<ins>First dose: **50% against symptoms**</ins>, 14 days after 1st dose
                 *	<ins>Second dose: **90% against symptoms**</ins>, 14 days after 2nd dose
+            *   B.1.617.2
+                *	<ins>First dose: **35% vs 50% against symptoms**</ins>, 14 days after 1st dose
+                *	<ins>Second dose: **85% vs 90% against symptoms**</ins>, 14 days after 2nd dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *	**Vaccine availability:**
-            *	December-May: based on data on administered doses
-            *	June-November: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
+            *	December-June: based on data on administered doses
+            *	July-January: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose):**
-            *   70% VE against previous strains; 60% VE against B.1.1.7/B.1.617+
+            *   70% VE against previous strains; 60% VE against B.1.1.7/B.1.617.2
         *	**Vaccine availability:**
             *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
-            *	June-November: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
+            *	June-January: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
             *   Manner for accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
 
 *	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
 
-*	**B.1.1.7 Variant strain:** Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. The default assumptions are that the variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and current strains in severity, mortality, or VE are assumed in default.
+*	**Alpha (B.1.1.7) variant strain:** Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. The default assumptions are that the variant is 1.5x more transmissible than wild-type strains and followed the trajectory outlined here [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and wild strains in severity, mortality, or VE are assumed in default.
 
-*	**B.1.617+ Variant strain:** Transmission advantage of B.1.617+ should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the B.1.617-like variants as **20%** or **60%** more transmissible than B.1.1.7 and other strains circulating in the US and is at **5% national prevalence on May 29, 2021**. The 5% proportion on May 29th is a national estimate; teams can use state-specific data if they wish to. Here a 20%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 20/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. No immune escape feature for B.1.617+.
+*	**Delta (B.1.617.2) variant strain:** Transmission advantage of Delta should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the Delta variant as <ins>**40% or 60%**</ins> more transmissible than Alpha and other strains circulating in the US. Prevalence is not pre-specified – teams are expected to define this on their own. Here a 40%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 40/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. No immune escape feature for Delta variant.
 
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
@@ -174,6 +183,7 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 - [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
 - [Round 4 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md)
 - [Round 5 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md)
+- [Round 6 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md)
 
 </br>
 
@@ -218,15 +228,16 @@ Those teams interested in accessing additional computational power should contac
 ## Teams and models
 *   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
-        Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins
-        Infectious Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),
-        Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins
-        Infectious Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics),
-        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
-        Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious Disease Dynamics), 
-        Lindsay T. Keegan (University of Utah), Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves
-        Aquilanti (Amazon Web Service), Karthik Raman (Amazon Web Services), Arun Subramaniyan
-        (Amazon Web Services), Greg Thursam (Amazon Web Services), Anh Tran (Amazon Web Services)
+        Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious
+        Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns
+        Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious 
+        Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), Javier
+        Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
+        Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics),
+        Allison Hill (Johns Hopkins Infectious Disease Dynamics), Lindsay T. Keegan (University of Utah),
+        Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
+        Karthik Raman (Amazon Web Services),  Arun Subramaniyan (Amazon Web Services), Greg Thursam (Amazon Web 
+        Services), Anh Tran (Amazon Web Services)
 *   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
         Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
@@ -247,15 +258,17 @@ Those teams interested in accessing additional computational power should contac
     *   Ajitesh Srivastava (University of Southern California)
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
-        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patric Corbett
+        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patrick Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
-        Benjamin Hurt (UVA), Jiangzhou Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+        Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
 *   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
     *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
 *   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
     * Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science), Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science), Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics), Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science)
 *   [*Institute for Health Metrics and Evaluation – IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
     * Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins, Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y. Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom, Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti, Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai, William James Dangel, Lucas Earl, Samuel B. Ewald, Maha Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad, Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D. Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N. Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick, Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand, Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K. Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik, Christopher M. Odell, James K. O’Halloran, Aaron E. Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock, Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian Francesco Santomauro, John R. Shackleton, David H. Shaw, Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen, Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos, Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim & Christopher J. L. Murray
+*   [*University of Virginia - EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+    * Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA) 
         
 </br>
 
