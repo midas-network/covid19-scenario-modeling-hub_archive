@@ -7,7 +7,7 @@ Last updated: 07-06-2021 for **Round 7 Scenarios**.
 [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
 
-Round 6: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md#sixth-round-scenarios) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+Round 7: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round7.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
 
 
@@ -33,11 +33,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 
 
-## Round 7 Scenarios    
-
-</br>
-
-*Round 7 is an update of Round 6 with updated data and understanding of both the Delta variant and Vaccination hesitancy.*
+## Round 8 Scenarios    
 
 </br>
 
@@ -47,40 +43,38 @@ Model projections should be submitted via pull request to the data-processed fol
 
 </br>
 
-\* **Vaccine-eligible population.** The eligible population for vaccination is presumed to be individuals aged 12 years and older through the end of the projection period.
+**Interpretation:** These scenarios illustrate a gradual decay of immune protection with time, rather than the impact of an immune escape variant. 
 
-\** **Vaccine hesitancy** is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are National reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling team. The high vaccination 80% saturation is defined crudely as using the current estimates from the Delphi group, adjusted for potential bias in respondents, who tend to be more highly vaccinated that the general US population ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept), updated from Round 6). The low saturation estimate of 70% is based on an adjustment of the Pulse Survey overall estimate, adjusted for survey participant vaccination coverage. This number also mirrors the lowest county-level estimate (73.3%) from the U.S. Census Bureau’s Pulse Survey from May 26-June 7, 2021 ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)), which is updated from Round 6. 
+**Model structure:** Teams are encouraged to model waning immunity as a partial loss of immune protection, where individuals go back to a partially immune state after a period prescribed in the scenarios (mean of 1 or 3 yrs depending on the scenario). Individuals who have reached a partially immune state have reduced probabilities of reinfection and severe disease compared to naive individuals. In scenarios B-D, the distribution of immune decay should follow an exponential distribution. Scenario A has no waning. The same parameters should be used for waning immunity from natural infection and vaccination. Teams are encouraged to model these compartments separately however, in preparation for future scenarios focused on vaccine boosters.
+ 
+**Model parameters defined in scenarios:** Parameters in these scenarios are based on observational studies of reinfection (natural immunity), vaccine breakthroughs, and models of decay of antibodies and VE over time. To illustrate the meaning of the scenario parameters, in scenario B for example, we have a  protection from infection of 70% for individuals <65yrs in the partially immune state. This means that, for older individuals, the transition out of the partially immune state and into infection is 0.3\*force of infection applied to naive individuals of the same age. If we apply this waning parameter to vaccinated people, this corresponds to a VE of 70% against infection. Further, in this scenario, protection against hospitalization and death is 90%. This estimate is similar to VE against hospitalization and death, so it is not a conditional probability. This means that if we follow two individuals over time, one with partial immunity and one completely naive, the probability that the partially immune individual will be hospitalized (die) from COVID19 is 0.1 times the probability that a naive individual will be hospitalized (die). Hence this probability combines protection against infection and protection against hospitalization/death given infection. If we apply this parameter to vaccinated individuals for whom immunity has partially waned, their VE against hospitalization and death becomes 90%. 
+
+**Unconstrained model parameters:** Teams should use their own judgments to parametrize protection against symptoms in the partially immune state, and any reduction in transmission that partially immune individuals may have. Teams can choose to treat individuals who have been infected and vaccinated differently from individuals who had a single exposure to the pathogen/antigen.  We do not specify any waning for J&J (for which the starting point VE is much lower): teams can choose to ignore J&J, which represents a small fraction of all vaccinated in the US, or apply a different waning for J&J. We do not specify any waning for those who only get a 1st dose of Pfizer or Moderna and hence never acquire full vaccine immunity. We believe this represents a small fraction of all vaccinated. Teams can choose to apply a different waning to these individuals, or ignore them. All of these assumptions should be documented in meta-data.
+
 
 </br>
 
 
 ### Common Specifications
 
-**NPI:** In contrast to past scenarios, we don’t specify different levels of non-pharmaceutical interventions (NPI) use; **however, teams should consider that most schools intend to return to in-person education in the fall**. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
-
-
 **Vaccination**
 *   <ins>Doses available</ins>: 
     *	50M Moderna/Pfizer 1st doses available monthly, June 2021-January 2022
     *   J&J no longer available (after May 2021)
     *	Supply has likely eclipsed demand at this stage. Number of doses are for reference and as a reminder to account for different VE by manufacturer, but no longer indicate number of doses administered. Distribution of doses by manufacturer and associated vaccine efficacy should fit within these dose bounds.
+*	<ins>Coverage</ins>:
+   * Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The coverage saturation, the speed of that saturation, and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling teams. We suggest that the teams use estimates from the [Delphi group](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_wcovid_vaccinated_appointment_or_accept), adjusted for potential bias in respondents and the [Pulse Survey](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw) overall estimates, adjusted for survey participant vaccination coverage.
 *	<ins>VE</ins>: 
-    *	Optimistic (**50% and 90%** against symptoms (Moderna/Pfizer 1st and 2nd dose) vs. Delta) is based on reports from the UK and the manufacturers indicating decreased protection against new variants such as Alpha and Delta after 1st dose, and no substantial decrease after 2nd dose. 
-    *   Pessimistic (**35% and 85%** against symptoms (Moderna/Pfizer 1st and 2nd dose) vs. Delta) is based on reports from the UK and Israel indicating further decreased protection against the Delta variant after 1st dose, and notable decrease after 2nd dose. 
+    *	We recommend that teams use a VE of 35% for 1st dose and 85% for second dose against symptoms for Moderna and Pfizer versus the Delta variant 
     *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death).
 
 
-**Delta variant strain with increased transmissibility:** The scenarios define the Delta (B.1.617.2) variant as <ins>**40% and 60%**</ins> more transmissible than Alpha (B.1.1.7.) **Initial prevalence should be estimated or defined by the teams based on sequencing and other relevant data, preferably at the state level.**  Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. The variant is more transmissible but it is not an immune escape variant; further, no decline of immunity from vaccination (other than VE) or natural infection should be modeled for Delta or other circulating variants. Other assumptions are at the discretion of each team, but should be documented in metadata. More info on next page.
-
+**Variant progression and transmissibility:** Teams should use their own judgment to project the continued progress and transmissibility of the Delta variant across US states. In this scenario, no new variant would arrive in the US between now and the end of the projections.
+Initial prevalence should be estimated or defined by the teams based on sequencing and other relevant data, preferably at the state level. The variant is more transmissible but it is not an immune escape variant. Teams can set an increased severity of the Delta variant, but this should be documented in meta-data.
 
 </br>
 
-
-### Vaccination Hesitancy
-
-Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are illustrative National reference points to guide defining hesitancy. The high vaccination scenario (low hesitancy) saturates at 86% vaccination coverage nationally among the vaccine-eligible population (updated from 83% in Round 5), as defined by current estimates from the Delphi group ([link](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_covid_vaccinated_or_accept)) (red line in figure, borrowed from round 5, but the same spirit applies to round 6). The low vaccination scenario (high hesitancy) saturates at 75% vaccination coverage nationally among the vaccine-eligible population, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey ([link](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw)) from April 24, 2021 data. The speed of vaccination saturation should be defined by the modeling teams, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit hesitancy limits should be defined by the modeling team using their best judgment. Overall national hesitancy should be similar to the illustrative levels defined in the scenarios, though is not expected to be exact. The eligible population for vaccination is presumed to be individuals aged 12 years and older.
-
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/round5_hesitancycurves.png)
+**NPI:** In contrast to past scenarios, we don’t specify different levels of non-pharmaceutical interventions (NPI) use; **however, teams should consider that most schools intend to return to in-person education in the fall**. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
 
 </br>
 
@@ -89,21 +83,18 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 | Scenario                                                               | Scenario name for submission file | Scenario ID for submission file |
 | ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
-| Scenario A. High Vaccination, Low Variant Transmissibility Increase    | highVac_lowVar                    | A-2021-07-13                    |
-| Scenario B. High Vaccination, High Variant Transmissibility Increase   | highVac_highVar                   | B-2021-07-13                    |
-| Scenario C. Low Vaccination, Low Variant Transmissibility Increase	 | lowVac_lowVar                     | C-2021-07-13                    |
-| Scenario D. Low Vaccination, High Variant Transmissibility Increase    | lowVac_highVar                    | D-2021-07-13                    | 
+| Scenario A. No Waning                                                  | noWan                             | A-2021-08-17                    |
+| Scenario B. High Protection, Fast Waning                               | highPro_fastWan                   | B-2021-08-17                    |
+| Scenario C. Low Protection, Slow Waning                            	 | lowPro_slowWan                    | C-2021-08-17                    |
+| Scenario D. Low Protection, Fast Waning                                | lowPro_fastWan                    | D-2021-08-17                    | 
 
 
-*   **Due date**: July 13, 2021 
-*   **End date for fitting data**: July 03, 2021 (no fitting should be done to data from after this date)
-*   **Start date for scenarios**: July 04, 2021  (first date of simulated transmission/outcomes)
-*   **Simulation end date**: January 01, 2022  (26-week horizon)
+*   **Due date**: August 17, 2021 
+*   **End date for fitting data**: August 7-14, 2021 (cut-off date at the discretion of individual teams; we’d prefer data through August 7 at least be used; no fitting should be done to data after August 14)
+*   **Start date for scenarios**: August 15, 2021  (first date of simulated transmission/outcomes)
+*   **Simulation end date**: February 12, 2022  (26-week horizon)
 
 </br>
-
-
-
 
 
 
@@ -127,8 +118,8 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *	**Vaccine availability:**
-            *	December-June: based on data on administered doses
-            *	July-January: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
+            *	December-August 13: based on data on administered doses
+            *	August 14-February 2022: 50 million available first doses/month, with the intention of protocols being followed (100M doses/mo)
     *	**Johnson & Johnson**
         *	**Vaccine efficacy (1-dose):**
             *   70% VE against previous strains; 60% VE against B.1.1.7/B.1.617.2
@@ -136,16 +127,12 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
             *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
             *	June-January: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
             *   Manner for accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
-
 *	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
-
-*	**Alpha (B.1.1.7) variant strain:** Teams should model the B.1.1.7 variant as appropriate to their model. Any assumptions (e.g., differences in severity/mortality, VE, or natural immunity) should be clearly defined in the metadata. The default assumptions are that the variant is 1.5x more transmissible than wild-type strains and followed the trajectory outlined here [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R0 in a classic epidemic model). No differences between B.1.1.7 and wild strains in severity, mortality, or VE are assumed in default.
-
-*	**Delta (B.1.617.2) variant strain:** Transmission advantage of Delta should follow the scenario guidelines; additional features are at the discretion of the team. Any additional assumptions (e.g., differences in severity/mortality, VE) should be clearly defined in the metadata. The scenarios define the Delta variant as <ins>**40% or 60%**</ins> more transmissible than Alpha and other strains circulating in the US. Prevalence is not pre-specified – teams are expected to define this on their own. Here a 40%/60% increase in transmissibility is defined as the increase in the expected number of infections by a single infected individual over their entire course of infection when there are no interventions or immunity in the population (e.g., a 40/60% increase in R0 in a classic epidemic model). Timeframe of the increase in variant prevalence is up to each team, but it should be assumed the variant(s) become dominant due to increased transmissibility. No immune escape feature for Delta variant.
-
+*	**Delta (B.1.617.2) variant strain:** At teams’ discretion. No immune escape feature for Delta variant.
+Transmission assumptions: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no prescribed R0, interventions, etc.
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   **Pathogenicity assumptions**: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects
-*   **Vaccine effectiveness**: level of effectiveness and available doses are specified for each scenario; assumptions regarding time required to develop immunity, age-related variation in effectiveness, duration of immunity, and additional effects of the vaccine on transmission are left to the discretion of each team
+*   **Vaccine effectiveness**: see recommendations (same VE in all scenarios); assumptions regarding time required to develop immunity, age-related variation in effectiveness, duration of immunity, and additional effects of the vaccine on transmission are left to the discretion of each team
 *   **Vaccine allocation**: between-state allocation is based on population per the CDC/NAS [guidelines](https://www.nap.edu/catalog/25917/framework-for-equitable-allocation-of-covid-19-vaccine#resources) (proportional allocation); within-state allocation and the impact of vaccine hesitancy are left to the discretion of each team
 *   **Vaccine immunity delay:** There is approximately a 14 day delay according to the Pfizer data; because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it
 *   **Vaccine uptake:** See specific details.
@@ -173,8 +160,6 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 
 </br>
 
-
-
 </br>
 
 ## Previous Rounds' Scenarios    
@@ -184,6 +169,7 @@ Vaccine hesitancy is expected to cause vaccination coverage to slow and eventual
 - [Round 4 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md)
 - [Round 5 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md)
 - [Round 6 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md)
+- [Round 7 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round7.md)
 
 </br>
 
