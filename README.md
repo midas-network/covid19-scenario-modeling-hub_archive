@@ -39,7 +39,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 ### Scenario Differences
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.png)
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/scenarios_table.PNG)
 
 </br>
 
