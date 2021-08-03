@@ -31,8 +31,6 @@ Model projections should be submitted via pull request to the data-processed fol
 </br>
 
 
-
-
 ## Round 8 Scenarios    
 
 Round 8 focuses on waning immunity.
@@ -107,7 +105,7 @@ Initial prevalence should be estimated or defined by the teams based on sequenci
     *   Current and future levels of social distancing are to be defined by the teams based on their understanding of current and planned control and behavior and expectations. Teams should consider that most jurisdictions are opening fairly quickly, and most schools intend to return to in-person education in the fall. No reactive interventions should be planned.
 *	**Testing-Trace-Isolate:** constant at baseline levels
 *	**Masking:** Included as part of “Social Distancing Measures” above.
-*   **Immune waning and Immune escape:** As defined by the modeling team.
+*   **Immune waning and Immune escape:** As defined by the scenarios.
 *	**Vaccination:**
     *	**Pfizer / Moderna**
         *	**Vaccine efficacy (2-dose vaccines):**
@@ -115,8 +113,8 @@ Initial prevalence should be estimated or defined by the teams based on sequenci
                 *	<ins>First dose: **50% against symptoms**</ins>, 14 days after 1st dose
                 *	<ins>Second dose: **90% against symptoms**</ins>, 14 days after 2nd dose
             *   B.1.617.2
-                *	<ins>First dose: **35% vs 50% against symptoms**</ins>, 14 days after 1st dose
-                *	<ins>Second dose: **85% vs 90% against symptoms**</ins>, 14 days after 2nd dose
+                *	<ins>First dose: **35% against symptoms**</ins>, 14 days after 1st dose
+                *	<ins>Second dose: **85% against symptoms**</ins>, 14 days after 2nd dose
             *	Effectiveness and impact on infection and other outcomes (hospitalizations, deaths) is at team’s discretion and should be clearly documented in team’s metadata.
             *	Doses 3.5 weeks apart
         *	**Vaccine availability:**
