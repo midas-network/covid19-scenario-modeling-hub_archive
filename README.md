@@ -1,6 +1,6 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 07-06-2021 for **Round 7 Scenarios**.
+Last updated: 08-02-2021 for **Round 8 Scenarios**.
 
 
 ## Previous Round Scenarios and Results: 
@@ -35,6 +35,8 @@ Model projections should be submitted via pull request to the data-processed fol
 
 ## Round 8 Scenarios    
 
+Round 8 focuses on waning immunity.
+
 </br>
 
 ### Scenario Differences
@@ -65,7 +67,7 @@ Model projections should be submitted via pull request to the data-processed fol
 *	<ins>Coverage</ins>:
    * Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The coverage saturation, the speed of that saturation, and heterogeneity between states (or other geospatial scales) and/or age groups are at the discretion of the modeling teams. We suggest that the teams use estimates from the [Delphi group](https://delphi.cmu.edu/covidcast/indicator/?date=20210313&sensor=fb-survey-smoothed_wcovid_vaccinated_appointment_or_accept), adjusted for potential bias in respondents and the [Pulse Survey](https://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw) overall estimates, adjusted for survey participant vaccination coverage.
 *	<ins>VE</ins>: 
-    *	We recommend that teams use a VE of 35% for 1st dose and 85% for second dose against symptoms for Moderna and Pfizer versus the Delta variant 
+    *	We recommend that teams use a **VE of 35% for 1st dose and 85% for second dose** against symptoms for Moderna and Pfizer versus the Delta variant. These estimates reflect VE before any waning takes place. 
     *	VE is defined here as vaccine effectiveness against symptomatic disease. Teams should make their own informed assumptions about effectiveness and impacts on other outcomes (e.g., infection, hospitalization, death).
 
 
@@ -74,7 +76,7 @@ Initial prevalence should be estimated or defined by the teams based on sequenci
 
 </br>
 
-**NPI:** In contrast to past scenarios, we don’t specify different levels of non-pharmaceutical interventions (NPI) use; **however, teams should consider that most schools intend to return to in-person education in the fall**. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
+**NPI:** In contrast to past scenarios, we don’t specify different levels of non-pharmaceutical interventions (NPI) use; **however, teams should consider that most schools intend to return to in-person education in the fall**. Teams should also note the change in [CDC mask recommendations](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html) for vaccinated people in high-transmission areas on 07/27/2021.The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata.
 
 </br>
 
@@ -127,7 +129,7 @@ Initial prevalence should be estimated or defined by the teams based on sequenci
             *	March-May: based on data on administered doses, with continuing at rate current on date of projection for remainder of month (~10M total administered).
             *	June-January: No longer available; only 10M of 20M doses administered, supply, safety, and demand issues.
             *   Manner for accounting for protection provided in the 10M vaccinated during March-May at team's discretion.
-*	**Vaccine Hesitancy:** Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. National vaccination saturation levels designated for each scenario serve as illustrative reference points to guide defining hesitancy, though the speed of that saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team. 
+*	**Vaccine Hesitancy:** At teams' discretion. 
 *	**Delta (B.1.617.2) variant strain:** At teams’ discretion. No immune escape feature for Delta variant.
 Transmission assumptions: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no prescribed R0, interventions, etc.
 *   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
