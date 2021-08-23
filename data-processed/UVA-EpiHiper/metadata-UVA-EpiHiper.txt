@@ -1,22 +1,22 @@
 team_name: UVA Biocomplexity Institute 
 model_name: EpiHiper
 model_abbr: UVA-EpiHiper
-model_version: "2021-07-09"
+model_version: "2021-08-13"
 model_contributors: Jiangzhuo Chen (UVA) <chenj@virginia.edu>, Stefan Hoops (UVA) <shoops@virginia.edu>, Parantapa Bhattacharya (UVA) <parantapa@virginia.edu>, Dustin Machi (UVA) <dm8qs@virginia.edu>, Bryan Lewis (UVA), Madhav Marathe (UVA) 
 website_url: Not available
 license: cc-by-4.0
-methods: We use our agent-based model, called EpiHiper, which computes stochastic transmissions of a disease in a synthetic contact network between individuals and stochastic state transitions within each individual following a disease model. Our disease model is created based on the "COVID-19 Pandemic Planning Scenarios" document prepared by CDC (https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html) and is stratified by age group. Our simulations are initialized with county level data of prior infections and recent daily confirmed case counts and state level prior vaccinations. We run EpiHiper simulations for each state and combine the output to get results of the whole US. The simulations produce daily infections, hospitalizations, and deaths; and each simulation runs for multiple replicates. We aggregate daily data to get weekly data and compute quantiles for each target from the multiple replicates.
+methods: We use our agent-based model, called EpiHiper, which computes stochastic transmissions of a disease in a synthetic contact network between individuals and stochastic state transitions within each individual following a disease model. Our disease model is created based on the "COVID-19 Pandemic Planning Scenarios" document prepared by CDC (https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html) and is stratified by age group. We augment our disease model to implement waning immunity according to scenario specifications. Our simulations are initialized with county level data of prior infections (part of which have waned immunity) and recent daily confirmed case counts and state level prior vaccinations (part of which have waned immunity). We run EpiHiper simulations for each state and combine the output to get results of the whole US. The simulations produce daily infections, hospitalizations, and deaths; and each simulation runs for multiple replicates. We aggregate daily data to get weekly data and compute quantiles for each target from the multiple replicates.
 modeling_NPI: We have modeled the following NPIs: (i) A fraction of the population chooses to practice preventive behavior, e.g., mask wearing and hand washing, which reduces their infectivity in cases they are infected. (ii) A fraction of the population chooses to reduce non-essential (shopping, religion, and other) activities. (iii) All K-12 schools are closed from mid-June 2021 to the end of August 2021. (iv) A fraction of symptomatic people choose to self-isolate themselves at home.
-compliance_NPI: Compliances are 25% for NPI (i), 15% for (ii), 100% for (iii), and 75% for (iv).
+compliance_NPI: Compliances are 25% on average for NPI (i), 15% on average for (ii), 100% for (iii), and 75% for (iv).
 contact_tracing: "Not applicable"
 testing: "Not applicable"
 vaccine_efficacy_transmission: same as vaccine efficacy against symptoms specified in the scenario description
 vaccine_efficacy_delay: as specified in the scenario description
 vaccine_hesitancy: as specified in the scenario description, configured per state
-vaccine_immunity_duration: "Not applicable"
-natural_immunity_duration: "Not applicable"
-case_fatality_rate: age stratified, as suggested in the CDC "COVID-19 Pandemic Planning Scenarios" document but reduced for vaccinated people according to the vaccine efficacy against symptoms
-infection_fatality_rate: age stratified, as suggested in the CDC "COVID-19 Pandemic Planning Scenarios" document but reduced for vaccinated people according to the vaccine efficacy against symptoms
+vaccine_immunity_duration: vaccinated people go back to a partially immune state after a period prescribed in the scenarios
+natural_immunity_duration: recovered (from infections) people go back to a partially immune state after a period prescribed in the scenarios
+case_fatality_rate: age stratified, as suggested in the CDC "COVID-19 Pandemic Planning Scenarios" document but reduced for vaccinated people according to the vaccine efficacy against symptoms and reduced for people with waned immunity
+infection_fatality_rate: age stratified, as suggested in the CDC "COVID-19 Pandemic Planning Scenarios" document but reduced for vaccinated people according to the vaccine efficacy against symptoms and reduced for people with waned immunity
 asymptomatics: 35% for un-vaccinated people, increased for vaccinated people according to the vaccine efficacy against symptoms
 age_groups: preschool (0-4 years), students (5-17), adults (18-49), older adults (50-64) and seniors (65+)
 importations: "Not applicable"
