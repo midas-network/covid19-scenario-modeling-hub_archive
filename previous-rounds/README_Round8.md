@@ -6,7 +6,7 @@ Round 8 focuses on waning immunity.
 
 ### Scenario Differences
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/[revious-rounds/Round8_table.PNG)
+![](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round8_table.png)
 
 </br>
 
