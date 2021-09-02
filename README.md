@@ -1,6 +1,6 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 08-30-2021 for **Round 9 Scenarios**.
+Last updated: 09-02-2021 for **Round 9 Scenarios**.
 
 
 ## Previous Round Scenarios and Results: 
@@ -88,16 +88,16 @@ To assist with upcoming ACIP recommendations on childhood vaccination (ages 5-11
 
 | Scenario                                                               | Scenario name for submission file | Scenario ID for submission file |
 | ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
-| Scenario A. Childhood Vaccination, No Variant                          | ChildVax_noVar                    | A-2021-09-08                    |
-| Scenario B. No Childhood Vaccination, No Variant                       | noChildVax_noVar                  | B-2021-09-08                    |
-| Scenario C. Childhood Vaccination, New Variant                         | ChildVax_noVa                     | C-2021-09-08                    |
-| Scenario D. No Childhood Vaccination, New Variant                      | noChildVax_Var                    | D-2021-09-08                    | 
+| Scenario A. Childhood Vaccination, No Variant                          | ChildVax_noVar                    | A-2021-09-14                    |
+| Scenario B. No Childhood Vaccination, No Variant                       | noChildVax_noVar                  | B-2021-09-14                    |
+| Scenario C. Childhood Vaccination, New Variant                         | ChildVax_noVa                     | C-2021-09-14                    |
+| Scenario D. No Childhood Vaccination, New Variant                      | noChildVax_Var                    | D-2021-09-14                    | 
 
 
-*   **Due date**: September 8, 2021 
-*   **End date for fitting data**: August 28 - September 4, 2021 (cut-off date at the discretion of individual teams; we’d prefer data through August 28 at least be used; no fitting should be done to data after September 4)
-*   **Start date for scenarios**: September 5, 2021  (first date of simulated transmission/outcomes)
-*   **Simulation end date**: March 5, 2022  (26-week horizon)
+*   **Due date**: September 14, 2021 
+*   **End date for fitting data**: September 4 - September 11, 2021 (cut-off date at the discretion of individual teams; we’d prefer data through September 4 at least be used; no fitting should be done to data after September 11)
+*   **Start date for scenarios**: September 12, 2021  (first date of simulated transmission/outcomes)
+*   **Simulation end date**: March 12, 2022  (26-week horizon)
 
 </br>
 
