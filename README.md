@@ -229,9 +229,8 @@ It currently contains code to:
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
         Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious
         Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns
-        Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious 
-        Disease Dynamics), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), Javier
-        Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
+        Hopkins Infectious Disease Dynamics), Justin Lessler (UNC), Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), 
+        Javier Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
         Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics),
         Allison Hill (Johns Hopkins Infectious Disease Dynamics), Lindsay T. Keegan (University of Utah),
         Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
@@ -240,7 +239,7 @@ It currently contains code to:
 *   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
         Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
-        Molly Gallagher (JHU/APL), Luke Mullaney (JHU/APL), Kaitlin Lovett (JHU/APL)
+        Molly Gallagher (JHU/APL), Luke Mullany (JHU/APL), Kaitlin Lovett (JHU/APL)
 *   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
 *   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
@@ -253,7 +252,7 @@ It currently contains code to:
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
-*   [*USC Data Science Lab — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
+*   [*University of Southern California — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
     *   Ajitesh Srivastava (University of Southern California)
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
@@ -275,7 +274,7 @@ It currently contains code to:
 
 ## The COVID-19 Scenario Modeling Hub Coordination Team
 
- - Justin Lessler, Johns Hopkins University
+ - Justin Lessler, University of North Carolina
  - Katriona Shea, Penn State University
  - Cécile Viboud, NIH Fogarty
  - Shaun Truelove, Johns Hopkins University
@@ -284,9 +283,14 @@ It currently contains code to:
  - Emily Howerton, Penn State University
  - Nick Reich, University of Massachussetts at Amherst
  - Wilbert Van Panhuis, University of Pittsburgh
+ - Harry Hochheiser, University of Pittsburgh
  - Michael Runge, USGS
  - Lucie Contamin, University of Pittsburgh
  - John Levander, University of Pittsburgh
  - Jessica Salerno, University of Pittsburgh
+ - J Espino, University of Pittsburgh
+ - Luke Mullany, Johns Hopkins University
+ - Kaitlin Lovett, John Hopkins University
+ - Michelle Qin, Harvard University
 
  
