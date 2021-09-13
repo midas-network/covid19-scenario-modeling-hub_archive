@@ -90,7 +90,7 @@ To assist with upcoming ACIP recommendations on childhood vaccination (ages 5-11
 | ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
 | Scenario A. Childhood Vaccination, No Variant                          | ChildVax_noVar                    | A-2021-09-14                    |
 | Scenario B. No Childhood Vaccination, No Variant                       | noChildVax_noVar                  | B-2021-09-14                    |
-| Scenario C. Childhood Vaccination, New Variant                         | ChildVax_noVa                     | C-2021-09-14                    |
+| Scenario C. Childhood Vaccination, New Variant                         | ChildVax_Var                      | C-2021-09-14                    |
 | Scenario D. No Childhood Vaccination, New Variant                      | noChildVax_Var                    | D-2021-09-14                    | 
 
 
