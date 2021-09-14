@@ -7,21 +7,21 @@ website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
 methods: Uses SIKJalpha which models temporally varying infection, death, and hospitalization rates. Learning is performed by reducing the problem to multiple simple linear regression problems. Effects of variant and non-variant are modeled separately as competing contagions.
-modeling_NPI: [Round 7_updated] Uses Cuebiq data to assess current contact scores. We assume that by the end of the projection, the contacts will linearly increase toward the contact scores of summer/fall 2019 for each state. Accordingly, we increase the transmission rates throughout the projeciton period.
-compliance_NPI: Directly modeling compliance as stated above, rather than separate NPIs and compliance.
+modeling_NPI: [Round 9_updated] No longer changed explicitly. My source, Cubiq, seems to have stopped updating its data :(. Instead, various levels of waning immunity have been considered and they play a role in increasing the infections.
+compliance_NPI: Not modeled.
 contract_tracing: Not applicable.
 testing: Not applicable.
 vaccine_efficacy_transmission: As given by scenarios
 vaccine_efficacy_delay: 14 days
-vaccine_hesitancy: Sigmoid fitted separately to different age groups. Cumulative coverage is approximately equal to 70% nationally.
-vaccine_immunity_duration: As per the scenarios.
-natural_immunity_duration: As per the scenarios.
+vaccine_hesitancy: A model (much like "suceptible-infected") fitted on each age group. Maximum coverage of each group taken as the upper bound on the coverage on the lower age-group.
+vaccine_immunity_duration: As per round 8.1 scenarios. Each scenario is considered equally likely.
+natural_immunity_duration: As per round 8.1 scenarios. Each scenario is considered equally likely.
 case_fatality_rate: Learned from recent data.
 infection_fatality_rate: Learned from recent data.
 asymptomatics: Using sero-prevelance data from the CDC. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic.
-age_groups: [<65, 65+] Approximated age-wise cases used to keep track of waning in different age-groups. Age-groups also used for vaccine data, and for separate modeling of the hospitalizations and deaths of reinfected individuals
+age_groups: [0-4, 5-11, 12-17, 18-65, 65+] Age-wise vaccine, cases, hospitalizations, deaths for training as well as projections. Population with waned immunity tracked for each age-group
 importations: Not applicable
-confidence_interval_method: We generate multiple trajectories by (i) Uniform sampling of the recently seen infection rates, under-reporting/asymptomatic population, vaccine coverage, NPI uncertainties, and variant prevelance. (ii) For each of the above case trajectories, we use multiple possibilities of death and hospitalization rates that have been seen in the recent past. The above results in multiple points for each day. Quantiles are generated based on sampling among these points for each day.
+confidence_interval_method: We generate multiple trajectories by (i) Uniform sampling of the recently seen infection rates, under-reporting/asymptomatic population, vaccine coverage, NPI uncertainties, waning parameters uncertainty, and variant prevelance. (ii) For each of the above case trajectories, we use multiple possibilities of death and hospitalization rates that have been seen in the recent past. The above results in multiple points for each day. Quantiles are generated based on sampling among these points for each day.
 calibration: All calibrations using regression. No manual-tuning other than the listed assumption and trivial settings: non-zero lag between infection and death.
 spatial_structure: Not applicable.
 team_funding: None
