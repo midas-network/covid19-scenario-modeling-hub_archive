@@ -6,26 +6,28 @@ model_contributors: Guido Espana <guido.espana@nd.edu>, Sean Cavany <scavany@nd.
 website_url: https://github.com/confunguido/FRED
 license: BSD Simplified
 team_model_designation: primary
-methods: FRED is an agent-based model developed for influenza with parameters modified
-  to represent the natural history of COVID-19
-  For more information on our methods see: https://www.sciencedirect.com/science/article/pii/S1755436521000396
-modeling_NPI: We fit the maximum proportion of people sheltering in place. We then use google mobility data to estimate trends in people sheltering in place. Face-mask 
+methods: FRED is an agent-based model developed for influenza, and modified
+  to represent COVID-19 transmission
+  More informtaion: https://www.sciencedirect.com/science/article/pii/S1755436521000396
+modeling_NPI: We fit the maximum proportion of people sheltering in place. We then use google mobility data to estimate trends in people sheltering in place. The maximum level of face-mask wearing compliance is included in the calibration (see below). The trend in mask adoption is fitted to google shopping trends.
 compliance_NPI: See above
 contract_tracing: Not implemented
-testing: We fit to testing data, but don't directly model the testing process. We also calibrate a parameter describing the ratio of (1-specificity) and sensitivity of the testing process (i.e. not of the test itself).
-vaccine_efficacy_transmission: non-delta: 76%, Delta: 72%
+testing: We fit to testing data up until the end of the COVID-tracking project, but don't directly model the testing process. We also calibrate a parameter describing the ratio of (1-specificity) and sensitivity of the testing process (i.e. not of the test itself).
+vaccine_efficacy_transmission: We assume vaccine affects susceptibility but not infectiousness. Vaccine efficacy varies by variant, but not by age. We assume the newly emerging variant has the same efficacy as Delta.
+vaccine_efficacy_infection: non-delta: 76%, Delta: 72%
+vaccine_efficacy_symptoms: non-delta: 90%, Delta: 85%
+vaccine_efficacy_hospitalization: 96%
 vaccine_efficacy_delay: 15 days following second dose
-vaccine_hesitancy: We don't directly model hesistancy: we have an upper limit of 90% for vaccine uptake, but we then fit vaccine uptake to the past data on vaccine uptake and assume the same rate of increase in uptake continues in the projection
-vaccine_immunity_duration: given by scenarios
-natural_immunity_duration: given by scenarios
-vaccine_efficacy_waned: given by scenarios
+vaccine_hesitancy: We don't directly model hesistancy: we have an upper limit of 90% for vaccine uptake, but we then fit vaccine uptake to the past data on vaccine uptake and assume the same rate of increase in uptake continues in the projection. For the 5-11 age-bracket we assume the same upper limit as other age groups, and the same rate of increase in uptake as the 12-17 age group.
+vaccine_immunity_duration: We assume no waning in vaccine-derived immunity on the time-scales of the simulation.
+natural_immunity_duration: After 8 months natural immunity wanes to 87%
 case_fatality_rate: Derived from below based on probability of symptoms by age
 infection_fatality_rate: Age dependent, as given by Verity et al.
 asymptomatics: Age-dependent, based on Davies et al.
 age_groups: 10-year age bands up-to age 79 inclusive, then 80+
 importations: For variants, we take data from covariants.org at national level, and estimate different scaling factors for each of the variant to match estimated prevalence by state.
 confidence_interval_method: We simulate the model 100 times, sampling from the posterior distribution of each of the calibrated parameters
-calibration: We have a three stage fitting process. In the first stage (up until Fall 2020) we fit a range of parameters including transmissimibility. In the second stage, Fall 2020 - Dec 2020: keep all previous parameters at final values in Fall 2020, and calibrate school capacity and masking parameters. in the Final stage, Dec 2020 - present: fix school parameters and calibrate transmissibility and immune escape of variants. For each stage, we simulate 3,000 particles, and sample according to the particle likelihood the particles in the next stage. We fit to the targets described in data_inputs below.
+calibration: We have a three stage fitting process. In the first stage (up until Fall 2020) we fit a range of parameters including transmissibility. In the second stage, Fall 2020 - Dec 2020: keep all previous parameters at final values in Fall 2020, and calibrate school capacity and masking parameters. in the Final stage, Dec 2020 - present: fix school parameters and calibrate transmissibility and immune escape of variants. For each stage, we simulate 3,000 particles, and sample according to the particle likelihood the particles in the next stage. We fit to the targets described in data_inputs below.
 spatial_structure: Locations and location types explicitly described. Agents move around these locations
 team_funding: NSF RAPID grant
 data_inputs: whole period: Deaths - JHU. until fall 2020: COVID-19 tracking project testing data (positives and negatives), seroprevalence by age in Indiana.
@@ -69,5 +71,13 @@ methods_long: "We used an existing agent-based model, FRED (Framework for Recons
   \ use the google mobility data (https://www.google.com/covid19/mobility/) on journeys\
   \ made to residential locations. We calibrate the maximum compliance to shelter\
   \ in place, and use a generalized additive model fitted to the google data to forecast\
-  \ movement in the coming 5 weeks. For more details on this approach, see the methods\
+  \ movement in the coming 5 weeks.
+  Updates 2021-09-13 - In order to run for the whole of the United States, we calibrate\
+  \ the model to data from Indiana from the start of the pandemic until present. For\
+  \ other states we use infection estimates from CovidEstim\
+  \ (https://doi.org/10.1101/2020.06.17.20133983), a timeseries of the frequency of each variant\
+  \ from https://covariants.org/, and vaccination data to initialize the infection and\
+  \ vaccination histories of the agents in FRED. We then use the parameters from the\
+  \ Indiana calibration to run the forecasts in FRED for each state.\
+  \ For more details on this approach, see the methods\
   \ in https://www.sciencedirect.com/science/article/pii/S1755436521000396"
