@@ -1,18 +1,18 @@
 model_projection_date,target,target_end_date,location,type,quantile,value,scenario_id,scenario_name,low_age,high_age,pop_size
-9/12/21,1 wk ahead inc death child,9/19/21,02,quantile,0.01,0.00E+00,A-2021-09-14,ChildVax_noVar,0,11,122605
-9/12/21,1 wk ahead inc death child,9/19/21,02,quantile,0.025,0.002764709,A-2021-09-14,ChildVax_noVar,0,11,122605
-9/12/21,1 wk ahead inc death child,9/19/21,02,quantile,0.05,0.00667717,A-2021-09-14,ChildVax_noVar,0,11,122605
-9/12/21,1 wk ahead inc death child,9/19/21,02,quantile,0.1,0.015301371,A-2021-09-14,ChildVax_noVar,0,11,122605
+2021-09-12,1 wk ahead inc death child,2021-09-18,02,quantile,0.01,0.00E+00,A-2021-09-14,ChildVax_noVar,0,11,122605
+2021-09-12,1 wk ahead inc death child,2021-09-18,02,quantile,0.025,0.002764709,A-2021-09-14,ChildVax_noVar,0,11,122605
+2021-09-12,1 wk ahead inc death child,2021-09-18,02,quantile,0.05,0.00667717,A-2021-09-14,ChildVax_noVar,0,11,122605
+2021-09-12,1 wk ahead inc death child,2021-09-18,02,quantile,0.1,0.015301371,A-2021-09-14,ChildVax_noVar,0,11,122605
 …,,,,,,,,,,,
-9/12/21,1 wk ahead inc death adult,9/19/21,02,quantile,0.01,6.49E-04,A-2021-09-14,ChildVax_noVar,12,120,608895
-9/12/21,1 wk ahead inc death adult,9/19/21,02,quantile,0.025,0.00276470889048457*2,A-2021-09-14,ChildVax_noVar,12,120,608895
-9/12/21,1 wk ahead inc death adult,9/19/21,02,quantile,0.05,0.00667717012956487*2,A-2021-09-14,ChildVax_noVar,12,120,608895
-9/12/21,1 wk ahead inc death adult,9/19/21,02,quantile,0.1,0.0153013708054646*2,A-2021-09-14,ChildVax_noVar,12,120,608895
+2021-09-12,1 wk ahead inc death adult,2021-09-18,02,quantile,0.01,6.49E-04,A-2021-09-14,ChildVax_noVar,12,120,608895
+2021-09-12,1 wk ahead inc death adult,2021-09-18,02,quantile,0.025,0.00276470889048457*2,A-2021-09-14,ChildVax_noVar,12,120,608895
+2021-09-12,1 wk ahead inc death adult,2021-09-18,02,quantile,0.05,0.00667717012956487*2,A-2021-09-14,ChildVax_noVar,12,120,608895
+2021-09-12,1 wk ahead inc death adult,2021-09-18,02,quantile,0.1,0.0153013708054646*2,A-2021-09-14,ChildVax_noVar,12,120,608895
 …,,,,,,,,,,,
-,X  wk inc cases child,,,,,,,,,,
-,X  wk inc cases adult,,,,,,,,,,
-,X  wk cum cases child,,,,,,,,,,
-,X  wk cum cases adult,,,,,,,,,,
+,X wk ahead inc case child,,,,,,,,,,
+,X wk ahead inc case adult,,,,,,,,,,
+,X wk ahead cum case child,,,,,,,,,,
+,X wk ahead cum case adult,,,,,,,,,,
 ,,,,,,,,,,,
 ,,,,,,,,,,,
 ,,,,,,,,,,,
