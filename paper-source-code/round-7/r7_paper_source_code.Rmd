@@ -407,11 +407,11 @@ dev.off()
 
 ```
 
-```{r fig-2}
+```{r fig-2, fig.width=8, fig.height=8}
 # Plot vaccination vs cumulative cases & deaths, by state
 case_scatter <- ggplot(data = cum_vs_vacc_case, aes(x = dose1_pct, y = cum_per_10k, size = population)) +
   geom_point(alpha = 0.4, color = "#3182bd") +
-  # geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
+  geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
   scale_x_continuous(name = paste0("Proportion of eligible individuals with\none dose by ", format(as.Date(projection.start.date), format = "%B %d, %Y"))) +
   scale_y_log10(name = paste0("Cumulative cases per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")")) +
   theme_bw() +
@@ -419,7 +419,7 @@ case_scatter <- ggplot(data = cum_vs_vacc_case, aes(x = dose1_pct, y = cum_per_1
 
 death_scatter <- ggplot(data = cum_vs_vacc_death, aes(x = dose1_pct, y = cum_per_10k, size = population)) +
   geom_point(alpha = 0.4, color = "#3182bd") +
-  # geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
+  geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
   scale_x_continuous(name = paste0("Proportion of eligible individuals with\none dose by ", format(as.Date(projection.start.date), format = "%B %d, %Y"))) +
   scale_y_log10(name = paste0("Cumulative deaths per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")")) +
   theme_bw() +
