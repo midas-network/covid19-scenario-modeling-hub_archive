@@ -7,9 +7,8 @@ editor_options:
 
 ```{r setup, include=FALSE}
 ## Set working directory to covid19-scenario-modeling-hub repository on your local computer
-dir_path <- "C:/Users/clair/Documents/COVID/SMH/covid19-scenario-modeling-hub/"
 
-knitr::opts_knit$set(root.dir = dir_path)
+knitr::opts_knit$set(root.dir = dirname(dirname(getwd())))
 knitr::opts_chunk$set(echo = TRUE)
 
 library(data.table)
@@ -42,6 +41,8 @@ hosp_truth_path <- "paper-source-code/round-7/data/hospitalization.csv"
 ```
 
 ```{r load-ground-truth}
+
+getwd()
 #### ground truth ####
 id <- read.csv(death_truth_path, colClasses = c("time_value" = "Date", "fips" = "character"))
 id <- id %>% 
@@ -390,6 +391,19 @@ Fig_1C <- ts_fig(ens_dat  = df_cast %>% filter(target_type == "Deaths"),
 leg <- get_legend(Fig_1A)
 fig1 = plot_grid(plot_grid(Fig_1A+theme(legend.position = "none"), Fig_1B, Fig_1C, nrow = 1), leg, nrow = 2, rel_heights = c(0.9,0.1))
 fig1
+```
+
+```{r fig1_save}
+dir.create("paper-source-code/round-7/figures", recursive = TRUE)
+
+pdf("paper-source-code/round-7/figures/fig1.pdf", height=6, width=12)
+plot(fig1)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig1.png", height=2000, width=4000, res=600)
+plot(fig1)
+dev.off()
+
 
 ```
 
@@ -425,6 +439,18 @@ fig2 <- plot_grid(case_scatter, case_map, death_scatter, death_map, align = "hg"
 #       width = 8, height = 8, units = "in")
 
 fig2
+
+pdf("paper-source-code/round-7/figures/fig2.pdf", height=10, width=10)
+plot(fig2)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig2.png", height=5000, width=5000, res=600)
+plot(fig2)
+dev.off()
+
+ggsave("paper-source-code/round-7/figures/fig2.png", fig2,
+      width = 8, height = 8, units = "in")
+
 
 ```
 
@@ -588,5 +614,14 @@ fig3 <- fig3 +
   theme(legend.position = "none")
 fig3
 
+
+
+pdf("paper-source-code/round-7/figures/fig3.pdf", height=7, width=9)
+plot(fig3)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig3.png", height=3500, width=5000, res=600)
+plot(fig3)
+dev.off()
 ```
 
