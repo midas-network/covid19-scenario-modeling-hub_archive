@@ -1,6 +1,8 @@
 ---
 title: "Projected resurgence of COVID-19 in the United Statesin July—December 2021resulting from the increased transmissibilityof the Delta variantand faltering vaccination"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -425,3 +427,166 @@ fig2 <- plot_grid(case_scatter, case_map, death_scatter, death_map, align = "hg"
 fig2
 
 ```
+
+```{r fig-3}
+
+# ** THIS SCRIPT PRODUCES FIGURE OF THE TOTAL INCIDENCE DURING A PERIOD DEFINED BY 2 DATES **
+# Set the target date (should/could be updated)
+target_date_lims = c("2021-07-03","2021-07-31")
+target_date_lim_1 <- as.character(as.Date(target_date_lims[1])+7)
+
+# Boolean to use PEAK, or to use date aligned with target_date above
+use_peak = FALSE
+
+# Load Location Data
+locations <- read.csv('paper-source-code/round-7/data/locations.csv') %>% as.data.table()
+
+
+
+########################################################
+# Deal with gold standard data
+########################################################
+
+gs <- read.csv('paper-source-code/round-7/data/gold_standard_data.csv') %>% as.data.table()
+
+# get locations population
+gs <- gs[locations, on=.(geo_value_fullname == location_name), nomatch=0]
+gs[, rate:=value*100000/population]
+gs <- gs[, .(outcome, target_end_date=time_value, location_name=geo_value_fullname, value,population, rate)]
+gs <- gs[!location_name %chin% c("American Samoa", "Puerto Rico", "Virgin Islands", "Guam", "Northern Mariana Islands")]
+
+
+# Subset gs & calculate cum cases during July
+gs <- gs %>% filter(target_end_date == target_date_lims[1] | target_end_date == target_date_lims[2])
+gs <- gs %>% filter(outcome=="Cumulative Cases")
+
+gs <- gs %>% dplyr::select(-rate) %>%
+  pivot_wider(names_from = target_end_date, values_from = value)
+gs <- gs %>% 
+  mutate(cum_case = get(target_date_lims[2]) - get(target_date_lims[1])) %>%
+  mutate(rate = cum_case*100000/population)
+
+
+########################################################
+# Deal with Round 7 Ensemble Data
+########################################################
+
+# Load ensemble estimates
+
+#ensemble_data <- model_data[[7]][model_name=="Ensemble_LOP" & type=="point" & location_name!="US"]
+#write.csv(ensemble_data, "data/round7_ensembleLOPmedian.csv")
+ensemble_data <- read.csv("paper-source-code/round-7/data/round7_ensembleLOPmedian.csv") %>% as.data.table()
+
+# Get the peak estimate
+peak <- ensemble_data[
+  order(scenario_id, outcome,location_name, -value)][
+    ,head(.SD,1), by=.(scenario_id, outcome, location_name)
+  ]
+
+# Get the estimate during the target_dates
+current <- ensemble_data[(target_end_date == target_date_lim_1) | (target_end_date == target_date_lims[2])]
+
+current_1 <- current %>% filter((target_end_date==target_date_lim_1 & outcome=="Incident Cases") | 
+                                (target_end_date==target_date_lim_1 & outcome=="Cumulative Cases") | 
+                                (target_end_date==target_date_lims[2] & outcome=="Cumulative Cases"))
+
+current_1 <- current_1 %>% 
+  select(-target_wk) %>%
+  pivot_wider(names_from = c(outcome, target_end_date), values_from = value) 
+
+current_1 <- current_1 %>% 
+  mutate(cum_case = get(paste0("Cumulative Cases_", target_date_lims[2])) - get(paste0("Cumulative Cases_", target_date_lim_1)) - get(paste0("Incident Cases_", target_date_lim_1)))
+
+current <- current_1 %>%
+  mutate(value= cum_case) %>% as.data.table()
+
+# Which one to use? - Leverage the use_peak boolean, set above
+if(use_peak) {
+  proj <- peak
+} else {
+  proj <- current
+}
+
+
+# Add locations, get rate, and remove territories
+proj <- proj[locations[,.(location_name, population)], on="location_name", nomatch=0]
+proj[, rate:=value*100000/population]
+proj <- proj[,.(scenario_id, location_name, value, population, rate)]
+proj <- proj[!location_name %chin% c("American Samoa", "Puerto Rico", "Virgin Islands", "Guam", "Northern Mariana Islands")]
+
+
+########################################################
+# Get the rankings
+########################################################
+gs <- as.data.table(gs)
+gs_ranked <- gs[order(outcome,-rate), empir_ranking:=seq(1,.N), by=outcome]
+proj_ranked <- proj[order(scenario_id, -rate), proj_ranking:=seq(1,.N), by=.(scenario_id)]
+gs_ranked <- gs_ranked[outcome=="Cumulative Cases",]
+
+# Bind the rankings together
+m_ranked <- gs_ranked[proj_ranked, on=.(location_name)]
+
+########################################################
+# Set some plot variables, based on use_peak
+########################################################
+
+if(use_peak) {
+  xlabel = "Ranking (Scenario D, Incident Cases, Projection Peak )"
+  title = "State Ranking Correlation: Scenario D Peak Incident Cases vs. Empirical Incident Cases (per 100 K)"
+} else {
+  xlabel = "Ranking (Scenario D, Total Incident Cases, Projected July 4-31, 2021)"
+  title = "State Ranking Correlation: Scenario D 7/31/21 Incident Cases vs. Empirical 7/31/21 Incident Cases (per 100 K)"
+}
+
+########################################################
+# Set some plot axis labels
+########################################################
+
+ranking_labels = c(paste0(seq(50,5,-5), "th"), "1st")
+ranking_breaks = c(seq(50,5,-5),1)
+
+########################################################
+# Get some correlation coefficients, and put in caption
+########################################################
+spear_corr <- m_ranked[outcome=="Cumulative Cases" & scenario_id=="D-2021-07-13",
+                       cor(proj_ranking,empir_ranking,method="spearman")]
+kend_tau <- m_ranked[outcome=="Cumulative Cases" & scenario_id=="D-2021-07-13",
+                     cor(proj_ranking,empir_ranking,method="kendall")]
+
+corr_caption <- paste0(
+  "Rank Correlations:\nSpearman's \u03C1 = ",
+  round(spear_corr,3),
+  "\nKendall's \u03C4 = ",
+  round(kend_tau,3)
+)
+
+########################################################
+# Generate the plot
+########################################################
+
+fig3 <- ggplot(m_ranked[scenario_id == "D-2021-07-13"], 
+               aes(proj_ranking, empir_ranking, label=location_name)) + 
+  #geom_point(color="darkblue", alpha=.5, size=1.5) +
+  #geom_line(stat="smooth",method = "lm",size = 1.5,alpha = 0.5, se=F)+
+  labs(y="Ranking (Total Incident Cases, July 4-31, 2021)", 
+       color="",linetype="",
+       x=xlabel)  + 
+  annotate(x=7, y=45, geom="text", label=corr_caption, size=4) +
+  #geom_smooth(aes(color="smooth_line"), size=1, method="lm", alpha=0.15, se=F) +
+  scale_y_reverse(breaks = ranking_breaks, labels=ranking_labels) + 
+  scale_x_reverse(breaks = ranking_breaks, labels=ranking_labels) + 
+  geom_abline(aes(color="Equal Ranks", slope=1, intercept=0), alpha=0.25, size=.5,show.legend = T)+
+  geom_smooth(aes(lty="Fit over Ranks", color="Fit over Ranks"), alpha=0.2, size=1.25,method="lm") +
+  geom_text(color="darkblue") + 
+  theme_bw() + theme(legend.position = "bottom", panel.grid.minor = element_blank()) + 
+  scale_linetype_manual(values = c("Fit over Ranks" = "dashed")) +
+  scale_color_manual(values = c("Equal Ranks" = "black", "Fit over Ranks" = "lightsteelblue3")) +
+  ggtitle(title)
+
+fig3 <- fig3 + 
+  ggtitle(NULL) +
+  theme(legend.position = "none")
+fig3
+
+```
+
