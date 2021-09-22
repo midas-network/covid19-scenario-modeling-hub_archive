@@ -9,8 +9,6 @@ Last updated: 09-02-2021 for **Round 9 Scenarios**.
 
 Round 8: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round8.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
-
-
 ## Rationale
 Even the best models of emerging infections struggle to give accurate forecasts at time scales greater than 3-4 weeks due to unpredictable drivers such as a changing policy environment, behavior change, the development of new control measures, and stochastic events. However, policy decisions around the course of emerging infections often require projections in the time frame of months. The goal of long-term projections is to compare outbreak trajectories under different scenarios, as opposed to offering a specific, unconditional estimate of what “will” happen. As such, long-term projections can guide longer-term decision-making while short-term forecasts are more useful for situational awareness and guiding immediate response. The need for long-term epidemic projections is particularly acute in a severe pandemic, such as COVID-19, that has a large impact on the economy; for instance, economic and budget projections require estimates of outbreak trajectories in the 3-6 month time scale. 
 
@@ -33,8 +31,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 ## Round 9 Scenarios    
 
-To assist with upcoming ACIP recommendations on childhood vaccination (ages 5-11), Round 9 of SMH will concentrate on evaluating the impact of childhood vaccination on COVID-19 dynamics. Results are expected to be needed by mid-September 2021.
-
+To assist with upcoming ACIP recommendations on childhood vaccination (ages 5-11), Round 9 of SMH will concentrate on evaluating the impact of childhood vaccination on COVID-19 dynamics. Results are ]available on the Model Projections page.](https://viz.covid19scenariomodelinghub.org/#tab-5889-9) 
 </br>
 
 ### Scenario Differences
