@@ -2,7 +2,7 @@
 title: "Projected resurgence of COVID-19 in the United Statesin July—December 2021resulting from the increased transmissibilityof the Delta variantand faltering vaccination"
 output: html_document
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
