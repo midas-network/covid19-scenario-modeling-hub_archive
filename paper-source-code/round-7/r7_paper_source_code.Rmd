@@ -145,8 +145,14 @@ cat("Scenario B U.S. cumulative deaths:", zeroed_cum_death_US[startsWith(scenari
 # get daily cumulative administered vaccine coverage from CDC database
 # NOTE - "pct" columns are percentages on a scale of 0 to 100, not 0 to 1, of vaccine-eligible (12+) population
 vacc <- fread(vacc_path)
+
+# Fix ID which does not report under 18
+vacc <- vacc %>%
+  mutate(Administered_Dose1_Recip_12PlusPop_Pct = replace(Administered_Dose1_Recip_12PlusPop_Pct, Location=="ID", Administered_Dose1_Recip_18PlusPop_Pct[Location=="ID"]))
+
 vacc <- vacc[Location %in% c(state.abb, "DC", "US"), .(date = lubridate::mdy(Date), abbreviation = Location,
-                                                           dose1 = Administered_Dose1_Recip, dose1_pct = Administered_Dose1_Recip_12PlusPop_Pct,
+                                                           dose1 = Administered_Dose1_Recip, 
+                                                       dose1_pct = Administered_Dose1_Recip_12PlusPop_Pct,
                                                            complete = Series_Complete_Yes, complete_pct = Series_Complete_12PlusPop_Pct)]
 states_start_vacc <- vacc[date == projection.start.date & abbreviation %in% c(state.abb, "DC"),
                              .(abbreviation, dose1_pct, complete_pct)]
