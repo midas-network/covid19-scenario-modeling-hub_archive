@@ -6,7 +6,7 @@ To assist with upcoming ACIP recommendations on childhood vaccination (ages 5-11
 
 ### Scenario Differences
 
-![](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round9_table.png)
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round9_table.PNG)
 
 </br>
 
