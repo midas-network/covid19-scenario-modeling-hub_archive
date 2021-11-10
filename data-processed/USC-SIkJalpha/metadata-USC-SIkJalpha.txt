@@ -1,21 +1,21 @@
 team_name: University of Southern California
 model_name: SI_kJalpha
 model_abbr: USC-SI_kJalpha
-model_version: 2021-08-15
+model_version: 2021-09-12
 model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
 methods: Uses SIKJalpha which models temporally varying infection, death, and hospitalization rates. Learning is performed by reducing the problem to multiple simple linear regression problems. Effects of variant and non-variant are modeled separately as competing contagions.
-modeling_NPI: [Round 9_updated] No longer changed explicitly. My source, Cubiq, seems to have stopped updating its data :(. Instead, various levels of waning immunity have been considered and they play a role in increasing the infections.
+modeling_NPI: [Round 10_updated] My former source, Cubiq, seems to have stopped updating its data :(. To address NPIs, transmissions have been gradually increased over 52 weeks between 0 to 20%.
 compliance_NPI: Not modeled.
 contract_tracing: Not applicable.
 testing: Not applicable.
-vaccine_efficacy_transmission: As given by scenarios
+vaccine_efficacy_transmission: Not explicitly modeled
 vaccine_efficacy_delay: 14 days
-vaccine_hesitancy: A model (much like "suceptible-infected") fitted on each age group. Maximum coverage of each group taken as the upper bound on the coverage on the lower age-group.
-vaccine_immunity_duration: As per round 8.1 scenarios. Each scenario is considered equally likely.
-natural_immunity_duration: As per round 8.1 scenarios. Each scenario is considered equally likely.
+vaccine_hesitancy: A model (much like "suceptible-infected") fitted on each age group. Maximum coverage of each group taken as the upper bound on the coverage on the lower age-group. Boosters are modeled such that the "susceptible" population is the eligible population who are yet to get a booster. To achieve the desired saturation level as per scenarios, we increase the adoption rate over time.
+vaccine_immunity_duration: Only waning immunity is considered! The probability of transferring to partially immune state by at time t is modeled as a gamma distribution such that: (i) the mean is as per the scenario; (ii) the efficacy (given the partial immune protection against infection) after the first 60 days is the "initial" vaccine efficacy (e.g. 85%).
+natural_immunity_duration: Same as above
 case_fatality_rate: Learned from recent data.
 infection_fatality_rate: Learned from recent data.
 asymptomatics: Using sero-prevelance data from the CDC. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic.
