@@ -1,7 +1,7 @@
 team_name: University of Southern California
 model_name: SI_kJalpha
 model_abbr: USC-SI_kJalpha
-model_version: 2021-09-12
+model_version: 2021-11-09
 model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
@@ -14,7 +14,7 @@ testing: Not applicable.
 vaccine_efficacy_transmission: Not explicitly modeled
 vaccine_efficacy_delay: 14 days
 vaccine_hesitancy: A model (much like "suceptible-infected") fitted on each age group. Maximum coverage of each group taken as the upper bound on the coverage on the lower age-group. Boosters are modeled such that the "susceptible" population is the eligible population who are yet to get a booster. To achieve the desired saturation level as per scenarios, we increase the adoption rate over time.
-vaccine_immunity_duration: Only waning immunity is considered! The probability of transferring to partially immune state by at time t is modeled as a gamma distribution such that: (i) the mean is as per the scenario; (ii) the efficacy (given the partial immune protection against infection) after the first 60 days is the "initial" vaccine efficacy (e.g. 85%).
+vaccine_immunity_duration: Only waning immunity is considered! The probability of transferring to partially immune state by at time t is modeled as a gamma distribution such that: (i) the mean is as per the scenario; (ii) the efficacy (given the partial immune protection against infection) after the first 60 days is the "initial" vaccine efficacy (e.g. 80% for 65+, 90% for <65).
 natural_immunity_duration: Same as above
 case_fatality_rate: Learned from recent data.
 infection_fatality_rate: Learned from recent data.
