@@ -32,7 +32,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 ## Round 10 Scenarios    
 
-Round 10 of SMH will concentrate on evaluating the impact of boosters and waning immunity on COVID-19 dynamics. We have designed a 2*2 scenario structure where booster coverage is represented in one axis and the characteristics of waning immunity are on the other axis.
+Round 10 of SMH will concentrate on evaluating the impact of boosters and waning immunity on COVID-19 dynamics. We have designed a 2\*2 scenario structure where booster coverage is represented in one axis and the characteristics of waning immunity are on the other axis.
 
 </br>
 
@@ -46,26 +46,26 @@ Round 10 of SMH will concentrate on evaluating the impact of boosters and waning
 
 **Interpretation:** These scenarios are intended to illustrate a gradual decay of immune protection with time, rather than the impact of an immune escape variant. 
 
-**Model structure:** Teams are encouraged to model waning immunity as a partial loss of immune protection, where individuals go back to a partially immune state after a period prescribed in the scenarios (mean of 6 month or 1 year depending on the scenario). Individuals who have reached a partially immune state have reduced probabilities of reinfection and severe disease compared to naive individuals. \
+**Model structure:** Teams are encouraged to model waning immunity as a partial loss of immune protection, where individuals go back to a partially immune state after a period prescribed in the scenarios (mean of 6 month or 1 year depending on the scenario). Individuals who have reached a partially immune state have reduced probabilities of reinfection and severe disease compared to naive individuals. <br>
 **The same parameters should be used for waning immunity from natural infection and vaccination.**
  
-**Model parameters defined in scenarios:** \
-Interpretation of waning parameters is similar to that of round 8. \
+**Model parameters defined in scenarios:** <br>
+Interpretation of waning parameters is similar to that of round 8. <br>
 Specifically, in the optimistic waning scenario, protection from infection is 60% for individuals < 65yrs in the partially immune state. This means that, for these individuals, the transition out of the partially immune state and into infection is 0.4\*force of infection applied to naive individuals of the same age. If we apply this waning parameter to vaccinated people, this corresponds to a VE of 60% against **infection**. <br/>
 Further, in this scenario, protection against hospitalization is 90% for those under 65 yrs. This estimate is similar to VE against hospitalization and death, so it is **not a conditional probability**. This means that if we follow two individuals over time, one with partial immunity and one completely naive, the probability that the partially immune individual will be hospitalized from COVID19 is 0.1 times the probability that a naive individual will be hospitalized. Hence this probability combines protection against infection and protection against hospitalization given infection. If we apply this parameter to vaccinated individuals for whom immunity has partially waned, their VE against **hospitalization** becomes 90%. 
 
-**Unconstrained model parameters:** \
-Teams can choose different distributions of waning immunity (exponential, gamma); we only prescribe the mean. \
-Teams should use their own judgments to parametrize protection against **symptoms** in the partially immune state, and any reduction in **transmission** that partially immune individuals may have. \
-Teams can choose to treat individuals who have immunity from natural infection and vaccination differently from individuals who had a single exposure to the pathogen/antigen. \
-We do not specify any waning for J&J (for which the starting point VE is much lower): teams can choose to ignore J&J, which represents a small fraction of all vaccinated in the US, or apply a different waning for J&J. \
-We do not specify any waning for those who only get a 1st dose of Pfizer or Moderna and hence never acquire full vaccine immunity. We believe this represents a small fraction of all vaccinated. Teams can choose to apply a different waning to these individuals, or ignore them. \
+**Unconstrained model parameters:** <br>
+Teams can choose different distributions of waning immunity (exponential, gamma); we only prescribe the mean. <br>
+Teams should use their own judgments to parametrize protection against **symptoms** in the partially immune state, and any reduction in **transmission** that partially immune individuals may have. <br>
+Teams can choose to treat individuals who have immunity from natural infection and vaccination differently from individuals who had a single exposure to the pathogen/antigen. <br>
+We do not specify any waning for J&J (for which the starting point VE is much lower): teams can choose to ignore J&J, which represents a small fraction of all vaccinated in the US, or apply a different waning for J&J. <br>
+We do not specify any waning for those who only get a 1st dose of Pfizer or Moderna and hence never acquire full vaccine immunity. We believe this represents a small fraction of all vaccinated. Teams can choose to apply a different waning to these individuals, or ignore them. <br>
 
 All of these assumptions (especially the distribution of waning times) should be documented in meta-data.
 
 #### Initial VE (before waning) and boosters:
 
-**Initial VE (before waning):** We suggest that teams use a **VE of 80% against symptomatic COVID-19 in those over 65 yrs**, and **VE of 90% in those under 65 years**, while protection against infection and severe outcomes remains at teams’ discretion. This is based on data from [US](https://pubmed.ncbi.nlm.nih.gov/34619098/), [UK](https://khub.net/documents/135939561/338928724/Vaccine+effectiveness+and+duration+of+protection+of+covid+vaccines+against+mild+and+severe+COVID-19+in+the+UK.pdf/10dcd99c-0441-0403-dfd8-11ba2c6f5801), [CDC](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-09-22/04-COVID-Link-Gelles-508.pdf), [NY](https://pubmed.ncbi.nlm.nih.gov/34529645/) and [CDC MMWR](https://www.cdc.gov/mmwr/volumes/70/wr/mm7034e2.htm?s_cid=mm7034e2_w)
+**Initial VE (before waning):** We suggest that teams use a **VE of 80% against symptomatic COVID-19 in those over 65 yrs**, and **VE of 90% in those under 65 years**, while protection against infection and severe outcomes remains at teams’ discretion. This is based on data from [US](https://pubmed.ncbi.nlm.nih.gov/34619098/), [UK](https://khub.net/documents/135939561/338928724/Vaccine+effectiveness+and+duration+of+protection+of+covid+vaccines+against+mild+and+severe+COVID-19+in+the+UK.pdf/10dcd99c-0441-0403-dfd8-11ba2c6f5801), [CDC](https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-09-22/04-COVID-Link-Gelles-508.pdf), [NY](https://pubmed.ncbi.nlm.nih.gov/34529645/) and [CDC MMWR](https://www.cdc.gov/mmwr/volumes/70/wr/mm7034e2.htm?s_cid=mm7034e2_w).
 
 **Impact of boosters on VE:** Boosters should be implemented in a way that individuals who have received a booster shot will revert to the same level of protection that they had before any waning occurred. 
 
