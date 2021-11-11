@@ -80,7 +80,8 @@ All of these assumptions (especially the distribution of waning times) should be
 **Booster timing:** <br/> 
 <ul>
 <li>A recommendation for boosters targeted at older and high-risk adults was issued on [September 24, 2021](https://www.cdc.gov/media/releases/2021/p0924-booster-recommendations-.html). These recommendations are very inclusive and include multiple groups prone to high-risk exposures, representing a large fraction of all US adults. Accordingly, we do not consider a formal extension of ACIP recommendations to all adults. Instead we consider two saturation levels for boosters. </li>
-
+</ul>
+ 
 ### Common Specifications
 <br/>
 
