@@ -1,7 +1,7 @@
 team_name: UNCC
 model_name: HierBin
 model_abbr: UNCC-hierbin
-model_version: 2021-09-14
+model_version: 2021-11-09
 model_contributors: Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science) <schen56@uncc.edu>, Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science) <rajib.paul@uncc.edu>, Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics) <djanies@uncc.edu>, Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science) <jean-claude.thill@uncc.edu>
 website_url: NA
 license: cc-by-4.0
@@ -12,12 +12,12 @@ testing: NA
 vaccine_efficacy_transmission: Efficacy of vaccine to reduce transmission was modeled as a state- and time-dependent function based on existing data in 2021.
 vaccine_efficacy_delay: NA
 vaccine_hesitancy: Vaccine hesitancy was implicitly modeled as an asympototic curve of vaccination rate in each state.
-vaccine_immunity_duration: 1 year or 3 year, expotentially decay
+vaccine_immunity_duration: 0.5 year or 1 year, expotentially decay
 natural_immunity_duration: For this project we assumed no leaking immunity from previous infection, i.e., much longer than 6mo.
 case_fatality_rate: CFR was estimated as a function of time (implicitly with vaccination rate) in each state with data in 2021.
 infection_fatality_rate: NA
 asymptomatics: NA
-age_groups: All age groups, including 5-12yr.
+age_groups: All age groups, including 5-12yr (implicitly by data).
 importations: NA for current version.
 confidence_interval_method: Several assumptions were made to address uncertainty, e.g., system stochasticity from random noise, state-level variation in vaccination rate, state-level variation in lifting NPI mandate, etc.
 calibration: 2021 cumulative case data by state were used to model and calibrate the initial model. 2020 incident case data by state are also used to calibrate local behavior of the model.
