@@ -119,9 +119,9 @@ We don’t specify different levels of non-pharmaceutical interventions (NPI) us
 
 
 *   **Due date**: November 9, 2021 
-*   **End date for fitting data**: Oct 30 or Nov 6, 2021 (cut-off date at the discretion of individual teams; we’d prefer data through Oct 30th at least be used; no fitting should be done to data after Nov 6)
-*   **Start date for scenarios**: Nov 7, 2021 (first date of simulated transmission/outcomes)
-*   **Simulation end date: Nov 5, 2022 (52-week horizon)**
+*   **End date for fitting data**: Oct 30, Nov 6 or Nov 13, 2021 (cut-off date at the discretion of individual teams; no fitting should be done to data after Nov 13)
+*   **Start date for scenarios**: Nov 7, 2021 (first date of simulated transmission/outcomes). The week of Nov 7 is week 1 of projections. Note that if you used data until Nov 13th for calibration, your first week of projections (Nov 7-13) will be your model-fitted incidences for that week.
+*   **Simulation end date: Nov 5, 2022 (52-week horizon)**; Projections with horizon between 26 week and 52 week are also accepted.
 </br>
 
 ### Scenario and Simulation Details
