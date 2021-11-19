@@ -118,10 +118,10 @@ We don’t specify different levels of non-pharmaceutical interventions (NPI) us
 | Scenario D. Pessimistic waning, restricted boosters                    | pessWan_lowBoo                    | D-2021-11-09                    | 
 
 
-*   **Due date**: November 9, 2021 
-*   **End date for fitting data**: Oct 30, Nov 6 or Nov 13, 2021 (cut-off date at the discretion of individual teams; no fitting should be done to data after Nov 13)
-*   **Start date for scenarios**: Nov 7, 2021 (first date of simulated transmission/outcomes). The week of Nov 7 is week 1 of projections. Note that if you used data until Nov 13th for calibration, your first week of projections (Nov 7-13) will be your model-fitted incidences for that week.
-*   **Simulation end date: Nov 5, 2022 (52-week horizon)**; Projections with horizon between 26 week and 52 week are also accepted.
+*   **Due date**: December 3, 2021 (desired); December 6, 2021 (hard deadline) 
+*   **End date for fitting data**: No earlier than Nov 13, 2021 and no later than Nov 20, 2021 (cut-off date at the discretion of individual teams; no fitting should be done to data after Nov 13)
+*   **Start date for scenarios**: Nov 14, 2021 (first date of simulated transmission/outcomes). The week ending Nov 20th is week 1 of projection (week from 2021-11-14 to 2021-11-20).  Note that if you used data until Nov 20th for calibration, your first week of projections (Nov 14- Nov 20) will be your model-fitted incidences for 1 wk ahead and the first target_end_date will be Nov 20, 2021.
+*   **Simulation end date: Nov 12, 2022 (52-week horizon)**; Projections with horizon between 26 week and 52 week are also accepted.
 </br>
 
 ### Scenario and Simulation Details
