@@ -11,6 +11,7 @@ methods: FRED is an agent-based model developed for influenza, and modified
   More informtaion: https://www.sciencedirect.com/science/article/pii/S1755436521000396
 modeling_NPI: We fit the maximum proportion of people sheltering in place. We then use google mobility data to estimate trends in people sheltering in place. The maximum level of face-mask wearing compliance is included in the calibration (see below). The trend in mask adoption is fitted to google shopping trends.
 compliance_NPI: See above
+future_NPI: We assume no further NPIs - existing NPIs are held constant
 contract_tracing: Not implemented
 testing: We fit to testing data up until the end of the COVID-tracking project, but don't directly model the testing process. We also calibrate a parameter describing the ratio of (1-specificity) and sensitivity of the testing process (i.e. not of the test itself).
 vaccine_efficacy_transmission: We assume vaccine affects susceptibility but not infectiousness. Vaccine efficacy varies by variant, but not by age. We assume the newly emerging variant has the same efficacy as Delta.
