@@ -112,6 +112,7 @@ All of these assumptions (especially the distribution of waning times) should be
 *   **Start date for scenarios:** Dec 19, 2021 (first date of simulated transmission/outcomes)
 *   **Simulation end date:** Mar 12, 2022 (12-week horizon)
 
+
 **Other submission requirements**
 
 *   **Geographic scope:** state-level and national projections
@@ -261,7 +262,8 @@ It currently contains code to:
 
 
 
-## Teams and models
+## Teams and models    
+
 *   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
         Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious
@@ -309,7 +311,8 @@ It currently contains code to:
   
 </br>
 
-## The COVID-19 Scenario Modeling Hub Coordination Team
+
+## The COVID-19 Scenario Modeling Hub Coordination Team    
 
  - Justin Lessler, University of North Carolina
  - Katriona Shea, Penn State University
