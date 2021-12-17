@@ -190,7 +190,7 @@ Additional scenario and simulation details
             *   Manner for accounting for protection provided in the 10M vaccinated during March-May 2021 at team's discretion.
 *	Vaccine Hesitancy: Vaccine hesitancy expected to cause vaccination coverage to slow and saturate below 100%. Speed and level of saturation and heterogeneity between states (or other geospatial scale) and/or age groups are at the discretion of the team.
 *	Delta (B.1.617.2) variant strain: At teams’ discretion. No immune escape feature for Delta variant.
-*   Transmission assumptions: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
+*   **Transmission assumptions**: models fit to US state-specific dynamic up until "End date for fitting data" specified above – no proscribed R<sub>0</sub>, interventions, etc.
 *   Pathogenicity assumptions: no exogenous fluctuations in pathogenicity/transmissibility beyond seasonality effects.
 *   Vaccine effectiveness: see recommendations (same VE in all scenarios); assumptions regarding time required to develop immunity, age-related variation in effectiveness, duration of immunity, and additional effects of the vaccine on transmission are left to the discretion of each team
 *   Vaccine immunity delay: There is approximately a 14 day delay according to the Pfizer data; because we suspect the post first dose and post second dose delays may be of similar length, we do not believe there is any need to explicitly model a delay, instead groups can delay vaccine receipt by 14 days to account for it.
