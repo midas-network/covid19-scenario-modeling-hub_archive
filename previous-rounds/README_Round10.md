@@ -38,7 +38,7 @@ Round 10 of SMH will concentrate on evaluating the impact of boosters and waning
 
 ### Scenario Differences
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/prevous-rounds/Round10_scenarios_table.PNG">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round10_scenarios_table.PNG">
 
 </br>
 
