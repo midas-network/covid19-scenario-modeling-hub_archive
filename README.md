@@ -107,10 +107,10 @@ All of these assumptions (especially the distribution of waning times) should be
 
 
 
-*   **Due date:** December 21, 2021
-*   **End date for fitting data:** Dec 18, 2021
-*   **Start date for scenarios:** Dec 19, 2021 (first date of simulated transmission/outcomes)
-*   **Simulation end date:** Mar 12, 2022 (12-week horizon)
+*   **Due date**: December 21, 2021
+*   **End date for fitting data**: Dec 18, 2021
+*   **Start date for scenarios**: Dec 19, 2021 (first date of simulated transmission/outcomes)
+*   **Simulation end date**: Mar 12, 2022 (12-week horizon)
 
 
 **Other submission requirements**
