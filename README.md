@@ -71,7 +71,7 @@ The presence, duration, and extent of waning is left to the team’s discretion.
 
   * <ins>Speed</ins>: Average transition time to partially immune state between 6-12 months
   * <ins>Residual protection among waned individuals</ins>:
-    *  Less than 65 years: Protection from infection: 60%, hospitalization: 90%, death: 95%
+    *  Less than 65 years of age: Protection from infection: 60%, hospitalization: 90%, death: 95%
     *  65 years and older: Protection from infection: 40%, hospitalization: 80%, death: 90%
 
 **Model structure:** For teams explicitly modeling waning, teams are encouraged to consider immunity as a partial loss of immune protection, where individuals go back to a partially immune state after a period of time which is left to the teams’ discretion (suggested 6 months to 1 year). Individuals who have reached a partially immune state have reduced probabilities of reinfection and severe disease compared to naive individuals. **The same parameters can be used for waning immunity from natural infection and vaccination**. 
