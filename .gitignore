@@ -1,6 +1,7 @@
 # MacOS system files
 *.DS_Store
 
+._2*
 # R/RStudio related
 .Rproj.user
 .Rhistory
