@@ -1,0 +1,79 @@
+team_name: UF
+model_name: ABM
+model_abbr: UF-ABM
+model_version: 2021-12-21
+model_contributors: >
+  Thomas Hladish (University of Florida) <>,
+  Alexander Pillai (University of Florida) <a.pillai@ufl.edu>,
+  Kok Ben Toh (Northwestern University) <>,
+  Ira Longini Jr. (University of Florida) <>
+website_url: "Not applicable"
+license: LICENSE
+methods: >
+  "The model is a data-driven, stochastic, discrete-time, ABM with an explicit representation of
+  people and places. The model represents 20.6 million people residing in 11.2 million households
+  and 3.8 thousand long-term care facilities and who work in 2.3 million workplaces and attend 7.6
+  thousand schools. However, for this simulation study, we created a smaller synthetic population 
+  totalling 375,000 people, with demographics sampled from the entire state population and spatial
+  structure based on Marion County, FL.  People in the model vary in behaviors that may result in
+  transmission, and have attributes that may affect infection outcome including age and the presence
+  or absence of comorbidities.
+
+  We use this synthetic population as an input to a model of SARS-CoV-2 transmission, detection and
+  reporting. The model assumes a daily cycle of person-to-person interactions that may result in transmission, based on the
+  co-localization of infectious and susceptible individuals in households, workplaces (both as employees
+  and as customers), schools, long-term care facilities, and hospitals. This approach naturally produces
+  crucial interaction patterns between locality-type and age, e.g., school-age individuals are assigned
+  to a specific school during the day, where they face a risk of infection from other children from the
+  same geographic locale."
+modeling_NPI: >
+  "Two types of NPIs are incorporated into our model: government interventions and
+  personal-protective behaviors.
+
+  Top-down, government interventions (such as school and non-essential business closures)
+  are scheduled following the timeline of such interventions in the state of Florida. Because
+  locations in the model have types and businesses are that are known to be essential or non-essential,
+  we can incorporate such interventions explicitly. Based on events in Florida, business closures occur
+  only in early 2020, whereas partial school closures extend to the end of the 2020-2021 school year.
+
+  Personal-protective behaviors (PPB) are modeled as a time-varying parameter that represents
+  the level of protective behaviors in the population. Changing this parameter changes the
+  level of social contact and the patronage of high-risk businesses (such as bars and restaurants)."
+compliance_NPI:
+contact_tracing: "Not applicable"
+testing: >
+  "Infections are detected in the model with probability dependent on the severity of symptoms, with detection
+  probabilities that have change during the course of the pandemic.  We assume that prior to summer 2020, only
+  infections that were severe or worse were likely to be detected, whereas all symptomatic infections were likely
+  to be detected by the end of 2020.
+
+  Our detection and reporting model includes a time-dependent delay in reporting based on empirical observations.
+  For a given case, we sample from a gamma distribution to determine the delay.
+vaccine_efficacy_transmission: >
+  "For all viral strains, the vaccine efficacy against infectiousness (VEI) is 40% after the
+  first dose and 80% after the second dose."
+vaccine_efficacy_delay: >
+  "Vaccine protection is assumed to begin 10 days after a dose is administered."
+vaccine_hesitancy: "We implicitly model vaccine hesitancy based on waning vaccination rates as observed in Florida."
+vaccine_immunity_duration: >
+  "Vaccine protection is assumed to last indefinitely but is leaky and varies depending by strain."
+natural_immunity_duration: >
+  "Immunity from natural infections works the same way as vaccine immunity in our simulation, although baseline efficacy (before strain is taken into account) is highly variable between individuals."
+case_fatality_rate: >
+  "0.0024"
+infection_fatality_rate: >
+  "0.0068"
+asymptomatics: >
+  "The probability of an infected individual developing symptoms is age- and strain-dependent. This is affected
+  by prior immunity (whether infection- or vaccine-derived).  Asymptomatic individuals are less contagious, on average,
+  than symptomatic individuals."
+age_groups: >
+  "Individuals in the model range between 0 and 95 years old, with the distribution determined from the most recent US Census data for Florida."
+importations: >
+  "At the beginning of the simulation (February 2020), individuals are exposed with probability 4.0e-4.  During each simulated day, individuals are exposed with probability 1.0e-4, wih viral strains changing over time."
+confidence_interval_method: >
+  "Confidence intervals show dynamic uncertainty during the projected period, by re-seeding the random number generator to produce variable future trajectories."
+calibration: >
+  "Parameter values are taken from the scientific literature and manually adjusted when necessary in order to reproduce weekly reported cases, hospitalizations, deaths, breakthrough infections, and prevalence of specific variants of concern."
+spatial_structure: >
+  "Spatial structure in the model is based on Marion County, FL, with sampled locations for households (based on density data), and exact locations for workplaces, schools, hospitals, and long term care facilities."
