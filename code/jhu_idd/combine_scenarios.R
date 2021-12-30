@@ -2,11 +2,13 @@
 library(tidyverse)
 
 # load data and combine
-sub_date <- "2021-05-02"
+sub_date <- "2021-12-21"
 files_ <- list.files(file.path("data-prelim", sub_date), full.names = TRUE, include.dirs = TRUE)
 
-scenarios_ <- c("highVac_modNPI", "highVac_lowNPI", "lowVac_modNPI","lowVac_lowNPI")
-scen_id <- paste0(LETTERS[1:4], "-2021-05-02")
+#scenarios_ <- c("highVac_modNPI", "highVac_lowNPI", "lowVac_modNPI","lowVac_lowNPI")
+scenarios_ <- c("optSev_highIE", "optSev_lowIE", "pessSev_highIE", "pessSev_lowIE")
+
+scen_id <- paste0(LETTERS[1:4], "-2021-12-21")
 
 data_comb <- NULL
 for (i in 1:length(scenarios_)){
@@ -34,6 +36,12 @@ length(unique(data_comb$location)) #56
 sort(unique(data_comb$target_end_date))
 unique(data_comb$scenario_id)
 unique(data_comb$scenario_name)
+
+
+# Limit to 13 weeks ahead 
+target_limit <- lubridate::as_date("2021-12-18") + (7 * 13)
+data_comb <- data_comb %>% filter(target_end_date<=target_limit)
+
 
 
 # Save it
