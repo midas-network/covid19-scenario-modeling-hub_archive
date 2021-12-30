@@ -1,0 +1,633 @@
+---
+title: "Projected resurgence of COVID-19 in the United Statesin July—December 2021resulting from the increased transmissibilityof the Delta variantand faltering vaccination"
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+## Set working directory to covid19-scenario-modeling-hub repository on your local computer
+
+knitr::opts_knit$set(root.dir = dirname(dirname(getwd())))
+knitr::opts_chunk$set(echo = TRUE)
+
+library(data.table)
+library(lubridate)
+library(stringr)
+library(ggplot2)
+library(cowplot)
+library(tidyverse)
+library(scales)
+```
+
+```{r file-paths}
+## Set working directory to covid19-scenario-modeling-hub repository on your local computer
+
+projection.start.date <- "2021-07-03"
+projection.end.date <- "2022-01-01"
+rd <- 7
+loc_path <- paste0("data-locations/locations.csv")
+vacc_path <- "https://data.cdc.gov/api/views/unsk-b7fc/rows.csv?accessType=DOWNLOAD" # CDC database including eligible percent
+surge_path <- paste0("paper-source-code/round-7/data/surge_data_using_winter_anchor_2021_07_28.csv") ## TODO: Update for new repo structure
+surge_US_path <- paste0("paper-source-code/round-7/data/surge_data_US_using_winter_anchor_2021_07_30.csv") ## TODO: Update for new repo structure
+zeroed_cum_case_path <- paste0("paper-source-code/round-7/data/zeroed_cum_case.csv") ## TODO: Update for new repo structure
+zeroed_cum_death_path <- paste0("paper-source-code/round-7/data/zeroed_cum_death.csv") ## TODO: Update for new repo structure
+inc_lop_path <- paste0("paper-source-code/round-7/data/2021-07-03-Ensemble_LOP.csv") ## TODO: Update for new repo structure
+
+death_truth_path <- "paper-source-code/round-7/data/deaths_incidence_num.csv"
+case_truth_path <- "paper-source-code/round-7/data/confirmed_incidence_num.csv"
+hosp_truth_path <- "paper-source-code/round-7/data/hospitalization.csv"
+
+```
+
+```{r load-ground-truth}
+
+getwd()
+#### ground truth ####
+id <- read.csv(death_truth_path, colClasses = c("time_value" = "Date", "fips" = "character"))
+id <- id %>% 
+  dplyr::rename("date" = "time_value", "location" = "fips", "location_name" = "geo_value_fullname") %>%
+  #  dplyr::select(-week, -year) %>%
+  mutate(target_type = "Deaths") %>%
+  mutate(location = ifelse(location_name == "US", "US", location))
+
+ic <- read.csv(case_truth_path, colClasses = c("time_value" = "Date", "fips" = "character"))
+ic <- ic %>% 
+  dplyr::rename("date" = "time_value", "location" = "fips", "location_name" = "geo_value_fullname") %>%
+  #  dplyr::select(-week, -year) %>%
+  mutate(target_type = "Reported Cases") %>%
+  mutate(location = ifelse(location_name == "US", "US", location))
+
+ih <- read.csv(hosp_truth_path, colClasses = c("time_value" = "Date", "fips" = "character"))
+ih <- ih %>% 
+  dplyr::rename("date" = "time_value", "location" = "fips", "location_name" = "geo_value_fullname") %>%
+  # dplyr::select(-week, -year) %>%
+  mutate(target_type = "Hospitalizations") %>%
+  mutate(location = ifelse(location_name == "US", "US", location))
+
+truth <- bind_rows(id, ic, ih)
+
+# remove hospitalization data before october
+truth <- truth %>%
+  mutate(value = ifelse(date < as.Date("2020-10-01") & target_type == "Hospitalizations", NA, value))
+
+# remove death and case data before march
+truth <- truth %>%
+  mutate(value = ifelse(date < as.Date("2020-03-01") & target_type %in% c("Reported Cases", "Deaths"), NA, value)) %>%
+  mutate(value = ifelse(value < 0, NA, value)) %>%
+  filter(date <= as.Date("2021-08-01"))
+
+rm(ih, id, ic)
+
+start.date = as.Date("2020-10-01")
+
+
+```
+
+```{r load-peak-data}
+# get state abbreviations, fips names, and populations
+loc <- fread(loc_path)
+states <- loc[abbreviation %in% c(state.abb, "DC")] # remove national (US), PR, territories
+states_fips <- loc$location
+
+# Gather peak (= surge) incident projections for US
+# NOTE - PIs are for the date at which the median peaks
+inc_US <- fread(inc_lop_path)
+inc_US <- inc_US[str_ends(target, "inc case|inc death|inc hosp") & location == "US",
+                 .(outcome = str_extract(target, "case|death|hosp"), target_end_date, scenario_id, quantile, value)]
+peak_inc_US <- inc_US[quantile == 0.5, .(surge = max(value), surge_date = target_end_date[which.max(value)]), by = .(outcome, scenario_id)] %>%
+  filter(outcome != "hosp")
+peak_case_date_D <- peak_inc_US[startsWith(scenario_id, "D") & outcome == "case", surge_date]
+peak_death_date_D <- peak_inc_US[startsWith(scenario_id, "D") & outcome == "death", surge_date]
+peak_inc_case_D_US <- inc_US[startsWith(scenario_id, "D") & outcome == "case" & target_end_date == peak_case_date_D]
+peak_inc_death_D_US <- inc_US[startsWith(scenario_id, "D") & outcome == "death" & target_end_date == peak_death_date_D]
+```
+
+Point estimates for peak weekly cases and deaths for each scenario.
+
+```{r}
+peak_inc_US
+```
+
+Projection intervals for peak weekly cases and deaths under scenario D.
+
+```{r}
+bind_rows(peak_inc_case_D_US, peak_inc_death_D_US) %>%
+  filter(quantile %in% c(0.025, 0.5, 0.975))
+
+```
+
+
+
+```{r cumulative}
+# Gather cumulative projections for US
+zeroed_cum_case <- fread(zeroed_cum_case_path)
+zeroed_cum_death <- fread(zeroed_cum_death_path)
+zeroed_cum_case_US <- zeroed_cum_case[location == "US" & startsWith(target, "zeroed 26") & model == "Ensemble_LOP",
+                                   .(scenario_id, quantile, value)]
+zeroed_cum_death_US <- zeroed_cum_death[location == "US" & startsWith(target, "zeroed 26") & model == "Ensemble_LOP",
+                                     .(scenario_id, quantile, value)]
+cat("Scenario D U.S. cumulative cases:", zeroed_cum_case_US[startsWith(scenario_id, "D") & quantile == 0.5, value],
+    "(50% PI:", zeroed_cum_case_US[startsWith(scenario_id, "D") & quantile == 0.25, value], "-",
+    zeroed_cum_case_US[startsWith(scenario_id, "D") & quantile == 0.75, value], ",",
+    "95% PI:", zeroed_cum_case_US[startsWith(scenario_id, "D") & quantile == 0.025, value], "-",
+    zeroed_cum_case_US[startsWith(scenario_id, "D") & quantile == 0.975, value], ")\n")
+cat("Scenario D U.S. cumulative deaths:", zeroed_cum_death_US[startsWith(scenario_id, "D") & quantile == 0.5, value],
+    "(50% PI:", zeroed_cum_death_US[startsWith(scenario_id, "D") & quantile == 0.25, value], "-",
+    zeroed_cum_death_US[startsWith(scenario_id, "D") & quantile == 0.75, value], ",",
+    "95% PI:", zeroed_cum_death_US[startsWith(scenario_id, "D") & quantile == 0.025, value], "-",
+    zeroed_cum_death_US[startsWith(scenario_id, "D") & quantile == 0.975, value], ")\n")
+cat("Scenario B U.S. cumulative cases:", zeroed_cum_case_US[startsWith(scenario_id, "B") & quantile == 0.5, value], "\n")
+cat("Scenario B U.S. cumulative deaths:", zeroed_cum_death_US[startsWith(scenario_id, "B") & quantile == 0.5, value], "\n")
+```
+
+```{r vaccination}
+# get daily cumulative administered vaccine coverage from CDC database
+# NOTE - "pct" columns are percentages on a scale of 0 to 100, not 0 to 1, of vaccine-eligible (12+) population
+vacc <- fread(vacc_path)
+
+# Fix ID which does not report under 18
+vacc <- vacc %>%
+  mutate(Administered_Dose1_Recip_12PlusPop_Pct = replace(Administered_Dose1_Recip_12PlusPop_Pct, Location=="ID", Administered_Dose1_Recip_18PlusPop_Pct[Location=="ID"]))
+
+vacc <- vacc[Location %in% c(state.abb, "DC", "US"), .(date = lubridate::mdy(Date), abbreviation = Location,
+                                                           dose1 = Administered_Dose1_Recip, 
+                                                       dose1_pct = Administered_Dose1_Recip_12PlusPop_Pct,
+                                                           complete = Series_Complete_Yes, complete_pct = Series_Complete_12PlusPop_Pct)]
+states_start_vacc <- vacc[date == projection.start.date & abbreviation %in% c(state.abb, "DC"),
+                             .(abbreviation, dose1_pct, complete_pct)]
+
+# Compare vaccination of top 10 vs bottom 10 states using Luke's surge ratio, Scenario D
+surge_ratio <- fread(surge_path)
+surge_ratio_US <- fread(surge_US_path) 
+surge_ratio[, location := ifelse(nchar(location) == 1, paste0("0", location), as.character(location))]
+peak_surge_D <- surge_ratio[startsWith(scenario_id, "D"), .(Date, location, `Surge Ratio`)][ # filter and extract columns
+  location %in% states_fips, .(peak_surge = max(`Surge Ratio`)), by = .(location)][ # filter and calculate max surge ratio for each location
+    states, on = .(location)][ # merge
+      states_start_vacc, on = .(abbreviation)][ # merge
+        !is.na(peak_surge), .SD, keyby = peak_surge] # sort ascending
+peak_surge_US <- surge_ratio_US[, .(peak_surge = max(`Surge Ratio`)), by = .(scenario_id)] # US level only, all scenarios
+low10 <- head(peak_surge_D, 10)
+high10 <- tail(peak_surge_D, 10)
+print("---Scenario D---\n")
+cat("Projected US surge in cases as fraction of Winter 2020-21:", peak_surge_US[startsWith(scenario_id, "D"), peak_surge], "\n")
+cat("10 states with lowest surge ratios:", low10$abbreviation, "\n")
+cat("10 states with highest surge ratios:", rev(high10$abbreviation), "\n")
+cat("Median First Dose coverage of 10 states with least surge ratios:", median(low10$dose1_pct), "%\n")
+cat("Median First Dose coverage of 10 states with greatest surge ratios:", median(high10$dose1_pct), "%\n")
+cat("Median Completed Series coverage of 10 states with least surge ratios:", median(low10$complete_pct), "%\n")
+cat("Median Completed Series coverage of 10 states with greatest surge ratios:", median(high10$complete_pct), "%\n")
+
+# Check Biden administration's Jul 1 70% coverage goal
+start_vacc_goals <- vacc[date == "2021-07-01" & abbreviation %in% c(state.abb, "DC")]
+goal_states <- start_vacc_goals[dose1_pct >= 70]
+cat("Median Surge Ratio of states with 70% coverage on July 1:", median(peak_surge_D[abbreviation %in% goal_states$abbreviation, peak_surge]), "\n")
+
+# Compute correlation between vaccination and cumulative deaths, by state
+cum_vs_vacc_case <- zeroed_cum_case[startsWith(target, "zeroed 26") & model == "Ensemble_LOP" & type == "point" & startsWith(scenario_id, "D") & location %in% states_fips,
+                                  .(location, value)][ # extract columns
+                                    loc, on = .(location)][states_start_vacc, on = .(abbreviation)] # merge
+cum_vs_vacc_death <- zeroed_cum_death[startsWith(target, "zeroed 26") & model == "Ensemble_LOP" & type == "point" & startsWith(scenario_id, "D") & location %in% states_fips,
+                                  .(location, value)][ # extract columns
+                                    loc, on = .(location)][states_start_vacc, on = .(abbreviation)] # merge
+cum_vs_vacc_case[, cum_per_10k := value/population*10000]
+cum_vs_vacc_death[, cum_per_10k := value/population*10000]
+cat("Pearson's correlation between cumulative deaths and vaccination:", cor(cum_vs_vacc_death$cum_per_10k, cum_vs_vacc_death$dose1_pct, method = "pearson"))
+```
+
+```{r fig-1, fig.width=10, fig.height=6}
+#### FUNCTIONS -----------------------
+## calculate relative change in outcome from scenarios to reference scenario 
+## used to generate data for MMWR Figure 2 
+## Input: 
+#     data: data.frame, for single location, model, target, contains all scenarios  (point estimate) 
+#     ref_scenario: string, name of reference scenario (modNPI_highVac)
+## Output: data.frame FILL
+rel_change <- function(data, ref_scenario){
+  #browser()
+  ref = data %>% 
+    filter(scenario_name == ref_scenario) %>% 
+    mutate(value_ref = value) %>% 
+    select(location,  target, model, value_ref, target)  #
+  dt = data %>% 
+    left_join(ref) %>%
+    mutate(rel_change = value/value_ref - 1)
+  return(dt)
+}
+
+# ribbon: character, "none" for no ribbon, "mult" for one ribbon per ts, "sing" for one ribbon around all
+# legend: character, legend position following legend.position = "" in theme()
+# v_line_lab_shift: double, shift for projection date label
+# lims: vector, limits for y axis, NA for automatic
+# mod_labs: TRUE/FALSE to include labels for individual models
+# start_date: character, date to start date
+# proj_date: character, date of start of projections
+# x_breaks: vector, breaks for x axis
+# colors: vector, colors to include
+# tag: character, panel label, NA for no tag
+# ylb: character, label for y-axis
+# ttl: character, title
+# labs_colors: vector, color labels
+ts_fig <- function(ens_dat, models_dat, ground_truth, # plotting data
+                   ribbon, legend, v_line_lab_shift, lims, mod_labs, 
+                   start_date, proj_date, x_breaks, colors, # plotting preferences 
+                   tag, ylb, ttl, labs_colors){ # labels
+  # setup data  to plot
+  v_line = data.frame(x = as.numeric(as.Date(proj_date)),
+                      y = Inf,
+                      lab = paste0("Projections begin\n",proj_date),
+                      target_type = "Reported Cases")
+  # setup truth
+  truth_recent <- ground_truth %>% filter(date >= start_date) %>%
+    filter(date <= as.Date(proj_date))
+  truth_new <- ground_truth %>% filter(date >= start_date) %>%
+    filter(date > as.Date(proj_date))
+  # plot
+  p <- ggplot()+
+    geom_vline(data = v_line %>% dplyr::select(-target_type), aes(xintercept = x), color = "grey60")+
+    geom_text(data = v_line, aes(x = x + v_line_lab_shift, y = y, label = lab), hjust = 0, vjust = 1, size = 3,)+
+    geom_point(data = truth_recent, aes(x = date, y = value))+
+    guides(colour = guide_legend(nrow = 2)) +
+    scale_x_continuous(breaks = x_breaks, expand = c(0,0)) +
+    scale_color_manual(values = colors, labels = labs_colors) +
+    theme_bw()+
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          axis.title.x = element_blank(),
+          plot.title = element_text(hjust = 0.5), 
+          legend.position = legend,
+          legend.title = element_blank(),
+          strip.background = element_blank()) 
+  # plot ribbon first
+  if(ribbon == "sing"){ #TO DO: impelement 'sing' option
+    temp_ribbon <- ens_dat %>% 
+      group_by(target_end_date) %>% 
+      summarise(lower = min(lower),
+                upper = max(upper))
+    p <- p +
+      geom_ribbon(data = temp_ribbon, aes(x = target_end_date, ymin = lower, ymax = upper), alpha = 0.1)
+  }
+  # add individual models if necessary
+  if(!is.na(models_dat)){
+    p <- p + 
+      geom_line(data = models_dat, aes(x = target_end_date, y = median, group = model), color = "grey45")
+    if(mod_labs){
+      p <- p + 
+        geom_text(data = models_dat %>% filter(target_end_date == max(target_end_date)),
+                  aes(x = target_end_date, y = median, label = label), color = "grey45", hjust = 0) +
+        scale_x_continuous(breaks = x_breaks)
+    }
+  }
+  # add rest of plot
+  p <- p + 
+    geom_line(data = ens_dat, aes(x = target_end_date, y = median, color = scenario_name), size = 1) +
+    geom_point(data = truth_new, aes(x = date, y = value), shape = 21, fill = "white")
+  # specifics
+  if(!is.na(tag)){
+    p <- p + labs(tag = tag)
+  }
+  if(!is.na(ylb)){
+    p <- p + ylab(ylb)
+  }
+  if(!is.na(ttl)){
+    p <- p + ggtitle(ttl)
+  }
+  if(is.na(lims)){
+    p <- p + scale_y_continuous(label=comma)
+  }
+  else{p <- p + scale_y_continuous(label=comma, limits = lims)}
+  return(p)
+} 
+
+
+
+
+#### INPUT DATA -----------------------
+#### individual models ####
+
+full_df <- inc_US %>%
+  filter(quantile %in% c(0.025, 0.5, 0.975))
+
+# indices for each target type
+case_index <- grep("case", full_df$outcome)
+death_index <- grep("death", full_df$outcome)
+hosp_index <- grep("hosp", full_df$outcome)
+
+# create target_type column for faceting of plots
+full_df$target_type <- NA
+full_df$target_type[case_index] <- "Reported Cases"
+full_df$target_type[death_index] <- "Deaths"
+full_df$target_type[hosp_index] <- "Hospitalizations"
+
+# Recode scenario names
+full_df$scenario_name <- "highVac_lowVar"
+full_df$scenario_name[full_df$scenario_id == "B-2021-07-13"] <- "highVac_highVar"
+full_df$scenario_name[full_df$scenario_id == "C-2021-07-13"] <- "lowVac_lowVar"
+full_df$scenario_name[full_df$scenario_id == "D-2021-07-13"] <- "lowVac_highVar"
+
+# cast to include median and interval
+df_cast <- dcast(full_df, 
+                 scenario_name + target_type + target_end_date  ~ quantile, value.var = "value")
+colnames(df_cast)[4:6] = c("lower", "median", "upper")
+
+
+#### FIGURES -------------------------------
+
+#### setup ####
+proj.start.date <- as.Date("2021-07-04")
+v_line_lab_shift = 20
+breaks <- seq(as.Date("2020-10-01"), as.Date("2022-01-01"), "month") #as.Date("2021-07-01")
+
+labs_scenario <- c("High vaccination, High variant transmissibility", 
+                   "High vaccination, Low variant transmissibility",
+                   "Low vaccination, High variant transmissibility",
+                   "Low vaccination, Low variant transmissibility")
+names(labs_scenario) <- c("highVac_highVar", "highVac_lowVar", "lowVac_highVar", "lowVac_lowVar")
+
+# order factors
+full_df$scenario_name = factor(full_df$scenario_name, levels = c("highVac_highVar",
+                                                                 "highVac_lowVar",
+                                                                 "lowVac_highVar",
+                                                                 "lowVac_lowVar"))
+
+labs_target <- c("Reported Cases", "Hospitalizations", "Deaths")
+names(labs_target) <- c("26 wk ahead cum case", "26 wk ahead cum hosp", "26 wk ahead cum death")
+
+full_df$target = factor(full_df$target_type, levels = c("Reported Cases",
+                                                        "Hospitalizations",
+                                                        "Deaths"))
+
+colors <- c("#1F1F1F", "#BDBEBE", "#00008B", "#1E90FF")
+names(colors) <- c("lowVac_lowVar",
+                   "lowVac_highVar",
+                   "highVac_lowVar",
+                   "highVac_highVar")
+
+
+
+#### time series plots ####
+# Figure 1
+# US ensemble cases (A) and deaths (B)
+Fig_1A <- ts_fig(ens_dat = df_cast %>% filter(target_type == "Reported Cases"),
+                 models_dat = NA,
+                 ground_truth = truth %>% filter(location == "US", target_type == "Reported Cases"), 
+                 ribbon = "sing", legend = "bottom", v_line_lab_shift = v_line_lab_shift,
+                 start_date = start.date, proj_date = proj.start.date,
+                 x_breaks = breaks, colors = colors, lims = NA,
+                 tag = "A", ylb = "Incidence per week", ttl = "Reported Cases",
+                 labs_colors = labs_scenario)
+
+Fig_1B <- ts_fig(ens_dat  = df_cast %>% filter(target_type == "Hospitalizations"),
+                 models_dat = NA,
+                 ground_truth = truth %>% filter(location == "US", target_type == "Hospitalizations"), 
+                 ribbon = "sing", legend = "none", v_line_lab_shift = v_line_lab_shift,
+                 start_date = start.date, proj_date = proj.start.date,
+                 x_breaks = breaks, colors = colors, lims = NA,
+                 tag = "B", ylb = "", ttl = "Hospitalizations",
+                 labs_colors = labs_scenario)
+
+Fig_1C <- ts_fig(ens_dat  = df_cast %>% filter(target_type == "Deaths"),
+                 models_dat = NA,
+                 ground_truth = truth %>% filter(location == "US", target_type == "Deaths"), 
+                 ribbon = "sing", legend = "none", v_line_lab_shift = v_line_lab_shift,
+                 start_date = start.date, proj_date = proj.start.date,
+                 x_breaks = breaks, colors = colors, lims = NA,
+                 tag = "C", ylb = "", ttl = "Deaths",
+                 labs_colors = labs_scenario)
+
+leg <- get_legend(Fig_1A)
+fig1 = plot_grid(plot_grid(Fig_1A+theme(legend.position = "none"), Fig_1B, Fig_1C, nrow = 1), leg, nrow = 2, rel_heights = c(0.9,0.1))
+fig1
+```
+
+```{r fig1_save}
+dir.create("paper-source-code/round-7/figures", recursive = TRUE)
+
+pdf("paper-source-code/round-7/figures/fig1.pdf", height=6, width=12)
+plot(fig1)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig1.png", height=2000, width=4000, res=600)
+plot(fig1)
+dev.off()
+
+
+```
+
+```{r fig-2, fig.width=8, fig.height=8}
+# Plot vaccination vs cumulative cases & deaths, by state
+case_scatter <- ggplot(data = cum_vs_vacc_case, aes(x = dose1_pct, y = cum_per_10k, size = population)) +
+  geom_point(alpha = 0.4, color = "#3182bd") +
+  geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
+  scale_x_continuous(name = paste0("Proportion of eligible individuals with\none dose by ", format(as.Date(projection.start.date), format = "%B %d, %Y"))) +
+  scale_y_log10(name = paste0("Cumulative cases per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")")) +
+  theme_bw() +
+  theme(legend.position = "none", panel.grid = element_blank())
+
+death_scatter <- ggplot(data = cum_vs_vacc_death, aes(x = dose1_pct, y = cum_per_10k, size = population)) +
+  geom_point(alpha = 0.4, color = "#3182bd") +
+  geom_text(aes(label = abbreviation, x = dose1_pct, y = cum_per_10k, size = population)) +
+  scale_x_continuous(name = paste0("Proportion of eligible individuals with\none dose by ", format(as.Date(projection.start.date), format = "%B %d, %Y"))) +
+  scale_y_log10(name = paste0("Cumulative deaths per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")")) +
+  theme_bw() +
+  theme(legend.position = "none", panel.grid = element_blank())
+
+case_map <- usmap::plot_usmap(regions = "states", data = cum_vs_vacc_case[, .(fips = location, cum_per_10k)], values = "cum_per_10k") +
+  theme(legend.position = "bottom") +
+  scale_fill_distiller(palette = "Blues", direction = 1, name = paste0("Cumulative cases per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")"))
+
+death_map <- usmap::plot_usmap(regions = "states", data = cum_vs_vacc_death[, .(fips = location, cum_per_10k)], values = "cum_per_10k") +
+  theme(legend.position = "bottom") +
+  scale_fill_distiller(palette = "Blues", direction = 1, name = paste0("Cumulative deaths per 10,000\n(", format(as.Date(projection.start.date) + 1, format = "%B %d, %Y"), " - ", format(as.Date(projection.end.date), format = "%B %d, %Y"), ")"))
+
+fig2 <- plot_grid(case_scatter, case_map, death_scatter, death_map, align = "hg", axis = "l", nrow = 2, labels = c("A","B","C","D"))
+
+#ggsave(paste0(dir_path, "code/report generation/manuscripts/round6-7_eLife/r", rd, "_figures/r", rd, "_cumulative_vs_vacc_scatter_map.png"), p,
+#       width = 8, height = 8, units = "in")
+
+fig2
+
+pdf("paper-source-code/round-7/figures/fig2.pdf", height=10, width=10)
+plot(fig2)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig2.png", height=5000, width=5000, res=600)
+plot(fig2)
+dev.off()
+
+ggsave("paper-source-code/round-7/figures/fig2.png", fig2,
+      width = 8, height = 8, units = "in")
+
+
+```
+
+```{r fig-3}
+
+# ** THIS SCRIPT PRODUCES FIGURE OF THE TOTAL INCIDENCE DURING A PERIOD DEFINED BY 2 DATES **
+# Set the target date (should/could be updated)
+target_date_lims = c("2021-07-03","2021-07-31")
+target_date_lim_1 <- as.character(as.Date(target_date_lims[1])+7)
+
+# Boolean to use PEAK, or to use date aligned with target_date above
+use_peak = FALSE
+
+# Load Location Data
+locations <- read.csv('paper-source-code/round-7/data/locations.csv') %>% as.data.table()
+
+
+
+########################################################
+# Deal with gold standard data
+########################################################
+
+gs <- read.csv('paper-source-code/round-7/data/gold_standard_data.csv') %>% as.data.table()
+
+# get locations population
+gs <- gs[locations, on=.(geo_value_fullname == location_name), nomatch=0]
+gs[, rate:=value*100000/population]
+gs <- gs[, .(outcome, target_end_date=time_value, location_name=geo_value_fullname, value,population, rate)]
+gs <- gs[!location_name %chin% c("American Samoa", "Puerto Rico", "Virgin Islands", "Guam", "Northern Mariana Islands")]
+
+
+# Subset gs & calculate cum cases during July
+gs <- gs %>% filter(target_end_date == target_date_lims[1] | target_end_date == target_date_lims[2])
+gs <- gs %>% filter(outcome=="Cumulative Cases")
+
+gs <- gs %>% dplyr::select(-rate) %>%
+  pivot_wider(names_from = target_end_date, values_from = value)
+gs <- gs %>% 
+  mutate(cum_case = get(target_date_lims[2]) - get(target_date_lims[1])) %>%
+  mutate(rate = cum_case*100000/population)
+
+
+########################################################
+# Deal with Round 7 Ensemble Data
+########################################################
+
+# Load ensemble estimates
+
+#ensemble_data <- model_data[[7]][model_name=="Ensemble_LOP" & type=="point" & location_name!="US"]
+#write.csv(ensemble_data, "data/round7_ensembleLOPmedian.csv")
+ensemble_data <- read.csv("paper-source-code/round-7/data/round7_ensembleLOPmedian.csv") %>% as.data.table()
+
+# Get the peak estimate
+peak <- ensemble_data[
+  order(scenario_id, outcome,location_name, -value)][
+    ,head(.SD,1), by=.(scenario_id, outcome, location_name)
+  ]
+
+# Get the estimate during the target_dates
+current <- ensemble_data[(target_end_date == target_date_lim_1) | (target_end_date == target_date_lims[2])]
+
+current_1 <- current %>% filter((target_end_date==target_date_lim_1 & outcome=="Incident Cases") | 
+                                (target_end_date==target_date_lim_1 & outcome=="Cumulative Cases") | 
+                                (target_end_date==target_date_lims[2] & outcome=="Cumulative Cases"))
+
+current_1 <- current_1 %>% 
+  select(-target_wk) %>%
+  pivot_wider(names_from = c(outcome, target_end_date), values_from = value) 
+
+current_1 <- current_1 %>% 
+  mutate(cum_case = get(paste0("Cumulative Cases_", target_date_lims[2])) - get(paste0("Cumulative Cases_", target_date_lim_1)) - get(paste0("Incident Cases_", target_date_lim_1)))
+
+current <- current_1 %>%
+  mutate(value= cum_case) %>% as.data.table()
+
+# Which one to use? - Leverage the use_peak boolean, set above
+if(use_peak) {
+  proj <- peak
+} else {
+  proj <- current
+}
+
+
+# Add locations, get rate, and remove territories
+proj <- proj[locations[,.(location_name, population)], on="location_name", nomatch=0]
+proj[, rate:=value*100000/population]
+proj <- proj[,.(scenario_id, location_name, value, population, rate)]
+proj <- proj[!location_name %chin% c("American Samoa", "Puerto Rico", "Virgin Islands", "Guam", "Northern Mariana Islands")]
+
+
+########################################################
+# Get the rankings
+########################################################
+gs <- as.data.table(gs)
+gs_ranked <- gs[order(outcome,-rate), empir_ranking:=seq(1,.N), by=outcome]
+proj_ranked <- proj[order(scenario_id, -rate), proj_ranking:=seq(1,.N), by=.(scenario_id)]
+gs_ranked <- gs_ranked[outcome=="Cumulative Cases",]
+
+# Bind the rankings together
+m_ranked <- gs_ranked[proj_ranked, on=.(location_name)]
+
+########################################################
+# Set some plot variables, based on use_peak
+########################################################
+
+if(use_peak) {
+  xlabel = "Ranking (Scenario D, Incident Cases, Projection Peak )"
+  title = "State Ranking Correlation: Scenario D Peak Incident Cases vs. Empirical Incident Cases (per 100 K)"
+} else {
+  xlabel = "Ranking (Scenario D, Total Incident Cases, Projected July 4-31, 2021)"
+  title = "State Ranking Correlation: Scenario D 7/31/21 Incident Cases vs. Empirical 7/31/21 Incident Cases (per 100 K)"
+}
+
+########################################################
+# Set some plot axis labels
+########################################################
+
+ranking_labels = c(paste0(seq(50,5,-5), "th"), "1st")
+ranking_breaks = c(seq(50,5,-5),1)
+
+########################################################
+# Get some correlation coefficients, and put in caption
+########################################################
+spear_corr <- m_ranked[outcome=="Cumulative Cases" & scenario_id=="D-2021-07-13",
+                       cor(proj_ranking,empir_ranking,method="spearman")]
+kend_tau <- m_ranked[outcome=="Cumulative Cases" & scenario_id=="D-2021-07-13",
+                     cor(proj_ranking,empir_ranking,method="kendall")]
+
+corr_caption <- paste0(
+  "Rank Correlations:\nSpearman's \u03C1 = ",
+  round(spear_corr,3),
+  "\nKendall's \u03C4 = ",
+  round(kend_tau,3)
+)
+
+########################################################
+# Generate the plot
+########################################################
+
+fig3 <- ggplot(m_ranked[scenario_id == "D-2021-07-13"], 
+               aes(proj_ranking, empir_ranking, label=location_name)) + 
+  #geom_point(color="darkblue", alpha=.5, size=1.5) +
+  #geom_line(stat="smooth",method = "lm",size = 1.5,alpha = 0.5, se=F)+
+  labs(y="Ranking (Total Incident Cases, July 4-31, 2021)", 
+       color="",linetype="",
+       x=xlabel)  + 
+  annotate(x=7, y=45, geom="text", label=corr_caption, size=4) +
+  #geom_smooth(aes(color="smooth_line"), size=1, method="lm", alpha=0.15, se=F) +
+  scale_y_reverse(breaks = ranking_breaks, labels=ranking_labels) + 
+  scale_x_reverse(breaks = ranking_breaks, labels=ranking_labels) + 
+  geom_abline(aes(color="Equal Ranks", slope=1, intercept=0), alpha=0.25, size=.5,show.legend = T)+
+  geom_smooth(aes(lty="Fit over Ranks", color="Fit over Ranks"), alpha=0.2, size=1.25,method="lm") +
+  geom_text(color="darkblue") + 
+  theme_bw() + theme(legend.position = "bottom", panel.grid.minor = element_blank()) + 
+  scale_linetype_manual(values = c("Fit over Ranks" = "dashed")) +
+  scale_color_manual(values = c("Equal Ranks" = "black", "Fit over Ranks" = "lightsteelblue3")) +
+  ggtitle(title)
+
+fig3 <- fig3 + 
+  ggtitle(NULL) +
+  theme(legend.position = "none")
+fig3
+
+
+
+pdf("paper-source-code/round-7/figures/fig3.pdf", height=7, width=9)
+plot(fig3)
+dev.off()
+
+png("paper-source-code/round-7/figures/fig3.png", height=3500, width=5000, res=600)
+plot(fig3)
+dev.off()
+```
+

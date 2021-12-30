@@ -1,0 +1,1 @@
+This folder contains reports from previous Scenario Modeling Hub rounds. At the time they were produced, some of these reports were intended to be shared only with certain stakeholders and have disclaimers to that effect. All reports have since become publically avaiable.

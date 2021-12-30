@@ -1,0 +1,10 @@
+team_name: Scenario Hub Coordination Group
+model_name: Ensemble_LOP_untrimmed
+model_abbr: Ensemble_LOP_untrimmed
+model_version: 1.0
+model_contributors: 
+website_url: 
+license: cc-by-4.0
+methods: The LOP ensemble projection is calculated by averaging cumulative probabilities of a given value across submissions. All values are included in the average. From the resulting distribution, medians and uncertainty intervals are derived. Ensemble projection includes only those submissions that reported quantiles for their targets.
+importations: 
+methods_long: 
