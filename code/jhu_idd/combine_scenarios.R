@@ -126,4 +126,10 @@ prep_wider_quantile <- function(df, quantiles) {
 
 # Check plots
 
-tmp %>% filter(location=="US")
+#tmp %>% filter(location=="US")
+
+
+
+
+tmp <- data_comb %>% filter(grepl("cum hosp", target)) %>% filter(type!="point-mean") %>% mutate(model_name="IDD")
+
