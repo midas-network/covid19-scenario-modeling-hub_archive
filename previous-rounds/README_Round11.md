@@ -40,7 +40,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 Round 11 of the COVID-19 Scenario Modeling Hub will concentrate on evaluating the impact of Omicron on COVID-19 dynamics. We have designed a 2\*2 scenario structure where Omicron transmissibility and immune escape are represented in one axis and severity of Omicron are on the other axis. We will consider a **3-month horizon**.
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/Round11_scenarios_table.PNG">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous_rounds/Round11_scenarios_table.PNG">
 
 
 #### **Assumption synopsis and model requirements:**
