@@ -1,13 +1,13 @@
 # COVID-19 Scenario Modeling Hub 
 
-Last updated: 1-9-2022 for **Round 12 Scenarios**.
+Last updated: 12-13-2021 for **Round 11 Scenarios**.
 
 
 ## Previous Round Scenarios and Results:    
 
 [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
-Round 11: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round11.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+Round 10: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round10.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
 </br>
 
@@ -36,41 +36,43 @@ Model projections should be submitted via pull request to the data-processed fol
 </br>
 
 
-## Round 12 Scenarios     
+## Round 11 Scenarios     
 
-Round 12 of the COVID-19 Scenario Modeling Hub (SMH) will serve as an update of Round 11 to evaluate the impact of the Omicron wave, with updated data and epidemiological understanding. We have designed a 2*2 scenario structure where Omicron transmissibility and immune escape are represented in one axis and severity of Omicron are on the other axis. We will consider a 3-month horizon.
+Round 11 of the COVID-19 Scenario Modeling Hub will concentrate on evaluating the impact of Omicron on COVID-19 dynamics. We have designed a 2\*2 scenario structure where Omicron transmissibility and immune escape are represented in one axis and severity of Omicron are on the other axis. We will consider a **3-month horizon**.
 
-
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/Round12_scenarios_table.PNG">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/Round11_scenarios_table.PNG">
 
 
 #### **Assumption synopsis and model requirements:**
 
-* **VACCINE EFFECTIVENESS:** Teams should take special care to make sure vaccine effectiveness assumptions incorporated into their models match the immune escape and severity reduction specifications.
 * **The effect of boosters and waning do not need to be explicitly incorporated in the model** as long as reasonable assumptions about the proportion of fully susceptible and immune individuals (with recommended breakdown by partial and fully immune status) can be made at the start of simulations
 * **Booster coverage (for teams incorporating explicitly):** At teams’ discretion, suggested between 40-70% of those previously vaccinated
 * **Waning (for teams incorporating explicitly):** At teams’ discretion, recommended timescale 6-12month. We provide recommendations for age-specific protection parameters below.
 * **Child vaccination:** 
    * <ins>5-11yr:</ins> continue as previous rounds, with rates and saturation at teams’ discretion.
    * <ins>6m-4yr:</ins> no vaccination 
-* **Updated vaccines:** Manufacturers are working on updated vaccines formulated for Omicron, though the timeframe and rollout of these are unknown. _For R12 we will not include these_.
-* **Initial conditions:** Prevalence of Omicron at the start of the projection period (January 9, 2022) is at the discretion of the teams based on their interpretation/analysis of the available data and estimates at the the time of projection.). Variation in initial prevalence between states is left at teams’ discretion. 
-* **NPIs, control, behavior change:** Reduction in transmission resulting from non-susceptibility or virus characteristics is left to each group’s discretion. However, _R12 should not include responsive changes in NPIs or behavior_ (i.e., increased control due to Omicron concerns). We may explore these impacts in the follow-up round, however, for now there remains too much uncertainty about the potential transmission and this is the focus.
+* **Updated vaccines:** Manufacturers are working on updated vaccines formulated for Omicron, though the timeframe and rollout of these are unknown. For R11 we will not include these.
+* **Initial conditions:** Prevalence of Omicron at the start of the projection period (December 19, 2021) is at the discretion of the teams based on their interpretation/analysis of the available data and estimates at the the time of projection.). Variation in initial prevalence between states is left at teams’ discretion. 
+* **NPIs, control, behavior change:** Reduction in transmission resulting from non-susceptibility or virus characteristics is left to each group’s discretion. However, R11 should not include responsive changes in NPIs or behavior (i.e., increased control due to Omicron concerns). We may explore these impacts in the follow-up round, however, for now there remains too much uncertainty about the potential transmission and this is the focus.
 
 </br>
 
 ### Interpretation and structure of immune escape:    
 
-Immune escape represents an increase in risk of infection among those with immunity from prior exposure to SARS-CoV-2 (of any kind, vaccination or natural infection), due to changes in the genetic makeup of Omicron. As an illustration, an immune escape of 80% indicates that among those with prior immunity to past variants, 80% will be susceptible to Omicron infection (or 80% more likely to be infected in a leaky immunity model), and 20% will be protected against Omicron infection. Among those infected with Omicron who had previous immunity due to vaccination or prior infection, a reduction in the probability of severe disease may occur. This is specified in the severity axis of the scenarios. Since boosters seem to restore the protection  lost by Omicron’s immune escape, teams can choose to reduce the impact of immune escape on boosted individuals. Alternatively, teams can apply the booster effect as a reduced probability of symptoms, hospitalization and death given infection.
+Immune escape represents an increase in risk of infection among those with immunity from prior exposure to SARS-CoV-2 (of any kind, vaccination or natural infection), due to changes in the genetic makeup of Omicron. As an illustration, an immune escape of 60% indicates that among those with prior immunity to past variants, 60% will be susceptible to Omicron infection, and 40% will be protected against Omicron infection. Among those infected with Omicron who had previous immunity due to vaccination or prior infection, a reduction in the probability of severe disease may occur. This is specified in the severity axis of the scenarios.
 
+### Interpretation and structure of transmissibility:    
 
-### Interpretation and structure of transmissibility:
-
-We do not provide guidance on transmissibility, only on immune escape. Teams can use the growth curve of Omicron in the US or elsewhere, or other datasets, to set this parameter.  
+We provide both absolute R0 for Omicron and a fold increase over Delta. Assumptions are based on a ratio of Rt_Omicron to Rt_Delta of 2.8. Here Rt=S(t)\*R0\*alpha(t), where alpha represents the impact of NPI and seasonal forcing on transmission. We can assume that NPI and seasonal forcing is the same for both variants, so the ratio of 2.8 can be explained as differences in S(t) (immune differences, e.g., [link](https://www.documentcloud.org/documents/21150195-medrxiv-2021-267417v1-sigal)) and R0 (intrinsic transmissibility differences). The parameters chosen for these scenarios cover a possible range of immunity and transmissibility differences between variants that would contribute to an observed Rt ratio of 2.8. We have used intermediate estimates based on results from the MOBS and Bedford labs.  
 
 ### Interpretation and structure of waning:    
     
-The presence, duration, and extent of waning is left to the team’s discretion.
+The presence, duration, and extent of waning is left to the team’s discretion. For teams including waning explicitly, we recommend the following:
+
+  * <ins>Speed</ins>: Average transition time to partially immune state between 6-12 months
+  * <ins>Residual protection among waned individuals</ins>:
+    *  Less than 65 years of age: Protection from infection: 60%, hospitalization: 90%, death: 95%
+    *  65 years and older: Protection from infection: 40%, hospitalization: 80%, death: 90%
 
 **Model structure:** For teams explicitly modeling waning, teams are encouraged to consider immunity as a partial loss of immune protection, where individuals go back to a partially immune state after a period of time which is left to the teams’ discretion (suggested 6 months to 1 year). Individuals who have reached a partially immune state have reduced probabilities of reinfection and severe disease compared to naive individuals. **The same parameters can be used for waning immunity from natural infection and vaccination**. 
 
@@ -90,19 +92,19 @@ All of these assumptions (especially the distribution of waning times) should be
 
 ## Submission Information    
 
-| Scenario                                                     | Scenario name </br>for submission file | Scenario ID </br>for submission file |
-| ------------------------------------------------------------ |:---------------------------------:|:-------------------------------:|
-| Scenario A. </br>Optimistic severity, High immune escape     | optSev_highIE    | A-2022-01-09    |
-| Scenario B. </br>Optimistic severity, Low immune escapee     | optSev_lowIE     | B-2022-01-09    |
-| Scenario C. </br>Pessimistic severity, High immune escape    | pessSev_highIE   | C-2022-01-09    |
-| Scenario D. </br>Pessimistic severity, Low immune escapee    | pessSev_lowIE    | D-2022-01-09    | 
+| Scenario                                                               | Scenario name </br>for submission file | Scenario ID </br>for submission file |
+| ---------------------------------------------------------------------- |:---------------------------------:|:-------------------------------:|
+| Scenario A. </br>Optimistic severity, High immune escape/Low transmissibility increase     | optSev_highIE    | A-2021-12-21    |
+| Scenario B. </br>Optimistic severity, Low immune escape/High transmissibility increase     | optSev_lowIE     | B-2021-12-21    |
+| Scenario C. </br>Pessimistic severity, High immune escape/Low transmissibility increase    | pessSev_highIE   | C-2021-12-21    |
+| Scenario D. </br>Pessimistic severity, Low immune escape/High transmissibility increase    | pessSev_lowIE    | D-2021-12-21    | 
 
 
 
-*   **Due date**: January 14, 2022
-*   **End date for fitting data**: January 8, 2022
-*   **Start date for scenarios**: January 9, 2022 (first date of simulated transmission/outcomes)
-*   **Simulation end date**: April 2, 2022 (12-week horizon)
+*   **Due date**: December 21, 2021
+*   **End date for fitting data**: Dec 18, 2021
+*   **Start date for scenarios**: Dec 19, 2021 (first date of simulated transmission/outcomes)
+*   **Simulation end date**: Mar 12, 2022 (12-week horizon)
 
 
 **Other submission requirements**
@@ -155,6 +157,8 @@ All of these assumptions (especially the distribution of waning times) should be
 ## Control Measures
 
 We don’t specify different levels of non-pharmaceutical interventions (NPI) use; however, teams should consider that most schools have returned to in-person education in fall 2021 and high level health officials have noted that “people should feel safe to mingle at Thanksgiving and Christmas”. The future level of NPIs are left at the discretion of the modeling teams and should be specified in the teams’ metadata. Teams should also note the change in CDC mask recommendations for vaccinated people in high-transmission areas on 07/27/2021.
+Additional scenario and simulation details
+
 
 
 ## Additional scenario and simulation details    
@@ -204,7 +208,6 @@ We don’t specify different levels of non-pharmaceutical interventions (NPI) us
 - [Round 8 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round8.md)
 - [Round 9 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round9.md)
 - [Round 10 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round10.md)
-- [Round 11 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round11.md)
 
 </br>
 
