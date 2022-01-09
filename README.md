@@ -93,9 +93,9 @@ All of these assumptions (especially the distribution of waning times) should be
 | Scenario                                                     | Scenario name </br>for submission file | Scenario ID </br>for submission file |
 | ------------------------------------------------------------ |:---------------------------------:|:-------------------------------:|
 | Scenario A. </br>Optimistic severity, High immune escape     | optSev_highIE    | A-2022-01-09    |
-| Scenario B. </br>Optimistic severity, Low immune escapee     | optSev_lowIE     | B-2022-01-09    |
+| Scenario B. </br>Optimistic severity, Low immune escape     | optSev_lowIE     | B-2022-01-09    |
 | Scenario C. </br>Pessimistic severity, High immune escape    | pessSev_highIE   | C-2022-01-09    |
-| Scenario D. </br>Pessimistic severity, Low immune escapee    | pessSev_lowIE    | D-2022-01-09    | 
+| Scenario D. </br>Pessimistic severity, Low immune escape    | pessSev_lowIE    | D-2022-01-09    | 
 
 
 
