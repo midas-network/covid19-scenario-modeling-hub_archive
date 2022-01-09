@@ -42,7 +42,6 @@ Round 11 of the COVID-19 Scenario Modeling Hub will concentrate on evaluating th
 
 <img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous_rounds/Round11_scenarios_table.PNG">
 
-
 #### **Assumption synopsis and model requirements:**
 
 * **The effect of boosters and waning do not need to be explicitly incorporated in the model** as long as reasonable assumptions about the proportion of fully susceptible and immune individuals (with recommended breakdown by partial and fully immune status) can be made at the start of simulations
