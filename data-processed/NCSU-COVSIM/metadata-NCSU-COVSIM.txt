@@ -1,0 +1,31 @@
+team_name: NCSU
+model_name: COVSIM
+model_abbr: NCSU-COVSIM
+model_version: "2021-12-21"
+model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, 
+Jessica Mele (North Carolina State University) <jmele@ncsu.edu>,
+Julie Swann (North Carolina State University) <jlswann@ncsu.edu>,
+Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>,
+Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>,
+website_url: https://covsim.hosted-wordpress.oit.ncsu.edu/
+license: cc-by-4.0
+methods: Stochastic agent based model of North Carolina using data population and demographic at the census tract level.
+modeling_NPI: NPIs are modeled as mask wearing which reduce infectivity and susceptibility 50%
+compliance_NPI: Based on the agents urbanicty and time varying following masking compliance rates. 
+contact_tracing: "Not applicable"
+testing: "Not applicable"
+vaccine_efficacy_transmission: If the vaccine is effective for an agent (first or second dose), they are moved directly to the recovered state
+vaccine_efficacy_delay: 14 day delay for the first dose, 14 day delay for the second dose.
+vaccine_hesitancy: Vaccines are distributed based on previous and forecasted vaccine uptake by age. 
+vaccine_immunity_duration: 30% of vaccinated population lose immunity between 180-360 days after vaccination, with average of 270 days
+natural_immunity_duration: 35% of vaccinated population lose immunity between 180-360 days after vaccination, with average of 270 days
+case_fatality_rate: 0.0101
+infection_fatality_rate: 0.0066
+asymptomatics: 0.33
+age_groups: [0-4, 5-9, 10-19, 20-64, 65+]
+importations: We assumed 10 importations per day per state seeded randomly.
+confidence_interval_method:  Run 45 replications of each scenario and calculated confidence intervals for all collected data.
+calibration:  Calibrated by fitting average (across all replications) current hospitalizations and cumulative deaths in North Carolina to observed instances.
+spatial_structure: Census tracts of North Carolina are modeled. Agents remains commute to work between census tracts. All agents in a census tract
+interact with each other via the community form of infections.
+citation: "Patel MD, Rosenstrom E, Ivy JS, et al. Association of Simulated COVID-19 Vaccination and Nonpharmaceutical Interventions With Infections, Hospitalizations, and Mortality. JAMA Network Open. 2021;4(6):e2110782-e2110782. doi:10.1001/jamanetworkopen.2021.10782"
