@@ -299,6 +299,8 @@ It currently contains code to:
     * Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA) 
 *   [*University of Notre Dame - FRED*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
     *   Guido Espana, Sean Cavany, Sean Moore, Alex Perkins
+*   [*University of Florida - ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
+    *   Thomas Hladish (University of Florida), Alexander Pillai (University of Florida), Kok Ben Toh (Northwestern University),  Ira Longini Jr. (University of Florida) 
   
 </br>
 
