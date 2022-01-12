@@ -21,7 +21,7 @@ infection_fatality_rate: Learned from recent data.
 asymptomatics: Using sero-prevelance data from the CDC. Note that this covers the currect cumulative fraction of unreported, untested, and asymptomatic.
 age_groups: [0-4, 5-11, 12-17, 18-65, 65+] Age-wise vaccine, cases, hospitalizations, deaths for training as well as projections. Population with waned immunity tracked for each age-group
 importations: Not applicable
-confidence_interval_method: We generate multiple trajectories by (i) Uniform sampling of the recently seen infection rates, under-reporting/asymptomatic population, vaccine coverage, NPI uncertainties, waning parameters uncertainty, and variant prevelance. (ii) For each of the above case trajectories, we use multiple possibilities of death and hospitalization rates that have been seen in the recent past. The above results in multiple points for each day. Quantiles are generated based on sampling among these points for each day.
+confidence_interval_method: We generate multiple trajectories by (i) Uniform sampling of the recently seen infection rates, under-reporting/asymptomatic population, vaccine coverage, waning parameters uncertainty, and variant prevelance. (ii) For each of the above case trajectories, we use multiple possibilities of death and hospitalization rates that have been seen in the recent past. The above results in multiple points for each day. Quantiles are generated based on sampling among these points for each day.
 calibration: All calibrations using regression. No manual-tuning other than the listed assumption and trivial settings: non-zero lag between infection and death.
 spatial_structure: Not applicable.
 team_funding: National Science Foundation Award # 2135784
