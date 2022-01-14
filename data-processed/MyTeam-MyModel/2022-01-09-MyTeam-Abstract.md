@@ -5,13 +5,11 @@ FILL
 # Model assumptions
 ## Initial distribution of susceptibility
 FILL
-## Transmillibily
+## Transmissibility
 FILL 
 ## Generation time
 FILL
 ## Waning immunity assumptions
 FILL
-## Etc.
-FILL
-# Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
+## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
 FILL
