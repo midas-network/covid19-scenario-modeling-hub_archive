@@ -25,9 +25,9 @@ case_fatality_rate: Derived from below based on probability of symptoms by age
 infection_fatality_rate: Age dependent, as given by Verity et al.
 asymptomatics: Age-dependent, based on Davies et al.
 age_groups: 10-year age bands up-to age 79 inclusive, then 80+
-importations: For variants, we take data from covariants.org at national level, and estimate different scaling factors for each of the variant to match estimated prevalence by state.
+importations: For variants, we take data from covariants.org at national level, and estimate different scaling factors for each of the variant to match estimated prevalence by state. For Omicron, we assume that importations started early in November 2021. 
 confidence_interval_method: We simulate the model 100 times, sampling from the posterior distribution of each of the calibrated parameters
-calibration: We have a three stage fitting process. In the first stage (up until Fall 2020) we fit a range of parameters including transmissibility. In the second stage, Fall 2020 - Dec 2020: keep all previous parameters at final values in Fall 2020, and calibrate school capacity and masking parameters. in the Final stage, Dec 2020 - present: fix school parameters and calibrate transmissibility and immune escape of variants. For each stage, we simulate 3,000 particles, and sample according to the particle likelihood the particles in the next stage. We fit to the targets described in data_inputs below.
+calibration: We have a three stage fitting process. In the first stage (up until Fall 2020) we fit a range of parameters including transmissibility. In the second stage, Fall 2020 - Dec 2020: keep all previous parameters at final values in Fall 2020, and calibrate school capacity and masking parameters. in the Final stage, Dec 2020 - present: fix school parameters and calibrate transmissibility and immune escape of variants. For each stage, we simulate 3,000 particles, and sample according to the particle likelihood the particles in the next stage. We fit to the targets described in data_inputs below. 
 spatial_structure: Locations and location types explicitly described. Agents move around these locations
 team_funding: NSF RAPID grant
 data_inputs: whole period: Deaths - JHU. until fall 2020: COVID-19 tracking project testing data (positives and negatives), seroprevalence by age in Indiana.
