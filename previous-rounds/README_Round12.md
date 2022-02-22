@@ -41,7 +41,7 @@ Model projections should be submitted via pull request to the data-processed fol
 Round 12 of the COVID-19 Scenario Modeling Hub (SMH) will serve as an update of Round 11 to evaluate the impact of the Omicron wave, with updated data and epidemiological understanding. We have designed a 2*2 scenario structure where Omicron transmissibility and immune escape are represented in one axis and severity of Omicron are on the other axis. We will consider a 3-month horizon.
 
 
-<img src= "https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round12_scenarios_table.PNG
+<img src= "https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round12_scenarios_table.PNG">
 
 
 #### **Assumption synopsis and model requirements:**
