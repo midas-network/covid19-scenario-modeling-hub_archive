@@ -21,4 +21,4 @@ If you are **adding new scenarios** to an existing model, please include the fol
 ## Checklist
 
 - [ ] Specify a proper PR title with your team name.
-- [ ] All validation checks ran successfully on your branch. Instructions to run the tests locally is present [here](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Running-Checks-Locally).
+- [ ] All validation checks ran successfully on your branch. Instructions to run the tests locally is present [here](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
