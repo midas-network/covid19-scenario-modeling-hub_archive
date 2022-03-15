@@ -1,0 +1,34 @@
+name: Cache install
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+    cache-R-library:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+
+        - name: Setup R
+          uses: r-lib/actions/setup-r@v1
+
+        - name: Install system dependencies
+          run: sudo apt-get install libcurl4-openssl-dev libudunits2-dev libgdal-dev
+
+        - name: Cache R packages 
+          if: runner.os != 'Windows' 
+          uses: actions/cache@v1 
+          with: 
+            path: ${{ env.R_LIBS_USER }} 
+            key: ${{ runner.os }}-${{ hashFiles('.github/requirements.txt') }}-1
+
+        - name: Install dependencies
+          run: |
+            R -e 'Sys.setenv("NOT_CRAN" = TRUE)
+                  install.packages(c("arrow", "gh", "remotes"))
+                  Sys.unsetenv("NOT_CRAN")
+                  remotes::install_url("https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip")'
