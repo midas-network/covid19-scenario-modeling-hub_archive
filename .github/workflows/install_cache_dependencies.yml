@@ -1,6 +1,9 @@
 name: Cache install
 
 on:
+  push:
+    branch:
+      - master
   workflow_dispatch:
 
 jobs:
