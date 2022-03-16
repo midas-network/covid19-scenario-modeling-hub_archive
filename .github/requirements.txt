@@ -14,10 +14,10 @@ gtable
 lubridate
 purrr
 readr
+remotes
 scales
 stringr
 tibble
 tidyr
 tidyselect
-remotes
 https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip
