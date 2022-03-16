@@ -26,7 +26,8 @@ message <- purrr::map(test, paste, collapse = "\n")
 lapply(length(message), function(x) {
   gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/", 
                 "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
-         body = message[[x]])
+         body = message[[x]],
+         .token = Sys.getenv("GH_TOKEN"))
 })
 
 
@@ -52,7 +53,8 @@ if (length(pr_sub_files > 0)) {
     # Post message
     gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/", 
                 "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
-         body = message_plot)
+         body = message_plot,
+         .token = Sys.getenv("GH_TOKEN"))
 
     })
 }
