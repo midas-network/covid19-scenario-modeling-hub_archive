@@ -40,6 +40,7 @@ jobs:
             Rscript code/validation/validation.R
           env:
             GH_PR_NUMBER: ${{ github.event.pull_request.number }}
+            GH_TOKEN: ${{ secret.GITHUB_TOKEN }}
 
 
         - name: Upload Projection Plot as Artifact
