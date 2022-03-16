@@ -2,9 +2,7 @@ name: Validate and Visualize Submission
 on:
   pull_request:
     branches:
-#      - main
-      - validation_actions
-
+      - master
 
 jobs:
     validates-viz-files:
