@@ -44,6 +44,7 @@ jobs:
 
         - name: Upload Projection Plot as Artifact
           uses: actions/upload-artifact@v3
+          if: always()
           with:
             name: validation_plot_${{ github.event.pull_request.number }}
             path: ./proj_plot/*
