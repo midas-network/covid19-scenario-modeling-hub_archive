@@ -15,9 +15,7 @@ model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon Universit
   author, Carnegie Mellon University), and the Delphi COVID-19 Response Team
 website_url: https://delphi.cmu.edu
 license: cc-by-4.0
-methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
-  (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
-  visits.
+methods: (State) A basic AR-type time series model fit using case counts and deaths as features. (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's visits.
 modeling_NPI: "Not applicable"
 compliance_NPI: "Not applicable"
 contact_tracing: "Not applicable"
