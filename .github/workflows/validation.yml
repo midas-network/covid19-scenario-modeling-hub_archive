@@ -3,14 +3,12 @@ on:
   pull_request:
     branches:
       - master
-permissions:
-  contents: write
-  pull-requests: write
-  issues: write
 
 jobs:
     validates-viz-files:
         runs-on: ubuntu-latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         steps:
         - name: Checkout repository
@@ -43,7 +41,7 @@ jobs:
             Rscript code/validation/validation.R
           env:
             GH_PR_NUMBER: ${{ github.event.pull_request.number }}
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
         - name: Upload Projection Plot as Artifact
