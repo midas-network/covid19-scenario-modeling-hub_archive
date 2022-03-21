@@ -6,9 +6,9 @@ submit scenarios.
 All scenarios should be submitted directly to the [data-processed/](./) folder.
 Data in this directory should be added to the repository through a pull request. 
 
-Automatic validation is disabled at this point, until the validator software has been completed and tested. 
+Automatic validation is running starting round 13.
 
-Due to file size limitation, the file can be submitted in a `.zip` format with the same name as the `.csv` file provided. 
+Due to file size limitation, the file can be submitted in a `.zip` or `.gz` format with the same name as the `.csv` file provided. 
 
 ## Example
 
@@ -93,7 +93,7 @@ No additional columns are allowed.
 Each row in the file is either a point or quantile scenario for a location on a 
 particular date for a particular target. 
 
-If the size of the file is larger than 100MB, it can be submitted in a `.zip` format. 
+If the size of the file is larger than 100MB, it can be submitted in a `.zip` or `.gz` format. 
 
 ### `model_projection_date`
 
@@ -101,12 +101,9 @@ Values in the `model_projection_date` column must be a date in the format
 
     YYYY-MM-DD
     
-This is the date on which the model projections were obtained. 
-This will typically be the date on which the computation finishes running and 
-produces the standard formatted file. 
-`model_projection_date` should correspond and be redundant with the date in the filename, 
-but is included here for additional quality control. 
-The `model_projection_date` should be before any of the target dates modeled. 
+Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
+
+For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 ### `scenario_name`
 
@@ -133,12 +130,12 @@ The requested targets are:
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
-- "N wk ahead inc death"  where N is a number between 1 and  26
-- "N wk ahead cum death"  where N is a number between 1 and  26
-- "N wk ahead inc case"  where N is a number between 1 and  26
-- "N wk ahead cum case"  where N is a number between 1 and  26
-- "N wk ahead inc hosp"  where N is a number between 1 and 26
-- "N wk ahead cum hosp"  where N is a number between 1 and 26
+- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
+- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
+- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
+- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
+- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
+- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
@@ -204,7 +201,7 @@ A week-ahead scenario should represent the total number of new hospitalized case
 reported during a given epiweek (from Sunday through Saturday, inclusive).
 
 Predictions for this target will be evaluated compared to the number of new 
-hospitalized cases, as reported by the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by StateTimeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries).
+hospitalized cases, as reported by the HHS and distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html). 
 
 
 #### N wk ahead cum hosp
@@ -216,7 +213,7 @@ A week-ahead scenario should represent the cumulative number of hospitalized cas
 reported on the Saturday of a given epiweek.
 
 Predictions for this target will be evaluated compared to the cumulative of the number of new 
-hospitalized cases, as reported by the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by StateTimeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries).
+hospitalized cases, as reported by the HHS and distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html). 
 
 
 ### `target_end_date`
@@ -302,20 +299,16 @@ For the first round of submissions, the autmoated pull requests may not work yet
 
 When a pull request is submitted, 
 the data are validated by running
-the tests in [test_formatting.py](../code/validation/test_formatting.py).
+the tests in [validation.R](./code/validation/validation.R).
 The intent for these tests are to validate the requirements above and 
-specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Validation-Checks#current-validation-checks).
+specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
 Please [let us know](https://github.com/midas-network/covid19-scenario-modeling-hub/issues) 
 if the wiki is inaccurate.
-
-If the pull request fails, please 
-[follow these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Troubleshooting-Pull-Requests)
-for details on how to troubleshoot.
 
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Validation-Checks#running-validations-locally).
+[these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks) (section File Checks Run).
 
 
 
