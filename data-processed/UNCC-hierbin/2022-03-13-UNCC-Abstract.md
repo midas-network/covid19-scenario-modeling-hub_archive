@@ -11,6 +11,6 @@ Transmissibility is modeled as an interaction between both immune escape specifi
 ## Generation time
 Generation time is implicitly modeled due to the data-driven nature of our model.
 ## Waning immunity assumptions
-Waning immunity is modeled as in round #13 specification.
+Waning immunity is modeled as in round #13 specification. Stochastic noise is introduced to waning immunity in each run.
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
 We do not explicitly consider under-reporting due to testing capacity or other constraints. Our model focuses on projecting reported cases, hospitalization, and death. We assume that hosptalization and death are more stable metrics of the COVID-19 pandemic. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate from published studies.
