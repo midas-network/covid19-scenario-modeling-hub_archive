@@ -10,6 +10,14 @@ We believe that the short reinfection times, long time horizon, and highly infec
 We consider two immune classes: fully immune and partially immune. Partial immunity is tracked with an indicator variable attached to each agent. 
 This changes the transition probabilities when moving through the disease compartments.
 
+## Initial distribution of susceptibility if available
+### Proportion of people that were infected with Omicron before March 13
+Not available
+### Proportion of people that are naïve at start of projection (not vaccinated or infected)
+Not available
+### Other
+Not available
+
 ## Initial variant characteristics (including Omicron transmissibility, immune escape, and how uncertainty or non-identifiability was handled) 
 Omicron transmissibility was parameterized to be 1.33x more transmissible than seasonal Delta. Immune escape was parameterized to be 50%. These two 
 results were identified from our Round 12 scenarios. The likelihood of hospitalization was parameterized to be 50% that of Delta. The probability of 
