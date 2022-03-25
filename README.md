@@ -139,7 +139,7 @@ All of these assumptions should be documented in meta-data and abstract.
 *   **Due date**: March 15, 2022
 *   **End date for fitting data**: March 12, 2022 (no later than March 12, no earlier than March 5)
 *   **Start date for scenarios**: March 13, 2022 (first date of simulated transmission/outcomes)
-*   **Simulation end date: March 18, 2023 (52-week horizon)**
+*   **Simulation end date: March 11, 2023 (52-week horizon)**
 
 
 **Other submission requirements**
