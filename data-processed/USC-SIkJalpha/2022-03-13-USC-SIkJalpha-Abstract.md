@@ -6,6 +6,7 @@ It is to be noted that the infection rates and death/hospitalization rates are e
 
 
 # Model assumptions
+## Number/type of immune classes considered
 The model explicitly accounts for various paths to partial immunity and the time at which it was acquired. These include (1) 1st time infections, (2) 2nd+ time infections, (3) infection after first dose, (4) infection after 2-doses, (5) infections after a booster, (6) first with no prior infection, (7) 2-doses with no prior infection, (8) booster with no prior infection, (9) first dose with prior infection(s) (10) 2-doses with prior infection(s), and (11) booster with prior infection(s). 
 ## Initial distribution of susceptibility
 Susceptibility is identified over the whole period since Jan 2020 by keeping track of each of the states listed above. Having these states over time, age groups and variants allows for precise computation of immunity in the population at a given time. As a result, we can track new infections among the observed data that have protection from a prior immunity (from vaccine/booster/infection), while accounting for waning immunity.
