@@ -22,19 +22,20 @@ if (length(pr_sub_files > 0)) {
       dir.create(paste0(getwd(), "/proj_plot"))
   # run validation and visualization
   test <- lapply(seq_len(length(pr_sub_files_lst)), function(x) {
-    if (grepl(".zip$|.gz$", pr_sub_files_lst[[x]]$raw_url)) {
+    url_link <- URLdecode(pr_sub_files_lst[[x]]$raw_url)
+    if (grepl(".zip$|.gz$", url_link)) {
       # download file
-      download.file(pr_sub_files_lst[[x]]$raw_url, basename(pr_sub_files_lst[[x]]$raw_url))
+      download.file(url_link, basename(url_link))
       # generate visualization pdf
-      generate_validation_plots(path_proj = basename(pr_sub_files_lst[[x]]$raw_url), lst_gs = lst_gs, save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975))
+      generate_validation_plots(path_proj = basename(url_link), lst_gs = lst_gs, save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975))
       # run validation
-      test <- capture.output(try(validate_submission(basename(pr_sub_files_lst[[x]]$raw_url), lst_gs = lst_gs)))
+      test <- capture.output(try(validate_submission(basename(url_link), lst_gs = lst_gs)))
     }
-    if (grepl(".csv$", pr_sub_files_lst[[x]]$raw_url)) {
+    if (grepl(".csv$", url_link)) {
       # generate visualization pdf
-      generate_validation_plots(path_proj = pr_sub_files_lst[[x]]$raw_url, lst_gs = lst_gs, save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975))
+      generate_validation_plots(path_proj = url_link, lst_gs = lst_gs, save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975))
       # run validation
-      test <- capture.output(try(validate_submission(pr_sub_files_lst[[x]]$raw_url, lst_gs = lst_gs)))
+      test <- capture.output(try(validate_submission(url_link, lst_gs = lst_gs)))
     }
     return(test)
    })
