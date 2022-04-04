@@ -1,0 +1,51 @@
+name: Validate and Visualize Submission
+on:
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+    validates-viz-files:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+
+        - name: Setup R
+          uses: r-lib/actions/setup-r@v1
+
+        - name: Install system dependencies
+          run: sudo apt-get install libcurl4-openssl-dev libudunits2-dev libgdal-dev
+
+
+        - name: Cache R packages 
+          id: cache
+          if: runner.os != 'Windows' 
+          uses: actions/cache@v2 
+          with: 
+            path: ${{ env.R_LIBS_USER }} 
+            key: ${{ runner.os }}-${{ hashFiles('.github/requirements.txt') }}-1
+
+        - name: Install dependencies
+          if: steps.cache.outputs.cache-hit != 'true'
+          run: |
+            R -e 'Sys.setenv("NOT_CRAN" = TRUE)
+                  install.packages(c("arrow", "remotes"))
+                  remotes::install_url("https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip")'
+
+        - name: Run Validation
+          run: |
+            Rscript code/validation/validation.R
+          env:
+            GH_PR_NUMBER: ${{ github.event.pull_request.number }}
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+        - name: Upload Projection Plot as Artifact
+          uses: actions/upload-artifact@v3
+          if: always()
+          with:
+            name: validation_plot_${{ github.event.pull_request.number }}
+            path: ./proj_plot/*
+            if-no-files-found: ignore
