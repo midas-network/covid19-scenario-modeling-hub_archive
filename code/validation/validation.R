@@ -47,7 +47,7 @@ if (length(pr_sub_files) > 0) {
 # Post results as comment on the open PR
 message <- purrr::map(test, paste, collapse = "\n")
 
-lapply(length(message), function(x) {
+lapply(seq_len(length(message)), function(x) {
   gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/", 
                 "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
          body = message[[x]],
