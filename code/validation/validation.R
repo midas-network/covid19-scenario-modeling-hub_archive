@@ -64,7 +64,7 @@ message_plot <- paste0(
   "an artifact of the GH Actions. For more information, please see ",
   "[here](https://docs.github.com/en/actions/managing-workflow-runs/downloading-workflow-artifacts)")
 
-if (length(pr_sub_files > 0)) {
+if (length(pr_sub_files) > 0) {
     # Post message
     gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/", 
                 "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
