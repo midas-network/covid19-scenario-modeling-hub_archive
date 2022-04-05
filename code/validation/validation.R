@@ -12,7 +12,7 @@ pr_sub_files <- grep(
   value = TRUE)
 
 # Run validation on file corresponding to the submission file format
-if (length(pr_sub_files > 0)) {  
+if (length(pr_sub_files) > 0) {  
   # prepare observe data
   lst_gs <- suppressWarnings(pull_gs_data())
   # select submission files
