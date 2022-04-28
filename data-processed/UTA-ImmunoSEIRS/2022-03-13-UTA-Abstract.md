@@ -11,6 +11,8 @@ The model is stratified according to six age groups.
 References for our projections of the impact of Omicron on the US using the same model:
 - Bouchnita, Anass, et al. "COVID-19 Scenario Projections: The Emergence of Omicron in the US-January 2022." (2022).
 
+## Number/type of immune classes considered
+The model does not explicity divide the population into different classes of immunity level. Instead, it tracks the changes of population-immunity in the population and how it modulates susceptibility and severity of the disease.
 
 ## Initial distribution of susceptibility if available
 ### Proportion of people that were infected with Omicron before March 13
@@ -39,7 +41,7 @@ The effect of variant X was captured by simulating its growth function using a t
 We consider that behavior remains the same as it was at the beginning of March 2022.
 
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes, booster implementation)
-We consider an increase in transmissibility by 30% caused by variant BA2.
+We consider an increase in transmissibility by 30% caused by the variant BA.2.
 
 
 
