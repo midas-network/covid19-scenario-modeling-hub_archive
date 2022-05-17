@@ -219,6 +219,17 @@ reported on the Saturday of a given epiweek.
 Predictions for this target will be evaluated compared to the cumulative of the number of new 
 hospitalized cases, as reported by the HHS and distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html). 
 
+#### N wk ahead inc inf
+
+This target is the number of incident (weekly) infections predicted by the model during the week 
+that is N weeks after `model_projection_date`.
+
+A week-ahead scenario should represent the total number of new infections 
+occurring within a given epiweek (from Sunday through Saturday, inclusive).
+
+Projections of infections will be used to compare outputs between models but will not 
+be evaluated against observations.  
+Projections of infections are optional.
 
 ### `target_end_date`
 
