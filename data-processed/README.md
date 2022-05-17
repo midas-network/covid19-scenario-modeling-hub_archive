@@ -127,6 +127,9 @@ The requested targets are:
 - weekly incident hospitalizations
 - cumulative incident hospitalizations
 
+Optional target:
+- weekly incident infections
+
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
@@ -136,6 +139,7 @@ following specific targets:
 - "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
 - "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 - "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
+- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
