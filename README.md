@@ -1,5 +1,7 @@
 # COVID-19 Scenario Modeling Hub 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6584489.svg)](https://doi.org/10.5281/zenodo.6584489)  
+
 Last updated: 5-16-2022 for **Round 14 Scenarios**.
 
 
