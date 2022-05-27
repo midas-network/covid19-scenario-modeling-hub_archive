@@ -73,6 +73,8 @@ By increasing the severity of variant X, conditional on infection, we implicitly
 
 *Variant introduction and ramp up.* Variant X is to be seeded in **the first full week of September 2022 (Sep 4-10, 2022), with 50 active infections of variant X** to be introduced during this week in the US (illustrating incoming variants from abroad). There will be a continuous influx of 50 weekly infections of variant X for a total of 16 weeks, **ending the week of December 18-24, 2022, inclusive.** Geographic dispersion of these infections is left at teams discretion. The ramp up of the new variant due to local transmission is also left at the teams’ discretion.
 
+To address potential variation in the rise of variant X between models, and how variant X timing may interact with the timing of the vaccination campaign, we encourage teams to report the mean proportion of cases caused by variant X in each week and location, as `prop_X=cases_of_X/all_cases`. This should be reported in the same file as the other targets.
+
 ### **VE of existing and reformulated vaccines:**
 
 There is [evidence](https://jamanetwork.com/journals/jama/fullarticle/2792030?resultClick=1) that vaccines will be reformulated in June 2022 and improved bivalent boosters will become available by October 2022. It is expected that the VE of reformulated bivalent boosters will provide a moderate improvement above existing boosters; yet the exact VE will depend on circulating strains this fall. Teams should set the **VE of reformulated vaccines at  80% against symptomatic disease with the variants circulating at the start of the projection period** (including all Omicron variants). **For scenarios C and D in which variant X is seeded starting the first week of Sep 2022, a reduction of VE against (infection and) symptomatic disease should be implemented over the theoretical 80%**, in line with the 40% immune escape parameter. </br>
@@ -118,6 +120,7 @@ The mix of circulating strains at the start of the projection period (June 5, 20
 
 **Ascertainment** of cases, hospitalizations and deaths will **proceed at the same level** as they were at the start of the projection period.
 We will continue to collect the same targets (cases, hospitalizations, deaths) as in prior rounds but suggest that teams provide **weekly incident infections (number of new infections each week)**, if they can. This is to facilitate comparisons between models, including outside of SMH, case ascertainment changes over time. A revised submission file template will be provided.
+If possible, teams should report the mean proportion of cases caused by variant X in each week and location as a new target named **"prop_X"**.
 
 **All of the teams’ specific assumptions should be documented in meta-data and abstract.** In this round, we ask that teams provide the **case ascertainment ratio (cases/infections)** used in projections, and a description of how this parameter has been estimated.
 

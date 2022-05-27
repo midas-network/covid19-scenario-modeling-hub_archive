@@ -129,6 +129,7 @@ The requested targets are:
 
 Optional target:
 - weekly incident infections
+- weekly proportion of cases caused by variant X (mean only) [Round 14 specific]
 
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
@@ -140,6 +141,7 @@ following specific targets:
 - "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 - "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 - "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
+- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 52, depending on the round) [Round 14 specific]
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
@@ -230,6 +232,20 @@ occurring within a given epiweek (from Sunday through Saturday, inclusive).
 Projections of infections will be used to compare outputs between models but will not 
 be evaluated against observations.  
 Projections of infections are optional.
+
+#### N wk ahead prop X [Round 14 specific]
+
+This target is the proportion of incident (weekly) cases caused by variant X among 
+all COVID19 cases, as predicted by the model during the week that is N weeks after 
+`model_projection_date`.  
+
+A week-ahead scenario should represent the proportion of variant X cases occurring 
+within a given epiweek (from Sunday through Saturday, inclusive).  
+
+Projections of variant X proportion will be used to compare outputs between models 
+but will not be evaluated against observations.  
+Further, we do not expect a full distribution of quantiles, only mean estimates.  
+Projections of proportion of variant X are optional
 
 ### `target_end_date`
 
