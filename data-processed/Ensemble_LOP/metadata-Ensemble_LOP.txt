@@ -5,6 +5,6 @@ model_version: 1.0
 model_contributors: 
 website_url: 
 license: cc-by-4.0
-methods: The LOP ensemble projection is calculated by averaging cumulative probabilities of a given value across submissions. For each value, the highest and lowest probabilities are given zero weight and the remaining are weighted equally.  From the resulting distribution, medians and uncertainty intervals are derived. Ensemble projection includes only those submissions that reported quantiles for their targets.
+methods: The LOP ensemble projection is calculated by averaging cumulative probabilities of a given value across submissions. For each value, the highest and lowest probabilities are given zero weight and the remaining are weighted equally.  From the resulting distribution, medians and uncertainty intervals are derived. Ensemble projection includes only those submissions that reported quantiles for their targets. Starting round 13, the trimmed linear opinion pool ensemble (Ensemble LOP) is estimated by 1) simulating N forecasts from each of the component models, where N is selected proportionate to the weight of the model, 2) linearly pooling those forecasts into a multi-modal distribution, and 3) truncating the pooled distribution at the lower and upper bounds, by an amount equivalent to 1 over the sum of the model weights. By default a weight of 1 is assigned for each submission, 0.5 if a team makes two submissions.
 importations: 
 methods_long: 

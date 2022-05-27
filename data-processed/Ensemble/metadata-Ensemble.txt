@@ -5,6 +5,6 @@ model_version: 1.0
 model_contributors: 
 website_url: 
 license: cc-by-4.0
-methods:  The ensemble projection is obtained by calculating the median of the median projection for each submission. The median projection is also calculated for each corresponding quantiles for the ensemble uncertainty intervals. Ensemble projection includes only those submissions that reported quantiles for their targets.
+methods: The ensemble projection is obtained by calculating the median of the median projection for each submission. The median projection is also calculated for each corresponding quantile for the ensemble uncertainty intervals. Ensemble projection includes only those submissions that reported quantiles for their targets. Starting round 13, the weighted median of the median is calculated, with a weight assign by the team to each submissions, By default a weight of 1 is assigned for each submission, 0.5 if a team makes two submissions.
 importations: 
 methods_long: 
