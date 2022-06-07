@@ -12,7 +12,6 @@ grid
 gridExtra
 gtable
 lubridate
-magrittr
 purrr
 readr
 remotes
