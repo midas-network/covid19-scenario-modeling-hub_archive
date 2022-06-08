@@ -1,3 +1,4 @@
+# Packages required for the validation (update cache on the 2022-06-08)
 https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip
 arrow
 covidcast
