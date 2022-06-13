@@ -17,9 +17,9 @@ if (length(pr_sub_files) > 0) {
   lst_gs <- suppressWarnings(pull_gs_data())
   # select submission files
   pr_sub_files_lst <- pr_files[purrr::map(pr_files, "filename") %in% pr_sub_files]
-   # Prepare viz path if necessary
-    if (!(dir.exists(paste0(getwd(), "/proj_plot"))))
-      dir.create(paste0(getwd(), "/proj_plot"))
+  # Prepare viz path if necessary
+  if (!(dir.exists(paste0(getwd(), "/proj_plot"))))
+    dir.create(paste0(getwd(), "/proj_plot"))
   # run validation and visualization
   test_tot <- lapply(seq_len(length(pr_sub_files_lst)), function(x) {
     url_link <- URLdecode(pr_sub_files_lst[[x]]$raw_url)
@@ -39,6 +39,9 @@ if (length(pr_sub_files) > 0) {
       # run validation
       test <- capture.output(try(validate_submission(url_link, lst_gs = lst_gs)))
     }
+    # Remove visualization pdf if viz has an error
+    if (class(test_viz) == "try-error") 
+      file.remove(dir(paste0(getwd(), "/proj_plot"), full.names = TRUE))
     # list of the viz and validation results
     test_tot <- list(valid = test, viz = test_viz)
     # returns all output
@@ -76,7 +79,6 @@ if (any(!is.na(test_viz))) {
     "[here](https://docs.github.com/en/actions/managing-workflow-runs/downloading-workflow-artifacts)")
 
   if (any(unlist(purrr::map(test_viz, class)) == "try-error")) {
-    file.remove(dir(paste0(getwd(), "/proj_plot"), full.names = TRUE))
     message_plot <- paste0(message_plot, "\n\n",
       "The visualization encounters an issue and might not be available,",
       " if the validation does not return any error, please feel free to ",
