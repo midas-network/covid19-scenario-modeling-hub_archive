@@ -127,6 +127,10 @@ The requested targets are:
 - weekly incident hospitalizations
 - cumulative incident hospitalizations
 
+Optional target:
+- weekly incident infections
+- weekly proportion of cases caused by variant X (mean only) [Round 14 specific]
+
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
@@ -136,6 +140,8 @@ following specific targets:
 - "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
 - "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
 - "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
+- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
+- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 52, depending on the round) [Round 14 specific]
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
@@ -215,6 +221,31 @@ reported on the Saturday of a given epiweek.
 Predictions for this target will be evaluated compared to the cumulative of the number of new 
 hospitalized cases, as reported by the HHS and distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html). 
 
+#### N wk ahead inc inf
+
+This target is the number of incident (weekly) infections predicted by the model during the week 
+that is N weeks after `model_projection_date`.
+
+A week-ahead scenario should represent the total number of new infections 
+occurring within a given epiweek (from Sunday through Saturday, inclusive).
+
+Projections of infections will be used to compare outputs between models but will not 
+be evaluated against observations.  
+Projections of infections are optional.
+
+#### N wk ahead prop X [Round 14 specific]
+
+This target is the proportion of incident (weekly) cases caused by variant X among 
+all COVID19 cases, as predicted by the model during the week that is N weeks after 
+`model_projection_date`.  
+
+A week-ahead scenario should represent the proportion of variant X cases occurring 
+within a given epiweek (from Sunday through Saturday, inclusive).  
+
+Projections of variant X proportion will be used to compare outputs between models 
+but will not be evaluated against observations.  
+Further, we do not expect a full distribution of quantiles, only mean estimates.  
+Projections of proportion of variant X are optional
 
 ### `target_end_date`
 

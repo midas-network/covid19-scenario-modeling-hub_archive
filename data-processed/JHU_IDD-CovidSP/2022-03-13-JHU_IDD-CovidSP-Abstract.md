@@ -1,0 +1,32 @@
+# Summary of results
+As part of the thirteenth round of scenario projections from the COVID-19 Scenario Modeling Hub in the United States, the Johns Hopkins Infectious Disease Dynamics (JHU-IDD) team produced one-year projections according to a set of four scenarios definitions. Under these four scenarios, designed to capture the uncertainty in both the immune waning and emergence of a new immune escape variant. The impact of waning is larger than the impact of a new variant, with the pessimistic waning scenarios (C and D) projecting more cases, hospitalizations, and deaths at the national level than the optimistic waning scenarios. In the most pessimistic scenario, we project a substantial peak in all outcomes in August 2022. We project signficant state-level heterogeneity in both the magnitude and timing of the peaks. 
+
+# Explanation of observed dynamics given model assumptions
+The dynamics we observe are driven by the confluence of built up immunity, waning immunity, geographic spread. We see two waves in some locations pertaining to the rapid waning of immunity, but limited severity due to residual protection from severe outcomes. Because substantial waning produces continued infection prior to Variant X, there is a limited susceptible pool for Variant X to infect with pessimistic waning.
+
+# Model assumptions
+## Initial distribution of susceptibility if available
+### Other
+The JHU-IDD model refits the entire pandemic in every state across the US for each round of scenarios. We fit to daily incident reported deaths (not variant-specific) and variant-specific case data, estimated by multiplying the state-specific proportions of circulating wild-type, Alpha, Delta, and Omicron variants by the reported number of cases by state. Through this we produce a history of infections over time. Vaccination is incorporated into the model using state-specific, reported vaccination by age group and dose. Vaccination is assumed to saturate at either asymptotic fits to current vaccination saturation curves or the level estimated by surveys from the US Census Bureau and Facebook, adjusted for sampling bias, whichever is lower. Booster uptake was assumed to saturate at 70% of the saturation coverage limits of dose 2 for each age group, unless this level has already been surpassed. 
+
+
+## Initial variant characteristics (including Omicron transmissibility, immune escape, and how uncertainty or non-identifiability was handled) 
+Each variant has specific transmissibility, severity, immune escape, waning, and reinfection characteristics. Intrinsic transmissibility is defined though a global R0, with relative adjustments applied to account for transmissibility changes for each major variant. This results in starting transmissibility parameters for wild type (R0=2.3), Alpha (R0=3.45), and Delta (5.52). From these starting values, state-specific transmissibility adjustments are fit to the data. For Omicron, the starting value for transmissibility is similar to Delta for each state (base value R0=5.52), but is further fit to the case and death data, setting immune escape at 50%. Seasonal terms for each month in each state are also fit and shared across years. Non-pharmaceutical interventions and behavior (NPIs) impact is estimated within the model as changes in transmissibility during periods of time defined by changes in official or otherwise specific changes in control and behavior (including school year start and holiday periods). For Omicron, immune escape is assumed to be 50% against vaccination and previous infection, taking into account waning. Each variant is assume to provide complete protection from reinfection with itself prior to waning. Wild, Alpha, Omicron, and Variant X are assumed to have the same inherent risk of severity, while Delta is assumed to be twice as severe. Only transmissibity for Omicron is individually fit, otherwise overall, location-specific transmissibility adjustment is shared across varaints, and no fitting of severity or immune escape is done. 
+
+## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
+Both probability of death and hospitalization given infection are adjusted for previous infection history, vaccination status, and waning, starting from base age-adjusted probabilites. Deaths are calibrated to the data within the model, while hospitalizations are calibrated post-hoc to the most recent 8 weeks of data.
+
+## Waning immunity details (e.g., distribution used)
+We assuming that time to waning follows an exponential distribution with a median of either 4 or 10 months in accordance with the scenario specifications. Waning of protection from severity (e.g., hospitalization and death) is assume lower than that for infection and cases. For the optimistic waning scenario, conditional protection from hospitalization and death (assuming infection) is assumed to reduce by 15% and 7.5%, while in the pessimistic scenario it reduces by 25% and 15%.
+
+## Seasonality implementation
+Monthly seasonality interventions are fit, with shared estimates across years.
+
+## Emerging variant details (including introduction process)
+The emerging Variant X is seeded probabilistically into states based on international arrival airline data. We use binomial sampling to assign the 50 weekly infections a day of the week and state. Variant X is assumed to have the same transmissibility as Omicron that was fit by the model and 30% immune escape as compared to Omicron, applied to vaccine effectiveness, waning, and cross-protection. Severity of Variant X is assumed the same as Omicron for naive individuals.
+
+## Nonpharmaceutical interventions
+Non-pharmaceutical intervention effectiveness is fit through the start of the projection period. On March 19, all NPIs are assumed to end, meaning we do not include any adjustment of the transmissibility other than seasonality and variant-specific changes after this date.
+
+## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
+We assume there are distinct periods where reporting rates change. These reporting rates are fit, based on reported cases and deaths. These shifts are assumed to occur in summer 2020, at the start of vaccination in winter 2020, at the start of the Delta wave (July 11, 2021), and at the start of Omicron (Dec 01, 2021). The last period of reporting is assumed to continue through the end of the projection period. Each period is fit at the state level.

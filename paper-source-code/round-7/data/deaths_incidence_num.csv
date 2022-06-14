@@ -206,7 +206,7 @@
 2020-02-22,"Alaska","02",0
 2020-02-22,"Alabama","01",0
 2020-02-22,"Arkansas","05",0
-2020-02-22,"American Samoa",NA,0
+2020-02-22,"American Samoa","60",0
 2020-02-22,"Arizona","04",0
 2020-02-22,"California","06",0
 2020-02-22,"Colorado","08",0
@@ -215,7 +215,7 @@
 2020-02-22,"Delaware","10",0
 2020-02-22,"Florida","12",0
 2020-02-22,"Georgia","13",0
-2020-02-22,"Guam",NA,0
+2020-02-22,"Guam","66",0
 2020-02-22,"Hawaii","15",0
 2020-02-22,"Iowa","19",0
 2020-02-22,"Idaho","16",0
@@ -230,7 +230,7 @@
 2020-02-22,"Michigan","26",0
 2020-02-22,"Minnesota","27",0
 2020-02-22,"Missouri","29",0
-2020-02-22,"Northern Mariana Islands",NA,0
+2020-02-22,"Northern Mariana Islands","69",0
 2020-02-22,"Mississippi","28",0
 2020-02-22,"Montana","30",0
 2020-02-22,"North Carolina","37",0
@@ -245,7 +245,7 @@
 2020-02-22,"Oklahoma","40",0
 2020-02-22,"Oregon","41",0
 2020-02-22,"Pennsylvania","42",0
-2020-02-22,"Puerto Rico",NA,0
+2020-02-22,"Puerto Rico","72",0
 2020-02-22,"Rhode Island","44",0
 2020-02-22,"South Carolina","45",0
 2020-02-22,"South Dakota","46",0
@@ -253,7 +253,7 @@
 2020-02-22,"Texas","48",0
 2020-02-22,"Utah","49",0
 2020-02-22,"Virginia","51",0
-2020-02-22,"Virgin Islands",NA,0
+2020-02-22,"Virgin Islands","78",0
 2020-02-22,"Vermont","50",0
 2020-02-22,"Washington","53",0
 2020-02-22,"Wisconsin","55",0
@@ -262,7 +262,7 @@
 2020-02-29,"Alaska","02",0
 2020-02-29,"Alabama","01",0
 2020-02-29,"Arkansas","05",0
-2020-02-29,"American Samoa",NA,0
+2020-02-29,"American Samoa","60",0
 2020-02-29,"Arizona","04",0
 2020-02-29,"California","06",0
 2020-02-29,"Colorado","08",0
@@ -271,7 +271,7 @@
 2020-02-29,"Delaware","10",0
 2020-02-29,"Florida","12",0
 2020-02-29,"Georgia","13",0
-2020-02-29,"Guam",NA,0
+2020-02-29,"Guam","66",0
 2020-02-29,"Hawaii","15",0
 2020-02-29,"Iowa","19",0
 2020-02-29,"Idaho","16",0
@@ -286,7 +286,7 @@
 2020-02-29,"Michigan","26",0
 2020-02-29,"Minnesota","27",0
 2020-02-29,"Missouri","29",0
-2020-02-29,"Northern Mariana Islands",NA,0
+2020-02-29,"Northern Mariana Islands","69",0
 2020-02-29,"Mississippi","28",0
 2020-02-29,"Montana","30",0
 2020-02-29,"North Carolina","37",0
@@ -301,7 +301,7 @@
 2020-02-29,"Oklahoma","40",0
 2020-02-29,"Oregon","41",0
 2020-02-29,"Pennsylvania","42",0
-2020-02-29,"Puerto Rico",NA,0
+2020-02-29,"Puerto Rico","72",0
 2020-02-29,"Rhode Island","44",0
 2020-02-29,"South Carolina","45",0
 2020-02-29,"South Dakota","46",0
@@ -309,7 +309,7 @@
 2020-02-29,"Texas","48",0
 2020-02-29,"Utah","49",0
 2020-02-29,"Virginia","51",0
-2020-02-29,"Virgin Islands",NA,0
+2020-02-29,"Virgin Islands","78",0
 2020-02-29,"Vermont","50",0
 2020-02-29,"Washington","53",1
 2020-02-29,"Wisconsin","55",0
@@ -318,7 +318,7 @@
 2020-03-07,"Alaska","02",0
 2020-03-07,"Alabama","01",0
 2020-03-07,"Arkansas","05",0
-2020-03-07,"American Samoa",NA,0
+2020-03-07,"American Samoa","60",0
 2020-03-07,"Arizona","04",0
 2020-03-07,"California","06",1
 2020-03-07,"Colorado","08",0
@@ -327,7 +327,7 @@
 2020-03-07,"Delaware","10",0
 2020-03-07,"Florida","12",0
 2020-03-07,"Georgia","13",0
-2020-03-07,"Guam",NA,0
+2020-03-07,"Guam","66",0
 2020-03-07,"Hawaii","15",0
 2020-03-07,"Iowa","19",0
 2020-03-07,"Idaho","16",0
@@ -342,7 +342,7 @@
 2020-03-07,"Michigan","26",0
 2020-03-07,"Minnesota","27",0
 2020-03-07,"Missouri","29",0
-2020-03-07,"Northern Mariana Islands",NA,0
+2020-03-07,"Northern Mariana Islands","69",0
 2020-03-07,"Mississippi","28",0
 2020-03-07,"Montana","30",0
 2020-03-07,"North Carolina","37",0
@@ -357,7 +357,7 @@
 2020-03-07,"Oklahoma","40",0
 2020-03-07,"Oregon","41",0
 2020-03-07,"Pennsylvania","42",0
-2020-03-07,"Puerto Rico",NA,0
+2020-03-07,"Puerto Rico","72",0
 2020-03-07,"Rhode Island","44",0
 2020-03-07,"South Carolina","45",0
 2020-03-07,"South Dakota","46",0
@@ -365,7 +365,7 @@
 2020-03-07,"Texas","48",0
 2020-03-07,"Utah","49",0
 2020-03-07,"Virginia","51",0
-2020-03-07,"Virgin Islands",NA,0
+2020-03-07,"Virgin Islands","78",0
 2020-03-07,"Vermont","50",0
 2020-03-07,"Washington","53",15
 2020-03-07,"Wisconsin","55",0
@@ -374,16 +374,16 @@
 2020-03-14,"Alaska","02",0
 2020-03-14,"Alabama","01",0
 2020-03-14,"Arkansas","05",0
-2020-03-14,"American Samoa",NA,0
+2020-03-14,"American Samoa","60",0
 2020-03-14,"Arizona","04",0
-2020-03-14,"California","06",3
+2020-03-14,"California","06",4
 2020-03-14,"Colorado","08",2
 2020-03-14,"Connecticut","09",0
 2020-03-14,"District of Columbia","11",0
 2020-03-14,"Delaware","10",0
 2020-03-14,"Florida","12",2
 2020-03-14,"Georgia","13",1
-2020-03-14,"Guam",NA,0
+2020-03-14,"Guam","66",0
 2020-03-14,"Hawaii","15",0
 2020-03-14,"Iowa","19",0
 2020-03-14,"Idaho","16",0
@@ -398,7 +398,7 @@
 2020-03-14,"Michigan","26",1
 2020-03-14,"Minnesota","27",0
 2020-03-14,"Missouri","29",0
-2020-03-14,"Northern Mariana Islands",NA,0
+2020-03-14,"Northern Mariana Islands","69",0
 2020-03-14,"Mississippi","28",0
 2020-03-14,"Montana","30",0
 2020-03-14,"North Carolina","37",0
@@ -413,7 +413,7 @@
 2020-03-14,"Oklahoma","40",0
 2020-03-14,"Oregon","41",0
 2020-03-14,"Pennsylvania","42",0
-2020-03-14,"Puerto Rico",NA,0
+2020-03-14,"Puerto Rico","72",0
 2020-03-14,"Rhode Island","44",0
 2020-03-14,"South Carolina","45",0
 2020-03-14,"South Dakota","46",1
@@ -421,7 +421,7 @@
 2020-03-14,"Texas","48",0
 2020-03-14,"Utah","49",0
 2020-03-14,"Virginia","51",1
-2020-03-14,"Virgin Islands",NA,0
+2020-03-14,"Virgin Islands","78",0
 2020-03-14,"Vermont","50",0
 2020-03-14,"Washington","53",23
 2020-03-14,"Wisconsin","55",0
@@ -430,16 +430,16 @@
 2020-03-21,"Alaska","02",0
 2020-03-21,"Alabama","01",0
 2020-03-21,"Arkansas","05",0
-2020-03-21,"American Samoa",NA,0
+2020-03-21,"American Samoa","60",0
 2020-03-21,"Arizona","04",1
-2020-03-21,"California","06",23
+2020-03-21,"California","06",21
 2020-03-21,"Colorado","08",4
 2020-03-21,"Connecticut","09",4
 2020-03-21,"District of Columbia","11",0
 2020-03-21,"Delaware","10",0
 2020-03-21,"Florida","12",11
 2020-03-21,"Georgia","13",19
-2020-03-21,"Guam",NA,0
+2020-03-21,"Guam","66",0
 2020-03-21,"Hawaii","15",0
 2020-03-21,"Iowa","19",0
 2020-03-21,"Idaho","16",0
@@ -454,7 +454,7 @@
 2020-03-21,"Michigan","26",5
 2020-03-21,"Minnesota","27",1
 2020-03-21,"Missouri","29",3
-2020-03-21,"Northern Mariana Islands",NA,0
+2020-03-21,"Northern Mariana Islands","69",0
 2020-03-21,"Mississippi","28",1
 2020-03-21,"Montana","30",0
 2020-03-21,"North Carolina","37",0
@@ -469,7 +469,7 @@
 2020-03-21,"Oklahoma","40",1
 2020-03-21,"Oregon","41",4
 2020-03-21,"Pennsylvania","42",2
-2020-03-21,"Puerto Rico",NA,1
+2020-03-21,"Puerto Rico","72",1
 2020-03-21,"Rhode Island","44",1
 2020-03-21,"South Carolina","45",3
 2020-03-21,"South Dakota","46",0
@@ -477,7 +477,7 @@
 2020-03-21,"Texas","48",8
 2020-03-21,"Utah","49",0
 2020-03-21,"Virginia","51",2
-2020-03-21,"Virgin Islands",NA,0
+2020-03-21,"Virgin Islands","78",0
 2020-03-21,"Vermont","50",2
 2020-03-21,"Washington","53",55
 2020-03-21,"Wisconsin","55",4
@@ -486,16 +486,16 @@
 2020-03-28,"Alaska","02",2
 2020-03-28,"Alabama","01",4
 2020-03-28,"Arkansas","05",5
-2020-03-28,"American Samoa",NA,0
+2020-03-28,"American Samoa","60",0
 2020-03-28,"Arizona","04",14
-2020-03-28,"California","06",120
+2020-03-28,"California","06",162
 2020-03-28,"Colorado","08",38
 2020-03-28,"Connecticut","09",29
 2020-03-28,"District of Columbia","11",4
 2020-03-28,"Delaware","10",0
 2020-03-28,"Florida","12",41
 2020-03-28,"Georgia","13",49
-2020-03-28,"Guam",NA,1
+2020-03-28,"Guam","66",1
 2020-03-28,"Hawaii","15",0
 2020-03-28,"Iowa","19",3
 2020-03-28,"Idaho","16",4
@@ -510,7 +510,7 @@
 2020-03-28,"Michigan","26",124
 2020-03-28,"Minnesota","27",4
 2020-03-28,"Missouri","29",10
-2020-03-28,"Northern Mariana Islands",NA,0
+2020-03-28,"Northern Mariana Islands","69",0
 2020-03-28,"Mississippi","28",12
 2020-03-28,"Montana","30",1
 2020-03-28,"North Carolina","37",5
@@ -525,7 +525,7 @@
 2020-03-28,"Oklahoma","40",14
 2020-03-28,"Oregon","41",9
 2020-03-28,"Pennsylvania","42",32
-2020-03-28,"Puerto Rico",NA,2
+2020-03-28,"Puerto Rico","72",2
 2020-03-28,"Rhode Island","44",3
 2020-03-28,"South Carolina","45",12
 2020-03-28,"South Dakota","46",0
@@ -533,7 +533,7 @@
 2020-03-28,"Texas","48",37
 2020-03-28,"Utah","49",1
 2020-03-28,"Virginia","51",10
-2020-03-28,"Virgin Islands",NA,0
+2020-03-28,"Virgin Islands","78",0
 2020-03-28,"Vermont","50",10
 2020-03-28,"Washington","53",94
 2020-03-28,"Wisconsin","55",18
@@ -542,16 +542,16 @@
 2020-04-04,"Alaska","02",3
 2020-04-04,"Alabama","01",40
 2020-04-04,"Arkansas","05",9
-2020-04-04,"American Samoa",NA,0
+2020-04-04,"American Samoa","60",0
 2020-04-04,"Arizona","04",37
-2020-04-04,"California","06",140
+2020-04-04,"California","06",104
 2020-04-04,"Colorado","08",82
 2020-04-04,"Connecticut","09",132
 2020-04-04,"District of Columbia","11",17
 2020-04-04,"Delaware","10",17
 2020-04-04,"Florida","12",141
 2020-04-04,"Georgia","13",132
-2020-04-04,"Guam",NA,3
+2020-04-04,"Guam","66",3
 2020-04-04,"Hawaii","15",3
 2020-04-04,"Iowa","19",11
 2020-04-04,"Idaho","16",6
@@ -566,7 +566,7 @@
 2020-04-04,"Michigan","26",455
 2020-04-04,"Minnesota","27",19
 2020-04-04,"Missouri","29",38
-2020-04-04,"Northern Mariana Islands",NA,1
+2020-04-04,"Northern Mariana Islands","69",1
 2020-04-04,"Mississippi","28",22
 2020-04-04,"Montana","30",5
 2020-04-04,"North Carolina","37",29
@@ -581,7 +581,7 @@
 2020-04-04,"Oklahoma","40",27
 2020-04-04,"Oregon","41",9
 2020-04-04,"Pennsylvania","42",108
-2020-04-04,"Puerto Rico",NA,15
+2020-04-04,"Puerto Rico","72",15
 2020-04-04,"Rhode Island","44",24
 2020-04-04,"South Carolina","45",25
 2020-04-04,"South Dakota","46",1
@@ -589,7 +589,7 @@
 2020-04-04,"Texas","48",108
 2020-04-04,"Utah","49",7
 2020-04-04,"Virginia","51",39
-2020-04-04,"Virgin Islands",NA,0
+2020-04-04,"Virgin Islands","78",0
 2020-04-04,"Vermont","50",8
 2020-04-04,"Washington","53",210
 2020-04-04,"Wisconsin","55",80
@@ -598,16 +598,16 @@
 2020-04-11,"Alaska","02",3
 2020-04-11,"Alabama","01",48
 2020-04-11,"Arkansas","05",11
-2020-04-11,"American Samoa",NA,0
+2020-04-11,"American Samoa","60",0
 2020-04-11,"Arizona","04",65
-2020-04-11,"California","06",322
+2020-04-11,"California","06",306
 2020-04-11,"Colorado","08",148
 2020-04-11,"Connecticut","09",329
 2020-04-11,"District of Columbia","11",26
 2020-04-11,"Delaware","10",27
 2020-04-11,"Florida","12",243
 2020-04-11,"Georgia","13",228
-2020-04-11,"Guam",NA,1
+2020-04-11,"Guam","66",1
 2020-04-11,"Hawaii","15",5
 2020-04-11,"Iowa","19",20
 2020-04-11,"Idaho","16",15
@@ -622,7 +622,7 @@
 2020-04-11,"Michigan","26",902
 2020-04-11,"Minnesota","27",40
 2020-04-11,"Missouri","29",94
-2020-04-11,"Northern Mariana Islands",NA,1
+2020-04-11,"Northern Mariana Islands","69",1
 2020-04-11,"Mississippi","28",58
 2020-04-11,"Montana","30",0
 2020-04-11,"North Carolina","37",55
@@ -637,7 +637,7 @@
 2020-04-11,"Oklahoma","40",52
 2020-04-11,"Oregon","41",26
 2020-04-11,"Pennsylvania","42",375
-2020-04-11,"Puerto Rico",NA,24
+2020-04-11,"Puerto Rico","72",24
 2020-04-11,"Rhode Island","44",54
 2020-04-11,"South Carolina","45",40
 2020-04-11,"South Dakota","46",4
@@ -645,7 +645,7 @@
 2020-04-11,"Texas","48",173
 2020-04-11,"Utah","49",10
 2020-04-11,"Virginia","51",78
-2020-04-11,"Virgin Islands",NA,1
+2020-04-11,"Virgin Islands","78",1
 2020-04-11,"Vermont","50",5
 2020-04-11,"Washington","53",149
 2020-04-11,"Wisconsin","55",75
@@ -654,16 +654,16 @@
 2020-04-18,"Alaska","02",1
 2020-04-18,"Alabama","01",61
 2020-04-18,"Arkansas","05",13
-2020-04-18,"American Samoa",NA,0
+2020-04-18,"American Samoa","60",0
 2020-04-18,"Arizona","04",63
-2020-04-18,"California","06",536
+2020-04-18,"California","06",528
 2020-04-18,"Colorado","08",137
 2020-04-18,"Connecticut","09",592
 2020-04-18,"District of Columbia","11",44
 2020-04-18,"Delaware","10",43
 2020-04-18,"Florida","12",310
 2020-04-18,"Georgia","13",244
-2020-04-18,"Guam",NA,0
+2020-04-18,"Guam","66",0
 2020-04-18,"Hawaii","15",1
 2020-04-18,"Iowa","19",40
 2020-04-18,"Idaho","16",18
@@ -678,7 +678,7 @@
 2020-04-18,"Michigan","26",956
 2020-04-18,"Minnesota","27",57
 2020-04-18,"Missouri","29",91
-2020-04-18,"Northern Mariana Islands",NA,0
+2020-04-18,"Northern Mariana Islands","69",0
 2020-04-18,"Mississippi","28",59
 2020-04-18,"Montana","30",4
 2020-04-18,"North Carolina","37",98
@@ -693,7 +693,7 @@
 2020-04-18,"Oklahoma","40",42
 2020-04-18,"Oregon","41",24
 2020-04-18,"Pennsylvania","42",564
-2020-04-18,"Puerto Rico",NA,18
+2020-04-18,"Puerto Rico","72",18
 2020-04-18,"Rhode Island","44",93
 2020-04-18,"South Carolina","45",39
 2020-04-18,"South Dakota","46",1
@@ -701,7 +701,7 @@
 2020-04-18,"Texas","48",228
 2020-04-18,"Utah","49",7
 2020-04-18,"Virginia","51",128
-2020-04-18,"Virgin Islands",NA,2
+2020-04-18,"Virgin Islands","78",2
 2020-04-18,"Vermont","50",13
 2020-04-18,"Washington","53",119
 2020-04-18,"Wisconsin","55",72
@@ -710,16 +710,16 @@
 2020-04-25,"Alaska","02",0
 2020-04-25,"Alabama","01",56
 2020-04-25,"Arkansas","05",10
-2020-04-25,"American Samoa",NA,0
+2020-04-25,"American Samoa","60",0
 2020-04-25,"Arizona","04",93
-2020-04-25,"California","06",544
+2020-04-25,"California","06",535
 2020-04-25,"Colorado","08",273
 2020-04-25,"Connecticut","09",779
 2020-04-25,"District of Columbia","11",74
 2020-04-25,"Delaware","10",70
 2020-04-25,"Florida","12",307
 2020-04-25,"Georgia","13",234
-2020-04-25,"Guam",NA,0
+2020-04-25,"Guam","66",0
 2020-04-25,"Hawaii","15",4
 2020-04-25,"Iowa","19",38
 2020-04-25,"Idaho","16",13
@@ -734,7 +734,7 @@
 2020-04-25,"Michigan","26",865
 2020-04-25,"Minnesota","27",123
 2020-04-25,"Missouri","29",121
-2020-04-25,"Northern Mariana Islands",NA,0
+2020-04-25,"Northern Mariana Islands","69",0
 2020-04-25,"Mississippi","28",69
 2020-04-25,"Montana","30",4
 2020-04-25,"North Carolina","37",118
@@ -749,7 +749,7 @@
 2020-04-25,"Oklahoma","40",58
 2020-04-25,"Oregon","41",15
 2020-04-25,"Pennsylvania","42",764
-2020-04-25,"Puerto Rico",NA,23
+2020-04-25,"Puerto Rico","72",23
 2020-04-25,"Rhode Island","44",101
 2020-04-25,"South Carolina","45",47
 2020-04-25,"South Dakota","46",3
@@ -757,7 +757,7 @@
 2020-04-25,"Texas","48",206
 2020-04-25,"Utah","49",16
 2020-04-25,"Virginia","51",179
-2020-04-25,"Virgin Islands",NA,0
+2020-04-25,"Virgin Islands","78",0
 2020-04-25,"Vermont","50",8
 2020-04-25,"Washington","53",113
 2020-04-25,"Wisconsin","55",50
@@ -766,16 +766,16 @@
 2020-05-02,"Alaska","02",0
 2020-05-02,"Alabama","01",79
 2020-05-02,"Arkansas","05",24
-2020-05-02,"American Samoa",NA,0
+2020-05-02,"American Samoa","60",0
 2020-05-02,"Arizona","04",57
-2020-05-02,"California","06",493
+2020-05-02,"California","06",492
 2020-05-02,"Colorado","08",148
 2020-05-02,"Connecticut","09",571
 2020-05-02,"District of Columbia","11",75
 2020-05-02,"Delaware","10",79
 2020-05-02,"Florida","12",309
 2020-05-02,"Georgia","13",270
-2020-05-02,"Guam",NA,0
+2020-05-02,"Guam","66",0
 2020-05-02,"Hawaii","15",3
 2020-05-02,"Iowa","19",63
 2020-05-02,"Idaho","16",8
@@ -790,7 +790,7 @@
 2020-05-02,"Michigan","26",872
 2020-05-02,"Minnesota","27",150
 2020-05-02,"Missouri","29",116
-2020-05-02,"Northern Mariana Islands",NA,0
+2020-05-02,"Northern Mariana Islands","69",0
 2020-05-02,"Mississippi","28",70
 2020-05-02,"Montana","30",2
 2020-05-02,"North Carolina","37",126
@@ -805,7 +805,7 @@
 2020-05-02,"Oklahoma","40",44
 2020-05-02,"Oregon","41",22
 2020-05-02,"Pennsylvania","42",908
-2020-05-02,"Puerto Rico",NA,12
+2020-05-02,"Puerto Rico","72",12
 2020-05-02,"Rhode Island","44",126
 2020-05-02,"South Carolina","45",101
 2020-05-02,"South Dakota","46",11
@@ -813,7 +813,7 @@
 2020-05-02,"Texas","48",227
 2020-05-02,"Utah","49",8
 2020-05-02,"Virginia","51",180
-2020-05-02,"Virgin Islands",NA,1
+2020-05-02,"Virgin Islands","78",1
 2020-05-02,"Vermont","50",5
 2020-05-02,"Washington","53",83
 2020-05-02,"Wisconsin","55",75
@@ -822,16 +822,16 @@
 2020-05-09,"Alaska","02",1
 2020-05-09,"Alabama","01",102
 2020-05-09,"Arkansas","05",16
-2020-05-09,"American Samoa",NA,0
+2020-05-09,"American Samoa","60",0
 2020-05-09,"Arizona","04",202
-2020-05-09,"California","06",510
+2020-05-09,"California","06",513
 2020-05-09,"Colorado","08",135
 2020-05-09,"Connecticut","09",496
 2020-05-09,"District of Columbia","11",71
 2020-05-09,"Delaware","10",69
 2020-05-09,"Florida","12",351
 2020-05-09,"Georgia","13",226
-2020-05-09,"Guam",NA,0
+2020-05-09,"Guam","66",0
 2020-05-09,"Hawaii","15",1
 2020-05-09,"Iowa","19",77
 2020-05-09,"Idaho","16",3
@@ -846,7 +846,7 @@
 2020-05-09,"Michigan","26",524
 2020-05-09,"Minnesota","27",164
 2020-05-09,"Missouri","29",125
-2020-05-09,"Northern Mariana Islands",NA,0
+2020-05-09,"Northern Mariana Islands","69",0
 2020-05-09,"Mississippi","28",130
 2020-05-09,"Montana","30",0
 2020-05-09,"North Carolina","37",120
@@ -861,7 +861,7 @@
 2020-05-09,"Oklahoma","40",32
 2020-05-09,"Oregon","41",18
 2020-05-09,"Pennsylvania","42",1056
-2020-05-09,"Puerto Rico",NA,13
+2020-05-09,"Puerto Rico","72",13
 2020-05-09,"Rhode Island","44",134
 2020-05-09,"South Carolina","45",63
 2020-05-09,"South Dakota","46",13
@@ -869,7 +869,7 @@
 2020-05-09,"Texas","48",196
 2020-05-09,"Utah","49",17
 2020-05-09,"Virginia","51",210
-2020-05-09,"Virgin Islands",NA,0
+2020-05-09,"Virgin Islands","78",0
 2020-05-09,"Vermont","50",2
 2020-05-09,"Washington","53",90
 2020-05-09,"Wisconsin","55",60
@@ -878,16 +878,16 @@
 2020-05-16,"Alaska","02",0
 2020-05-16,"Alabama","01",95
 2020-05-16,"Arkansas","05",10
-2020-05-16,"American Samoa",NA,0
+2020-05-16,"American Samoa","60",0
 2020-05-16,"Arizona","04",147
-2020-05-16,"California","06",514
+2020-05-16,"California","06",527
 2020-05-16,"Colorado","08",225
 2020-05-16,"Connecticut","09",407
 2020-05-16,"District of Columbia","11",64
 2020-05-16,"Delaware","10",83
 2020-05-16,"Florida","12",249
 2020-05-16,"Georgia","13",195
-2020-05-16,"Guam",NA,0
+2020-05-16,"Guam","66",0
 2020-05-16,"Hawaii","15",0
 2020-05-16,"Iowa","19",94
 2020-05-16,"Idaho","16",6
@@ -902,7 +902,7 @@
 2020-05-16,"Michigan","26",351
 2020-05-16,"Minnesota","27",151
 2020-05-16,"Missouri","29",98
-2020-05-16,"Northern Mariana Islands",NA,0
+2020-05-16,"Northern Mariana Islands","69",0
 2020-05-16,"Mississippi","28",89
 2020-05-16,"Montana","30",0
 2020-05-16,"North Carolina","37",125
@@ -917,7 +917,7 @@
 2020-05-16,"Oklahoma","40",18
 2020-05-16,"Oregon","41",10
 2020-05-16,"Pennsylvania","42",696
-2020-05-16,"Puerto Rico",NA,14
+2020-05-16,"Puerto Rico","72",14
 2020-05-16,"Rhode Island","44",108
 2020-05-16,"South Carolina","45",50
 2020-05-16,"South Dakota","46",10
@@ -925,7 +925,7 @@
 2020-05-16,"Texas","48",277
 2020-05-16,"Utah","49",12
 2020-05-16,"Virginia","51",176
-2020-05-16,"Virgin Islands",NA,2
+2020-05-16,"Virgin Islands","78",2
 2020-05-16,"Vermont","50",0
 2020-05-16,"Washington","53",72
 2020-05-16,"Wisconsin","55",54
@@ -934,16 +934,16 @@
 2020-05-23,"Alaska","02",0
 2020-05-23,"Alabama","01",64
 2020-05-23,"Arkansas","05",17
-2020-05-23,"American Samoa",NA,0
+2020-05-23,"American Samoa","60",0
 2020-05-23,"Arizona","04",122
-2020-05-23,"California","06",527
+2020-05-23,"California","06",491
 2020-05-23,"Colorado","08",135
 2020-05-23,"Connecticut","09",336
 2020-05-23,"District of Columbia","11",52
 2020-05-23,"Delaware","10",53
 2020-05-23,"Florida","12",269
 2020-05-23,"Georgia","13",224
-2020-05-23,"Guam",NA,0
+2020-05-23,"Guam","66",0
 2020-05-23,"Hawaii","15",0
 2020-05-23,"Iowa","19",100
 2020-05-23,"Idaho","16",6
@@ -958,7 +958,7 @@
 2020-05-23,"Michigan","26",339
 2020-05-23,"Minnesota","27",152
 2020-05-23,"Missouri","29",74
-2020-05-23,"Northern Mariana Islands",NA,0
+2020-05-23,"Northern Mariana Islands","69",0
 2020-05-23,"Mississippi","28",106
 2020-05-23,"Montana","30",0
 2020-05-23,"North Carolina","37",102
@@ -973,7 +973,7 @@
 2020-05-23,"Oklahoma","40",23
 2020-05-23,"Oregon","41",10
 2020-05-23,"Pennsylvania","42",635
-2020-05-23,"Puerto Rico",NA,5
+2020-05-23,"Puerto Rico","72",5
 2020-05-23,"Rhode Island","44",105
 2020-05-23,"South Carolina","45",45
 2020-05-23,"South Dakota","46",6
@@ -981,7 +981,7 @@
 2020-05-23,"Texas","48",169
 2020-05-23,"Utah","49",19
 2020-05-23,"Virginia","51",156
-2020-05-23,"Virgin Islands",NA,0
+2020-05-23,"Virgin Islands","78",0
 2020-05-23,"Vermont","50",1
 2020-05-23,"Washington","53",51
 2020-05-23,"Wisconsin","55",68
@@ -990,16 +990,16 @@
 2020-05-30,"Alaska","02",0
 2020-05-30,"Alabama","01",69
 2020-05-30,"Arkansas","05",18
-2020-05-30,"American Samoa",NA,0
+2020-05-30,"American Samoa","60",0
 2020-05-30,"Arizona","04",103
-2020-05-30,"California","06",404
+2020-05-30,"California","06",391
 2020-05-30,"Colorado","08",116
 2020-05-30,"Connecticut","09",237
 2020-05-30,"District of Columbia","11",35
 2020-05-30,"Delaware","10",53
 2020-05-30,"Florida","12",214
 2020-05-30,"Georgia","13",182
-2020-05-30,"Guam",NA,0
+2020-05-30,"Guam","66",0
 2020-05-30,"Hawaii","15",0
 2020-05-30,"Iowa","19",85
 2020-05-30,"Idaho","16",3
@@ -1014,7 +1014,7 @@
 2020-05-30,"Michigan","26",237
 2020-05-30,"Minnesota","27",175
 2020-05-30,"Missouri","29",50
-2020-05-30,"Northern Mariana Islands",NA,0
+2020-05-30,"Northern Mariana Islands","69",0
 2020-05-30,"Mississippi","28",107
 2020-05-30,"Montana","30",1
 2020-05-30,"North Carolina","37",151
@@ -1029,7 +1029,7 @@
 2020-05-30,"Oklahoma","40",23
 2020-05-30,"Oregon","41",6
 2020-05-30,"Pennsylvania","42",414
-2020-05-30,"Puerto Rico",NA,6
+2020-05-30,"Puerto Rico","72",6
 2020-05-30,"Rhode Island","44",75
 2020-05-30,"South Carolina","45",62
 2020-05-30,"South Dakota","46",12
@@ -1037,7 +1037,7 @@
 2020-05-30,"Texas","48",219
 2020-05-30,"Utah","49",15
 2020-05-30,"Virginia","51",211
-2020-05-30,"Virgin Islands",NA,0
+2020-05-30,"Virgin Islands","78",0
 2020-05-30,"Vermont","50",1
 2020-05-30,"Washington","53",42
 2020-05-30,"Wisconsin","55",89
@@ -1046,16 +1046,16 @@
 2020-06-06,"Alaska","02",0
 2020-06-06,"Alabama","01",71
 2020-06-06,"Arkansas","05",21
-2020-06-06,"American Samoa",NA,0
+2020-06-06,"American Samoa","60",0
 2020-06-06,"Arizona","04",139
-2020-06-06,"California","06",459
+2020-06-06,"California","06",461
 2020-06-06,"Colorado","08",84
 2020-06-06,"Connecticut","09",143
 2020-06-06,"District of Columbia","11",21
 2020-06-06,"Delaware","10",27
 2020-06-06,"Florida","12",241
 2020-06-06,"Georgia","13",174
-2020-06-06,"Guam",NA,0
+2020-06-06,"Guam","66",0
 2020-06-06,"Hawaii","15",0
 2020-06-06,"Iowa","19",68
 2020-06-06,"Idaho","16",1
@@ -1070,7 +1070,7 @@
 2020-06-06,"Michigan","26",213
 2020-06-06,"Minnesota","27",145
 2020-06-06,"Missouri","29",36
-2020-06-06,"Northern Mariana Islands",NA,0
+2020-06-06,"Northern Mariana Islands","69",0
 2020-06-06,"Mississippi","28",88
 2020-06-06,"Montana","30",1
 2020-06-06,"North Carolina","37",99
@@ -1085,7 +1085,7 @@
 2020-06-06,"Oklahoma","40",13
 2020-06-06,"Oregon","41",8
 2020-06-06,"Pennsylvania","42",386
-2020-06-06,"Puerto Rico",NA,9
+2020-06-06,"Puerto Rico","72",9
 2020-06-06,"Rhode Island","44",58
 2020-06-06,"South Carolina","45",58
 2020-06-06,"South Dakota","46",3
@@ -1093,7 +1093,7 @@
 2020-06-06,"Texas","48",183
 2020-06-06,"Utah","49",9
 2020-06-06,"Virginia","51",91
-2020-06-06,"Virgin Islands",NA,0
+2020-06-06,"Virgin Islands","78",0
 2020-06-06,"Vermont","50",0
 2020-06-06,"Washington","53",42
 2020-06-06,"Wisconsin","55",45
@@ -1102,16 +1102,16 @@
 2020-06-13,"Alaska","02",2
 2020-06-13,"Alabama","01",84
 2020-06-13,"Arkansas","05",23
-2020-06-13,"American Samoa",NA,0
+2020-06-13,"American Samoa","60",0
 2020-06-13,"Arizona","04",146
-2020-06-13,"California","06",475
+2020-06-13,"California","06",449
 2020-06-13,"Colorado","08",70
 2020-06-13,"Connecticut","09",131
 2020-06-13,"District of Columbia","11",28
 2020-06-13,"Delaware","10",19
 2020-06-13,"Florida","12",237
 2020-06-13,"Georgia","13",269
-2020-06-13,"Guam",NA,0
+2020-06-13,"Guam","66",0
 2020-06-13,"Hawaii","15",0
 2020-06-13,"Iowa","19",51
 2020-06-13,"Idaho","16",4
@@ -1126,7 +1126,7 @@
 2020-06-13,"Michigan","26",96
 2020-06-13,"Minnesota","27",133
 2020-06-13,"Missouri","29",39
-2020-06-13,"Northern Mariana Islands",NA,0
+2020-06-13,"Northern Mariana Islands","69",0
 2020-06-13,"Mississippi","28",78
 2020-06-13,"Montana","30",0
 2020-06-13,"North Carolina","37",99
@@ -1141,7 +1141,7 @@
 2020-06-13,"Oklahoma","40",12
 2020-06-13,"Oregon","41",12
 2020-06-13,"Pennsylvania","42",281
-2020-06-13,"Puerto Rico",NA,4
+2020-06-13,"Puerto Rico","72",4
 2020-06-13,"Rhode Island","44",24
 2020-06-13,"South Carolina","45",54
 2020-06-13,"South Dakota","46",10
@@ -1149,7 +1149,7 @@
 2020-06-13,"Texas","48",180
 2020-06-13,"Utah","49",18
 2020-06-13,"Virginia","51",80
-2020-06-13,"Virgin Islands",NA,0
+2020-06-13,"Virgin Islands","78",0
 2020-06-13,"Vermont","50",0
 2020-06-13,"Washington","53",48
 2020-06-13,"Wisconsin","55",44
@@ -1158,16 +1158,16 @@
 2020-06-20,"Alaska","02",0
 2020-06-20,"Alabama","01",65
 2020-06-20,"Arkansas","05",47
-2020-06-20,"American Samoa",NA,0
+2020-06-20,"American Samoa","60",0
 2020-06-20,"Arizona","04",157
-2020-06-20,"California","06",418
+2020-06-20,"California","06",431
 2020-06-20,"Colorado","08",50
 2020-06-20,"Connecticut","09",65
 2020-06-20,"District of Columbia","11",20
 2020-06-20,"Delaware","10",12
 2020-06-20,"Florida","12",219
 2020-06-20,"Georgia","13",195
-2020-06-20,"Guam",NA,0
+2020-06-20,"Guam","66",0
 2020-06-20,"Hawaii","15",0
 2020-06-20,"Iowa","19",31
 2020-06-20,"Idaho","16",2
@@ -1182,7 +1182,7 @@
 2020-06-20,"Michigan","26",74
 2020-06-20,"Minnesota","27",90
 2020-06-20,"Missouri","29",88
-2020-06-20,"Northern Mariana Islands",NA,0
+2020-06-20,"Northern Mariana Islands","69",0
 2020-06-20,"Mississippi","28",49
 2020-06-20,"Montana","30",2
 2020-06-20,"North Carolina","37",88
@@ -1197,7 +1197,7 @@
 2020-06-20,"Oklahoma","40",9
 2020-06-20,"Oregon","41",16
 2020-06-20,"Pennsylvania","42",206
-2020-06-20,"Puerto Rico",NA,1
+2020-06-20,"Puerto Rico","72",1
 2020-06-20,"Rhode Island","44",36
 2020-06-20,"South Carolina","45",45
 2020-06-20,"South Dakota","46",6
@@ -1205,7 +1205,7 @@
 2020-06-20,"Texas","48",241
 2020-06-20,"Utah","49",16
 2020-06-20,"Virginia","51",66
-2020-06-20,"Virgin Islands",NA,0
+2020-06-20,"Virgin Islands","78",0
 2020-06-20,"Vermont","50",1
 2020-06-20,"Washington","53",36
 2020-06-20,"Wisconsin","55",38
@@ -1214,16 +1214,16 @@
 2020-06-27,"Alaska","02",2
 2020-06-27,"Alabama","01",81
 2020-06-27,"Arkansas","05",35
-2020-06-27,"American Samoa",NA,0
+2020-06-27,"American Samoa","60",0
 2020-06-27,"Arizona","04",234
-2020-06-27,"California","06",412
+2020-06-27,"California","06",387
 2020-06-27,"Colorado","08",27
 2020-06-27,"Connecticut","09",60
 2020-06-27,"District of Columbia","11",17
 2020-06-27,"Delaware","10",10
 2020-06-27,"Florida","12",246
 2020-06-27,"Georgia","13",134
-2020-06-27,"Guam",NA,0
+2020-06-27,"Guam","66",0
 2020-06-27,"Hawaii","15",1
 2020-06-27,"Iowa","19",23
 2020-06-27,"Idaho","16",2
@@ -1238,7 +1238,7 @@
 2020-06-27,"Michigan","26",66
 2020-06-27,"Minnesota","27",48
 2020-06-27,"Missouri","29",41
-2020-06-27,"Northern Mariana Islands",NA,0
+2020-06-27,"Northern Mariana Islands","69",0
 2020-06-27,"Mississippi","28",97
 2020-06-27,"Montana","30",2
 2020-06-27,"North Carolina","37",138
@@ -1253,7 +1253,7 @@
 2020-06-27,"Oklahoma","40",16
 2020-06-27,"Oregon","41",13
 2020-06-27,"Pennsylvania","42",185
-2020-06-27,"Puerto Rico",NA,5
+2020-06-27,"Puerto Rico","72",5
 2020-06-27,"Rhode Island","44",23
 2020-06-27,"South Carolina","45",67
 2020-06-27,"South Dakota","46",10
@@ -1261,7 +1261,7 @@
 2020-06-27,"Texas","48",273
 2020-06-27,"Utah","49",12
 2020-06-27,"Virginia","51",117
-2020-06-27,"Virgin Islands",NA,0
+2020-06-27,"Virgin Islands","78",0
 2020-06-27,"Vermont","50",0
 2020-06-27,"Washington","53",45
 2020-06-27,"Wisconsin","55",35
@@ -1270,16 +1270,16 @@
 2020-07-04,"Alaska","02",2
 2020-07-04,"Alabama","01",88
 2020-07-04,"Arkansas","05",27
-2020-07-04,"American Samoa",NA,0
+2020-07-04,"American Samoa","60",0
 2020-07-04,"Arizona","04",237
-2020-07-04,"California","06",435
+2020-07-04,"California","06",448
 2020-07-04,"Colorado","08",27
 2020-07-04,"Connecticut","09",24
 2020-07-04,"District of Columbia","11",9
 2020-07-04,"Delaware","10",7
 2020-07-04,"Florida","12",312
 2020-07-04,"Georgia","13",81
-2020-07-04,"Guam",NA,0
+2020-07-04,"Guam","66",0
 2020-07-04,"Hawaii","15",1
 2020-07-04,"Iowa","19",17
 2020-07-04,"Idaho","16",2
@@ -1294,7 +1294,7 @@
 2020-07-04,"Michigan","26",65
 2020-07-04,"Minnesota","27",51
 2020-07-04,"Missouri","29",37
-2020-07-04,"Northern Mariana Islands",NA,0
+2020-07-04,"Northern Mariana Islands","69",0
 2020-07-04,"Mississippi","28",72
 2020-07-04,"Montana","30",1
 2020-07-04,"North Carolina","37",69
@@ -1309,7 +1309,7 @@
 2020-07-04,"Oklahoma","40",14
 2020-07-04,"Oregon","41",11
 2020-07-04,"Pennsylvania","42",144
-2020-07-04,"Puerto Rico",NA,3
+2020-07-04,"Puerto Rico","72",3
 2020-07-04,"Rhode Island","44",21
 2020-07-04,"South Carolina","45",102
 2020-07-04,"South Dakota","46",6
@@ -1317,7 +1317,7 @@
 2020-07-04,"Texas","48",403
 2020-07-04,"Utah","49",14
 2020-07-04,"Virginia","51",125
-2020-07-04,"Virgin Islands",NA,0
+2020-07-04,"Virgin Islands","78",0
 2020-07-04,"Vermont","50",0
 2020-07-04,"Washington","53",47
 2020-07-04,"Wisconsin","55",20
@@ -1326,16 +1326,16 @@
 2020-07-11,"Alaska","02",1
 2020-07-11,"Alabama","01",107
 2020-07-11,"Arkansas","05",33
-2020-07-11,"American Samoa",NA,0
+2020-07-11,"American Samoa","60",0
 2020-07-11,"Arizona","04",334
-2020-07-11,"California","06",693
+2020-07-11,"California","06",724
 2020-07-11,"Colorado","08",24
 2020-07-11,"Connecticut","09",13
 2020-07-11,"District of Columbia","11",11
 2020-07-11,"Delaware","10",7
 2020-07-11,"Florida","12",495
 2020-07-11,"Georgia","13",139
-2020-07-11,"Guam",NA,0
+2020-07-11,"Guam","66",0
 2020-07-11,"Hawaii","15",0
 2020-07-11,"Iowa","19",27
 2020-07-11,"Idaho","16",9
@@ -1350,7 +1350,7 @@
 2020-07-11,"Michigan","26",95
 2020-07-11,"Minnesota","27",34
 2020-07-11,"Missouri","29",41
-2020-07-11,"Northern Mariana Islands",NA,0
+2020-07-11,"Northern Mariana Islands","69",0
 2020-07-11,"Mississippi","28",123
 2020-07-11,"Montana","30",6
 2020-07-11,"North Carolina","37",91
@@ -1365,7 +1365,7 @@
 2020-07-11,"Oklahoma","40",23
 2020-07-11,"Oregon","41",19
 2020-07-11,"Pennsylvania","42",146
-2020-07-11,"Puerto Rico",NA,12
+2020-07-11,"Puerto Rico","72",12
 2020-07-11,"Rhode Island","44",14
 2020-07-11,"South Carolina","45",138
 2020-07-11,"South Dakota","46",12
@@ -1373,7 +1373,7 @@
 2020-07-11,"Texas","48",714
 2020-07-11,"Utah","49",31
 2020-07-11,"Virginia","51",113
-2020-07-11,"Virgin Islands",NA,0
+2020-07-11,"Virgin Islands","78",0
 2020-07-11,"Vermont","50",0
 2020-07-11,"Washington","53",65
 2020-07-11,"Wisconsin","55",20
@@ -1382,16 +1382,16 @@
 2020-07-18,"Alaska","02",1
 2020-07-18,"Alabama","01",172
 2020-07-18,"Arkansas","05",38
-2020-07-18,"American Samoa",NA,0
+2020-07-18,"American Samoa","60",0
 2020-07-18,"Arizona","04",579
-2020-07-18,"California","06",654
+2020-07-18,"California","06",633
 2020-07-18,"Colorado","08",27
 2020-07-18,"Connecticut","09",48
 2020-07-18,"District of Columbia","11",10
 2020-07-18,"Delaware","10",7
 2020-07-18,"Florida","12",698
 2020-07-18,"Georgia","13",173
-2020-07-18,"Guam",NA,0
+2020-07-18,"Guam","66",0
 2020-07-18,"Hawaii","15",5
 2020-07-18,"Iowa","19",41
 2020-07-18,"Idaho","16",17
@@ -1406,7 +1406,7 @@
 2020-07-18,"Michigan","26",51
 2020-07-18,"Minnesota","27",41
 2020-07-18,"Missouri","29",46
-2020-07-18,"Northern Mariana Islands",NA,0
+2020-07-18,"Northern Mariana Islands","69",0
 2020-07-18,"Mississippi","28",116
 2020-07-18,"Montana","30",8
 2020-07-18,"North Carolina","37",135
@@ -1421,7 +1421,7 @@
 2020-07-18,"Oklahoma","40",30
 2020-07-18,"Oregon","41",25
 2020-07-18,"Pennsylvania","42",122
-2020-07-18,"Puerto Rico",NA,11
+2020-07-18,"Puerto Rico","72",11
 2020-07-18,"Rhode Island","44",12
 2020-07-18,"South Carolina","45",184
 2020-07-18,"South Dakota","46",6
@@ -1429,7 +1429,7 @@
 2020-07-18,"Texas","48",988
 2020-07-18,"Utah","49",31
 2020-07-18,"Virginia","51",63
-2020-07-18,"Virgin Islands",NA,0
+2020-07-18,"Virgin Islands","78",0
 2020-07-18,"Vermont","50",0
 2020-07-18,"Washington","53",48
 2020-07-18,"Wisconsin","55",32
@@ -1438,16 +1438,16 @@
 2020-07-25,"Alaska","02",2
 2020-07-25,"Alabama","01",170
 2020-07-25,"Arkansas","05",42
-2020-07-25,"American Samoa",NA,0
+2020-07-25,"American Samoa","60",0
 2020-07-25,"Arizona","04",556
-2020-07-25,"California","06",719
+2020-07-25,"California","06",735
 2020-07-25,"Colorado","08",42
 2020-07-25,"Connecticut","09",17
 2020-07-25,"District of Columbia","11",3
 2020-07-25,"Delaware","10",11
 2020-07-25,"Florida","12",882
 2020-07-25,"Georgia","13",325
-2020-07-25,"Guam",NA,0
+2020-07-25,"Guam","66",0
 2020-07-25,"Hawaii","15",2
 2020-07-25,"Iowa","19",37
 2020-07-25,"Idaho","16",27
@@ -1462,7 +1462,7 @@
 2020-07-25,"Michigan","26",36
 2020-07-25,"Minnesota","27",33
 2020-07-25,"Missouri","29",65
-2020-07-25,"Northern Mariana Islands",NA,0
+2020-07-25,"Northern Mariana Islands","69",0
 2020-07-25,"Mississippi","28",132
 2020-07-25,"Montana","30",9
 2020-07-25,"North Carolina","37",163
@@ -1477,7 +1477,7 @@
 2020-07-25,"Oklahoma","40",45
 2020-07-25,"Oregon","41",28
 2020-07-25,"Pennsylvania","42",105
-2020-07-25,"Puerto Rico",NA,23
+2020-07-25,"Puerto Rico","72",23
 2020-07-25,"Rhode Island","44",9
 2020-07-25,"South Carolina","45",330
 2020-07-25,"South Dakota","46",6
@@ -1485,7 +1485,7 @@
 2020-07-25,"Texas","48",1176
 2020-07-25,"Utah","49",31
 2020-07-25,"Virginia","51",50
-2020-07-25,"Virgin Islands",NA,1
+2020-07-25,"Virgin Islands","78",1
 2020-07-25,"Vermont","50",0
 2020-07-25,"Washington","53",74
 2020-07-25,"Wisconsin","55",54
@@ -1494,16 +1494,16 @@
 2020-08-01,"Alaska","02",4
 2020-08-01,"Alabama","01",147
 2020-08-01,"Arkansas","05",59
-2020-08-01,"American Samoa",NA,0
+2020-08-01,"American Samoa","60",0
 2020-08-01,"Arizona","04",461
-2020-08-01,"California","06",939
+2020-08-01,"California","06",869
 2020-08-01,"Colorado","08",50
 2020-08-01,"Connecticut","09",19
 2020-08-01,"District of Columbia","11",4
 2020-08-01,"Delaware","10",6
 2020-08-01,"Florida","12",1245
 2020-08-01,"Georgia","13",331
-2020-08-01,"Guam",NA,0
+2020-08-01,"Guam","66",0
 2020-08-01,"Hawaii","15",0
 2020-08-01,"Iowa","19",48
 2020-08-01,"Idaho","16",51
@@ -1518,7 +1518,7 @@
 2020-08-01,"Michigan","26",56
 2020-08-01,"Minnesota","27",35
 2020-08-01,"Missouri","29",76
-2020-08-01,"Northern Mariana Islands",NA,0
+2020-08-01,"Northern Mariana Islands","69",0
 2020-08-01,"Mississippi","28",215
 2020-08-01,"Montana","30",15
 2020-08-01,"North Carolina","37",168
@@ -1533,7 +1533,7 @@
 2020-08-01,"Oklahoma","40",53
 2020-08-01,"Oregon","41",40
 2020-08-01,"Pennsylvania","42",92
-2020-08-01,"Puerto Rico",NA,24
+2020-08-01,"Puerto Rico","72",24
 2020-08-01,"Rhode Island","44",6
 2020-08-01,"South Carolina","45",286
 2020-08-01,"South Dakota","46",12
@@ -1541,7 +1541,7 @@
 2020-08-01,"Texas","48",1921
 2020-08-01,"Utah","49",36
 2020-08-01,"Virginia","51",140
-2020-08-01,"Virgin Islands",NA,1
+2020-08-01,"Virgin Islands","78",1
 2020-08-01,"Vermont","50",1
 2020-08-01,"Washington","53",97
 2020-08-01,"Wisconsin","55",48
@@ -1550,16 +1550,16 @@
 2020-08-08,"Alaska","02",2
 2020-08-08,"Alabama","01",152
 2020-08-08,"Arkansas","05",77
-2020-08-08,"American Samoa",NA,0
+2020-08-08,"American Samoa","60",0
 2020-08-08,"Arizona","04",390
-2020-08-08,"California","06",962
+2020-08-08,"California","06",905
 2020-08-08,"Colorado","08",13
 2020-08-08,"Connecticut","09",9
 2020-08-08,"District of Columbia","11",5
 2020-08-08,"Delaware","10",6
 2020-08-08,"Florida","12",1087
 2020-08-08,"Georgia","13",361
-2020-08-08,"Guam",NA,0
+2020-08-08,"Guam","66",0
 2020-08-08,"Hawaii","15",5
 2020-08-08,"Iowa","19",53
 2020-08-08,"Idaho","16",38
@@ -1574,7 +1574,7 @@
 2020-08-08,"Michigan","26",63
 2020-08-08,"Minnesota","27",43
 2020-08-08,"Missouri","29",58
-2020-08-08,"Northern Mariana Islands",NA,0
+2020-08-08,"Northern Mariana Islands","69",0
 2020-08-08,"Mississippi","28",181
 2020-08-08,"Montana","30",14
 2020-08-08,"North Carolina","37",205
@@ -1589,7 +1589,7 @@
 2020-08-08,"Oklahoma","40",54
 2020-08-08,"Oregon","41",30
 2020-08-08,"Pennsylvania","42",94
-2020-08-08,"Puerto Rico",NA,49
+2020-08-08,"Puerto Rico","72",49
 2020-08-08,"Rhode Island","44",10
 2020-08-08,"South Carolina","45",256
 2020-08-08,"South Dakota","46",11
@@ -1597,7 +1597,7 @@
 2020-08-08,"Texas","48",1487
 2020-08-08,"Utah","49",25
 2020-08-08,"Virginia","51",107
-2020-08-08,"Virgin Islands",NA,1
+2020-08-08,"Virgin Islands","78",1
 2020-08-08,"Vermont","50",1
 2020-08-08,"Washington","53",92
 2020-08-08,"Wisconsin","55",62
@@ -1606,16 +1606,16 @@
 2020-08-15,"Alaska","02",2
 2020-08-15,"Alabama","01",141
 2020-08-15,"Arkansas","05",65
-2020-08-15,"American Samoa",NA,0
+2020-08-15,"American Samoa","60",0
 2020-08-15,"Arizona","04",355
-2020-08-15,"California","06",918
+2020-08-15,"California","06",927
 2020-08-15,"Colorado","08",39
 2020-08-15,"Connecticut","09",12
 2020-08-15,"District of Columbia","11",7
 2020-08-15,"Delaware","10",2
 2020-08-15,"Florida","12",1236
 2020-08-15,"Georgia","13",483
-2020-08-15,"Guam",NA,0
+2020-08-15,"Guam","66",0
 2020-08-15,"Hawaii","15",9
 2020-08-15,"Iowa","19",48
 2020-08-15,"Idaho","16",34
@@ -1630,7 +1630,7 @@
 2020-08-15,"Michigan","26",66
 2020-08-15,"Minnesota","27",16
 2020-08-15,"Missouri","29",51
-2020-08-15,"Northern Mariana Islands",NA,0
+2020-08-15,"Northern Mariana Islands","69",0
 2020-08-15,"Mississippi","28",206
 2020-08-15,"Montana","30",7
 2020-08-15,"North Carolina","37",159
@@ -1645,7 +1645,7 @@
 2020-08-15,"Oklahoma","40",54
 2020-08-15,"Oregon","41",31
 2020-08-15,"Pennsylvania","42",141
-2020-08-15,"Puerto Rico",NA,55
+2020-08-15,"Puerto Rico","72",55
 2020-08-15,"Rhode Island","44",8
 2020-08-15,"South Carolina","45",253
 2020-08-15,"South Dakota","46",6
@@ -1653,7 +1653,7 @@
 2020-08-15,"Texas","48",1215
 2020-08-15,"Utah","49",28
 2020-08-15,"Virginia","51",59
-2020-08-15,"Virgin Islands",NA,0
+2020-08-15,"Virgin Islands","78",0
 2020-08-15,"Vermont","50",0
 2020-08-15,"Washington","53",80
 2020-08-15,"Wisconsin","55",51
@@ -1662,16 +1662,16 @@
 2020-08-22,"Alaska","02",3
 2020-08-22,"Alabama","01",115
 2020-08-22,"Arkansas","05",74
-2020-08-22,"American Samoa",NA,0
+2020-08-22,"American Samoa","60",0
 2020-08-22,"Arizona","04",264
-2020-08-22,"California","06",852
+2020-08-22,"California","06",859
 2020-08-22,"Colorado","08",22
 2020-08-22,"Connecticut","09",7
 2020-08-22,"District of Columbia","11",7
 2020-08-22,"Delaware","10",5
 2020-08-22,"Florida","12",929
 2020-08-22,"Georgia","13",423
-2020-08-22,"Guam",NA,2
+2020-08-22,"Guam","66",2
 2020-08-22,"Hawaii","15",7
 2020-08-22,"Iowa","19",58
 2020-08-22,"Idaho","16",37
@@ -1686,7 +1686,7 @@
 2020-08-22,"Michigan","26",69
 2020-08-22,"Minnesota","27",102
 2020-08-22,"Missouri","29",74
-2020-08-22,"Northern Mariana Islands",NA,0
+2020-08-22,"Northern Mariana Islands","69",0
 2020-08-22,"Mississippi","28",157
 2020-08-22,"Montana","30",8
 2020-08-22,"North Carolina","37",178
@@ -1701,7 +1701,7 @@
 2020-08-22,"Oklahoma","40",68
 2020-08-22,"Oregon","41",31
 2020-08-22,"Pennsylvania","42",106
-2020-08-22,"Puerto Rico",NA,52
+2020-08-22,"Puerto Rico","72",52
 2020-08-22,"Rhode Island","44",20
 2020-08-22,"South Carolina","45",233
 2020-08-22,"South Dakota","46",8
@@ -1709,7 +1709,7 @@
 2020-08-22,"Texas","48",1290
 2020-08-22,"Utah","49",22
 2020-08-22,"Virginia","51",62
-2020-08-22,"Virgin Islands",NA,1
+2020-08-22,"Virgin Islands","78",1
 2020-08-22,"Vermont","50",0
 2020-08-22,"Washington","53",54
 2020-08-22,"Wisconsin","55",37
@@ -1718,16 +1718,16 @@
 2020-08-29,"Alaska","02",6
 2020-08-29,"Alabama","01",141
 2020-08-29,"Arkansas","05",98
-2020-08-29,"American Samoa",NA,0
+2020-08-29,"American Samoa","60",0
 2020-08-29,"Arizona","04",251
-2020-08-29,"California","06",832
+2020-08-29,"California","06",808
 2020-08-29,"Colorado","08",24
 2020-08-29,"Connecticut","09",5
 2020-08-29,"District of Columbia","11",1
 2020-08-29,"Delaware","10",2
 2020-08-29,"Florida","12",831
 2020-08-29,"Georgia","13",484
-2020-08-29,"Guam",NA,3
+2020-08-29,"Guam","66",3
 2020-08-29,"Hawaii","15",15
 2020-08-29,"Iowa","19",67
 2020-08-29,"Idaho","16",52
@@ -1742,7 +1742,7 @@
 2020-08-29,"Michigan","26",56
 2020-08-29,"Minnesota","27",56
 2020-08-29,"Missouri","29",79
-2020-08-29,"Northern Mariana Islands",NA,0
+2020-08-29,"Northern Mariana Islands","69",0
 2020-08-29,"Mississippi","28",190
 2020-08-29,"Montana","30",14
 2020-08-29,"North Carolina","37",162
@@ -1757,7 +1757,7 @@
 2020-08-29,"Oklahoma","40",72
 2020-08-29,"Oregon","41",37
 2020-08-29,"Pennsylvania","42",99
-2020-08-29,"Puerto Rico",NA,47
+2020-08-29,"Puerto Rico","72",47
 2020-08-29,"Rhode Island","44",10
 2020-08-29,"South Carolina","45",205
 2020-08-29,"South Dakota","46",7
@@ -1765,7 +1765,7 @@
 2020-08-29,"Texas","48",1068
 2020-08-29,"Utah","49",22
 2020-08-29,"Virginia","51",125
-2020-08-29,"Virgin Islands",NA,4
+2020-08-29,"Virgin Islands","78",4
 2020-08-29,"Vermont","50",0
 2020-08-29,"Washington","53",54
 2020-08-29,"Wisconsin","55",47
@@ -1774,16 +1774,16 @@
 2020-09-05,"Alaska","02",5
 2020-09-05,"Alabama","01",123
 2020-09-05,"Arkansas","05",110
-2020-09-05,"American Samoa",NA,0
+2020-09-05,"American Samoa","60",0
 2020-09-05,"Arizona","04",200
-2020-09-05,"California","06",769
+2020-09-05,"California","06",828
 2020-09-05,"Colorado","08",29
 2020-09-05,"Connecticut","09",3
 2020-09-05,"District of Columbia","11",6
 2020-09-05,"Delaware","10",8
 2020-09-05,"Florida","12",706
 2020-09-05,"Georgia","13",401
-2020-09-05,"Guam",NA,5
+2020-09-05,"Guam","66",5
 2020-09-05,"Hawaii","15",22
 2020-09-05,"Iowa","19",64
 2020-09-05,"Idaho","16",26
@@ -1798,7 +1798,7 @@
 2020-09-05,"Michigan","26",94
 2020-09-05,"Minnesota","27",40
 2020-09-05,"Missouri","29",141
-2020-09-05,"Northern Mariana Islands",NA,0
+2020-09-05,"Northern Mariana Islands","69",0
 2020-09-05,"Mississippi","28",142
 2020-09-05,"Montana","30",12
 2020-09-05,"North Carolina","37",206
@@ -1813,7 +1813,7 @@
 2020-09-05,"Oklahoma","40",53
 2020-09-05,"Oregon","41",26
 2020-09-05,"Pennsylvania","42",91
-2020-09-05,"Puerto Rico",NA,36
+2020-09-05,"Puerto Rico","72",36
 2020-09-05,"Rhode Island","44",12
 2020-09-05,"South Carolina","45",179
 2020-09-05,"South Dakota","46",6
@@ -1821,7 +1821,7 @@
 2020-09-05,"Texas","48",886
 2020-09-05,"Utah","49",13
 2020-09-05,"Virginia","51",109
-2020-09-05,"Virgin Islands",NA,2
+2020-09-05,"Virgin Islands","78",2
 2020-09-05,"Vermont","50",0
 2020-09-05,"Washington","53",43
 2020-09-05,"Wisconsin","55",40
@@ -1830,16 +1830,16 @@
 2020-09-12,"Alaska","02",2
 2020-09-12,"Alabama","01",75
 2020-09-12,"Arkansas","05",87
-2020-09-12,"American Samoa",NA,0
+2020-09-12,"American Samoa","60",0
 2020-09-12,"Arizona","04",108
-2020-09-12,"California","06",658
+2020-09-12,"California","06",635
 2020-09-12,"Colorado","08",17
 2020-09-12,"Connecticut","09",12
 2020-09-12,"District of Columbia","11",5
 2020-09-12,"Delaware","10",7
 2020-09-12,"Florida","12",789
 2020-09-12,"Georgia","13",310
-2020-09-12,"Guam",NA,10
+2020-09-12,"Guam","66",10
 2020-09-12,"Hawaii","15",13
 2020-09-12,"Iowa","19",54
 2020-09-12,"Idaho","16",31
@@ -1854,7 +1854,7 @@
 2020-09-12,"Michigan","26",105
 2020-09-12,"Minnesota","27",55
 2020-09-12,"Missouri","29",62
-2020-09-12,"Northern Mariana Islands",NA,0
+2020-09-12,"Northern Mariana Islands","69",0
 2020-09-12,"Mississippi","28",116
 2020-09-12,"Montana","30",17
 2020-09-12,"North Carolina","37",158
@@ -1869,7 +1869,7 @@
 2020-09-12,"Oklahoma","40",49
 2020-09-12,"Oregon","41",25
 2020-09-12,"Pennsylvania","42",79
-2020-09-12,"Puerto Rico",NA,71
+2020-09-12,"Puerto Rico","72",71
 2020-09-12,"Rhode Island","44",9
 2020-09-12,"South Carolina","45",163
 2020-09-12,"South Dakota","46",9
@@ -1877,7 +1877,7 @@
 2020-09-12,"Texas","48",756
 2020-09-12,"Utah","49",13
 2020-09-12,"Virginia","51",45
-2020-09-12,"Virgin Islands",NA,3
+2020-09-12,"Virgin Islands","78",3
 2020-09-12,"Vermont","50",0
 2020-09-12,"Washington","53",36
 2020-09-12,"Wisconsin","55",43
@@ -1886,16 +1886,16 @@
 2020-09-19,"Alaska","02",1
 2020-09-19,"Alabama","01",87
 2020-09-19,"Arkansas","05",212
-2020-09-19,"American Samoa",NA,0
+2020-09-19,"American Samoa","60",0
 2020-09-19,"Arizona","04",152
-2020-09-19,"California","06",676
+2020-09-19,"California","06",699
 2020-09-19,"Colorado","08",25
 2020-09-19,"Connecticut","09",12
 2020-09-19,"District of Columbia","11",3
 2020-09-19,"Delaware","10",5
 2020-09-19,"Florida","12",687
 2020-09-19,"Georgia","13",312
-2020-09-19,"Guam",NA,9
+2020-09-19,"Guam","66",9
 2020-09-19,"Hawaii","15",23
 2020-09-19,"Iowa","19",47
 2020-09-19,"Idaho","16",26
@@ -1910,7 +1910,7 @@
 2020-09-19,"Michigan","26",55
 2020-09-19,"Minnesota","27",57
 2020-09-19,"Missouri","29",100
-2020-09-19,"Northern Mariana Islands",NA,0
+2020-09-19,"Northern Mariana Islands","69",0
 2020-09-19,"Mississippi","28",124
 2020-09-19,"Montana","30",23
 2020-09-19,"North Carolina","37",188
@@ -1925,7 +1925,7 @@
 2020-09-19,"Oklahoma","40",44
 2020-09-19,"Oregon","41",20
 2020-09-19,"Pennsylvania","42",114
-2020-09-19,"Puerto Rico",NA,70
+2020-09-19,"Puerto Rico","72",70
 2020-09-19,"Rhode Island","44",15
 2020-09-19,"South Carolina","45",148
 2020-09-19,"South Dakota","46",17
@@ -1933,7 +1933,7 @@
 2020-09-19,"Texas","48",694
 2020-09-19,"Utah","49",7
 2020-09-19,"Virginia","51",268
-2020-09-19,"Virgin Islands",NA,0
+2020-09-19,"Virgin Islands","78",0
 2020-09-19,"Vermont","50",0
 2020-09-19,"Washington","53",48
 2020-09-19,"Wisconsin","55",35
@@ -1942,16 +1942,16 @@
 2020-09-26,"Alaska","02",7
 2020-09-26,"Alabama","01",64
 2020-09-26,"Arkansas","05",104
-2020-09-26,"American Samoa",NA,0
+2020-09-26,"American Samoa","60",0
 2020-09-26,"Arizona","04",155
-2020-09-26,"California","06",562
+2020-09-26,"California","06",561
 2020-09-26,"Colorado","08",27
 2020-09-26,"Connecticut","09",9
 2020-09-26,"District of Columbia","11",5
 2020-09-26,"Delaware","10",11
 2020-09-26,"Florida","12",735
 2020-09-26,"Georgia","13",315
-2020-09-26,"Guam",NA,8
+2020-09-26,"Guam","66",8
 2020-09-26,"Hawaii","15",11
 2020-09-26,"Iowa","19",49
 2020-09-26,"Idaho","16",19
@@ -1966,7 +1966,7 @@
 2020-09-26,"Michigan","26",75
 2020-09-26,"Minnesota","27",41
 2020-09-26,"Missouri","29",229
-2020-09-26,"Northern Mariana Islands",NA,0
+2020-09-26,"Northern Mariana Islands","69",0
 2020-09-26,"Mississippi","28",102
 2020-09-26,"Montana","30",15
 2020-09-26,"North Carolina","37",205
@@ -1981,7 +1981,7 @@
 2020-09-26,"Oklahoma","40",61
 2020-09-26,"Oregon","41",17
 2020-09-26,"Pennsylvania","42",143
-2020-09-26,"Puerto Rico",NA,37
+2020-09-26,"Puerto Rico","72",37
 2020-09-26,"Rhode Island","44",10
 2020-09-26,"South Carolina","45",135
 2020-09-26,"South Dakota","46",18
@@ -1989,25 +1989,25 @@
 2020-09-26,"Texas","48",664
 2020-09-26,"Utah","49",8
 2020-09-26,"Virginia","51",154
-2020-09-26,"Virgin Islands",NA,0
+2020-09-26,"Virgin Islands","78",0
 2020-09-26,"Vermont","50",0
 2020-09-26,"Washington","53",48
 2020-09-26,"Wisconsin","55",61
 2020-09-26,"West Virginia","54",26
 2020-09-26,"Wyoming","56",1
-2020-10-03,"Alaska","02",6
+2020-10-03,"Alaska","02",7
 2020-10-03,"Alabama","01",57
 2020-10-03,"Arkansas","05",122
-2020-10-03,"American Samoa",NA,0
+2020-10-03,"American Samoa","60",0
 2020-10-03,"Arizona","04",83
-2020-10-03,"California","06",552
+2020-10-03,"California","06",588
 2020-10-03,"Colorado","08",20
 2020-10-03,"Connecticut","09",12
 2020-10-03,"District of Columbia","11",5
 2020-10-03,"Delaware","10",14
 2020-10-03,"Florida","12",606
 2020-10-03,"Georgia","13",219
-2020-10-03,"Guam",NA,9
+2020-10-03,"Guam","66",9
 2020-10-03,"Hawaii","15",22
 2020-10-03,"Iowa","19",67
 2020-10-03,"Idaho","16",20
@@ -2022,7 +2022,7 @@
 2020-10-03,"Michigan","26",79
 2020-10-03,"Minnesota","27",70
 2020-10-03,"Missouri","29",110
-2020-10-03,"Northern Mariana Islands",NA,0
+2020-10-03,"Northern Mariana Islands","69",0
 2020-10-03,"Mississippi","28",100
 2020-10-03,"Montana","30",15
 2020-10-03,"North Carolina","37",189
@@ -2037,7 +2037,7 @@
 2020-10-03,"Oklahoma","40",47
 2020-10-03,"Oregon","41",29
 2020-10-03,"Pennsylvania","42",97
-2020-10-03,"Puerto Rico",NA,39
+2020-10-03,"Puerto Rico","72",39
 2020-10-03,"Rhode Island","44",10
 2020-10-03,"South Carolina","45",119
 2020-10-03,"South Dakota","46",29
@@ -2045,7 +2045,7 @@
 2020-10-03,"Texas","48",584
 2020-10-03,"Utah","49",28
 2020-10-03,"Virginia","51",126
-2020-10-03,"Virgin Islands",NA,1
+2020-10-03,"Virgin Islands","78",1
 2020-10-03,"Vermont","50",0
 2020-10-03,"Washington","53",49
 2020-10-03,"Wisconsin","55",86
@@ -2054,16 +2054,16 @@
 2020-10-10,"Alaska","02",2
 2020-10-10,"Alabama","01",106
 2020-10-10,"Arkansas","05",145
-2020-10-10,"American Samoa",NA,0
+2020-10-10,"American Samoa","60",0
 2020-10-10,"Arizona","04",54
-2020-10-10,"California","06",448
+2020-10-10,"California","06",456
 2020-10-10,"Colorado","08",52
 2020-10-10,"Connecticut","09",17
 2020-10-10,"District of Columbia","11",7
 2020-10-10,"Delaware","10",11
 2020-10-10,"Florida","12",558
 2020-10-10,"Georgia","13",260
-2020-10-10,"Guam",NA,7
+2020-10-10,"Guam","66",7
 2020-10-10,"Hawaii","15",15
 2020-10-10,"Iowa","19",78
 2020-10-10,"Idaho","16",27
@@ -2078,7 +2078,7 @@
 2020-10-10,"Michigan","26",94
 2020-10-10,"Minnesota","27",58
 2020-10-10,"Missouri","29",243
-2020-10-10,"Northern Mariana Islands",NA,0
+2020-10-10,"Northern Mariana Islands","69",0
 2020-10-10,"Mississippi","28",85
 2020-10-10,"Montana","30",23
 2020-10-10,"North Carolina","37",136
@@ -2093,7 +2093,7 @@
 2020-10-10,"Oklahoma","40",44
 2020-10-10,"Oregon","41",28
 2020-10-10,"Pennsylvania","42",141
-2020-10-10,"Puerto Rico",NA,47
+2020-10-10,"Puerto Rico","72",47
 2020-10-10,"Rhode Island","44",17
 2020-10-10,"South Carolina","45",109
 2020-10-10,"South Dakota","46",38
@@ -2101,7 +2101,7 @@
 2020-10-10,"Texas","48",637
 2020-10-10,"Utah","49",34
 2020-10-10,"Virginia","51",84
-2020-10-10,"Virgin Islands",NA,0
+2020-10-10,"Virgin Islands","78",0
 2020-10-10,"Vermont","50",0
 2020-10-10,"Washington","53",45
 2020-10-10,"Wisconsin","55",125
@@ -2110,16 +2110,16 @@
 2020-10-17,"Alaska","02",6
 2020-10-17,"Alabama","01",124
 2020-10-17,"Arkansas","05",132
-2020-10-17,"American Samoa",NA,0
+2020-10-17,"American Samoa","60",0
 2020-10-17,"Arizona","04",65
-2020-10-17,"California","06",391
+2020-10-17,"California","06",436
 2020-10-17,"Colorado","08",64
 2020-10-17,"Connecticut","09",12
 2020-10-17,"District of Columbia","11",5
 2020-10-17,"Delaware","10",15
 2020-10-17,"Florida","12",731
 2020-10-17,"Georgia","13",214
-2020-10-17,"Guam",NA,5
+2020-10-17,"Guam","66",5
 2020-10-17,"Hawaii","15",18
 2020-10-17,"Iowa","19",69
 2020-10-17,"Idaho","16",22
@@ -2134,7 +2134,7 @@
 2020-10-17,"Michigan","26",121
 2020-10-17,"Minnesota","27",86
 2020-10-17,"Missouri","29",159
-2020-10-17,"Northern Mariana Islands",NA,0
+2020-10-17,"Northern Mariana Islands","69",0
 2020-10-17,"Mississippi","28",75
 2020-10-17,"Montana","30",30
 2020-10-17,"North Carolina","37",164
@@ -2149,7 +2149,7 @@
 2020-10-17,"Oklahoma","40",67
 2020-10-17,"Oregon","41",20
 2020-10-17,"Pennsylvania","42",121
-2020-10-17,"Puerto Rico",NA,33
+2020-10-17,"Puerto Rico","72",33
 2020-10-17,"Rhode Island","44",26
 2020-10-17,"South Carolina","45",86
 2020-10-17,"South Dakota","46",28
@@ -2157,7 +2157,7 @@
 2020-10-17,"Texas","48",515
 2020-10-17,"Utah","49",30
 2020-10-17,"Virginia","51",68
-2020-10-17,"Virgin Islands",NA,1
+2020-10-17,"Virgin Islands","78",1
 2020-10-17,"Vermont","50",0
 2020-10-17,"Washington","53",43
 2020-10-17,"Wisconsin","55",193
@@ -2166,16 +2166,16 @@
 2020-10-24,"Alaska","02",1
 2020-10-24,"Alabama","01",78
 2020-10-24,"Arkansas","05",113
-2020-10-24,"American Samoa",NA,0
+2020-10-24,"American Samoa","60",0
 2020-10-24,"Arizona","04",45
-2020-10-24,"California","06",375
+2020-10-24,"California","06",379
 2020-10-24,"Colorado","08",42
 2020-10-24,"Connecticut","09",35
 2020-10-24,"District of Columbia","11",1
 2020-10-24,"Delaware","10",23
 2020-10-24,"Florida","12",500
 2020-10-24,"Georgia","13",201
-2020-10-24,"Guam",NA,8
+2020-10-24,"Guam","66",8
 2020-10-24,"Hawaii","15",26
 2020-10-24,"Iowa","19",106
 2020-10-24,"Idaho","16",43
@@ -2190,7 +2190,7 @@
 2020-10-24,"Michigan","26",182
 2020-10-24,"Minnesota","27",111
 2020-10-24,"Missouri","29",232
-2020-10-24,"Northern Mariana Islands",NA,0
+2020-10-24,"Northern Mariana Islands","69",0
 2020-10-24,"Mississippi","28",84
 2020-10-24,"Montana","30",55
 2020-10-24,"North Carolina","37",215
@@ -2205,7 +2205,7 @@
 2020-10-24,"Oklahoma","40",83
 2020-10-24,"Oregon","41",34
 2020-10-24,"Pennsylvania","42",190
-2020-10-24,"Puerto Rico",NA,33
+2020-10-24,"Puerto Rico","72",33
 2020-10-24,"Rhode Island","44",17
 2020-10-24,"South Carolina","45",156
 2020-10-24,"South Dakota","46",51
@@ -2213,7 +2213,7 @@
 2020-10-24,"Texas","48",491
 2020-10-24,"Utah","49",28
 2020-10-24,"Virginia","51",156
-2020-10-24,"Virgin Islands",NA,0
+2020-10-24,"Virgin Islands","78",0
 2020-10-24,"Vermont","50",0
 2020-10-24,"Washington","53",66
 2020-10-24,"Wisconsin","55",278
@@ -2222,16 +2222,16 @@
 2020-10-31,"Alaska","02",14
 2020-10-31,"Alabama","01",101
 2020-10-31,"Arkansas","05",128
-2020-10-31,"American Samoa",NA,0
+2020-10-31,"American Samoa","60",0
 2020-10-31,"Arizona","04",110
-2020-10-31,"California","06",327
+2020-10-31,"California","06",365
 2020-10-31,"Colorado","08",67
 2020-10-31,"Connecticut","09",39
 2020-10-31,"District of Columbia","11",4
 2020-10-31,"Delaware","10",26
 2020-10-31,"Florida","12",344
 2020-10-31,"Georgia","13",171
-2020-10-31,"Guam",NA,8
+2020-10-31,"Guam","66",8
 2020-10-31,"Hawaii","15",7
 2020-10-31,"Iowa","19",82
 2020-10-31,"Idaho","16",57
@@ -2246,7 +2246,7 @@
 2020-10-31,"Michigan","26",177
 2020-10-31,"Minnesota","27",130
 2020-10-31,"Missouri","29",228
-2020-10-31,"Northern Mariana Islands",NA,0
+2020-10-31,"Northern Mariana Islands","69",0
 2020-10-31,"Mississippi","28",79
 2020-10-31,"Montana","30",81
 2020-10-31,"North Carolina","37",234
@@ -2261,7 +2261,7 @@
 2020-10-31,"Oklahoma","40",92
 2020-10-31,"Oregon","41",36
 2020-10-31,"Pennsylvania","42",161
-2020-10-31,"Puerto Rico",NA,28
+2020-10-31,"Puerto Rico","72",28
 2020-10-31,"Rhode Island","44",25
 2020-10-31,"South Carolina","45",142
 2020-10-31,"South Dakota","46",55
@@ -2269,25 +2269,25 @@
 2020-10-31,"Texas","48",574
 2020-10-31,"Utah","49",36
 2020-10-31,"Virginia","51",76
-2020-10-31,"Virgin Islands",NA,0
+2020-10-31,"Virgin Islands","78",0
 2020-10-31,"Vermont","50",0
 2020-10-31,"Washington","53",68
 2020-10-31,"Wisconsin","55",300
 2020-10-31,"West Virginia","54",35
 2020-10-31,"Wyoming","56",19
-2020-11-07,"Alaska","02",2
+2020-11-07,"Alaska","02",4
 2020-11-07,"Alabama","01",115
 2020-11-07,"Arkansas","05",143
-2020-11-07,"American Samoa",NA,0
+2020-11-07,"American Samoa","60",0
 2020-11-07,"Arizona","04",168
-2020-11-07,"California","06",313
+2020-11-07,"California","06",342
 2020-11-07,"Colorado","08",104
 2020-11-07,"Connecticut","09",55
 2020-11-07,"District of Columbia","11",8
 2020-11-07,"Delaware","10",17
 2020-11-07,"Florida","12",339
 2020-11-07,"Georgia","13",668
-2020-11-07,"Guam",NA,10
+2020-11-07,"Guam","66",10
 2020-11-07,"Hawaii","15",1
 2020-11-07,"Iowa","19",126
 2020-11-07,"Idaho","16",54
@@ -2302,7 +2302,7 @@
 2020-11-07,"Michigan","26",246
 2020-11-07,"Minnesota","27",168
 2020-11-07,"Missouri","29",127
-2020-11-07,"Northern Mariana Islands",NA,0
+2020-11-07,"Northern Mariana Islands","69",0
 2020-11-07,"Mississippi","28",99
 2020-11-07,"Montana","30",70
 2020-11-07,"North Carolina","37",227
@@ -2317,7 +2317,7 @@
 2020-11-07,"Oklahoma","40",92
 2020-11-07,"Oregon","41",40
 2020-11-07,"Pennsylvania","42",201
-2020-11-07,"Puerto Rico",NA,40
+2020-11-07,"Puerto Rico","72",40
 2020-11-07,"Rhode Island","44",25
 2020-11-07,"South Carolina","45",80
 2020-11-07,"South Dakota","46",96
@@ -2325,7 +2325,7 @@
 2020-11-07,"Texas","48",701
 2020-11-07,"Utah","49",54
 2020-11-07,"Virginia","51",50
-2020-11-07,"Virgin Islands",NA,2
+2020-11-07,"Virgin Islands","78",2
 2020-11-07,"Vermont","50",1
 2020-11-07,"Washington","53",66
 2020-11-07,"Wisconsin","55",209
@@ -2334,16 +2334,16 @@
 2020-11-14,"Alaska","02",14
 2020-11-14,"Alabama","01",164
 2020-11-14,"Arkansas","05",91
-2020-11-14,"American Samoa",NA,0
+2020-11-14,"American Samoa","60",0
 2020-11-14,"Arizona","04",153
-2020-11-14,"California","06",284
+2020-11-14,"California","06",286
 2020-11-14,"Colorado","08",136
 2020-11-14,"Connecticut","09",66
 2020-11-14,"District of Columbia","11",4
 2020-11-14,"Delaware","10",14
 2020-11-14,"Florida","12",389
 2020-11-14,"Georgia","13",309
-2020-11-14,"Guam",NA,4
+2020-11-14,"Guam","66",4
 2020-11-14,"Hawaii","15",2
 2020-11-14,"Iowa","19",143
 2020-11-14,"Idaho","16",76
@@ -2358,7 +2358,7 @@
 2020-11-14,"Michigan","26",430
 2020-11-14,"Minnesota","27",251
 2020-11-14,"Missouri","29",224
-2020-11-14,"Northern Mariana Islands",NA,0
+2020-11-14,"Northern Mariana Islands","69",0
 2020-11-14,"Mississippi","28",107
 2020-11-14,"Montana","30",69
 2020-11-14,"North Carolina","37",151
@@ -2373,7 +2373,7 @@
 2020-11-14,"Oklahoma","40",87
 2020-11-14,"Oregon","41",30
 2020-11-14,"Pennsylvania","42",256
-2020-11-14,"Puerto Rico",NA,59
+2020-11-14,"Puerto Rico","72",59
 2020-11-14,"Rhode Island","44",42
 2020-11-14,"South Carolina","45",95
 2020-11-14,"South Dakota","46",97
@@ -2381,7 +2381,7 @@
 2020-11-14,"Texas","48",794
 2020-11-14,"Utah","49",52
 2020-11-14,"Virginia","51",95
-2020-11-14,"Virgin Islands",NA,0
+2020-11-14,"Virgin Islands","78",0
 2020-11-14,"Vermont","50",0
 2020-11-14,"Washington","53",82
 2020-11-14,"Wisconsin","55",191
@@ -2390,16 +2390,16 @@
 2020-11-21,"Alaska","02",4
 2020-11-21,"Alabama","01",211
 2020-11-21,"Arkansas","05",178
-2020-11-21,"American Samoa",NA,0
+2020-11-21,"American Samoa","60",0
 2020-11-21,"Arizona","04",157
-2020-11-21,"California","06",458
+2020-11-21,"California","06",462
 2020-11-21,"Colorado","08",262
 2020-11-21,"Connecticut","09",91
 2020-11-21,"District of Columbia","11",12
 2020-11-21,"Delaware","10",20
 2020-11-21,"Florida","12",441
 2020-11-21,"Georgia","13",223
-2020-11-21,"Guam",NA,11
+2020-11-21,"Guam","66",11
 2020-11-21,"Hawaii","15",9
 2020-11-21,"Iowa","19",206
 2020-11-21,"Idaho","16",88
@@ -2414,7 +2414,7 @@
 2020-11-21,"Michigan","26",495
 2020-11-21,"Minnesota","27",327
 2020-11-21,"Missouri","29",191
-2020-11-21,"Northern Mariana Islands",NA,0
+2020-11-21,"Northern Mariana Islands","69",0
 2020-11-21,"Mississippi","28",117
 2020-11-21,"Montana","30",86
 2020-11-21,"North Carolina","37",249
@@ -2429,7 +2429,7 @@
 2020-11-21,"Oklahoma","40",108
 2020-11-21,"Oregon","41",60
 2020-11-21,"Pennsylvania","42",532
-2020-11-21,"Puerto Rico",NA,91
+2020-11-21,"Puerto Rico","72",91
 2020-11-21,"Rhode Island","44",48
 2020-11-21,"South Carolina","45",164
 2020-11-21,"South Dakota","46",151
@@ -2437,7 +2437,7 @@
 2020-11-21,"Texas","48",966
 2020-11-21,"Utah","49",77
 2020-11-21,"Virginia","51",139
-2020-11-21,"Virgin Islands",NA,0
+2020-11-21,"Virgin Islands","78",0
 2020-11-21,"Vermont","50",4
 2020-11-21,"Washington","53",102
 2020-11-21,"Wisconsin","55",404
@@ -2446,16 +2446,16 @@
 2020-11-28,"Alaska","02",17
 2020-11-28,"Alabama","01",115
 2020-11-28,"Arkansas","05",112
-2020-11-28,"American Samoa",NA,0
+2020-11-28,"American Samoa","60",0
 2020-11-28,"Arizona","04",167
-2020-11-28,"California","06",427
+2020-11-28,"California","06",426
 2020-11-28,"Colorado","08",196
 2020-11-28,"Connecticut","09",133
 2020-11-28,"District of Columbia","11",8
 2020-11-28,"Delaware","10",27
 2020-11-28,"Florida","12",512
 2020-11-28,"Georgia","13",245
-2020-11-28,"Guam",NA,8
+2020-11-28,"Guam","66",8
 2020-11-28,"Hawaii","15",9
 2020-11-28,"Iowa","19",184
 2020-11-28,"Idaho","16",66
@@ -2470,7 +2470,7 @@
 2020-11-28,"Michigan","26",585
 2020-11-28,"Minnesota","27",323
 2020-11-28,"Missouri","29",276
-2020-11-28,"Northern Mariana Islands",NA,0
+2020-11-28,"Northern Mariana Islands","69",0
 2020-11-28,"Mississippi","28",122
 2020-11-28,"Montana","30",69
 2020-11-28,"North Carolina","37",214
@@ -2485,7 +2485,7 @@
 2020-11-28,"Oklahoma","40",93
 2020-11-28,"Oregon","41",77
 2020-11-28,"Pennsylvania","42",466
-2020-11-28,"Puerto Rico",NA,71
+2020-11-28,"Puerto Rico","72",71
 2020-11-28,"Rhode Island","44",68
 2020-11-28,"South Carolina","45",72
 2020-11-28,"South Dakota","46",159
@@ -2493,7 +2493,7 @@
 2020-11-28,"Texas","48",881
 2020-11-28,"Utah","49",76
 2020-11-28,"Virginia","51",116
-2020-11-28,"Virgin Islands",NA,0
+2020-11-28,"Virgin Islands","78",0
 2020-11-28,"Vermont","50",4
 2020-11-28,"Washington","53",119
 2020-11-28,"Wisconsin","55",321
@@ -2502,16 +2502,16 @@
 2020-12-05,"Alaska","02",20
 2020-12-05,"Alabama","01",305
 2020-12-05,"Arkansas","05",171
-2020-12-05,"American Samoa",NA,0
+2020-12-05,"American Samoa","60",0
 2020-12-05,"Arizona","04",301
-2020-12-05,"California","06",767
+2020-12-05,"California","06",736
 2020-12-05,"Colorado","08",374
 2020-12-05,"Connecticut","09",185
 2020-12-05,"District of Columbia","11",17
 2020-12-05,"Delaware","10",29
 2020-12-05,"Florida","12",642
 2020-12-05,"Georgia","13",369
-2020-12-05,"Guam",NA,1
+2020-12-05,"Guam","66",1
 2020-12-05,"Hawaii","15",21
 2020-12-05,"Iowa","19",307
 2020-12-05,"Idaho","16",119
@@ -2526,7 +2526,7 @@
 2020-12-05,"Michigan","26",844
 2020-12-05,"Minnesota","27",399
 2020-12-05,"Missouri","29",432
-2020-12-05,"Northern Mariana Islands",NA,0
+2020-12-05,"Northern Mariana Islands","69",0
 2020-12-05,"Mississippi","28",170
 2020-12-05,"Montana","30",65
 2020-12-05,"North Carolina","37",297
@@ -2541,7 +2541,7 @@
 2020-12-05,"Oklahoma","40",157
 2020-12-05,"Oregon","41",131
 2020-12-05,"Pennsylvania","42",957
-2020-12-05,"Puerto Rico",NA,102
+2020-12-05,"Puerto Rico","72",102
 2020-12-05,"Rhode Island","44",83
 2020-12-05,"South Carolina","45",171
 2020-12-05,"South Dakota","46",145
@@ -2549,7 +2549,7 @@
 2020-12-05,"Texas","48",1223
 2020-12-05,"Utah","49",76
 2020-12-05,"Virginia","51",143
-2020-12-05,"Virgin Islands",NA,0
+2020-12-05,"Virgin Islands","78",0
 2020-12-05,"Vermont","50",12
 2020-12-05,"Washington","53",153
 2020-12-05,"Wisconsin","55",470
@@ -2558,16 +2558,16 @@
 2020-12-12,"Alaska","02",32
 2020-12-12,"Alabama","01",225
 2020-12-12,"Arkansas","05",291
-2020-12-12,"American Samoa",NA,0
+2020-12-12,"American Samoa","60",0
 2020-12-12,"Arizona","04",397
-2020-12-12,"California","06",1079
+2020-12-12,"California","06",1061
 2020-12-12,"Colorado","08",514
 2020-12-12,"Connecticut","09",217
 2020-12-12,"District of Columbia","11",18
 2020-12-12,"Delaware","10",45
 2020-12-12,"Florida","12",701
 2020-12-12,"Georgia","13",282
-2020-12-12,"Guam",NA,2
+2020-12-12,"Guam","66",2
 2020-12-12,"Hawaii","15",10
 2020-12-12,"Iowa","19",526
 2020-12-12,"Idaho","16",137
@@ -2582,7 +2582,7 @@
 2020-12-12,"Michigan","26",869
 2020-12-12,"Minnesota","27",439
 2020-12-12,"Missouri","29",326
-2020-12-12,"Northern Mariana Islands",NA,0
+2020-12-12,"Northern Mariana Islands","69",0
 2020-12-12,"Mississippi","28",231
 2020-12-12,"Montana","30",82
 2020-12-12,"North Carolina","37",280
@@ -2597,7 +2597,7 @@
 2020-12-12,"Oklahoma","40",168
 2020-12-12,"Oregon","41",123
 2020-12-12,"Pennsylvania","42",1179
-2020-12-12,"Puerto Rico",NA,81
+2020-12-12,"Puerto Rico","72",81
 2020-12-12,"Rhode Island","44",140
 2020-12-12,"South Carolina","45",168
 2020-12-12,"South Dakota","46",148
@@ -2605,7 +2605,7 @@
 2020-12-12,"Texas","48",1189
 2020-12-12,"Utah","49",99
 2020-12-12,"Virginia","51",212
-2020-12-12,"Virgin Islands",NA,0
+2020-12-12,"Virgin Islands","78",0
 2020-12-12,"Vermont","50",16
 2020-12-12,"Washington","53",74
 2020-12-12,"Wisconsin","55",390
@@ -2614,16 +2614,16 @@
 2020-12-19,"Alaska","02",8
 2020-12-19,"Alabama","01",287
 2020-12-19,"Arkansas","05",280
-2020-12-19,"American Samoa",NA,0
+2020-12-19,"American Samoa","60",0
 2020-12-19,"Arizona","04",615
-2020-12-19,"California","06",1617
+2020-12-19,"California","06",1593
 2020-12-19,"Colorado","08",468
 2020-12-19,"Connecticut","09",218
 2020-12-19,"District of Columbia","11",17
 2020-12-19,"Delaware","10",65
 2020-12-19,"Florida","12",688
 2020-12-19,"Georgia","13",306
-2020-12-19,"Guam",NA,4
+2020-12-19,"Guam","66",4
 2020-12-19,"Hawaii","15",10
 2020-12-19,"Iowa","19",324
 2020-12-19,"Idaho","16",106
@@ -2638,7 +2638,7 @@
 2020-12-19,"Michigan","26",870
 2020-12-19,"Minnesota","27",421
 2020-12-19,"Missouri","29",446
-2020-12-19,"Northern Mariana Islands",NA,0
+2020-12-19,"Northern Mariana Islands","69",0
 2020-12-19,"Mississippi","28",210
 2020-12-19,"Montana","30",48
 2020-12-19,"North Carolina","37",388
@@ -2653,7 +2653,7 @@
 2020-12-19,"Oklahoma","40",147
 2020-12-19,"Oregon","41",190
 2020-12-19,"Pennsylvania","42",1401
-2020-12-19,"Puerto Rico",NA,76
+2020-12-19,"Puerto Rico","72",76
 2020-12-19,"Rhode Island","44",132
 2020-12-19,"South Carolina","45",210
 2020-12-19,"South Dakota","46",105
@@ -2661,7 +2661,7 @@
 2020-12-19,"Texas","48",1378
 2020-12-19,"Utah","49",110
 2020-12-19,"Virginia","51",234
-2020-12-19,"Virgin Islands",NA,0
+2020-12-19,"Virgin Islands","78",0
 2020-12-19,"Vermont","50",13
 2020-12-19,"Washington","53",163
 2020-12-19,"Wisconsin","55",398
@@ -2670,16 +2670,16 @@
 2020-12-26,"Alaska","02",17
 2020-12-26,"Alabama","01",296
 2020-12-26,"Arkansas","05",250
-2020-12-26,"American Samoa",NA,0
+2020-12-26,"American Samoa","60",0
 2020-12-26,"Arizona","04",487
-2020-12-26,"California","06",1626
+2020-12-26,"California","06",1510
 2020-12-26,"Colorado","08",253
 2020-12-26,"Connecticut","09",210
 2020-12-26,"District of Columbia","11",32
 2020-12-26,"Delaware","10",65
 2020-12-26,"Florida","12",662
 2020-12-26,"Georgia","13",304
-2020-12-26,"Guam",NA,2
+2020-12-26,"Guam","66",2
 2020-12-26,"Hawaii","15",4
 2020-12-26,"Iowa","19",211
 2020-12-26,"Idaho","16",79
@@ -2694,7 +2694,7 @@
 2020-12-26,"Michigan","26",608
 2020-12-26,"Minnesota","27",327
 2020-12-26,"Missouri","29",423
-2020-12-26,"Northern Mariana Islands",NA,0
+2020-12-26,"Northern Mariana Islands","69",0
 2020-12-26,"Mississippi","28",175
 2020-12-26,"Montana","30",55
 2020-12-26,"North Carolina","37",342
@@ -2709,7 +2709,7 @@
 2020-12-26,"Oklahoma","40",168
 2020-12-26,"Oregon","41",82
 2020-12-26,"Pennsylvania","42",1136
-2020-12-26,"Puerto Rico",NA,90
+2020-12-26,"Puerto Rico","72",90
 2020-12-26,"Rhode Island","44",102
 2020-12-26,"South Carolina","45",229
 2020-12-26,"South Dakota","46",95
@@ -2717,7 +2717,7 @@
 2020-12-26,"Texas","48",1155
 2020-12-26,"Utah","49",64
 2020-12-26,"Virginia","51",197
-2020-12-26,"Virgin Islands",NA,0
+2020-12-26,"Virgin Islands","78",0
 2020-12-26,"Vermont","50",13
 2020-12-26,"Washington","53",80
 2020-12-26,"Wisconsin","55",307
@@ -2726,16 +2726,16 @@
 2021-01-02,"Alaska","02",15
 2021-01-02,"Alabama","01",187
 2021-01-02,"Arkansas","05",288
-2021-01-02,"American Samoa",NA,0
+2021-01-02,"American Samoa","60",0
 2021-01-02,"Arizona","04",637
-2021-01-02,"California","06",2357
+2021-01-02,"California","06",2370
 2021-01-02,"Colorado","08",320
 2021-01-02,"Connecticut","09",308
 2021-01-02,"District of Columbia","11",30
 2021-01-02,"Delaware","10",55
 2021-01-02,"Florida","12",755
 2021-01-02,"Georgia","13",275
-2021-01-02,"Guam",NA,1
+2021-01-02,"Guam","66",1
 2021-01-02,"Hawaii","15",4
 2021-01-02,"Iowa","19",203
 2021-01-02,"Idaho","16",94
@@ -2750,7 +2750,7 @@
 2021-01-02,"Michigan","26",609
 2021-01-02,"Minnesota","27",270
 2021-01-02,"Missouri","29",251
-2021-01-02,"Northern Mariana Islands",NA,0
+2021-01-02,"Northern Mariana Islands","69",0
 2021-01-02,"Mississippi","28",275
 2021-01-02,"Montana","30",52
 2021-01-02,"North Carolina","37",366
@@ -2761,11 +2761,11 @@
 2021-01-02,"New Mexico","35",218
 2021-01-02,"Nevada","32",206
 2021-01-02,"New York","36",985
-2021-01-02,"Ohio","39",1117
+2021-01-02,"Ohio","39",1118
 2021-01-02,"Oklahoma","40",170
 2021-01-02,"Oregon","41",70
 2021-01-02,"Pennsylvania","42",1347
-2021-01-02,"Puerto Rico",NA,94
+2021-01-02,"Puerto Rico","72",94
 2021-01-02,"Rhode Island","44",101
 2021-01-02,"South Carolina","45",261
 2021-01-02,"South Dakota","46",54
@@ -2773,7 +2773,7 @@
 2021-01-02,"Texas","48",1367
 2021-01-02,"Utah","49",82
 2021-01-02,"Virginia","51",277
-2021-01-02,"Virgin Islands",NA,0
+2021-01-02,"Virgin Islands","78",0
 2021-01-02,"Vermont","50",18
 2021-01-02,"Washington","53",277
 2021-01-02,"Wisconsin","55",227
@@ -2782,16 +2782,16 @@
 2021-01-09,"Alaska","02",8
 2021-01-09,"Alabama","01",427
 2021-01-09,"Arkansas","05",281
-2021-01-09,"American Samoa",NA,0
+2021-01-09,"American Samoa","60",0
 2021-01-09,"Arizona","04",975
-2021-01-09,"California","06",3141
+2021-01-09,"California","06",3015
 2021-01-09,"Colorado","08",278
 2021-01-09,"Connecticut","09",225
 2021-01-09,"District of Columbia","11",21
 2021-01-09,"Delaware","10",56
 2021-01-09,"Florida","12",914
 2021-01-09,"Georgia","13",497
-2021-01-09,"Guam",NA,2
+2021-01-09,"Guam","66",2
 2021-01-09,"Hawaii","15",19
 2021-01-09,"Iowa","19",181
 2021-01-09,"Idaho","16",80
@@ -2806,7 +2806,7 @@
 2021-01-09,"Michigan","26",833
 2021-01-09,"Minnesota","27",295
 2021-01-09,"Missouri","29",422
-2021-01-09,"Northern Mariana Islands",NA,0
+2021-01-09,"Northern Mariana Islands","69",0
 2021-01-09,"Mississippi","28",306
 2021-01-09,"Montana","30",83
 2021-01-09,"North Carolina","37",533
@@ -2817,11 +2817,11 @@
 2021-01-09,"New Mexico","35",198
 2021-01-09,"Nevada","32",302
 2021-01-09,"New York","36",1195
-2021-01-09,"Ohio","39",976
+2021-01-09,"Ohio","39",980
 2021-01-09,"Oklahoma","40",211
 2021-01-09,"Oregon","41",111
 2021-01-09,"Pennsylvania","42",1437
-2021-01-09,"Puerto Rico",NA,90
+2021-01-09,"Puerto Rico","72",90
 2021-01-09,"Rhode Island","44",105
 2021-01-09,"South Carolina","45",373
 2021-01-09,"South Dakota","46",68
@@ -2829,7 +2829,7 @@
 2021-01-09,"Texas","48",1871
 2021-01-09,"Utah","49",96
 2021-01-09,"Virginia","51",264
-2021-01-09,"Virgin Islands",NA,1
+2021-01-09,"Virgin Islands","78",1
 2021-01-09,"Vermont","50",17
 2021-01-09,"Washington","53",237
 2021-01-09,"Wisconsin","55",311
@@ -2838,16 +2838,16 @@
 2021-01-16,"Alaska","02",5
 2021-01-16,"Alabama","01",820
 2021-01-16,"Arkansas","05",283
-2021-01-16,"American Samoa",NA,0
+2021-01-16,"American Samoa","60",0
 2021-01-16,"Arizona","04",1212
-2021-01-16,"California","06",3652
+2021-01-16,"California","06",3310
 2021-01-16,"Colorado","08",173
 2021-01-16,"Connecticut","09",270
 2021-01-16,"District of Columbia","11",34
 2021-01-16,"Delaware","10",60
 2021-01-16,"Florida","12",1200
 2021-01-16,"Georgia","13",834
-2021-01-16,"Guam",NA,1
+2021-01-16,"Guam","66",1
 2021-01-16,"Hawaii","15",12
 2021-01-16,"Iowa","19",194
 2021-01-16,"Idaho","16",77
@@ -2862,7 +2862,7 @@
 2021-01-16,"Michigan","26",520
 2021-01-16,"Minnesota","27",224
 2021-01-16,"Missouri","29",350
-2021-01-16,"Northern Mariana Islands",NA,0
+2021-01-16,"Northern Mariana Islands","69",0
 2021-01-16,"Mississippi","28",335
 2021-01-16,"Montana","30",34
 2021-01-16,"North Carolina","37",591
@@ -2873,11 +2873,11 @@
 2021-01-16,"New Mexico","35",178
 2021-01-16,"Nevada","32",311
 2021-01-16,"New York","36",1333
-2021-01-16,"Ohio","39",961
+2021-01-16,"Ohio","39",963
 2021-01-16,"Oklahoma","40",214
 2021-01-16,"Oregon","41",196
 2021-01-16,"Pennsylvania","42",1513
-2021-01-16,"Puerto Rico",NA,87
+2021-01-16,"Puerto Rico","72",87
 2021-01-16,"Rhode Island","44",99
 2021-01-16,"South Carolina","45",350
 2021-01-16,"South Dakota","46",61
@@ -2885,7 +2885,7 @@
 2021-01-16,"Texas","48",2115
 2021-01-16,"Utah","49",95
 2021-01-16,"Virginia","51",325
-2021-01-16,"Virgin Islands",NA,0
+2021-01-16,"Virgin Islands","78",0
 2021-01-16,"Vermont","50",7
 2021-01-16,"Washington","53",205
 2021-01-16,"Wisconsin","55",338
@@ -2894,16 +2894,16 @@
 2021-01-23,"Alaska","02",30
 2021-01-23,"Alabama","01",538
 2021-01-23,"Arkansas","05",270
-2021-01-23,"American Samoa",NA,0
+2021-01-23,"American Samoa","60",0
 2021-01-23,"Arizona","04",922
-2021-01-23,"California","06",3516
+2021-01-23,"California","06",3419
 2021-01-23,"Colorado","08",119
 2021-01-23,"Connecticut","09",225
 2021-01-23,"District of Columbia","11",23
 2021-01-23,"Delaware","10",66
 2021-01-23,"Florida","12",1160
 2021-01-23,"Georgia","13",955
-2021-01-23,"Guam",NA,3
+2021-01-23,"Guam","66",3
 2021-01-23,"Hawaii","15",16
 2021-01-23,"Iowa","19",165
 2021-01-23,"Idaho","16",63
@@ -2918,7 +2918,7 @@
 2021-01-23,"Michigan","26",510
 2021-01-23,"Minnesota","27",176
 2021-01-23,"Missouri","29",318
-2021-01-23,"Northern Mariana Islands",NA,0
+2021-01-23,"Northern Mariana Islands","69",0
 2021-01-23,"Mississippi","28",271
 2021-01-23,"Montana","30",53
 2021-01-23,"North Carolina","37",570
@@ -2929,11 +2929,11 @@
 2021-01-23,"New Mexico","35",205
 2021-01-23,"Nevada","32",250
 2021-01-23,"New York","36",1329
-2021-01-23,"Ohio","39",763
+2021-01-23,"Ohio","39",766
 2021-01-23,"Oklahoma","40",279
 2021-01-23,"Oregon","41",78
 2021-01-23,"Pennsylvania","42",1304
-2021-01-23,"Puerto Rico",NA,68
+2021-01-23,"Puerto Rico","72",68
 2021-01-23,"Rhode Island","44",95
 2021-01-23,"South Carolina","45",371
 2021-01-23,"South Dakota","46",61
@@ -2941,7 +2941,7 @@
 2021-01-23,"Texas","48",2297
 2021-01-23,"Utah","49",97
 2021-01-23,"Virginia","51",373
-2021-01-23,"Virgin Islands",NA,0
+2021-01-23,"Virgin Islands","78",0
 2021-01-23,"Vermont","50",7
 2021-01-23,"Washington","53",211
 2021-01-23,"Wisconsin","55",279
@@ -2950,16 +2950,16 @@
 2021-01-30,"Alaska","02",3
 2021-01-30,"Alabama","01",909
 2021-01-30,"Arkansas","05",275
-2021-01-30,"American Samoa",NA,0
+2021-01-30,"American Samoa","60",0
 2021-01-30,"Arizona","04",928
-2021-01-30,"California","06",3864
+2021-01-30,"California","06",3690
 2021-01-30,"Colorado","08",138
 2021-01-30,"Connecticut","09",227
 2021-01-30,"District of Columbia","11",39
 2021-01-30,"Delaware","10",47
 2021-01-30,"Florida","12",1196
 2021-01-30,"Georgia","13",950
-2021-01-30,"Guam",NA,1
+2021-01-30,"Guam","66",1
 2021-01-30,"Hawaii","15",71
 2021-01-30,"Iowa","19",165
 2021-01-30,"Idaho","16",57
@@ -2974,7 +2974,7 @@
 2021-01-30,"Michigan","26",340
 2021-01-30,"Minnesota","27",124
 2021-01-30,"Missouri","29",229
-2021-01-30,"Northern Mariana Islands",NA,0
+2021-01-30,"Northern Mariana Islands","69",0
 2021-01-30,"Mississippi","28",266
 2021-01-30,"Montana","30",91
 2021-01-30,"North Carolina","37",701
@@ -2985,11 +2985,11 @@
 2021-01-30,"New Mexico","35",150
 2021-01-30,"Nevada","32",253
 2021-01-30,"New York","36",1318
-2021-01-30,"Ohio","39",625
+2021-01-30,"Ohio","39",627
 2021-01-30,"Oklahoma","40",273
 2021-01-30,"Oregon","41",80
 2021-01-30,"Pennsylvania","42",1071
-2021-01-30,"Puerto Rico",NA,52
+2021-01-30,"Puerto Rico","72",52
 2021-01-30,"Rhode Island","44",77
 2021-01-30,"South Carolina","45",535
 2021-01-30,"South Dakota","46",76
@@ -2997,7 +2997,7 @@
 2021-01-30,"Texas","48",2199
 2021-01-30,"Utah","49",81
 2021-01-30,"Virginia","51",370
-2021-01-30,"Virgin Islands",NA,0
+2021-01-30,"Virgin Islands","78",0
 2021-01-30,"Vermont","50",3
 2021-01-30,"Washington","53",171
 2021-01-30,"Wisconsin","55",246
@@ -3006,16 +3006,16 @@
 2021-02-06,"Alaska","02",17
 2021-02-06,"Alabama","01",947
 2021-02-06,"Arkansas","05",223
-2021-02-06,"American Samoa",NA,0
+2021-02-06,"American Samoa","60",0
 2021-02-06,"Arizona","04",913
-2021-02-06,"California","06",3393
+2021-02-06,"California","06",3528
 2021-02-06,"Colorado","08",102
 2021-02-06,"Connecticut","09",168
 2021-02-06,"District of Columbia","11",38
 2021-02-06,"Delaware","10",28
 2021-02-06,"Florida","12",1239
 2021-02-06,"Georgia","13",894
-2021-02-06,"Guam",NA,0
+2021-02-06,"Guam","66",0
 2021-02-06,"Hawaii","15",9
 2021-02-06,"Iowa","19",457
 2021-02-06,"Idaho","16",42
@@ -3030,7 +3030,7 @@
 2021-02-06,"Michigan","26",325
 2021-02-06,"Minnesota","27",102
 2021-02-06,"Missouri","29",402
-2021-02-06,"Northern Mariana Islands",NA,0
+2021-02-06,"Northern Mariana Islands","69",0
 2021-02-06,"Mississippi","28",248
 2021-02-06,"Montana","30",80
 2021-02-06,"North Carolina","37",639
@@ -3045,7 +3045,7 @@
 2021-02-06,"Oklahoma","40",257
 2021-02-06,"Oregon","41",63
 2021-02-06,"Pennsylvania","42",798
-2021-02-06,"Puerto Rico",NA,49
+2021-02-06,"Puerto Rico","72",49
 2021-02-06,"Rhode Island","44",67
 2021-02-06,"South Carolina","45",597
 2021-02-06,"South Dakota","46",28
@@ -3053,7 +3053,7 @@
 2021-02-06,"Texas","48",2258
 2021-02-06,"Utah","49",70
 2021-02-06,"Virginia","51",324
-2021-02-06,"Virgin Islands",NA,0
+2021-02-06,"Virgin Islands","78",0
 2021-02-06,"Vermont","50",9
 2021-02-06,"Washington","53",164
 2021-02-06,"Wisconsin","55",181
@@ -3062,16 +3062,16 @@
 2021-02-13,"Alaska","02",3
 2021-02-13,"Alabama","01",729
 2021-02-13,"Arkansas","05",191
-2021-02-13,"American Samoa",NA,0
+2021-02-13,"American Samoa","60",0
 2021-02-13,"Arizona","04",937
-2021-02-13,"California","06",2976
+2021-02-13,"California","06",2995
 2021-02-13,"Colorado","08",92
 2021-02-13,"Connecticut","09",167
 2021-02-13,"District of Columbia","11",32
 2021-02-13,"Delaware","10",27
 2021-02-13,"Florida","12",1084
 2021-02-13,"Georgia","13",760
-2021-02-13,"Guam",NA,1
+2021-02-13,"Guam","66",1
 2021-02-13,"Hawaii","15",9
 2021-02-13,"Iowa","19",128
 2021-02-13,"Idaho","16",36
@@ -3086,7 +3086,7 @@
 2021-02-13,"Michigan","26",264
 2021-02-13,"Minnesota","27",80
 2021-02-13,"Missouri","29",308
-2021-02-13,"Northern Mariana Islands",NA,0
+2021-02-13,"Northern Mariana Islands","69",0
 2021-02-13,"Mississippi","28",195
 2021-02-13,"Montana","30",15
 2021-02-13,"North Carolina","37",527
@@ -3097,11 +3097,11 @@
 2021-02-13,"New Mexico","35",130
 2021-02-13,"Nevada","32",198
 2021-02-13,"New York","36",1088
-2021-02-13,"Ohio","39",367
+2021-02-13,"Ohio","39",368
 2021-02-13,"Oklahoma","40",233
 2021-02-13,"Oregon","41",117
 2021-02-13,"Pennsylvania","42",674
-2021-02-13,"Puerto Rico",NA,43
+2021-02-13,"Puerto Rico","72",43
 2021-02-13,"Rhode Island","44",59
 2021-02-13,"South Carolina","45",300
 2021-02-13,"South Dakota","46",31
@@ -3109,7 +3109,7 @@
 2021-02-13,"Texas","48",1967
 2021-02-13,"Utah","49",57
 2021-02-13,"Virginia","51",223
-2021-02-13,"Virgin Islands",NA,1
+2021-02-13,"Virgin Islands","78",1
 2021-02-13,"Vermont","50",7
 2021-02-13,"Washington","53",226
 2021-02-13,"Wisconsin","55",133
@@ -3118,16 +3118,16 @@
 2021-02-20,"Alaska","02",7
 2021-02-20,"Alabama","01",348
 2021-02-20,"Arkansas","05",96
-2021-02-20,"American Samoa",NA,0
+2021-02-20,"American Samoa","60",0
 2021-02-20,"Arizona","04",532
-2021-02-20,"California","06",2348
+2021-02-20,"California","06",2406
 2021-02-20,"Colorado","08",73
 2021-02-20,"Connecticut","09",142
 2021-02-20,"District of Columbia","11",15
 2021-02-20,"Delaware","10",10
 2021-02-20,"Florida","12",1130
 2021-02-20,"Georgia","13",892
-2021-02-20,"Guam",NA,0
+2021-02-20,"Guam","66",0
 2021-02-20,"Hawaii","15",5
 2021-02-20,"Iowa","19",100
 2021-02-20,"Idaho","16",23
@@ -3142,7 +3142,7 @@
 2021-02-20,"Michigan","26",222
 2021-02-20,"Minnesota","27",54
 2021-02-20,"Missouri","29",279
-2021-02-20,"Northern Mariana Islands",NA,0
+2021-02-20,"Northern Mariana Islands","69",0
 2021-02-20,"Mississippi","28",92
 2021-02-20,"Montana","30",14
 2021-02-20,"North Carolina","37",443
@@ -3153,11 +3153,11 @@
 2021-02-20,"New Mexico","35",94
 2021-02-20,"Nevada","32",174
 2021-02-20,"New York","36",946
-2021-02-20,"Ohio","39",316
+2021-02-20,"Ohio","39",317
 2021-02-20,"Oklahoma","40",161
 2021-02-20,"Oregon","41",17
 2021-02-20,"Pennsylvania","42",495
-2021-02-20,"Puerto Rico",NA,42
+2021-02-20,"Puerto Rico","72",42
 2021-02-20,"Rhode Island","44",26
 2021-02-20,"South Carolina","45",345
 2021-02-20,"South Dakota","46",19
@@ -3165,7 +3165,7 @@
 2021-02-20,"Texas","48",892
 2021-02-20,"Utah","49",52
 2021-02-20,"Virginia","51",201
-2021-02-20,"Virgin Islands",NA,0
+2021-02-20,"Virgin Islands","78",0
 2021-02-20,"Vermont","50",7
 2021-02-20,"Washington","53",147
 2021-02-20,"Wisconsin","55",127
@@ -3174,16 +3174,16 @@
 2021-02-27,"Alaska","02",1
 2021-02-27,"Alabama","01",340
 2021-02-27,"Arkansas","05",69
-2021-02-27,"American Samoa",NA,0
+2021-02-27,"American Samoa","60",0
 2021-02-27,"Arizona","04",487
-2021-02-27,"California","06",2911
+2021-02-27,"California","06",2940
 2021-02-27,"Colorado","08",58
 2021-02-27,"Connecticut","09",99
 2021-02-27,"District of Columbia","11",16
 2021-02-27,"Delaware","10",52
 2021-02-27,"Florida","12",921
 2021-02-27,"Georgia","13",552
-2021-02-27,"Guam",NA,1
+2021-02-27,"Guam","66",1
 2021-02-27,"Hawaii","15",9
 2021-02-27,"Iowa","19",134
 2021-02-27,"Idaho","16",34
@@ -3198,7 +3198,7 @@
 2021-02-27,"Michigan","26",166
 2021-02-27,"Minnesota","27",52
 2021-02-27,"Missouri","29",223
-2021-02-27,"Northern Mariana Islands",NA,0
+2021-02-27,"Northern Mariana Islands","69",0
 2021-02-27,"Mississippi","28",116
 2021-02-27,"Montana","30",15
 2021-02-27,"North Carolina","37",316
@@ -3209,11 +3209,11 @@
 2021-02-27,"New Mexico","35",90
 2021-02-27,"Nevada","32",89
 2021-02-27,"New York","36",788
-2021-02-27,"Ohio","39",220
+2021-02-27,"Ohio","39",221
 2021-02-27,"Oklahoma","40",224
 2021-02-27,"Oregon","41",54
 2021-02-27,"Pennsylvania","42",357
-2021-02-27,"Puerto Rico",NA,75
+2021-02-27,"Puerto Rico","72",75
 2021-02-27,"Rhode Island","44",17
 2021-02-27,"South Carolina","45",242
 2021-02-27,"South Dakota","46",27
@@ -3221,7 +3221,7 @@
 2021-02-27,"Texas","48",1478
 2021-02-27,"Utah","49",87
 2021-02-27,"Virginia","51",1185
-2021-02-27,"Virgin Islands",NA,0
+2021-02-27,"Virgin Islands","78",0
 2021-02-27,"Vermont","50",8
 2021-02-27,"Washington","53",134
 2021-02-27,"Wisconsin","55",143
@@ -3230,16 +3230,16 @@
 2021-03-06,"Alaska","02",15
 2021-03-06,"Alabama","01",219
 2021-03-06,"Arkansas","05",-120
-2021-03-06,"American Samoa",NA,0
+2021-03-06,"American Samoa","60",0
 2021-03-06,"Arizona","04",356
-2021-03-06,"California","06",2160
+2021-03-06,"California","06",2041
 2021-03-06,"Colorado","08",41
 2021-03-06,"Connecticut","09",82
 2021-03-06,"District of Columbia","11",20
 2021-03-06,"Delaware","10",46
 2021-03-06,"Florida","12",886
 2021-03-06,"Georgia","13",611
-2021-03-06,"Guam",NA,2
+2021-03-06,"Guam","66",2
 2021-03-06,"Hawaii","15",5
 2021-03-06,"Iowa","19",82
 2021-03-06,"Idaho","16",19
@@ -3254,7 +3254,7 @@
 2021-03-06,"Michigan","26",150
 2021-03-06,"Minnesota","27",71
 2021-03-06,"Missouri","29",230
-2021-03-06,"Northern Mariana Islands",NA,0
+2021-03-06,"Northern Mariana Islands","69",0
 2021-03-06,"Mississippi","28",136
 2021-03-06,"Montana","30",23
 2021-03-06,"North Carolina","37",290
@@ -3265,11 +3265,11 @@
 2021-03-06,"New Mexico","35",96
 2021-03-06,"Nevada","32",79
 2021-03-06,"New York","36",745
-2021-03-06,"Ohio","39",187
+2021-03-06,"Ohio","39",188
 2021-03-06,"Oklahoma","40",155
 2021-03-06,"Oregon","41",88
 2021-03-06,"Pennsylvania","42",405
-2021-03-06,"Puerto Rico",NA,27
+2021-03-06,"Puerto Rico","72",27
 2021-03-06,"Rhode Island","44",39
 2021-03-06,"South Carolina","45",221
 2021-03-06,"South Dakota","46",12
@@ -3277,7 +3277,7 @@
 2021-03-06,"Texas","48",1730
 2021-03-06,"Utah","49",46
 2021-03-06,"Virginia","51",1137
-2021-03-06,"Virgin Islands",NA,0
+2021-03-06,"Virgin Islands","78",0
 2021-03-06,"Vermont","50",4
 2021-03-06,"Washington","53",85
 2021-03-06,"Wisconsin","55",89
@@ -3286,16 +3286,16 @@
 2021-03-13,"Alaska","02",1
 2021-03-13,"Alabama","01",178
 2021-03-13,"Arkansas","05",158
-2021-03-13,"American Samoa",NA,0
+2021-03-13,"American Samoa","60",0
 2021-03-13,"Arizona","04",223
-2021-03-13,"California","06",1504
+2021-03-13,"California","06",1329
 2021-03-13,"Colorado","08",50
 2021-03-13,"Connecticut","09",61
 2021-03-13,"District of Columbia","11",10
 2021-03-13,"Delaware","10",40
 2021-03-13,"Florida","12",605
 2021-03-13,"Georgia","13",311
-2021-03-13,"Guam",NA,0
+2021-03-13,"Guam","66",0
 2021-03-13,"Hawaii","15",6
 2021-03-13,"Iowa","19",81
 2021-03-13,"Idaho","16",31
@@ -3310,7 +3310,7 @@
 2021-03-13,"Michigan","26",110
 2021-03-13,"Minnesota","27",195
 2021-03-13,"Missouri","29",148
-2021-03-13,"Northern Mariana Islands",NA,0
+2021-03-13,"Northern Mariana Islands","69",0
 2021-03-13,"Mississippi","28",91
 2021-03-13,"Montana","30",13
 2021-03-13,"North Carolina","37",189
@@ -3321,11 +3321,11 @@
 2021-03-13,"New Mexico","35",54
 2021-03-13,"Nevada","32",81
 2021-03-13,"New York","36",603
-2021-03-13,"Ohio","39",163
+2021-03-13,"Ohio","39",164
 2021-03-13,"Oklahoma","40",167
 2021-03-13,"Oregon","41",26
 2021-03-13,"Pennsylvania","42",199
-2021-03-13,"Puerto Rico",NA,18
+2021-03-13,"Puerto Rico","72",18
 2021-03-13,"Rhode Island","44",26
 2021-03-13,"South Carolina","45",151
 2021-03-13,"South Dakota","46",11
@@ -3333,7 +3333,7 @@
 2021-03-13,"Texas","48",1117
 2021-03-13,"Utah","49",46
 2021-03-13,"Virginia","51",466
-2021-03-13,"Virgin Islands",NA,0
+2021-03-13,"Virgin Islands","78",0
 2021-03-13,"Vermont","50",6
 2021-03-13,"Washington","53",82
 2021-03-13,"Wisconsin","55",75
@@ -3342,16 +3342,16 @@
 2021-03-20,"Alaska","02",4
 2021-03-20,"Alabama","01",109
 2021-03-20,"Arkansas","05",78
-2021-03-20,"American Samoa",NA,0
+2021-03-20,"American Samoa","60",0
 2021-03-20,"Arizona","04",187
-2021-03-20,"California","06",997
+2021-03-20,"California","06",921
 2021-03-20,"Colorado","08",32
 2021-03-20,"Connecticut","09",67
 2021-03-20,"District of Columbia","11",9
 2021-03-20,"Delaware","10",22
 2021-03-20,"Florida","12",488
 2021-03-20,"Georgia","13",314
-2021-03-20,"Guam",NA,1
+2021-03-20,"Guam","66",1
 2021-03-20,"Hawaii","15",3
 2021-03-20,"Iowa","19",41
 2021-03-20,"Idaho","16",31
@@ -3366,7 +3366,7 @@
 2021-03-20,"Michigan","26",137
 2021-03-20,"Minnesota","27",36
 2021-03-20,"Missouri","29",53
-2021-03-20,"Northern Mariana Islands",NA,0
+2021-03-20,"Northern Mariana Islands","69",0
 2021-03-20,"Mississippi","28",59
 2021-03-20,"Montana","30",22
 2021-03-20,"North Carolina","37",129
@@ -3377,11 +3377,11 @@
 2021-03-20,"New Mexico","35",39
 2021-03-20,"Nevada","32",54
 2021-03-20,"New York","36",553
-2021-03-20,"Ohio","39",117
+2021-03-20,"Ohio","39",118
 2021-03-20,"Oklahoma","40",87
 2021-03-20,"Oregon","41",40
 2021-03-20,"Pennsylvania","42",276
-2021-03-20,"Puerto Rico",NA,19
+2021-03-20,"Puerto Rico","72",19
 2021-03-20,"Rhode Island","44",28
 2021-03-20,"South Carolina","45",107
 2021-03-20,"South Dakota","46",13
@@ -3389,7 +3389,7 @@
 2021-03-20,"Texas","48",932
 2021-03-20,"Utah","49",39
 2021-03-20,"Virginia","51",119
-2021-03-20,"Virgin Islands",NA,0
+2021-03-20,"Virgin Islands","78",0
 2021-03-20,"Vermont","50",5
 2021-03-20,"Washington","53",51
 2021-03-20,"Wisconsin","55",62
@@ -3398,16 +3398,16 @@
 2021-03-27,"Alaska","02",3
 2021-03-27,"Alabama","01",90
 2021-03-27,"Arkansas","05",57
-2021-03-27,"American Samoa",NA,0
+2021-03-27,"American Samoa","60",0
 2021-03-27,"Arizona","04",179
-2021-03-27,"California","06",1495
+2021-03-27,"California","06",1697
 2021-03-27,"Colorado","08",21
 2021-03-27,"Connecticut","09",33
 2021-03-27,"District of Columbia","11",7
 2021-03-27,"Delaware","10",18
 2021-03-27,"Florida","12",429
 2021-03-27,"Georgia","13",396
-2021-03-27,"Guam",NA,0
+2021-03-27,"Guam","66",0
 2021-03-27,"Hawaii","15",9
 2021-03-27,"Iowa","19",44
 2021-03-27,"Idaho","16",13
@@ -3422,7 +3422,7 @@
 2021-03-27,"Michigan","26",141
 2021-03-27,"Minnesota","27",58
 2021-03-27,"Missouri","29",83
-2021-03-27,"Northern Mariana Islands",NA,0
+2021-03-27,"Northern Mariana Islands","69",0
 2021-03-27,"Mississippi","28",45
 2021-03-27,"Montana","30",22
 2021-03-27,"North Carolina","37",208
@@ -3437,7 +3437,7 @@
 2021-03-27,"Oklahoma","40",62
 2021-03-27,"Oregon","41",13
 2021-03-27,"Pennsylvania","42",170
-2021-03-27,"Puerto Rico",NA,16
+2021-03-27,"Puerto Rico","72",16
 2021-03-27,"Rhode Island","44",13
 2021-03-27,"South Carolina","45",127
 2021-03-27,"South Dakota","46",11
@@ -3445,7 +3445,7 @@
 2021-03-27,"Texas","48",741
 2021-03-27,"Utah","49",41
 2021-03-27,"Virginia","51",74
-2021-03-27,"Virgin Islands",NA,1
+2021-03-27,"Virgin Islands","78",1
 2021-03-27,"Vermont","50",5
 2021-03-27,"Washington","53",44
 2021-03-27,"Wisconsin","55",34
@@ -3454,16 +3454,16 @@
 2021-04-03,"Alaska","02",0
 2021-04-03,"Alabama","01",111
 2021-04-03,"Arkansas","05",51
-2021-04-03,"American Samoa",NA,0
+2021-04-03,"American Samoa","60",0
 2021-04-03,"Arizona","04",79
-2021-04-03,"California","06",856
+2021-04-03,"California","06",807
 2021-04-03,"Colorado","08",35
 2021-04-03,"Connecticut","09",39
 2021-04-03,"District of Columbia","11",14
 2021-04-03,"Delaware","10",21
 2021-04-03,"Florida","12",510
 2021-04-03,"Georgia","13",284
-2021-04-03,"Guam",NA,2
+2021-04-03,"Guam","66",2
 2021-04-03,"Hawaii","15",5
 2021-04-03,"Iowa","19",104
 2021-04-03,"Idaho","16",12
@@ -3478,7 +3478,7 @@
 2021-04-03,"Michigan","26",211
 2021-04-03,"Minnesota","27",50
 2021-04-03,"Missouri","29",70
-2021-04-03,"Northern Mariana Islands",NA,0
+2021-04-03,"Northern Mariana Islands","69",0
 2021-04-03,"Mississippi","28",55
 2021-04-03,"Montana","30",29
 2021-04-03,"North Carolina","37",108
@@ -3489,11 +3489,11 @@
 2021-04-03,"New Mexico","35",24
 2021-04-03,"Nevada","32",38
 2021-04-03,"New York","36",622
-2021-04-03,"Ohio","39",97
+2021-04-03,"Ohio","39",99
 2021-04-03,"Oklahoma","40",103
 2021-04-03,"Oregon","41",16
 2021-04-03,"Pennsylvania","42",208
-2021-04-03,"Puerto Rico",NA,14
+2021-04-03,"Puerto Rico","72",14
 2021-04-03,"Rhode Island","44",22
 2021-04-03,"South Carolina","45",92
 2021-04-03,"South Dakota","46",5
@@ -3501,7 +3501,7 @@
 2021-04-03,"Texas","48",637
 2021-04-03,"Utah","49",31
 2021-04-03,"Virginia","51",109
-2021-04-03,"Virgin Islands",NA,0
+2021-04-03,"Virgin Islands","78",0
 2021-04-03,"Vermont","50",5
 2021-04-03,"Washington","53",60
 2021-04-03,"Wisconsin","55",67
@@ -3510,16 +3510,16 @@
 2021-04-10,"Alaska","02",0
 2021-04-10,"Alabama","01",75
 2021-04-10,"Arkansas","05",20
-2021-04-10,"American Samoa",NA,0
+2021-04-10,"American Samoa","60",0
 2021-04-10,"Arizona","04",101
-2021-04-10,"California","06",700
+2021-04-10,"California","06",708
 2021-04-10,"Colorado","08",31
 2021-04-10,"Connecticut","09",40
 2021-04-10,"District of Columbia","11",11
 2021-04-10,"Delaware","10",12
 2021-04-10,"Florida","12",362
 2021-04-10,"Georgia","13",278
-2021-04-10,"Guam",NA,0
+2021-04-10,"Guam","66",0
 2021-04-10,"Hawaii","15",4
 2021-04-10,"Iowa","19",35
 2021-04-10,"Idaho","16",27
@@ -3534,7 +3534,7 @@
 2021-04-10,"Michigan","26",302
 2021-04-10,"Minnesota","27",69
 2021-04-10,"Missouri","29",18
-2021-04-10,"Northern Mariana Islands",NA,0
+2021-04-10,"Northern Mariana Islands","69",0
 2021-04-10,"Mississippi","28",40
 2021-04-10,"Montana","30",58
 2021-04-10,"North Carolina","37",112
@@ -3549,7 +3549,7 @@
 2021-04-10,"Oklahoma","40",1716
 2021-04-10,"Oregon","41",49
 2021-04-10,"Pennsylvania","42",225
-2021-04-10,"Puerto Rico",NA,28
+2021-04-10,"Puerto Rico","72",28
 2021-04-10,"Rhode Island","44",8
 2021-04-10,"South Carolina","45",77
 2021-04-10,"South Dakota","46",8
@@ -3557,7 +3557,7 @@
 2021-04-10,"Texas","48",512
 2021-04-10,"Utah","49",27
 2021-04-10,"Virginia","51",171
-2021-04-10,"Virgin Islands",NA,0
+2021-04-10,"Virgin Islands","78",0
 2021-04-10,"Vermont","50",2
 2021-04-10,"Washington","53",44
 2021-04-10,"Wisconsin","55",38
@@ -3566,16 +3566,16 @@
 2021-04-17,"Alaska","02",20
 2021-04-17,"Alabama","01",78
 2021-04-17,"Arkansas","05",32
-2021-04-17,"American Samoa",NA,0
+2021-04-17,"American Samoa","60",0
 2021-04-17,"Arizona","04",59
-2021-04-17,"California","06",591
+2021-04-17,"California","06",563
 2021-04-17,"Colorado","08",33
 2021-04-17,"Connecticut","09",51
 2021-04-17,"District of Columbia","11",14
 2021-04-17,"Delaware","10",25
 2021-04-17,"Florida","12",390
 2021-04-17,"Georgia","13",269
-2021-04-17,"Guam",NA,0
+2021-04-17,"Guam","66",0
 2021-04-17,"Hawaii","15",3
 2021-04-17,"Iowa","19",24
 2021-04-17,"Idaho","16",24
@@ -3590,7 +3590,7 @@
 2021-04-17,"Michigan","26",369
 2021-04-17,"Minnesota","27",61
 2021-04-17,"Missouri","29",125
-2021-04-17,"Northern Mariana Islands",NA,0
+2021-04-17,"Northern Mariana Islands","69",0
 2021-04-17,"Mississippi","28",58
 2021-04-17,"Montana","30",22
 2021-04-17,"North Carolina","37",139
@@ -3601,11 +3601,11 @@
 2021-04-17,"New Mexico","35",25
 2021-04-17,"Nevada","32",33
 2021-04-17,"New York","36",502
-2021-04-17,"Ohio","39",106
+2021-04-17,"Ohio","39",107
 2021-04-17,"Oklahoma","40",28
 2021-04-17,"Oregon","41",20
 2021-04-17,"Pennsylvania","42",261
-2021-04-17,"Puerto Rico",NA,46
+2021-04-17,"Puerto Rico","72",46
 2021-04-17,"Rhode Island","44",9
 2021-04-17,"South Carolina","45",48
 2021-04-17,"South Dakota","46",7
@@ -3613,7 +3613,7 @@
 2021-04-17,"Texas","48",374
 2021-04-17,"Utah","49",5
 2021-04-17,"Virginia","51",106
-2021-04-17,"Virgin Islands",NA,0
+2021-04-17,"Virgin Islands","78",0
 2021-04-17,"Vermont","50",11
 2021-04-17,"Washington","53",58
 2021-04-17,"Wisconsin","55",43
@@ -3622,16 +3622,16 @@
 2021-04-24,"Alaska","02",0
 2021-04-24,"Alabama","01",61
 2021-04-24,"Arkansas","05",24
-2021-04-24,"American Samoa",NA,0
+2021-04-24,"American Samoa","60",0
 2021-04-24,"Arizona","04",109
-2021-04-24,"California","06",446
+2021-04-24,"California","06",447
 2021-04-24,"Colorado","08",61
 2021-04-24,"Connecticut","09",52
 2021-04-24,"District of Columbia","11",4
 2021-04-24,"Delaware","10",13
 2021-04-24,"Florida","12",408
 2021-04-24,"Georgia","13",216
-2021-04-24,"Guam",NA,0
+2021-04-24,"Guam","66",0
 2021-04-24,"Hawaii","15",4
 2021-04-24,"Iowa","19",46
 2021-04-24,"Idaho","16",14
@@ -3646,7 +3646,7 @@
 2021-04-24,"Michigan","26",474
 2021-04-24,"Minnesota","27",67
 2021-04-24,"Missouri","29",63
-2021-04-24,"Northern Mariana Islands",NA,0
+2021-04-24,"Northern Mariana Islands","69",0
 2021-04-24,"Mississippi","28",22
 2021-04-24,"Montana","30",18
 2021-04-24,"North Carolina","37",136
@@ -3657,11 +3657,11 @@
 2021-04-24,"New Mexico","35",23
 2021-04-24,"Nevada","32",57
 2021-04-24,"New York","36",411
-2021-04-24,"Ohio","39",161
+2021-04-24,"Ohio","39",164
 2021-04-24,"Oklahoma","40",19
 2021-04-24,"Oregon","41",24
 2021-04-24,"Pennsylvania","42",316
-2021-04-24,"Puerto Rico",NA,64
+2021-04-24,"Puerto Rico","72",64
 2021-04-24,"Rhode Island","44",13
 2021-04-24,"South Carolina","45",93
 2021-04-24,"South Dakota","46",5
@@ -3669,7 +3669,7 @@
 2021-04-24,"Texas","48",359
 2021-04-24,"Utah","49",16
 2021-04-24,"Virginia","51",111
-2021-04-24,"Virgin Islands",NA,1
+2021-04-24,"Virgin Islands","78",1
 2021-04-24,"Vermont","50",2
 2021-04-24,"Washington","53",54
 2021-04-24,"Wisconsin","55",52
@@ -3678,16 +3678,16 @@
 2021-05-01,"Alaska","02",13
 2021-05-01,"Alabama","01",62
 2021-05-01,"Arkansas","05",24
-2021-05-01,"American Samoa",NA,0
+2021-05-01,"American Samoa","60",0
 2021-05-01,"Arizona","04",78
-2021-05-01,"California","06",407
+2021-05-01,"California","06",542
 2021-05-01,"Colorado","08",53
 2021-05-01,"Connecticut","09",50
 2021-05-01,"District of Columbia","11",6
 2021-05-01,"Delaware","10",11
 2021-05-01,"Florida","12",427
 2021-05-01,"Georgia","13",239
-2021-05-01,"Guam",NA,0
+2021-05-01,"Guam","66",0
 2021-05-01,"Hawaii","15",5
 2021-05-01,"Iowa","19",25
 2021-05-01,"Idaho","16",15
@@ -3702,7 +3702,7 @@
 2021-05-01,"Michigan","26",486
 2021-05-01,"Minnesota","27",97
 2021-05-01,"Missouri","29",73
-2021-05-01,"Northern Mariana Islands",NA,0
+2021-05-01,"Northern Mariana Islands","69",0
 2021-05-01,"Mississippi","28",24
 2021-05-01,"Montana","30",11
 2021-05-01,"North Carolina","37",128
@@ -3713,11 +3713,11 @@
 2021-05-01,"New Mexico","35",43
 2021-05-01,"Nevada","32",42
 2021-05-01,"New York","36",359
-2021-05-01,"Ohio","39",121
+2021-05-01,"Ohio","39",122
 2021-05-01,"Oklahoma","40",72
 2021-05-01,"Oregon","41",14
 2021-05-01,"Pennsylvania","42",257
-2021-05-01,"Puerto Rico",NA,49
+2021-05-01,"Puerto Rico","72",49
 2021-05-01,"Rhode Island","44",11
 2021-05-01,"South Carolina","45",92
 2021-05-01,"South Dakota","46",9
@@ -3725,7 +3725,7 @@
 2021-05-01,"Texas","48",353
 2021-05-01,"Utah","49",23
 2021-05-01,"Virginia","51",102
-2021-05-01,"Virgin Islands",NA,0
+2021-05-01,"Virgin Islands","78",0
 2021-05-01,"Vermont","50",3
 2021-05-01,"Washington","53",65
 2021-05-01,"Wisconsin","55",95
@@ -3734,16 +3734,16 @@
 2021-05-08,"Alaska","02",2
 2021-05-08,"Alabama","01",65
 2021-05-08,"Arkansas","05",19
-2021-05-08,"American Samoa",NA,0
+2021-05-08,"American Samoa","60",0
 2021-05-08,"Arizona","04",69
-2021-05-08,"California","06",389
+2021-05-08,"California","06",495
 2021-05-08,"Colorado","08",53
 2021-05-08,"Connecticut","09",40
 2021-05-08,"District of Columbia","11",5
 2021-05-08,"Delaware","10",10
 2021-05-08,"Florida","12",461
 2021-05-08,"Georgia","13",156
-2021-05-08,"Guam",NA,3
+2021-05-08,"Guam","66",3
 2021-05-08,"Hawaii","15",4
 2021-05-08,"Iowa","19",32
 2021-05-08,"Idaho","16",15
@@ -3758,7 +3758,7 @@
 2021-05-08,"Michigan","26",484
 2021-05-08,"Minnesota","27",70
 2021-05-08,"Missouri","29",79
-2021-05-08,"Northern Mariana Islands",NA,0
+2021-05-08,"Northern Mariana Islands","69",0
 2021-05-08,"Mississippi","28",29
 2021-05-08,"Montana","30",18
 2021-05-08,"North Carolina","37",129
@@ -3773,7 +3773,7 @@
 2021-05-08,"Oklahoma","40",44
 2021-05-08,"Oregon","41",30
 2021-05-08,"Pennsylvania","42",262
-2021-05-08,"Puerto Rico",NA,59
+2021-05-08,"Puerto Rico","72",59
 2021-05-08,"Rhode Island","44",16
 2021-05-08,"South Carolina","45",80
 2021-05-08,"South Dakota","46",13
@@ -3781,7 +3781,7 @@
 2021-05-08,"Texas","48",352
 2021-05-08,"Utah","49",20
 2021-05-08,"Virginia","51",108
-2021-05-08,"Virgin Islands",NA,0
+2021-05-08,"Virgin Islands","78",0
 2021-05-08,"Vermont","50",2
 2021-05-08,"Washington","53",65
 2021-05-08,"Wisconsin","55",83
@@ -3790,16 +3790,16 @@
 2021-05-15,"Alaska","02",4
 2021-05-15,"Alabama","01",60
 2021-05-15,"Arkansas","05",33
-2021-05-15,"American Samoa",NA,0
+2021-05-15,"American Samoa","60",0
 2021-05-15,"Arizona","04",52
-2021-05-15,"California","06",224
+2021-05-15,"California","06",269
 2021-05-15,"Colorado","08",87
 2021-05-15,"Connecticut","09",36
 2021-05-15,"District of Columbia","11",8
 2021-05-15,"Delaware","10",15
 2021-05-15,"Florida","12",356
 2021-05-15,"Georgia","13",137
-2021-05-15,"Guam",NA,1
+2021-05-15,"Guam","66",1
 2021-05-15,"Hawaii","15",4
 2021-05-15,"Iowa","19",16
 2021-05-15,"Idaho","16",8
@@ -3814,7 +3814,7 @@
 2021-05-15,"Michigan","26",416
 2021-05-15,"Minnesota","27",62
 2021-05-15,"Missouri","29",46
-2021-05-15,"Northern Mariana Islands",NA,0
+2021-05-15,"Northern Mariana Islands","69",0
 2021-05-15,"Mississippi","28",26
 2021-05-15,"Montana","30",6
 2021-05-15,"North Carolina","37",82
@@ -3829,7 +3829,7 @@
 2021-05-15,"Oklahoma","40",46
 2021-05-15,"Oregon","41",57
 2021-05-15,"Pennsylvania","42",226
-2021-05-15,"Puerto Rico",NA,63
+2021-05-15,"Puerto Rico","72",63
 2021-05-15,"Rhode Island","44",13
 2021-05-15,"South Carolina","45",52
 2021-05-15,"South Dakota","46",11
@@ -3837,7 +3837,7 @@
 2021-05-15,"Texas","48",314
 2021-05-15,"Utah","49",35
 2021-05-15,"Virginia","51",123
-2021-05-15,"Virgin Islands",NA,0
+2021-05-15,"Virgin Islands","78",0
 2021-05-15,"Vermont","50",3
 2021-05-15,"Washington","53",58
 2021-05-15,"Wisconsin","55",60
@@ -3846,16 +3846,16 @@
 2021-05-22,"Alaska","02",16
 2021-05-22,"Alabama","01",74
 2021-05-22,"Arkansas","05",23
-2021-05-22,"American Samoa",NA,0
+2021-05-22,"American Samoa","60",0
 2021-05-22,"Arizona","04",88
-2021-05-22,"California","06",248
+2021-05-22,"California","06",260
 2021-05-22,"Colorado","08",61
 2021-05-22,"Connecticut","09",39
 2021-05-22,"District of Columbia","11",7
 2021-05-22,"Delaware","10",8
 2021-05-22,"Florida","12",407
 2021-05-22,"Georgia","13",156
-2021-05-22,"Guam",NA,-1
+2021-05-22,"Guam","66",-1
 2021-05-22,"Hawaii","15",3
 2021-05-22,"Iowa","19",35
 2021-05-22,"Idaho","16",11
@@ -3870,7 +3870,7 @@
 2021-05-22,"Michigan","26",350
 2021-05-22,"Minnesota","27",77
 2021-05-22,"Missouri","29",150
-2021-05-22,"Northern Mariana Islands",NA,0
+2021-05-22,"Northern Mariana Islands","69",0
 2021-05-22,"Mississippi","28",25
 2021-05-22,"Montana","30",5
 2021-05-22,"North Carolina","37",96
@@ -3885,7 +3885,7 @@
 2021-05-22,"Oklahoma","40",40
 2021-05-22,"Oregon","41",33
 2021-05-22,"Pennsylvania","42",268
-2021-05-22,"Puerto Rico",NA,37
+2021-05-22,"Puerto Rico","72",37
 2021-05-22,"Rhode Island","44",4
 2021-05-22,"South Carolina","45",36
 2021-05-22,"South Dakota","46",10
@@ -3893,7 +3893,7 @@
 2021-05-22,"Texas","48",269
 2021-05-22,"Utah","49",32
 2021-05-22,"Virginia","51",89
-2021-05-22,"Virgin Islands",NA,0
+2021-05-22,"Virgin Islands","78",0
 2021-05-22,"Vermont","50",3
 2021-05-22,"Washington","53",80
 2021-05-22,"Wisconsin","55",36
@@ -3902,16 +3902,16 @@
 2021-05-29,"Alaska","02",0
 2021-05-29,"Alabama","01",34
 2021-05-29,"Arkansas","05",14
-2021-05-29,"American Samoa",NA,0
+2021-05-29,"American Samoa","60",0
 2021-05-29,"Arizona","04",81
-2021-05-29,"California","06",301
+2021-05-29,"California","06",282
 2021-05-29,"Colorado","08",73
 2021-05-29,"Connecticut","09",26
 2021-05-29,"District of Columbia","11",7
 2021-05-29,"Delaware","10",2
 2021-05-29,"Florida","12",311
 2021-05-29,"Georgia","13",176
-2021-05-29,"Guam",NA,0
+2021-05-29,"Guam","66",0
 2021-05-29,"Hawaii","15",5
 2021-05-29,"Iowa","19",20
 2021-05-29,"Idaho","16",10
@@ -3926,7 +3926,7 @@
 2021-05-29,"Michigan","26",236
 2021-05-29,"Minnesota","27",55
 2021-05-29,"Missouri","29",76
-2021-05-29,"Northern Mariana Islands",NA,0
+2021-05-29,"Northern Mariana Islands","69",0
 2021-05-29,"Mississippi","28",31
 2021-05-29,"Montana","30",10
 2021-05-29,"North Carolina","37",120
@@ -3937,11 +3937,11 @@
 2021-05-29,"New Mexico","35",132
 2021-05-29,"Nevada","32",34
 2021-05-29,"New York","36",159
-2021-05-29,"Ohio","39",90
+2021-05-29,"Ohio","39",92
 2021-05-29,"Oklahoma","40",373
 2021-05-29,"Oregon","41",48
 2021-05-29,"Pennsylvania","42",208
-2021-05-29,"Puerto Rico",NA,29
+2021-05-29,"Puerto Rico","72",29
 2021-05-29,"Rhode Island","44",4
 2021-05-29,"South Carolina","45",54
 2021-05-29,"South Dakota","46",9
@@ -3949,7 +3949,7 @@
 2021-05-29,"Texas","48",282
 2021-05-29,"Utah","49",11
 2021-05-29,"Virginia","51",63
-2021-05-29,"Virgin Islands",NA,0
+2021-05-29,"Virgin Islands","78",0
 2021-05-29,"Vermont","50",0
 2021-05-29,"Washington","53",63
 2021-05-29,"Wisconsin","55",82
@@ -3958,16 +3958,16 @@
 2021-06-05,"Alaska","02",0
 2021-06-05,"Alabama","01",52
 2021-06-05,"Arkansas","05",16
-2021-06-05,"American Samoa",NA,0
+2021-06-05,"American Samoa","60",0
 2021-06-05,"Arizona","04",70
-2021-06-05,"California","06",210
+2021-06-05,"California","06",442
 2021-06-05,"Colorado","08",37
 2021-06-05,"Connecticut","09",8
 2021-06-05,"District of Columbia","11",4
 2021-06-05,"Delaware","10",16
 2021-06-05,"Florida","12",211
 2021-06-05,"Georgia","13",149
-2021-06-05,"Guam",NA,0
+2021-06-05,"Guam","66",0
 2021-06-05,"Hawaii","15",3
 2021-06-05,"Iowa","19",13
 2021-06-05,"Idaho","16",11
@@ -3982,7 +3982,7 @@
 2021-06-05,"Michigan","26",210
 2021-06-05,"Minnesota","27",43
 2021-06-05,"Missouri","29",62
-2021-06-05,"Northern Mariana Islands",NA,0
+2021-06-05,"Northern Mariana Islands","69",0
 2021-06-05,"Mississippi","28",15
 2021-06-05,"Montana","30",19
 2021-06-05,"North Carolina","37",73
@@ -3997,7 +3997,7 @@
 2021-06-05,"Oklahoma","40",25
 2021-06-05,"Oregon","41",25
 2021-06-05,"Pennsylvania","42",140
-2021-06-05,"Puerto Rico",NA,17
+2021-06-05,"Puerto Rico","72",17
 2021-06-05,"Rhode Island","44",9
 2021-06-05,"South Carolina","45",24
 2021-06-05,"South Dakota","46",12
@@ -4005,7 +4005,7 @@
 2021-06-05,"Texas","48",210
 2021-06-05,"Utah","49",10
 2021-06-05,"Virginia","51",69
-2021-06-05,"Virgin Islands",NA,1
+2021-06-05,"Virgin Islands","78",1
 2021-06-05,"Vermont","50",1
 2021-06-05,"Washington","53",71
 2021-06-05,"Wisconsin","55",124
@@ -4014,16 +4014,16 @@
 2021-06-12,"Alaska","02",4
 2021-06-12,"Alabama","01",68
 2021-06-12,"Arkansas","05",14
-2021-06-12,"American Samoa",NA,0
+2021-06-12,"American Samoa","60",0
 2021-06-12,"Arizona","04",63
-2021-06-12,"California","06",177
+2021-06-12,"California","06",30
 2021-06-12,"Colorado","08",75
 2021-06-12,"Connecticut","09",15
 2021-06-12,"District of Columbia","11",2
 2021-06-12,"Delaware","10",2
 2021-06-12,"Florida","12",280
 2021-06-12,"Georgia","13",172
-2021-06-12,"Guam",NA,0
+2021-06-12,"Guam","66",0
 2021-06-12,"Hawaii","15",4
 2021-06-12,"Iowa","19",31
 2021-06-12,"Idaho","16",15
@@ -4038,7 +4038,7 @@
 2021-06-12,"Michigan","26",190
 2021-06-12,"Minnesota","27",42
 2021-06-12,"Missouri","29",57
-2021-06-12,"Northern Mariana Islands",NA,0
+2021-06-12,"Northern Mariana Islands","69",0
 2021-06-12,"Mississippi","28",28
 2021-06-12,"Montana","30",9
 2021-06-12,"North Carolina","37",114
@@ -4053,7 +4053,7 @@
 2021-06-12,"Oklahoma","40",9
 2021-06-12,"Oregon","41",38
 2021-06-12,"Pennsylvania","42",122
-2021-06-12,"Puerto Rico",NA,12
+2021-06-12,"Puerto Rico","72",12
 2021-06-12,"Rhode Island","44",5
 2021-06-12,"South Carolina","45",24
 2021-06-12,"South Dakota","46",4
@@ -4061,7 +4061,7 @@
 2021-06-12,"Texas","48",211
 2021-06-12,"Utah","49",12
 2021-06-12,"Virginia","51",64
-2021-06-12,"Virgin Islands",NA,0
+2021-06-12,"Virgin Islands","78",0
 2021-06-12,"Vermont","50",0
 2021-06-12,"Washington","53",-21
 2021-06-12,"Wisconsin","55",59
@@ -4070,23 +4070,23 @@
 2021-06-19,"Alaska","02",0
 2021-06-19,"Alabama","01",40
 2021-06-19,"Arkansas","05",14
-2021-06-19,"American Samoa",NA,0
+2021-06-19,"American Samoa","60",0
 2021-06-19,"Arizona","04",77
-2021-06-19,"California","06",116
+2021-06-19,"California","06",171
 2021-06-19,"Colorado","08",44
 2021-06-19,"Connecticut","09",9
 2021-06-19,"District of Columbia","11",3
 2021-06-19,"Delaware","10",3
 2021-06-19,"Florida","12",290
 2021-06-19,"Georgia","13",161
-2021-06-19,"Guam",NA,0
+2021-06-19,"Guam","66",0
 2021-06-19,"Hawaii","15",5
 2021-06-19,"Iowa","19",13
 2021-06-19,"Idaho","16",6
 2021-06-19,"Illinois","17",97
 2021-06-19,"Indiana","18",50
 2021-06-19,"Kansas","20",22
-2021-06-19,"Kentucky","21",25
+2021-06-19,"Kentucky","21",29
 2021-06-19,"Louisiana","22",40
 2021-06-19,"Massachusetts","25",24
 2021-06-19,"Maryland","24",24
@@ -4094,7 +4094,7 @@
 2021-06-19,"Michigan","26",83
 2021-06-19,"Minnesota","27",33
 2021-06-19,"Missouri","29",33
-2021-06-19,"Northern Mariana Islands",NA,0
+2021-06-19,"Northern Mariana Islands","69",0
 2021-06-19,"Mississippi","28",18
 2021-06-19,"Montana","30",10
 2021-06-19,"North Carolina","37",75
@@ -4109,7 +4109,7 @@
 2021-06-19,"Oklahoma","40",29
 2021-06-19,"Oregon","41",24
 2021-06-19,"Pennsylvania","42",94
-2021-06-19,"Puerto Rico",NA,10
+2021-06-19,"Puerto Rico","72",10
 2021-06-19,"Rhode Island","44",2
 2021-06-19,"South Carolina","45",16
 2021-06-19,"South Dakota","46",1
@@ -4117,7 +4117,7 @@
 2021-06-19,"Texas","48",186
 2021-06-19,"Utah","49",5
 2021-06-19,"Virginia","51",50
-2021-06-19,"Virgin Islands",NA,2
+2021-06-19,"Virgin Islands","78",2
 2021-06-19,"Vermont","50",0
 2021-06-19,"Washington","53",5
 2021-06-19,"Wisconsin","55",34
@@ -4126,23 +4126,23 @@
 2021-06-26,"Alaska","02",1
 2021-06-26,"Alabama","01",30
 2021-06-26,"Arkansas","05",19
-2021-06-26,"American Samoa",NA,0
+2021-06-26,"American Samoa","60",0
 2021-06-26,"Arizona","04",76
-2021-06-26,"California","06",259
+2021-06-26,"California","06",293
 2021-06-26,"Colorado","08",38
 2021-06-26,"Connecticut","09",5
 2021-06-26,"District of Columbia","11",0
 2021-06-26,"Delaware","10",12
 2021-06-26,"Florida","12",217
 2021-06-26,"Georgia","13",74
-2021-06-26,"Guam",NA,0
+2021-06-26,"Guam","66",0
 2021-06-26,"Hawaii","15",5
 2021-06-26,"Iowa","19",19
 2021-06-26,"Idaho","16",23
 2021-06-26,"Illinois","17",66
 2021-06-26,"Indiana","18",27
 2021-06-26,"Kansas","20",18
-2021-06-26,"Kentucky","21",24
+2021-06-26,"Kentucky","21",23
 2021-06-26,"Louisiana","22",35
 2021-06-26,"Massachusetts","25",24
 2021-06-26,"Maryland","24",27
@@ -4150,7 +4150,7 @@
 2021-06-26,"Michigan","26",98
 2021-06-26,"Minnesota","27",42
 2021-06-26,"Missouri","29",28
-2021-06-26,"Northern Mariana Islands",NA,0
+2021-06-26,"Northern Mariana Islands","69",0
 2021-06-26,"Mississippi","28",24
 2021-06-26,"Montana","30",11
 2021-06-26,"North Carolina","37",72
@@ -4161,11 +4161,11 @@
 2021-06-26,"New Mexico","35",19
 2021-06-26,"Nevada","32",18
 2021-06-26,"New York","36",45
-2021-06-26,"Ohio","39",36
+2021-06-26,"Ohio","39",38
 2021-06-26,"Oklahoma","40",30
 2021-06-26,"Oregon","41",10
 2021-06-26,"Pennsylvania","42",83
-2021-06-26,"Puerto Rico",NA,6
+2021-06-26,"Puerto Rico","72",6
 2021-06-26,"Rhode Island","44",4
 2021-06-26,"South Carolina","45",27
 2021-06-26,"South Dakota","46",3
@@ -4173,7 +4173,7 @@
 2021-06-26,"Texas","48",167
 2021-06-26,"Utah","49",27
 2021-06-26,"Virginia","51",59
-2021-06-26,"Virgin Islands",NA,0
+2021-06-26,"Virgin Islands","78",0
 2021-06-26,"Vermont","50",0
 2021-06-26,"Washington","53",82
 2021-06-26,"Wisconsin","55",52
@@ -4182,23 +4182,23 @@
 2021-07-03,"Alaska","02",3
 2021-07-03,"Alabama","01",22
 2021-07-03,"Arkansas","05",20
-2021-07-03,"American Samoa",NA,0
+2021-07-03,"American Samoa","60",0
 2021-07-03,"Arizona","04",61
-2021-07-03,"California","06",179
+2021-07-03,"California","06",166
 2021-07-03,"Colorado","08",44
 2021-07-03,"Connecticut","09",4
 2021-07-03,"District of Columbia","11",0
 2021-07-03,"Delaware","10",1
 2021-07-03,"Florida","12",213
 2021-07-03,"Georgia","13",50
-2021-07-03,"Guam",NA,1
+2021-07-03,"Guam","66",1
 2021-07-03,"Hawaii","15",2
 2021-07-03,"Iowa","19",15
 2021-07-03,"Idaho","16",13
 2021-07-03,"Illinois","17",46
 2021-07-03,"Indiana","18",41
 2021-07-03,"Kansas","20",11
-2021-07-03,"Kentucky","21",25
+2021-07-03,"Kentucky","21",30
 2021-07-03,"Louisiana","22",34
 2021-07-03,"Massachusetts","25",10
 2021-07-03,"Maryland","24",15
@@ -4206,7 +4206,7 @@
 2021-07-03,"Michigan","26",50
 2021-07-03,"Minnesota","27",32
 2021-07-03,"Missouri","29",80
-2021-07-03,"Northern Mariana Islands",NA,0
+2021-07-03,"Northern Mariana Islands","69",0
 2021-07-03,"Mississippi","28",24
 2021-07-03,"Montana","30",4
 2021-07-03,"North Carolina","37",22
@@ -4217,11 +4217,11 @@
 2021-07-03,"New Mexico","35",9
 2021-07-03,"Nevada","32",30
 2021-07-03,"New York","36",43
-2021-07-03,"Ohio","39",33
+2021-07-03,"Ohio","39",34
 2021-07-03,"Oklahoma","40",4
 2021-07-03,"Oregon","41",18
 2021-07-03,"Pennsylvania","42",62
-2021-07-03,"Puerto Rico",NA,6
+2021-07-03,"Puerto Rico","72",6
 2021-07-03,"Rhode Island","44",2
 2021-07-03,"South Carolina","45",11
 2021-07-03,"South Dakota","46",7
@@ -4229,7 +4229,7 @@
 2021-07-03,"Texas","48",208
 2021-07-03,"Utah","49",23
 2021-07-03,"Virginia","51",21
-2021-07-03,"Virgin Islands",NA,0
+2021-07-03,"Virgin Islands","78",0
 2021-07-03,"Vermont","50",2
 2021-07-03,"Washington","53",37
 2021-07-03,"Wisconsin","55",36
@@ -4238,23 +4238,23 @@
 2021-07-10,"Alaska","02",2
 2021-07-10,"Alabama","01",44
 2021-07-10,"Arkansas","05",35
-2021-07-10,"American Samoa",NA,0
+2021-07-10,"American Samoa","60",0
 2021-07-10,"Arizona","04",54
-2021-07-10,"California","06",281
+2021-07-10,"California","06",237
 2021-07-10,"Colorado","08",34
 2021-07-10,"Connecticut","09",0
 2021-07-10,"District of Columbia","11",2
 2021-07-10,"Delaware","10",0
 2021-07-10,"Florida","12",172
 2021-07-10,"Georgia","13",43
-2021-07-10,"Guam",NA,1
+2021-07-10,"Guam","66",1
 2021-07-10,"Hawaii","15",3
 2021-07-10,"Iowa","19",3
 2021-07-10,"Idaho","16",7
 2021-07-10,"Illinois","17",52
 2021-07-10,"Indiana","18",51
 2021-07-10,"Kansas","20",18
-2021-07-10,"Kentucky","21",26
+2021-07-10,"Kentucky","21",21
 2021-07-10,"Louisiana","22",24
 2021-07-10,"Massachusetts","25",14
 2021-07-10,"Maryland","24",13
@@ -4262,7 +4262,7 @@
 2021-07-10,"Michigan","26",50
 2021-07-10,"Minnesota","27",12
 2021-07-10,"Missouri","29",48
-2021-07-10,"Northern Mariana Islands",NA,0
+2021-07-10,"Northern Mariana Islands","69",0
 2021-07-10,"Mississippi","28",20
 2021-07-10,"Montana","30",7
 2021-07-10,"North Carolina","37",49
@@ -4273,11 +4273,11 @@
 2021-07-10,"New Mexico","35",10
 2021-07-10,"Nevada","32",23
 2021-07-10,"New York","36",41
-2021-07-10,"Ohio","39",28
+2021-07-10,"Ohio","39",29
 2021-07-10,"Oklahoma","40",18
 2021-07-10,"Oregon","41",11
 2021-07-10,"Pennsylvania","42",39
-2021-07-10,"Puerto Rico",NA,2
+2021-07-10,"Puerto Rico","72",2
 2021-07-10,"Rhode Island","44",0
 2021-07-10,"South Carolina","45",16
 2021-07-10,"South Dakota","46",2
@@ -4285,7 +4285,7 @@
 2021-07-10,"Texas","48",151
 2021-07-10,"Utah","49",15
 2021-07-10,"Virginia","51",27
-2021-07-10,"Virgin Islands",NA,2
+2021-07-10,"Virgin Islands","78",2
 2021-07-10,"Vermont","50",0
 2021-07-10,"Washington","53",58
 2021-07-10,"Wisconsin","55",47
@@ -4294,23 +4294,23 @@
 2021-07-17,"Alaska","02",2
 2021-07-17,"Alabama","01",41
 2021-07-17,"Arkansas","05",44
-2021-07-17,"American Samoa",NA,0
+2021-07-17,"American Samoa","60",0
 2021-07-17,"Arizona","04",71
-2021-07-17,"California","06",161
+2021-07-17,"California","06",224
 2021-07-17,"Colorado","08",38
 2021-07-17,"Connecticut","09",3
 2021-07-17,"District of Columbia","11",3
 2021-07-17,"Delaware","10",2
 2021-07-17,"Florida","12",231
 2021-07-17,"Georgia","13",72
-2021-07-17,"Guam",NA,1
+2021-07-17,"Guam","66",1
 2021-07-17,"Hawaii","15",2
 2021-07-17,"Iowa","19",9
 2021-07-17,"Idaho","16",8
 2021-07-17,"Illinois","17",60
 2021-07-17,"Indiana","18",26
 2021-07-17,"Kansas","20",25
-2021-07-17,"Kentucky","21",29
+2021-07-17,"Kentucky","21",34
 2021-07-17,"Louisiana","22",47
 2021-07-17,"Massachusetts","25",9
 2021-07-17,"Maryland","24",18
@@ -4318,7 +4318,7 @@
 2021-07-17,"Michigan","26",49
 2021-07-17,"Minnesota","27",13
 2021-07-17,"Missouri","29",90
-2021-07-17,"Northern Mariana Islands",NA,0
+2021-07-17,"Northern Mariana Islands","69",0
 2021-07-17,"Mississippi","28",26
 2021-07-17,"Montana","30",18
 2021-07-17,"North Carolina","37",40
@@ -4329,11 +4329,11 @@
 2021-07-17,"New Mexico","35",25
 2021-07-17,"Nevada","32",38
 2021-07-17,"New York","36",32
-2021-07-17,"Ohio","39",31
+2021-07-17,"Ohio","39",32
 2021-07-17,"Oklahoma","40",11
 2021-07-17,"Oregon","41",25
 2021-07-17,"Pennsylvania","42",47
-2021-07-17,"Puerto Rico",NA,7
+2021-07-17,"Puerto Rico","72",7
 2021-07-17,"Rhode Island","44",6
 2021-07-17,"South Carolina","45",16
 2021-07-17,"South Dakota","46",2
@@ -4341,7 +4341,7 @@
 2021-07-17,"Texas","48",192
 2021-07-17,"Utah","49",20
 2021-07-17,"Virginia","51",27
-2021-07-17,"Virgin Islands",NA,0
+2021-07-17,"Virgin Islands","78",0
 2021-07-17,"Vermont","50",0
 2021-07-17,"Washington","53",45
 2021-07-17,"Wisconsin","55",27
@@ -4350,23 +4350,23 @@
 2021-07-24,"Alaska","02",3
 2021-07-24,"Alabama","01",40
 2021-07-24,"Arkansas","05",56
-2021-07-24,"American Samoa",NA,0
+2021-07-24,"American Samoa","60",0
 2021-07-24,"Arizona","04",70
-2021-07-24,"California","06",138
+2021-07-24,"California","06",150
 2021-07-24,"Colorado","08",24
 2021-07-24,"Connecticut","09",4
 2021-07-24,"District of Columbia","11",0
 2021-07-24,"Delaware","10",1
 2021-07-24,"Florida","12",282
 2021-07-24,"Georgia","13",56
-2021-07-24,"Guam",NA,1
+2021-07-24,"Guam","66",1
 2021-07-24,"Hawaii","15",4
 2021-07-24,"Iowa","19",12
 2021-07-24,"Idaho","16",10
 2021-07-24,"Illinois","17",44
 2021-07-24,"Indiana","18",25
 2021-07-24,"Kansas","20",40
-2021-07-24,"Kentucky","21",28
+2021-07-24,"Kentucky","21",23
 2021-07-24,"Louisiana","22",72
 2021-07-24,"Massachusetts","25",26
 2021-07-24,"Maryland","24",26
@@ -4374,7 +4374,7 @@
 2021-07-24,"Michigan","26",37
 2021-07-24,"Minnesota","27",15
 2021-07-24,"Missouri","29",85
-2021-07-24,"Northern Mariana Islands",NA,0
+2021-07-24,"Northern Mariana Islands","69",0
 2021-07-24,"Mississippi","28",37
 2021-07-24,"Montana","30",4
 2021-07-24,"North Carolina","37",47
@@ -4385,11 +4385,11 @@
 2021-07-24,"New Mexico","35",18
 2021-07-24,"Nevada","32",59
 2021-07-24,"New York","36",38
-2021-07-24,"Ohio","39",39
+2021-07-24,"Ohio","39",43
 2021-07-24,"Oklahoma","40",37
 2021-07-24,"Oregon","41",19
 2021-07-24,"Pennsylvania","42",33
-2021-07-24,"Puerto Rico",NA,7
+2021-07-24,"Puerto Rico","72",7
 2021-07-24,"Rhode Island","44",3
 2021-07-24,"South Carolina","45",16
 2021-07-24,"South Dakota","46",2
@@ -4397,7 +4397,7 @@
 2021-07-24,"Texas","48",190
 2021-07-24,"Utah","49",12
 2021-07-24,"Virginia","51",23
-2021-07-24,"Virgin Islands",NA,3
+2021-07-24,"Virgin Islands","78",3
 2021-07-24,"Vermont","50",1
 2021-07-24,"Washington","53",36
 2021-07-24,"Wisconsin","55",31
@@ -4406,23 +4406,23 @@
 2021-07-31,"Alaska","02",5
 2021-07-31,"Alabama","01",53
 2021-07-31,"Arkansas","05",93
-2021-07-31,"American Samoa",NA,0
+2021-07-31,"American Samoa","60",0
 2021-07-31,"Arizona","04",76
-2021-07-31,"California","06",194
+2021-07-31,"California","06",189
 2021-07-31,"Colorado","08",35
 2021-07-31,"Connecticut","09",7
 2021-07-31,"District of Columbia","11",3
 2021-07-31,"Delaware","10",135
 2021-07-31,"Florida","12",409
 2021-07-31,"Georgia","13",62
-2021-07-31,"Guam",NA,0
+2021-07-31,"Guam","66",0
 2021-07-31,"Hawaii","15",10
 2021-07-31,"Iowa","19",13
 2021-07-31,"Idaho","16",14
 2021-07-31,"Illinois","17",39
 2021-07-31,"Indiana","18",40
 2021-07-31,"Kansas","20",20
-2021-07-31,"Kentucky","21",22
+2021-07-31,"Kentucky","21",25
 2021-07-31,"Louisiana","22",99
 2021-07-31,"Massachusetts","25",36
 2021-07-31,"Maryland","24",19
@@ -4430,7 +4430,7 @@
 2021-07-31,"Michigan","26",40
 2021-07-31,"Minnesota","27",18
 2021-07-31,"Missouri","29",120
-2021-07-31,"Northern Mariana Islands",NA,0
+2021-07-31,"Northern Mariana Islands","69",0
 2021-07-31,"Mississippi","28",41
 2021-07-31,"Montana","30",9
 2021-07-31,"North Carolina","37",65
@@ -4441,11 +4441,11 @@
 2021-07-31,"New Mexico","35",13
 2021-07-31,"Nevada","32",95
 2021-07-31,"New York","36",47
-2021-07-31,"Ohio","39",45
+2021-07-31,"Ohio","39",47
 2021-07-31,"Oklahoma","40",31
 2021-07-31,"Oregon","41",22
 2021-07-31,"Pennsylvania","42",27
-2021-07-31,"Puerto Rico",NA,12
+2021-07-31,"Puerto Rico","72",12
 2021-07-31,"Rhode Island","44",1
 2021-07-31,"South Carolina","45",26
 2021-07-31,"South Dakota","46",2
@@ -4453,7 +4453,7 @@
 2021-07-31,"Texas","48",271
 2021-07-31,"Utah","49",26
 2021-07-31,"Virginia","51",32
-2021-07-31,"Virgin Islands",NA,2
+2021-07-31,"Virgin Islands","78",2
 2021-07-31,"Vermont","50",1
 2021-07-31,"Washington","53",44
 2021-07-31,"Wisconsin","55",50
@@ -4462,23 +4462,23 @@
 2021-08-07,"Alaska","02",9
 2021-08-07,"Alabama","01",88
 2021-08-07,"Arkansas","05",149
-2021-08-07,"American Samoa",NA,0
+2021-08-07,"American Samoa","60",0
 2021-08-07,"Arizona","04",130
-2021-08-07,"California","06",329
+2021-08-07,"California","06",363
 2021-08-07,"Colorado","08",33
 2021-08-07,"Connecticut","09",3
 2021-08-07,"District of Columbia","11",0
 2021-08-07,"Delaware","10",2
 2021-08-07,"Florida","12",616
 2021-08-07,"Georgia","13",126
-2021-08-07,"Guam",NA,0
+2021-08-07,"Guam","66",0
 2021-08-07,"Hawaii","15",5
 2021-08-07,"Iowa","19",10
 2021-08-07,"Idaho","16",20
 2021-08-07,"Illinois","17",63
 2021-08-07,"Indiana","18",49
 2021-08-07,"Kansas","20",44
-2021-08-07,"Kentucky","21",38
+2021-08-07,"Kentucky","21",36
 2021-08-07,"Louisiana","22",211
 2021-08-07,"Massachusetts","25",13
 2021-08-07,"Maryland","24",24
@@ -4486,7 +4486,7 @@
 2021-08-07,"Michigan","26",33
 2021-08-07,"Minnesota","27",26
 2021-08-07,"Missouri","29",175
-2021-08-07,"Northern Mariana Islands",NA,0
+2021-08-07,"Northern Mariana Islands","69",0
 2021-08-07,"Mississippi","28",78
 2021-08-07,"Montana","30",18
 2021-08-07,"North Carolina","37",101
@@ -4497,11 +4497,11 @@
 2021-08-07,"New Mexico","35",15
 2021-08-07,"Nevada","32",93
 2021-08-07,"New York","36",88
-2021-08-07,"Ohio","39",61
+2021-08-07,"Ohio","39",66
 2021-08-07,"Oklahoma","40",46
 2021-08-07,"Oregon","41",31
 2021-08-07,"Pennsylvania","42",50
-2021-08-07,"Puerto Rico",NA,29
+2021-08-07,"Puerto Rico","72",29
 2021-08-07,"Rhode Island","44",3
 2021-08-07,"South Carolina","45",46
 2021-08-07,"South Dakota","46",7
@@ -4509,7 +4509,7 @@
 2021-08-07,"Texas","48",384
 2021-08-07,"Utah","49",43
 2021-08-07,"Virginia","51",26
-2021-08-07,"Virgin Islands",NA,3
+2021-08-07,"Virgin Islands","78",3
 2021-08-07,"Vermont","50",0
 2021-08-07,"Washington","53",46
 2021-08-07,"Wisconsin","55",10
@@ -4518,23 +4518,23 @@
 2021-08-14,"Alaska","02",5
 2021-08-14,"Alabama","01",141
 2021-08-14,"Arkansas","05",155
-2021-08-14,"American Samoa",NA,0
+2021-08-14,"American Samoa","60",0
 2021-08-14,"Arizona","04",86
-2021-08-14,"California","06",-121
+2021-08-14,"California","06",-137
 2021-08-14,"Colorado","08",54
 2021-08-14,"Connecticut","09",11
 2021-08-14,"District of Columbia","11",1
 2021-08-14,"Delaware","10",3
 2021-08-14,"Florida","12",1071
 2021-08-14,"Georgia","13",176
-2021-08-14,"Guam",NA,0
+2021-08-14,"Guam","66",0
 2021-08-14,"Hawaii","15",6
 2021-08-14,"Iowa","19",17
 2021-08-14,"Idaho","16",28
 2021-08-14,"Illinois","17",91
 2021-08-14,"Indiana","18",74
 2021-08-14,"Kansas","20",86
-2021-08-14,"Kentucky","21",54
+2021-08-14,"Kentucky","21",58
 2021-08-14,"Louisiana","22",309
 2021-08-14,"Massachusetts","25",47
 2021-08-14,"Maryland","24",38
@@ -4542,7 +4542,7 @@
 2021-08-14,"Michigan","26",63
 2021-08-14,"Minnesota","27",35
 2021-08-14,"Missouri","29",203
-2021-08-14,"Northern Mariana Islands",NA,0
+2021-08-14,"Northern Mariana Islands","69",0
 2021-08-14,"Mississippi","28",140
 2021-08-14,"Montana","30",8
 2021-08-14,"North Carolina","37",90
@@ -4553,11 +4553,11 @@
 2021-08-14,"New Mexico","35",21
 2021-08-14,"Nevada","32",155
 2021-08-14,"New York","36",128
-2021-08-14,"Ohio","39",112
+2021-08-14,"Ohio","39",124
 2021-08-14,"Oklahoma","40",63
 2021-08-14,"Oregon","41",46
 2021-08-14,"Pennsylvania","42",66
-2021-08-14,"Puerto Rico",NA,53
+2021-08-14,"Puerto Rico","72",53
 2021-08-14,"Rhode Island","44",1
 2021-08-14,"South Carolina","45",89
 2021-08-14,"South Dakota","46",2
@@ -4565,7 +4565,7 @@
 2021-08-14,"Texas","48",628
 2021-08-14,"Utah","49",31
 2021-08-14,"Virginia","51",41
-2021-08-14,"Virgin Islands",NA,1
+2021-08-14,"Virgin Islands","78",1
 2021-08-14,"Vermont","50",4
 2021-08-14,"Washington","53",71
 2021-08-14,"Wisconsin","55",22
@@ -4574,23 +4574,23 @@
 2021-08-21,"Alaska","02",11
 2021-08-21,"Alabama","01",235
 2021-08-21,"Arkansas","05",200
-2021-08-21,"American Samoa",NA,0
+2021-08-21,"American Samoa","60",0
 2021-08-21,"Arizona","04",135
-2021-08-21,"California","06",464
+2021-08-21,"California","06",497
 2021-08-21,"Colorado","08",35
 2021-08-21,"Connecticut","09",30
 2021-08-21,"District of Columbia","11",5
 2021-08-21,"Delaware","10",16
 2021-08-21,"Florida","12",1486
 2021-08-21,"Georgia","13",221
-2021-08-21,"Guam",NA,1
+2021-08-21,"Guam","66",1
 2021-08-21,"Hawaii","15",15
 2021-08-21,"Iowa","19",16
 2021-08-21,"Idaho","16",38
 2021-08-21,"Illinois","17",123
 2021-08-21,"Indiana","18",100
 2021-08-21,"Kansas","20",107
-2021-08-21,"Kentucky","21",91
+2021-08-21,"Kentucky","21",98
 2021-08-21,"Louisiana","22",399
 2021-08-21,"Massachusetts","25",32
 2021-08-21,"Maryland","24",51
@@ -4598,7 +4598,7 @@
 2021-08-21,"Michigan","26",109
 2021-08-21,"Minnesota","27",31
 2021-08-21,"Missouri","29",181
-2021-08-21,"Northern Mariana Islands",NA,0
+2021-08-21,"Northern Mariana Islands","69",0
 2021-08-21,"Mississippi","28",230
 2021-08-21,"Montana","30",25
 2021-08-21,"North Carolina","37",233
@@ -4609,11 +4609,11 @@
 2021-08-21,"New Mexico","35",26
 2021-08-21,"Nevada","32",120
 2021-08-21,"New York","36",155
-2021-08-21,"Ohio","39",134
+2021-08-21,"Ohio","39",190
 2021-08-21,"Oklahoma","40",82
 2021-08-21,"Oregon","41",77
 2021-08-21,"Pennsylvania","42",108
-2021-08-21,"Puerto Rico",NA,76
+2021-08-21,"Puerto Rico","72",76
 2021-08-21,"Rhode Island","44",9
 2021-08-21,"South Carolina","45",174
 2021-08-21,"South Dakota","46",4
@@ -4621,7 +4621,7 @@
 2021-08-21,"Texas","48",937
 2021-08-21,"Utah","49",47
 2021-08-21,"Virginia","51",48
-2021-08-21,"Virgin Islands",NA,4
+2021-08-21,"Virgin Islands","78",4
 2021-08-21,"Vermont","50",6
 2021-08-21,"Washington","53",117
 2021-08-21,"Wisconsin","55",46
@@ -4630,23 +4630,23 @@
 2021-08-28,"Alaska","02",24
 2021-08-28,"Alabama","01",219
 2021-08-28,"Arkansas","05",209
-2021-08-28,"American Samoa",NA,0
+2021-08-28,"American Samoa","60",0
 2021-08-28,"Arizona","04",182
-2021-08-28,"California","06",593
+2021-08-28,"California","06",580
 2021-08-28,"Colorado","08",44
 2021-08-28,"Connecticut","09",21
 2021-08-28,"District of Columbia","11",4
 2021-08-28,"Delaware","10",23
 2021-08-28,"Florida","12",1727
 2021-08-28,"Georgia","13",354
-2021-08-28,"Guam",NA,1
+2021-08-28,"Guam","66",1
 2021-08-28,"Hawaii","15",24
 2021-08-28,"Iowa","19",42
 2021-08-28,"Idaho","16",44
 2021-08-28,"Illinois","17",172
 2021-08-28,"Indiana","18",145
 2021-08-28,"Kansas","20",52
-2021-08-28,"Kentucky","21",168
+2021-08-28,"Kentucky","21",166
 2021-08-28,"Louisiana","22",441
 2021-08-28,"Massachusetts","25",45
 2021-08-28,"Maryland","24",45
@@ -4654,7 +4654,7 @@
 2021-08-28,"Michigan","26",127
 2021-08-28,"Minnesota","27",39
 2021-08-28,"Missouri","29",250
-2021-08-28,"Northern Mariana Islands",NA,0
+2021-08-28,"Northern Mariana Islands","69",0
 2021-08-28,"Mississippi","28",288
 2021-08-28,"Montana","30",28
 2021-08-28,"North Carolina","37",260
@@ -4665,11 +4665,11 @@
 2021-08-28,"New Mexico","35",33
 2021-08-28,"Nevada","32",153
 2021-08-28,"New York","36",147
-2021-08-28,"Ohio","39",113
+2021-08-28,"Ohio","39",240
 2021-08-28,"Oklahoma","40",136
 2021-08-28,"Oregon","41",103
 2021-08-28,"Pennsylvania","42",131
-2021-08-28,"Puerto Rico",NA,88
+2021-08-28,"Puerto Rico","72",88
 2021-08-28,"Rhode Island","44",11
 2021-08-28,"South Carolina","45",239
 2021-08-28,"South Dakota","46",4
@@ -4677,7 +4677,7 @@
 2021-08-28,"Texas","48",1351
 2021-08-28,"Utah","49",51
 2021-08-28,"Virginia","51",122
-2021-08-28,"Virgin Islands",NA,8
+2021-08-28,"Virgin Islands","78",8
 2021-08-28,"Vermont","50",5
 2021-08-28,"Washington","53",151
 2021-08-28,"Wisconsin","55",70
@@ -4686,23 +4686,23 @@
 2021-09-04,"Alaska","02",10
 2021-09-04,"Alabama","01",195
 2021-09-04,"Arkansas","05",184
-2021-09-04,"American Samoa",NA,0
+2021-09-04,"American Samoa","60",0
 2021-09-04,"Arizona","04",218
-2021-09-04,"California","06",693
+2021-09-04,"California","06",696
 2021-09-04,"Colorado","08",83
 2021-09-04,"Connecticut","09",36
 2021-09-04,"District of Columbia","11",3
 2021-09-04,"Delaware","10",14
 2021-09-04,"Florida","12",2345
 2021-09-04,"Georgia","13",567
-2021-09-04,"Guam",NA,6
+2021-09-04,"Guam","66",6
 2021-09-04,"Hawaii","15",27
 2021-09-04,"Iowa","19",39
 2021-09-04,"Idaho","16",52
 2021-09-04,"Illinois","17",178
 2021-09-04,"Indiana","18",197
 2021-09-04,"Kansas","20",85
-2021-09-04,"Kentucky","21",160
+2021-09-04,"Kentucky","21",176
 2021-09-04,"Louisiana","22",348
 2021-09-04,"Massachusetts","25",67
 2021-09-04,"Maryland","24",78
@@ -4710,7 +4710,7 @@
 2021-09-04,"Michigan","26",152
 2021-09-04,"Minnesota","27",45
 2021-09-04,"Missouri","29",222
-2021-09-04,"Northern Mariana Islands",NA,0
+2021-09-04,"Northern Mariana Islands","69",0
 2021-09-04,"Mississippi","28",261
 2021-09-04,"Montana","30",28
 2021-09-04,"North Carolina","37",389
@@ -4721,11 +4721,11 @@
 2021-09-04,"New Mexico","35",47
 2021-09-04,"Nevada","32",150
 2021-09-04,"New York","36",219
-2021-09-04,"Ohio","39",59
+2021-09-04,"Ohio","39",333
 2021-09-04,"Oklahoma","40",189
 2021-09-04,"Oregon","41",157
 2021-09-04,"Pennsylvania","42",173
-2021-09-04,"Puerto Rico",NA,81
+2021-09-04,"Puerto Rico","72",81
 2021-09-04,"Rhode Island","44",9
 2021-09-04,"South Carolina","45",329
 2021-09-04,"South Dakota","46",10
@@ -4733,7 +4733,7 @@
 2021-09-04,"Texas","48",1695
 2021-09-04,"Utah","49",35
 2021-09-04,"Virginia","51",130
-2021-09-04,"Virgin Islands",NA,7
+2021-09-04,"Virgin Islands","78",7
 2021-09-04,"Vermont","50",6
 2021-09-04,"Washington","53",184
 2021-09-04,"Wisconsin","55",83
@@ -4742,23 +4742,23 @@
 2021-09-11,"Alaska","02",9
 2021-09-11,"Alabama","01",259
 2021-09-11,"Arkansas","05",194
-2021-09-11,"American Samoa",NA,0
+2021-09-11,"American Samoa","60",0
 2021-09-11,"Arizona","04",186
-2021-09-11,"California","06",675
+2021-09-11,"California","06",771
 2021-09-11,"Colorado","08",80
 2021-09-11,"Connecticut","09",30
 2021-09-11,"District of Columbia","11",3
 2021-09-11,"Delaware","10",9
 2021-09-11,"Florida","12",2448
 2021-09-11,"Georgia","13",621
-2021-09-11,"Guam",NA,8
+2021-09-11,"Guam","66",8
 2021-09-11,"Hawaii","15",39
 2021-09-11,"Iowa","19",30
 2021-09-11,"Idaho","16",93
 2021-09-11,"Illinois","17",194
 2021-09-11,"Indiana","18",213
 2021-09-11,"Kansas","20",135
-2021-09-11,"Kentucky","21",158
+2021-09-11,"Kentucky","21",147
 2021-09-11,"Louisiana","22",349
 2021-09-11,"Massachusetts","25",63
 2021-09-11,"Maryland","24",98
@@ -4766,7 +4766,7 @@
 2021-09-11,"Michigan","26",149
 2021-09-11,"Minnesota","27",48
 2021-09-11,"Missouri","29",227
-2021-09-11,"Northern Mariana Islands",NA,0
+2021-09-11,"Northern Mariana Islands","69",0
 2021-09-11,"Mississippi","28",365
 2021-09-11,"Montana","30",23
 2021-09-11,"North Carolina","37",367
@@ -4777,11 +4777,11 @@
 2021-09-11,"New Mexico","35",53
 2021-09-11,"Nevada","32",119
 2021-09-11,"New York","36",258
-2021-09-11,"Ohio","39",6
+2021-09-11,"Ohio","39",398
 2021-09-11,"Oklahoma","40",207
 2021-09-11,"Oregon","41",142
 2021-09-11,"Pennsylvania","42",186
-2021-09-11,"Puerto Rico",NA,88
+2021-09-11,"Puerto Rico","72",88
 2021-09-11,"Rhode Island","44",20
 2021-09-11,"South Carolina","45",368
 2021-09-11,"South Dakota","46",11
@@ -4789,95 +4789,1406 @@
 2021-09-11,"Texas","48",1789
 2021-09-11,"Utah","49",66
 2021-09-11,"Virginia","51",137
-2021-09-11,"Virgin Islands",NA,5
+2021-09-11,"Virgin Islands","78",5
 2021-09-11,"Vermont","50",6
 2021-09-11,"Washington","53",227
 2021-09-11,"Wisconsin","55",92
 2021-09-11,"West Virginia","54",83
 2021-09-11,"Wyoming","56",21
-2020-01-25,"US",NA,0
-2020-02-01,"US",NA,0
-2020-02-08,"US",NA,0
-2020-02-15,"US",NA,0
-2020-02-22,"US",NA,0
-2020-02-29,"US",NA,1
-2020-03-07,"US",NA,16
-2020-03-14,"US",NA,42
-2020-03-21,"US",NA,422
-2020-03-28,"US",NA,2492
-2020-04-04,"US",NA,8190
-2020-04-11,"US",NA,14634
-2020-04-18,"US",NA,15155
-2020-04-25,"US",NA,15485
-2020-05-02,"US",NA,13348
-2020-05-09,"US",NA,12242
-2020-05-16,"US",NA,9983
-2020-05-23,"US",NA,8493
-2020-05-30,"US",NA,6535
-2020-06-06,"US",NA,5904
-2020-06-13,"US",NA,5144
-2020-06-20,"US",NA,4167
-2020-06-27,"US",NA,3884
-2020-07-04,"US",NA,3652
-2020-07-11,"US",NA,5246
-2020-07-18,"US",NA,5547
-2020-07-25,"US",NA,6459
-2020-08-01,"US",NA,7956
-2020-08-08,"US",NA,7294
-2020-08-15,"US",NA,7084
-2020-08-22,"US",NA,6767
-2020-08-29,"US",NA,6411
-2020-09-05,"US",NA,5827
-2020-09-12,"US",NA,5184
-2020-09-19,"US",NA,5491
-2020-09-26,"US",NA,5389
-2020-10-03,"US",NA,4891
-2020-10-10,"US",NA,5077
-2020-10-17,"US",NA,5203
-2020-10-24,"US",NA,5830
-2020-10-31,"US",NA,5981
-2020-11-07,"US",NA,7240
-2020-11-14,"US",NA,7954
-2020-11-21,"US",NA,10869
-2020-11-28,"US",NA,10823
-2020-12-05,"US",NA,15732
-2020-12-12,"US",NA,17634
-2020-12-19,"US",NA,19187
-2020-12-26,"US",NA,16691
-2021-01-02,"US",NA,18962
-2021-01-09,"US",NA,22532
-2021-01-16,"US",NA,23863
-2021-01-23,"US",NA,21959
-2021-01-30,"US",NA,22253
-2021-02-06,"US",NA,21339
-2021-02-13,"US",NA,17747
-2021-02-20,"US",NA,13250
-2021-02-27,"US",NA,14044
-2021-03-06,"US",NA,12264
-2021-03-13,"US",NA,8947
-2021-03-20,"US",NA,7252
-2021-03-27,"US",NA,6941
-2021-04-03,"US",NA,5971
-2021-04-10,"US",NA,6885
-2021-04-17,"US",NA,5049
-2021-04-24,"US",NA,5035
-2021-05-01,"US",NA,4750
-2021-05-08,"US",NA,4699
-2021-05-15,"US",NA,4045
-2021-05-22,"US",NA,3913
-2021-05-29,"US",NA,4515
-2021-06-05,"US",NA,3027
-2021-06-12,"US",NA,2661
-2021-06-19,"US",NA,2051
-2021-06-26,"US",NA,2070
-2021-07-03,"US",NA,1668
-2021-07-10,"US",NA,1632
-2021-07-17,"US",NA,1725
-2021-07-24,"US",NA,1974
-2021-07-31,"US",NA,2535
-2021-08-07,"US",NA,3558
-2021-08-14,"US",NA,4591
-2021-08-21,"US",NA,7142
-2021-08-28,"US",NA,8917
-2021-09-04,"US",NA,10763
-2021-09-11,"US",NA,11383
+2021-09-18,"Alaska","02",11
+2021-09-18,"Alabama","01",536
+2021-09-18,"Arkansas","05",202
+2021-09-18,"American Samoa","60",0
+2021-09-18,"Arizona","04",304
+2021-09-18,"California","06",869
+2021-09-18,"Colorado","08",100
+2021-09-18,"Connecticut","09",39
+2021-09-18,"District of Columbia","11",2
+2021-09-18,"Delaware","10",20
+2021-09-18,"Florida","12",2468
+2021-09-18,"Georgia","13",836
+2021-09-18,"Guam","66",20
+2021-09-18,"Hawaii","15",49
+2021-09-18,"Iowa","19",64
+2021-09-18,"Idaho","16",164
+2021-09-18,"Illinois","17",285
+2021-09-18,"Indiana","18",300
+2021-09-18,"Kansas","20",98
+2021-09-18,"Kentucky","21",278
+2021-09-18,"Louisiana","22",362
+2021-09-18,"Massachusetts","25",96
+2021-09-18,"Maryland","24",104
+2021-09-18,"Maine","23",21
+2021-09-18,"Michigan","26",176
+2021-09-18,"Minnesota","27",91
+2021-09-18,"Missouri","29",191
+2021-09-18,"Northern Mariana Islands","69",0
+2021-09-18,"Mississippi","28",309
+2021-09-18,"Montana","30",43
+2021-09-18,"North Carolina","37",540
+2021-09-18,"North Dakota","38",13
+2021-09-18,"Nebraska","31",15
+2021-09-18,"New Hampshire","33",16
+2021-09-18,"New Jersey","34",128
+2021-09-18,"New Mexico","35",70
+2021-09-18,"Nevada","32",143
+2021-09-18,"New York","36",229
+2021-09-18,"Ohio","39",517
+2021-09-18,"Oklahoma","40",232
+2021-09-18,"Oregon","41",155
+2021-09-18,"Pennsylvania","42",278
+2021-09-18,"Puerto Rico","72",77
+2021-09-18,"Rhode Island","44",19
+2021-09-18,"South Carolina","45",465
+2021-09-18,"South Dakota","46",16
+2021-09-18,"Tennessee","47",450
+2021-09-18,"Texas","48",1800
+2021-09-18,"Utah","49",63
+2021-09-18,"Virginia","51",206
+2021-09-18,"Virgin Islands","78",2
+2021-09-18,"Vermont","50",11
+2021-09-18,"Washington","53",283
+2021-09-18,"Wisconsin","55",90
+2021-09-18,"West Virginia","54",163
+2021-09-18,"Wyoming","56",39
+2021-09-25,"Alaska","02",63
+2021-09-25,"Alabama","01",813
+2021-09-25,"Arkansas","05",141
+2021-09-25,"American Samoa","60",0
+2021-09-25,"Arizona","04",319
+2021-09-25,"California","06",561
+2021-09-25,"Colorado","08",98
+2021-09-25,"Connecticut","09",38
+2021-09-25,"District of Columbia","11",5
+2021-09-25,"Delaware","10",22
+2021-09-25,"Florida","12",2340
+2021-09-25,"Georgia","13",901
+2021-09-25,"Guam","66",5
+2021-09-25,"Hawaii","15",45
+2021-09-25,"Iowa","19",82
+2021-09-25,"Idaho","16",117
+2021-09-25,"Illinois","17",237
+2021-09-25,"Indiana","18",294
+2021-09-25,"Kansas","20",117
+2021-09-25,"Kentucky","21",230
+2021-09-25,"Louisiana","22",323
+2021-09-25,"Massachusetts","25",96
+2021-09-25,"Maryland","24",106
+2021-09-25,"Maine","23",31
+2021-09-25,"Michigan","26",217
+2021-09-25,"Minnesota","27",93
+2021-09-25,"Missouri","29",269
+2021-09-25,"Northern Mariana Islands","69",0
+2021-09-25,"Mississippi","28",211
+2021-09-25,"Montana","30",68
+2021-09-25,"North Carolina","37",493
+2021-09-25,"North Dakota","38",20
+2021-09-25,"Nebraska","31",34
+2021-09-25,"New Hampshire","33",15
+2021-09-25,"New Jersey","34",141
+2021-09-25,"New Mexico","35",74
+2021-09-25,"Nevada","32",170
+2021-09-25,"New York","36",266
+2021-09-25,"Ohio","39",605
+2021-09-25,"Oklahoma","40",275
+2021-09-25,"Oregon","41",113
+2021-09-25,"Pennsylvania","42",277
+2021-09-25,"Puerto Rico","72",55
+2021-09-25,"Rhode Island","44",11
+2021-09-25,"South Carolina","45",466
+2021-09-25,"South Dakota","46",25
+2021-09-25,"Tennessee","47",485
+2021-09-25,"Texas","48",2073
+2021-09-25,"Utah","49",82
+2021-09-25,"Virginia","51",269
+2021-09-25,"Virgin Islands","78",2
+2021-09-25,"Vermont","50",8
+2021-09-25,"Washington","53",293
+2021-09-25,"Wisconsin","55",91
+2021-09-25,"West Virginia","54",153
+2021-09-25,"Wyoming","56",37
+2021-10-02,"Alaska","02",46
+2021-10-02,"Alabama","01",447
+2021-10-02,"Arkansas","05",149
+2021-10-02,"American Samoa","60",0
+2021-10-02,"Arizona","04",328
+2021-10-02,"California","06",649
+2021-10-02,"Colorado","08",122
+2021-10-02,"Connecticut","09",149
+2021-10-02,"District of Columbia","11",4
+2021-10-02,"Delaware","10",30
+2021-10-02,"Florida","12",1719
+2021-10-02,"Georgia","13",764
+2021-10-02,"Guam","66",14
+2021-10-02,"Hawaii","15",54
+2021-10-02,"Iowa","19",80
+2021-10-02,"Idaho","16",211
+2021-10-02,"Illinois","17",234
+2021-10-02,"Indiana","18",309
+2021-10-02,"Kansas","20",87
+2021-10-02,"Kentucky","21",329
+2021-10-02,"Louisiana","22",247
+2021-10-02,"Massachusetts","25",106
+2021-10-02,"Maryland","24",105
+2021-10-02,"Maine","23",13
+2021-10-02,"Michigan","26",225
+2021-10-02,"Minnesota","27",104
+2021-10-02,"Missouri","29",190
+2021-10-02,"Northern Mariana Islands","69",0
+2021-10-02,"Mississippi","28",221
+2021-10-02,"Montana","30",72
+2021-10-02,"North Carolina","37",497
+2021-10-02,"North Dakota","38",17
+2021-10-02,"Nebraska","31",435
+2021-10-02,"New Hampshire","33",9
+2021-10-02,"New Jersey","34",142
+2021-10-02,"New Mexico","35",63
+2021-10-02,"Nevada","32",151
+2021-10-02,"New York","36",303
+2021-10-02,"Ohio","39",601
+2021-10-02,"Oklahoma","40",234
+2021-10-02,"Oregon","41",133
+2021-10-02,"Pennsylvania","42",367
+2021-10-02,"Puerto Rico","72",36
+2021-10-02,"Rhode Island","44",15
+2021-10-02,"South Carolina","45",490
+2021-10-02,"South Dakota","46",18
+2021-10-02,"Tennessee","47",381
+2021-10-02,"Texas","48",1851
+2021-10-02,"Utah","49",74
+2021-10-02,"Virginia","51",295
+2021-10-02,"Virgin Islands","78",2
+2021-10-02,"Vermont","50",15
+2021-10-02,"Washington","53",271
+2021-10-02,"Wisconsin","55",107
+2021-10-02,"West Virginia","54",199
+2021-10-02,"Wyoming","56",41
+2021-10-09,"Alaska","02",13
+2021-10-09,"Alabama","01",388
+2021-10-09,"Arkansas","05",107
+2021-10-09,"American Samoa","60",0
+2021-10-09,"Arizona","04",216
+2021-10-09,"California","06",739
+2021-10-09,"Colorado","08",139
+2021-10-09,"Connecticut","09",17
+2021-10-09,"District of Columbia","11",6
+2021-10-09,"Delaware","10",25
+2021-10-09,"Florida","12",1368
+2021-10-09,"Georgia","13",900
+2021-10-09,"Guam","66",14
+2021-10-09,"Hawaii","15",36
+2021-10-09,"Iowa","19",91
+2021-10-09,"Idaho","16",158
+2021-10-09,"Illinois","17",207
+2021-10-09,"Indiana","18",296
+2021-10-09,"Kansas","20",58
+2021-10-09,"Kentucky","21",248
+2021-10-09,"Louisiana","22",185
+2021-10-09,"Massachusetts","25",99
+2021-10-09,"Maryland","24",109
+2021-10-09,"Maine","23",49
+2021-10-09,"Michigan","26",265
+2021-10-09,"Minnesota","27",135
+2021-10-09,"Missouri","29",174
+2021-10-09,"Northern Mariana Islands","69",1
+2021-10-09,"Mississippi","28",165
+2021-10-09,"Montana","30",62
+2021-10-09,"North Carolina","37",499
+2021-10-09,"North Dakota","38",21
+2021-10-09,"Nebraska","31",15
+2021-10-09,"New Hampshire","33",16
+2021-10-09,"New Jersey","34",125
+2021-10-09,"New Mexico","35",57
+2021-10-09,"Nevada","32",118
+2021-10-09,"New York","36",239
+2021-10-09,"Ohio","39",588
+2021-10-09,"Oklahoma","40",264
+2021-10-09,"Oregon","41",167
+2021-10-09,"Pennsylvania","42",421
+2021-10-09,"Puerto Rico","72",26
+2021-10-09,"Rhode Island","44",16
+2021-10-09,"South Carolina","45",359
+2021-10-09,"South Dakota","46",26
+2021-10-09,"Tennessee","47",351
+2021-10-09,"Texas","48",1201
+2021-10-09,"Utah","49",51
+2021-10-09,"Virginia","51",269
+2021-10-09,"Virgin Islands","78",2
+2021-10-09,"Vermont","50",14
+2021-10-09,"Washington","53",257
+2021-10-09,"Wisconsin","55",105
+2021-10-09,"West Virginia","54",213
+2021-10-09,"Wyoming","56",45
+2021-10-16,"Alaska","02",25
+2021-10-16,"Alabama","01",322
+2021-10-16,"Arkansas","05",364
+2021-10-16,"American Samoa","60",0
+2021-10-16,"Arizona","04",150
+2021-10-16,"California","06",618
+2021-10-16,"Colorado","08",131
+2021-10-16,"Connecticut","09",51
+2021-10-16,"District of Columbia","11",1
+2021-10-16,"Delaware","10",35
+2021-10-16,"Florida","12",1192
+2021-10-16,"Georgia","13",632
+2021-10-16,"Guam","66",10
+2021-10-16,"Hawaii","15",29
+2021-10-16,"Iowa","19",94
+2021-10-16,"Idaho","16",134
+2021-10-16,"Illinois","17",183
+2021-10-16,"Indiana","18",263
+2021-10-16,"Kansas","20",39
+2021-10-16,"Kentucky","21",237
+2021-10-16,"Louisiana","22",148
+2021-10-16,"Massachusetts","25",82
+2021-10-16,"Maryland","24",120
+2021-10-16,"Maine","23",20
+2021-10-16,"Michigan","26",267
+2021-10-16,"Minnesota","27",123
+2021-10-16,"Missouri","29",152
+2021-10-16,"Northern Mariana Islands","69",0
+2021-10-16,"Mississippi","28",106
+2021-10-16,"Montana","30",49
+2021-10-16,"North Carolina","37",352
+2021-10-16,"North Dakota","38",38
+2021-10-16,"Nebraska","31",43
+2021-10-16,"New Hampshire","33",23
+2021-10-16,"New Jersey","34",130
+2021-10-16,"New Mexico","35",61
+2021-10-16,"Nevada","32",137
+2021-10-16,"New York","36",262
+2021-10-16,"Ohio","39",594
+2021-10-16,"Oklahoma","40",189
+2021-10-16,"Oregon","41",179
+2021-10-16,"Pennsylvania","42",511
+2021-10-16,"Puerto Rico","72",18
+2021-10-16,"Rhode Island","44",6
+2021-10-16,"South Carolina","45",303
+2021-10-16,"South Dakota","46",18
+2021-10-16,"Tennessee","47",272
+2021-10-16,"Texas","48",1949
+2021-10-16,"Utah","49",73
+2021-10-16,"Virginia","51",316
+2021-10-16,"Virgin Islands","78",5
+2021-10-16,"Vermont","50",10
+2021-10-16,"Washington","53",212
+2021-10-16,"Wisconsin","55",156
+2021-10-16,"West Virginia","54",173
+2021-10-16,"Wyoming","56",39
+2021-10-23,"Alaska","02",79
+2021-10-23,"Alabama","01",227
+2021-10-23,"Arkansas","05",72
+2021-10-23,"American Samoa","60",0
+2021-10-23,"Arizona","04",351
+2021-10-23,"California","06",1125
+2021-10-23,"Colorado","08",165
+2021-10-23,"Connecticut","09",21
+2021-10-23,"District of Columbia","11",3
+2021-10-23,"Delaware","10",32
+2021-10-23,"Florida","12",944
+2021-10-23,"Georgia","13",745
+2021-10-23,"Guam","66",5
+2021-10-23,"Hawaii","15",19
+2021-10-23,"Iowa","19",100
+2021-10-23,"Idaho","16",157
+2021-10-23,"Illinois","17",183
+2021-10-23,"Indiana","18",225
+2021-10-23,"Kansas","20",46
+2021-10-23,"Kentucky","21",246
+2021-10-23,"Louisiana","22",141
+2021-10-23,"Massachusetts","25",83
+2021-10-23,"Maryland","24",93
+2021-10-23,"Maine","23",27
+2021-10-23,"Michigan","26",341
+2021-10-23,"Minnesota","27",130
+2021-10-23,"Missouri","29",120
+2021-10-23,"Northern Mariana Islands","69",0
+2021-10-23,"Mississippi","28",73
+2021-10-23,"Montana","30",119
+2021-10-23,"North Carolina","37",309
+2021-10-23,"North Dakota","38",39
+2021-10-23,"Nebraska","31",40
+2021-10-23,"New Hampshire","33",23
+2021-10-23,"New Jersey","34",128
+2021-10-23,"New Mexico","35",57
+2021-10-23,"Nevada","32",101
+2021-10-23,"New York","36",264
+2021-10-23,"Ohio","39",553
+2021-10-23,"Oklahoma","40",1138
+2021-10-23,"Oregon","41",123
+2021-10-23,"Pennsylvania","42",544
+2021-10-23,"Puerto Rico","72",13
+2021-10-23,"Rhode Island","44",12
+2021-10-23,"South Carolina","45",240
+2021-10-23,"South Dakota","46",28
+2021-10-23,"Tennessee","47",329
+2021-10-23,"Texas","48",1267
+2021-10-23,"Utah","49",61
+2021-10-23,"Virginia","51",277
+2021-10-23,"Virgin Islands","78",0
+2021-10-23,"Vermont","50",6
+2021-10-23,"Washington","53",217
+2021-10-23,"Wisconsin","55",97
+2021-10-23,"West Virginia","54",155
+2021-10-23,"Wyoming","56",69
+2021-10-30,"Alaska","02",27
+2021-10-30,"Alabama","01",167
+2021-10-30,"Arkansas","05",103
+2021-10-30,"American Samoa","60",0
+2021-10-30,"Arizona","04",302
+2021-10-30,"California","06",600
+2021-10-30,"Colorado","08",157
+2021-10-30,"Connecticut","09",25
+2021-10-30,"District of Columbia","11",4
+2021-10-30,"Delaware","10",27
+2021-10-30,"Florida","12",867
+2021-10-30,"Georgia","13",546
+2021-10-30,"Guam","66",11
+2021-10-30,"Hawaii","15",21
+2021-10-30,"Iowa","19",117
+2021-10-30,"Idaho","16",125
+2021-10-30,"Illinois","17",181
+2021-10-30,"Indiana","18",213
+2021-10-30,"Kansas","20",202
+2021-10-30,"Kentucky","21",187
+2021-10-30,"Louisiana","22",85
+2021-10-30,"Massachusetts","25",85
+2021-10-30,"Maryland","24",86
+2021-10-30,"Maine","23",45
+2021-10-30,"Michigan","26",351
+2021-10-30,"Minnesota","27",132
+2021-10-30,"Missouri","29",97
+2021-10-30,"Northern Mariana Islands","69",0
+2021-10-30,"Mississippi","28",85
+2021-10-30,"Montana","30",99
+2021-10-30,"North Carolina","37",285
+2021-10-30,"North Dakota","38",45
+2021-10-30,"Nebraska","31",37
+2021-10-30,"New Hampshire","33",1
+2021-10-30,"New Jersey","34",124
+2021-10-30,"New Mexico","35",62
+2021-10-30,"Nevada","32",108
+2021-10-30,"New York","36",214
+2021-10-30,"Ohio","39",499
+2021-10-30,"Oklahoma","40",170
+2021-10-30,"Oregon","41",88
+2021-10-30,"Pennsylvania","42",451
+2021-10-30,"Puerto Rico","72",12
+2021-10-30,"Rhode Island","44",6
+2021-10-30,"South Carolina","45",244
+2021-10-30,"South Dakota","46",17
+2021-10-30,"Tennessee","47",192
+2021-10-30,"Texas","48",937
+2021-10-30,"Utah","49",80
+2021-10-30,"Virginia","51",239
+2021-10-30,"Virgin Islands","78",3
+2021-10-30,"Vermont","50",13
+2021-10-30,"Washington","53",177
+2021-10-30,"Wisconsin","55",157
+2021-10-30,"West Virginia","54",163
+2021-10-30,"Wyoming","56",25
+2021-11-06,"Alaska","02",16
+2021-11-06,"Alabama","01",261
+2021-11-06,"Arkansas","05",113
+2021-11-06,"American Samoa","60",0
+2021-11-06,"Arizona","04",255
+2021-11-06,"California","06",570
+2021-11-06,"Colorado","08",221
+2021-11-06,"Connecticut","09",26
+2021-11-06,"District of Columbia","11",3
+2021-11-06,"Delaware","10",28
+2021-11-06,"Florida","12",664
+2021-11-06,"Georgia","13",418
+2021-11-06,"Guam","66",10
+2021-11-06,"Hawaii","15",44
+2021-11-06,"Iowa","19",104
+2021-11-06,"Idaho","16",108
+2021-11-06,"Illinois","17",177
+2021-11-06,"Indiana","18",215
+2021-11-06,"Kansas","20",81
+2021-11-06,"Kentucky","21",198
+2021-11-06,"Louisiana","22",68
+2021-11-06,"Massachusetts","25",91
+2021-11-06,"Maryland","24",83
+2021-11-06,"Maine","23",40
+2021-11-06,"Michigan","26",314
+2021-11-06,"Minnesota","27",159
+2021-11-06,"Missouri","29",154
+2021-11-06,"Northern Mariana Islands","69",0
+2021-11-06,"Mississippi","28",73
+2021-11-06,"Montana","30",69
+2021-11-06,"North Carolina","37",201
+2021-11-06,"North Dakota","38",29
+2021-11-06,"Nebraska","31",26
+2021-11-06,"New Hampshire","33",53
+2021-11-06,"New Jersey","34",108
+2021-11-06,"New Mexico","35",64
+2021-11-06,"Nevada","32",82
+2021-11-06,"New York","36",279
+2021-11-06,"Ohio","39",401
+2021-11-06,"Oklahoma","40",169
+2021-11-06,"Oregon","41",190
+2021-11-06,"Pennsylvania","42",484
+2021-11-06,"Puerto Rico","72",12
+2021-11-06,"Rhode Island","44",3
+2021-11-06,"South Carolina","45",125
+2021-11-06,"South Dakota","46",32
+2021-11-06,"Tennessee","47",158
+2021-11-06,"Texas","48",775
+2021-11-06,"Utah","49",78
+2021-11-06,"Virginia","51",218
+2021-11-06,"Virgin Islands","78",2
+2021-11-06,"Vermont","50",20
+2021-11-06,"Washington","53",170
+2021-11-06,"Wisconsin","55",126
+2021-11-06,"West Virginia","54",92
+2021-11-06,"Wyoming","56",69
+2021-11-13,"Alaska","02",90
+2021-11-13,"Alabama","01",147
+2021-11-13,"Arkansas","05",79
+2021-11-13,"American Samoa","60",0
+2021-11-13,"Arizona","04",243
+2021-11-13,"California","06",594
+2021-11-13,"Colorado","08",213
+2021-11-13,"Connecticut","09",19
+2021-11-13,"District of Columbia","11",1
+2021-11-13,"Delaware","10",22
+2021-11-13,"Florida","12",364
+2021-11-13,"Georgia","13",378
+2021-11-13,"Guam","66",10
+2021-11-13,"Hawaii","15",26
+2021-11-13,"Iowa","19",97
+2021-11-13,"Idaho","16",99
+2021-11-13,"Illinois","17",129
+2021-11-13,"Indiana","18",190
+2021-11-13,"Kansas","20",123
+2021-11-13,"Kentucky","21",285
+2021-11-13,"Louisiana","22",70
+2021-11-13,"Massachusetts","25",72
+2021-11-13,"Maryland","24",85
+2021-11-13,"Maine","23",23
+2021-11-13,"Michigan","26",332
+2021-11-13,"Minnesota","27",168
+2021-11-13,"Missouri","29",136
+2021-11-13,"Northern Mariana Islands","69",0
+2021-11-13,"Mississippi","28",39
+2021-11-13,"Montana","30",64
+2021-11-13,"North Carolina","37",160
+2021-11-13,"North Dakota","38",24
+2021-11-13,"Nebraska","31",47
+2021-11-13,"New Hampshire","33",25
+2021-11-13,"New Jersey","34",89
+2021-11-13,"New Mexico","35",56
+2021-11-13,"Nevada","32",95
+2021-11-13,"New York","36",230
+2021-11-13,"Ohio","39",386
+2021-11-13,"Oklahoma","40",754
+2021-11-13,"Oregon","41",188
+2021-11-13,"Pennsylvania","42",458
+2021-11-13,"Puerto Rico","72",13
+2021-11-13,"Rhode Island","44",9
+2021-11-13,"South Carolina","45",142
+2021-11-13,"South Dakota","46",14
+2021-11-13,"Tennessee","47",160
+2021-11-13,"Texas","48",846
+2021-11-13,"Utah","49",61
+2021-11-13,"Virginia","51",196
+2021-11-13,"Virgin Islands","78",1
+2021-11-13,"Vermont","50",9
+2021-11-13,"Washington","53",136
+2021-11-13,"Wisconsin","55",137
+2021-11-13,"West Virginia","54",92
+2021-11-13,"Wyoming","56",55
+2021-11-20,"Alaska","02",30
+2021-11-20,"Alabama","01",92
+2021-11-20,"Arkansas","05",50
+2021-11-20,"American Samoa","60",0
+2021-11-20,"Arizona","04",288
+2021-11-20,"California","06",615
+2021-11-20,"Colorado","08",258
+2021-11-20,"Connecticut","09",41
+2021-11-20,"District of Columbia","11",2
+2021-11-20,"Delaware","10",18
+2021-11-20,"Florida","12",383
+2021-11-20,"Georgia","13",301
+2021-11-20,"Guam","66",4
+2021-11-20,"Hawaii","15",26
+2021-11-20,"Iowa","19",102
+2021-11-20,"Idaho","16",101
+2021-11-20,"Illinois","17",150
+2021-11-20,"Indiana","18",159
+2021-11-20,"Kansas","20",15
+2021-11-20,"Kentucky","21",389
+2021-11-20,"Louisiana","22",64
+2021-11-20,"Massachusetts","25",109
+2021-11-20,"Maryland","24",61
+2021-11-20,"Maine","23",41
+2021-11-20,"Michigan","26",532
+2021-11-20,"Minnesota","27",159
+2021-11-20,"Missouri","29",162
+2021-11-20,"Northern Mariana Islands","69",0
+2021-11-20,"Mississippi","28",42
+2021-11-20,"Montana","30",68
+2021-11-20,"North Carolina","37",186
+2021-11-20,"North Dakota","38",38
+2021-11-20,"Nebraska","31",60
+2021-11-20,"New Hampshire","33",40
+2021-11-20,"New Jersey","34",81
+2021-11-20,"New Mexico","35",94
+2021-11-20,"Nevada","32",110
+2021-11-20,"New York","36",236
+2021-11-20,"Ohio","39",452
+2021-11-20,"Oklahoma","40",139
+2021-11-20,"Oregon","41",164
+2021-11-20,"Pennsylvania","42",556
+2021-11-20,"Puerto Rico","72",4
+2021-11-20,"Rhode Island","44",16
+2021-11-20,"South Carolina","45",113
+2021-11-20,"South Dakota","46",23
+2021-11-20,"Tennessee","47",160
+2021-11-20,"Texas","48",591
+2021-11-20,"Utah","49",81
+2021-11-20,"Virginia","51",171
+2021-11-20,"Virgin Islands","78",1
+2021-11-20,"Vermont","50",11
+2021-11-20,"Washington","53",176
+2021-11-20,"Wisconsin","55",137
+2021-11-20,"West Virginia","54",116
+2021-11-20,"Wyoming","56",49
+2021-11-27,"Alaska","02",15
+2021-11-27,"Alabama","01",42
+2021-11-27,"Arkansas","05",41
+2021-11-27,"American Samoa","60",0
+2021-11-27,"Arizona","04",285
+2021-11-27,"California","06",432
+2021-11-27,"Colorado","08",222
+2021-11-27,"Connecticut","09",15
+2021-11-27,"District of Columbia","11",0
+2021-11-27,"Delaware","10",14
+2021-11-27,"Florida","12",66
+2021-11-27,"Georgia","13",196
+2021-11-27,"Guam","66",1
+2021-11-27,"Hawaii","15",13
+2021-11-27,"Iowa","19",86
+2021-11-27,"Idaho","16",53
+2021-11-27,"Illinois","17",86
+2021-11-27,"Indiana","18",139
+2021-11-27,"Kansas","20",40
+2021-11-27,"Kentucky","21",229
+2021-11-27,"Louisiana","22",28
+2021-11-27,"Massachusetts","25",83
+2021-11-27,"Maryland","24",67
+2021-11-27,"Maine","23",32
+2021-11-27,"Michigan","26",402
+2021-11-27,"Minnesota","27",183
+2021-11-27,"Missouri","29",22
+2021-11-27,"Northern Mariana Islands","69",0
+2021-11-27,"Mississippi","28",33
+2021-11-27,"Montana","30",84
+2021-11-27,"North Carolina","37",79
+2021-11-27,"North Dakota","38",25
+2021-11-27,"Nebraska","31",24
+2021-11-27,"New Hampshire","33",21
+2021-11-27,"New Jersey","34",85
+2021-11-27,"New Mexico","35",47
+2021-11-27,"Nevada","32",54
+2021-11-27,"New York","36",243
+2021-11-27,"Ohio","39",571
+2021-11-27,"Oklahoma","40",75
+2021-11-27,"Oregon","41",202
+2021-11-27,"Pennsylvania","42",340
+2021-11-27,"Puerto Rico","72",7
+2021-11-27,"Rhode Island","44",9
+2021-11-27,"South Carolina","45",93
+2021-11-27,"South Dakota","46",15
+2021-11-27,"Tennessee","47",139
+2021-11-27,"Texas","48",254
+2021-11-27,"Utah","49",59
+2021-11-27,"Virginia","51",143
+2021-11-27,"Virgin Islands","78",0
+2021-11-27,"Vermont","50",2
+2021-11-27,"Washington","53",98
+2021-11-27,"Wisconsin","55",128
+2021-11-27,"West Virginia","54",91
+2021-11-27,"Wyoming","56",0
+2021-12-04,"Alaska","02",6
+2021-12-04,"Alabama","01",70
+2021-12-04,"Arkansas","05",68
+2021-12-04,"American Samoa","60",0
+2021-12-04,"Arizona","04",337
+2021-12-04,"California","06",648
+2021-12-04,"Colorado","08",244
+2021-12-04,"Connecticut","09",60
+2021-12-04,"District of Columbia","11",1
+2021-12-04,"Delaware","10",21
+2021-12-04,"Florida","12",554
+2021-12-04,"Georgia","13",297
+2021-12-04,"Guam","66",3
+2021-12-04,"Hawaii","15",17
+2021-12-04,"Iowa","19",91
+2021-12-04,"Idaho","16",71
+2021-12-04,"Illinois","17",222
+2021-12-04,"Indiana","18",326
+2021-12-04,"Kansas","20",104
+2021-12-04,"Kentucky","21",281
+2021-12-04,"Louisiana","22",49
+2021-12-04,"Massachusetts","25",138
+2021-12-04,"Maryland","24",77
+2021-12-04,"Maine","23",33
+2021-12-04,"Michigan","26",863
+2021-12-04,"Minnesota","27",278
+2021-12-04,"Missouri","29",2539
+2021-12-04,"Northern Mariana Islands","69",2
+2021-12-04,"Mississippi","28",34
+2021-12-04,"Montana","30",108
+2021-12-04,"North Carolina","37",149
+2021-12-04,"North Dakota","38",39
+2021-12-04,"Nebraska","31",48
+2021-12-04,"New Hampshire","33",56
+2021-12-04,"New Jersey","34",117
+2021-12-04,"New Mexico","35",97
+2021-12-04,"Nevada","32",98
+2021-12-04,"New York","36",324
+2021-12-04,"Ohio","39",671
+2021-12-04,"Oklahoma","40",152
+2021-12-04,"Oregon","41",127
+2021-12-04,"Pennsylvania","42",608
+2021-12-04,"Puerto Rico","72",4
+2021-12-04,"Rhode Island","44",26
+2021-12-04,"South Carolina","45",83
+2021-12-04,"South Dakota","46",37
+2021-12-04,"Tennessee","47",431
+2021-12-04,"Texas","48",564
+2021-12-04,"Utah","49",77
+2021-12-04,"Virginia","51",118
+2021-12-04,"Virgin Islands","78",2
+2021-12-04,"Vermont","50",10
+2021-12-04,"Washington","53",205
+2021-12-04,"Wisconsin","55",190
+2021-12-04,"West Virginia","54",145
+2021-12-04,"Wyoming","56",81
+2021-12-11,"Alaska","02",3
+2021-12-11,"Alabama","01",80
+2021-12-11,"Arkansas","05",119
+2021-12-11,"American Samoa","60",0
+2021-12-11,"Arizona","04",460
+2021-12-11,"California","06",470
+2021-12-11,"Colorado","08",283
+2021-12-11,"Connecticut","09",47
+2021-12-11,"District of Columbia","11",2
+2021-12-11,"Delaware","10",24
+2021-12-11,"Florida","12",325
+2021-12-11,"Georgia","13",168
+2021-12-11,"Guam","66",1
+2021-12-11,"Hawaii","15",21
+2021-12-11,"Iowa","19",105
+2021-12-11,"Idaho","16",59
+2021-12-11,"Illinois","17",266
+2021-12-11,"Indiana","18",302
+2021-12-11,"Kansas","20",54
+2021-12-11,"Kentucky","21",439
+2021-12-11,"Louisiana","22",51
+2021-12-11,"Massachusetts","25",145
+2021-12-11,"Maryland","24",0
+2021-12-11,"Maine","23",31
+2021-12-11,"Michigan","26",806
+2021-12-11,"Minnesota","27",256
+2021-12-11,"Missouri","29",145
+2021-12-11,"Northern Mariana Islands","69",0
+2021-12-11,"Mississippi","28",30
+2021-12-11,"Montana","30",82
+2021-12-11,"North Carolina","37",151
+2021-12-11,"North Dakota","38",36
+2021-12-11,"Nebraska","31",83
+2021-12-11,"New Hampshire","33",42
+2021-12-11,"New Jersey","34",116
+2021-12-11,"New Mexico","35",65
+2021-12-11,"Nevada","32",119
+2021-12-11,"New York","36",397
+2021-12-11,"Ohio","39",788
+2021-12-11,"Oklahoma","40",71
+2021-12-11,"Oregon","41",138
+2021-12-11,"Pennsylvania","42",712
+2021-12-11,"Puerto Rico","72",2
+2021-12-11,"Rhode Island","44",16
+2021-12-11,"South Carolina","45",103
+2021-12-11,"South Dakota","46",41
+2021-12-11,"Tennessee","47",331
+2021-12-11,"Texas","48",409
+2021-12-11,"Utah","49",76
+2021-12-11,"Virginia","51",142
+2021-12-11,"Virgin Islands","78",0
+2021-12-11,"Vermont","50",13
+2021-12-11,"Washington","53",141
+2021-12-11,"Wisconsin","55",252
+2021-12-11,"West Virginia","54",123
+2021-12-11,"Wyoming","56",44
+2021-12-18,"Alaska","02",60
+2021-12-18,"Alabama","01",88
+2021-12-18,"Arkansas","05",102
+2021-12-18,"American Samoa","60",0
+2021-12-18,"Arizona","04",495
+2021-12-18,"California","06",448
+2021-12-18,"Colorado","08",237
+2021-12-18,"Connecticut","09",30
+2021-12-18,"District of Columbia","11",7
+2021-12-18,"Delaware","10",24
+2021-12-18,"Florida","12",194
+2021-12-18,"Georgia","13",171
+2021-12-18,"Guam","66",3
+2021-12-18,"Hawaii","15",17
+2021-12-18,"Iowa","19",130
+2021-12-18,"Idaho","16",39
+2021-12-18,"Illinois","17",316
+2021-12-18,"Indiana","18",371
+2021-12-18,"Kansas","20",79
+2021-12-18,"Kentucky","21",189
+2021-12-18,"Louisiana","22",47
+2021-12-18,"Massachusetts","25",195
+2021-12-18,"Maryland","24",0
+2021-12-18,"Maine","23",74
+2021-12-18,"Michigan","26",822
+2021-12-18,"Minnesota","27",239
+2021-12-18,"Missouri","29",162
+2021-12-18,"Northern Mariana Islands","69",1
+2021-12-18,"Mississippi","28",28
+2021-12-18,"Montana","30",56
+2021-12-18,"North Carolina","37",145
+2021-12-18,"North Dakota","38",34
+2021-12-18,"Nebraska","31",35
+2021-12-18,"New Hampshire","33",55
+2021-12-18,"New Jersey","34",140
+2021-12-18,"New Mexico","35",105
+2021-12-18,"Nevada","32",89
+2021-12-18,"New York","36",418
+2021-12-18,"Ohio","39",873
+2021-12-18,"Oklahoma","40",152
+2021-12-18,"Oregon","41",150
+2021-12-18,"Pennsylvania","42",807
+2021-12-18,"Puerto Rico","72",10
+2021-12-18,"Rhode Island","44",35
+2021-12-18,"South Carolina","45",86
+2021-12-18,"South Dakota","46",34
+2021-12-18,"Tennessee","47",256
+2021-12-18,"Texas","48",478
+2021-12-18,"Utah","49",64
+2021-12-18,"Virginia","51",188
+2021-12-18,"Virgin Islands","78",1
+2021-12-18,"Vermont","50",23
+2021-12-18,"Washington","53",120
+2021-12-18,"Wisconsin","55",281
+2021-12-18,"West Virginia","54",79
+2021-12-18,"Wyoming","56",30
+2021-12-25,"Alaska","02",30
+2021-12-25,"Alabama","01",65
+2021-12-25,"Arkansas","05",116
+2021-12-25,"American Samoa","60",0
+2021-12-25,"Arizona","04",467
+2021-12-25,"California","06",408
+2021-12-25,"Colorado","08",210
+2021-12-25,"Connecticut","09",75
+2021-12-25,"District of Columbia","11",1
+2021-12-25,"Delaware","10",29
+2021-12-25,"Florida","12",127
+2021-12-25,"Georgia","13",215
+2021-12-25,"Guam","66",0
+2021-12-25,"Hawaii","15",12
+2021-12-25,"Iowa","19",119
+2021-12-25,"Idaho","16",31
+2021-12-25,"Illinois","17",318
+2021-12-25,"Indiana","18",311
+2021-12-25,"Kansas","20",41
+2021-12-25,"Kentucky","21",132
+2021-12-25,"Louisiana","22",29
+2021-12-25,"Massachusetts","25",221
+2021-12-25,"Maryland","24",0
+2021-12-25,"Maine","23",34
+2021-12-25,"Michigan","26",603
+2021-12-25,"Minnesota","27",205
+2021-12-25,"Missouri","29",146
+2021-12-25,"Northern Mariana Islands","69",2
+2021-12-25,"Mississippi","28",39
+2021-12-25,"Montana","30",18
+2021-12-25,"North Carolina","37",112
+2021-12-25,"North Dakota","38",17
+2021-12-25,"Nebraska","31",19
+2021-12-25,"New Hampshire","33",41
+2021-12-25,"New Jersey","34",146
+2021-12-25,"New Mexico","35",168
+2021-12-25,"Nevada","32",86
+2021-12-25,"New York","36",397
+2021-12-25,"Ohio","39",830
+2021-12-25,"Oklahoma","40",126
+2021-12-25,"Oregon","41",67
+2021-12-25,"Pennsylvania","42",672
+2021-12-25,"Puerto Rico","72",7
+2021-12-25,"Rhode Island","44",26
+2021-12-25,"South Carolina","45",89
+2021-12-25,"South Dakota","46",23
+2021-12-25,"Tennessee","47",2400
+2021-12-25,"Texas","48",266
+2021-12-25,"Utah","49",50
+2021-12-25,"Virginia","51",211
+2021-12-25,"Virgin Islands","78",0
+2021-12-25,"Vermont","50",8
+2021-12-25,"Washington","53",110
+2021-12-25,"Wisconsin","55",350
+2021-12-25,"West Virginia","54",87
+2021-12-25,"Wyoming","56",24
+2022-01-01,"Alaska","02",2
+2022-01-01,"Alabama","01",37
+2022-01-01,"Arkansas","05",122
+2022-01-01,"American Samoa","60",0
+2022-01-01,"Arizona","04",371
+2022-01-01,"California","06",394
+2022-01-01,"Colorado","08",197
+2022-01-01,"Connecticut","09",83
+2022-01-01,"District of Columbia","11",4
+2022-01-01,"Delaware","10",15
+2022-01-01,"Florida","12",157
+2022-01-01,"Georgia","13",234
+2022-01-01,"Guam","66",0
+2022-01-01,"Hawaii","15",12
+2022-01-01,"Iowa","19",59
+2022-01-01,"Idaho","16",63
+2022-01-01,"Illinois","17",386
+2022-01-01,"Indiana","18",341
+2022-01-01,"Kansas","20",52
+2022-01-01,"Kentucky","21",200
+2022-01-01,"Louisiana","22",33
+2022-01-01,"Massachusetts","25",223
+2022-01-01,"Maryland","24",503
+2022-01-01,"Maine","23",56
+2022-01-01,"Michigan","26",675
+2022-01-01,"Minnesota","27",216
+2022-01-01,"Missouri","29",211
+2022-01-01,"Northern Mariana Islands","69",6
+2022-01-01,"Mississippi","28",57
+2022-01-01,"Montana","30",11
+2022-01-01,"North Carolina","37",193
+2022-01-01,"North Dakota","38",17
+2022-01-01,"Nebraska","31",21
+2022-01-01,"New Hampshire","33",84
+2022-01-01,"New Jersey","34",199
+2022-01-01,"New Mexico","35",110
+2022-01-01,"Nevada","32",56
+2022-01-01,"New York","36",648
+2022-01-01,"Ohio","39",883
+2022-01-01,"Oklahoma","40",71
+2022-01-01,"Oregon","41",57
+2022-01-01,"Pennsylvania","42",664
+2022-01-01,"Puerto Rico","72",17
+2022-01-01,"Rhode Island","44",48
+2022-01-01,"South Carolina","45",86
+2022-01-01,"South Dakota","46",30
+2022-01-01,"Tennessee","47",465
+2022-01-01,"Texas","48",422
+2022-01-01,"Utah","49",33
+2022-01-01,"Virginia","51",293
+2022-01-01,"Virgin Islands","78",1
+2022-01-01,"Vermont","50",11
+2022-01-01,"Washington","53",69
+2022-01-01,"Wisconsin","55",156
+2022-01-01,"West Virginia","54",85
+2022-01-01,"Wyoming","56",0
+2022-01-08,"Alaska","02",2
+2022-01-08,"Alabama","01",169
+2022-01-08,"Arkansas","05",134
+2022-01-08,"American Samoa","60",0
+2022-01-08,"Arizona","04",350
+2022-01-08,"California","06",523
+2022-01-08,"Colorado","08",154
+2022-01-08,"Connecticut","09",217
+2022-01-08,"District of Columbia","11",16
+2022-01-08,"Delaware","10",79
+2022-01-08,"Florida","12",184
+2022-01-08,"Georgia","13",78
+2022-01-08,"Guam","66",4
+2022-01-08,"Hawaii","15",8
+2022-01-08,"Iowa","19",161
+2022-01-08,"Idaho","16",75
+2022-01-08,"Illinois","17",540
+2022-01-08,"Indiana","18",577
+2022-01-08,"Kansas","20",91
+2022-01-08,"Kentucky","21",240
+2022-01-08,"Louisiana","22",68
+2022-01-08,"Massachusetts","25",295
+2022-01-08,"Maryland","24",400
+2022-01-08,"Maine","23",72
+2022-01-08,"Michigan","26",933
+2022-01-08,"Minnesota","27",250
+2022-01-08,"Missouri","29",281
+2022-01-08,"Northern Mariana Islands","69",5
+2022-01-08,"Mississippi","28",77
+2022-01-08,"Montana","30",11
+2022-01-08,"North Carolina","37",193
+2022-01-08,"North Dakota","38",17
+2022-01-08,"Nebraska","31",130
+2022-01-08,"New Hampshire","33",58
+2022-01-08,"New Jersey","34",391
+2022-01-08,"New Mexico","35",128
+2022-01-08,"Nevada","32",90
+2022-01-08,"New York","36",856
+2022-01-08,"Ohio","39",994
+2022-01-08,"Oklahoma","40",173
+2022-01-08,"Oregon","41",106
+2022-01-08,"Pennsylvania","42",928
+2022-01-08,"Puerto Rico","72",53
+2022-01-08,"Rhode Island","44",55
+2022-01-08,"South Carolina","45",110
+2022-01-08,"South Dakota","46",36
+2022-01-08,"Tennessee","47",99
+2022-01-08,"Texas","48",717
+2022-01-08,"Utah","49",100
+2022-01-08,"Virginia","51",64
+2022-01-08,"Virgin Islands","78",0
+2022-01-08,"Vermont","50",12
+2022-01-08,"Washington","53",151
+2022-01-08,"Wisconsin","55",229
+2022-01-08,"West Virginia","54",85
+2022-01-08,"Wyoming","56",46
+2022-01-15,"Alaska","02",7
+2022-01-15,"Alabama","01",17
+2022-01-15,"Arkansas","05",116
+2022-01-15,"American Samoa","60",0
+2022-01-15,"Arizona","04",364
+2022-01-15,"California","06",680
+2022-01-15,"Colorado","08",191
+2022-01-15,"Connecticut","09",179
+2022-01-15,"District of Columbia","11",28
+2022-01-15,"Delaware","10",59
+2022-01-15,"Florida","12",470
+2022-01-15,"Georgia","13",407
+2022-01-15,"Guam","66",0
+2022-01-15,"Hawaii","15",21
+2022-01-15,"Iowa","19",182
+2022-01-15,"Idaho","16",37
+2022-01-15,"Illinois","17",738
+2022-01-15,"Indiana","18",612
+2022-01-15,"Kansas","20",66
+2022-01-15,"Kentucky","21",160
+2022-01-15,"Louisiana","22",83
+2022-01-15,"Massachusetts","25",371
+2022-01-15,"Maryland","24",450
+2022-01-15,"Maine","23",55
+2022-01-15,"Michigan","26",754
+2022-01-15,"Minnesota","27",205
+2022-01-15,"Missouri","29",315
+2022-01-15,"Northern Mariana Islands","69",2
+2022-01-15,"Mississippi","28",98
+2022-01-15,"Montana","30",28
+2022-01-15,"North Carolina","37",284
+2022-01-15,"North Dakota","38",18
+2022-01-15,"Nebraska","31",72
+2022-01-15,"New Hampshire","33",60
+2022-01-15,"New Jersey","34",635
+2022-01-15,"New Mexico","35",162
+2022-01-15,"Nevada","32",117
+2022-01-15,"New York","36",1305
+2022-01-15,"Ohio","39",1064
+2022-01-15,"Oklahoma","40",183
+2022-01-15,"Oregon","41",122
+2022-01-15,"Pennsylvania","42",969
+2022-01-15,"Puerto Rico","72",132
+2022-01-15,"Rhode Island","44",54
+2022-01-15,"South Carolina","45",168
+2022-01-15,"South Dakota","46",37
+2022-01-15,"Tennessee","47",180
+2022-01-15,"Texas","48",623
+2022-01-15,"Utah","49",64
+2022-01-15,"Virginia","51",152
+2022-01-15,"Virgin Islands","78",2
+2022-01-15,"Vermont","50",14
+2022-01-15,"Washington","53",192
+2022-01-15,"Wisconsin","55",247
+2022-01-15,"West Virginia","54",95
+2022-01-15,"Wyoming","56",16
+2022-01-22,"Alaska","02",64
+2022-01-22,"Alabama","01",185
+2022-01-22,"Arkansas","05",68
+2022-01-22,"American Samoa","60",0
+2022-01-22,"Arizona","04",489
+2022-01-22,"California","06",830
+2022-01-22,"Colorado","08",183
+2022-01-22,"Connecticut","09",213
+2022-01-22,"District of Columbia","11",12
+2022-01-22,"Delaware","10",56
+2022-01-22,"Florida","12",605
+2022-01-22,"Georgia","13",366
+2022-01-22,"Guam","66",2
+2022-01-22,"Hawaii","15",19
+2022-01-22,"Iowa","19",116
+2022-01-22,"Idaho","16",48
+2022-01-22,"Illinois","17",746
+2022-01-22,"Indiana","18",525
+2022-01-22,"Kansas","20",158
+2022-01-22,"Kentucky","21",169
+2022-01-22,"Louisiana","22",187
+2022-01-22,"Massachusetts","25",463
+2022-01-22,"Maryland","24",493
+2022-01-22,"Maine","23",40
+2022-01-22,"Michigan","26",793
+2022-01-22,"Minnesota","27",180
+2022-01-22,"Missouri","29",429
+2022-01-22,"Northern Mariana Islands","69",1
+2022-01-22,"Mississippi","28",96
+2022-01-22,"Montana","30",31
+2022-01-22,"North Carolina","37",290
+2022-01-22,"North Dakota","38",24
+2022-01-22,"Nebraska","31",29
+2022-01-22,"New Hampshire","33",56
+2022-01-22,"New Jersey","34",667
+2022-01-22,"New Mexico","35",114
+2022-01-22,"Nevada","32",109
+2022-01-22,"New York","36",1445
+2022-01-22,"Ohio","39",932
+2022-01-22,"Oklahoma","40",193
+2022-01-22,"Oregon","41",53
+2022-01-22,"Pennsylvania","42",876
+2022-01-22,"Puerto Rico","72",180
+2022-01-22,"Rhode Island","44",65
+2022-01-22,"South Carolina","45",194
+2022-01-22,"South Dakota","46",42
+2022-01-22,"Tennessee","47",584
+2022-01-22,"Texas","48",971
+2022-01-22,"Utah","49",79
+2022-01-22,"Virginia","51",49
+2022-01-22,"Virgin Islands","78",5
+2022-01-22,"Vermont","50",17
+2022-01-22,"Washington","53",209
+2022-01-22,"Wisconsin","55",297
+2022-01-22,"West Virginia","54",93
+2022-01-22,"Wyoming","56",13
+2022-01-29,"Alaska","02",34
+2022-01-29,"Alabama","01",260
+2022-01-29,"Arkansas","05",118
+2022-01-29,"American Samoa","60",0
+2022-01-29,"Arizona","04",626
+2022-01-29,"California","06",1211
+2022-01-29,"Colorado","08",262
+2022-01-29,"Connecticut","09",216
+2022-01-29,"District of Columbia","11",17
+2022-01-29,"Delaware","10",51
+2022-01-29,"Florida","12",1192
+2022-01-29,"Georgia","13",574
+2022-01-29,"Guam","66",9
+2022-01-29,"Hawaii","15",31
+2022-01-29,"Iowa","19",184
+2022-01-29,"Idaho","16",83
+2022-01-29,"Illinois","17",843
+2022-01-29,"Indiana","18",550
+2022-01-29,"Kansas","20",198
+2022-01-29,"Kentucky","21",203
+2022-01-29,"Louisiana","22",307
+2022-01-29,"Massachusetts","25",507
+2022-01-29,"Maryland","24",331
+2022-01-29,"Maine","23",40
+2022-01-29,"Michigan","26",692
+2022-01-29,"Minnesota","27",241
+2022-01-29,"Missouri","29",150
+2022-01-29,"Northern Mariana Islands","69",1
+2022-01-29,"Mississippi","28",110
+2022-01-29,"Montana","30",17
+2022-01-29,"North Carolina","37",402
+2022-01-29,"North Dakota","38",24
+2022-01-29,"Nebraska","31",97
+2022-01-29,"New Hampshire","33",70
+2022-01-29,"New Jersey","34",645
+2022-01-29,"New Mexico","35",158
+2022-01-29,"Nevada","32",178
+2022-01-29,"New York","36",1527
+2022-01-29,"Ohio","39",722
+2022-01-29,"Oklahoma","40",242
+2022-01-29,"Oregon","41",150
+2022-01-29,"Pennsylvania","42",1061
+2022-01-29,"Puerto Rico","72",164
+2022-01-29,"Rhode Island","44",62
+2022-01-29,"South Carolina","45",158
+2022-01-29,"South Dakota","46",35
+2022-01-29,"Tennessee","47",437
+2022-01-29,"Texas","48",1212
+2022-01-29,"Utah","49",77
+2022-01-29,"Virginia","51",275
+2022-01-29,"Virgin Islands","78",3
+2022-01-29,"Vermont","50",19
+2022-01-29,"Washington","53",294
+2022-01-29,"Wisconsin","55",345
+2022-01-29,"West Virginia","54",134
+2022-01-29,"Wyoming","56",24
+2022-02-05,"Alaska","02",8
+2022-02-05,"Alabama","01",285
+2022-02-05,"Arkansas","05",177
+2022-02-05,"American Samoa","60",0
+2022-02-05,"Arizona","04",445
+2022-02-05,"California","06",1237
+2022-02-05,"Colorado","08",141
+2022-02-05,"Connecticut","09",174
+2022-02-05,"District of Columbia","11",9
+2022-02-05,"Delaware","10",45
+2022-02-05,"Florida","12",1324
+2022-02-05,"Georgia","13",534
+2022-02-05,"Guam","66",11
+2022-02-05,"Hawaii","15",49
+2022-02-05,"Iowa","19",156
+2022-02-05,"Idaho","16",74
+2022-02-05,"Illinois","17",608
+2022-02-05,"Indiana","18",411
+2022-02-05,"Kansas","20",194
+2022-02-05,"Kentucky","21",173
+2022-02-05,"Louisiana","22",274
+2022-02-05,"Massachusetts","25",470
+2022-02-05,"Maryland","24",259
+2022-02-05,"Maine","23",66
+2022-02-05,"Michigan","26",672
+2022-02-05,"Minnesota","27",217
+2022-02-05,"Missouri","29",453
+2022-02-05,"Northern Mariana Islands","69",0
+2022-02-05,"Mississippi","28",419
+2022-02-05,"Montana","30",38
+2022-02-05,"North Carolina","37",502
+2022-02-05,"North Dakota","38",37
+2022-02-05,"Nebraska","31",89
+2022-02-05,"New Hampshire","33",41
+2022-02-05,"New Jersey","34",557
+2022-02-05,"New Mexico","35",118
+2022-02-05,"Nevada","32",230
+2022-02-05,"New York","36",908
+2022-02-05,"Ohio","39",449
+2022-02-05,"Oklahoma","40",322
+2022-02-05,"Oregon","41",128
+2022-02-05,"Pennsylvania","42",976
+2022-02-05,"Puerto Rico","72",102
+2022-02-05,"Rhode Island","44",52
+2022-02-05,"South Carolina","45",525
+2022-02-05,"South Dakota","46",47
+2022-02-05,"Tennessee","47",852
+2022-02-05,"Texas","48",1395
+2022-02-05,"Utah","49",66
+2022-02-05,"Virginia","51",576
+2022-02-05,"Virgin Islands","78",3
+2022-02-05,"Vermont","50",20
+2022-02-05,"Washington","53",268
+2022-02-05,"Wisconsin","55",309
+2022-02-05,"West Virginia","54",103
+2022-02-05,"Wyoming","56",25
+2022-02-12,"Alaska","02",21
+2022-02-12,"Alabama","01",200
+2022-02-12,"Arkansas","05",232
+2022-02-12,"American Samoa","60",0
+2022-02-12,"Arizona","04",536
+2022-02-12,"California","06",1501
+2022-02-12,"Colorado","08",399
+2022-02-12,"Connecticut","09",101
+2022-02-12,"District of Columbia","11",16
+2022-02-12,"Delaware","10",67
+2022-02-12,"Florida","12",1293
+2022-02-12,"Georgia","13",674
+2022-02-12,"Guam","66",10
+2022-02-12,"Hawaii","15",36
+2022-02-12,"Iowa","19",172
+2022-02-12,"Idaho","16",73
+2022-02-12,"Illinois","17",499
+2022-02-12,"Indiana","18",424
+2022-02-12,"Kansas","20",7
+2022-02-12,"Kentucky","21",237
+2022-02-12,"Louisiana","22",271
+2022-02-12,"Massachusetts","25",412
+2022-02-12,"Maryland","24",214
+2022-02-12,"Maine","23",24
+2022-02-12,"Michigan","26",589
+2022-02-12,"Minnesota","27",208
+2022-02-12,"Missouri","29",362
+2022-02-12,"Northern Mariana Islands","69",0
+2022-02-12,"Mississippi","28",308
+2022-02-12,"Montana","30",36
+2022-02-12,"North Carolina","37",568
+2022-02-12,"North Dakota","38",24
+2022-02-12,"Nebraska","31",60
+2022-02-12,"New Hampshire","33",48
+2022-02-12,"New Jersey","34",426
+2022-02-12,"New Mexico","35",123
+2022-02-12,"Nevada","32",191
+2022-02-12,"New York","36",805
+2022-02-12,"Ohio","39",178
+2022-02-12,"Oklahoma","40",315
+2022-02-12,"Oregon","41",141
+2022-02-12,"Pennsylvania","42",679
+2022-02-12,"Puerto Rico","72",86
+2022-02-12,"Rhode Island","44",22
+2022-02-12,"South Carolina","45",345
+2022-02-12,"South Dakota","46",43
+2022-02-12,"Tennessee","47",332
+2022-02-12,"Texas","48",1398
+2022-02-12,"Utah","49",88
+2022-02-12,"Virginia","51",779
+2022-02-12,"Virgin Islands","78",3
+2022-02-12,"Vermont","50",13
+2022-02-12,"Washington","53",349
+2022-02-12,"Wisconsin","55",277
+2022-02-12,"West Virginia","54",146
+2022-02-12,"Wyoming","56",17
+2022-02-19,"Alaska","02",26
+2022-02-19,"Alabama","01",362
+2022-02-19,"Arkansas","05",266
+2022-02-19,"American Samoa","60",0
+2022-02-19,"Arizona","04",349
+2022-02-19,"California","06",1444
+2022-02-19,"Colorado","08",80
+2022-02-19,"Connecticut","09",97
+2022-02-19,"District of Columbia","11",5
+2022-02-19,"Delaware","10",52
+2022-02-19,"Florida","12",1330
+2022-02-19,"Georgia","13",681
+2022-02-19,"Guam","66",10
+2022-02-19,"Hawaii","15",42
+2022-02-19,"Iowa","19",119
+2022-02-19,"Idaho","16",124
+2022-02-19,"Illinois","17",504
+2022-02-19,"Indiana","18",393
+2022-02-19,"Kansas","20",185
+2022-02-19,"Kentucky","21",265
+2022-02-19,"Louisiana","22",224
+2022-02-19,"Massachusetts","25",318
+2022-02-19,"Maryland","24",98
+2022-02-19,"Maine","23",132
+2022-02-19,"Michigan","26",533
+2022-02-19,"Minnesota","27",174
+2022-02-19,"Missouri","29",380
+2022-02-19,"Northern Mariana Islands","69",2
+2022-02-19,"Mississippi","28",278
+2022-02-19,"Montana","30",38
+2022-02-19,"North Carolina","37",483
+2022-02-19,"North Dakota","38",20
+2022-02-19,"Nebraska","31",68
+2022-02-19,"New Hampshire","33",39
+2022-02-19,"New Jersey","34",273
+2022-02-19,"New Mexico","35",117
+2022-02-19,"Nevada","32",173
+2022-02-19,"New York","36",508
+2022-02-19,"Ohio","39",58
+2022-02-19,"Oklahoma","40",376
+2022-02-19,"Oregon","41",101
+2022-02-19,"Pennsylvania","42",483
+2022-02-19,"Puerto Rico","72",53
+2022-02-19,"Rhode Island","44",21
+2022-02-19,"South Carolina","45",397
+2022-02-19,"South Dakota","46",41
+2022-02-19,"Tennessee","47",618
+2022-02-19,"Texas","48",1588
+2022-02-19,"Utah","49",98
+2022-02-19,"Virginia","51",534
+2022-02-19,"Virgin Islands","78",3
+2022-02-19,"Vermont","50",17
+2022-02-19,"Washington","53",299
+2022-02-19,"Wisconsin","55",191
+2022-02-19,"West Virginia","54",170
+2022-02-19,"Wyoming","56",22
+2020-01-25,"US","US",0
+2020-02-01,"US","US",0
+2020-02-08,"US","US",0
+2020-02-15,"US","US",0
+2020-02-22,"US","US",0
+2020-02-29,"US","US",1
+2020-03-07,"US","US",16
+2020-03-14,"US","US",43
+2020-03-21,"US","US",420
+2020-03-28,"US","US",2534
+2020-04-04,"US","US",8154
+2020-04-11,"US","US",14618
+2020-04-18,"US","US",15147
+2020-04-25,"US","US",15476
+2020-05-02,"US","US",13347
+2020-05-09,"US","US",12245
+2020-05-16,"US","US",9996
+2020-05-23,"US","US",8457
+2020-05-30,"US","US",6522
+2020-06-06,"US","US",5906
+2020-06-13,"US","US",5118
+2020-06-20,"US","US",4180
+2020-06-27,"US","US",3859
+2020-07-04,"US","US",3665
+2020-07-11,"US","US",5277
+2020-07-18,"US","US",5526
+2020-07-25,"US","US",6475
+2020-08-01,"US","US",7886
+2020-08-08,"US","US",7237
+2020-08-15,"US","US",7093
+2020-08-22,"US","US",6774
+2020-08-29,"US","US",6387
+2020-09-05,"US","US",5886
+2020-09-12,"US","US",5161
+2020-09-19,"US","US",5514
+2020-09-26,"US","US",5388
+2020-10-03,"US","US",4928
+2020-10-10,"US","US",5085
+2020-10-17,"US","US",5248
+2020-10-24,"US","US",5834
+2020-10-31,"US","US",6019
+2020-11-07,"US","US",7271
+2020-11-14,"US","US",7956
+2020-11-21,"US","US",10873
+2020-11-28,"US","US",10822
+2020-12-05,"US","US",15701
+2020-12-12,"US","US",17616
+2020-12-19,"US","US",19163
+2020-12-26,"US","US",16575
+2021-01-02,"US","US",18976
+2021-01-09,"US","US",22410
+2021-01-16,"US","US",23523
+2021-01-23,"US","US",21865
+2021-01-30,"US","US",22081
+2021-02-06,"US","US",21474
+2021-02-13,"US","US",17767
+2021-02-20,"US","US",13309
+2021-02-27,"US","US",14074
+2021-03-06,"US","US",12146
+2021-03-13,"US","US",8773
+2021-03-20,"US","US",7177
+2021-03-27,"US","US",7143
+2021-04-03,"US","US",5924
+2021-04-10,"US","US",6893
+2021-04-17,"US","US",5022
+2021-04-24,"US","US",5039
+2021-05-01,"US","US",4886
+2021-05-08,"US","US",4805
+2021-05-15,"US","US",4090
+2021-05-22,"US","US",3925
+2021-05-29,"US","US",4498
+2021-06-05,"US","US",3259
+2021-06-12,"US","US",2514
+2021-06-19,"US","US",2110
+2021-06-26,"US","US",2105
+2021-07-03,"US","US",1661
+2021-07-10,"US","US",1584
+2021-07-17,"US","US",1794
+2021-07-24,"US","US",1985
+2021-07-31,"US","US",2535
+2021-08-07,"US","US",3595
+2021-08-14,"US","US",4591
+2021-08-21,"US","US",7238
+2021-08-28,"US","US",9029
+2021-09-04,"US","US",11056
+2021-09-11,"US","US",11860
+2021-09-18,"US","US",14058
+2021-09-25,"US","US",14375
+2021-10-02,"US","US",13755
+2021-10-09,"US","US",11735
+2021-10-16,"US","US",11646
+2021-10-23,"US","US",11962
+2021-10-30,"US","US",9296
+2021-11-06,"US","US",8529
+2021-11-13,"US","US",8481
+2021-11-20,"US","US",8067
+2021-11-27,"US","US",5713
+2021-12-04,"US","US",12001
+2021-12-11,"US","US",9185
+2021-12-18,"US","US",9312
+2021-12-25,"US","US",10336
+2022-01-01,"US","US",9439
+2022-01-08,"US","US",11815
+2022-01-15,"US","US",13662
+2022-01-22,"US","US",15153
+2022-01-29,"US","US",17573
+2022-02-05,"US","US",17623
+2022-02-12,"US","US",16378
+2022-02-19,"US","US",15262

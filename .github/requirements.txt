@@ -1,3 +1,5 @@
+# Packages required for the validation (update cache on the 2022-06-09)
+https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip
 arrow
 covidcast
 cowplot
@@ -20,4 +22,3 @@ stringr
 tibble
 tidyr
 tidyselect
-https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip

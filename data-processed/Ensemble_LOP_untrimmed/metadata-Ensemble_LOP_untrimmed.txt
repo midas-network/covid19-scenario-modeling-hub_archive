@@ -5,6 +5,6 @@ model_version: 1.0
 model_contributors: 
 website_url: 
 license: cc-by-4.0
-methods: The LOP ensemble projection is calculated by averaging cumulative probabilities of a given value across submissions. All values are included in the average. From the resulting distribution, medians and uncertainty intervals are derived. Ensemble projection includes only those submissions that reported quantiles for their targets.
+methods: The LOP untrimmed ensemble projection is calculated by averaging cumulative probabilities of a given value across submissions. All values are included in the average. From the resulting distribution, medians and uncertainty intervals are derived. Ensemble projection includes only those submissions that reported quantiles for their targets. Starting round 13, the ensemble is calculated by averaging cumulative probabilities of a given value across wighted submissions. By default a weight of 1 is assigned for each submission, 0.5 if a team makes two submissions.
 importations: 
 methods_long: 
