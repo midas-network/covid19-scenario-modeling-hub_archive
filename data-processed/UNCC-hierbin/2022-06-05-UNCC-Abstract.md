@@ -10,17 +10,17 @@ We suggest that broad vaccine booster has substantial impact on the overall dyna
 We considered a single immune class with continuous waning level instead of discrete full/partial immune classes.
 ## Initial distribution of susceptibility if available
 ### Proportion of people that were infected with Omicron before March 13
-Not explicitly modeled; can be estimated from cumulative prevalence of infection on 03/22/2022.
+Not explicitly modeled; can be estimated from cumulative prevalence of infection on 06/04/2022.
 ### Proportion of people that are naïve at start of projection (not vaccinated or infected)
 Not explicitly modeled.
 ### Other
 NA
 ## Initial variant characteristics (including Omicron transmissibility, immune escape, and how uncertainty or non-identifiability was handled) 
-Modeled as directed in the instruction..
+Modeled as directed in the instruction.
 ## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
-Last 7d hospitalization and death rates are used as starting point to calibrate the model.
+Moving average of hospitalization and death rates across states are used to calibrate the model.
 ## Waning immunity details (e.g., distribution used)
-Exponential distribution is used to model wanining immunity.
+Waning immunity is not explicitly modeled in this round 14.
 ## Seasonality implementation
 Seasonality is applied via transfer learning from 2021 data.
 ## Emerging variant details (including introduction process)
