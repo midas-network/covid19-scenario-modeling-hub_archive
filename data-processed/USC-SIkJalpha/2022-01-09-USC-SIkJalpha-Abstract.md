@@ -1,6 +1,6 @@
 # Summary of results
 In Round 12, similar to Round 11, the model projects upcoming peaks in all outcomes in all scenarios. In all scenarios, the peaks for national-level new cases happen around mid to late January,
-hospitalizations peak late January to early February and deaths peak in mid Februray.
+hospitalizations peak late January to early February and deaths peak in mid February.
 Their is a little difference between Scenario A and Scenario B (and C and D). However, the deaths and hospitalizations are significantly higher in Scenarios C and D (pessimistic severity) compared to A and B (optimistic severity).
 
 # Explanation of observed dynamics given model assumptions

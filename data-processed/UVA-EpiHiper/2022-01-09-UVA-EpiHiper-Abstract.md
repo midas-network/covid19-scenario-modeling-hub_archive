@@ -14,7 +14,7 @@ Initialization of susceptibility is based county level data of previous confirme
 Transmissibility is the same between Delta and Omicron. It is calibrated for each state by fitting effective reproduction number to the most recent estimate based on the confirmed cases data of that state.
 
 ## Generation time
-Generation time is not an explicit parameter in our model. It depends on transmissibility which we calibrate separately for different states, as well as infectivity/susceptibility of infector/infecte=d, duration of infectiousness for different ages, and contact duration between infector and infected. Generation time differs between different variants due to different infectious/susceptible subpopulations and different network structures within those subpopulations.
+Generation time is not an explicit parameter in our model. It depends on transmissibility which we calibrate separately for different states, as well as infectivity/susceptibility of infector/infected, duration of infectiousness for different ages, and contact duration between infector and infected. Generation time differs between different variants due to different infectious/susceptible subpopulations and different network structures within those subpopulations.
 
 ## Waning immunity assumptions
 We model waning immunity explicitly in our disease model using a partially susceptible state. A recovered/vaccinated node is moved to the partially susceptible state after a random dwell time, sampled from an exponential distribution with mean of 6 months. Protection on nodes in the partially susceptible state is 60%/40% against infection for 64-yo/65+yo, 90%/80% against severe disease for 64-yo/65+yo.

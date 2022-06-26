@@ -14,4 +14,4 @@ Generation time is not an explicit parameter and is somewhat influenced by the t
 ## Waning immunity assumptions
 We model waning immunity as constant rate from those who are recovered to freshly susceptible with an expected dwell time of 6 months.  
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-Previous round did not include the reduced serial interval described above.  We did not model changes to case ascertainment which almost certainly has happened as we have observed case positivity levels over 20% for some time and the perponderance of "at-home" testing has led to fewer confirmed cases.
+Previous round did not include the reduced serial interval described above.  We did not model changes to case ascertainment which almost certainly has happened as we have observed case positivity levels over 20% for some time and the preponderance of "at-home" testing has led to fewer confirmed cases.

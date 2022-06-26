@@ -63,7 +63,7 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually ***administered*** doses in December and January, vaccine ***administration rate observed*** so far in January persists through the end of the month, 25 million courses ***distibuted*** per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
+*   **Vaccine availability**: Actually ***administered*** doses in December and January, vaccine ***administration rate observed*** so far in January persists through the end of the month, 25 million courses ***distributed*** per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
 *   **Variant strain**: no variant strain
 
 ### Scenario B: “Optimistic” Scenario, Variant Strain 
@@ -73,7 +73,7 @@ Last updated: 01-22-2021 for second round scenarios
 *   **Testing-Trace-Isolate:** constant at baseline levels
 *   **Masking:** maintained at baseline levels indefinitely
 *   **Vaccine efficacy**: 95% after two doses, 50% after one dose, doses 3.5 weeks apart
-*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed so far in January persists through the end of the month, 25 million courses distibuted per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
+*   **Vaccine availability**: Actually administered doses in December and January, vaccine administration rate observed so far in January persists through the end of the month, 25 million courses distributed per month thereafter (NOTE: administration refers to actual receipt by an individual, distribution to the doses being sent to states)
 *   **Variant strain**: variant is 1.5x more transmissible than current strains and reaches 50% dominance by March 15 and 100% dominance by May 1 [(see MMWR report)](https://www.cdc.gov/mmwr/volumes/70/wr/mm7003e2.htm); here a 1.5x increase in transmissibility is defined as the increase in the expected number of cases infected by a single case over their entire course of infection when there are no interventions or immunity in the population (e.g., a 1.5x increase in R<sub>0</sub> in a classic epidemic model)
 
 ### Scenario C: Fatigue and Hesitancy Scenario, No Variant Strain
@@ -147,7 +147,7 @@ Groups interested in participating can submit model projections for each scenari
 ### Model projection dates
 Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
 
-For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. We have created [a csv file](template/covid19-death-forecast-dates.csv) describing projection collection dates and dates to which projections refer to can be found. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
+For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. We have created [a csv file](template/covid19-death-forecast-dates.csv) describing projection collection dates and dates to which projections refer to can be found. Model projection dates in the COVID-19 Scenario Modeling Hub are equivalent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 ### Gold standard data
 We will use the daily reports containing COVID-19 cases and deaths data from the [JHU CSSE group](https://coronavirus.jhu.edu/map.html) as the gold standard reference data for cases and deaths in the US. We will use the distribution of the JHU data as provided by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html) maintained by the [Delphi Research Group](https://delphi.cmu.edu/about/) at Carnegie Mellon University. 

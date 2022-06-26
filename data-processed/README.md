@@ -103,7 +103,7 @@ Values in the `model_projection_date` column must be a date in the format
     
 Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
 
-For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
+For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivalent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 ### `scenario_name`
 
@@ -112,7 +112,7 @@ The standard scenario names should be used as given in the scenario description 
 
 ### `scenario_id`
 
-The standard scenario id should be used as given in in the scenario description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). Scenario id's include a captitalized letter and date as YYYY-MM-DD on which the scenario was last modified by the project coordinators, e.g., `A-2020-12-22`.
+The standard scenario id should be used as given in in the scenario description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). Scenario id's include a capitalized letter and date as YYYY-MM-DD on which the scenario was last modified by the project coordinators, e.g., `A-2020-12-22`.
 
 
 ### `target`

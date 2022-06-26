@@ -5,7 +5,7 @@
 
 # Explanation of observed dynamics given model assumptions
 1. Although the new variant has the same intrinsic transmissibility as Omicron, immune escape means a more susceptible population (more people can be infected with larger probabilities).
-2. We calibrate our model seperately for the optimistic waning and pessimistic waning scenarios, towards the same confirmed cases data. The calibrated disease transmissibility is higher for the optimistic waning scenarios. This reduces the difference of waning between scenarios in the projection too.
+2. We calibrate our model separately for the optimistic waning and pessimistic waning scenarios, towards the same confirmed cases data. The calibrated disease transmissibility is higher for the optimistic waning scenarios. This reduces the difference of waning between scenarios in the projection too.
 3. With waning and without vaccination beyond the third dose (booster), infected people keep returning to the waned states and getting reinfected.
 
 # Model assumptions

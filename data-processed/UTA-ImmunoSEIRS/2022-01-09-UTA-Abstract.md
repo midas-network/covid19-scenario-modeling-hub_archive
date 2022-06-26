@@ -20,7 +20,7 @@ We fit a double strain model to estimate R0 for each immune escape levels, using
 The incubation period for Omicron is shortened to 3 days.
 
 ## Waning immunity assumptions
-We consider tha the half-life time of immunity from natural infection is 8 months and the half-life time of immunity acquired from vaccination is 6 months.
+We consider that the half-life time of immunity from natural infection is 8 months and the half-life time of immunity acquired from vaccination is 6 months.
 
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
 N/A

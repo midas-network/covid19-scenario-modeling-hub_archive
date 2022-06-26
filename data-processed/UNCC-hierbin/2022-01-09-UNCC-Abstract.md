@@ -13,4 +13,4 @@ Generation time is implicitly modeled due to the data-driven nature of our model
 ## Waning immunity assumptions
 Waning immunity is implicitly modeled in both round #11 and #12.
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-We do not explicitly consider under-reporting due to testing capacity or other constraints. Our model focuses on projecting reported cases, hospitalization, and death. We assume that hosptalization and death are more stable metrics of the current Omicron wave. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate.
+We do not explicitly consider under-reporting due to testing capacity or other constraints. Our model focuses on projecting reported cases, hospitalization, and death. We assume that hospitalization and death are more stable metrics of the current Omicron wave. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate.

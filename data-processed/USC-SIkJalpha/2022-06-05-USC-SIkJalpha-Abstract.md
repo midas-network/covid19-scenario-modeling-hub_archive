@@ -2,7 +2,7 @@
 In all scenarios, peaks in all outcomes are observed in end of June or July. This peak is comparable to the omicron peak in January. Past this peak, outcomes rise again, more quickly in B and D compared to A and C, respectively, driven by variant X and waning immunity. In scenarios C and D the rise is significantly lower than A and B due to the increased third booster coverage.
 
 # Explanation of observed dynamics given model assumptions
-The presense of BA.4 and BA.5 in the model is causing a sharp surge in June. The variant prevalence data for BA.4 and BA.5 is sparse at the moment, therefore, is likely to be uncertain. Another week of data can significantly improve the projections.
+The presence of BA.4 and BA.5 in the model is causing a sharp surge in June. The variant prevalence data for BA.4 and BA.5 is sparse at the moment, therefore, is likely to be uncertain. Another week of data can significantly improve the projections.
 
 # Model assumptions
 ## Number/type of immune classes considered
@@ -16,7 +16,7 @@ Susceptibility is identified over the whole period since Jan 2020 by keeping tra
 ~ 0
 
 ## Initial variant characteristics (including Omicron transmissibility, immune escape, whether BA4/BA5 were considered and how uncertainty or non-identifiability was handled) 
-Ten variants are considered: BA.1, BA.1.1, BA.2, BA.2.12.1, BA.3, BA.4, BA.5, variant X, pre-omicron (all variants before the rise of omicron combined as one), and other (all other variants combined as one). All BA* except BA.4 and BA.5 are assumed to have 50% immune escape from the pre-omicron variant. BA.4 and BA.5 are assumed to be either 40% or 60% immune escape (contributing to uncertainty). Fixing the immune escape parameter, the model is able to learn the transmissibility of all the four omicron variants based on the observed data. Further, it is possible to get unusually large values for transmission of variants that have low prevalence but show significant growth advantage. We enforce that maximum transmiisibility of BA.5 cannot exceed that of the most transmissible among the rest of the BA*. Thus, the advantage is driven by immune escape property.
+Ten variants are considered: BA.1, BA.1.1, BA.2, BA.2.12.1, BA.3, BA.4, BA.5, variant X, pre-omicron (all variants before the rise of omicron combined as one), and other (all other variants combined as one). All BA* except BA.4 and BA.5 are assumed to have 50% immune escape from the pre-omicron variant. BA.4 and BA.5 are assumed to be either 40% or 60% immune escape (contributing to uncertainty). Fixing the immune escape parameter, the model is able to learn the transmissibility of all the four omicron variants based on the observed data. Further, it is possible to get unusually large values for transmission of variants that have low prevalence but show significant growth advantage. We enforce that maximum transmissibility of BA.5 cannot exceed that of the most transmissible among the rest of the BA*. Thus, the advantage is driven by immune escape property.
 
 ## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
 Learned from observed data. The severity of X is set as provided in the scenarios. 
@@ -34,7 +34,7 @@ It is assumed that 50 new weekly cases of the new variants are introduced distri
 None
 
 ## Case ascertainment assumptions (including relation to infections, e.g., what value or values were used to translate to case estimates and how were they estimated)
-Wastewater data is used as a proxy for true cases. The time-series is smoothed and then scaled so that "true cases" in first half 2021 matches that obtained through seroprevalence data. Future probability of reporting is assumed to be the ratio seen over the last two weeks. The medin reporting probability come out to be 0.34 across all the states.
+Wastewater data is used as a proxy for true cases. The time-series is smoothed and then scaled so that "true cases" in first half 2021 matches that obtained through seroprevalence data. Future probability of reporting is assumed to be the ratio seen over the last two weeks. The median reporting probability come out to be 0.34 across all the states.
 
 ## Other updates in model assumptions from previous rounds (e.g., booster implementation)
 The model has been updated to accommodate arbitrary number of boosters.

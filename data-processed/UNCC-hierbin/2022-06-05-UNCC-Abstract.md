@@ -30,4 +30,4 @@ NPI is modeled via transfer learning.
 ## Case ascertainment assumptions (including relation to infections, e.g., what value or values were used to translate to case estimates and how were they estimated)
 We do not explicitly consider under-reporting (i.e., infection/case ratio) due to testing capacity or other constraints. 
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-Our model focuses on projecting reported cases, hospitalization, and death. We assume that hosptalization and death are more stable metrics of the COVID-19 pandemic. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate from published studies.
+Our model focuses on projecting reported cases, hospitalization, and death. We assume that hospitalization and death are more stable metrics of the COVID-19 pandemic. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate from published studies.

@@ -12,7 +12,7 @@ References for our projections of the impact of Omicron on the US using the same
 - Bouchnita, Anass, et al. "COVID-19 Scenario Projections: The Emergence of Omicron in the US-January 2022." (2022).
 
 ## Number/type of immune classes considered
-The model does not explicity divide the population into different classes of immunity level. Instead, it tracks the changes of population-immunity in the population and how it modulates susceptibility and severity of the disease.
+The model does not explicitly divide the population into different classes of immunity level. Instead, it tracks the changes of population-immunity in the population and how it modulates susceptibility and severity of the disease.
 
 ## Initial distribution of susceptibility if available
 ### Proportion of people that were infected with Omicron before March 13
@@ -23,7 +23,7 @@ The model does not compute the number of naïve population but it calculates the
 
 
 ## Initial variant characteristics (including Omicron transmissibility, immune escape, and how uncertainty or non-identifiability was handled) 
-We conisder that the Omicron is 155% more transmissible and has 42.5%, 32%, and 22% chances to escape immunity against infection, hospitalization and death. It has a severity that is 36% lower than Omicron.
+We consider that the Omicron is 155% more transmissible and has 42.5%, 32%, and 22% chances to escape immunity against infection, hospitalization and death. It has a severity that is 36% lower than Omicron.
 
 ## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
 The probabilities were calibrated through fitting with data. The effect of variant X was captured by simulating its growth function using a toy multi-strain model, and considering that key parameters depends on the prevalence of this variant.

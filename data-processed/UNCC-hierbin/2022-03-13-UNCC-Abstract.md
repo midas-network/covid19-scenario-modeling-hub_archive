@@ -27,4 +27,4 @@ Modeled as directed in the instruction.
 ## Nonpharmaceutical interventions 
 NPI is modeled via transfer learning.
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-We do not explicitly consider under-reporting due to testing capacity or other constraints. Our model focuses on projecting reported cases, hospitalization, and death. We assume that hosptalization and death are more stable metrics of the COVID-19 pandemic. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate from published studies.
+We do not explicitly consider under-reporting due to testing capacity or other constraints. Our model focuses on projecting reported cases, hospitalization, and death. We assume that hospitalization and death are more stable metrics of the COVID-19 pandemic. If necessary, "true incident cases" can be adjusted by applying an under-estimating rate from published studies.
