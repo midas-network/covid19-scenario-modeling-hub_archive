@@ -16,8 +16,8 @@ testing: No changes in the testing capacity are assumed.
 vaccine_efficacy_transmission: "Not applicable"
 vaccine_efficacy_delay: "Not applicable"
 vaccine_hesitancy: Hesitancy levels are assumed to be similar to the US for all states.
-vaccine_immunity_duration: The immunity of vaccines has a half-life time of 6 months.
-natural_immunity_duration: The immunity of vaccines has a half-life time of 8 months.
+vaccine_immunity_duration: The immunity of vaccines has a half-life time of 6 months, or tuned according to scenario.
+natural_immunity_duration: The immunity of vaccines has a half-life time of 8 months, or tuned according to scenario.
 case_fatality_rate: The infection fatality rate depends on the age group. Before Omicron emergence, we consider that around one out of four infections is reported at the beginning but can change depending on the immunity.
 infection_fatality_rate: the age-specific infection fatality rate is [0.001608,  0.003823, 0.003823, 0.05943,  0.4420,  1.130] for the groups [0-4, 5-11, 12-17, 18-49, 50-64, 65+].
 asymptomatics: 

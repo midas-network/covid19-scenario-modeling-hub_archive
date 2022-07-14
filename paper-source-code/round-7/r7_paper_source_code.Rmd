@@ -28,11 +28,12 @@ projection.end.date <- "2022-01-01"
 rd <- 7
 loc_path <- paste0("data-locations/locations.csv")
 vacc_path <- "https://data.cdc.gov/api/views/unsk-b7fc/rows.csv?accessType=DOWNLOAD" # CDC database including eligible percent
-surge_path <- paste0("paper-source-code/round-7/data/surge_data_using_winter_anchor_2021_07_28.csv") ## TODO: Update for new repo structure
-surge_US_path <- paste0("paper-source-code/round-7/data/surge_data_US_using_winter_anchor_2021_07_30.csv") ## TODO: Update for new repo structure
+surge_path <- paste0("paper-source-code/round-7/data/surge_data_using_winter_anchor_2022_03_03.csv") ## TODO: Update for new repo structure
+surge_US_path <- paste0("paper-source-code/round-7/data/surge_data_US_using_winter_anchor_2022_03_03.csv") ## TODO: Update for new repo structure
 zeroed_cum_case_path <- paste0("paper-source-code/round-7/data/zeroed_cum_case.csv") ## TODO: Update for new repo structure
 zeroed_cum_death_path <- paste0("paper-source-code/round-7/data/zeroed_cum_death.csv") ## TODO: Update for new repo structure
 inc_lop_path <- paste0("paper-source-code/round-7/data/2021-07-03-Ensemble_LOP.csv") ## TODO: Update for new repo structure
+ind_model_path <- paste0("paper-source-code/round-7/data/individual_model_projections.csv")
 
 death_truth_path <- "paper-source-code/round-7/data/deaths_incidence_num.csv"
 case_truth_path <- "paper-source-code/round-7/data/confirmed_incidence_num.csv"
@@ -75,7 +76,7 @@ truth <- truth %>%
 truth <- truth %>%
   mutate(value = ifelse(date < as.Date("2020-03-01") & target_type %in% c("Reported Cases", "Deaths"), NA, value)) %>%
   mutate(value = ifelse(value < 0, NA, value)) %>%
-  filter(date <= as.Date("2021-08-01"))
+  filter(date <= projection.end.date)
 
 rm(ih, id, ic)
 
@@ -193,6 +194,63 @@ cum_vs_vacc_death <- zeroed_cum_death[startsWith(target, "zeroed 26") & model ==
 cum_vs_vacc_case[, cum_per_10k := value/population*10000]
 cum_vs_vacc_death[, cum_per_10k := value/population*10000]
 cat("Pearson's correlation between cumulative deaths and vaccination:", cor(cum_vs_vacc_death$cum_per_10k, cum_vs_vacc_death$dose1_pct, method = "pearson"))
+
+# Calculate range of surge in 10 worst states
+peak_vals <- surge_ratio %>% # projected peak weekly incidence in each state
+  filter(scenario_id == "D-2021-07-13") %>%
+  group_by(location) %>%
+  summarize(proj_peak = max(projection))
+
+ind_model <- read.csv(ind_model_path, colClasses = c("target_end_date" = "Date"))
+
+peak_ci <- ind_model %>% # projected peak weekly incidence in each state for 0.025 and 0.975 quantiles
+  filter(scenario_id == "D-2021-07-13", str_detect(target, "inc case"), model_name == "Ensemble") %>%
+  group_by(location) %>%
+  summarize(proj_peak_low = max(lower),
+            proj_peak_high = max(upper))
+
+high10 <- high10 %>%
+  left_join(unique(dplyr::select(surge_ratio, location, winter_peak))) %>%
+  left_join(peak_vals) %>%
+  left_join(peak_ci) %>%
+  mutate(peak_surge_low = proj_peak_low/winter_peak,
+         peak_surge_high = proj_peak_high/winter_peak)
+
+high10 %>%
+  dplyr::select(abbreviation, peak_surge, peak_surge_low, peak_surge_high)
+
+# Calc underprojection vs. observed delta peak
+us_delta_peak <- truth %>%
+  filter(location == "US",
+         date <= "2021-11-30",
+         date >= "2021-04-01") %>%
+  group_by(target_type) %>%
+  summarize(delta_peak = max(value, na.rm = TRUE))
+
+peak_ci_us <- ind_model %>% # projected peak weekly incidence in each state for 0.025 and 0.975 quantiles
+  filter(scenario_id %in% c("D-2021-07-13", "B-2021-07-13"), location == "US", model_name == "Ensemble", str_detect(target, "inc")) %>%
+  group_by(target_type, scenario_id) %>%
+  summarize(proj_peak_low = max(lower),
+            proj_peak_high = max(upper))
+
+proj_us_peak <- ind_model %>%
+  filter(scenario_id %in% c("D-2021-07-13", "B-2021-07-13"),
+         model_name == "Ensemble",
+         location == "US",
+         str_detect(target, "inc")) %>%
+  group_by(scenario_id, target_type) %>%
+  summarize(proj_peak = max(value)) %>%
+  left_join(peak_ci_us) %>%
+  left_join(us_delta_peak)
+
+proj_us_peak %>%
+  mutate(pct_under = (delta_peak - proj_peak)/delta_peak,
+         pct_under_low = (delta_peak - proj_peak_low)/delta_peak,
+         pct_under_high = (delta_peak - proj_peak_high)/delta_peak)
+  
+  
+
+
 ```
 
 ```{r fig-1, fig.width=10, fig.height=6}
@@ -406,7 +464,7 @@ pdf("paper-source-code/round-7/figures/fig1.pdf", height=6, width=12)
 plot(fig1)
 dev.off()
 
-png("paper-source-code/round-7/figures/fig1.png", height=2000, width=4000, res=600)
+png("paper-source-code/round-7/figures/fig1.png", height=3500, width=7000, res=600)
 plot(fig1)
 dev.off()
 
@@ -507,7 +565,27 @@ gs <- gs %>%
 
 #ensemble_data <- model_data[[7]][model_name=="Ensemble_LOP" & type=="point" & location_name!="US"]
 #write.csv(ensemble_data, "data/round7_ensembleLOPmedian.csv")
-ensemble_data <- read.csv("paper-source-code/round-7/data/round7_ensembleLOPmedian.csv") %>% as.data.table()
+ensemble_data <- read.csv(inc_lop_path) %>%
+  left_join(loc) %>%
+  filter(quantile == 0.5,
+         location != "US") %>%
+  mutate(type = "point",
+         quantile = NA,
+         model_name = "Ensemble_LOP",
+         target_wk = word(target, 1),
+         truncated = 0) %>%
+  mutate(outcome = word(target, start = 4, end = 5)) %>%
+  mutate(outcome = dplyr::recode(outcome,
+                                 "inc death" = "Incident Deaths",
+                                 "inc case" = "Incident Cases",
+                                 "inc hosp" = "Incident Hospitailzations",
+                                 "cum death" = "Cumulative Deaths",
+                                 "cum case" = "Cumulative Cases",
+                                 "cum hosp" = "Cumulative Hospitailzations")) %>%
+  dplyr::select(outcome, scenario_id, target_wk, value, type, target_end_date, quantile, location_name, truncated, model_name) %>%
+  as.data.table()
+  
+#ensemble_data <- read.csv("paper-source-code/round-7/data/round7_ensembleLOPmedian.csv") %>% as.data.table()
 
 # Get the peak estimate
 peak <- ensemble_data[
@@ -631,3 +709,80 @@ plot(fig3)
 dev.off()
 ```
 
+```{r fig-S1-3, fig.width=10, fig.height=6}
+v_line = data.frame(x = as.numeric(as.Date(projection.start.date)),
+                    y = Inf,
+                    lab = paste0("Projections begin\n",projection.start.date),
+                    target_type = "Reported Cases")
+
+## parameters for visualization
+model_size <- c("Ensemble" = 0.7,  "CU-AGE-ST" = 0.3, "IHME-COVID" = 0.3, "JHU_IDD-CovidSP" = 0.3, "JHUAPL-Bucky" = 0.3, "Karlen-pypm" = 0.3,
+                "MOBS_NEU-GLEAM_COVID" = 0.3, "UNCC-hierbin" = 0.3, "USC-SIkJalpha" = 0.3, "UVA-adaptive" = 0.3, "UVA-EpiHiper" = 0.3)
+# colorblind friendly palette, note: may need to change with more teams
+# additional options - "#D55E00", "#0072B2"
+model_colors <- c("Ensemble" = "#000000", "CU-AGE-ST" = "#D55E00", "IHME-COVID" = "#332288",
+                  "JHU_IDD-CovidSP" = "#E69F00", "JHUAPL-Bucky" = "0072B2",
+                  "Karlen-pypm" = "#56B4E9", "MOBS_NEU-GLEAM_COVID" = "#009E73", 
+                  "UNCC-hierbin" = "#661100", "USC-SIkJalpha" = "#F0E442",
+                  "UVA-adaptive" = "#CC79A7", "UVA-EpiHiper" = "#99FF33")
+
+targets <- c("Reported Cases", "Hospitalizations", "Deaths")
+
+# flag ground truth after projection start date
+truth <- truth %>%
+  mutate(flag = ifelse(date >= projection.start.date, 1, 0))
+
+ct <- 1
+for(i in targets){
+  # filter dat
+  temp <- ind_model %>% filter(location == "US", target_type == i, str_detect(target, "inc")) # , trunc_flag == 0
+  start.date = as.Date("2020-10-01")
+  
+  ## 6 months data and 6 months projections plot version code 
+  #  start.date = as.Date("2020-10-01")
+  # truth <- truth %>% filter(date >= start.date) %>%
+  # filter(date <= as.Date("2021-03-27")) #%>%
+  
+  
+  # plot 4x4 grid
+  p<-ggplot()+
+    geom_vline(data = v_line %>% dplyr::select(-target_type), aes(xintercept = x), color = "grey60")+
+    geom_point(data = filter(truth, location == "US", target_type == i, date >= start.date), size = 1,
+               aes(x = date, y = value, shape = factor(flag))) +
+    geom_line(data = temp, aes(x = target_end_date, y = value, color = model_name)) +
+    geom_ribbon(data = temp, aes(x = target_end_date, ymin = lower, ymax = upper, fill = model_name), alpha = 0.2) +
+    ggtitle(paste0("Individual model projections & 95% projection intervals - ", i)) +
+    facet_grid(cols = vars(vacc), rows = vars(var), switch = "y")+
+    scale_color_manual(values = model_colors) +
+    scale_fill_manual(values = model_colors) +
+    scale_size_manual(values = model_size)+  
+    scale_y_continuous(label=scales::comma)+
+    scale_shape_manual(values = c(19,1)) +
+    scale_x_date(limits = c(as.Date(start.date), as.Date(max(temp$target_end_date, na.rm = TRUE))),
+                 breaks = function(x) seq.Date(from = as.Date("2020-10-01"), 
+                                               to = as.Date("2022-01-01"), 
+                                               by = "1 month"))+
+    guides(shape = FALSE) +
+    theme_bw()+
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), 
+          axis.title = element_blank(),
+          legend.text = element_text(size = 6),
+          legend.title = element_blank(),
+          plot.title = element_text(hjust = 0.5),
+          strip.background = element_blank(),
+          strip.placement = "outside")
+  
+  print(p)
+  
+  png(paste0("paper-source-code/round-7/figures/figS", ct, ".png"), height=3500, width=5000, res=600)
+  plot(p)
+  dev.off()
+  
+  pdf(paste0("paper-source-code/round-7/figures/figS", ct, ".pdf"), height=7, width=9)
+  plot(p)
+  dev.off()
+  
+  ct <- ct+1
+}
+
+```
