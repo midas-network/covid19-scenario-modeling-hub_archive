@@ -129,19 +129,19 @@ The requested targets are:
 
 Optional target:
 - weekly incident infections
-- weekly proportion of cases caused by variant X (mean only) [Round 14 specific]
+- weekly proportion of cases caused by variant X (mean only) [Round 14 and Round 15 specific]
 
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
-- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
-- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
-- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
-- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 52, depending on the round)
-- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
-- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
-- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 52, depending on the round)
-- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 52, depending on the round) [Round 14 specific]
+- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round) [Round 14 and Round 15 specific]
 
 For week-ahead scenarios, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run Sunday through Saturday.
 
@@ -233,7 +233,7 @@ Projections of infections will be used to compare outputs between models but wil
 be evaluated against observations.  
 Projections of infections are optional.
 
-#### N wk ahead prop X [Round 14 specific]
+#### N wk ahead prop X [Round 14 and Round 15 specific]
 
 This target is the proportion of incident (weekly) cases caused by variant X among 
 all COVID19 cases, as predicted by the model during the week that is N weeks after 
