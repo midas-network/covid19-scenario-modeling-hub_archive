@@ -1,9 +1,8 @@
 team_name: NCSU
 model_name: COVSIM
 model_abbr: NCSU-COVSIM
-model_version: "2022-06-05"
+model_version: "2022-07-31"
 model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, 
-Jessica Mele (North Carolina State University) <jmele@ncsu.edu>,
 Julie Swann (North Carolina State University) <jlswann@ncsu.edu>,
 Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>,
 Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>,
@@ -29,4 +28,3 @@ calibration:  Calibrated by fitting average (across all replications) current ho
 spatial_structure: Census tracts of North Carolina are modeled. Agents remains commute to work between census tracts. All agents in a census tract
 interact with each other via the community form of infections.
 citation: "Patel MD, Rosenstrom E, Ivy JS, et al. Association of Simulated COVID-19 Vaccination and Nonpharmaceutical Interventions With Infections, Hospitalizations, and Mortality. JAMA Network Open. 2021;4(6):e2110782-e2110782. doi:10.1001/jamanetworkopen.2021.10782"
-
