@@ -171,7 +171,7 @@ Ascertainment of cases, hospitalizations and deaths will proceed at the same lev
 *   **Due date**: Nov 2, 2022
 *   **End date for fitting data**: October 29, 2022 (no later than October 29, no earlier than October 22)
 *   **Start date for scenarios**: October 30, 2022 (first date of simulated transmission/outcomes)
-*   **Simulation end date:** April 29, 2023 (40-week horizon)
+*   **Simulation end date:** April 29, 2023 (26-week horizon)
 *   Desire to release results by first or second week of November
 
 
