@@ -11,7 +11,7 @@ FILL
 ## Initial distribution of susceptibility if available
 FILL (if available)
 
-## Initial variant characteristics (transmissibility of BA4/BA5 were considered and how uncertainty or non-identifiability was handled)
+## Initial variant characteristics (transmissibility of BA4/BA5 and how uncertainty or non-identifiability was handled)
 FILL
 
 ## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
