@@ -107,8 +107,8 @@ Values in the `model_projection_date` column must be a date in the format
 
     YYYY-MM-DD
     
-Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
-
+Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made. Starting round 12, the validation will test that the "model_projection_date" and date in the filename match and should correspond to the start date for scenarios (first date of simulated transmission/outcomes).   
+   
 For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 ### `scenario_name`
