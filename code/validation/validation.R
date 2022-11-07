@@ -43,8 +43,12 @@ if (length(pr_sub_files) > 0) {
       # download file
       download.file(url_link, basename(url_link))
       # generate visualization pdf
-      test_viz <- try(generate_validation_plots(path_proj = basename(url_link), lst_gs = lst_gs, 
-        save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975)))
+      if (!grepl("sample", basename(url_link))) {
+        test_viz <- try(generate_validation_plots(path_proj = basename(url_link), lst_gs = lst_gs, 
+          save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975)))
+      } else {
+        test_viz <- NA
+      }
       # run validation
       test <- capture.output(try(validate_submission(basename(url_link), lst_gs = lst_gs, 
         pop_path = pop_path, js_def = js_def_file)))
@@ -52,8 +56,12 @@ if (length(pr_sub_files) > 0) {
       # validation and visualization for CSV and PARQUET file format
       if (grepl(".csv$|.parquet$", url_link)) {
         # generate visualization pdf
-        test_viz <- try(generate_validation_plots(path_proj = url_link, lst_gs = lst_gs, 
-          save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975)))
+        if (!grepl("sample", basename(url_link))) {
+          test_viz <- try(generate_validation_plots(path_proj = url_link, lst_gs = lst_gs, 
+            save_path = paste0(getwd(), "/proj_plot"), y_sqrt = FALSE, plot_quantiles = c(0.025, 0.975)))
+        } else {
+        test_viz <- NA
+        }
         # run validation
         test <- capture.output(try(validate_submission(url_link, lst_gs = lst_gs, 
           pop_path = pop_path, js_def = js_def_file)))
