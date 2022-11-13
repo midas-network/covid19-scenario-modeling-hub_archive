@@ -112,3 +112,68 @@ state_comparisons %>% filter(comparison %in% c("A_B_ratio","C_D_ratio")) %>%
 #  summarise(est = quantile(est,c(0.05,0.5,0.95),na.rm=T))
   summarize(min=min(upper),max=max(lower),median=median(est),mean=mean(est))
 
+###############
+## Figure S2 ##
+###############
+## State-level estimates for number of vaccinated 5-11 year olds per capita 
+## vs. projected cases occurring between November 1, 2021 and March 12, 2022. 
+
+load("./data/age_vacc_data.Rdata")
+
+vacc_covg_date = as.Date("2021-09-11")
+vacc_12to17 <- vacc_cdc %>% filter(age_group=="12_17",date==vacc_covg_date)
+vacc_12to17 <- vacc_12to17 %>% dplyr::rename(abbreviation=USPS)
+
+loc_vax <- left_join(pop_5to11,vacc_12to17,by="abbreviation") %>% 
+  dplyr::rename(pop_12to17=pop)  %>%
+  mutate(age_group=NULL,age_l=NULL,age_r=NULL,dose1=NULL,dose1_age=NULL,source=NULL) %>%
+  mutate(est_5to11_doses=prop_vacc_age*pop_5to11)
+
+state_vax_comp <- left_join(state_comparisons,loc_vax, by =c("location","abbreviation","location_name","population"))
+
+ratios <- state_comparisons %>% 
+  mutate(est=1-est) %>%
+  reshape2::dcast(outcome + location ~ comparison, value.var = "est")  %>%
+  mutate(A_B_diff=NULL,C_D_diff=NULL) %>%
+  dplyr::rename(pctchange_BA='A_B_ratio',pctchange_DC='C_D_ratio') %>%
+  select(outcome, location, pctchange_BA, pctchange_DC) %>%
+  reshape2::melt(c("outcome", "location"))%>%
+  mutate(outcome = factor(outcome, levels = c("Cumulative Cases","Cumulative Hospitalizations","Cumulative Deaths")))
+
+state_vax_comp <- left_join(ratios,loc_vax, by =c("location")) 
+
+
+# Plotting variables
+change_labs <- c("No Variant", "Variant")
+names(change_labs) <- c("pctchange_BA","pctchange_DC")
+
+
+change_labs_2 <- c("Reported Cases", "Hospitalizations","Deaths")
+names(change_labs_2) <- c(1,2,3)
+
+# indices for each target type
+case_index <- grep("Case", state_vax_comp$outcome)
+death_index <- grep("Death", state_vax_comp$outcome)
+hosp_index <- grep("Hosp", state_vax_comp$outcome)
+
+# create target_type column for faceting of plots
+state_vax_comp$outcome_f <- NA
+state_vax_comp$outcome_f[case_index] <- 1#"Reported Cases"
+state_vax_comp$outcome_f[hosp_index] <- 2#"Hospitalizations"
+state_vax_comp$outcome_f[death_index] <- 3#"Deaths"
+
+
+# plot state-level relative reductions from childhood vaccination by estimated doses in 5-11 year olds per state population size
+ggplot(state_vax_comp %>%
+         filter(abbreviation %in% state.abb) %>% filter(est_5to11_doses>0),aes(value,est_5to11_doses/population,group_by(outcome_f))) +
+  #  geom_point()+
+  geom_text(aes(label = abbreviation, x = value, y = est_5to11_doses/population),size=2.7) + #, size = population
+  stat_cor(method = "pearson") +
+  ylab("Estimated vaccinations in 5 to 11 year old age-group per capita by state \n (March 2022 - based on covg for 12 to 17 group on September 11, 2021)") +
+  xlab("Relative reductions from childhood vaccination by state")+
+  scale_x_continuous(labels = label_percent(accuracy = 1))+
+  scale_y_continuous(limits=c(0.02,0.07))+
+  facet_grid(cols = vars(variable),rows=vars(outcome_f), labeller = labeller(variable = change_labs,outcome_f = change_labs_2))+
+  theme_bw()
+
+
