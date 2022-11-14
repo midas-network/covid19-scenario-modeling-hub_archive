@@ -2,9 +2,10 @@ team_name: UTA
 model_name: ImmunoSEIRS
 model_abbr: UTA-ImmunoSEIRS
 model_version: "1.0"
-model_contributors: Anass Bouchnita (Lead modeler, University of Texas at Austin), 
-  <anass.bouchnita@austin.utexas.edu>, Spencer Fox (University of Texas at Austin), 
-  Michael Lachmann (University of Texas at Austin), Lauren Ancel Meyers (Senior author, University of Texas at Austin), and the UT COVID-19 Modeling Consortium
+model_contributors: Kaiming Bi (Lead modeler, University of Texas at Austin), 
+  <kaiming.bi@austin.utexas.edu>, Anass Bouchnita (University of Texas at El Paso), 
+  Spencer Fox (University of Georgia), 
+  Michael Lachmann (Santa Fe Institute), Lauren Ancel Meyers (Senior author, University of Texas at Austin), and the UT COVID-19 Modeling Consortium
 website_url: https://covid-19.tacc.utexas.edu/
 license: cc-by-4.0
 methods: (State) An age-stratified SEIRS model that explicitely caputres the changes in the population-immunity from heterogenous sources and its effect on susceptiblity and severity. 
