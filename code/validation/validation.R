@@ -39,7 +39,7 @@ if (length(pr_sub_files) > 0) {
     # Run validation and visualization if associate metadata file found
     if (length(js_def_file) == 1) {
       # validation and visualization for ZIP and GZ file format
-      if (grepl(".zip$|.gz$", url_link)) {
+      if (grepl(".zip$|.gz$|.pqt$|.parquet$", url_link)) {
       # download file
       download.file(url_link, basename(url_link))
       # generate visualization pdf
@@ -54,7 +54,7 @@ if (length(pr_sub_files) > 0) {
         pop_path = pop_path, js_def = js_def_file)))
       }
       # validation and visualization for CSV and PARQUET file format
-      if (grepl(".csv$|.parquet$", url_link)) {
+      if (grepl(".csv$", url_link)) {
         # generate visualization pdf
         if (!grepl("sample", basename(url_link))) {
           test_viz <- try(generate_validation_plots(path_proj = url_link, lst_gs = lst_gs, 
