@@ -32,4 +32,4 @@ jobs:
             R -e 'Sys.setenv("NOT_CRAN" = TRUE)
                   install.packages(c("arrow", "gh", "remotes"))
                   Sys.unsetenv("NOT_CRAN")
-                  remotes::install_url("https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip")'
+                  remotes::install_url("https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip")'

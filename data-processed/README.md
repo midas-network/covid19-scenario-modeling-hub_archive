@@ -54,15 +54,17 @@ License information for data sharing and reuse is requested in the metadata, inc
 
 Each model results file within the subdirectory should have the following name
 
-    YYYY-MM-DD-team-model.csv
+    YYYY-MM-DD-team-model-type.csv
     
 where
 
-- `YYYY` is the 4 digit year, 
+- `YYYY` is the 4 digit year,
 - `MM` is the 2 digit month,
 - `DD` is the 2 digit day,
 - `team` is the teamname, and
-- `model` is the name of your model. 
+- `model` is the name of your model.
+- `type` is **only for the optional submission format for simulation samples** (`“YYYY-MM-DD-team-model-sample.csv”`). 
+Other submission file formats (quantiles) should be named `“YYYY-MM-DD-team-model.csv”`.
 
 The date YYYY-MM-DD is the [`model_projection_date`](#model_projection_date).
 
@@ -83,8 +85,9 @@ columns (in any order):
 - `target`
 - `target_end_date`
 - `location`
-- `type`
-- `quantile`
+- `type` [not required for “sample” file format]
+- `quantile` [not required for “sample” file format]
+- `sample` [required for “sample” file format]
 - `value`
 
 
@@ -92,6 +95,9 @@ No additional columns are allowed.
 
 Each row in the file is either a point or quantile scenario for a location on a 
 particular date for a particular target. 
+
+For the "sample" format, only the "incident" targets are required and no quantiles and types 
+information should be included in the file.
 
 If the size of the file is larger than 100MB, it can be submitted in a `.zip` or `.gz` format. 
 
@@ -101,8 +107,8 @@ Values in the `model_projection_date` column must be a date in the format
 
     YYYY-MM-DD
     
-Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
-
+Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made. Starting round 12, the validation will test that the "model_projection_date" and date in the filename match and should correspond to the start date for scenarios (first date of simulated transmission/outcomes).   
+   
 For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 ### `scenario_name`
@@ -307,6 +313,11 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750
 ## [18] 0.800 0.850 0.900 0.950 0.975 0.990
 ```
+### `sample`
+
+For the optional simulation samples format only.
+Values in the `sample` column are numeric between `1` and `100` indicating an id sample number.
+
 
 ### `value`
 
