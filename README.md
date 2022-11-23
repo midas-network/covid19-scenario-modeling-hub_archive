@@ -31,7 +31,7 @@ We have specified a set of scenarios and target outcomes to allow alignment of m
 
 The COVID-19 Scenario Modeling Hub is be open to any team willing to provide projections at the right temporal and spatial scales, with minimal gatekeeping. We only require that participating teams share point estimates and uncertainty bounds, along with a short model description and answers to a list of key questions about design. A major output of the projection hub would be ensemble estimates of epidemic outcomes (e.g., cases, hospitalization and/or deaths), for different time points, intervention scenarios, and US jurisdictions. 
 
-Those interested to participate should email scenariohub@midasnetwork.us .
+Those interested to participate, please read the README file and email us at scenariohub@midasnetwork.us.
 
 Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md). 
 
@@ -162,7 +162,7 @@ Ascertainment of cases, hospitalizations and deaths will proceed at the same lev
 
 ## Submission Information    
 
-| Scenario                             | Scenario name for submission file | Scenario ID for submission file |
+| Scenario    | Scenario name for submission file ('scenario_name') | Scenario ID for submission file ('scenario_id') |
 | ----------------------------------------------------- |:----------------------------:|:----------------------------:|
 | Scenario A. High boosters, Moderate immune escape variant | highBoo_modVar  | A-2022-10-29    |
 | Scenario B. High boosters, High immune escape variant     | highBoo_highVar | B-2022-10-29    |
@@ -214,16 +214,10 @@ Ascertainment of cases, hospitalizations and deaths will proceed at the same lev
 
 
 ## Submitting model projections
-Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
-
-### Model projection dates
-The "model_projection_date" and date in the filename should correspond to the start date for scenarios (first date of simulated transmission/outcomes).   
-
-For week-ahead model projections with `model_projection_date` of Sunday or Monday of EW12, a 1 week ahead projection corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead projections with `model_projection_date` of Tuesday through Saturday of EW12, a 1 week ahead projection corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead projection should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
-
-### Gold standard data
+Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. 
+  
+## Gold standard data
 We will use the daily reports containing COVID-19 cases and deaths data from the [JHU CSSE group](https://coronavirus.jhu.edu/map.html) as the gold standard reference data for cases and deaths in the US. We will use the distribution of the JHU data as provided by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html) maintained by the [Delphi Research Group](https://delphi.cmu.edu/about/) at Carnegie Mellon University. 
-
 
 For COVID-19 hospitalizations, we used the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh). These data are released weekly although, sometimes, are updated more frequently. 
 A supplemental data source with daily counts that should be updated more frequently (typically daily) but does not include the full time-series
@@ -232,12 +226,6 @@ is [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by Sta
 
 Starting Round 13 (W12-2022), for COVID-19 hospitalizations, we will use the same truth data as the COVID-19 Forecast Hub, i.e., the hospitalization data from the HHS for example the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh) and [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/6xf2-c3ie). We will use the distribution of the HHS data as provided by the 
 [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html) maintained by the [Delphi Research Group](https://delphi.cmu.edu/about/) at Carnegie Mellon University. 
-
-### Locations
-Model projections may be submitted for any state  in the US and the US at the national level.
-
-### Probabilistic model projections
-Model projections will be represented using quantiles of predictive distributions. Similar to the [COVID-19 Forecast hub](https://covid19forecasthub.org/), we encourage all groups to make available the following 25 quantiles for each distribution: `c(0, 0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99, 1)`. One goal of this effort is to create probabilistic ensemble scenarios, and having high-resolution component distributions will provide data to create better ensembles. 
 
 ## Ensemble model
 We aim to combine model projections into an ensemble.
