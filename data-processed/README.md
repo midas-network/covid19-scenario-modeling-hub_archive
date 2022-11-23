@@ -305,36 +305,49 @@ proportion of variant X are optional
 
 ### `target_end_date`
 
+
 Values in the `target_end_date` column must be a date in the format
 
-    YYYY-MM-DD
-    
+```
+YYYY-MM-DD
+``` 
 
-This is the date for the scenario `target`. For "# wk" targets,
+This is the date for the scenario `target`.
+
+The target and target_end_date columns are associated. For "# wk" targets,
 `target_end_date` will be the Saturday at the end of the week time period. A
 week-ahead projection should represent the total number of incident deaths or
 hospitalizations within a given epiweek (from Sunday through Saturday,
 inclusive) or the cumulative number of deaths reported on the Saturday of a
 given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub
-are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
+are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).
 
 It can be calculated as:
-- in days: `model_projection_date` - `1` (as model_projection_date is the
-  start (first) day of projection) + `(N * 7)` days (N being the number of
-  week ahead in the associated target, e.g `"1 wk ahead"`, `"2 wk ahead"`) or
-  to have it in days.
-- in epiweek: `model_projection_date` epiweek - `1` + `N`. In this case the last day
-  (Saturday) of the epiweek should be reported in the column
-  `target_end_date`
 
-For example, if a we have week-ahead model projections with
-`model_projection_date` equal to: "2022-10-30" (Sunday), it corresponds to
-the Epiweek 44 (EW44). The weeks ahead projection would corresponds to:
-- 1 wk ahead: `2022-10-30 - 1 + (1 * 7)` equals `"2022-11-05"`
-  (Saturday), and corresponds to EW44
-- 2 wk ahead: `2022-10-30 - 1 + (2 * 7)` equals `"2022-11-12"`
-  (Saturday), and corresponds to EW45 
+- in days: `model_projection_date` - `1` (as model_projection_date is the
+start (first) day of projection) + `(N * 7)` days (N being the number of
+week ahead in the associated target, e.g `"1 wk ahead"`, `"2 wk ahead"`)
+to have it in days.
+
+- in epiweek: `model_projection_date` epiweek - `1` + `N`. In this case the last day
+(Saturday) of the epiweek should be reported in the column
+`target_end_date`
+ 
+
+The start and end date information of the whole expected timeseries are in the main README
+("Start date for scenarios" and "Simulation end date").
+
+For example, if a round is defined with:
+* Start date for scenarios: October 30, 2022 (first date of simulated transmission/outcomes)
+* Simulation end date: April 29, 2023 (26-week horizon)
+
+Then the weeks ahead projection would corresponds to:
+- target `1 wk ahead`: `2022-10-30 - 1 + (1 * 7)` equals target_end_date: `"2022-11-05"`
+(Saturday), and corresponds to EW44
+- target `2 wk ahead`: `2022-10-30 - 1 + (2 * 7)` equals target_end_date: `"2022-11-12"`
+(Saturday), and corresponds to EW45
 - etc.
+- until target `26 wk ahead`, target_end_date: `"2023-04-29" `
 
 
 ### `location`
