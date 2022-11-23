@@ -7,8 +7,6 @@ All scenarios should be submitted directly to the [data-processed/](./)
 folder. Data in this directory should be added to the repository through
 a pull request. 
 
-Automatic validation is running starting round 13.
-
 Due to file size limitation, the file can be submitted in a `.zip` or `.gz`
 format with the same name as the `.csv` file provided. 
 
