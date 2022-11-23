@@ -14,8 +14,7 @@ format with the same name as the `.csv` file provided.
 
 ## Example
 
-See [this file]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2020-12-21-MyTeam-MyModel.csv)
+See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2020-12-21-MyTeam-MyModel.csv)
 for an illustration of part of a (hypothetical) submission file. 
 
 ## Subdirectory
@@ -47,10 +46,8 @@ where
 - `team` is the teamname and 
 - `model` is the name of your model. 
     
-Here are details about [the structure of the metadata file]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
-An example [hypothetical metadata file]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
+Here are details about [the structure of the metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
+An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
 has been posted in the data-processed directory. 
 
 ## License (optional)
@@ -65,15 +62,13 @@ named
 ## Date/Epiweek information
 
 For week-ahead scenarios, we will use the specification of epidemiological
-weeks (EWs) [defined by the US CDC]
-(https://ndc.services.cdc.gov/wp-content/uploads/MMWR_Week_overview.pdf)
+weeks (EWs) [defined by the US CDC](https://ndc.services.cdc.gov/wp-content/uploads/MMWR_Week_overview.pdf)
 which run Sunday through Saturday.
 
 There are standard software packages to convert from dates to epidemic weeks
-and vice versa. E.g. [MMWRweek]
-(https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr]
-(https://pypi.org/project/pymmwr/) and [epiweeks]
-(https://pypi.org/project/epiweeks/) for python.
+and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) 
+for R and [pymmwr](https://pypi.org/project/pymmwr/) and 
+[epiweeks](https://pypi.org/project/epiweeks/) for python.
 
 ## Model Results
 
@@ -92,9 +87,8 @@ where
 
 The date YYYY-MM-DD should correspond to the start date for scenarios
 projection ("first date of simulated transmission/outcomes" as noted in the
-scenario description on the main [README, Submission Information]
-(https://github.com/midas-network/covid19-scenario-modeling-hub#submission-information)).
-
+scenario description on the main 
+[README, Submission Information](https://github.com/midas-network/covid19-scenario-modeling-hub#submission-information)).
 
 The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 15
@@ -141,7 +135,6 @@ No additional columns are allowed.
 Each row in the file is either a point or quantile scenario for a location on
 a particular date for a particular target. 
 
-
 ### `model_projection_date`
 
 Values in the `model_projection_date` column must be a date in the format
@@ -156,18 +149,16 @@ The "model_projection_date" and date in the filename should correspond.
 ### `scenario_name`
 
 The standard scenario names should be used as given in the scenario
-description in the [main Readme]
-(https://github.com/midas-network/covid19-scenario-modeling-hub). Scenario
-names only include characters and no spaces, e.g., `optimistic`,
+description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). 
+Scenario names only include characters and no spaces, e.g., `optimistic`,
 `highBoo_modVar`.
 
 
 ### `scenario_id`
 
 The standard scenario id should be used as given in in the scenario
-description in the [main Readme]
-(https://github.com/midas-network/covid19-scenario-modeling-hub). Scenario
-id's include a captitalized letter and date as YYYY-MM-DD, e.g.,
+description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). 
+Scenario id's include a captitalized letter and date as YYYY-MM-DD, e.g.,
 `A-2020-12-22`.
 
 
@@ -188,27 +179,19 @@ Optional target:
 
 Values in the `target` column must be a character (string) and be one of the
 following specific targets:
+- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+</br>
 
-- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 40
-   or 52, depending on the round)
-- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 40
-   or 52, depending on the round)
-- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 40 or
-   52, depending on the round)
-- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 40 or
-   52, depending on the round)
-- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 40 or
-   52, depending on the round)
-- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 40 or
-   52, depending on the round)
+- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
+- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round) [Round 14 and Round 15 specific]
+</br>
 
-- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 40 or
-   52, depending on the round)
-- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 40 or
-   52, depending on the round) [Round 14 and Round 15 specific]
-
-***For the optional "sample" file format: *** Only the three incident target
-   are requested: 
+<b>For the optional "sample" file format:</b> Only the three incident target are requested: 
 - weekly incident deaths
 - weekly incident cases
 - weekly incident hospitalizations
@@ -224,8 +207,7 @@ during a given epiweek (from Sunday through Saturday, inclusive).
 
 Predictions for this target will be evaluated compared to the number of new
 reported cases, as recorded by the JHU CSSE group as distributed by the
-[COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
 
 
 #### N wk ahead cum death
@@ -238,9 +220,7 @@ reported on the Saturday of a given epiweek.
 
 Predictions for this target will be evaluated compared to the cumulative of
 the number of new reported deaths, as recorded by the JHU CSSE group as
-distributed by the [COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
-
+distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
 
 
 #### N wk ahead inc case
@@ -253,8 +233,7 @@ during a given epiweek (from Sunday through Saturday, inclusive).
 
 Predictions for this target will be evaluated compared to the number of new
 reported cases, as recorded by the JHU CSSE group as distributed by the
-[COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
 
 
 #### N wk ahead cum case
@@ -267,8 +246,7 @@ on the Saturday of a given epiweek.
 
 Predictions for this target will be evaluated compared to the cumulative of
 the number of new reported cases, as recorded by the JHU CSSE group as
-distributed by the [COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
+distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
 
 
 #### N wk ahead inc hosp
@@ -282,8 +260,7 @@ inclusive).
 
 Predictions for this target will be evaluated compared to the number of new
 hospitalized cases, as reported by the HHS and distributed by the
-[COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
 
 
 #### N wk ahead cum hosp
@@ -297,8 +274,7 @@ cases reported on the Saturday of a given epiweek.
 
 Predictions for this target will be evaluated compared to the cumulative of
 the number of new hospitalized cases, as reported by the HHS and distributed
-by the [COVIDcast Epidata API]
-(https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
+by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
 
 
 #### N wk ahead inc inf
@@ -342,24 +318,23 @@ week-ahead projection should represent the total number of incident deaths or
 hospitalizations within a given epiweek (from Sunday through Saturday,
 inclusive) or the cumulative number of deaths reported on the Saturday of a
 given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub
-are equivelent to the forecast dates in the [COVID-19 Forecast Hub]
-(https://covid19forecasthub.org/). 
+are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). 
 
 It can be calculated as:
 - in days: `model_projection_date` - `1` (as model_projection_date is the
   start (first) day of projection) + `(N * 7)` days (N being the number of
   week ahead in the associated target, e.g `"1 wk ahead"`, `"2 wk ahead"`) or
   to have it in days.
-- in epiweek: `model_projection_date` - `1` + `N`. In this case the last day
+- in epiweek: `model_projection_date` epiweek - `1` + `N`. In this case the last day
   (Saturday) of the epiweek should be reported in the column
   `target_end_date`
 
 For example, if a we have week-ahead model projections with
 `model_projection_date` equal to: "2022-10-30" (Sunday), it corresponds to
 the Epiweek 44 (EW44). The weeks ahead projection would corresponds to:
-- 1 wk ahead: `2022-10-30 - 1 + (1 * 7)` which is `"2022-11-05"`
+- 1 wk ahead: `2022-10-30 - 1 + (1 * 7)` equals `"2022-11-05"`
   (Saturday), and corresponds to EW44
-- 2 wk ahead: `2022-10-30 - 1 + (2 * 7)` which is `"2022-11-12"`
+- 2 wk ahead: `2022-10-30 - 1 + (2 * 7)` equals `"2022-11-12"`
   (Saturday), and corresponds to EW45 
 - etc.
 
@@ -436,10 +411,8 @@ data-processed/ will be automatically validated.
 When a pull request is submitted, the data are validated by running the
 scripts in [validation.R](./code/validation/validation.R). The intent for
 these tests are to validate the requirements above and all checks are 
-specifically enumerated [on the wiki]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
-Please [let us know]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/issues) if
+specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
+Please [let us know](https://github.com/midas-network/covid19-scenario-modeling-hub/issues) if
 the wiki is inaccurate.
 
 #### Workflow
@@ -477,11 +450,6 @@ plus some information on calibration.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull
-request, follow[these instructions]
-(https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks#file-checks-running-locally)
+request, follow [these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks#file-checks-running-locally)
 (section File Checks Run Locally).
-
-
-
-
 
