@@ -44,7 +44,7 @@ where
 - `team` is the teamname and 
 - `model` is the name of your model. 
     
-Here are details about [the structure of the metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
+The metadata file must follow the [documented description](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
 An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
 has been posted in the data-processed directory. 
 
