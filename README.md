@@ -275,12 +275,13 @@ It currently contains code to:
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
 *   [*University of Southern California — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
-    *   Ajitesh Srivastava (University of Southern California)
+    *   Ajitesh Srivastava, Majd Al Aawar
 *   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
-    *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
-        Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patrick Corbett
-        (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
-        Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+    *   Przemyslaw Porebski (UVA), Joseph Outten (UVA), Srini Venkatramanan (UVA), Bryan
+        Lewis (UVA), Aniruddha Adiga (UVA), Brian Klahn (UVA), Lijing Wang (UVA), Benjamin Hurt (UVA), 
+        Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
+*   [*Oliver Wyman's Pandemic Navigator*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
+	*   Ugur Koyluoglu, Dan Siegel
 *   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
     *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
 *   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
@@ -294,9 +295,9 @@ It currently contains code to:
 *   [*University of Florida - ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
     *   Thomas Hladish (University of Florida), Alexander Pillai (University of Florida), Kok Ben Toh (Northwestern University),  Ira Longini Jr. (University of Florida) 
 *   [*North Carolina State University - COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
-    *   Erik Rosenstrom (North Carolina State University), Jessica Mele (North Carolina State University), Julie Swann (North Carolina State University), Julie Ivy (North Carolina State University), Maria Mayorga (North Carolina State University)
+    *   Erik Rosenstrom (North Carolina State University), Julie Swann (North Carolina State University), Julie Ivy (North Carolina State University), Maria Mayorga (North Carolina State University)
 *   [*University of Texas at Austin - ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
-    *   Anass Bouchnita (Lead modeler, University of Texas at Austin), Spencer Fox (University of Texas at Austin), Michael Lachmann (University of Texas at Austin), Lauren Ancel Meyers (Senior author, University of Texas at Austin), and the UT COVID-19 Modeling Consortium
+    *   Kaiming Bi (Lead modeler, University of Texas at Austin), Anass Bouchnita (University of Texas at El Paso), Spencer Fox (University of Georgia), Michael Lachmann (Santa Fe Institute), Lauren Ancel Meyers (Senior author, University of Texas at Austin), and the UT COVID-19 Modeling Consortium
   
 </br>
 
