@@ -44,6 +44,9 @@ Round 16 focuses on the impact of bivalent booster uptake (first dimension) with
 
 <img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/Round16_scenarios_table.PNG"> 
 
+
+</br>
+
 The VE of reformulated (i.e., bivalent) boosters currently administered to those five and older should be considered to have an effectiveness of **80% against symptomatic disease** to BA.5.2 and all other Omicron variants not modeled in the immune escape swarms scenarios. For variants included in levels 5, 6 and 7, VE should be reduced based on the estimated immune escape factor compared to BA.5.2. If updated data on VE becomes available prior to submission, teams are free to use this data, but it should be noted in the abstract. Variant swarms in levels 5 to 7 partially escape immunity against infection, where immunity is conferred by all available vaccines and prior infection with Omicron BA1 through BA5 and pre-Omicron lineages.
 
 Variants by level of escape (from presentation by Cornelius Roemer, based on RBD mutations from BA.2):
@@ -57,19 +60,23 @@ Variants by level of escape (from presentation by Cornelius Roemer, based on RBD
 *   Level 6: BQ.1.1, BN.1, BM.1.1.1
 *   Level 7: XBB (BJ.1 x BM.1.1.1), CJ.1 (BM.1.1.1 with S:486P)
 *   Level 8: None designated yet
-
+</br>
 
 ### **Waning Immunity:**
 
+
 1. Waning of immunity against infection
+
 
 Models should include waning against infection. 
 The median waning time of protection against infection should range between **3-8** months. Teams can sample this range, or use any value within this range as a point estimate. Teams can consider differences in waning of natural and vaccine-induced immunity, or in waning after Omicron infection vs waning from other types of SARS-CoV-2 exposures; however the median waning time should remain within the **3-8** month range. </br>
 
+
 We recommend that in the waned classes, teams consider a reduction from baseline levels of protection ranging between 40 and 60%, corresponding to x0.60 and x0.40 of the baseline levels reported immediately after exposure (vaccination or infection). This follows the same scheme as in round 13-15. Teams can sample the recommended range of protection reductions, which is 40-60%, or use any value within this range as a point estimate. </br>
 
-These guidelines should not preclude teams from considering longer waning times, especially if they would like to integrate detailed waning data. A recent study suggests that vaccine-induced immunity [wanes](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)00089-7/fulltext) on long time scales and has not stabilized at 9 months. Accordingly, teams can choose to model longer time scales of waning, with a lower set point than prescribed above. If they do so, teams should ensure that in their formulation, 50% of their population have a 40-60% reduced protection 3-8 months after (re-)exposure, aligned with the above guidelines.
 
+These guidelines should not preclude teams from considering longer waning times, especially if they would like to integrate detailed waning data. A recent study suggests that vaccine-induced immunity [wanes](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736\(22\)00089-7/fulltext) on long time scales and has not stabilized at 9 months. Accordingly, teams can choose to model longer time scales of waning, with a lower set point than prescribed above. If they do so, teams should ensure that in their formulation, 50% of their population have a 40-60% reduced protection 3-8 months after (re-)exposure, aligned with the above guidelines.
+</br>
 
 2. Waning of immunity against severe disease
 
@@ -90,20 +97,25 @@ We model the emergence of new variants with different immune escape characterist
 
 *   Scenarios A & C: **25%** immune escape from BA.5.2 **applies to variants in level 5**
 *   Scenarios B & D: **50%** immune escape from BA.5.2 **applies to variants in levels 6 and 7**
-
+</br>
 
 For example, in scenarios A and C, individuals who are previously immunized via either infection with BA.5.2 or vaccination with the reformulated vaccines will have a 25% reduction in the assumed level of protection conferred by that infection/vaccination against infection with Level 5 variants. For individuals who were most recently immunized by a less recent variant (i.e., BA.1) or vaccine (booster 1), protection against infection with Level 5 variants will be reduced by 25% on top of additional immune escape from that variant or vaccine by BA.5.2.
 
+
 The relationship between immune escape against infection and against symptomatic disease is at the discretion of the teams.
+
 
 Emerging variants not specified in the scenarios should be treated as not having an epidemiologically significant impact. For example, in scenarios A and C (the level 5 variant scenarios) level 6 and 7 variants should be treated the same as level 0-4 variants. In addition, level 0-4 variants should be considered as low or no immune escape compared to BA.5.
 
+
 *Severe disease with new variants, given infection:* The risks of severe disease for both Level 5 & 6/7 variants, conditional on infection and an individual’s immune class, are identical with Omicron (including BA.5.x). This is also true for other currently circulating variants. Accordingly, the risk **for hospitalization and death, conditional on infection, is equivalent to Omicron.**
+
 
 *Transmissibility:* The **intrinsic transmissibility of the new variant should be the same as that of the strains circulating at the start of the projection period** (i.e. the same R0 as Omicron variants and sub-variants = same effective transmissibility in a fully naive population, with the R0 value of Omicron left at teams’ discretion). 
 
-*Initial variant prevalence:* The initial prevalence of the Level 5 & 6/7 variants should be based on observed combined prevalence of all variants included in the given level at the start of the projection period in the US. Teams are free to use available [data](https://cov-spectrum.org/explore/United%20States/AllSamples/Past6M) to inform the prevalence of new variants. Teams are free to model importations as they see fit based on their analysis of the local and global epidemiological situation. Geographic dispersion of these infections is left at teams’ discretion. The ramp up of the new variant due to local transmission is also left at the teams’ discretion.
 
+*Initial variant prevalence:* The initial prevalence of the Level 5 & 6/7 variants should be based on observed combined prevalence of all variants included in the given level at the start of the projection period in the US. Teams are free to use available [data](https://cov-spectrum.org/explore/United%20States/AllSamples/Past6M) to inform the prevalence of new variants. Teams are free to model importations as they see fit based on their analysis of the local and global epidemiological situation. Geographic dispersion of these infections is left at teams’ discretion. The ramp up of the new variant due to local transmission is also left at the teams’ discretion.
+</br>
 
 ### **VE of existing and reformulated vaccines:**
 
@@ -117,44 +129,58 @@ Relevant references for VE of non reformulated vaccines include:
 *   Portugal data on VE against hospitalization and death with BA.5, after 2nd and 3rd doses https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2022.27.37.2200697 
 *   Neutralizing antibody response of a reformulated vaccine (original/BA.1 strain) against Omicron https://www.nejm.org/doi/full/10.1056/NEJMoa2208343 
 *   [Long term vaccine strategy](https://jamanetwork.com/journals/jama/fullarticle/2792030?resultClick=1) for COVID
-
+</br>
 
 ### **Vaccine coverage data and dose spacing:**
 
+
 The bivalent booster is [authorized](https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-and-pfizer-biontech-bivalent-covid-19-vaccines) for use in individuals ages 5+. The rate of booster uptake and final coverage levels are defined in the scenarios as follows.
+
 
 *Accelerating uptake (scenarios A & B):* Booster uptake rates accelerate in the coming months and saturate by February 1st, 2023 at 90% of the state-specific flu coverage reported for the 2020-2021 fall-winter season among ages 5+ (provided [here](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/Age_Specific_Coverage_Flu_RD1_2022_23_Sc_A_B_C_D.csv)). Teams are free to use available data and information from previous rollouts as they see fit to define rates. 
 
+
 *Current uptake (scenarios C & D):* Booster uptake rates stay at rates implied by current data and saturate by the end of the projection period at the level of the uptake of the booster 1 coverage. The plateau date should be based on current rates and is flexible as long as it occurs before the end of the projection period. Teams can adjust rates up if needed to achieve adequate coverage (based on booster 1) by target date. Teams are free to use available data and information from current and previous rollouts as they see fit to define rates.
+
 
 The distribution of who gets a booster among those for whom it is the 1st, 2nd or 3rd booster, age differences in coverage, and heterogeneity in coverage between states, is at the teams’ discretion.
 
-*Dose spacing:* Accounting for dose spacing is not required. 
 
+*Dose spacing:* Accounting for dose spacing is not required. 
+</br>
 
 ### **Seasonality:**
 
+
 Teams should include their best estimate of COVID-19 seasonality in their model but we do not prescribe  a specific level of seasonal forcing.
+
 
 ### **NPI:**
 
+
 Round 16 should NOT include reactive changes in NPIs imposed by health authorities to curb transmission, e.g., reinstatement of mask mandates, or closure of schools and businesses. However, teams can incorporate inherent changes in population behavior in response to increasing or decreasing incidences (eg, changes in contacts or masking), if these changes were inferred from earlier phases of the pandemic and are already part of the model. 
+
 
 Database tracking of NPIs: teams may use their own data if desired, otherwise we recommend the following sources as a common starting point:
 
 * [Coronavirus Government Response Tracker | Blavatnik School of Government (ox.ac.uk)](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker)
 * [Coronavirus State Actions - National Governors Association (nga.org)](https://www.nga.org/coronavirus-state-actions-all/)
+</br>
 
 ### **Initial Conditions:**
 
-The mix of circulating strains at the start of the projection period (October 30, 2022) is at the discretion of the teams based on their interpretation/analysis of the available data and estimates of the level 5 and 6/7 variants at the the time of projection. Variation in initial prevalence between states is left at teams’ discretion. 
 
+The mix of circulating strains at the start of the projection period (October 30, 2022) is at the discretion of the teams based on their interpretation/analysis of the available data and estimates of the level 5 and 6/7 variants at the the time of projection. Variation in initial prevalence between states is left at teams’ discretion. 
+</br>
 
 ### **Targets and case ascertainment:**
 
+
 Ascertainment of cases, hospitalizations and deaths will proceed at the same level as they were at the start of the projection period. We will continue to collect the same targets (cases, hospitalizations, deaths) but note that VRBPAC and ACIP are talking about a focus on severe disease moving forward.
 
+
 **All of the teams’ specific assumptions should be documented in meta-data and abstract.** 
+
 
 **Projection time horizon:** We consider a **26-week projection period.**
 
