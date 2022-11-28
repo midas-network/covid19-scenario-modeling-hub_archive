@@ -65,23 +65,18 @@ Variants by level of escape (from presentation by Cornelius Roemer, based on RBD
 ### **Waning Immunity:**
 
 
-1. Waning of immunity against infection
-</br>
+1. Waning of immunity against infection </br>
 
-Models should include waning against infection. 
-The median waning time of protection against infection should range between **3-8** months. Teams can sample this range, or use any value within this range as a point estimate. Teams can consider differences in waning of natural and vaccine-induced immunity, or in waning after Omicron infection vs waning from other types of SARS-CoV-2 exposures; however the median waning time should remain within the **3-8** month range. </br>
+   Models should include waning against infection. 
+   The median waning time of protection against infection should range between **3-8** months. Teams can sample this range, or use any value within this range as a point estimate. Teams can consider differences in waning of natural and vaccine-induced immunity, or in waning after Omicron infection vs waning from other types of SARS-CoV-2 exposures; however the median waning time should remain within the **3-8** month range.  </br>
 
+    We recommend that in the waned classes, teams consider a reduction from baseline levels of protection ranging between 40 and 60%, corresponding to x0.60 and x0.40 of the baseline levels reported immediately after exposure (vaccination or infection). This follows the same scheme as in round 13-15. Teams can sample the recommended range of protection reductions, which is 40-60%, or use any value within this range as a point estimate. </br>
 
-We recommend that in the waned classes, teams consider a reduction from baseline levels of protection ranging between 40 and 60%, corresponding to x0.60 and x0.40 of the baseline levels reported immediately after exposure (vaccination or infection). This follows the same scheme as in round 13-15. Teams can sample the recommended range of protection reductions, which is 40-60%, or use any value within this range as a point estimate. </br>
+   These guidelines should not preclude teams from considering longer waning times, especially if they would like to integrate detailed waning data. A recent study suggests that vaccine-induced immunity [wanes](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736\(22\)00089-7/fulltext) on long time scales and has not stabilized at 9 months. Accordingly, teams can choose to model longer time scales of waning, with a lower set point than prescribed above. If they do so, teams should ensure that in their formulation, 50% of their population have a 40-60% reduced protection 3-8 months after (re-)exposure, aligned with the above guidelines. </br>
 
+2. Waning of immunity against severe disease </br>
 
-These guidelines should not preclude teams from considering longer waning times, especially if they would like to integrate detailed waning data. A recent study suggests that vaccine-induced immunity [wanes](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736\(22\)00089-7/fulltext) on long time scales and has not stabilized at 9 months. Accordingly, teams can choose to model longer time scales of waning, with a lower set point than prescribed above. If they do so, teams should ensure that in their formulation, 50% of their population have a 40-60% reduced protection 3-8 months after (re-)exposure, aligned with the above guidelines.
-</br>
-
-2. Waning of immunity against severe disease
-</br>
-
-The extent and speed of the waning of protection against severity, conditional on infection, are at the discretion of the teams. Our assumptions are that protection against severity, conditional on infection, wanes on a slower time scale than waning against infection, but may wane eventually. Assumptions regarding waning of protection against severity, conditional on infection, should be provided in the abstract. For reference, several publications have estimates: [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2115481), [MMWR](https://www.cdc.gov/mmwr/volumes/71/wr/mm7107e2.htm?s_cid=mm7107e2_w).
+   The extent and speed of the waning of protection against severity, conditional on infection, are at the discretion of the teams. Our assumptions are that protection against severity, conditional on infection, wanes on a slower time scale than waning against infection, but may wane eventually. Assumptions regarding waning of protection against severity, conditional on infection, should be provided in the abstract. For reference, several publications have estimates: [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2115481), [MMWR](https://www.cdc.gov/mmwr/volumes/71/wr/mm7107e2.htm?s_cid=mm7107e2_w).
 </br>
 
 ### **Variants:**
