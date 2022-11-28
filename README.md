@@ -66,7 +66,7 @@ Variants by level of escape (from presentation by Cornelius Roemer, based on RBD
 
 
 1. Waning of immunity against infection
-
+</br>
 
 Models should include waning against infection. 
 The median waning time of protection against infection should range between **3-8** months. Teams can sample this range, or use any value within this range as a point estimate. Teams can consider differences in waning of natural and vaccine-induced immunity, or in waning after Omicron infection vs waning from other types of SARS-CoV-2 exposures; however the median waning time should remain within the **3-8** month range. </br>
@@ -79,19 +79,23 @@ These guidelines should not preclude teams from considering longer waning times,
 </br>
 
 2. Waning of immunity against severe disease
+</br>
 
 The extent and speed of the waning of protection against severity, conditional on infection, are at the discretion of the teams. Our assumptions are that protection against severity, conditional on infection, wanes on a slower time scale than waning against infection, but may wane eventually. Assumptions regarding waning of protection against severity, conditional on infection, should be provided in the abstract. For reference, several publications have estimates: [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2115481), [MMWR](https://www.cdc.gov/mmwr/volumes/71/wr/mm7107e2.htm?s_cid=mm7107e2_w).
-
+</br>
 
 ### **Variants:**
 
+
 We model the emergence of new variants with different immune escape characteristics by level of escape (based on RBD mutations compared to BA.2). With little data on new emerging variants, a specific variant is not explicitly considered in the scenarios. Instead, new variants are grouped into levels based on their immune escape characteristics. Therefore, each group of variants with a particular level of immune escape can be modeled as a single variant with the specified immune escape characteristics. Levels 5, 6 and 7 variants are taken into account in Round 16, and the detailed characteristics of variants by level are defined in the scenarios as follows:
+
 
 *Current variants classified into levels 5 , 6, and 7:*
 
 *   Level 5: BQ.1, BU.1, BS.1, BW.1, BA.2.75.2, BM.1.1, BA.2.3.20, BJ.1
 *   Level 6: BQ.1.1, BN.1, BM.1.1.1
 *   Level 7: XBB (BJ.1 x BM.1.1.1), CJ.1 (BM.1.1.1 with S:486P)
+
 
 *Immune escape characteristics:*
 
@@ -100,19 +104,19 @@ We model the emergence of new variants with different immune escape characterist
 </br>
 
 For example, in scenarios A and C, individuals who are previously immunized via either infection with BA.5.2 or vaccination with the reformulated vaccines will have a 25% reduction in the assumed level of protection conferred by that infection/vaccination against infection with Level 5 variants. For individuals who were most recently immunized by a less recent variant (i.e., BA.1) or vaccine (booster 1), protection against infection with Level 5 variants will be reduced by 25% on top of additional immune escape from that variant or vaccine by BA.5.2.
-
+</br>
 
 The relationship between immune escape against infection and against symptomatic disease is at the discretion of the teams.
-
+</br>
 
 Emerging variants not specified in the scenarios should be treated as not having an epidemiologically significant impact. For example, in scenarios A and C (the level 5 variant scenarios) level 6 and 7 variants should be treated the same as level 0-4 variants. In addition, level 0-4 variants should be considered as low or no immune escape compared to BA.5.
-
+</br>
 
 *Severe disease with new variants, given infection:* The risks of severe disease for both Level 5 & 6/7 variants, conditional on infection and an individual’s immune class, are identical with Omicron (including BA.5.x). This is also true for other currently circulating variants. Accordingly, the risk **for hospitalization and death, conditional on infection, is equivalent to Omicron.**
-
+</br>
 
 *Transmissibility:* The **intrinsic transmissibility of the new variant should be the same as that of the strains circulating at the start of the projection period** (i.e. the same R0 as Omicron variants and sub-variants = same effective transmissibility in a fully naive population, with the R0 value of Omicron left at teams’ discretion). 
-
+</br>
 
 *Initial variant prevalence:* The initial prevalence of the Level 5 & 6/7 variants should be based on observed combined prevalence of all variants included in the given level at the start of the projection period in the US. Teams are free to use available [data](https://cov-spectrum.org/explore/United%20States/AllSamples/Past6M) to inform the prevalence of new variants. Teams are free to model importations as they see fit based on their analysis of the local and global epidemiological situation. Geographic dispersion of these infections is left at teams’ discretion. The ramp up of the new variant due to local transmission is also left at the teams’ discretion.
 </br>
