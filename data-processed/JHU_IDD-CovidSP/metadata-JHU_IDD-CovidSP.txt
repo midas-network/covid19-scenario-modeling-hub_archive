@@ -2,17 +2,7 @@ team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
 model_name: CovidScenarioPipeline
 model_abbr: JHU_IDD-CovidSP
 model_version: "1.0"
-model_contributors: Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
-  Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious  
-  Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns 
-  Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious 
-  Disease Dynamics)<justin@jhu.edu>, Hannah R. Meredith (Johns Hopkins Infectious Disease Dynamics), Javier
-  Perez-Saez (Johns Hopkins Infectious Disease Dynamics), Shaun A. Truelove (Johns Hopkins Infectious 
-  Disease Dynamics) <shauntruelove@jhu.edu>, Claire P. Smith (Johns Hopkins Infectious Disease Dynamics) <csmit390@jhu.edu>,
-  Allison Hill (Johns Hopkins Infectious Disease Dynamics) <alhill@jhmi.edu>, Lindsay T. Keegan (University of Utah),
-  Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
-  Karthik Raman (Amazon Web Services),  Arun Subramaniyan (Amazon Web Services), Greg Thursam (Amazon Web 
-  Services), Anh Tran (Amazon Web Services)
+model_contributors: Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics), Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins Infectious Disease Dynamics), Koji Sato (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (UNC), Shaun Truelove (Johns Hopkins Infectious Disease Dynamics) <shauntruelove@jhu.edu>
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
