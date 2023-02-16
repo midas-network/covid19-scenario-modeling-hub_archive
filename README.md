@@ -87,7 +87,7 @@ time points, intervention scenarios, and US jurisdictions.
 
 Those interested to participate, please read the README file and email
 us at
-[scenariohub\@midasnetwork.us](mailto:scenariohub@midasnetwork.us){.email}.
+[scenariohub\@midasnetwork.us](mailto:scenariohub@midasnetwork.us).
 
 Model projections should be submitted via pull request to the
 data-processed folder of this GitHub repository. Technical instructions
