@@ -92,7 +92,7 @@ for submission and required file formats can be found
 
 ## Round 17 Scenarios
 
-Round 16 focuses on the impact of various regular vaccination strategies
+Round 17 focuses on the impact of various regular vaccination strategies
 with reformulated boosters combined with differing levels of antigenic
 drift.
 
