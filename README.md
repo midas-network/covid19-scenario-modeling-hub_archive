@@ -314,34 +314,28 @@ We will accept up to 5 years.
 
 -   **Results:**
 
-    -   We require teams to submit 100 representative trajectories from
-        their simulations for the targets:
-
+    -   We require teams to submit 100 representative trajectories from 
+    their simulations for the targets:
         -   Weekly incident deaths
-
         -   Weekly incident hospitalizations
 
     -   We encourage (but do not require) teams to submit a set of
-        quantiles in accordance with prior rounds. We ask for the
-        following quantiles: 0.01, 0.025, 0.05, every 5% to 0.95, 0.975,
-        and 0.99. Mean is optional, for the targetd:
-
+    quantiles in accordance with prior rounds. We ask for the
+    following quantiles: 0.01, 0.025, 0.05, every 5% to 0.95, 0.975,
+    and 0.99. Mean is optional, for the targetd:
         -   Weekly incident deaths
-
         -   Weekly incident hospitalizations
-
         -   Weekly cumulative deaths since simulation start (No longer
             cumulative since the start of the pandemic due to the lag in
             [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
             baseline data)
-
         -   Weekly cumulative hospitalizations since simulation start
 
     -   Weeks will follow epi-weeks (Sun-Sat) dated by the last day of
-        the week
+    the week
 
 -   **Abstract:** We require a brief abstract describing model
-    assumptions and results, from all teams.
+assumptions and results, from all teams.
 
 -   **Metadata:** We require a brief metadata form, from all teams.
 
