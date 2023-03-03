@@ -2,16 +2,18 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6584489.svg)](https://doi.org/10.5281/zenodo.6584489)
 
-Last updated: 03-03-2023 for **Round 17 Scenarios**.
+Last updated: 10-20-2022 for **Round 16 Scenarios**.
 
 ## Previous Round Scenarios and Results:
 
 <https://covid19scenariomodelinghub.org/viz.html>
 
-Round 16: [Scenario
-Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round16.md)
+Round 15: [Scenario
+Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round15.md)
 and [Model
 Details](https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+
+</br>
 
 ## Rationale
 
@@ -70,6 +72,8 @@ alignment of model projections for collective insights. Scenarios have
 been designed in consultation with academic modeling teams and
 government agencies (e.g., CDC).
 
+</br>
+
 ## How to participate
 
 The COVID-19 Scenario Modeling Hub is be open to any team willing to
@@ -90,155 +94,237 @@ data-processed folder of this GitHub repository. Technical instructions
 for submission and required file formats can be found
 [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md).
 
-## Round 17 Scenarios
+</br>
 
-Round 16 focuses on the impact of various regular vaccination strategies
-with reformulated boosters combined with differing levels of antigenic
-drift.
+## Round 16 Scenarios
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round17_scenarios_table.PNG)
+Round 16 focuses on the impact of bivalent booster uptake (first
+dimension) with the epidemiology of the variant "swarms" projected to
+dominate in the coming months (2nd dimension) over a 26-week period. We
+follow the usual 2X2 table structure.
 
-*IMPORTANT CHANGES FROM PREVIOUS ROUNDS:*
+<img src="https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round16_scenarios_table.PNG"/>
 
-There are several specific changes in the structure of the targets and
-submission data for Round 17. More details are in the text that follows,
-but briefly:
+</br>
 
-1.  **Targets**:
-    1.  *No cases*: Targets no longer include cases, due to the
-        discontinuation of both JHU CSSE and NY Times data in March
-        2023. 
-    2.  *NCHS deaths*: Ground truth deaths for visualization and
-        validation will come from the NCHS data. These data are weekly
-        and pertain to date of death, not report date. Due to the delay
-        and backfilling of these data, the cumulative death target will
-        also now start from the date of projection (instead of
-        cumulative since pandemic start).
-2.  **Submission format**:
-    1.  *Projection format*: 100 replicates/trajectories are now
-        required, projection quantiles are optional but encouraged.
-    2.  *Submission file structure*: Minor modifications to align with
-        other Hub standardization efforts.
-    3.  Submission file type: gz.parquet (from [Apache
-        Arrow](https://parquet.apache.org/)) now required
+The VE of reformulated (i.e., bivalent) boosters currently administered
+to those five and older should be considered to have an effectiveness of
+**80% against symptomatic disease** to BA.5.2 and all other Omicron
+variants not modeled in the immune escape swarms scenarios. For variants
+included in levels 5, 6 and 7, VE should be reduced based on the
+estimated immune escape factor compared to BA.5.2. If updated data on VE
+becomes available prior to submission, teams are free to use this data,
+but it should be noted in the abstract. Variant swarms in levels 5 to 7
+partially escape immunity against infection, where immunity is conferred
+by all available vaccines and prior infection with Omicron BA1 through
+BA5 and pre-Omicron lineages.
 
-### **Vaccine Efficacy & Availability**
+Variants by level of escape (from presentation by Cornelius Roemer,
+based on RBD mutations from BA.2):
 
-In all scenarios, boosters are reformulated to match the predominant
-variants circulating on June 15 of the given year, and are presumed to
-have 65% VE against symptomatic disease at the time of reformulation on
-June 15th. This VE is equivalent to a vaccine trial that would be
-performed on June 15 in populations who have varying levels of prior
-immunity at trial enrollment. Vaccinated individuals would have a 65%
-reduced risk of symptomatic infection compared to the unvaccinated group
-in this trial on average, if VE was estimated a few days after June
-15th. Immune escape will decrease the effective VE, starting on June
-15th. For instance if VE is 65% on June 15th 2023, and immune escape is
-20% annually, the same person vaccinated with the same vaccine one year
-later on June 15th, 2024, would enjoy 0.8\*65% = 52% protection against
-symptoms compared to an unvaccinated individual. The reformulated
-vaccines become available to the public on September 1st of the same
-year.
+-   Level 0: Stock BA.2
+-   Level 1: BA.2.12.1, and others with S:L452R/Q/M
+-   Level 2: BA.2.74, BH.1
+-   Level 3: Stock BA.⅘, BA.2.75, BA.2.77
+-   Level 4: BA.4.6, BF.7, BA.5.9, BA.2.75.5, BL.1, BL.2
+-   Level 5: BQ.1, BU.1, BS.1, BW.1, BA.2.75.2, BM.1.1, BA.2.3.20, BJ.1
+-   Level 6: BQ.1.1, BN.1, BM.1.1.1
+-   Level 7: XBB (BJ.1 x BM.1.1.1), CJ.1 (BM.1.1.1 with S:486P)
+-   Level 8: None designated yet </br>
 
-### **Vaccination Coverage**
+### **Waning Immunity:**
 
-*No recommendation (scenarios A & B):* There is no future recommendation
-to get additional booster doses or receive additional vaccination. Teams
-should not model any future increase in vaccination rates, but they are
-free to project the ongoing slow uptake as a result of the fall 2022
-reformulated booster into the future as they see fit.
+1.  Waning of immunity against infection </br>
 
-*Reformulated booster scenarios (scenarios C, D, E, & F):* Uptake of
-annual reformulated booster in the 65+ group follows uptake previously
-observed for the first booster dose authorized in September 2021. For
-scenarios C and D, assume there is negligible additional vaccination in
-groups under 65 years for whom there is no recommendation (teams are
-free to project the ongoing slow uptake of the 2022 vaccine as in
-scenarios A&B above).
+    Models should include waning against infection. The median waning
+    time of protection against infection should range between **3-8**
+    months. Teams can sample this range, or use any value within this
+    range as a point estimate. Teams can consider differences in waning
+    of natural and vaccine-induced immunity, or in waning after Omicron
+    infection vs waning from other types of SARS-CoV-2 exposures;
+    however the median waning time should remain within the **3-8**
+    month range. </br>
 
-For scenarios E and F, coverage in individuals under 65 years is assumed
-to saturate at the level of the first booster recommended in late 2021
-(approximately 34% nationally). Teams are free to use existing [data
-sources](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc)
-to estimate these uptake rates as they see fit, though it is recommended
-teams assume vaccination start date is the same across age groups.
+    We recommend that in the waned classes, teams consider a reduction
+    from baseline levels of protection ranging between 40 and 60%,
+    corresponding to x0.60 and x0.40 of the baseline levels reported
+    immediately after exposure (vaccination or infection). This follows
+    the same scheme as in round 13-15. Teams can sample the recommended
+    range of protection reductions, which is 40-60%, or use any value
+    within this range as a point estimate. </br>
 
-### **Immune Escape**
+    These guidelines should not preclude teams from considering longer
+    waning times, especially if they would like to integrate detailed
+    waning data. A recent study suggests that vaccine-induced immunity
+    [wanes](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)00089-7/fulltext)
+    on long time scales and has not stabilized at 9 months. Accordingly,
+    teams can choose to model longer time scales of waning, with a lower
+    set point than prescribed above. If they do so, teams should ensure
+    that in their formulation, 50% of their population have a 40-60%
+    reduced protection 3-8 months after (re-)exposure, aligned with the
+    above guidelines. </br>
 
-The SARS-CoV-2 virus is presumed to evolve away from existing immunity
-at a roughly constant rate of 20% or 50% per year, depending on the
-scenario. For example, in the 20% immune escape scenario, a vaccine
-formulated for a variant circulating in June 15th would have a VE of 0.9
-times the VE at reformulation when administered six months later in
-December 15th.
+2.  Waning of immunity against severe disease </br>
 
-Similarly, immune escape will affect protection conferred by natural
-infection. Let's assume an individual is infected on June 15th 2023 and
-this infection confers X% protection against symptoms, compared to an
-individual who has not been recently infected. If this individual was
-instantaneously transported a year later, on June 15th 2024, with their
-antibodies from the 2023 infection intact, this individual's protection
-against variants circulating on June 15th 2024 would be X\*0.8 in the
-20% immune escape scenario. In this thought experiment, the decay of
-protection would solely be due to the effects of immune escape. In
-reality, moving away from the thought experiment, if this individual
-actually lived throughout an entire year without a new infection between
-June 2023 and June 2024, then their effective immunity on June 15th,
-2024 will be the combined effects of antibody waning (at a rate and
-plateau left at teams' discretion) and immune escape (prescribed by each
-scenario).
+    The extent and speed of the waning of protection against severity,
+    conditional on infection, are at the discretion of the teams. Our
+    assumptions are that protection against severity, conditional on
+    infection, wanes on a slower time scale than waning against
+    infection, but may wane eventually. Assumptions regarding waning of
+    protection against severity, conditional on infection, should be
+    provided in the abstract. For reference, several publications have
+    estimates:
+    [NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2115481),
+    [MMWR](https://www.cdc.gov/mmwr/volumes/71/wr/mm7107e2.htm?s_cid=mm7107e2_w).
+    </br>
 
-Teams should note that the impact of immune escape is separate from the
-impact of waning immunity (especially because the impact of immune
-escape affects infection and vaccination differently), although these
-processes may be implemented similarly in models.
+### **Variants:**
 
-It is left to the teams' discretion how to implement immune escape in
-their models. Teams may choose to introduce new discrete variants with
-levels of immune escape consistent with the scenario definition, so long
-as these occur frequently, or may implement gradual escape of existing
-variants.
+We model the emergence of new variants with different immune escape
+characteristics by level of escape (based on RBD mutations compared to
+BA.2). With little data on new emerging variants, a specific variant is
+not explicitly considered in the scenarios. Instead, new variants are
+grouped into levels based on their immune escape characteristics.
+Therefore, each group of variants with a particular level of immune
+escape can be modeled as a single variant with the specified immune
+escape characteristics. Levels 5, 6 and 7 variants are taken into
+account in Round 16, and the detailed characteristics of variants by
+level are defined in the scenarios as follows:
 
-### Waning of Immunity
+*Current variants classified into levels 5 , 6, and 7:*
 
-Teams must incorporate waning of immunity against infection. The median
-waning time of protection against infection should range between 3-10
-months (this should not be read to mean that waning is to complete loss
-of protection, see below). Teams can sample this range, or use any value
-within this range as a point estimate. Teams can consider differences in
-waning of natural and vaccine-induced immunity, or in waning after
-Omicron infection vs waning from other types of SARS-CoV-2 exposures;
-however the median waning time should remain within the 3-10 month
-range.
+-   Level 5: BQ.1, BU.1, BS.1, BW.1, BA.2.75.2, BM.1.1, BA.2.3.20, BJ.1
+-   Level 6: BQ.1.1, BN.1, BM.1.1.1
+-   Level 7: XBB (BJ.1 x BM.1.1.1), CJ.1 (BM.1.1.1 with S:486P)
 
-The rate and levels of waning are left to the best scientific discretion
-of the teams. We recommend that in the waned classes, teams consider a
-reduction from baseline levels of protection ranging between 40 and 60%,
-corresponding to x0.60 and x0.40 of the baseline levels reported
-immediately after exposure (vaccination or infection).
+*Immune escape characteristics:*
 
-Teams may incorporate waning of immunity against severe disease, however
-the timescale of waning against severe disease must be slower than the
-timescale of waning against infection.
+-   Scenarios A & C: **25%** immune escape from BA.5.2 **applies to
+    variants in level 5**
+-   Scenarios B & D: **50%** immune escape from BA.5.2 **applies to
+    variants in levels 6 and 7** </br>
 
-### Variants
+For example, in scenarios A and C, individuals who are previously
+immunized via either infection with BA.5.2 or vaccination with the
+reformulated vaccines will have a 25% reduction in the assumed level of
+protection conferred by that infection/vaccination against infection
+with Level 5 variants. For individuals who were most recently immunized
+by a less recent variant (i.e., BA.1) or vaccine (booster 1), protection
+against infection with Level 5 variants will be reduced by 25% on top of
+additional immune escape from that variant or vaccine by BA.5.2. </br>
 
-Teams should assume no new variants are introduced, other than those
-implied by the levels of immune escape specified in the scenarios.
-Treatment of variants existing at the start of the projection period is
-left to the discretion of the teams. **Intrinsic transmissibility and
-severity of disease in a naive individual** is assumed to be constant
-across all currently-circulating and future variants.
+The relationship between immune escape against infection and against
+symptomatic disease is at the discretion of the teams. </br>
 
-### **Seasonality**
+Emerging variants not specified in the scenarios should be treated as
+not having an epidemiologically significant impact. For example, in
+scenarios A and C (the level 5 variant scenarios) level 6 and 7 variants
+should be treated the same as level 0-4 variants. In addition, level 0-4
+variants should be considered as low or no immune escape compared to
+BA.5. </br>
+
+*Severe disease with new variants, given infection:* The risks of severe
+disease for both Level 5 & 6/7 variants, conditional on infection and an
+individual's immune class, are identical with Omicron (including
+BA.5.x). This is also true for other currently circulating variants.
+Accordingly, the risk **for hospitalization and death, conditional on
+infection, is equivalent to Omicron.** </br>
+
+*Transmissibility:* The **intrinsic transmissibility of the new variant
+should be the same as that of the strains circulating at the start of
+the projection period** (i.e. the same R0 as Omicron variants and
+sub-variants = same effective transmissibility in a fully naive
+population, with the R0 value of Omicron left at teams' discretion).
+</br>
+
+*Initial variant prevalence:* The initial prevalence of the Level 5 &
+6/7 variants should be based on observed combined prevalence of all
+variants included in the given level at the start of the projection
+period in the US. Teams are free to use available
+[data](https://cov-spectrum.org/explore/United%20States/AllSamples/Past6M)
+to inform the prevalence of new variants. Teams are free to model
+importations as they see fit based on their analysis of the local and
+global epidemiological situation. Geographic dispersion of these
+infections is left at teams' discretion. The ramp up of the new variant
+due to local transmission is also left at the teams' discretion. </br>
+
+### **VE of existing and reformulated vaccines:**
+
+In June 2022, FDA recommended that vaccines be reformulated and include
+two components, an original Wuhan-like strain and an Omicron BA.4/BA.5
+strain. Reformulated bivalent BA4/5 boosters are currently being
+administered, and are available to people five years and older. We
+assume that reformulated bivalent boosters will provide a moderately
+improved protection above existing boosters; yet the exact VE will
+depend on circulating strains this fall. Teams should set the VE of
+reformulated vaccines at 80% against symptomatic disease from BA.5 and
+all variants not captured in the immune escape scenarios. For immune
+escape variants, a reduction of VE against (infection and) symptomatic
+disease should be implemented based on the denoted extent of immune
+escape. </br> Relevant references for VE of non reformulated vaccines
+include:
+
+-   Effect of 4th dose/2nd booster on infection and severe disease in
+    Isreal <https://www.nejm.org/doi/full/10.1056/NEJMoa2201570>
+-   UK data on VE against symptomatic disease, hospitalization and
+    deaths, by dose, time since vaccination and sublineage of Omicron
+    (including BA.4/BA.5)
+    <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1109618/vaccine-surveillance-report-week-40.pdf>
+-   US data on waning of VE against ED and hospitalization with Delta
+    and Omicron, after 2nd and 3rd doses
+    <https://www.cdc.gov/mmwr/volumes/71/wr/mm7107e2.htm>
+-   South Africa data on waning of VE against hospitalization with
+    Omicron (BA.1-BA.2/BA.4-BA.5), after 2nd and 3rd doses
+    <https://www.nejm.org/doi/full/10.1056/NEJMc2210093>
+-   Portugal data on VE against hospitalization and death with BA.5,
+    after 2nd and 3rd doses
+    <https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2022.27.37.2200697>
+-   Neutralizing antibody response of a reformulated vaccine
+    (original/BA.1 strain) against Omicron
+    <https://www.nejm.org/doi/full/10.1056/NEJMoa2208343>
+-   [Long term vaccine
+    strategy](https://jamanetwork.com/journals/jama/fullarticle/2792030?resultClick=1)
+    for COVID </br>
+
+### **Vaccine coverage data and dose spacing:**
+
+The bivalent booster is
+[authorized](https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-and-pfizer-biontech-bivalent-covid-19-vaccines)
+for use in individuals ages 5+. The rate of booster uptake and final
+coverage levels are defined in the scenarios as follows.
+
+*Accelerating uptake (scenarios A & B):* Booster uptake rates accelerate
+in the coming months and saturate by February 1st, 2023 at 90% of the
+state-specific flu coverage reported for the 2020-2021 fall-winter
+season among ages 5+ (provided
+[here](https://github.com/midas-network/flu-scenario-modeling-hub_resources/blob/main/Rd1_datasets/Age_Specific_Coverage_Flu_RD1_2022_23_Sc_A_B_C_D.csv)).
+Teams are free to use available data and information from previous
+rollouts as they see fit to define rates.
+
+*Current uptake (scenarios C & D):* Booster uptake rates stay at rates
+implied by current data and saturate by the end of the projection period
+at the level of the uptake of the booster 1 coverage. The plateau date
+should be based on current rates and is flexible as long as it occurs
+before the end of the projection period. Teams can adjust rates up if
+needed to achieve adequate coverage (based on booster 1) by target date.
+Teams are free to use available data and information from current and
+previous rollouts as they see fit to define rates.
+
+The distribution of who gets a booster among those for whom it is the
+1st, 2nd or 3rd booster, age differences in coverage, and heterogeneity
+in coverage between states, is at the teams' discretion.
+
+*Dose spacing:* Accounting for dose spacing is not required. </br>
+
+### **Seasonality:**
 
 Teams should include their best estimate of COVID-19 seasonality in
 their model but we do not prescribe a specific level of seasonal
 forcing.
 
-### **NPIs**
+### **NPI:**
 
-Teams should NOT include reactive changes in NPIs imposed by health
+Round 16 should NOT include reactive changes in NPIs imposed by health
 authorities to curb transmission, e.g., reinstatement of mask mandates,
 or closure of schools and businesses. However, teams can incorporate
 inherent changes in population behavior in response to increasing or
@@ -253,111 +339,76 @@ otherwise we recommend the following sources as a common starting point:
     Government
     (ox.ac.uk)](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker)
 -   [Coronavirus State Actions - National Governors Association
-    (nga.org)](https://www.nga.org/coronavirus-state-actions-all/)
+    (nga.org)](https://www.nga.org/coronavirus-state-actions-all/) </br>
 
-### **Initial Conditions**
+### **Initial Conditions:**
 
-The mix of circulating strains at the start of the projection period is
-at the discretion of the teams based on their interpretation/analysis of
-the available data. Variation in initial prevalence between states is
-left at teams' discretion.
+The mix of circulating strains at the start of the projection period
+(October 30, 2022) is at the discretion of the teams based on their
+interpretation/analysis of the available data and estimates of the level
+5 and 6/7 variants at the the time of projection. Variation in initial
+prevalence between states is left at teams' discretion. </br>
 
 ### **Targets and case ascertainment:**
 
-We will **no longer request case projections**. Ascertainment of
-hospitalizations and deaths will proceed at the same level as they were
-at the start of the projection period. Due to the discontinuation of the
-JHU CSSE data, going forward
-[NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
-will be used as the source of gold-standard death data. Note that this
-data source **counts deaths on the dates they occurred, not on the date
-they were reported** as was the case with the JHU CSSE death data. In
-accordance with the data, the death target should give deaths on the
-date they occur.
+Ascertainment of cases, hospitalizations and deaths will proceed at the
+same level as they were at the start of the projection period. We will
+continue to collect the same targets (cases, hospitalizations, deaths)
+but note that VRBPAC and ACIP are talking about a focus on severe
+disease moving forward.
 
-### Population
+**All of the teams' specific assumptions should be documented in
+meta-data and abstract.**
 
-Whether or not to include demographic dynamics (aging, birth) is at the
-discretion of the teams.
+**Projection time horizon:** We consider a **26-week projection
+period.**
 
-***All of the teams' specific assumptions should be documented in
-meta-data and abstract.***
-
-**Projection Time Horizon:** We consider a two-year projection period.
-We will accept up to 5 years.
+</br>
 
 ## Submission Information
 
-+-------------------------------+---------------+--------------------+
-| **Scenario**                  | **Scenario    | **Scenario ID for  |
-|                               | name**        | submission file\   |
-|                               |               | (`scenario_id`)**  |
-+===============================+===============+====================+
-| Scenario A. No booster, low   | noBoo_lowIE   | A-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario B. No booster, high  | noBoo_highIE  | B-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario C. 65+ booster, low  | 65Boo_lowIE   | C-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario D. 65+ booster, high | 65Boo_highIE  | D-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario E. all booster, low  | allBoo_lowIE  | E-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario F. all booster, high | allBoo_highIE | F-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
+| Scenario                                                  | Scenario name for submission file ('scenario_name') | Scenario ID for submission file ('scenario_id') |
+|---------------------------------|:-----------------:|:-----------------:|
+| Scenario A. High boosters, Moderate immune escape variant |                   highBoo_modVar                    |                  A-2022-10-29                   |
+| Scenario B. High boosters, High immune escape variant     |                   highBoo_highVar                   |                  B-2022-10-29                   |
+| Scenario C. Low boosters, Moderate immune escape variant  |                    lowBoo_modVar                    |                  C-2022-10-29                   |
+| Scenario D. Low boosters, High immune escape variant      |                   lowBoo_highVar                    |                  D-2022-10-29                   |
 
--   **Due date**: April 17, 2023
-
--   **End date for fitting data**: April 15, 2023 (no later than April
-    15, no earlier than March 10)
-
--   **Start date for scenarios**: April 16, 2023 (first date of
+-   **Due date**: Nov 2, 2022
+-   **End date for fitting data**: October 29, 2022 (no later than
+    October 29, no earlier than October 22)
+-   **Start date for scenarios**: October 30, 2022 (first date of
     simulated transmission/outcomes)
-
--   **Simulation end date:** April 19, 2025 (104-week horizon)
+-   **Simulation end date:** April 29, 2023 (26-week horizon)
+-   Desire to release results by first or second week of November
 
 **Other submission requirements**
 
 -   **Geographic scope:** state-level and national projections
-
--   **Results:**
-
-    -   We require teams to submit 100 representative trajectories from
-        their simulations for the targets:
-
-        -   Weekly incident deaths
-
-        -   Weekly incident hospitalizations
-
-    -   We encourage (but do not require) teams to submit a set of
-        quantiles in accordance with prior rounds. We ask for the
-        following quantiles: 0.01, 0.025, 0.05, every 5% to 0.95, 0.975,
-        and 0.99. Mean is optional, for the targetd:
-
-        -   Weekly incident deaths
-
-        -   Weekly incident hospitalizations
-
-        -   Weekly cumulative deaths since simulation start (No longer
-            cumulative since the start of the pandemic due to the lag in
-            [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
-            baseline data)
-
-        -   Weekly cumulative hospitalizations since simulation start
-
+-   **Results:** some subset of the following
+    -   Weekly incident deaths
+    -   Weekly cumulative deaths since start of pandemic (use JHU CSSE
+        for baseline)
+    -   Weekly incident reported cases
+    -   Weekly cumulative reported cases since start of pandemic (use
+        JHU CSSE for baseline)
+    -   Weekly incident hospitalizations
+    -   Weekly cumulative hospitalizations since simulation start
+    -   Individual simulations nationally and by state (weekly incident
+        cases, hospitalizations, and deaths; no cumulative estimates
+        needed; 100 randomly selected simulations per location)
     -   Weeks will follow epi-weeks (Sun-Sat) dated by the last day of
         the week
-
--   **Abstract:** We require a brief abstract describing model
+-   **Abstract:** We will require a brief abstract describing model
     assumptions and results, from all teams.
+-   **Metadata:** We will require a brief meta-data form, from all
+    teams.
+-   **Uncertainty:** aligned with the Forecasting Hub we ask for 0.01,
+    0.025, 0.05, every 5% to 0.95, 0.975, and 0.99. At present time,
+    *inclusion in ensemble models requires a full set of quantiles from
+    0.01 to 0.99.*
 
--   **Metadata:** We require a brief metadata form, from all teams.
+</br>
 
 ## Previous Rounds' Scenarios
 
@@ -388,14 +439,14 @@ We will accept up to 5 years.
     Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round14.md)
 -   [Round 15
     Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round15.md)
--   [Round 16
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round16.md)
+
+</br>
 
 ## Submitting model projections
 
 Groups interested in participating can submit model projections for each
-scenario in a PARQUET file formatted according to our specifications,
-and a metadata file with a description of model information. See
+scenario in a CSV file formatted according to our specifications, and a
+metadata file with a description of model information. See
 [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md)
 for technical submission requirements.
 
@@ -472,16 +523,16 @@ time-series data on vaccination in the US from the CDC API.
 -   [*Johns Hopkins ID Dynamics COVID-19 Working Group --- COVID
     Scenario
     Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
-    -   Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins
-        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
-        Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious
-        Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease
-        Dynamics), Alison Hill (Johns Hopkins Infectious Disease
-        Dynamics), Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins
-        Infectious Disease Dynamics), Koji Sato (Johns Hopkins
-        Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins
-        Infectious Disease Dynamics), Justin Lessler (UNC), Shaun
-        Truelove (Johns Hopkins Infectious Disease Dynamics)
+    -   Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins 
+        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins 
+        Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious 
+        Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease 
+        Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics), 
+        Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins Infectious 
+        Disease Dynamics), Koji Sato (Johns Hopkins Infectious Disease 
+        Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease 
+        Dynamics), Justin Lessler (UNC), Shaun Truelove (Johns Hopkins 
+        Infectious Disease Dynamics)
 -   [*Johns Hopkins University Applied Physics Lab ---
     Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     -   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht
@@ -586,6 +637,8 @@ time-series data on vaccination in the US from the CDC API.
         (University of Georgia), Michael Lachmann (Santa Fe Institute),
         Lauren Ancel Meyers (Senior author, University of Texas at
         Austin), and the UT COVID-19 Modeling Consortium
+
+</br>
 
 ## The COVID-19 Scenario Modeling Hub Coordination Team
 
