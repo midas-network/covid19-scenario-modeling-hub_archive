@@ -288,29 +288,15 @@ We will accept up to 5 years.
 
 ## Submission Information
 
-+-------------------------------+---------------+--------------------+
-| **Scenario**                  | **Scenario    | **Scenario ID for  |
-|                               | name**        | submission file\   |
-|                               |               | (`scenario_id`)**  |
-+===============================+===============+====================+
-| Scenario A. No booster, low   | noBoo_lowIE   | A-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario B. No booster, high  | noBoo_highIE  | B-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario C. 65+ booster, low  | 65Boo_lowIE   | C-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario D. 65+ booster, high | 65Boo_highIE  | D-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario E. all booster, low  | allBoo_lowIE  | E-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
-| Scenario F. all booster, high | allBoo_highIE | F-2023-04-16       |
-| immune escape                 |               |                    |
-+-------------------------------+---------------+--------------------+
+| Scenario  | Scenario name  | Scenario ID for submission file ('scenario_id') |
+|---------------------------------|:-----------------:|:-----------------:|
+| Scenario A. No booster, low immune escape  | noBoo_lowIE   | A-2023-04-16  |
+| Scenario B. No booster, high immune escape | noBoo_highIE  | B-2023-04-16  |
+| Scenario C. 65+ booster, low immune escape | 65Boo_lowIE   | C-2023-04-16  |
+| Scenario D. 65+ booster, high immune escape| 65Boo_highIE  | D-2023-04-16  |
+| Scenario E. All booster, low immune escape | allBoo_lowIE  | E-2023-04-16  |
+| Scenario F. All booster, high immune escape| allBoo_highIE | F-2023-04-16  |
+
 
 -   **Due date**: April 17, 2023
 
