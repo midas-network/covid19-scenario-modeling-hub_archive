@@ -326,9 +326,9 @@ We will accept up to 5 years.
         -   Weekly incident deaths
         -   Weekly incident hospitalizations
         -   Weekly cumulative deaths since simulation start (No longer
-            cumulative since the start of the pandemic due to the lag in
-            [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
-            baseline data)
+        cumulative since the start of the pandemic due to the lag in
+        [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
+        baseline data)
         -   Weekly cumulative hospitalizations since simulation start
 
     -   Weeks will follow epi-weeks (Sun-Sat) dated by the last day of
