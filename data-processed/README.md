@@ -105,20 +105,20 @@ The file must be a parquet file with the following
 columns (in any order):
 
 The output file should contains eight columns:
-    - `origin_date`
-    - `scenario_id`
-    - `target`
-    - `horizon`
-    - `location`
-    - `type` 
-    - `type_id` 
-    - `value`
+- `origin_date`
+- `scenario_id`
+- `target`
+- `horizon`
+- `location`
+- `type` 
+- `type_id` 
+- `value`
 
 
 No additional columns are allowed.
 
 Each row in the file is a specific type for a scenario for a location on
-a particular date for a particular target\. 
+a particular date for a particular target. 
 
 ### `origin_date`
 
@@ -319,9 +319,9 @@ For example:
 |origin_date|scenario_id|location|target|horizon|type|type_id|value|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |2023-04-16|A-2023-04-16|US|inc death|1|quantile|0.010||
-|2023-04-16|A-2023-04-16|US|inc death|2|quantile|0.025||
+|2023-04-16|A-2023-04-16|US|inc death|1|quantile|0.025||
 |||||||||
-|2023-04-16|A-2023-04-16|US|inc death|3|mean|NA||
+|2023-04-16|A-2023-04-16|US|inc death|1|mean|NA||
 |||||||||
 
 
