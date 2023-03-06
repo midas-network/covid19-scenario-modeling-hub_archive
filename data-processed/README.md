@@ -7,12 +7,15 @@ All scenarios should be submitted directly to the [data-processed/](./)
 folder. Data in this directory should be added to the repository through
 a pull request. 
 
-Due to file size limitation, the file can be submitted in a `.zip` or `.gz`
-format with the same name as the `.csv` file provided. 
+Due to file size limitation, the file can be submitted in a `.parquet` or `.gz.parquet`.
+
+The submission file format has been updated starting round 17 (April 2023), for 
+information on previous file format please refer to past version of this 
+[README file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/fb8040bca943dae9ca4e76eefe4410e4f6866c82/data-processed/README.md). 
 
 ## Example
 
-See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2020-12-21-MyTeam-MyModel.csv)
+See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2023-04-16-MyTeam-MyModel.gz.parquet)
 for an illustration of part of a (hypothetical) submission file. 
 
 ## Subdirectory
@@ -73,7 +76,7 @@ for R and [pymmwr](https://pypi.org/project/pymmwr/) and
 Each model results file within the subdirectory should have the following
 name
 
-    YYYY-MM-DD-team-model.csv
+    YYYY-MM-DD-team-model.parquet
     
 where
 
@@ -92,64 +95,40 @@ The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 15
 characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
-For optional addtional format, the filename of the model results is
-different:
-- For `"sample"` file format (individual runs), the file should be named:
-  `“YYYY-MM-DD-team-model-sample.csv”`
+If the size of the file is larger than 100MB, it can be submitted in a 
+`.gz.parquet` format. 
 
-If the size of the file is larger than 100MB, it can be submitted in a `.zip`
-or `.gz` format. 
 
 ## Model results file format
 
-The file must be a comma-separated value (csv) file with the following
+The file must be a parquet file with the following
 columns (in any order):
 
-- For file format containing **quantiles** information, the output file should
-  contains nine columns:
-    - `model_projection_date`
-    - `scenario_name` 
+The output file should contains eight columns:
+    - `origin_date`
     - `scenario_id`
     - `target`
-    - `target_end_date`
+    - `horizon`
     - `location`
     - `type` 
-    - `quantile` 
+    - `type_id` 
     - `value`
 
-- For file format containing **sample** information, the output file should
-  contains eight columns:
-    - `model_projection_date`
-    - `scenario_name` 
-    - `scenario_id`
-    - `target`
-    - `target_end_date`
-    - `location`
-    - `sample` 
-    - `value`
 
 No additional columns are allowed.
 
-Each row in the file is either a point or quantile scenario for a location on
-a particular date for a particular target. 
+Each row in the file is a specific type for a scenario for a location on
+a particular date for a particular target\. 
 
-### `model_projection_date`
+### `origin_date`
 
-Values in the `model_projection_date` column must be a date in the format
+Values in the `origin_date` column must be a date in the format
 
     YYYY-MM-DD
     
-Model projections will have an associated `model_projection_date` to the start
+Model projections will have an associated `origin_date` to the start
 date for scenarios (first date of simulated transmission/outcomes).
-The "model_projection_date" and date in the filename should correspond.
-
-
-### `scenario_name`
-
-The standard scenario names should be used as given in the scenario
-description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). 
-Scenario names only include characters and no spaces, e.g., `optimistic`,
-`highBoo_modVar`.
+The "origin_date" and date in the filename should correspond.
 
 
 ### `scenario_id`
@@ -162,95 +141,54 @@ Scenario id's include a captitalized letter and date as YYYY-MM-DD, e.g.,
 
 ### `target`
 
-The requested targets are:
+The requested targets are (for "sample" type output):
 - weekly incident deaths
-- cumulative deaths
-- weekly incident cases
-- cumulative incident cases
 - weekly incident hospitalizations
-- cumulative incident hospitalizations
 
-Optional target:
-- weekly incident infections
-- weekly proportion of cases caused by variant X (mean only) [Round 14 and
-  Round 15 specific]
+Optional target (for "quantile" type output):
+- cumulative deaths
+- cumulative incident hospitalizations
+- weekly incident deaths
+- weekly incident hospitalizations
 
 Values in the `target` column must be a character (string) and be one of the
 following specific targets:
-- "N wk ahead inc death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead cum death"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead inc case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead cum case"  where N is a number between 1 and  26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead inc hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead cum hosp"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
-</br>
+- "inc death"  
+- "inc hosp"
+- "cum death"  
+- "cum hosp"
 
-- "N wk ahead inc inf"  where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round)
-- "N wk ahead prop X"   where N is a number between 1 and 26 (or 12 or 40 or 52, depending on the round) [Round 14 and Round 15 specific]
-</br>
+For round 17 **only**, if the size of the output file is larger than 100MB
+in the `.gz.parquet` format, it is accepted to split the file into multiple 
+files by target and optional values, following the filename standard:
 
-<b>For the optional "sample" file format:</b> Only the three incident target are requested: 
-- weekly incident deaths
-- weekly incident cases
-- weekly incident hospitalizations
+- `YYYY-MM-DD-team_model-incdeath.gz.parquet` (containing "sample" values 
+  for the target "inc death")
+- `YYYY-MM-DD-team_model-inchosp.gz.parquet` (containing "sample" values 
+  for the target "inc hops")
+- `YYYY-MM-DD-team_model-quantile.gz.parquet` (containing "quantile" 
+  and mean values, this file is optional)
 
 
-#### N wk ahead inc death
+#### inc death
 
 This target is the incident (weekly) number of deaths predicted by the model
-during the week that is N weeks after `model_projection_date`. 
+during the week that is N weeks after `origin_date`. 
 
-A week-ahead scenario should represent the total number of new deaths reported
-during a given epiweek (from Sunday through Saturday, inclusive).
-
-Predictions for this target will be evaluated compared to the number of new
-reported cases, as recorded by the JHU CSSE group as distributed by the
-[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
-
-
-#### N wk ahead cum death
-
-This target is the cumulative number of deaths predicted by the model up to
-and including N weeks after `model_projection_date`. 
-
-A week-ahead scenario should represent the cumulative number of deaths
-reported on the Saturday of a given epiweek.
-
-Predictions for this target will be evaluated compared to the cumulative of
-the number of new reported deaths, as recorded by the JHU CSSE group as
-distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
-
-
-#### N wk ahead inc case
-
-This target is the incident (weekly) number of cases predicted by the model
-during the week that is N weeks after `model_projection_date`. 
-
-A week-ahead scenario should represent the total number of new cases reported
-during a given epiweek (from Sunday through Saturday, inclusive).
+A week-ahead scenario should represent the total number of new deaths on 
+the dates they occurred, not on the date they were reported (from Sunday through 
+Saturday, inclusive).
 
 Predictions for this target will be evaluated compared to the number of new
-reported cases, as recorded by the JHU CSSE group as distributed by the
-[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
+deaths, as recorded by the National Center for Health Statistics (NCHS) as 
+distributed by the
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nchs-mortality.html).
 
 
-#### N wk ahead cum case
-
-This target is the cumulative number of incident cases predicted by the model
-up to and including N weeks after `model_projection_date`. 
-
-A week-ahead scenario should represent the cumulative number of cases reported
-on the Saturday of a given epiweek.
-
-Predictions for this target will be evaluated compared to the cumulative of
-the number of new reported cases, as recorded by the JHU CSSE group as
-distributed by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/jhu-csse.html).
-
-
-#### N wk ahead inc hosp
+#### inc hosp
 
 This target is the incident (weekly) number of hospitalized cases predicted by
-the model during the week that is N weeks after `model_projection_date`. 
+the model during the week that is N weeks after `origin_date`. 
 
 A week-ahead scenario should represent the total number of new hospitalized
 cases reported during a given epiweek (from Sunday through Saturday,
@@ -261,11 +199,25 @@ hospitalized cases, as reported by the HHS and distributed by the
 [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
 
 
-#### N wk ahead cum hosp
+#### cum death
+
+This target is the cumulative number of deaths predicted by the model during 
+the week that is N weeks after `origin_date` (since start of the simulation). 
+
+A week-ahead scenario should represent the cumulative number of deaths
+reported on the Saturday of a given epiweek.
+
+Predictions for this target will be evaluated compared to the cumulative of
+the number of new deaths, as recorded by the National Center for Health 
+Statistics (NCHS) as distributed by the
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nchs-mortality.html).
+
+
+#### cum hosp
 
 This target is the cumulative number of incident (weekly) number of
 hospitalized cases predicted by the model during the week that is N weeks
-after `model_projection_date`. 
+after `origin_date` (since start of the simulation). 
 
 A week-ahead scenario should represent the cumulative number of hospitalized
 cases reported on the Saturday of a given epiweek.
@@ -275,79 +227,23 @@ the number of new hospitalized cases, as reported by the HHS and distributed
 by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html).
 
 
-#### N wk ahead inc inf
-
-This target is the number of incident (weekly) infections predicted by the
-model during the week that is N weeks after `model_projection_date`.
-
-A week-ahead scenario should represent the total number of new infections
-occurring within a given epiweek (from Sunday through Saturday, inclusive).
-
-Projections of infections will be used to compare outputs between models but
-will not be evaluated against observations.  Projections of infections are
-optional.
+### `horizon`
 
 
-#### N wk ahead prop X [Round 14 and Round 15 specific]
+Values in the `horizon` column must be a integer (N) between 1 and last week 
+horion value representing the associated target value during the N weeks
+after `origin_date`. 
 
-This target is the proportion of incident (weekly) cases caused by variant X
-among all COVID19 cases, as predicted by the model during the week that is N
-weeks after `model_projection_date`.  
+For example, between 1 and 104 for Round 17 ("**Simulation end date:** 
+April 19, 2025 (104-week horizon)") and in the following example table,
+the first row represent the number of incident death in the US, for the 1st 
+epiweek (epiweek ending on 2023-04-22)after 2023-04-16 for the scenario 
+A-2023-04-16. 
 
-A week-ahead scenario should represent the proportion of variant X cases
-occurring within a given epiweek (from Sunday through Saturday, inclusive). 
-
-Projections of variant X proportion will be used to compare outputs between
-models but will not be evaluated against observations.  Further, we do not
-expect a full distribution of quantiles, only mean estimates.  Projections of
-proportion of variant X are optional
-
-
-### `target_end_date`
-
-
-Values in the `target_end_date` column must be a date in the format
-
-```
-YYYY-MM-DD
-``` 
-
-This is the date for the scenario `target`.
-
-The target and target_end_date columns are associated. For "# wk" targets,
-`target_end_date` will be the Saturday at the end of the week time period. A
-week-ahead projection should represent the total number of incident deaths or
-hospitalizations within a given epiweek (from Sunday through Saturday,
-inclusive) or the cumulative number of deaths reported on the Saturday of a
-given epiweek. Model projection dates in the COVID-19 Scenario Modeling Hub
-are equivelent to the forecast dates in the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).
-
-It can be calculated as:
-
-- in days: `model_projection_date` - `1` (as model_projection_date is the
-start (first) day of projection) + `(N * 7)` days (N being the number of
-week ahead in the associated target, e.g `"1 wk ahead"`, `"2 wk ahead"`)
-to have it in days.
-
-- in epiweek: `model_projection_date` epiweek - `1` + `N`. In this case the last day
-(Saturday) of the epiweek should be reported in the column
-`target_end_date`
- 
-
-The start and end date information of the whole expected timeseries are in the main README
-("Start date for scenarios" and "Simulation end date").
-
-For example, if a round is defined with:
-* Start date for scenarios: October 30, 2022 (first date of simulated transmission/outcomes)
-* Simulation end date: April 29, 2023 (26-week horizon)
-
-Then the weeks ahead projection would corresponds to:
-- target `1 wk ahead`: `2022-10-30 - 1 + (1 * 7)` equals target_end_date: `"2022-11-05"`
-(Saturday), and corresponds to EW44
-- target `2 wk ahead`: `2022-10-30 - 1 + (2 * 7)` equals target_end_date: `"2022-11-12"`
-(Saturday), and corresponds to EW45
-- etc.
-- until target `26 wk ahead`, target_end_date: `"2023-04-29" `
+|origin_date|scenario_id|location|target|horizon|...|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-04-16|A-2023-04-16|US|inc death|1|...|
+||||||
 
 
 ### `location`
@@ -365,21 +261,43 @@ character string to preserve any leading zeroes.
 
 Values in the `type` column are either
 
-- "point" or
-- "quantile". 
+- "sample" or 
+- "quantile" (optional) or
+- "mean" (optional)
 
-This value indicates whether that row corresponds to a point scenario or a
-quantile scenario. Point scenarios are used in visualization while quantile
-scenarios are used in visualization and in ensemble construction.
+This value indicates whether that row corresponds to a "sample" scenario or a
+quantile scenario. 
 
-**Scenarios must include exactly 1 "point" scenario for every
-  scenario-location-target group.**
+**Scenarios must include "sample" scenario for every
+  scenario-location-target-horizon group.**
 
 
-### `quantile`
+### `type_id`
 
-Values in the `quantile` column are either "NA" (if `type` is "point") or a
-quantile in the format
+#### `sample`
+
+For the optional simulation samples format only. Values in the `type_id` column
+are numeric between `1` and `100` indicating an id sample number. Each ID number
+represents one in 100 representative trajectories from the simulations. 
+
+**All scenario-location-target-horizon group should have a unique associated
+sample.**
+
+For example:
+
+|origin_date|scenario_id|location|target|horizon|type|type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-04-16|A-2023-04-16|US|inc death|1|sample|1||
+|2023-04-16|A-2023-04-16|US|inc death|2|sample|1||
+|2023-04-16|A-2023-04-16|US|inc death|3|sample|1||
+|||||||||
+|2023-04-16|A-2023-04-16|US|inc death|1|sample|2||
+|2023-04-16|A-2023-04-16|US|inc death|2|sample|2||
+|||||||||
+
+#### `quantile` and `mean`
+
+Values in the `quantile` column a quantile in the format
 
     0.###
     
@@ -393,23 +311,29 @@ Teams should provide the following 23 quantiles:
 0.550 0.600 0.650 0.700 0.750, 0.800 0.850 0.900 0.950 0.975 0.990 
 ```
 
-Two optionals additional quantiles can also be submitted: `0`(min) and `1`
-(max). 
+An optional `mean` value can also be provided with `mean` as "type" value
+and `NA` as "type_id" value.
 
-### `sample`
+For example:
 
-For the optional simulation samples format only. Values in the `sample` column
-are numeric between `1` and `100` indicating an id sample number.
+|origin_date|scenario_id|location|target|horizon|type|type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2023-04-16|A-2023-04-16|US|inc death|1|quantile|0.010||
+|2023-04-16|A-2023-04-16|US|inc death|2|quantile|0.025||
+|||||||||
+|2023-04-16|A-2023-04-16|US|inc death|3|mean|NA||
+|||||||||
+
+
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "point"
-or 
-"quantile" prediction for this row. For a "point" prediction, `value` is
- simply the value of that point prediction for the `target` and `location`
- associated with that row. For a "quantile" prediction, `value` is the
- inverse of the cumulative distribution function (CDF) for the `target`,
- `location`, and `quantile` associated with that row.
+Values in the `value` column are non-negative numbers indicating the "sample"
+or "quantile" prediction for this row. 
+
+For a "quantile" prediction, `value` is the inverse of the cumulative distribution
+function (CDF) for the `target`,`horizon`, `location`, and `quantile` associated with 
+that row.
 
 
 ## Scenario validation
@@ -438,12 +362,10 @@ and/or abstract file(s):
     validation. 
 
 - If the PR contains model output submission file(s). The validation 
-automatically runs and output a message and a PDF file containing the 
-projections of the requested targets at national and State level, 
-plus some information on calibration.
+automatically runs and output a message:
 
     - The validation has 3 possible output:
-        - "Error": the validation has failled and returned a message 
+        - "Error": the validation has failed and returned a message 
         indicating the error(s). The error(s) should be fixed to have the PR 
         accepted
         - "Warning": the PR can be accepted. However, it might be necessary 
@@ -451,11 +373,6 @@ plus some information on calibration.
         not before merging the PR.
         - "Success": the validation did not found any issue and returns a message 
         indicating that the validation is a success and the PR can be merged.
-
-    - The PDF file containing the visualization is accessible has an artifact of 
-    the GitHub Actions. 
-    For more information, please see [here](https://docs.github.com/en/actions/managing-workflow-runs/downloading-workflow-artifacts)
-
 
 
 #### Run checks locally

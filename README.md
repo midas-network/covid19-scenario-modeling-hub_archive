@@ -114,7 +114,9 @@ but briefly:
         and backfilling of these data, the cumulative death target will
         also now start from the date of projection (instead of
         cumulative since pandemic start).
-2.  **Submission format**:
+2.  **Submission format**: See the 
+    [data-processed/README](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) 
+    file for more information
     1.  *Projection format*: 100 replicates/trajectories are now
         required, projection quantiles are optional but encouraged.
     2.  *Submission file structure*: Minor modifications to align with
