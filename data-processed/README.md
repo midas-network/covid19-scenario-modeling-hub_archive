@@ -86,6 +86,25 @@ where
 - `team` is the teamname, and
 - `model` is the name of your model.
 
+"parquet" files format from Apache is "is an open source, column-oriented data
+file format designed for efficient data storage and retrieval". Please find more
+information on the [parquet.apache.com](https://parquet.apache.org/
+) website.
+
+The "arrow" library can be used to read/write the files in 
+[Python](https://arrow.apache.org/docs/python/parquet.html) and 
+[R](https://arrow.apache.org/docs/r/index.html).
+For example, in R:
+```
+# For "parquet" file format:
+filename <- ”path/YYYY-MM-DD-team_model.parquet”
+arrow::write_parquet(df, filename)
+# with "gz compression"
+filename <- ”path/YYYY-MM-DD-team_model.gz.parquet”
+arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
+```
+
+
 The date YYYY-MM-DD should correspond to the start date for scenarios
 projection ("first date of simulated transmission/outcomes" as noted in the
 scenario description on the main 
