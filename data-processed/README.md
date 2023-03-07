@@ -9,15 +9,15 @@ a pull request.
 
 Due to file size limitation, the file can be submitted in a `.parquet` or `.gz.parquet`.
 
-The submission file format has been updated starting round 17 (April 2023), for 
+The submission file format has been updated starting round 17 (April 2023).  For 
 information on previous file format please refer to past version of this 
 [README file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/fb8040bca943dae9ca4e76eefe4410e4f6866c82/data-processed/README.md). 
-
+----
 ## Example
 
 See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2023-04-16-MyTeam-MyModel.gz.parquet)
 for an illustration of part of a (hypothetical) submission file. 
-
+---
 ## Subdirectory
 
 Each subdirectory within the [data-processed/](data-processed/) directory has
@@ -35,7 +35,7 @@ nor spaces.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of scenarios. 
-
+----
 ## Metadata 
 
 The metadata file name should have the following format
@@ -44,13 +44,13 @@ The metadata file name should have the following format
     
 where 
 
-- `team` is the teamname and 
-- `model` is the name of your model. 
+- `team` is the teamname, usually the name of the submitting institution. 
+- `model` is the name of your model, used to distinguish between multiple models from a single institution.
     
 The metadata file must follow the [documented description](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
 An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
 has been posted in the data-processed directory. 
-
+---
 ## License (optional)
 
 License information for data sharing and reuse is requested in the metadata,
@@ -59,7 +59,7 @@ standard license and have specific license text, include a license file
 named
 
     LICENSE.txt
-
+----
 ## Date/Epiweek information
 
 For week-ahead scenarios, we will use the specification of epidemiological
@@ -70,7 +70,7 @@ There are standard software packages to convert from dates to epidemic weeks
 and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) 
 for R and [pymmwr](https://pypi.org/project/pymmwr/) and 
 [epiweeks](https://pypi.org/project/epiweeks/) for python.
-
+---
 ## Model Results
 
 Each model results file within the subdirectory should have the following
@@ -114,10 +114,10 @@ The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 15
 characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
-If the size of the file is larger than 100MB, it can be submitted in a 
+If the size of the file is larger than 100MB, it should be submitted in a 
 `.gz.parquet` format. 
 
-
+---
 ## Model results file format
 
 The file must be a parquet file with the following
@@ -145,8 +145,7 @@ Values in the `origin_date` column must be a date in the format
 
     YYYY-MM-DD
     
-Model projections will have an associated `origin_date` to the start
-date for scenarios (first date of simulated transmission/outcomes).
+The `origin_date` is the start date for scenarios (first date of simulated transmission/outcomes).
 The "origin_date" and date in the filename should correspond.
 
 
@@ -154,7 +153,7 @@ The "origin_date" and date in the filename should correspond.
 
 The standard scenario id should be used as given in in the scenario
 description in the [main Readme](https://github.com/midas-network/covid19-scenario-modeling-hub). 
-Scenario id's include a captitalized letter and date as YYYY-MM-DD, e.g.,
+Scenario IDs include a captitalized letter and date as YYYY-MM-DD, e.g.,
 `A-2020-12-22`.
 
 
@@ -170,14 +169,13 @@ Optional target (for "quantile" type output):
 - weekly incident deaths
 - weekly incident hospitalizations
 
-Values in the `target` column must be a character (string) and be one of the
-following specific targets:
+Values in the `target` column must be one of the following character strings:
 - "inc death"  
 - "inc hosp"
 - "cum death"  
 - "cum hosp"
 
-For round 17 **only**, if the size of the output file is larger than 100MB
+For round 17, if the size of the output file is larger than 100MB
 in the `.gz.parquet` format, it is accepted to split the file into multiple 
 files by target and optional values, following the filename standard:
 
@@ -290,7 +288,6 @@ quantile scenario.
 **Scenarios must include "sample" scenario for every
   scenario-location-target-horizon group.**
 
-
 ### `type_id`
 
 #### `sample`
@@ -316,7 +313,7 @@ For example:
 
 #### `quantile` and `mean`
 
-Values in the `quantile` column a quantile in the format
+Values in the `quantile` column are quantiles in the format
 
     0.###
     
@@ -354,7 +351,7 @@ For a "quantile" prediction, `value` is the inverse of the cumulative distributi
 function (CDF) for the `target`,`horizon`, `location`, and `quantile` associated with 
 that row.
 
-
+---
 ## Scenario validation
 
 To ensure proper data formatting, pull requests for new data or updates in
