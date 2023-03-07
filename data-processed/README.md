@@ -88,22 +88,25 @@ where
 
 "parquet" files format from Apache is "is an open source, column-oriented data
 file format designed for efficient data storage and retrieval". Please find more
-information on the [parquet.apache.com](https://parquet.apache.org/
-) website.
+information on the [parquet.apache.com](https://parquet.apache.org/) website.
 
 The "arrow" library can be used to read/write the files in 
 [Python](https://arrow.apache.org/docs/python/parquet.html) and 
 [R](https://arrow.apache.org/docs/r/index.html).
+Other tools are also accessible, for example [parquet-tools](https://github.com/hangxie/parquet-tools)
+
 For example, in R:
 ```
-# For "parquet" file format:
+# To write "parquet" file format:
 filename <- ”path/YYYY-MM-DD-team_model.parquet”
 arrow::write_parquet(df, filename)
 # with "gz compression"
 filename <- ”path/YYYY-MM-DD-team_model.gz.parquet”
 arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
-```
 
+# To read "parquet" file format:
+arrow::read_parquet(filename)
+```
 
 The date YYYY-MM-DD should correspond to the start date for scenarios
 projection ("first date of simulated transmission/outcomes" as noted in the
@@ -145,7 +148,8 @@ Values in the `origin_date` column must be a date in the format
 
     YYYY-MM-DD
     
-The `origin_date` is the start date for scenarios (first date of simulated transmission/outcomes).
+The `origin_date` is the start date for scenarios (first date of 
+simulated transmission/outcomes).
 The "origin_date" and date in the filename should correspond.
 
 
@@ -158,6 +162,18 @@ Scenario IDs include a captitalized letter and date as YYYY-MM-DD, e.g.,
 
 
 ### `target`
+
+The submission can contain multiple output type information: 
+- 100 representative trajectories from the model simulations. We will 
+  call this format "sample" type output. For more information, please
+  consult the 
+  [sample](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed#sample) 
+  section.
+- A set of quantiles with an optional "mean" value for all the tarquets.
+  We will call this format "quantile" type output. For more information, 
+  please consult the 
+  [quantile](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  section. 
 
 The requested targets are (for "sample" type output):
 - weekly incident deaths
@@ -339,7 +355,6 @@ For example:
 |||||||||
 |2023-04-16|A-2023-04-16|US|inc death|1|mean|NA||
 |||||||||
-
 
 
 ### `value`
