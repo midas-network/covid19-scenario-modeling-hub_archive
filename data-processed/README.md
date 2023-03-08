@@ -12,15 +12,19 @@ Due to file size limitation, the file can be submitted in a `.parquet` or `.gz.p
 The submission file format has been updated starting round 17 (April 2023).  For 
 information on previous file format please refer to past version of this 
 [README file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/fb8040bca943dae9ca4e76eefe4410e4f6866c82/data-processed/README.md). 
+
 ----
+
 ## Example
 
 See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2023-04-16-MyTeam-MyModel.gz.parquet)
 for an illustration of part of a (hypothetical) submission file. 
+
 ---
+
 ## Subdirectory
 
-Each subdirectory within the [data-processed/](data-processed/) directory has
+Each subdirectory within the [data-processed/]((https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed)) directory has
 the format
 
     team-model
@@ -35,7 +39,9 @@ nor spaces.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of scenarios. 
+
 ----
+
 ## Metadata 
 
 The metadata file name should have the following format
@@ -50,7 +56,9 @@ where
 The metadata file must follow the [documented description](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
 An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
 has been posted in the data-processed directory. 
+
 ---
+
 ## License (optional)
 
 License information for data sharing and reuse is requested in the metadata,
@@ -59,7 +67,9 @@ standard license and have specific license text, include a license file
 named
 
     LICENSE.txt
+    
 ----
+
 ## Date/Epiweek information
 
 For week-ahead scenarios, we will use the specification of epidemiological
@@ -70,7 +80,9 @@ There are standard software packages to convert from dates to epidemic weeks
 and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) 
 for R and [pymmwr](https://pypi.org/project/pymmwr/) and 
 [epiweeks](https://pypi.org/project/epiweeks/) for python.
+
 ---
+
 ## Model Results
 
 Each model results file within the subdirectory should have the following
@@ -121,6 +133,7 @@ If the size of the file is larger than 100MB, it should be submitted in a
 `.gz.parquet` format. 
 
 ---
+
 ## Model results file format
 
 The file must be a parquet file with the following
@@ -367,6 +380,7 @@ function (CDF) for the `target`,`horizon`, `location`, and `quantile` associated
 that row.
 
 ---
+
 ## Scenario validation
 
 To ensure proper data formatting, pull requests for new data or updates in
