@@ -108,8 +108,8 @@ but briefly:
     1.  *No cases*: Targets no longer include cases, due to the
         discontinuation of both JHU CSSE and NY Times data in March
         2023. 
-    2.  *NCHS deaths*: Ground truth deaths for visualization and
-        validation will come from the NCHS data. These data are weekly
+    2.  *Deaths*: Ground truth deaths for visualization and
+        validation will come from the FluView data. These data are weekly
         and pertain to date of death, not report date. Due to the delay
         and backfilling of these data, the cumulative death target will
         also now start from the date of projection (instead of
@@ -270,7 +270,7 @@ We will **no longer request case projections**. Ascertainment of
 hospitalizations and deaths will proceed at the same level as they were
 at the start of the projection period. Due to the discontinuation of the
 JHU CSSE data, going forward
-[NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
+[FluView](https://gis.cdc.gov/grasp/fluview/mortality.html)
 will be used as the source of gold-standard death data. Note that this
 data source **counts deaths on the dates they occurred, not on the date
 they were reported** as was the case with the JHU CSSE death data. In
@@ -328,7 +328,7 @@ We will accept up to 5 years.
         -   Weekly incident hospitalizations
         -   Weekly cumulative deaths since simulation start (No longer
             cumulative since the start of the pandemic due to the lag
-            in [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
+            in [FluView](https://gis.cdc.gov/grasp/fluview/mortality.html)
             baseline data)
         -   Weekly cumulative hospitalizations since simulation start
     -   Weeks will follow epi-weeks (Sun-Sat) dated by the last day of
