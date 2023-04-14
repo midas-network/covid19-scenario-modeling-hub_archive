@@ -163,7 +163,10 @@ to saturate at the level of the first booster recommended in late 2021
 (approximately 34% nationally). Teams are free to use existing [data
 sources](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc)
 to estimate these uptake rates as they see fit, though it is recommended
-teams assume vaccination start date is the same across age groups.
+teams assume vaccination start date is the same across age groups. 
+
+The teams are also free to use the [vaccination coverage per state and 
+per age group file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/round_resources/round17/new_bivalent_coverage.csv) provided for this round.
 
 ### **Immune Escape**
 
