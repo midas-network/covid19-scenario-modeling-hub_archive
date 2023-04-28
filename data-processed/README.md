@@ -389,7 +389,7 @@ data-processed/ will be automatically validated.
 ### Pull request scenario validation
 
 When a pull request is submitted, the data are validated by running the
-scripts in [validation.R](./code/validation/validation.R). The intent for
+scripts in [validation.R](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/code/validation/validation.R). The intent for
 these tests are to validate the requirements above and all checks are 
 specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
 Please [let us know](https://github.com/midas-network/covid19-scenario-modeling-hub/issues) if
