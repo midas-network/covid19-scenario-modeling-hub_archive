@@ -226,6 +226,25 @@ Teams may incorporate waning of immunity against severe disease, however
 the timescale of waning against severe disease must be slower than the
 timescale of waning against infection.
 
+### Handling immune escape and waning immunity in the calibration process
+
+It is important that all scenario simulations share the same values (or 
+ranges of values) for the proportion of population in different immune 
+classes at t=0. Similarly, waning immunity assumptions should be shared 
+across scenarios (including timescale of immunity decline and plateau 
+reached after immunity has waned, if any). To do so, teams should ensure 
+that the calibration step uses similar immune escape and waning immunity 
+parameters.  Only by using assumptions that lead to starting conditions 
+for population immunity that effectively come from a shared distribution 
+across scenarios and and by having the same waning immunity assumptions 
+(or shared distribution of waning immunities) apply to all scenarios, we 
+can evaluate the impact of different immune escape and vaccine assumptions 
+in the projection period. If past immune escape and/or waning immunity 
+parameters are unobservable from the recent data, estimates can be drawn 
+from the literature to help with calibration. It is also acceptable to use 
+the midpoint of the immune escape scenario assumptions (35%, midpoint 
+between 20% and 50%) for calibration of immune escape in the recent past.
+
 ### Variants
 
 Teams should assume no new variants are introduced, other than those
@@ -237,9 +256,9 @@ across all currently-circulating and future variants.
 
 ### **Seasonality**
 
-Teams should include their best estimate of COVID-19 seasonality in
-their model but we do not prescribe a specific level of seasonal
-forcing.
+We strongly recommend that teams include their best estimate of COVID-19 
+seasonality in their model but we do not prescribe a specific level of 
+seasonal forcing.
 
 ### **NPIs**
 
