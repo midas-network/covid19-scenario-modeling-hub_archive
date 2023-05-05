@@ -2,7 +2,8 @@ team_name: NCSU
 model_name: COVSIM
 model_abbr: NCSU-COVSIM
 model_version: "2022-07-31"
-model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, 
+model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>,
+Sebastian Rodriguez Cartes (North Carolina State University) <sarodri4@ncsu.edu>, 
 Julie Swann (North Carolina State University) <jlswann@ncsu.edu>,
 Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>,
 Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>,
