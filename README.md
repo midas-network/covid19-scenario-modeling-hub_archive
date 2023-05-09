@@ -577,7 +577,8 @@ time-series data on vaccination in the US from the CDC API.
         Ira Longini Jr. (University of Florida)
 -   [*North Carolina State University -
     COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
-    -   Erik Rosenstrom (North Carolina State University), Julie Swann
+    -   Erik Rosenstrom (North Carolina State University), Sebastian 
+        Rodriguez Cartes (North Carolina State University), Julie Swann
         (North Carolina State University), Julie Ivy (North Carolina
         State University), Maria Mayorga (North Carolina State
         University)
