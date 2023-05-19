@@ -5,27 +5,29 @@ In general, the simulated results showed that COVID-19 probably entered endemic 
 We suggest that the high immune evasive sceanrio (50% per year) produced a substantial number of cases, which caused increase in hospitalization and death in the later stages of simulation. Vaccination helped bring these number down across states. Providing annual booster to all individuals reduced hospitalization and death compared to 65+ only, but the differences between the two scenarios (all vs 65+) were not substantial . Perhaps economic factors should be further considered for more informed decisions on annual booster vaccine campaigns in 2023 and 2024. 
 # Model assumptions
 ## Number/type of immune classes considered
-We considered a single immune class with continuous waning level instead of discrete full/partial immune classes.
-## Initial distribution of susceptibility if available
+We considered a single immune class with continuous waning level (modeled as an exponentially decay function with time) instead of discrete full/partial immune classes.
+## Initial distribution of susceptibility (if available)
 ### Proportion of people that were infected with Omicron
 Not explicitly modeled. However, the proportion can be estimated from cumulative prevalence of infection on historical data.
 ### Proportion of people that are naïve at start of projection (not vaccinated or infected)
 Not explicitly modeled but we don't believe there were any people not vaccinated nor infected at the beginning of the simulation.
 ### Other
 NA
-## Initial variant characteristics (including Omicron transmissibility, immune escape, and how uncertainty or non-identifiability was handled) 
-Transmissibility, immune escape, hostalization, death rates were modeled as directed in the instruction. 
-## Process for setting/calibrating P(hosp given current infection) and P(death given current infection)
-Moving average of hospitalization and death rates in past 10 days (short-term) as well as over the entire span (long-term) across states are used to calibrate the model.
-## Waning immunity details (including values used for the duration and level of protection against infection or symptomatic disease, whether a point estimate was used or a sample from the specified values, distribution used)
-Waning immunity was modeled as exponential decay function over time.
+## Initial variant characteristics (transmissibility of variants at t=0, and how uncertainty or non-identifiability was handled) 
+Transmissibility, immune escape, hostalization, death rates were modeled as directed in the instruction. Transmissibility at t=0 was estimated from exponential curve fitting with additional calibration on incident case data (i.e., no sudden "jumps" between last observed data and first simulated data).
+## Details about calibration of immunity at t=0 (calibration period considered, assumptions about/fitting of past immune escape and waning immunity, is the same calibration process used for all scenarios?)
+Population-level immunity was modeled implicitly. We used the past 10d data for calibration and it was consistent across all six scenarios.
+## Details about modeling of immune escape after t=0 (including how projected immune escape is handled in scenarios, e.g., whether a stepwise or continuous escape was considered)
+Continuous immune escape was modeled at population level, similar to how waning immunity was modeled mathematically. Different scenarios shared same immune escape mechanism but different parameterization.
+## Assumptions regarding waning immunity against infection and symptoms (including values used for the duration and level of protection against infection or symptomatic disease, whether a point estimate was used or a range, and distribution used)
+Waning immunity was modeled as exponential decay function over time at population level. Values were used as directed by the SMH round 17 instruction. Additional system stochasticity (e.g., distribution of current waning/protection level, eventual levels of protection against infection) was included in the model.
+## Assumptions regarding waning immunity against severe disease (including whether immunity against severe disease, conditional on infection, is fixed vs declines over time; and if it wanes, specify how)
+Waning immunity was also modeled as exponential decay function over time at population level against hospitalization and death. Additional system stochasticity (e.g. levels of protections) was included in the model.
+## Describe the process used to set or calibrate disease severity, ie P(hosp given current infection) and P(death given current infection) details. What are the datasets used for calibration of the death targets?
+Both long-term (starting from Omicron wave in 2022) and short term (10d) data were used to calibrate hospitalization and death rate as the initial condition for simulation. 
 ## Seasonality implementation
-Seasonality was estimated from 2020-2021 data prior to Omicron wave.
-## Emerging variant details (including introduction process and estimate of variant X emergence timing and variability)
-Not modeled explicitly, as directed.
-## Nonpharmaceutical interventions 
+Seasonality was estimated from 2020-2022 data for two years to develop a trigonometric kernel for projection the next two years.
+## Is there a background level of non pharmaceutical interventions?
 NPI was not modeled explicitly, as directed.
-## Case ascertainment assumptions (including relation to infections, e.g., what value or values were used to translate to case estimates and how were they estimated)
-We did not explicitly consider under-reporting (i.e., infection/case ratio). This model only tracked reported cases. However, if necessary, an adjustment parameter (under-reporting rate) could be applied. 
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-System stochasticity was modeled as random walk in conjunction with seasonality and projected cumulative case trajectory from exponential curve fitting.
+Additional system stochasticity was modeled as random walk in conjunction with seasonality and projected cumulative case trajectory from exponential curve fitting.
