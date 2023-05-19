@@ -30,4 +30,4 @@ Seasonality was estimated from 2020-2022 data for two years to develop a trigono
 ## Is there a background level of non pharmaceutical interventions?
 NPI was not modeled explicitly, as directed.
 ## Other updates in model assumptions from previous rounds (e.g., changes in reporting outcomes due to Omicron)
-Additional system stochasticity was modeled as random walk in conjunction with seasonality and projected cumulative case trajectory from exponential curve fitting.
+Additional system stochasticity was modeled as random walk in conjunction with seasonality and projected cumulative case trajectory from exponential curve fitting. No demographic dynamics modeled in this round.
