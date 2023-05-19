@@ -1,4 +1,4 @@
-# Packages required for the validation (update requirements on the 2023-03-02)
+# Packages required for the validation (update requirements (cache) on the 2023-05-19)
 https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip # v0.0.1
 arrow
 covidcast
