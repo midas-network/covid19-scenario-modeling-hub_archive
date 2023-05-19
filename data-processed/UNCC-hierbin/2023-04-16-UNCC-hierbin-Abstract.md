@@ -7,12 +7,8 @@ We suggest that the high immune evasive sceanrio (50% per year) produced a subst
 ## Number/type of immune classes considered
 We considered a single immune class with continuous waning level (modeled as an exponentially decay function with time) instead of discrete full/partial immune classes.
 ## Initial distribution of susceptibility (if available)
-### Proportion of people that were infected with Omicron
-Not explicitly modeled. However, the proportion can be estimated from cumulative prevalence of infection on historical data.
-### Proportion of people that are naïve at start of projection (not vaccinated or infected)
-Not explicitly modeled but we don't believe there were any people not vaccinated nor infected at the beginning of the simulation.
-### Other
-NA
+Not explicitly modeled. However, the proportion could be estimated from cumulative prevalence of infection on historical data, if necessary.
+We don't believe there were any people not vaccinated nor infected at the beginning of the simulation. This was addressed in waning immunity and immune escape sections below.
 ## Initial variant characteristics (transmissibility of variants at t=0, and how uncertainty or non-identifiability was handled) 
 Transmissibility, immune escape, hostalization, death rates were modeled as directed in the instruction. Transmissibility at t=0 was estimated from exponential curve fitting with additional calibration on incident case data (i.e., no sudden "jumps" between last observed data and first simulated data).
 ## Details about calibration of immunity at t=0 (calibration period considered, assumptions about/fitting of past immune escape and waning immunity, is the same calibration process used for all scenarios?)
