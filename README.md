@@ -514,11 +514,10 @@ time-series data on vaccination in the US from the CDC API.
     -   Ajitesh Srivastava, Majd Al Aawar
 -   [*University of Virginia ---
     adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
-    -   Przemyslaw Porebski (UVA), Joseph Outten (UVA), Srini
-        Venkatramanan (UVA), Bryan Lewis (UVA), Aniruddha Adiga (UVA),
-        Brian Klahn (UVA), Lijing Wang (UVA), Benjamin Hurt (UVA),
-        Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe
-        (UVA)
+    -   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Bryan 
+        Lewis (UVA), Aniruddha Adiga (UVA), Brian Klahn (UVA), 
+        Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), 
+        Madhav Marathe (UVA)
 -   [*Oliver Wyman's Pandemic
     Navigator*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
     -   Ugur Koyluoglu, Dan Siegel
