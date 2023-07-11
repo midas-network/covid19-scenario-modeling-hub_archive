@@ -584,8 +584,8 @@ time-series data on vaccination in the US from the CDC API.
 -   [*University of Texas at Austin -
     ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
     -   Kaiming Bi (Lead modeler, University of Texas at Austin), Anass
-        Bouchnita (University of Texas at El Paso), Spencer Fox
-        (University of Georgia), Michael Lachmann (Santa Fe Institute),
+        Bouchnita (University of Texas at El Paso), Shraddha R Bandekar 
+        (University of Texas at Austin), Spencer Fox (University of Georgia),
         Lauren Ancel Meyers (Senior author, University of Texas at
         Austin), and the UT COVID-19 Modeling Consortium
 
