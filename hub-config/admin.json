@@ -1,0 +1,27 @@
+{
+    "name": "COVID-19 Scenario Modeling Hub",
+    "maintainer": "COVID-19 Scenario Modeling Hub Coordination Team",
+    "contact": {
+        "name": "COVID-19 Scenario Modeling Hub Coordination Team",
+        "email": "scenariohub@midasnetwork.us"
+    },
+    "repository_url": "https://github.com/midas-network/covid19-scenario-modeling-hub",
+    "hub_models": [
+        {
+            "team_abbr": "",
+            "model_abbr": "Ensemble",
+            "model_type": "ensemble"
+        },
+        {
+            "team_abbr": "",
+            "model_abbr": "Ensemble_LOP",
+            "model_type": "ensemble"
+        },
+        {
+            "team_abbr": "",
+            "model_abbr": "Ensemble_LOP_untrimmed",
+            "model_type": "ensemble"
+        }
+    ],
+    "timezone": "Eastern US"
+}

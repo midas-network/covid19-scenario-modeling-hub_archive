@@ -13,7 +13,7 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Setup R
-          uses: r-lib/actions/setup-r@v1
+          uses: r-lib/actions/setup-r@v2
 
         - name: Install system dependencies
           run: sudo apt-get install libcurl4-openssl-dev libudunits2-dev libgdal-dev
@@ -32,7 +32,7 @@ jobs:
           run: |
             R -e 'Sys.setenv("NOT_CRAN" = TRUE)
                   install.packages(c("arrow", "remotes"))
-                  remotes::install_url("https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip")'
+                  remotes::install_url("https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip")'
 
         - name: Run Validation
           run: |

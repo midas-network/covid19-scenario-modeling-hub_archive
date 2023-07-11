@@ -6,7 +6,6 @@ model_contributors: Kaiming Bi (Lead modeler, University of Texas at Austin), <k
 website_url: https://covid-19.tacc.utexas.edu/
 license: cc-by-4.0
 methods: (State) An age-stratified SEIRS model that explicitely caputres the changes in the population-immunity from heterogenous sources and its effect on susceptiblity and severity. 
-
 modeling_NPI: NPIs levels are considered to remain the same as for the period of December 15, 2021 to January 08, 2022.
 compliance_NPI: Compliance to NPIs is assumed to remain the same as for the period of December 15, 2021 to January 08, 2022.
 contact_tracing: No changes in the contact tracing policy are assumed.

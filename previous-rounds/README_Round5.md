@@ -64,7 +64,7 @@ Model projections should be submitted via pull request to the data-processed fol
 
 Vaccine hesitancy is expected to cause vaccination coverage to slow and eventually saturate at some level below 100%. The saturation levels provided in these scenarios are illustrative National reference points to guide defining hesitancy. The high vaccination scenario (low hesitancy) saturates at approximately 83% vaccination coverage nationally among the eligible population, as defined by current estimates from the Delphi group (link) from March 13, 2021 data (red line in figure). The low vaccination scenario (high hesitancy) saturates at approximately 68% vaccination coverage nationally among the eligible population, defined by the lowest county-level estimate from the U.S. Census Bureau’s Pulse Survey (link) from March 15, 2021 data. The speed of vaccination saturation should be defined by the modeling team, and can be defined as a logistic function (red and blue lines in figure below) or at different speeds (green line below). State or smaller geospatial unit and/or age group hesitancy limits should be defined by the modeling team using their best judgement. Overall national hesitancy should be similar to the illustrative levels defined in the scenarios, though is not expected to be exact. The eligible population for vaccination is presumed to be individuals aged 16 years or older until June 1, 2021. On June 1, the eligible population is presumed to extend to individuals aged 12 years and older.
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/round5_hesitancycurves.png)
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/round5_hesitancycurves.png)
 
 </br>
 

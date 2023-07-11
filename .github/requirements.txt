@@ -1,5 +1,5 @@
-# Packages required for the validation (update cache on the 2022-07-29)
-https://github.com/midas-network/covid19SMHvalidation/archive/refs/heads/main.zip
+# Packages required for the validation (update requirements (cache) on the 2023-05-26)
+https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip # v0.0.1
 arrow
 covidcast
 cowplot
