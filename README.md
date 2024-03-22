@@ -631,7 +631,7 @@ time-series data on vaccination in the US from the CDC API.
 -   Samantha Bents, NIH Fogarty
 -   Katie Yan, Penn State University
 
-### Past member
+### Past members
 
 -   Wilbert Van Panhuis, University of Pittsburgh
 -   Jessica Kerr, University of Pittsburgh
