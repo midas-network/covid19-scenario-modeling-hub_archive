@@ -414,6 +414,8 @@ assumptions and results, from all teams.
     Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round15.md)
 -   [Round 16
     Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round16.md)
+-   [Round 17
+    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round17.md)
 
 ## Submitting model projections
 
