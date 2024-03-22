@@ -135,7 +135,7 @@ If the 100MB limit is not solved by compression the submission file can also
 be partitioned. 
 
 
-### Partioning 
+### Partitioning 
 
 The submission files can be partitioned with the "arrow" library and should 
 be partitioned by `origin_date` and `target`.
