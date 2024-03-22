@@ -159,7 +159,7 @@ define high-risk groups as those with underlying conditions putting
 them at increased risk of severe outcomes from COVID-19. Data on the
 population size and vaccine coverage of high and low risk groups is
 provided by state and age in Github. We assume that VE in high-risk
-groups is X%. Data on increased risk of COVID_19 hospitalization from
+groups is X%. Data on increased risk of COVID-19 hospitalization from
 high risk groups can be found 
 [here](https://academic.oup.com/cid/article/72/11/e695/5908300).
 
