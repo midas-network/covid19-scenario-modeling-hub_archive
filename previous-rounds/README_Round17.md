@@ -1,15 +1,15 @@
-# COVID-19 Scenario Modeling Hub
+# COVID-1# COVID-19 Scenario Modeling Hub
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6584489.svg)](https://doi.org/10.5281/zenodo.6584489)
 
-Last updated: 22-03-2024 for **Round 18 Scenarios**.
+Last updated: 03-03-2023 for **Round 17 Scenarios**.
 
 ## Previous Round Scenarios and Results:
 
 <https://covid19scenariomodelinghub.org/viz.html>
 
-Round 17: [Scenario
-Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round17.md)
+Round 16: [Scenario
+Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round16.md)
 and [Model
 Details](https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
@@ -90,197 +90,185 @@ data-processed folder of this GitHub repository. Technical instructions
 for submission and required file formats can be found
 [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md).
 
-## Round 18 Scenarios
+## Round 17 Scenarios
 
-Round 18 focuses on the impact of different COVID-19 vaccination
-strategies with reformulated boosters combined with differing levels
-of antigenic drift. This round will follow closely the layout of
-Round 17, but with more consideration of population groups at
-high-risk for severe disease (of any age). The timeframe of
-projection will be Sun April 28, 2024 to Sat April 26, 2025
-(52 weeks).
+Round 17 focuses on the impact of various regular vaccination strategies
+with reformulated boosters combined with differing levels of antigenic
+drift.
 
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round17_scenarios_table.PNG)
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round18_scenarios_table.PNG)
+*IMPORTANT CHANGES FROM PREVIOUS ROUNDS:*
 
+There are several specific changes in the structure of the targets and
+submission data for Round 17. More details are in the text that follows,
+but briefly:
+
+1.  **Targets**:
+    1.  *No cases*: Targets no longer include cases, due to the
+        discontinuation of both JHU CSSE and NY Times data in March
+        2023. 
+    2.  *Deaths*: Ground truth deaths for visualization and
+        validation will come from the FluView data. These data are weekly
+        and pertain to date of death, not report date. Due to the delay
+        and backfilling of these data, the cumulative death target will
+        also now start from the date of projection (instead of
+        cumulative since pandemic start).
+2.  **Submission format**: See the 
+    [data-processed/README](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) 
+    file for more information
+    1.  *Projection format*: 100 replicates/trajectories are now
+        required, projection quantiles are optional but encouraged.
+    2.  *Submission file structure*: Minor modifications to align with
+        other Hub standardization efforts.
+    3.  Submission file type: gz.parquet (from [Apache
+        Arrow](https://parquet.apache.org/)) now required
 
 ### **Vaccine Efficacy & Availability**
 
 In all scenarios, boosters are reformulated to match the predominant
-variants circulating on June 15, 2024, and are presumed to have X% VE
-against symptomatic disease at the time of reformulation on June
-15th. This VE is equivalent to a vaccine trial that would be
+variants circulating on June 15 of the given year, and are presumed to
+have 65% VE against symptomatic disease at the time of reformulation on
+June 15th. This VE is equivalent to a vaccine trial that would be
 performed on June 15 in populations who have varying levels of prior
-immunity at trial enrollment. Vaccinated individuals would have a X%
-reduced risk of symptomatic infection compared to the unvaccinated
-group in this trial on average, if VE was estimated a few days after
-June 15th. Immune escape will decrease the effective VE, starting on
-June 15. For instance if VE is X% on June 15, 2024, and immune escape
-is 20% annually, the same person vaccinated with the same vaccine one
-year later on June 15, 2025, would enjoy 0.8 * X% = Y% protection
-against symptoms compared to an unvaccinated individual. The
-reformulated vaccines become available to the public on September 1st
-of the same year. 
-
+immunity at trial enrollment. Vaccinated individuals would have a 65%
+reduced risk of symptomatic infection compared to the unvaccinated group
+in this trial on average, if VE was estimated a few days after June
+15th. Immune escape will decrease the effective VE, starting on June
+15th. For instance if VE is 65% on June 15th 2023, and immune escape is
+20% annually, the same person vaccinated with the same vaccine one year
+later on June 15th, 2024, would enjoy 0.8\*65% = 52% protection against
+symptoms compared to an unvaccinated individual. The reformulated
+vaccines become available to the public on September 1st of the same
+year.
 
 ### **Vaccination Coverage**
 
-*No recommendation (scenarios A & B):* There is no future
- recommendation to get additional booster doses or receive additional
- vaccination. Teams should not model any future vaccination except
- among those not previously vaccinated, specifically children aging
- into eligibility (i.e, at 6 months of age). Without recommendation,
- vaccines will not be covered by insurance or other sources.
+*No recommendation (scenarios A & B):* There is no future recommendation
+to get additional booster doses or receive additional vaccination. Teams
+should not model any future increase in vaccination rates, but they are
+free to project the ongoing slow uptake as a result of the fall 2022
+reformulated booster into the future as they see fit.
 
+*Reformulated booster scenarios (scenarios C, D, E, & F):* Uptake of
+annual reformulated booster in the 65+ group follows uptake previously
+observed for the first booster dose authorized in September 2021. For
+scenarios C and D, assume there is negligible additional vaccination in
+groups under 65 years for whom there is no recommendation (teams are
+free to project the ongoing slow uptake of the 2022 vaccine as in
+scenarios A&B above).
 
-*Annual vaccination with reformulated booster recommended for high
- risk groups (65+ and those with underlying risk factors)
- (scenarios C & D):* UUptake of annual reformulated booster in
- high-risk groups (65+ and other individuals with underlying risk
- factors for severe COVID-19 outcomes) follows uptake observed for
- the booster dose during the 2023-24 season. Vaccination among others
- outside of high risk groups should be negligible, except among
- infants aging into eligibility (at 6 months). For non-recommended
- groups, it should be assumed without recommendation these will not
- be covered by insurance or other health care funding and thus will
- not be received. Uptake data from the 2023-24 season in 65+ and
- high-risk groups will be provided.
+For scenarios E and F, coverage in individuals under 65 years is assumed
+to saturate at the level of the first booster recommended in late 2021
+(approximately 34% nationally). Teams are free to use existing [data
+sources](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc)
+to estimate these uptake rates as they see fit, though it is recommended
+teams assume vaccination start date is the same across age groups. 
 
-
-*Annual vaccination with reformulated booster recommended for
- currently eligible groups (ages 6 months and older)(scenarios E &
- F):* Uptake of annual reformulated booster in all groups follows
- uptake observed for the booster dose during the 2023-24 season.
- Uptake data from the 2023-24 season will be provided.
-
-In this round, we assume that high-risk populations, of any age, are
-included in booster recommendations in scenarios C, D, E, & F. We
-define high-risk groups as those with underlying conditions putting
-them at increased risk of severe outcomes from COVID-19. Data on the
-population size and vaccine coverage of high and low risk groups is
-provided by state and age in Github. We assume that VE in high-risk
-groups is X%. Data on increased risk of COVID_19 hospitalization from
-high risk groups can be found 
-[here](https://academic.oup.com/cid/article/72/11/e695/5908300).
-
+The teams are also free to use the [vaccination coverage per state and 
+per age group file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/round_resources/round17/new_bivalent_coverage.csv) provided for this round.
 
 ### **Immune Escape**
 
 The SARS-CoV-2 virus is presumed to evolve away from existing immunity
 at a roughly constant rate of 20% or 50% per year, depending on the
 scenario. For example, in the 20% immune escape scenario, a vaccine
-formulated for a variant circulating on June 15th would have a VE of
-0.9 times the VE at reformulation when administered six months later
-on December 15th. 
-
+formulated for a variant circulating in June 15th would have a VE of 0.9
+times the VE at reformulation when administered six months later in
+December 15th.
 
 Similarly, immune escape will affect protection conferred by natural
-infection. Let’s assume an individual is infected on June 15, 2024
-and this infection confers X% protection against symptoms, compared
-to an individual who has not been recently infected. If this
-individual was instantaneously transported a year later, on June 15,
-2025, with their antibodies from the 2024 infection intact, this
-individual's protection against variants circulating on June 15, 2025
-would be X * 0.8 in the 20% immune escape scenario. In this thought
-experiment, the decay of protection would solely be due to the
-effects of immune escape. In reality, moving away from the thought
-experiment, if this individual actually lived throughout an entire
-year without a new infection between June 2024 and June 2025, then
-their effective immunity on June 15, 2025 will be the combined
-effects of antibody waning (at a rate and plateau left at teams’
-discretion)  and immune escape (prescribed by each scenario). 
+infection. Let's assume an individual is infected on June 15th 2023 and
+this infection confers X% protection against symptoms, compared to an
+individual who has not been recently infected. If this individual was
+instantaneously transported a year later, on June 15th 2024, with their
+antibodies from the 2023 infection intact, this individual's protection
+against variants circulating on June 15th 2024 would be X\*0.8 in the
+20% immune escape scenario. In this thought experiment, the decay of
+protection would solely be due to the effects of immune escape. In
+reality, moving away from the thought experiment, if this individual
+actually lived throughout an entire year without a new infection between
+June 2023 and June 2024, then their effective immunity on June 15th,
+2024 will be the combined effects of antibody waning (at a rate and
+plateau left at teams' discretion) and immune escape (prescribed by each
+scenario).
 
+Teams should note that the impact of immune escape is separate from the
+impact of waning immunity (especially because the impact of immune
+escape affects infection and vaccination differently), although these
+processes may be implemented similarly in models.
 
-Teams should note that the impact of immune escape is separate from
-the impact of waning immunity (especially because the impact of
-immune escape affects infection and vaccination differently),
-although these processes may be implemented similarly in models. 
-
-
-It is left to the teams’ discretion how to implement immune escape in
-their models. Teams may choose to introduce new discrete variants
-with levels of immune escape consistent with the scenario definition,
-so long as these occur frequently, or may implement gradual escape of
-existing variants.
-
+It is left to the teams' discretion how to implement immune escape in
+their models. Teams may choose to introduce new discrete variants with
+levels of immune escape consistent with the scenario definition, so long
+as these occur frequently, or may implement gradual escape of existing
+variants.
 
 ### Waning of Immunity
 
-Teams must incorporate waning of immunity against infection. The
-median waning time of protection against infection should range
-between 3-10 months (this should not be read to mean that waning is
-to complete loss of protection, see below). Teams can sample this
-range, or use any value within this range as a point estimate. Teams
-can consider differences in waning of natural and vaccine-induced
-immunity, or in waning after Omicron infection vs waning from other
-types of SARS-CoV-2 exposures; however the median waning time should
-remain within the 3-10 month range.
+Teams must incorporate waning of immunity against infection. The median
+waning time of protection against infection should range between 3-10
+months (this should not be read to mean that waning is to complete loss
+of protection, see below). Teams can sample this range, or use any value
+within this range as a point estimate. Teams can consider differences in
+waning of natural and vaccine-induced immunity, or in waning after
+Omicron infection vs waning from other types of SARS-CoV-2 exposures;
+however the median waning time should remain within the 3-10 month
+range.
 
+The rate and levels of waning are left to the best scientific discretion
+of the teams. We recommend that in the waned classes, teams consider a
+reduction from baseline levels of protection ranging between 40 and 60%,
+corresponding to x0.60 and x0.40 of the baseline levels reported
+immediately after exposure (vaccination or infection).
 
-The rate and levels of waning are left to the best scientific
-discretion of the teams. We recommend that in the waned classes,
-teams consider a reduction from baseline levels of protection ranging
-between 40% and 60%, corresponding to x0.60 and x0.40 of the baseline
-levels reported immediately after exposure (vaccination or
-infection).
-
-
-Teams may incorporate waning of immunity against severe disease,
-however the timescale of waning against severe disease must be slower
-than the timescale of waning against infection.
-
+Teams may incorporate waning of immunity against severe disease, however
+the timescale of waning against severe disease must be slower than the
+timescale of waning against infection.
 
 ### Handling immune escape and waning immunity in the calibration process
 
-It is important that all scenario simulations share the same values
-(or ranges of values) for the proportion of population in different
-immune classes at the start of projections. Similarly, waning
-immunity assumptions should be shared across scenarios
-(including timescale of immunity decline and plateau reached after
-immunity has waned, if any). To do so, teams should ensure that the
-calibration step uses similar immune escape and waning immunity
-parameters. Only by using assumptions that lead to starting
-conditions for population immunity that effectively come from a
-shared distribution across scenarios and by having the same waning
-immunity assumptions (or shared distribution of waning immunities)
-apply to all scenarios, can we evaluate the impact of different
-immune escape and vaccine assumptions in the projection period. If
-past immune escape and/or waning immunity parameters are unobservable
-from the recent data, estimates can be drawn from the literature to
-help with calibration. It is also acceptable to use the midpoint of
-the immune escape scenario assumptions (35%, midpoint between 20% and
-50%) for calibration of immune escape in the recent past.
-
+It is important that all scenario simulations share the same values (or 
+ranges of values) for the proportion of population in different immune 
+classes at t=0. Similarly, waning immunity assumptions should be shared 
+across scenarios (including timescale of immunity decline and plateau 
+reached after immunity has waned, if any). To do so, teams should ensure 
+that the calibration step uses similar immune escape and waning immunity 
+parameters.  Only by using assumptions that lead to starting conditions 
+for population immunity that effectively come from a shared distribution 
+across scenarios and and by having the same waning immunity assumptions 
+(or shared distribution of waning immunities) apply to all scenarios, we 
+can evaluate the impact of different immune escape and vaccine assumptions 
+in the projection period. If past immune escape and/or waning immunity 
+parameters are unobservable from the recent data, estimates can be drawn 
+from the literature to help with calibration. It is also acceptable to use 
+the midpoint of the immune escape scenario assumptions (35%, midpoint 
+between 20% and 50%) for calibration of immune escape in the recent past.
 
 ### Variants
 
 Teams should assume no new variants are introduced, other than those
 implied by the levels of immune escape specified in the scenarios.
-Treatment of variants existing at the start of the projection period
-is left to the discretion of the teams. **Intrinsic transmissibility
-and severity of disease in a naive individual** is assumed to be
-constant across all currently-circulating and future variants. 
+Treatment of variants existing at the start of the projection period is
+left to the discretion of the teams. **Intrinsic transmissibility and
+severity of disease in a naive individual** is assumed to be constant
+across all currently-circulating and future variants.
 
 ### **Seasonality**
 
-Teams should include their best estimate of COVID-19 seasonality in
-their model, but we do not prescribe a specific level of seasonal
-forcing. Teams should consider the observed resurgence of COVID-19 in
-the fall of 2023, particularly in Southern states, and in winter
-2023-24 throughout the country. If feasible, we ask that teams check
-that their models are able to reproduce the observed timing of
-COVID-19 activity in the past year in their calibration step. 
+We strongly recommend that teams include their best estimate of COVID-19 
+seasonality in their model but we do not prescribe a specific level of 
+seasonal forcing.
 
 ### **NPIs**
 
 Teams should NOT include reactive changes in NPIs imposed by health
-authorities to curb transmission, e.g., reinstatement of mask
-mandates, or closure of schools and businesses. However, teams can
-incorporate inherent changes in population behavior in response to
-increasing or decreasing incidences (eg, changes in contacts or
-masking), if these changes were inferred from earlier phases of the
-pandemic and are already part of the model. 
-
+authorities to curb transmission, e.g., reinstatement of mask mandates,
+or closure of schools and businesses. However, teams can incorporate
+inherent changes in population behavior in response to increasing or
+decreasing incidences (eg, changes in contacts or masking), if these
+changes were inferred from earlier phases of the pandemic and are
+already part of the model.
 
 Database tracking of NPIs: teams may use their own data if desired,
 otherwise we recommend the following sources as a common starting point:
@@ -293,26 +281,23 @@ otherwise we recommend the following sources as a common starting point:
 
 ### **Initial Conditions**
 
-The mix of circulating strains at the start of the projection period
-is at the discretion of the teams based on their
-interpretation/analysis of the available data. Variation in initial
-prevalence between states is left at teams’ discretion. 
+The mix of circulating strains at the start of the projection period is
+at the discretion of the teams based on their interpretation/analysis of
+the available data. Variation in initial prevalence between states is
+left at teams' discretion.
 
 ### **Targets and case ascertainment:**
 
-**Targets will be similar to Round 17 and consist of weekly state- and
-  national-level COVID-19 hospitalizations and deaths.** We no longer
-  request case projections. Ascertainment of hospitalizations and
-  deaths will proceed at the same level as they were at the start of
-  the projection period. HHS protect will be used as the source of
-  hospitalization data (note that HHSprotect will temporarily go
-  offline at the end of April 2024). NCHS will be used as the source
-  of gold-standard death data. Note that 
-  [NCHS](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab)
-  data source **counts deaths on the dates they occurred, not on the
-  date they were reported.** In accordance with the data, the death
-  target should give deaths on the date they occur.
-
+We will **no longer request case projections**. Ascertainment of
+hospitalizations and deaths will proceed at the same level as they were
+at the start of the projection period. Due to the discontinuation of the
+JHU CSSE data, going forward
+[FluView](https://gis.cdc.gov/grasp/fluview/mortality.html)
+will be used as the source of gold-standard death data. Note that this
+data source **counts deaths on the dates they occurred, not on the date
+they were reported** as was the case with the JHU CSSE death data. In
+accordance with the data, the death target should give deaths on the
+date they occur.
 
 ### Population
 
@@ -322,35 +307,30 @@ discretion of the teams.
 ***All of the teams' specific assumptions should be documented in
 meta-data and abstract.***
 
-**Projection Time Horizon:** We consider a one-year projection period.
+**Projection Time Horizon:** We consider a two-year projection period.
+We will accept up to 5 years.
 
 ## Submission Information
 
 | Scenario  | Scenario name  | Scenario ID for submission file ('scenario_id') |
 |---------------------------------|:-----------------:|:-----------------:|
-| Scenario A. No booster, low immune escape  | noBoo_lowIE   | A-2024-03-01  |
-| Scenario B. No booster, high immune escape | noBoo_highIE  | B-2024-03-01  |
-| Scenario C. 65+ booster, low immune escape | 65Boo_lowIE   | C-2024-03-01  |
-| Scenario D. 65+ booster, high immune escape| 65Boo_highIE  | D-2024-03-01  |
-| Scenario E. All booster, low immune escape | allBoo_lowIE  | E-2024-03-01  |
-| Scenario F. All booster, high immune escape| allBoo_highIE | F-2024-03-01  |
+| Scenario A. No booster, low immune escape  | noBoo_lowIE   | A-2023-04-16  |
+| Scenario B. No booster, high immune escape | noBoo_highIE  | B-2023-04-16  |
+| Scenario C. 65+ booster, low immune escape | 65Boo_lowIE   | C-2023-04-16  |
+| Scenario D. 65+ booster, high immune escape| 65Boo_highIE  | D-2023-04-16  |
+| Scenario E. All booster, low immune escape | allBoo_lowIE  | E-2023-04-16  |
+| Scenario F. All booster, high immune escape| allBoo_highIE | F-2023-04-16  |
 
 
--   **Due date**: April 30, 2024
+-   **Due date**: April 17, 2023
 
--   **End date for fitting data**: April 27, 2024 (no later than April
-    27, no earlier than April 14)
+-   **End date for fitting data**: April 15, 2023 (no later than April
+    15, no earlier than March 10)
 
--   **Start date for scenarios**: April 28, 2024 (first date of
+-   **Start date for scenarios**: April 16, 2023 (first date of
     simulated transmission/outcomes)
 
--   **Simulation end date:** April 26, 2025 (52-week horizon)
-
-**Submission Target**
-
-- Weekly Incident Deaths
-- Weekly Incident Hospitalization
-
+-   **Simulation end date:** April 19, 2025 (104-week horizon)
 
 **Other submission requirements**
 
@@ -358,10 +338,14 @@ meta-data and abstract.***
 
 -   **Results:**
 
-    -   We require teams to submit 100 - 300 representative trajectories
-    -   Projection quantiles for incident outcomes are optional but encouraged. 
-    Similarly projections of cumulative outcomes (either as quantiles or cumulative
-    trajectories) are optional.
+    -   We require teams to submit 100 representative trajectories from 
+        their simulations for the targets:
+        -   Weekly incident deaths
+        -   Weekly incident hospitalizations
+    -   We encourage (but do not require) teams to submit a set of
+        quantiles in accordance with prior rounds. We ask for the
+        following quantiles: 0.01, 0.025, 0.05, every 5% to 0.95, 0.975,
+        and 0.99. Mean is optional, for the targetd:
         -   Weekly incident deaths
         -   Weekly incident hospitalizations
         -   Weekly cumulative deaths since simulation start (No longer
@@ -369,14 +353,8 @@ meta-data and abstract.***
             in [FluView](https://gis.cdc.gov/grasp/fluview/mortality.html)
             baseline data)
         -   Weekly cumulative hospitalizations since simulation start
-    -   For teams who wish to submit quantiles, the format is in accordance with 
-    prior rounds. We ask for the following quantiles: 0.01, 0.025, 0.05, every 5% 
-    to 0.95, 0.975, and 0.99. Mean is optional.
     -   Weeks will follow epi-weeks (Sun-Sat) dated by the last day of
     the week
-    - Submission file type: **gz.parquet** (from Apache Arrow) is now required. The
-    submission file can be partitioned by "origin_date" and "target". For more information,
-    please consult the associated [README](./data-processed/README.md) 
 
 -   **Abstract:** We require a brief abstract describing model
 assumptions and results, from all teams.
