@@ -135,7 +135,7 @@ of the same year.
 
 *Annual vaccination with reformulated booster recommended for high
  risk groups (65+ and those with underlying risk factors)
- (scenarios C & D):* UUptake of annual reformulated booster in
+ (scenarios C & D):* Uptake of annual reformulated booster in
  high-risk groups (65+ and other individuals with underlying risk
  factors for severe COVID-19 outcomes) follows uptake observed for
  the booster dose during the 2023-24 season. Vaccination among others
