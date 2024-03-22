@@ -110,10 +110,10 @@ Other tools are also accessible, for example [parquet-tools](https://github.com/
 For example, in R:
 ```
 # To write "parquet" file format:
-filename <- ”path/YYYY-MM-DD-team_model.parquet”
+filename <- ”path/data-processed/YYYY-MM-DD-team_model.parquet”
 arrow::write_parquet(df, filename)
 # with "gz compression"
-filename <- ”path/YYYY-MM-DD-team_model.gz.parquet”
+filename <- ”path/data-processed/YYYY-MM-DD-team_model.gz.parquet”
 arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
 
 # To read "parquet" file format:
@@ -131,6 +131,56 @@ characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
 If the size of the file is larger than 100MB, it should be submitted in a 
 `.gz.parquet` format. 
+If the 100MB limit is not solved by compression the submission file can also 
+be partitioned. 
+
+
+### Partioning 
+
+The submission files can be partitioned with the "arrow" library and should 
+be partitioned by `origin_date` and `target`.
+
+For example, in R:
+```R
+team_folder <- ”path/data-processed/<team_model>/”
+
+# Without compression
+arrow::write_dataset(df, team_folder, partitioning = c("origin_date", "target"),
+                     hive_style = FALSE,
+                     basename_template = "team_model{i}.parquet")
+
+# With GZIP Compression
+arrow::write_dataset(df, team_folder, partitioning = c("origin_date", "target"),
+                     hive_style = FALSE, compression = "gzip", compression_level = 9,
+                     basename_template = "team_model{i}.gz.parquet")
+```
+
+
+For example, in Python:
+```Py
+import pyarrow.dataset as ds
+
+team_folder <- ”path/data-processed/<team_model>/”
+
+
+# Without compression
+ds.write_dataset(table, team_folder, partitioning=["origin_date", "target"],
+                 format="parquet", partitioning_flavor=None, 
+                 basename_template="team_model{i}.parquet")
+
+# Compression options
+fs = ds.ParquetFileFormat().make_write_options(compression='gzip', compression_level=9)
+# With GZIP Compression
+ds.write_dataset(table, team_folder, partitioning=["origin_date", "target"],
+                 format="parquet", partitioning_flavor=None, file_options=fs,
+                 basename_template="team_model{i}.gz.parquet")
+```
+
+Please note that the `hive_style` or `partitioning_flavor` should be set to `FALSE` or `None`,
+so all the teams have the same output style. 
+
+The submission file columns used for the partitioning (`origin_date` and `target`) should not 
+be present in the `.parquet` file. 
 
 ---
 
@@ -372,8 +422,8 @@ For example:
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "sample"
-or "quantile" prediction for this row. 
+Values in the `value` column are non-negative numbers integer or with one
+decimal place indicating the "sample" or "quantile" prediction for this row. 
 
 For a "quantile" prediction, `value` is the inverse of the cumulative distribution
 function (CDF) for the `target`,`horizon`, `location`, and `quantile` associated with 
