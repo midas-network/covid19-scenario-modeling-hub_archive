@@ -422,8 +422,8 @@ For example:
 
 ### `value`
 
-Values in the `value` column are non-negative numbers indicating the "sample"
-or "quantile" prediction for this row. 
+Values in the `value` column are non-negative numbers integer or with one
+decimal place indicating the "sample" or "quantile" prediction for this row. 
 
 For a "quantile" prediction, `value` is the inverse of the cumulative distribution
 function (CDF) for the `target`,`horizon`, `location`, and `quantile` associated with 
