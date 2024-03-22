@@ -180,7 +180,7 @@ Please note that the `hive_style` or `partitioning_flavor` should be set to `FAL
 so all the teams have the same output style. 
 
 The submission file columns used for the partitioning (`origin_date` and `target`) should not 
-be present in the `.parquet`. 
+be present in the `.parquet` file. 
 
 ---
 
