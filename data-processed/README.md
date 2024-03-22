@@ -141,7 +141,7 @@ The submission files can be partitioned with the "arrow" library and should
 be partitioned by `origin_date` and `target`.
 
 For example, in R:
-```
+```R
 team_folder <- ”path/data-processed/<team_model>/”
 
 # Without compression
@@ -156,8 +156,8 @@ arrow::write_dataset(df, team_folder, partitioning = c("origin_date", "target"),
 ```
 
 
-For example in Python:
-```
+For example, in Python:
+```Py
 import pyarrow.dataset as ds
 
 team_folder <- ”path/data-processed/<team_model>/”
