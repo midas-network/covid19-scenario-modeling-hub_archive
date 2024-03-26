@@ -108,7 +108,7 @@ The "arrow" library can be used to read/write the files in
 Other tools are also accessible, for example [parquet-tools](https://github.com/hangxie/parquet-tools)
 
 For example, in R:
-```
+```R
 # To write "parquet" file format:
 filename <- ”path/data-processed/YYYY-MM-DD-team_model.parquet”
 arrow::write_parquet(df, filename)
