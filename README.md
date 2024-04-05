@@ -163,6 +163,11 @@ groups is X%. Data on increased risk of COVID-19 hospitalization from
 high risk groups can be found 
 [here](https://academic.oup.com/cid/article/72/11/e695/5908300).
 
+Projected vaccine coverage curves for 2024-25 season, by age, 
+state, and high-risk group, with population sizes of relevant age 
+groups, are available in the 
+[round_resources/round18](./round_resources/round18/) folder.
+
 
 ### **Immune Escape**
 
