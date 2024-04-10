@@ -140,6 +140,10 @@ be partitioned.
 The submission files can be partitioned with the "arrow" library and should 
 be partitioned by `origin_date` and `target`.
 
+The basename template should match the previous standard (
+`"YYYY-MM-DD-team-model.parquet"`) with the a date and the 
+aggregation of the team and model abbreviation name. 
+
 For example, in R:
 ```R
 team_folder <- ”path/data-processed/<team_model>/”
@@ -147,12 +151,12 @@ team_folder <- ”path/data-processed/<team_model>/”
 # Without compression
 arrow::write_dataset(df, team_folder, partitioning = c("origin_date", "target"),
                      hive_style = FALSE,
-                     basename_template = "team_model{i}.parquet")
+                     basename_template = "YYYY-MM-DD-tteam_model{i}.parquet")
 
 # With GZIP Compression
 arrow::write_dataset(df, team_folder, partitioning = c("origin_date", "target"),
                      hive_style = FALSE, compression = "gzip", compression_level = 9,
-                     basename_template = "team_model{i}.gz.parquet")
+                     basename_template = "YYYY-MM-DD-team_model{i}.gz.parquet")
 ```
 
 
@@ -166,14 +170,14 @@ team_folder <- ”path/data-processed/<team_model>/”
 # Without compression
 ds.write_dataset(table, team_folder, partitioning=["origin_date", "target"],
                  format="parquet", partitioning_flavor=None, 
-                 basename_template="team_model{i}.parquet")
+                 basename_template="YYYY-MM-DD-team_model{i}.parquet")
 
 # Compression options
 fs = ds.ParquetFileFormat().make_write_options(compression='gzip', compression_level=9)
 # With GZIP Compression
 ds.write_dataset(table, team_folder, partitioning=["origin_date", "target"],
                  format="parquet", partitioning_flavor=None, file_options=fs,
-                 basename_template="team_model{i}.gz.parquet")
+                 basename_template="YYYY-MM-DD-team_model{i}.gz.parquet")
 ```
 
 Please note that the `hive_style` or `partitioning_flavor` should be set to `FALSE` or `None`,
