@@ -360,7 +360,7 @@ meta-data and abstract.***
 | Scenario F. All booster, high immune escape| allBoo_highIE | F-2024-03-01  |
 
 
--   **Due date**: April 30, 2024
+-   **Due date**: Tue Apr 30, 2024
 
 -   **End date for fitting data**: April 27, 2024 (no later than April
     27, no earlier than April 14)
