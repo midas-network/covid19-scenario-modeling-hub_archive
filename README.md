@@ -96,9 +96,9 @@ Round 18 focuses on the impact of different COVID-19 vaccination
 strategies with reformulated boosters combined with differing levels
 of antigenic drift. This round will follow closely the layout of
 Round 17, but with more consideration of population groups at
-high-risk for severe disease (of any age). The timeframe of
-projection will be Sun April 28, 2024 to Sat April 26, 2025
-(52 weeks).
+high-risk for severe disease (of any age). The timeframe of projection 
+will be Sun April 28, 2024 to Sat April 26, 2025 (52 weeks).
+
 
 
 ![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round18_scenarios_table.PNG)
@@ -106,21 +106,37 @@ projection will be Sun April 28, 2024 to Sat April 26, 2025
 
 ### **Vaccine Efficacy & Availability**
 
-In all scenarios, boosters are reformulated to match the predominant
-variants circulating on June 15, 2024, and are presumed to have X% VE
-against symptomatic disease at the time of reformulation on June
-15th. This VE is equivalent to a vaccine trial that would be
-performed on June 15 in populations who have varying levels of prior
-immunity at trial enrollment. Vaccinated individuals would have a X%
-reduced risk of symptomatic infection compared to the unvaccinated
-group in this trial on average, if VE was estimated a few days after
-June 15th. Immune escape will decrease the effective VE, starting on
-June 15. For instance if VE is X% on June 15, 2024, and immune escape
-is 20% annually, the same person vaccinated with the same vaccine one
-year later on June 15, 2025, would enjoy 0.8 * X% = Y% protection
-against symptoms compared to an unvaccinated individual. The
-reformulated vaccines become available to the public on September 1st
-of the same year. 
+In all scenarios, boosters are reformulated to match the predominant 
+variants circulating on June 15, 2024.  Teams should use VE against 
+COVID19 hospitalization = 75% at time of release on Sep 1, 2024, in 
+line with a recent study from 
+[Denmark](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(23)00746-6/fulltext).
+This VE is equivalent to a vaccine trial that would be performed on 
+September 1 in populations with varying levels of prior immunity at 
+trial enrollment. Hence, vaccinated individuals would have a 75% 
+reduced risk of hospitalization compared to unvaccinated individuals 
+on average in this trial, if VE was estimated a few days after Sepetember 
+1st. Importantly, this stated hospitalization reduction includes the 
+combined effects of protection against infection and protection against 
+hospitalization given (breakthrough) infection. We note that this is a 
+departure from earlier COVID-19 rounds where we stipulated VE against 
+symptomatic disease. Based on available evidence, we suggest that teams 
+choose VE against infection in the range 35-57% at time of release on 
+Sept 1, 2024 (see 
+[Google Docs](https://docs.google.com/document/d/1H-6Q9dIDjLCubU-oRAoVHyw7Lr-rlb_D_zp31hNyMGw/edit) 
+for detailed studies).
+
+
+As in Round 17, immune escape may decrease the effective VE against 
+hospitalization, starting on September 1. While immune escape against 
+infection should be modeled as stipulated in the scenarios (20/50% a year), 
+immune escape against severe disease is at teams’ discretion.  
+Further, waning of (vaccine-induced and natural) immunity against infection is 
+required, with parameters at teams discretion (3-10mo waning time, 40-60% 
+reduction against baseline protection levels in waned state). Waning of 
+vaccine-induced immunity against severe disease remains at teams discretion 
+(but if present should wane at slower timescale than against infection).
+
 
 
 ### **Vaccination Coverage**
@@ -154,14 +170,17 @@ of the same year.
  Uptake data from the 2023-24 season will be provided.
 
 In this round, we assume that high-risk populations, of any age, are
-included in booster recommendations in scenarios C, D, E, & F. We
-define high-risk groups as those with underlying conditions putting
-them at increased risk of severe outcomes from COVID-19. Data on the
-population size and vaccine coverage of high and low risk groups is
-provided by state and age in Github. We assume that VE in high-risk
-groups is X%. Data on increased risk of COVID-19 hospitalization from
-high risk groups can be found 
+included in booster recommendations in scenarios C, D, E, & F. We 
+define high-risk groups as those with underlying conditions putting 
+them at increased risk of severe outcomes from COVID-19. Data on the 
+population size and vaccine coverage of high and low risk groups is 
+provided by state and age in GitHub. Teams can choose to adjust VE 
+for high-risk and low-risk groups based on available evidence, 
+although the population-level average VE against hospitalization 
+should equal 75% on September 1. Data on increased risk of COVID-19 
+hospitalization from high risk groups can be found 
 [here](https://academic.oup.com/cid/article/72/11/e695/5908300).
+
 
 Projected vaccine coverage curves for 2024-25 season, by age, 
 state, and high-risk group, with population sizes of relevant age 
