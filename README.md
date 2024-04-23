@@ -337,6 +337,12 @@ prevalence between states is left at teams’ discretion.
   date they were reported.** In accordance with the data, the death
   target should give deaths on the date they occur.
 
+#### Age target
+
+Both weekly state- and national-level COVID-19 hospitalizations and deaths
+should be provided for the following age groups: 0-64, 65+ and 
+overall population
+
 
 ### Population
 
@@ -382,7 +388,14 @@ meta-data and abstract.***
 
 -   **Results:**
 
-    -   We require teams to submit 100 - 300 representative trajectories
+    -   Simulation trajectories: We ask that teams submit a sample of 100 to 300
+    simulation replicates. Simulations should be sampled in such a way that they 
+    will be most likely to produce the uncertainty of the simulated process. 
+    For some models, this may mean a random sample of simulations, for others with 
+    larger numbers of simulations, it may require weighted sampling. Trajectories 
+    will need to be paired across horizon and age groups (eg, for a given model, location, 
+    scenario and week, all age data for simulation 1 corresponds to the sum of 
+    age-specific estimates for simulation 1).
     -   Projection quantiles for incident outcomes are optional but encouraged. 
     Similarly projections of cumulative outcomes (either as quantiles or cumulative
     trajectories) are optional.

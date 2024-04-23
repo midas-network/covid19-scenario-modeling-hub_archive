@@ -158,6 +158,184 @@
         "start": "2023-04-17",
         "end": "2023-05-17"
       }
+    },
+    {
+      "round_id": "origin_date",
+      "round_id_from_variable": false,
+      "model_tasks": [
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2024-04-28"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2024-03-01", "B-2024-03-01", "C-2024-03-01", "D-2024-03-01", "E-2024-03-01", "F-2024-03-01"],
+              "optional": null
+            },
+            "location": {
+              "required": null,
+              "optional": ["US", "01", "02", "04", "05", "06", "08", "09", "10", "11", "12", "13", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51", "53", "54", "55", "56", "60", "66", "69", "72", "74", "78"]
+            },
+            "target": {
+              "required": ["inc death", "inc hosp"],
+              "optional": null
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+              "optional": null
+            },
+            "age_group": {
+              "required": ["0-130", "65-130", "0-64"],
+              "optional": null
+            }
+          },
+          "output_type": {
+            "sample": {
+              "output_type_id": {
+                "min_samples_per_task": 100,
+                "max_samples_per_task": 300,
+                "samples_joint_across": ["horizon", "age_group"]
+              },
+              "value" : {
+                "type": "numeric",
+                "minimum": 0
+              }
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc hosp",
+              "target_name": "Incident hospitalizations",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc hosp"
+              },
+              "description": "Weekly newly reported hospitalizations where the patient has COVID-19, as reported by hospital facilities and aggregated in the HHS Protect data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        },
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2024-04-28"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2024-03-01", "B-2024-03-01", "C-2024-03-01", "D-2024-03-01", "E-2024-03-01", "F-2024-03-01"],
+              "optional": null
+            },
+            "location": {
+              "required": null,
+              "optional": ["US", "01", "02", "04", "05", "06", "08", "09", "10", "11", "12", "13", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51", "53", "54", "55", "56", "60", "66", "69", "72", "74", "78"]
+            },
+            "target": {
+              "required": null,
+              "optional": ["inc death", "inc hosp", "cum death", "cum hosp"]
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+              "optional": null
+            },
+            "age_group": {
+              "required": ["0-130", "65-130", "0-64"],
+              "optional": null
+            }
+          },
+          "output_type": {
+            "quantile": {
+              "output_type_id": {
+                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99],
+                "optional": [0, 1]
+              },
+              "value" : {
+                "type": "numeric",
+                "minimum": 0
+              }
+            },
+            "mean": {
+              "output_type_id": {
+                "required": null,
+                "optional": ["NA"]
+              },
+              "value": {
+                "type": "numeric",
+                "minimum": 0
+              }
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc hosp",
+              "target_name": "Incident hospitalizations",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc hosp"
+              },
+              "description": "Weekly newly reported hospitalizations where the patient has COVID-19, as reported by hospital facilities and aggregated in the HHS Protect data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "cum death",
+              "target_name": "Cumulative deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "cum death"
+              },
+              "description": "Weekly cumulative deaths due to COVID-19 since the beginning of the simulation.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "cum hosp",
+              "target_name": "Cumulative hospitalizations",
+              "target_units": "count",
+              "target_keys": {
+                "target": "cum hosp"
+              },
+              "description": "Weekly cumulative reported hospitalizations where the patient has COVID-19, since the beginning of the simulation.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        }
+      ],
+      "submissions_due": {
+        "start": "2024-04-30",
+        "end": "2024-05-17"
+      },
+      "partition": ["origin_date", "target"]
     }
   ]
 }
