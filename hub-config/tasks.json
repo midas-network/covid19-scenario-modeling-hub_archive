@@ -3,7 +3,7 @@
   "rounds": [
     {
       "round_id": "2023-04-16",
-      "round_id_from_variable": false,
+      "round_id_from_variable": true,
       "model_tasks": [
         {
           "task_ids": {
