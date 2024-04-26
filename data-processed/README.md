@@ -447,12 +447,12 @@ and `NA` as "type_id" value.
 
 For example:
 
-|origin_date|scenario_id|location|target|horizon|type|type_id|value|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|2024-04-28|A-2024-03-01|US|inc death|1|quantile|0.010||
-|2024-04-28|A-2024-03-01|US|inc death|1|quantile|0.025||
+|origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2024-04-28|A-2024-03-01|US|inc death|1|0-64|quantile|0.010||
+|2024-04-28|A-2024-03-01|US|inc death|1|0-64|quantile|0.025||
 |||||||||
-|2024-04-28|A-2024-03-01|US|inc death|1|mean|NA||
+|2024-04-28|A-2024-03-01|US|inc death|1|0-64|mean|NA||
 |||||||||
 
 
