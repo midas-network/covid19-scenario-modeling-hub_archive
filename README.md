@@ -464,7 +464,7 @@ for technical submission requirements.
 
 ## Gold standard data
 
-We will use the daily reports containing COVID-19 cases and deaths data
+Until round 17, we used the daily reports containing COVID-19 cases and deaths data
 from the [JHU CSSE group](https://coronavirus.jhu.edu/map.html) as the
 gold standard reference data for cases and deaths in the US. We will use
 the distribution of the JHU data as provided by the [COVIDcast Epidata
@@ -495,6 +495,15 @@ We will use the distribution of the HHS data as provided by the
 API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/hhs.html)
 maintained by the [Delphi Research Group](https://delphi.cmu.edu/about/)
 at Carnegie Mellon University.
+
+Starting round 17 (March 2023),  we use 
+[National Center for Health Statistics (NCHS) Mortality Surveillance Data](https://www.cdc.gov/flu/weekly/overview.htm#NCHSMortality) 
+data for weekly incidence COVID-19 deaths extracted from the 
+[FluView Interactive - Mortality](https://gis.cdc.gov/grasp/fluview/mortality.html) 
+CDC dashboard. These data are weekly and pertain to date of death, not report 
+date. Due to the delay and backfilling of these data, the cumulative death 
+target will also now start from the date of projection (instead of cumulative 
+since pandemic start).
 
 ## Ensemble model
 
