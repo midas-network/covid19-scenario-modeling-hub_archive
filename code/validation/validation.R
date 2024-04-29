@@ -154,7 +154,7 @@ if (!all(is.na(test_tot))) {
   message <- purrr::map(test_valid, paste, collapse = "\n")
 
   lapply(seq_len(length(message)), function(x) {
-    gh::gh(paste0("POST /repos/", "midas-network/megaround-scenariohub/",
+    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/",
                   "issues/", Sys.getenv("GH_PR_NUMBER"), "/comments"),
            body = message[[x]],
            .token = Sys.getenv("GH_TOKEN"))
@@ -179,7 +179,7 @@ if (!all(is.na(test_tot))) {
             " tag `@LucieContamin` for any question."))
     }
 
-    gh::gh(paste0("POST /repos/", "midas-network/example_round-scenariohub/",
+    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/",
                   "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
            body = message_plot,
            .token = Sys.getenv("GH_TOKEN"))
