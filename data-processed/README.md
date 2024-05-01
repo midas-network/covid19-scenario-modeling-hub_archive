@@ -337,8 +337,8 @@ by the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/c
 ### `horizon`
 
 
-Values in the `horizon` column must be a integer (N) between 1 and last week 
-horion value representing the associated target value during the N weeks
+Values in the `horizon` column must be an integer (N) between 1 and last week 
+horizon value representing the associated target value during the N weeks
 after `origin_date`. 
 
 For example, between 1 and 104 for Round 17 ("**Simulation end date:** 
