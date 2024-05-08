@@ -165,7 +165,7 @@ if (!all(is.na(test_tot))) {
   if (any(!is.na(test_viz))) {
     message_plot <- paste0(
       "If the submission contains projection file(s) with quantile projection, ",
-      "a pdf containing visualization plots of the submission imight be ",
+      "a pdf containing visualization plots of the submission might be ",
       "available and downloadable in the GitHub actions. Please click on 'details' ",
       "on the right of the 'Validate submission' checks. The pdf is available in a ZIP ",
       "file as an artifact of the GH Actions. For more information, please see ",
