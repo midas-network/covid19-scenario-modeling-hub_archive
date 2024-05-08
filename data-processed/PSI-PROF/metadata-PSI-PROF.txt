@@ -1,0 +1,35 @@
+team_name: PSI
+model_name: PROF
+model_abbr: PSI-PROF
+model_contributors: Ben-Nun M (Predictive Science) <mbennun@predsci.com>, Turtle J (Predictive Science) <jturtle@predsci.com>, Riley P (Predictive Science) <pete@predsci.com>
+website_url: https://predsci.com/usa-flu-hosp/
+model_version: "1.0"
+methods: For each state our scenario projections are generated using a mechanistic model with S[Sv]E[Ev]I[Iv]HR compartments, where 'v' subscripts indicate vaccinated. The model is calibrated to the 2023-24 data, and extrapolated through the 2024-25 season. 
+license: cc-by-4.0
+modeling_NPI: "Not applicable"
+compliance_NPI: "Not applicable"
+contact_tracing: "Not applicable"
+testing: "Not applicable"
+vaccine_efficacy_transmission: "One half VE against hospitalization"
+vaccine_efficacy_delay: "Not applicable"
+vaccine_hesitancy: "Not applicable"
+vaccine_immunity_duration: "Waning against hospitalization: 270 days (mean). Immunity escape: scenario specified"
+natural_immunity_duration: "Calibrated to each state"
+case_fatality_rate: "Not applicable"
+infection_fatality_rate: "Calibrated to each state"
+asymptomatics: "Not applicable"
+age_groups: "0-17, 18-64 low risk, 18-64 high risk, 65+"
+importations: We assumed 10 importations per day per state seeded randomly.
+confidence_interval_method:  "Not applicable"
+calibration:  "Not applicable"
+spatial_structure: "Not applicable"
+methods_long: "We use the population and vaccine time series provided by the Scenario Hub and 
+  \ assume that the infection-susceptibility of vaccinated individuals accounts for one half \
+  \ of vaccine effectiveness against severe disease. The model is calibrated to 2023-24 season adult \
+  \ and pediatric COVID hospital admissions.  Calibration assumes that last season fell \
+  \ somewhere between scenarios E and F.  Additionally, calibration includes a preference for \
+  \ periodic/quasi-periodic trajectories.  Calibration is a two-stage process.  The first stage \
+  \ uses a traditional optimizer to find a centroid for the hyper-cube used in the second stage. \
+  \ The national projection profiles are calculated as \
+  \ the sum of states using pseudo-randomly ordered state level profiles. "\
+  
