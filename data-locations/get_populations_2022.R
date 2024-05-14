@@ -36,7 +36,7 @@ df_loc <- dplyr::select(df_loc, -population)
 
 df_loc_2022 <- dplyr::select(census_agegroup, location = fips, 
                              population = tot_pop, age_group) 
-df_loc_2022 <- dplyr::left_join(df_loc_2022, df_loc, by = "location")
+df_loc_2022 <- dplyr::right_join(df_loc_2022, df_loc, by = "location")
 
 write.csv(census_agegroup, "data-locations/locations_2022.csv", 
           row.names = FALSE)
