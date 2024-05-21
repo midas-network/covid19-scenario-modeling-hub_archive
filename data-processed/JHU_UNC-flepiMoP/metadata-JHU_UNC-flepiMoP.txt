@@ -2,7 +2,7 @@ team_name: Johns Hopkins ID Dynamics and University of North Carolina Chapel Hil
 model_name: flepiMoP
 model_abbr: JHU_UNC-flepiMoP
 model_version: "1.0"
-model_contributors: Joseph C. Lemaitre (UNC), Sara Loo (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins Infectious Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics), Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins Infectious Disease Dynamics), Koji Sato (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (UNC), Shaun Truelove (Johns Hopkins Infectious Disease Dynamics) <shauntruelove@jhu.edu>
+model_contributors: Joseph C. Lemaitre (UNC), Sara Loo (JHU), Emily Przykucki (UNC), Sung-mok Jung (UNC), Claire P. Smith (JHU), Clif McKee (JHU), Pengcheng Fang (JHU), Koji Sato (JHU), Alison Hill (JHU), Justin Lessler (UNC), Shaun Truelove (JHU) <shauntruelove@jhu.edu>
 website_url: https://github.com/HopkinsIDD/flepiMoP
 license: mit
 methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
