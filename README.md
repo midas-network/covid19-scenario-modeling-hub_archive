@@ -511,7 +511,7 @@ described above).
 
 Those teams interested in accessing additional computational power
 should contact Katriona Shea at
-[k-shea\@psu.edu](mailto:k-shea@psu.edu){.email}.
+[k-shea\@psu.edu](mailto:k-shea@psu.edu).
 
 ## Shared Code Resources
 
