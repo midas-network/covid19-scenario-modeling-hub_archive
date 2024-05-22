@@ -8,10 +8,9 @@ Last updated: 22-03-2024 for **Round 18 Scenarios**.
 
 <https://covid19scenariomodelinghub.org/viz.html>
 
-Round 17: [Scenario
-Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round17.md)
-and [Model
-Details](https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+Round 17: [Scenario Descriptions](./previous-rounds/README_Round17.md)
+and 
+[Model Details](https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
 
 ## Rationale
 
@@ -50,8 +49,7 @@ useful and accurate short-term forecasts, but there remains a lack of
 publicly available model projections at 3-6 month time scale. Some
 single models are available online (e.g.,
 [IHME](https://covid19.healthdata.org/united-states-of-america), or
-[Imperial
-College](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-33-vaccine/)),
+[Imperial College](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-33-vaccine/)),
 but a decade of infectious disease forecasts has demonstrated that
 projections from a single model are particularly risky. Single model
 projections are particularly problematic for emerging infections where
@@ -88,7 +86,7 @@ us at
 Model projections should be submitted via pull request to the
 data-processed folder of this GitHub repository. Technical instructions
 for submission and required file formats can be found
-[here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md).
+[here](./data-processed/README.md).
 
 ## Round 18 Scenarios
 
@@ -101,7 +99,7 @@ will be Sun April 28, 2024 to Sat April 26, 2025 (52 weeks).
 
 
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round18_scenarios_table.PNG)
+![](./previous-rounds/Round18_scenarios_table.PNG)
 
 
 ### **Vaccine Efficacy & Availability**
@@ -423,43 +421,28 @@ assumptions and results, from all teams.
 ## Previous Rounds' Scenarios
 
 -   Round 2 Scenarios
--   [Round 3
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
--   [Round 4
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md)
--   [Round 5
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md)
--   [Round 6
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md)
--   [Round 7
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round7.md)
--   [Round 8
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round8.md)
--   [Round 9
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round9.md)
--   [Round 10
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round10.md)
--   [Round 11
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round11.md)
--   [Round 12
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round12.md)
--   [Round 13
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round13.md)
--   [Round 14
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round14.md)
--   [Round 15
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round15.md)
--   [Round 16
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round16.md)
--   [Round 17
-    Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round17.md)
+-   [Round 3 Scenarios](./previous-rounds/Round3_Scenarios.md)
+-   [Round 4 Scenarios](./previous-rounds/README_Round4.md)
+-   [Round 5 Scenarios](./previous-rounds/README_Round5.md)
+-   [Round 6 Scenarios](./previous-rounds/README_Round6.md)
+-   [Round 7 Scenarios](./previous-rounds/README_Round7.md)
+-   [Round 8 Scenarios](./previous-rounds/README_Round8.md)
+-   [Round 9 Scenarios](./previous-rounds/README_Round9.md)
+-   [Round 10 Scenarios](./previous-rounds/README_Round10.md)
+-   [Round 11 Scenarios](./previous-rounds/README_Round11.md)
+-   [Round 12 Scenarios](./previous-rounds/README_Round12.md)
+-   [Round 13 Scenarios](./previous-rounds/README_Round13.md)
+-   [Round 14 Scenarios](./previous-rounds/README_Round14.md)
+-   [Round 15 Scenarios](./previous-rounds/README_Round15.md)
+-   [Round 16 Scenarios](./previous-rounds/README_Round16.md)
+-   [Round 17 Scenarios](./previous-rounds/README_Round17.md)
 
 ## Submitting model projections
 
 Groups interested in participating can submit model projections for each
 scenario in a PARQUET file formatted according to our specifications,
 and a metadata file with a description of model information. See
-[here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md)
+[here](./data-processed/README.md)
 for technical submission requirements.
 
 ## Gold standard data
@@ -537,35 +520,23 @@ teams via the github repo. This directory can be found in
 [code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/code_resources).
 It currently contains code to: - Pull age-specific, state-specific,
 time-series data on vaccination in the US from the CDC API.
-[get_cdc_stateagevacc.R](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/code_resources/get_cdc_stateagevacc.R)
+[get_cdc_stateagevacc.R](./code_resources/get_cdc_stateagevacc.R)
 
 ## Teams and models
 
--   [*Johns Hopkins ID Dynamics COVID-19 Working Group --- COVID
-    Scenario
-    Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
-    -   Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins
-        Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
-        Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious
-        Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease
-        Dynamics), Alison Hill (Johns Hopkins Infectious Disease
-        Dynamics), Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins
-        Infectious Disease Dynamics), Koji Sato (Johns Hopkins
-        Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins
-        Infectious Disease Dynamics), Justin Lessler (UNC), Shaun
-        Truelove (Johns Hopkins Infectious Disease Dynamics)
--   [*Johns Hopkins University Applied Physics Lab ---
-    Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
-    -   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht
-        (JHU/APL), Laura Asher (JHU/APL), Cash Costello (JHU/APL),
-        Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin
-        (JHU/APL), Molly Gallagher (JHU/APL), Luke Mullany (JHU/APL),
-        Kaitlin Lovett (JHU/APL)
--   [*Karlen Working Group ---
-    pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
-    -   Dean Karlen (University of Victoria and TRIUMF)
--   [*Northeastern University MOBS Lab --- GLEAM
-    COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
+- [*CDC Center for Forecasting and Outbreak Analytics --- Scenarios*](./data-processed/CFA-Scenarios/metadata-CFA-Scenarios.txt)
+    - Michael Batista (CDC Center for Forecasting and Outbreak Analytics), 
+    Ariel Shurygin (CDC Center for Forecasting and Outbreak Analytics), 
+    Kok Ben Toh (CDC Center for Forecasting and Outbreak Analytics), 
+    Thomas Hladish (CDC Center for Forecasting and Outbreak Analytics)
+    
+- [*Johns Hopkins ID Dynamics and University of North Carolina Chapel Hill --- flepiMoP*](./data-processed/JHU_UNC-flepiMoP/metadata-JHU_UNC-flepiMoP.txt)
+    - Joseph C. Lemaitre (UNC), Sara Loo (JHU), Emily Przykucki (UNC),
+    Sung-mok Jung (UNC), Claire P. Smith (JHU), Clif McKee (JHU),
+    Pengcheng Fang (JHU), Koji Sato (JHU), Alison Hill (JHU),
+    Justin Lessler (UNC), Shaun Truelove (JHU)
+
+- [*Northeastern University MOBS Lab --- GLEAM COVID*](./data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
     -   Matteo Chinazzi (Laboratory for the Modeling of Biological and
         Socio-technical Systems, Northeastern University, Boston, MA),
         Jessica T. Davis (Laboratory for the Modeling of Biological and
@@ -579,85 +550,112 @@ time-series data on vaccination in the US from the CDC API.
         MA), Alessandro Vespignani (Laboratory for the Modeling of
         Biological and Socio-technical Systems, Northeastern University,
         Boston, MA)
--   [*University of Southern California --- SI
-    kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
-    -   Ajitesh Srivastava, Majd Al Aawar
--   [*University of Virginia ---
-    adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
-    -   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Bryan 
-        Lewis (UVA), Aniruddha Adiga (UVA), Brian Klahn (UVA), 
-        Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), 
-        Madhav Marathe (UVA)
--   [*Oliver Wyman's Pandemic
-    Navigator*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
-    -   Ugur Koyluoglu, Dan Siegel
--   [*Columbia University - Age-Stratified
-    Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
-    -   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey
-        Shaman (CU)
--   [*University of North Carolina at Charlotte -
-    hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+
+- [*University of Notre Dame --- FRED*](./data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
+    -   Guido Espana, Sean Cavany, Sean Moore, Alex Perkins
+
+- [*Predictive Science --- PROF*](./data-processed/PSI-PROF/metadata-PSI-PROF.txt)
+    -   Ben-Nun M (Predictive Science), Turtle J (Predictive Science), 
+    Riley P (Predictive Science)
+
+- [*University of North Carolina at Charlotte --- hierbin*](./data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
     -   Shi Chen (UNC Charlotte Department of Public Health Sciences &
         School of Data Science), Rajib Paul (UNC Charlotte Department of
         Public Health Sciences and School of Data Science), Daniel
         Janies (UNC Charlotte Department of Bioinformatics and
         Genomics), Jean-Claude Thill (UNC Charlotte Department of
         Geography and Earth Sciences and School of Data Science)
--   [*Institute for Health Metrics and Evaluation -- IHME COVID model
-    deaths
-    unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
-    -   Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins,
-        Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y.
-        Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom,
-        Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti,
-        Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai,
-        William James Dangel, Lucas Earl, Samuel B. Ewald, Maha
-        Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad,
-        Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D.
-        Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N.
-        Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick,
-        Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand,
-        Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan
-        Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K.
-        Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik,
-        Christopher M. Odell, James K. O'Halloran, Aaron E.
-        Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise
-        Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock,
-        Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian
-        Francesco Santomauro, John R. Shackleton, David H. Shaw,
-        Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen,
-        Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri
-        Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos,
-        Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren
-        Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim
-        & Christopher J. L. Murray
--   [*University of Virginia -
-    EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
-    -   Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya
-        (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe
-        (UVA)
--   [*University of Notre Dame -
-    FRED*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
-    -   Guido Espana, Sean Cavany, Sean Moore, Alex Perkins
--   [*University of Florida -
-    ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
-    -   Thomas Hladish (University of Florida), Alexander Pillai
-        (University of Florida), Kok Ben Toh (Northwestern University),
-        Ira Longini Jr. (University of Florida)
--   [*North Carolina State University -
-    COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
-    -   Erik Rosenstrom (North Carolina State University), Sebastian 
-        Rodriguez Cartes (North Carolina State University), Julie Swann
-        (North Carolina State University), Julie Ivy (North Carolina
-        State University), Maria Mayorga (North Carolina State
-        University)
--   [*University of Texas at Austin -
-    ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
+
+- [*University of Southern California --- SIkJalpha*](./data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
+    -   Ajitesh Srivastava, Majd Al Aawar
+
+- [*University of Texas at Austin -  ImmunoSEIRS*](./data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
     -   Kaiming Bi (Lead modeler, University of Texas at Austin), Anass
         Bouchnita (University of Texas at El Paso), Shraddha R Bandekar 
         (University of Texas at Austin), Spencer Fox (University of Georgia),
         Lauren Ancel Meyers (Senior author, University of Texas at
         Austin), and the UT COVID-19 Modeling Consortium
+
+- [*University of Virginia --- adaptive*](./data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
+    -   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Bryan 
+        Lewis (UVA), Aniruddha Adiga (UVA), Brian Klahn (UVA), 
+        Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), 
+        Madhav Marathe (UVA)
+
+### Past Teams and Models
+
+
+- [*Columbia University --- Age-Stratified Model*](./data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+    - Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey
+      Shaman (CU)
+
+- [*Institute for Health Metrics and Evaluation -- IHME COVID model deaths unscaled*](./data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
+    - Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins,
+      Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y.
+      Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom,
+      Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti,
+      Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai,
+      William James Dangel, Lucas Earl, Samuel B. Ewald, Maha
+      Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad,
+      Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D.
+      Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N.
+      Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick,
+      Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand,
+      Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan
+      Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K.
+      Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik,
+      Christopher M. Odell, James K. O'Halloran, Aaron E.
+      Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise
+      Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock,
+      Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian
+      Francesco Santomauro, John R. Shackleton, David H. Shaw,
+      Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen,
+      Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri
+      Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos,
+      Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren
+      Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim
+      & Christopher J. L. Murray
+
+- [*Johns Hopkins University Applied Physics Lab --- Bucky*](./data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
+    - Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht
+      (JHU/APL), Laura Asher (JHU/APL), Cash Costello (JHU/APL),
+      Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin
+      (JHU/APL), Molly Gallagher (JHU/APL), Luke Mullany (JHU/APL),
+      Kaitlin Lovett (JHU/APL)
+
+- [*Johns Hopkins ID Dynamics COVID-19 Working Group --- COVID Scenario Pipeline*](./data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
+    - Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins
+      Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
+      Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious
+      Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease
+      Dynamics), Alison Hill (Johns Hopkins Infectious Disease
+      Dynamics), Sung-mok Jung (UNC), Erica Carcelen (Johns Hopkins
+      Infectious Disease Dynamics), Koji Sato (Johns Hopkins
+      Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins
+      Infectious Disease Dynamics), Justin Lessler (UNC), Shaun
+      Truelove (Johns Hopkins Infectious Disease Dynamics)
+
+- [*Karlen Working Group --- pypm*](./data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
+    - Dean Karlen (University of Victoria and TRIUMF)
+
+-  [*North Carolina State University --- COVSIM*](./data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
+    - Erik Rosenstrom (North Carolina State University), Sebastian 
+      Rodriguez Cartes (North Carolina State University), Julie Swann
+      (North Carolina State University), Julie Ivy (North Carolina
+      State University), Maria Mayorga (North Carolina State
+      University)
+
+- [*Oliver Wyman's --- Pandemic Navigator*](./data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
+    - Ugur Koyluoglu, Dan Siegel
+
+- [*University of Florida --- ABM*](./data-processed/UF-ABM/metadata-UF-ABM.txt)
+    - Thomas Hladish (University of Florida), Alexander Pillai
+      (University of Florida), Kok Ben Toh (Northwestern University),
+      Ira Longini Jr. (University of Florida)
+
+- [*University of Virginia - EpiHiper*](./data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+    - Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya
+      (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
 
 ## The COVID-19 Scenario Modeling Hub Coordination Team
 
