@@ -653,7 +653,7 @@ time-series data on vaccination in the US from the CDC API.
       (University of Florida), Kok Ben Toh (Northwestern University),
       Ira Longini Jr. (University of Florida)
 
-- [*University of Virginia - EpiHiper*](./data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+- [*University of Virginia --- EpiHiper*](./data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
     - Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya
       (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
 
