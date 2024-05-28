@@ -356,12 +356,12 @@ meta-data and abstract.***
 
 | Scenario  | Scenario name  | Scenario ID for submission file ('scenario_id') |
 |---------------------------------|:-----------------:|:-----------------:|
-| Scenario A. No booster, low immune escape  | noBoo_lowIE   | A-2024-03-01  |
-| Scenario B. No booster, high immune escape | noBoo_highIE  | B-2024-03-01  |
-| Scenario C. 65+ booster, low immune escape | 65Boo_lowIE   | C-2024-03-01  |
-| Scenario D. 65+ booster, high immune escape| 65Boo_highIE  | D-2024-03-01  |
-| Scenario E. All booster, low immune escape | allBoo_lowIE  | E-2024-03-01  |
-| Scenario F. All booster, high immune escape| allBoo_highIE | F-2024-03-01  |
+| Scenario A. No booster, low immune escape          | noBoo_lowIE   | A-2024-03-01  |
+| Scenario B. No booster, high immune escape         | noBoo_highIE  | B-2024-03-01  |
+| Scenario C. High-risk booster, low immune escape   | hrBoo_lowIE   | C-2024-03-01  |
+| Scenario D. High-risk  booster, high immune escape | hrBoo_highIE  | D-2024-03-01  |
+| Scenario E. All booster, low immune escape         | allBoo_lowIE  | E-2024-03-01  |
+| Scenario F. All booster, high immune escape        | allBoo_highIE | F-2024-03-01  |
 
 
 -   **Due date**: Tue Apr 30, 2024
