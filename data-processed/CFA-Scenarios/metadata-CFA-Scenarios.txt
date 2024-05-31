@@ -16,8 +16,8 @@ vaccine_efficacy_delay: 0
 vaccine_hesitancy: Not applicable
 vaccine_immunity_duration: Wanes approximately logistically to half of the starting value in 6 months
 natural_immunity_duration: Wanes approximately logistically to half of the starting value in 6 months 
-case_fatality_rate: Not applicable
-infection_fatality_rate: Not applicable
+case_fatality_rate: Age-specific hospitalization fatality ratio is infered from national data: [0.023, 0.077, 0.193, 0.545]
+infection_fatality_rate: Varies by state depending on inferred IHR
 asymptomatics: Presence/absence of symptoms is not explicitly modeled
 age_groups: [0-17, 18-49, 50-64, 65+]
 importations: Represented as a small, transient new-variant infection hazard for 18- to 49-year-olds, over a one-month period.

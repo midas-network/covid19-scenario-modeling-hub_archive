@@ -50,14 +50,14 @@ Vaccination reduces the force of infection for a (partially) susceptible individ
 
 ## Describe the process used to set or calibrate disease severity, ie P(hosp given current infection) and P(death given current infection) details. What are the datasets used for calibration of the death targets?
 
-We infer the age group-specific infection hospitalization ratios separately for each state during the fitting procedure. Specifically, we fit the model to the weekly hospitalization data with an assumption that hospitalization lags infection by a week. Since we do not project death incidence, we did not calibrate the infection fatality ratios.
+We infer the age group-specific infection hospitalization ratios separately for each state during the fitting procedure. Specifically, we fit the model to the weekly hospitalization data with an assumption that hospitalization lags infection by a week. Deaths are calibrated at the national level by estimating the hospitalization fatality ratio for each age group based on data from March of 2022 through December 2023. Simultaneously, we infer a gamma delay distribution between hospitalizations and deaths.
 
 ## Seasonality implementation, e.g., whether seasonality varies by geography and which datasets are used to fit seasonal parameters
 
 Seasonality is inferred by state, with a peak in seasonal forcing typically in late December, and amplitudes ranging between 4% and 15%.  We assume forcing follows a sine function with a 1-year period. Seasonality is fit at the same time we fit all other model parameters, using hospitalization, serology, and variant prevalence data.
 
 ## Details about modeling of age-specific outcomes, including assumptions on age-specific parameters (e.g., susceptibility, infection hospitalization risk or fatality risk, VE)
-We assume age-structured mixing of the population, and infer infection-hospitalization ratios that are state- and age- specific.  We do not assume that there are inherent differences in susceptibility or immune competance based on age.
+We assume age-structured mixing of the population, and infer infection-hospitalization ratios that are state- and age- specific. We infer hospitalization fatality ratios that are age- but not state-specific. We do not assume that there are inherent differences in susceptibility or immune competance based on age.
 
 ## Details about modeling of high-risk individuals, e.g., susceptibility and infection hospitalization risk or infection fatality risk, VE
 High-risk individuals are not modeled explicitly.  Because we infer the IHR, it is not possible to tease apart high vs low risk IHR while keeping them coherent across fitting and projection periods. We use the fraction of high-risk individuals by state to determine vaccine uptake in the 65Boo scenarios.
