@@ -1,0 +1,43 @@
+team_name: Johns Hopkins ID Dynamics and University of North Carolina Chapel Hill
+model_name: flepiMoP
+model_abbr: JHU_UNC-flepiMoP
+model_version: "1.0"
+model_contributors: Joseph C. Lemaitre (UNC), Sara Loo (JHU), Emily Przykucki (UNC), Sung-mok Jung (UNC), Claire P. Smith (JHU), Clif McKee (JHU), Pengcheng Fang (JHU), Koji Sato (JHU), Alison Hill (JHU), Justin Lessler (UNC), Shaun Truelove (JHU) <shauntruelove@jhu.edu>
+website_url: https://github.com/HopkinsIDD/flepiMoP
+license: mit
+methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
+  with social-distancing indicators.
+modeling_NPI: Stay-at-home orders and 
+  \ subsequent social distancing interventions are updated at the state-level according \
+  \ to recent policy documents. Ongoing interventions continued through \
+  \ the remainder of the simulation period. Intervention effects are inferred \
+  \ where  possible.
+compliance_NPI: Not applicable
+contact_tracing: Not applicable
+testing: Not applicable
+vaccine_efficacy_transmission: "Vaccine efficacy is assumed to be against infection, not specifically \
+  \ transmission. Vaccine efficacy estimates are assumed based on the scenarios."
+vaccine_efficacy_delay: None.
+vaccine_hesitancy: Hesitancy is not assumed other than specifically indicated by the scenarios.
+vaccine_immunity_duration: Waning rate is fit.
+natural_immunity_duration: Waning rate is fit.
+case_fatality_rate: Age- and risk-adjusted based on population distribution. 
+infection_fatality_rate: Age- and risk-adjusted based on population distribution and age-distribution of those 
+  \ who have received at least one vaccine dose. US national CFR set at 5%.
+asymptomatics: Not applicable
+age_groups: 0-17, 18-64, 65+
+importations: Functionality in place, but not currently in use.
+confidence_interval_method: We compute confidence intervals as quantiles across 300 simulations.
+calibration: "We use an  MCMC-like inference procedure that calibrates model outputs to weekly \       
+  \ aggregations of incident hospitalizations and deaths. For the \
+  \ inference of the baseline reproductive number and the case confirmation to infection ratio."
+spatial_structure: state-level metapopulation accounting for spatial mobility using community data between states.
+citation: https://doi.org/10.1016/j.epidem.2024.100753
+methods_long: flepiMoP is a comprehensive open-source software pipeline designed for creating and \
+  \ simulating compartmental models of infectious disease transmission and inferring parameters through these models. \
+  \ A single YAML configuration file defines the inclusion and behavior of each submodule over the specified population \
+  \ structure. The core module, gempyor (“General Epidemics Modeling Pipeline with Ynterventions and Outcome Reporting”), \
+  \ is a fast and flexible disease transmission model that can simulate any compartmental structure and observation model. \
+  \ gempyor can be run standalone for projection scenarios (given a set of parameters and without inference) or within a \ 
+  \ tailored, distributed inference module that executes several parallel chains of repeated epidemic simulations in an \ 
+  \ MCMC-like fashion, allowing for calibration of the model to data and identification of model parameters.

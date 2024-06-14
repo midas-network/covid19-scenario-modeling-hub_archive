@@ -1,0 +1,27 @@
+team_name: CFA
+model_name: Scenarios
+model_abbr: CFA-Scenarios
+model_version: 2024-04-28
+model_contributors: 
+Michael Batista (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <upi8@cdc.edu>, Ariel Shurygin (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <uva5@cdc.edu>, Kok Ben Toh (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <tjk3@cdc.edu>, Thomas Hladish (Scenarios Team Lead, CDC Center for Forecasting and Outbreak Analytics) <utx5@cdc.gov>
+website_url: Not applicable
+license: ASL v2 or later
+methods: SEIS multi-strain ODE model with age structure, immune waning, and vaccine and infection history. State-based models are fit to 26 months of COVID-19 hospitalization, serology and strain prevalence data. US model is an aggregate.
+modeling_NPI: Not applicable
+compliance_NPI: Not applicable
+contact_tracing: Not applicable
+testing: Not applicable
+vaccine_efficacy_transmission: 50% VEI relative to unvaccinated individuals against summer 2024 strain
+vaccine_efficacy_delay: 0
+vaccine_hesitancy: Not applicable
+vaccine_immunity_duration: Wanes approximately logistically to half of the starting value in 6 months
+natural_immunity_duration: Wanes approximately logistically to half of the starting value in 6 months 
+case_fatality_rate: Age-specific hospitalization fatality ratio is infered from national data: [0.023, 0.077, 0.193, 0.545]
+infection_fatality_rate: Varies by state depending on inferred IHR
+asymptomatics: Presence/absence of symptoms is not explicitly modeled
+age_groups: [0-17, 18-49, 50-64, 65+]
+importations: Represented as a small, transient new-variant infection hazard for 18- to 49-year-olds, over a one-month period.
+confidence_interval_method:  100 replicates are sampled from fitted posterior distributions
+calibration:  Hamiltonian Monte Carlo with No U-Turn sampling, using 1000 warm-up iterations and 1000 samples on 4 chains.  28 parameters are fit to the past two years of COVID-19 hospitalization, seroprevalence and strain prevalence data.
+spatial_structure: "Not applicable"
+methods_long: We created state-specific COVID-19 burden projections using a deterministic, modified SEIS model with additional stratifications and partial immunity. Each infection state is stratified by age, immune history, vaccination history, waning status (for Susceptibles), and infecting strain (for all other compartments). Immunity is determined by immunogenic events (infections and vaccinations) and time since the most recent event. Protection against infection is strain-specific: past infection with a more similar variant, or vaccination with a better-matched vaccine, provides a higher level of protection against the challenging strain.  External introductions of new variants are represented by introducing a small, transient new-variant infection hazard for 18- to 49-year-olds, over a one-month period. We assume that new variants are introduced on average three months apart, with intrinsic infectiousness values sampled from the posterior distribution for previous strains for each state.  State-based models are fit to 26 months of COVID-19 hospitalization, seroprevalence, and strain prevalence data. The U.S. model is an aggregate of the state models. Hospitalizations are estimated after simulation by applying locale- and age-specific infection-hospitalization ratios that are estimated during the fitting process. 
