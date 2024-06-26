@@ -10,6 +10,8 @@ We use a novel stochastic age-structured SEIRS model that explicitly tracks the 
 ## Number/type of immune classes considered
 Infection and vaccine derived immunity classes are included in the model. 
 
+**##Initial distribution of susceptibility (if available)**
+Other (NA)
 
 ## Initial variant characteristics (transmissibility of variants at t=0, and how uncertainty or non-identifiability was handled)
 We parameterized the variant characteristics according to best literature estimates on transmissibility, immune escape, and severity. In case of uncertainty, we have used the estimates which provided the most accurate predictions in our previous projections.
