@@ -249,7 +249,7 @@ Scenario IDs include a captitalized letter and date as YYYY-MM-DD, e.g.,
 ### `target`
 
 The submission can contain multiple output type information: 
-- From 100 to 3000 representative trajectories from the model simulations.
+- From 100 to 300 representative trajectories from the model simulations.
   We will call this format "sample" type output. For more information, please
   consult the 
   [sample](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed#sample) 
