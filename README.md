@@ -7,6 +7,10 @@ Last updated: 02-04-2025
 This repository contains the Scenario Modeling Round
 projections and information from round 1 to round 18
 
+For information on all future rounds, please use the 
+[COVID-19 Scenario Modeling Hub](https://github.com/midas-network/covid19-scenario-modeling-hub)
+GitHub Repository
+
 ## Previous Round Scenarios and Results:
 
 <https://covid19scenariomodelinghub.org/viz.html>
