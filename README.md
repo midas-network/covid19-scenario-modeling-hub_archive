@@ -1,8 +1,11 @@
-# COVID-19 Scenario Modeling Hub
+# COVID-19 Scenario Modeling Hub - Archive
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6584489.svg)](https://doi.org/10.5281/zenodo.6584489)
 
-Last updated: 22-03-2024 for **Round 18 Scenarios**.
+Last updated: 02-04-2025
+
+This repository contains the Scenario Modeling Round
+projections and information from round 1 to round 18
 
 ## Previous Round Scenarios and Results:
 
