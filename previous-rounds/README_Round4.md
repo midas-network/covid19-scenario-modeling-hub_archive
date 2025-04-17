@@ -14,7 +14,7 @@ The COVID-19 Scenario Modeling Hub is be open to any team willing to provide pro
 
 Those interested to participate should register [here](https://docs.google.com/spreadsheets/d/1K3vsjDURG0R6-9p86y5h3s11eszwLvXWqCu2lfjlXnI/edit#gid=0). Registration does not commit participants to submitting model contributions. 
 
-Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md). 
+Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/README.md). 
 
 ## Scenarios
 Scenarios will be updated during subsequent rounds of submissions. 
@@ -61,7 +61,7 @@ Last updated: 03-23-2021 for **Round 4 Scenarios**.
 
 </br>
 
-![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round4_scenarios_table.png)
+![](https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub_archive/master/previous-rounds/Round4_scenarios_table.png)
         
 </br>
 
@@ -228,13 +228,13 @@ The default assumptions are that the variant is 1.5x more transmissible than cur
 ## Previous Rounds' Scenarios    
 
 - Round 2 Scenarios
-- [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
+- [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/Round3_Scenarios.md)
 
 </br>
 
 
 ## Submitting model projections
-Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
+Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
 
 ### Model projection dates
 Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    

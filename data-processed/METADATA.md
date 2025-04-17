@@ -2,7 +2,7 @@
 
 Each model is required to have metadata in 
 [yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
-e.g. [see this example metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt).
+e.g. [see this example metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt).
 
 Given the many possible approaches to modeling COVID-19 scenarios, we are collecting rich metadata to be able to understand heterogeneity among model projections. The information will only be used internally, unless otherwise indicated. 
 

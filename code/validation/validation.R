@@ -5,7 +5,7 @@ library(dplyr)
 # Check if validation need to run
 if (nchar(Sys.getenv("GH_COMMIT_SHA")) > 1) {
   test <- gh::gh(paste0("GET /repos/",
-                        "midas-network/covid19-scenario-modeling-hub/commits/",
+                        "midas-network/covid19-scenario-modeling-hub_archive/commits/",
                         Sys.getenv("GH_COMMIT_SHA")))
   check <- grepl("data-processed/", unique(unlist(purrr::map(test$files,
                                                              "filename"))))
@@ -24,7 +24,7 @@ if (isFALSE(all(check))) {
 
   # check if submissions file
   pr_files <- gh::gh(paste0("GET /repos/",
-                            "midas-network/covid19-scenario-modeling-hub/pulls/",
+                            "midas-network/covid19-scenario-modeling-hub_archive/pulls/",
                             Sys.getenv("GH_PR_NUMBER"), "/files"))
 
   pr_files_name <- purrr::map(pr_files, "filename")
@@ -154,7 +154,7 @@ if (!all(is.na(test_tot))) {
   message <- purrr::map(test_valid, paste, collapse = "\n")
 
   lapply(seq_len(length(message)), function(x) {
-    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/",
+    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub_archive/",
                   "issues/", Sys.getenv("GH_PR_NUMBER"), "/comments"),
            body = message[[x]],
            .token = Sys.getenv("GH_TOKEN"))
@@ -179,7 +179,7 @@ if (!all(is.na(test_tot))) {
             " tag `@LucieContamin` for any question."))
     }
 
-    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub/",
+    gh::gh(paste0("POST /repos/", "midas-network/covid19-scenario-modeling-hub_archive/",
                   "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
            body = message_plot,
            .token = Sys.getenv("GH_TOKEN"))

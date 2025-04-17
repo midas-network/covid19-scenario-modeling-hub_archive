@@ -7,7 +7,7 @@ Last updated: 1-9-2022 for **Round 12 Scenarios**.
 
 [https://covid19scenariomodelinghub.org/viz.html](https://covid19scenariomodelinghub.org/viz.html)
 
-Round 11: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round11.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+Round 11: [Scenario Descriptions](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round11.md) and [Model Details]( https://github.com/midas-network/covid19-scenario-modeling-hub_archive#teams-and-models)
 
 </br>
 
@@ -31,7 +31,7 @@ The COVID-19 Scenario Modeling Hub is be open to any team willing to provide pro
 
 Those interested to participate should email scenariohub@midasnetwork.us .
 
-Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md). 
+Model projections should be submitted via pull request to the data-processed folder of this GitHub repository. Technical instructions for submission and required file formats can be found [here](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/README.md). 
 
 </br>
 
@@ -41,7 +41,7 @@ Model projections should be submitted via pull request to the data-processed fol
 Round 12 of the COVID-19 Scenario Modeling Hub (SMH) will serve as an update of Round 11 to evaluate the impact of the Omicron wave, with updated data and epidemiological understanding. We have designed a 2*2 scenario structure where Omicron transmissibility and immune escape are represented in one axis and severity of Omicron are on the other axis. We will consider a 3-month horizon.
 
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub/master/previous-rounds/Round12_scenarios_table.PNG">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-scenario-modeling-hub_archive/master/previous-rounds/Round12_scenarios_table.PNG">
 
 
 #### **Assumption synopsis and model requirements:**
@@ -196,21 +196,21 @@ We don’t specify different levels of non-pharmaceutical interventions (NPI) us
 ## Previous Rounds' Scenarios    
 
 - Round 2 Scenarios
-- [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/Round3_Scenarios.md)
-- [Round 4 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round4.md)
-- [Round 5 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round5.md)
-- [Round 6 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round6.md)
-- [Round 7 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round7.md)
-- [Round 8 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round8.md)
-- [Round 9 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round9.md)
-- [Round 10 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round10.md)
-- [Round 11 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/previous-rounds/README_Round11.md)
+- [Round 3 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/Round3_Scenarios.md)
+- [Round 4 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round4.md)
+- [Round 5 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round5.md)
+- [Round 6 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round6.md)
+- [Round 7 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round7.md)
+- [Round 8 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round8.md)
+- [Round 9 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round9.md)
+- [Round 10 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round10.md)
+- [Round 11 Scenarios](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/previous-rounds/README_Round11.md)
 
 </br>
 
 
 ## Submitting model projections
-Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
+Groups interested in participating can submit model projections for each scenario in a CSV file formatted according to our specifications, and a metadata file with a description of model information. See [here](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/README.md) for technical submission requirements. Groups can submit their contributions as often as they want; the date of when a model projection was made (projection date) is recorded in the model submission file.   
 
 ### Model projection dates
 Model projections will have an associated `model_projection_date` that corresponds to the day the projection was made.    
@@ -247,15 +247,15 @@ All source code that is specific to the overall project is available under an op
 Those teams interested in accessing additional computational power should contact Katriona Shea at k-shea@psu.edu.
 
 ## Shared Code Resources
-Teams are encouraged to share code they think will be useful to other teams via the github repo. This directory can be found in [code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/code_resources). 
+Teams are encouraged to share code they think will be useful to other teams via the github repo. This directory can be found in [code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/code_resources). 
 It currently contains code to:
-  - Pull age-specific, state-specific, time-series data on vaccination in the US from the CDC API. [get_cdc_stateagevacc.R](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/code_resources/get_cdc_stateagevacc.R)
+  - Pull age-specific, state-specific, time-series data on vaccination in the US from the CDC API. [get_cdc_stateagevacc.R](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/code_resources/get_cdc_stateagevacc.R)
 
 
 
 ## Teams and models    
 
-*   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
+*   [*Johns Hopkins ID Dynamics COVID-19 Working Group — COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     *   Joseph C. Lemaitre (EPFL), Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),
         Kyra H. Grantz (Johns Hopkins Infectious Disease Dynamics), Joshua Kaminsky (Johns Hopkins Infectious
         Disease Dynamics), Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns
@@ -266,13 +266,13 @@ It currently contains code to:
         Kathryn Kaminsky, Sam Shah, Josh Wills, Pierre-Yves Aquilanti (Amazon Web Service),
         Karthik Raman (Amazon Web Services),  Arun Subramaniyan (Amazon Web Services), Greg Thursam (Amazon Web 
         Services), Anh Tran (Amazon Web Services)
-*   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
+*   [*Johns Hopkins University Applied Physics Lab — Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     *   Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht (JHU/APL), Laura Asher (JHU/APL), 
         Cash Costello (JHU/APL), Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin (JHU/APL), 
         Molly Gallagher (JHU/APL), Luke Mullany (JHU/APL), Kaitlin Lovett (JHU/APL)
-*   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
+*   [*Karlen Working Group — pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     *   Dean Karlen (University of Victoria and TRIUMF)
-*   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
+*   [*Northeastern University MOBS Lab — GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
     *   Matteo Chinazzi (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA), Jessica T. Davis (Laboratory for the Modeling of Biological
         and Socio-technical Systems, Northeastern University, Boston, MA), Kunpeng Mu (Laboratory
@@ -282,28 +282,28 @@ It currently contains code to:
         of Biological and Socio-technical Systems, Northeastern University, Boston, MA), Alessandro
         Vespignani (Laboratory for the Modeling of Biological and Socio-technical Systems, Northeastern
         University, Boston, MA)
-*   [*University of Southern California — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
+*   [*University of Southern California — SI kJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
     *   Ajitesh Srivastava (University of Southern California)
-*   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
+*   [*University of Virginia — adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     *   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Anniruddha Adiga (UVA), Bryan
         Lewis (UVA), Brian Klahn (UVA), Joseph Outten (UVA), James Schlitt (UVA), Patrick Corbett
         (UVA), Pyrros Alexander Telionis (UVA), Lijing Wang (UVA), Akhil Sai Peddireddy (UVA),
         Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), Madhav Marathe (UVA)
-*   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+*   [*Columbia University - Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
     *   Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey Shaman (CU)
-*   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+*   [*University of North Carolina at Charlotte - hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
     * Shi Chen (UNC Charlotte Department of Public Health Sciences & School of Data Science), Rajib Paul (UNC Charlotte Department of Public Health Sciences and School of Data Science), Daniel Janies (UNC Charlotte Department of Bioinformatics and Genomics), Jean-Claude Thill (UNC Charlotte Department of Geography and Earth Sciences and School of Data Science)
-*   [*Institute for Health Metrics and Evaluation – IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
+*   [*Institute for Health Metrics and Evaluation – IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
     * Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins, Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y. Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom, Austin Carter, Emma Castro, Kate Causey, Suman Chakrabarti, Fiona J. Charlson, Rebecca M. Cogen, Emily Combs, Xiaochen Dai, William James Dangel, Lucas Earl, Samuel B. Ewald, Maha Ezalarab, Alize J. Ferrari, Abraham Flaxman, Joseph Jon Frostad, Nancy Fullman, Emmanuela Gakidou, John Gallagher, Scott D. Glenn, Erik A. Goosmann, Jiawei He, Nathaniel J. Henry, Erin N. Hulland, Benjamin Hurst, Casey Johanns, Parkes J. Kendrick, Samantha Leigh Larson, Alice Lazzar-Atwood, Kate E. LeGrand, Haley Lescinsky, Emily Linebarger, Rafael Lozano, Rui Ma, Johan Månsson, Ana M. Mantilla Herrera, Laurie B. Marczak, Molly K. Miller-Petrie, Ali H. Mokdad, Julia Deryn Morgan, Paulami Naik, Christopher M. Odell, James K. O’Halloran, Aaron E. Osgood-Zimmerman, Samuel M. Ostroff, Maja Pasovic, Louise Penberthy, Geoffrey Phipps, David M. Pigott, Ian Pollock, Rebecca E. Ramshaw, Sofia Boston Redford, Sam Rolfe, Damian Francesco Santomauro, John R. Shackleton, David H. Shaw, Brittney S. Sheena, Aleksei Sholokhov, Reed J. D. Sorensen, Gianna Sparks, Emma Elizabeth Spurlock, Michelle L. Subart, Ruri Syailendrawati, Anna E. Torre, Christopher E. Troeger, Theo Vos, Alexandrea Watson, Stefanie Watson, Kirsten E. Wiens, Lauren Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim & Christopher J. L. Murray
-*   [*University of Virginia - EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+*   [*University of Virginia - EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
     * Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA) 
-*   [*University of Notre Dame - FRED*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
+*   [*University of Notre Dame - FRED*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
     *   Guido Espana, Sean Cavany, Sean Moore, Alex Perkins
-*   [*University of Florida - ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
+*   [*University of Florida - ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
     *   Thomas Hladish (University of Florida), Alexander Pillai (University of Florida), Kok Ben Toh (Northwestern University),  Ira Longini Jr. (University of Florida) 
-*   [*North Carolina State University - COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
+*   [*North Carolina State University - COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
     *   Erik Rosenstrom (North Carolina State University), Jessica Mele (North Carolina State University), Julie Swann (North Carolina State University), Julie Ivy (North Carolina State University), Maria Mayorga (North Carolina State University)
-*   [*University of Texas at Austin - ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
+*   [*University of Texas at Austin - ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
     *   Anass Bouchnita (Lead modeler, University of Texas at Austin), Spencer Fox (University of Texas at Austin), Michael Lachmann (University of Texas at Austin), Lauren Ancel Meyers (Senior author, University of Texas at Austin), and the UT COVID-19 Modeling Consortium
   
 </br>

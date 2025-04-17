@@ -6,7 +6,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-## Set working directory to covid19-scenario-modeling-hub repository on your local computer
+## Set working directory to covid19-scenario-modeling-hub_archive repository on your local computer
 
 knitr::opts_knit$set(root.dir = dirname(dirname(getwd())))
 knitr::opts_chunk$set(echo = TRUE)
@@ -21,7 +21,7 @@ library(scales)
 ```
 
 ```{r file-paths}
-## Set working directory to covid19-scenario-modeling-hub repository on your local computer
+## Set working directory to covid19-scenario-modeling-hub_archive repository on your local computer
 
 projection.start.date <- "2021-07-03"
 projection.end.date <- "2022-01-01"

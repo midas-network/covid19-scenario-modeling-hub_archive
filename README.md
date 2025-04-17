@@ -8,7 +8,7 @@ This repository contains the Scenario Modeling Round
 projections and information from round 1 to round 18
 
 For information on all future rounds, please use the 
-[COVID-19 Scenario Modeling Hub](https://github.com/midas-network/covid19-scenario-modeling-hub)
+[COVID-19 Scenario Modeling Hub](https://github.com/midas-network/covid19-scenario-modeling-hub_archive)
 GitHub Repository
 
 ## Previous Round Scenarios and Results:
@@ -17,7 +17,7 @@ GitHub Repository
 
 Round 17: [Scenario Descriptions](./previous-rounds/README_Round17.md)
 and 
-[Model Details](https://github.com/midas-network/covid19-scenario-modeling-hub#teams-and-models)
+[Model Details](https://github.com/midas-network/covid19-scenario-modeling-hub_archive#teams-and-models)
 
 ## Rationale
 
@@ -524,7 +524,7 @@ should contact Katriona Shea at
 
 Teams are encouraged to share code they think will be useful to other
 teams via the github repo. This directory can be found in
-[code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/code_resources).
+[code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/code_resources).
 It currently contains code to: - Pull age-specific, state-specific,
 time-series data on vaccination in the US from the CDC API.
 [get_cdc_stateagevacc.R](./code_resources/get_cdc_stateagevacc.R)

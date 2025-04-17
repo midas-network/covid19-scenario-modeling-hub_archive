@@ -11,20 +11,20 @@ Due to file size limitation, the file can be submitted in a `.parquet` or `.gz.p
 
 The submission file format has been updated starting round 17 (April 2023).  For 
 information on previous file format please refer to past version of this 
-[README file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/fb8040bca943dae9ca4e76eefe4410e4f6866c82/data-processed/README.md). 
+[README file](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/fb8040bca943dae9ca4e76eefe4410e4f6866c82/data-processed/README.md). 
 
 ----
 
 ## Example
 
-See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/2023-04-16-MyTeam-MyModel.gz.parquet)
+See [this file](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/MyTeam-MyModel/2023-04-16-MyTeam-MyModel.gz.parquet)
 for an illustration of part of a (hypothetical) submission file. 
 
 ---
 
 ## Subdirectory
 
-Each subdirectory within the [data-processed/]((https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed)) directory has
+Each subdirectory within the [data-processed/]((https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed)) directory has
 the format
 
     team-model
@@ -53,8 +53,8 @@ where
 - `team` is the teamname, usually the name of the submitting institution. 
 - `model` is the name of your model, used to distinguish between multiple models from a single institution.
     
-The metadata file must follow the [documented description](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/METADATA.md).
-An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
+The metadata file must follow the [documented description](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/METADATA.md).
+An example [hypothetical metadata file](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/data-processed/MyTeam-MyModel/metadata-MyTeam-MyModel.txt)
 has been posted in the data-processed directory. 
 
 ---
@@ -123,7 +123,7 @@ arrow::read_parquet(filename)
 The date YYYY-MM-DD should correspond to the start date for scenarios
 projection ("first date of simulated transmission/outcomes" as noted in the
 scenario description on the main 
-[README, Submission Information](https://github.com/midas-network/covid19-scenario-modeling-hub#submission-information)).
+[README, Submission Information](https://github.com/midas-network/covid19-scenario-modeling-hub_archive#submission-information)).
 
 The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 15
@@ -252,12 +252,12 @@ The submission can contain multiple output type information:
 - From 100 to 300 representative trajectories from the model simulations.
   We will call this format "sample" type output. For more information, please
   consult the 
-  [sample](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed#sample) 
+  [sample](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed#sample) 
   section.
 - A set of quantiles with an optional "mean" value for all the tarquets.
   We will call this format "quantile" type output. For more information, 
   please consult the 
-  [quantile](https://github.com/midas-network/covid19-scenario-modeling-hub/tree/master/data-processed#quantile-and-mean) 
+  [quantile](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed#quantile-and-mean) 
   section. 
 
 The requested targets are (for "sample" type output):
@@ -483,10 +483,10 @@ data-processed/ will be automatically validated.
 ### Pull request scenario validation
 
 When a pull request is submitted, the data are validated by running the
-scripts in [validation.R](https://github.com/midas-network/covid19-scenario-modeling-hub/blob/master/code/validation/validation.R). The intent for
+scripts in [validation.R](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/blob/master/code/validation/validation.R). The intent for
 these tests are to validate the requirements above and all checks are 
-specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks).
-Please [let us know](https://github.com/midas-network/covid19-scenario-modeling-hub/issues) if
+specifically enumerated [on the wiki](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/wiki/Scenario-File-Checks).
+Please [let us know](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/issues) if
 the wiki is inaccurate.
 
 #### Workflow
@@ -517,6 +517,6 @@ automatically runs and output a message:
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull
-request, follow [these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub/wiki/Scenario-File-Checks#file-checks-running-locally)
+request, follow [these instructions](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/wiki/Scenario-File-Checks#file-checks-running-locally)
 (section File Checks Run Locally).
 
