@@ -190,7 +190,7 @@ hospitalization from high risk groups can be found
 Projected vaccine coverage curves for 2024-25 season, by age, 
 state, and high-risk group, with population sizes of relevant age 
 groups, are available in the 
-[round_resources/round18](./round_resources/round18/) folder.
+[round_resources/round18](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/round_resources/round18) folder.
 
 
 ### **Immune Escape**
@@ -418,7 +418,7 @@ meta-data and abstract.***
     the week
     - Submission file type: **gz.parquet** (from Apache Arrow) is now required. The
     submission file can be partitioned by "origin_date" and "target". For more information,
-    please consult the associated [README](./data-processed/README.md) 
+    please consult the associated [README](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/README.md) 
 
 -   **Abstract:** We require a brief abstract describing model
 assumptions and results, from all teams.
@@ -449,7 +449,7 @@ assumptions and results, from all teams.
 Groups interested in participating can submit model projections for each
 scenario in a PARQUET file formatted according to our specifications,
 and a metadata file with a description of model information. See
-[here](./data-processed/README.md)
+[here](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/README.md)
 for technical submission requirements.
 
 ## Gold standard data
@@ -504,7 +504,7 @@ We aim to combine model projections into an ensemble.
 We are grateful to the teams who have generated these scenarios. The
 groups have made their public data available under different terms and
 licenses. You will find the licenses (when provided) within the
-model-specific folders in the [data-processed](./data-processed/)
+model-specific folders in the [data-processed](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/)
 directory. Please consult these licenses before using these data to
 ensure that you follow the terms under which these data were released.
 
@@ -527,23 +527,23 @@ teams via the github repo. This directory can be found in
 [code_resources](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/code_resources).
 It currently contains code to: - Pull age-specific, state-specific,
 time-series data on vaccination in the US from the CDC API.
-[get_cdc_stateagevacc.R](./code_resources/get_cdc_stateagevacc.R)
+[get_cdc_stateagevacc.R](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/code_resources/get_cdc_stateagevacc.R)
 
 ## Teams and models
 
-- [*CDC Center for Forecasting and Outbreak Analytics --- Scenarios*](./data-processed/CFA-Scenarios/metadata-CFA-Scenarios.txt)
+- [*CDC Center for Forecasting and Outbreak Analytics --- Scenarios*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/CFA-Scenarios/metadata-CFA-Scenarios.txt)
     - Michael Batista (CDC Center for Forecasting and Outbreak Analytics), 
     Ariel Shurygin (CDC Center for Forecasting and Outbreak Analytics), 
     Kok Ben Toh (CDC Center for Forecasting and Outbreak Analytics), 
     Thomas Hladish (CDC Center for Forecasting and Outbreak Analytics)
     
-- [*Johns Hopkins ID Dynamics and University of North Carolina Chapel Hill --- flepiMoP*](./data-processed/JHU_UNC-flepiMoP/metadata-JHU_UNC-flepiMoP.txt)
+- [*Johns Hopkins ID Dynamics and University of North Carolina Chapel Hill --- flepiMoP*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/JHU_UNC-flepiMoP/metadata-JHU_UNC-flepiMoP.txt)
     - Joseph C. Lemaitre (UNC), Sara Loo (JHU), Emily Przykucki (UNC),
     Sung-mok Jung (UNC), Claire P. Smith (JHU), Clif McKee (JHU),
     Pengcheng Fang (JHU), Koji Sato (JHU), Alison Hill (JHU),
     Justin Lessler (UNC), Shaun Truelove (JHU)
 
-- [*Northeastern University MOBS Lab --- GLEAM COVID*](./data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
+- [*Northeastern University MOBS Lab --- GLEAM COVID*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/MOBS_NEU-GLEAM_COVID/metadata-MOBS_NEU-GLEAM_COVID.txt)
     -   Matteo Chinazzi (Laboratory for the Modeling of Biological and
         Socio-technical Systems, Northeastern University, Boston, MA),
         Jessica T. Davis (Laboratory for the Modeling of Biological and
@@ -558,14 +558,14 @@ time-series data on vaccination in the US from the CDC API.
         Biological and Socio-technical Systems, Northeastern University,
         Boston, MA)
 
-- [*University of Notre Dame --- FRED*](./data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
+- [*University of Notre Dame --- FRED*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/NotreDame-FRED/metadata-NotreDame-FRED.txt)
     -   Guido Espana, Sean Cavany, Sean Moore, Alex Perkins
 
-- [*Predictive Science --- PROF*](./data-processed/PSI-PROF/metadata-PSI-PROF.txt)
+- [*Predictive Science --- PROF*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/PSI-PROF/metadata-PSI-PROF.txt)
     -   Ben-Nun M (Predictive Science), Turtle J (Predictive Science), 
     Riley P (Predictive Science)
 
-- [*University of North Carolina at Charlotte --- hierbin*](./data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
+- [*University of North Carolina at Charlotte --- hierbin*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/UNCC-hierbin/metadata-UNCC-hierbin.txt)
     -   Shi Chen (UNC Charlotte Department of Public Health Sciences &
         School of Data Science), Rajib Paul (UNC Charlotte Department of
         Public Health Sciences and School of Data Science), Daniel
@@ -573,17 +573,17 @@ time-series data on vaccination in the US from the CDC API.
         Genomics), Jean-Claude Thill (UNC Charlotte Department of
         Geography and Earth Sciences and School of Data Science)
 
-- [*University of Southern California --- SIkJalpha*](./data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
+- [*University of Southern California --- SIkJalpha*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/USC-SIkJalpha/metadata-USC-SIkJalpha.txt)
     -   Ajitesh Srivastava, Majd Al Aawar
 
-- [*University of Texas at Austin -  ImmunoSEIRS*](./data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
+- [*University of Texas at Austin -  ImmunoSEIRS*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/UTA-ImmunoSEIRS/metadata-UTA-ImmunoSEIRS.txt)
     -   Kaiming Bi (Lead modeler, University of Texas at Austin), Anass
         Bouchnita (University of Texas at El Paso), Shraddha R Bandekar 
         (University of Texas at Austin), Spencer Fox (University of Georgia),
         Lauren Ancel Meyers (Senior author, University of Texas at
         Austin), and the UT COVID-19 Modeling Consortium
 
-- [*University of Virginia --- adaptive*](./data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
+- [*University of Virginia --- adaptive*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/UVA-adaptive/metadata-UVA-adaptive.txt)
     -   Przemyslaw Porebski (UVA), Srini Venkatramanan (UVA), Bryan 
         Lewis (UVA), Aniruddha Adiga (UVA), Brian Klahn (UVA), 
         Benjamin Hurt (UVA), Jiangzhuo Chen (UVA), Anil Vullikanti (UVA), 
@@ -592,11 +592,11 @@ time-series data on vaccination in the US from the CDC API.
 ### Past Teams and Models
 
 
-- [*Columbia University --- Age-Stratified Model*](./data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
+- [*Columbia University --- Age-Stratified Model*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/CU-AGE-ST/metadata-CU-AGE-ST.txt)
     - Marta Galanti (CU), Teresa Yamana (CU), Sen Pei (CU), Jeffrey
       Shaman (CU)
 
-- [*Institute for Health Metrics and Evaluation -- IHME COVID model deaths unscaled*](./data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
+- [*Institute for Health Metrics and Evaluation -- IHME COVID model deaths unscaled*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/IHME-IHME_COVID_model_deaths_unscaled/metadata-IHME-IHME_COVID_model_deaths_unscaled.txt)
     - Robert C Reiner, Joanne Amlag, Ryan M. Barber, James K. Collins,
       Peng Zheng, James Albright, Catherine M. Antony, Aleksandr Y.
       Aravkin, Steven D. Bachmeier, Marlena S. Bannick, Sabina Bloom,
@@ -623,14 +623,14 @@ time-series data on vaccination in the US from the CDC API.
       Woyczynski, Liming Xu, Jize Zhang, Simon I. Hay, Stephen S. Lim
       & Christopher J. L. Murray
 
-- [*Johns Hopkins University Applied Physics Lab --- Bucky*](./data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
+- [*Johns Hopkins University Applied Physics Lab --- Bucky*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/JHUAPL-Bucky/metadata-JHUAPL-Bucky.txt)
     - Matt Kinsey (JHU/APL), Kate Tallaksen (JHU/APL), R.F. Obrecht
       (JHU/APL), Laura Asher (JHU/APL), Cash Costello (JHU/APL),
       Michael Kelbaugh (JHU/APL), Shelby Wilson (JHU/APL), Lauren Shin
       (JHU/APL), Molly Gallagher (JHU/APL), Luke Mullany (JHU/APL),
       Kaitlin Lovett (JHU/APL)
 
-- [*Johns Hopkins ID Dynamics COVID-19 Working Group --- COVID Scenario Pipeline*](./data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
+- [*Johns Hopkins ID Dynamics COVID-19 Working Group --- COVID Scenario Pipeline*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt)
     - Joseph C. Lemaitre (UNC), Joshua Kaminsky (Johns Hopkins
       Infectious Disease Dynamics), Claire P. Smith (Johns Hopkins
       Infectious Disease Dynamics), Sara Loo (Johns Hopkins Infectious
@@ -642,25 +642,25 @@ time-series data on vaccination in the US from the CDC API.
       Infectious Disease Dynamics), Justin Lessler (UNC), Shaun
       Truelove (Johns Hopkins Infectious Disease Dynamics)
 
-- [*Karlen Working Group --- pypm*](./data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
+- [*Karlen Working Group --- pypm*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/Karlen-pypm/metadata-Karlen-pypm.txt)
     - Dean Karlen (University of Victoria and TRIUMF)
 
--  [*North Carolina State University --- COVSIM*](./data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
+-  [*North Carolina State University --- COVSIM*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/NCSU-COVSIM/metadata-NCSU-COVSIM.txt)
     - Erik Rosenstrom (North Carolina State University), Sebastian 
       Rodriguez Cartes (North Carolina State University), Julie Swann
       (North Carolina State University), Julie Ivy (North Carolina
       State University), Maria Mayorga (North Carolina State
       University)
 
-- [*Oliver Wyman's --- Pandemic Navigator*](./data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
+- [*Oliver Wyman's --- Pandemic Navigator*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/OliverWyman-Navigator/metadata-OliverWyman-Navigator.txt)
     - Ugur Koyluoglu, Dan Siegel
 
-- [*University of Florida --- ABM*](./data-processed/UF-ABM/metadata-UF-ABM.txt)
+- [*University of Florida --- ABM*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/UF-ABM/metadata-UF-ABM.txt)
     - Thomas Hladish (University of Florida), Alexander Pillai
       (University of Florida), Kok Ben Toh (Northwestern University),
       Ira Longini Jr. (University of Florida)
 
-- [*University of Virginia --- EpiHiper*](./data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
+- [*University of Virginia --- EpiHiper*](https://github.com/midas-network/covid19-scenario-modeling-hub_archive/tree/master/data-processed/UVA-EpiHiper/metadata-UVA-EpiHiper.txt)
     - Jiangzhuo Chen (UVA), Stefan Hoops (UVA), Parantapa Bhattacharya
       (UVA), Dustin Machi (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA)
 
