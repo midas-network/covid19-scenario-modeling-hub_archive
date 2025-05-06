@@ -3,7 +3,7 @@ model_name: Scenarios
 model_abbr: CFA-Scenarios
 model_version: 2024-04-28
 model_contributors: 
-Michael Batista (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <upi8@cdc.edu>, Ariel Shurygin (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <uva5@cdc.edu>, Kok Ben Toh (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <tjk3@cdc.edu>, Thomas Hladish (Scenarios Team Lead, CDC Center for Forecasting and Outbreak Analytics) <utx5@cdc.gov>
+Michael Batista (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <upi8@cdc.gov>, Ariel Shurygin (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <uva5@cdc.gov>, Kok Ben Toh (Scenarios Analyst, CDC Center for Forecasting and Outbreak Analytics) <tjk3@cdc.gov>, Thomas Hladish (Scenarios Team Lead, CDC Center for Forecasting and Outbreak Analytics) <utx5@cdc.gov>
 website_url: Not applicable
 license: ASL v2 or later
 methods: SEIS multi-strain ODE model with age structure, immune waning, and vaccine and infection history. State-based models are fit to 26 months of COVID-19 hospitalization, serology and strain prevalence data. US model is an aggregate.
